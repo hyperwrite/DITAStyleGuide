@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D5129" status="new"> 
+  <title>Cross-referencing tables</title> 
+  <shortdesc>Cross-references to tables are accomplished with the 
+	 <synph>xref</synph> element with a 
+	 <synph>type</synph> attribute of 
+	 <userinput>table</userinput>. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>table
+			 element</indexterm><indexterm>cross-references<indexterm>to
+				tables</indexterm></indexterm><indexterm>xref
+			 element</indexterm><indexterm>elements<indexterm>table</indexterm><indexterm>xref</indexterm></indexterm><indexterm>type
+			 attribute</indexterm><indexterm>attributes<indexterm>type</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>When referring a reader to a table, you should not hard-code the table
+		number. In most editing environments, you won't know what the sequential table
+		number will be until the ditamap is processed to a deliverable document. 
+	 </p> 
+	 <p importance="high">You must always use the 
+		<synph>xref</synph> element to cross-reference tables, with the 
+		<synph>type</synph> attribute set to 
+		<userinput>table</userinput>. 
+	 </p> 
+	 <p>Cross-references to tables will typically be rendered as the local
+		language word for 
+		<q>Table</q>, followed by the table's sequential number in the topic (for
+		hypertext outputs) or in the publication (for page layout documents). Because
+		the table number is not hard-coded, it will be recalculated each time the
+		ditamap containing the topic is processed. 
+	 </p> 
+	 <p>An example of the syntax of a cross-reference to a table with an 
+		<synph>id</synph> attribute of 
+		<q>table_perf_data</q> in the same topic is: 
+		<codeblock status="changed">&lt;xref href="#concept_ej25_perf/table_perf_data" type="table"/&gt;</codeblock> 
+	 </p> 
+	 <p>You cannot cross-reference simple tables, partly because they do not
+		have titles (necessary for 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_labelling"><?xm-replace_text Phrase?></ph>
+		the table with a table number.) If cross-references are important for your
+		document, use tables rather than simple tables. You should include a 
+		<synph>title</synph> element in all table elements, as the title is used
+		in the generation of cross-reference text in some publishing processes. 
+	 </p> 
+  </conbody> 
+</concept> 

@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<concept id="concept_0299CD061521484CBE1A617DEFBB5611"> 
+  <title>Managing cross-references</title> 
+  <shortdesc><?xm-replace_text Short Description?>
+  </shortdesc> 
+  <conbody>
+	 <p><?xm-replace_text Paragraph?>
+	 </p>
+  </conbody> 
+</concept>

@@ -1,0 +1,139 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D3776" status="new"> 
+  <title>Callouts</title> 
+  <shortdesc>Callouts with keys, rather than text labels, should be used when
+	 identifying parts of an illustration. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>callouts</indexterm><indexterm>images<indexterm>callouts</indexterm></indexterm><indexterm>leader
+			 lines</indexterm><indexterm>dl
+			 element</indexterm><indexterm>elements<indexterm>dl</indexterm></indexterm><indexterm>legends</indexterm><indexterm>fig
+			 element</indexterm><indexterm>elements<indexterm>fig</indexterm></indexterm><indexterm>keys
+			 and labels</indexterm><indexterm>labels<indexterm>on
+				images</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>Diagrams are often explained with the aid of 
+		<term>callouts</term>, which are labels and leader lines or arrows that
+		point out key parts of the illustration. Callouts can be text, or 
+		<term>keyed legends</term>. 
+	 </p> 
+	 <p>In text callouts, the labels are superimposed on the image. In 
+		<term>keyed</term> callouts, language independent key numbers or letters
+		are superimposed on the image, with a legend providing the explanations for the
+		callout keys displayed outside the image. 
+	 </p> 
+	 <p>The following figures show the two main approaches to image callouts,
+		text and 
+		<term>keyed</term>: 
+	 </p> 
+	 <fig id="fig_8CCAC4022CEE42C288D7C7AA69DFB77A"> 
+		<title>Example of text callouts on an illustration</title><image
+		placement="break" align="left"
+		id="image_C7EABB421F7947528D2D775201B04ABD"
+		href="../images/callout_text_ej25_turbo.jpg" width="393px" height="322px"> 
+		  <alt>Example of text callouts on an illustration 
+		  </alt></image> 
+	 </fig> 
+	 <fig id="fig_4C029B4F2EC94BD78CBE00BC8BD1E381"> 
+		<title>Example of keyed callouts on an illustration</title><image
+		placement="break" align="left" href="../images/callout_key_ej25_turbo.jpg"
+		width="393px" height="322px" id="image_820F6382D52F444BA0B77DB6A467ED4A"> 
+		  <alt>Example of keyed callouts on an illustration 
+		  </alt></image> 
+		<dl> 
+		  <dlentry> 
+			 <dt>A 
+			 </dt> 
+			 <dd>intercooler 
+			 </dd> 
+		  </dlentry> 
+		  <dlentry> 
+			 <dt>B 
+			 </dt> 
+			 <dd>expansion tank 
+			 </dd> 
+		  </dlentry> 
+		</dl> 
+	 </fig> 
+	 <p>You should prefer the 
+		<term>keyed</term> method, with the legend stored in a definition list
+		(<synph>dl</synph>) or a 
+		<synph>simpletable</synph> structure, within the figure
+		(<synph>fig</synph>) element. Legends are more easily maintained and more
+		easily 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_localised"><?xm-replace_text Phrase?></ph>,
+		as the text explanations are stored as text rather than embedded within the
+		image file. 
+	 </p> 
+	 <note>The 
+		<synph>fig</synph> element can contain an image, an ordered list, a
+		paragraph and a table. This provides the tools for building a set of labels, a
+		legend, or multiple captions. 
+	 </note> 
+	 <p>An example of a definition list within a figure structure is: 
+		<codeblock>&lt;fig&gt;
+  &lt;title&gt;Example of keyed callouts on an illustration&lt;/title&gt;
+  &lt;image href="../images/callout_key_ej25_turbo.jpg" width="393px" height="322px"&gt;
+    &lt;alt&gt;Example of keyed callouts on an illustration&lt;/alt&gt;
+  &lt;/image&gt; 
+		&lt;dl&gt; 
+		  &lt;dlentry&gt; 
+			   &lt;dt&gt;A&lt;/dt&gt; 
+			   &lt;dd&gt;intercooler&lt;/dd&gt; 
+		  &lt;/dlentry&gt; 
+		  &lt;dlentry&gt; 
+			   &lt;dt&gt;B&lt;/dt&gt; 
+			   &lt;dd&gt;expansion tank&lt;/dd&gt; 
+		  &lt;/dlentry&gt; 
+		&lt;/dl&gt;
+&lt;/fig&gt;</codeblock> 
+	 </p> 
+	 <p>Callout keys should use alphabetical characters rather than numerical
+		characters, unless the sequence is important. 
+	 </p> 
+	 <section id="section_AB9663BA5ABD4EEAB85723043B342625"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<lq reftitle="Yves Barbion, Yahoo! DITA Users Group"> 
+		  <p>I've got graphics with alphabetically numbered callouts (A, B,
+			 C...). 
+		  </p> 
+		  <p>Below (or next to) the graphic, I want to write the explanation of
+			 my callouts, for example: 
+		  </p> 
+		  <p>A. Power button B. Power lamp C. Shutter button D. Microphone 
+		  </p> 
+		  <p>As far as I can see, there is no dedicated &lt;callout&gt; element
+			 in the DITA model, is there? I looked up callout in the language spec, but I
+			 only found it as an attribute to synnote, which is not relevant here. I could
+			 use the &lt;dt&gt; and &lt;dd&gt; elements for this, but this is not the
+			 intended use of these elements. 
+		  </p> 
+		  <p>My current workaround is to put my callouts (and maybe even my
+			 graphic) in a table (see example below), but I was wondering whether there are
+			 other and better approaches? 
+		  </p> 
+		</lq> 
+		<p>Eliot Kimber responded to say that he thought 
+		  <codeph>&lt;dl&gt;</codeph> is perfectly appropriate for this
+		  application: 
+		  <codeph>&lt;dt&gt;</codeph> is the callout label and the 
+		  <codeph>&lt;dd&gt; 
+		  </codeph>is the callout description. 
+		</p> 
+		<lq reftitle="Yves Barbion, Yahoo! DITA Users Group">If you want to reuse
+		  the same graphic in multiple publications and even multiple languages, it is a
+		  good practice not to put callouts in the source file of the graphic itself.
+		  Instead, you place your callouts "on top of" your graphic in your text editor
+		  (Word) or DTP program (InDesign, FrameMaker, ...). This is not supported in
+		  DITA. Therefore, if you need to use callouts in graphics, try to use
+		  language-independent ones (A, B, C...) in the source file of the graphic and
+		  put the explanation of these callouts in a table below the graphic in your DITA
+		  XML content. 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

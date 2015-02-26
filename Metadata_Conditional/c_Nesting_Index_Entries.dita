@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D4902" status="new"> 
+  <title>Nesting index entries</title> 
+  <shortdesc>The technique of nesting 
+	 <synph>indexterm</synph> elements can produce multi-level indexes in output
+	 documents. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>elements<indexterm>indexterm</indexterm></indexterm><indexterm>nested
+			 index entries</indexterm><indexterm>multi-level
+			 indexes</indexterm><indexterm>indexes<indexterm>multi-level</indexterm><indexterm>secondary</indexterm><indexterm>tertiary</indexterm></indexterm><indexterm>secondary
+			 index entries</indexterm><indexterm>exemplar<indexterm>use of lines
+				element</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>You can created multi-level (<term>secondary</term> and 
+		<term>tertiary</term>) indexes by nesting 
+		<synph>indexterm</synph> elements. 
+	 </p> 
+	 <p>For example, the mark-up: 
+		<codeblock>&lt;indexterm&gt;EJ25 engine
+  &lt;indexterm&gt;performance&lt;/indexterm&gt;
+&lt;/indexterm&gt;</codeblock>may produce, in a page layout output, and index entry of: 
+		<lines>EJ25 engine
+    performance .................... 15</lines> 
+	 </p> 
+	 <p>The page reference is applied to the innermost term (in the example, 
+		<q>performance</q>) only. 
+	 </p> 
+	 <p>An example of a more complex index result is: 
+		<lines>EJ25 engine
+    dimensions .................... 72
+    maintenance .................... 33
+    performance .................... 15
+    specifications .................... 49</lines> 
+	 </p> 
+	 <p>In a hypertext document that supports multi-level indexes, the same
+		example might be displayed as:<image placement="break" align="left"
+		id="image_2D139760CC9F45D08FB229A561836EAA"
+		href="../images/index_multilevel.png" width="137px" height="168px"> 
+		  <alt>Screen capture showing a multi-level index in a Help system 
+		  </alt></image> 
+	 </p> 
+	 <p>You should avoid nesting index entries to more than three levels. In
+		most cases, one or two levels will provide sufficient scope for a comprehensive
+		and easy-to-navigate index. 
+	 </p> 
+	 <p>If you have a number of secondary entries belonging to the same parent
+		entry, such as 
+		<q>EJ25 engine, performance</q> and 
+		<q>EJ25 engine, torque</q>, the secondary entries can either be nested
+		under the same parent entry, or structured separately. 
+	 </p> 
+	 <p>In other words, 
+		<codeblock>&lt;indexterm&gt;EJ25 engine
+  &lt;indexterm&gt;performance&lt;/indexterm&gt;
+  &lt;indexterm&gt;torque&lt;/indexterm&gt;
+&lt;/indexterm&gt;</codeblock>is equivalent to 
+		<codeblock>&lt;indexterm&gt;EJ25 engine
+  &lt;indexterm&gt;performance&lt;/indexterm&gt;
+&lt;/indexterm&gt;
+&lt;indexterm&gt;EJ25 engine
+  &lt;indexterm&gt;torque&lt;/indexterm&gt;
+&lt;/indexterm&gt;</codeblock> 
+	 </p> 
+	 <section id="section_46135EFC63484472A3828485F6E77E1F"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<lq reftitle="Jeremy Griffith, Yahoo! DITA Users Group"> 
+		  <p> &gt;&gt;I'm looking at these 1.1 indexing elements as well ..
+			 trying to come up with useful ways to round-trip them in FrameMaker...What is
+			 the difference between this: 
+			 <codeph>&lt;indexterm&gt;Feeding
+				goldfish&gt;&lt;index-see&gt;Goldfish
+				&lt;indexterm&gt;feeding&lt;/indexterm&gt;&lt;/index-see&gt;&lt;/indexterm&gt;</codeph>
+			 and this: 
+			 <codeph>&lt;indexterm&gt;Feeding goldfish &lt;index-see&gt;Goldfish
+				feeding&lt;/index-see&gt;&lt;/indexterm&gt;</codeph> The two target terms are
+			 *not* synonyms to the index itself, though they may look that way to a user.
+			 Does the child indexterm of an index-see (or index-see-also) affect the way the
+			 entry is rendered or how it should function?&lt;&lt; 
+		  </p> 
+		  <p>Yes, it certainly does. Suppose you add "Goldfish, breeding". Then
+			 in the first case you'd have: Goldfish breeding feeding and in the second, the
+			 less desirable: Goldfish breeding Goldfish feeding Or if you added instead
+			 "Goldfish breeding": Goldfish feeding Goldfish breeding and in the second case:
+			 Goldfish breeding Goldfish feeding In general, if there's a chance of more
+			 subentries under the primary entry, use the "primary, secondary" form so that
+			 any matching primaries can be combined. This choice, though, is really the
+			 (human) indexer's. Software should respect it, and not change it. The one time
+			 rendering software *may* change this is if you have "Goldfish, feeding" but
+			 *no* other "Goldfish" entries. In that case, the rendering software may
+			 optionally produce: Goldfish, feeding instead of: Goldfish feeding Note that in
+			 this case the comma is *retained* in the entry, so that it would still match
+			 the first "See" entry above. This option should preferably be settable by the
+			 indexer at authoring time. 
+		  </p> 
+		</lq> 
+	 </section> 
+	 <section id="section_F4B9C0FF814B48DCBA413EC7C43A1A25"
+	  audience="contributor"> 
+		<title>References</title> 
+		<p><cite>Indexing Effectively in DITA (SDI Global Solutions Whitepaper),
+			 http://www.sdicorp.com/Resources/White_Papers.aspx</cite> 
+		</p> 
+	 </section> 
+  </conbody> 
+</concept> 

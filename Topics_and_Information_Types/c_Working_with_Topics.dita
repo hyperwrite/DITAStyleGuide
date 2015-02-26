@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<concept id="concept_32A4F8AE96354A0B985CAD2FCC3FC2A5"> 
+  <title>Working with topics</title> 
+  <prolog><metadata><keywords><indexterm>exemplar<indexterm>stub
+				topic</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>Topics are the building blocks of DITA, and a methodical apporach to
+		topic creation will result in consistent and more effective documents. 
+	 </p>
+  </conbody> 
+</concept> 

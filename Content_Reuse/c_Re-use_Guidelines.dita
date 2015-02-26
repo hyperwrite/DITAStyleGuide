@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_78AED30B52A444418D584842FE8901A3" xml:lang="en"
+ status="new"> 
+  <title>Re-use guidelines</title> 
+  <shortdesc>Re-use guidelines can help simplify the practice of writing for
+	 re-use. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>re-use<indexterm>guidelines</indexterm></indexterm><indexterm>writing<indexterm>for
+				re-use</indexterm></indexterm><indexterm>context-agnostic
+			 writing</indexterm><indexterm>content
+			 re-use<indexterm>guidelines</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>When writing in a DITA environment, at topic level rather than document
+		level, there are a few guidelines you can follow to make re-use easier by
+		adopting the following guidelines. 
+	 </p> 
+	 <ul outputclass="listbullet" id="ul_C2E1FF7090034F5C9DA5B51B7E21D893"> 
+		<li id="li_445934AD8D234307BD428D2C74C7D848">Avoid the use of 
+		  <q>previous</q>, 
+		  <q>next</q>, 
+		  <q>earlier</q>, and 
+		  <q>later</q> (such as in 
+		  <q>More information on the product limitations are discussed
+			 later</q>). Those referenced topics may not be included in all collections, or
+		  may be included in a different sequence. 
+		</li> 
+		<li id="li_8CB9205C45584D5C870DF073317F1C29">Don't use sequential numbers
+		  in file names; rather, use descriptive names. (Use 
+		  <filepath>ej20_engine_schematic.png</filepath> rather than 
+		  <filepath>fig1.png</filepath>.) 
+		</li> 
+		<li id="li_463D275EEFEC43559827BC8DE17F632D">Avoid including branding in
+		  graphics. 
+		</li> 
+		<li id="li_5BADED2A95144E609E0BC7A7E7931979">Avoid including context
+		  within explanatory paragraphs or steps. For example, don't write 
+		  <q>The EJ20 engine of the 
+			 <ph
+			  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/ph_Subaru_company_name"><?xm-replace_text Phrase?></ph>
+			 
+			 <ph
+			  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/ph_Impreza_product_name"><?xm-replace_text Phrase?></ph>
+			 is naturally aspirated</q>; rather write 
+		  <q>The EJ20 engine is naturally aspirated</q>. 
+		</li> 
+		<li id="li_C3F1644CC132455CA5293EF2623C300E" status="changed">Move
+		  contextual information to its own paragraph (or 
+		  <i>context</i> element, for task topics). In the EJ20 example
+		  preceding, the information about what models of car use the EJ20, and other
+		  information relevant to the association between EJ20 and 
+		  <ph
+			conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/ph_Subaru_company_name"><?xm-replace_text Phrase?></ph>,
+		  could be written into a separate paragraph. When the content needs to be
+		  re-used in a differently badged product manual, that context paragraph can be
+		  filtered out and the remaining non-contextual content re-used. 
+		</li> 
+	 </ul> 
+  </conbody> 
+</concept> 

@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D9164" rev="1.2"> 
+  <title>Non-sequential procedural steps</title> 
+  <shortdesc>Some procedures are not made up of sequential procedural steps.
+	 When documenting these procedures, the 
+	 <synph>steps-informal</synph> structure or the 
+	 <synph>steps-unordered</synph> structure should be used. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>elements<indexterm>steps-informal</indexterm><indexterm>steps-unordered</indexterm></indexterm><indexterm>steps-informal
+			 element</indexterm><indexterm>steps-unordered
+			 element</indexterm><indexterm>general task information
+			 type</indexterm><indexterm>non-sequential
+			 steps</indexterm><indexterm>processes</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>Until 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_DITA12"><?xm-replace_text Phrase?></ph>,
+		the base content model only offered steps as a semantic structure for
+		procedures, processes and instructions. In many ways, this one-size-fits-all
+		approach was very limiting. A 
+		<synph>substeps</synph> element provided some scope for more complex
+		procedures, but some believed that an upper level 
+		<synph>process</synph> element was required. 
+	 </p> 
+	 <p><ph
+		conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_DITA12"><?xm-replace_text Phrase?></ph>
+		introduced the 
+		<synph>steps-informal</synph> and the 
+		<synph>steps-unordered</synph> alternatives to 
+		<synph>steps</synph>. The 
+		<synph>steps-informal</synph> structure in only available in the 
+		<term>general task</term> information type, while 
+		<synph>steps-unordered</synph> can be used in the 
+		<term>(strict) task</term> and the 
+		<term>general task</term> information types. One of the reasons for the
+		introduction of the new types of steps was to provide for processes. 
+	 </p> 
+	 <p importance="high">The 
+		<synph>steps-informal</synph> structure should be used for documenting
+		processes where there are no distinct steps or stages. 
+	 </p> 
+	 <p importance="high">The 
+		<synph>steps-unordered</synph> structure should be used when there are
+		distinct steps in the procedure or process, but the order in which they are
+		performed is not important. In other words, use 
+		<synph>steps-unordered</synph> in the same way that you might use an
+		unordered list (<synph>ul</synph>) in a concept topic. 
+	 </p> 
+	 <p importance="high">Do not use 
+		<synph>steps-informal</synph> or 
+		<synph>steps-unordered</synph> as a lazy way of writing unstructured
+		steps (that is, steps without the 
+		<synph>cmd/stepresult/info</synph> vocabulary). 
+	 </p> 
+	 <p>If you feel you need non-sequential substeps in a 
+		<synph>step</synph> element, use the 
+		<synph>choicetable</synph> structure rather than 
+		<synph>steps-informal</synph>. There is no 
+		<synph>substeps-informal</synph> structure. 
+	 </p> 
+	 <section id="section_F40D1AC991AC4D5DB5B7A93F43FE141C"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<p>On the DITA Yahoo! Users Group, 
+		  <cite>Bob Thomas</cite> wrote: 
+		  <lq>The semantics of steps discourages the author from munging
+			 information types together. For example, the mandatory presence of the cmd
+			 element in step strongly suggests that the author ought to use the imperative
+			 mood because they are giving the reader a command. Contrast this with li which
+			 only suggests that a number is going to show up in the output, leaving the
+			 author to ramble on what might happen and why if they do this or that. 
+		  </lq> 
+		</p> 
+		<p>The corollary is don't munge information types together by using 
+		  <synph>steps-informal</synph> when 
+		  <synph>steps</synph> is a feasible alternative. 
+		</p> 
+	 </section> 
+  </conbody> 
+</concept> 

@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D5031" status="changed"> 
+  <title>Restricting tasks to one procedure only</title> 
+  <shortdesc>Task topics can only contain one procedure, with one continuous
+	 set of numbered steps. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>task
+			 topic</indexterm><indexterm>procedures<indexterm>one per task
+				topic</indexterm></indexterm><indexterm>nested
+			 procedures</indexterm><indexterm>substeps
+			 element</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>The task information type is specifically designed to contain one
+		procedure only. If you feel you need to document two procedures in one task
+		topic, you should re-examine your approach. Two procedures should be documented
+		in two task topics. 
+	 </p> 
+	 <p>If necessary, you can output two DITA task topics to one single output
+		HTML topic, using the 
+		<synph>chunk</synph> attribute. 
+	 </p> 
+	 <p>If you feel that you need to restart numbering within a task, then you
+		probably have more than one procedure in the topic, and should split them into
+		two separate task topics. 
+	 </p> 
+	 <p>In some cases, what appears to be two procedures may turn out to be a
+		nested procedure, in which case the 
+		<synph>substeps</synph> element can be used. The 
+		<synph>choicetable</synph> structure is also useful for procedures where
+		a step has a number of alternative options. 
+	 </p> 
+	 <p>If a procedure can be performed in two different ways, you should
+		document those alternatives in two separate topics. 
+	 </p> 
+	 <section id="section_444AFE9E2D0C412FA36AAD511CD30B2C"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<lq
+		 href="http://tech.dir.groups.yahoo.com/group/dita-users/message/11896"
+		 reftitle="Alexandr Artemov"> 
+		  <p>I have problems with making list in the task. The problem is that I
+			 cannot restart numbering. 
+		  </p> 
+		  <p>For example I wish to write such information: 
+		  </p> 
+		  <ol id="ol_561506BC568E42A78305AF03F5F9A17F"> 
+			 <li id="li_D2AAD59729B84EEDB84DCFB35BEFA018">1. Raise your hand. 
+			 </li> 
+			 <li id="li_54EE6E9D41F3496CB483584DFF0C057E">2. Push the window. 
+			 </li> 
+		  </ol> 
+		  <p>Also you can do it by the leg. 
+		  </p> 
+		  <ol id="ol_DA16BE33CCE348719212038A65928AFF"> 
+			 <li id="li_0BC00D9A929548F2A4E7B768F074D2E4">1. Raise your leg. 
+			 </li> 
+			 <li id="li_AE69509CD2D74725A403BDDA85372C6D">2. Kick the window. 
+			 </li> 
+		  </ol> 
+		  <p>All the DITA tags don't give me means to restart numbering. 
+		  </p> 
+		</lq> 
+		<lq reftitle="Deborah Pickett, Yahoo! DITA Users Group"
+		href="http://tech.dir.groups.yahoo.com/group/dita-users/message/11899">DITA
+		  tasks are deliberately very constrained, partly to disallow what it considers
+		  to be lazy topic-writing. (Not that your example is lazy, but it has the same
+		  structure as lazy tasks, and the DITA DTD can't tell the difference. You are
+		  just collateral damage.) So, the short answer is "you can't do that". It's hard
+		  to say what is the best way of doing what you want. There have been past
+		  discussions about this kind of thing on dita-users. What works is going to
+		  depend on the factors that you stripped out of your example to get your point
+		  across, so you may just have to try different ways of writing the task until
+		  you get something that feels right. If I were the author (and if I were
+		  actually writing about opening windows, rather than the real task that you have
+		  in mind), I'd probably create two tasks ("Opening the window with the hand" and
+		  "Opening the window with the foot"), and wrap them in a container task that
+		  itself has no &lt;steps&gt; element. Or I would decide that this isn't really a
+		  task, and use standard &lt;ol&gt; and &lt;li&gt; in a concept. Or I would see
+		  if I could get away with just using a &lt;note&gt; in step 1 ("You can also use
+		  your leg"). Or I would use &lt;choices&gt; or &lt;choicetable&gt; in step 1 to
+		  list the body parts that are suitable for window-opening. 
+		</lq> 
+		<lq reftitle="Julio Vazquez, Yahoo! DITA Users Group"
+		href="http://tech.dir.groups.yahoo.com/group/dita-users/message/11922">Personally,
+		  I would lean towards using a choicetable with headings like, Limb and Method.
+		  In the left column would be Arm and Leg and in the right column would be
+		  ordered lists with the steps. This makes the entire task boil down to a single
+		  unordered step with the command Open the window followed by the choicetable. 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept id="D2064" xml:lang="en" status="new"> 
+  <title>Topic-based authoring</title> 
+  <shortdesc>Content in DITA is authored in topics, rather than in larger
+	 documents or publications. A DITA topic must make sense in its own right. A
+	 topic is authored as a unit, not as part of a larger document. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>topic-based
+			 authoring</indexterm><indexterm>topical information
+			 unit</indexterm><indexterm>topical unit of
+			 discourse</indexterm><indexterm>architecture<indexterm>topic-based</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>DITA has a topic-based architecture, requiring a topic-based approach to
+		document authoring. The term 
+		<term>topic</term> can be thought of as being short for 
+		<term>topical information unit</term>, or a 
+		<term>topical unit of discourse</term>. 
+	 </p> 
+	 <p>A topic-based architecture opens up the opportunity for large scale
+		content re-use. Topics are assembled from a single pool or repository into
+		different deliverable documents. Topics can be used in different publications,
+		provided the topic makes sense when read in different contexts. 
+	 </p> 
+	 <p>A special DITA file called a 
+		<term>map</term> or 
+		<term>ditamap</term> is used to specify topics to be included in a
+		deliverable document. The ditamap doesn't store much content; it mainly
+		comprises of pointers to the topics that contain the content. 
+	 </p> 
+	 <p>Not only does a topic-based architecture allow information to be
+		re-used, it also makes translation and 
+		<ph
+		conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_localisation"><?xm-replace_text Phrase?></ph>
+		more efficient because the same information never has to be translated more
+		than once. 
+	 </p> 
+	 <p> 
+		<draft-comment>Reference to STOP should be added, and more stress given
+		  to topical information unit. 
+		</draft-comment> 
+	 </p> 
+	 <section id="section_5373EA706B824976AF4793138FD9E782"
+	 audience="contributor"> 
+		<title>Rationale</title> 
+		<p>In an article on the relationship between DITA, Help, and topic-based
+		  authoring<cite product="academic_only"> (Doyle, 2007)</cite>, Bob Doyle
+		  explains the key points of topic-based authoring well. He summarises those key
+		  points as follows. 
+		<ul outputclass="listbullet" id="ul_32E85BA278964303A51107C5D00868CB"> 
+		  <li id="li_7531F28CCDED40238EC7FE3D82A09AE0">This is structured writing
+			 of content in which you break down the content into topics or 
+			 <term>chunks</term> which have a good chance of making sense when
+			 standing alone. Single-source structured content is more reusable and
+			 localisable. 
+		  </li> 
+		  <li id="li_E79E550B77A04BE59D0B353E01AA5913">The idea is that you then
+			 assemble those topics, using 
+			 <term>maps</term> which are like a table of contents. Rearrange the
+			 references to topics in the TOC map, click 
+			 <uicontrol>build</uicontrol>, and you create a new version of your
+			 document, often in multiple output formats like HTML, PDF, and Help, and in
+			 multiple languages. The real magic comes when you have different maps for
+			 different purposes. You can even have one map with conditions on the topics.
+			 Include Topic A when the audience is Advanced, Topic B when the audience is
+			 Beginner. 
+		  </li> 
+		  <li id="li_FFE5C321F964442E94A5934E5756665E">If you think I am talking
+			 about DITA XML, you are right. But everything I say is true also of Help
+			 Authoring Tools (HAT), which for decades have been authoring topics and
+			 assembling them to provide the Help systems we get with our software. 
+		  </li> 
+		</ul> 
+		</p> 
+	 </section> 
+  </conbody> 
+</concept> 

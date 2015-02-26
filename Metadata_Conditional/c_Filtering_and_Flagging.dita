@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<concept id="concept_CC3F8E05D1AE44F6B3FF2684E7829E74"> 
+  <title>Filtering and flagging</title> 
+  <shortdesc>Content marked with metadata attributes can be conditionally
+	 processed so that the content is filtered (excluded) or flagged (highlighted)
+	 in the published output. 
+  </shortdesc> 
+  <conbody> 
+  </conbody> 
+</concept> 

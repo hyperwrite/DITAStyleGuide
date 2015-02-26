@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D9209" status="new"> 
+  <title>The 
+	 <synph>href</synph> attribute in a topic references</title> 
+  <shortdesc>A topic reference (<synph>topicref</synph>) in a ditamap
+	 references the topic (or other resource) to be included in the output
+	 publication through the 
+	 <synph>href</synph> attribute. The value of the 
+	 <synph>href</synph> attribute must conform to the standard URI format. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>URL</indexterm><indexterm>URI</indexterm><indexterm>href
+			 attribute</indexterm><indexterm>attributes<indexterm>href</indexterm></indexterm><indexterm>elements<indexterm>xref</indexterm><indexterm>source</indexterm><indexterm>link</indexterm><indexterm>lq</indexterm></indexterm><indexterm>SMB</indexterm><indexterm>exemplar<indexterm>context-agnostic</indexterm><indexterm>conref</indexterm></indexterm><indexterm>protocol</indexterm><indexterm>linking
+			 protocol</indexterm><indexterm>ampersand character</indexterm><indexterm>slash
+			 character</indexterm><indexterm>backslash
+			 character</indexterm><indexterm>resources<indexterm>links</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>Topic reference (<synph>topicref</synph>) elements usually reference a
+		DITA topic, but can also reference external resources such as Web sites. The
+		resources being referenced in 
+		<synph>topicref</synph> element are specified in the 
+		<synph>href</synph> attribute. 
+	 </p> 
+	 <p
+	  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/p_URI_definition_1"><?xm-replace_text Paragraph?>
+	 </p> 
+	 <p
+	  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/p_file_resource_2"><?xm-replace_text Paragraph?>
+	 </p> 
+	 <p
+	  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/p_slash_3"><?xm-replace_text Paragraph?>
+	 </p> 
+	 <p
+	  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/p_ampersand_4"><?xm-replace_text Paragraph?>
+	 </p> 
+	 <section id="section_729B7E8636104B6FABE4A5E3E9181601"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<lq reftitle="Deborah Pickett, Yahoo! DITA Users Group"
+		 href="http://tech.groups.yahoo.com/group/dita-users/message/15374">DITA does
+		  not speak in terms of file paths. It knows only URLs. When you use a DITA
+		  document it is mandatory that you use URLs. Hence, as David said, don't say
+		  "c:\My Documents", say "file:/c:/My%20Documents". Don't say "\\server\share",
+		  say "smb://server/share". 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

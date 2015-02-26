@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<concept id="concept_6FD9560EEEED4FB0A70086250EE15F88"> 
+  <title>Foreword</title> 
+  <shortdesc><?xm-replace_text Short Description?>
+  </shortdesc> 
+  <conbody> 
+	 <p>DITA represents a fundamental shift in the approach to writing and
+		publishing, and to a certain extent, the carefully accumulated practice of
+		hundreds of years of publication projects has to be reviewed and redefined. 
+	 </p>
+	 <section id="section_73DD7CCCB3734B7DB29E4D200702B61F"
+	  audience="contributor">
+		<title>Rationale</title>
+		<lq reftitle="Deborah Pickett, Yahoo! DITA Users Group"
+		 href="http://tech.dir.groups.yahoo.com/group/dita-users/message/12656"> I would
+		  suggest that users who are interested in a particular feature get together and
+		  define their own best practices for said feature. Define the markup that
+		  authors should use, and define the processing expectations of that markup. If
+		  this unofficial spec is reasonable, then vendors will find it in their
+		  interests to support it rather than striking out on their own. (It's this kind
+		  of distributed, grassroots power-to-the-users ideology that the DITA TC wants
+		  to instill in the community.) I've found that vendors (both commercial and
+		  non-commercial) are usually very willing to accommodate users' requirements,
+		  once they know what those requirements are. 
+		</lq>
+		<lq reftitle="Joe Gershon, OASIS DITA TC Mailing List">The problem is
+		  that the vast majority of new users are misusing DITA to a point that they are
+		  often worse off than they were in Word or FrameMaker. Most companies choose not
+		  to hire an expert to help them migrate to DITA, and they get what they pay for.
+		  I'd like us as a TC (and moving forward via the Adoption SC) to put tutorials,
+		  white papers, etc. in place to educate new users to help them to do the right
+		  thing from the beginning. At the same time, we must develop tutorials, white
+		  papers, and other guides that cover as many use cases and user groups as we're
+		  aware of and address their needs, suggesting best practices and, where
+		  relevant, providing unofficial packages of DTDs and supporting code (e.g.
+		  DITA-OT plugins). 
+		</lq>
+	 </section> 
+  </conbody> 
+</concept> 

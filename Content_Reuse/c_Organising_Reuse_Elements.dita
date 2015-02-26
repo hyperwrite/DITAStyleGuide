@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept id="D9170"> 
+  <title><ph
+	 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_Organising_InitCap"><?xm-replace_text Phrase?></ph>
+	 re-use topics and elements</title> 
+  <conbody> 
+	 <p>Re-use of content is easier for the author to accomplish if the elements
+		to be re-used are carefully 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_organised"><?xm-replace_text Phrase?></ph>
+		in predictable locations.
+	 </p>
+  </conbody> 
+</concept> 

@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept id="D5120" xml:lang="en" status="new"> 
+  <title>Case-sensitive file and folder names</title> 
+  <shortdesc>When working in a DITA environment, files and folders must be
+	 treated as case-sensitive, and all members of the team must adhere to agreed
+	 file naming conventions. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>file
+			 naming</indexterm><indexterm>folder names</indexterm><indexterm>directory
+			 names</indexterm><indexterm>names<indexterm>files and
+				folders</indexterm></indexterm><indexterm>case-sensitive<indexterm>file and
+				folder names</indexterm></indexterm><indexterm>conventions<indexterm>file and
+				folder names</indexterm></indexterm><indexterm>standard<indexterm>file and
+				folder names</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>Even though some tools and environments may be case-insensitive when it
+		comes to file and folder names, you must be totally consistent with the case of
+		your file and folder names. One important aspect of DITA is interchangeability,
+		and if you are not consistent with file name case, your documents may cause
+		problems when you interchange with someone in a case-sensitive environment. 
+	 </p> 
+	 <p>Further, some DITA tools treat file names differently within the same
+		workflow (or 
+		<term>pipeline</term>). For example, one part of the DITA Open Toolkit
+		pipeline checks with the operating system to see if a file
+		(<filepath>abc.dita</filepath>) exists before proceeding to the next step. The
+		operating system may respond 
+		<systemoutput>yes</systemoutput> if a file named 
+		<filepath>ABC.dita</filepath> exists, even though a file name of the
+		exact case (<filepath>abc.dita</filepath>) does not exist. When the next step
+		(which is 
+		<term>case aware</term>) commences, it may crash because it cannot find a
+		file 
+		<filepath>abc.dita</filepath>. 
+	 </p> 
+	 <p importance="high">Treat file and folder names as case-sensitive. 
+	 </p> 
+  </conbody> 
+</concept> 

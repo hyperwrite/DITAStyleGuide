@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D1639" status="new"> 
+  <title>Information types</title> 
+  <shortdesc>A fundamental principle of DITA is 
+	 <term>information typing</term>, which 
+	 <ph
+	  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_categorises"><?xm-replace_text Phrase?></ph>
+	 information according to the nature of the content. The three base DITA
+	 information types are concept, task and reference. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>information
+			 types</indexterm><indexterm>content model</indexterm><indexterm>base content
+			 model</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>The aim of all sorts of written communication is to transmit a message.
+		The purpose, the audience and the delivery method determine the best approach. 
+	 </p> 
+	 <p id="infotype_categories">DITA 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_categorises"><?xm-replace_text Phrase?></ph>
+		key business information by communication purpose, or 
+		<term>information type</term>. There are three base DITA information
+		types: concept, task and reference. 
+	 </p> 
+	 <p>The concept, task, and reference base types are sometimes called core
+		information types, as they are considered to be universally relevant. 
+	 </p> 
+	 <p rev="1.2">In 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_DITA12"><?xm-replace_text Phrase?></ph>,
+		the task information type was separated into 
+		<term>general task</term> and 
+		<term>strict task</term>. The 
+		<term>strict task</term> information type is the equivalent of the 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_DITA11"><?xm-replace_text Phrase?></ph>
+		
+		<term>task</term>, while the general task has much relaxed content rules.
+		
+	 </p> 
+	 <p rev="1.2">The glossary entry (<synph>glossentry</synph>) information
+		type was introduced in 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_DITA12"><?xm-replace_text Phrase?></ph>
+		as a 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialisation"><?xm-replace_text Phrase?></ph>
+		of the concept information type. 
+	 </p> 
+	 <note
+	  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/note_stricttask_equals_task"><?xm-replace_text {note}?>
+	 </note> 
+	 <section id="section_9435A4306946437EB94F0506B229C596"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<lq reftitle="Marcia Riefer Poulsen, 2006">Why call them core types?
+		  Could say core types, super-types, archetypes or 
+		  <i>ur</i> types. These types are universally relevant and customizable.
+		  
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_A52FECBCB9924DC7B4F26FA7C097B888" status="new"
+ xml:lang="en"> 
+  <title>Definition lists versus tables</title> 
+  <shortdesc>Definition lists should be used for structuring terms and their
+	 corresponding definitions, rather than an alternative table structure. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>elements<indexterm>dl</indexterm><indexterm>table</indexterm></indexterm><indexterm>definition
+			 lists</indexterm><indexterm>tables</indexterm><indexterm>definitions</indexterm><indexterm>terms</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>Some information structures, particularly terms with corresponding
+		definitions, can be marked up as either definition lists or tables. 
+	 </p> 
+	 <p importance="high">If the content is indeed made up of terms and
+		definitions, the definition list (<synph>dl</synph>) structure should be used.
+		For content not so clearly identifiable as terms and definitions, but where
+		there is a two part structure made up of short phrase and a longer explanation
+		of the phrase, the simpler definition list structure should always be preferred
+		over the table structure. 
+	 </p> 
+	 <p>Definition lists are particularly suited to defining or explaining
+		components or items. 
+	 </p> 
+	 <fig id="fig_CFBCCF2A05BE46D5861B0F2ED80F2A41"> 
+		<title>The difference between tables and definition lists</title><image
+		placement="break" align="left"
+		id="image_74F09B553AC34391A9A7E1778D26D79D" href="../images/dl_vs_table.png"
+		width="408px" height="431px"> 
+		  <alt>Screen captures showing the difference between tables and
+			 definition lists in PDF output
+		  </alt></image> 
+	 </fig> 
+	 <p>Definition lists are rendered with fewer potential complications than
+		tables, and are semantically stronger than the more generic table structure. 
+	 </p> 
+  </conbody> 
+</concept> 

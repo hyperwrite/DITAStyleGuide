@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_22E0EB080C274B238BFDF1AED04B9D04" rev="1.2" status="new"
+ xml:lang="en"> 
+  <title>Indirect content referencing</title> 
+  <shortdesc>The 
+	 <synph>keyref</synph> feature was introduced in DITA 1.2 to allow indirect
+	 referencing in links, images, and content references. Rather than referencing
+	 an element directly in the conref attribute, you can reference a 
+	 <term>key</term>, the destination of which you specify in the ditamap. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>indirection</indexterm><indexterm>conkeyref
+			 attribute</indexterm><indexterm>attributes<indexterm>conkeyref</indexterm><indexterm>keys</indexterm></indexterm><indexterm>keys
+			 attribute</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>You may sometimes need to conref different text depending upon the
+		context of the output publication. For example, when publishing a user guide
+		for the Australian market you may want to include the telephone number of the
+		Australian office, but when publishing for the New Zealand market you may want
+		to include the New Zealand office number. You could use conditional publishing
+		in this scenario, but the keyref feature is much simpler. 
+	 </p> 
+	 <p>The process is to use a 
+		<synph>conkeyref</synph> attribute to reference a key to the topic
+		containing the re-use elements, and the 
+		<synph>id</synph> attribute of the element to re-use, using the syntax 
+		<codeph><varname>key</varname>/<varname>id</varname></codeph>. 
+	 </p> 
+	 <p>For example, instead of 
+		<codeph>&lt;ph conref="conref_contacts.dita#contacts/aus_phone"
+		  /&gt;</codeph>, you would use the code 
+		<codeph>&lt;ph conkeyref="reuse/office_phone" /&gt;</codeph>. In the
+		Australian user guide ditamap, you would define the URI of the topic with a key
+		of 
+		<userinput>reuse</userinput> in the Australian context, such as 
+		<codeph>&lt;topicref keys="reuse" href="reuse_aus.dita"/&gt;</codeph>. In
+		the New Zealand user guide ditamap, you could define the 
+		<userinput>reuse</userinput> key as 
+		<codeph>&lt;topicref keys="reuse" href="reuse_nz.dita"/&gt;</codeph>.
+		Both topics would have a phrase (<synph>ph</synph>) element with an 
+		<synph>id</synph> of 
+		<userinput>office_phone</userinput>, containing the respective telephone
+		numbers. 
+	 </p> 
+  </conbody> 
+</concept> 

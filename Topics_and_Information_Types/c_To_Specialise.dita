@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D4701"> 
+  <title>To 
+	 <ph
+	  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialise"><?xm-replace_text Phrase?></ph>
+	 or not to 
+	 <ph
+	  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialise"><?xm-replace_text Phrase?></ph></title>
+  
+  <shortdesc><ph
+	 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_Specialisation_InitCap"><?xm-replace_text Phrase?></ph>
+	 has pros and cons. It adds technical complexity, but can provide better and
+	 more appropriate information structures. 
+	 <ph
+	  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_Specialisation_InitCap"><?xm-replace_text Phrase?></ph>
+	 should be carefully planned. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm
+		  conref="../../conref/conref_source_metadata.dita#topic_hw_conref_meta/index_specialisation_pros_cons"><?xm-replace_text Index Term?></indexterm><indexterm>skills</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>One of the most difficult questions for DITA adopters is whether or not
+		to 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialise"><?xm-replace_text Phrase?></ph>.
+		
+	 </p> 
+	 <p>One of the impediments to 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialisation"><?xm-replace_text Phrase?></ph>
+		is the perceived technical difficulty in both designing the structure and
+		coding the necessary schema files. Certainly, 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialisation"><?xm-replace_text Phrase?></ph>
+		is beyond the skills of a typical technical writer. However, a DITA project
+		team should include a broad range of expertise, and outsourcing tasks that are
+		beyond the capabilities of the team is a good strategy. 
+	 </p> 
+	 <p>On the other hand, unless you fully understand the reasons why the base
+		content models are inadequate for your own content, you should not 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialise"><?xm-replace_text Phrase?></ph>.
+		
+	 </p> 
+	 <p>Before designing your own 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialised"><?xm-replace_text Phrase?></ph>
+		information type, you should check to ensure that there is no public domain 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialisation"><?xm-replace_text Phrase?></ph>
+		that would suit your needs. A number of public domain 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialisations"><?xm-replace_text Phrase?></ph>
+		have been developed by OASIS DITA sub-committees, industry groups, and
+		individuals. 
+	 </p> 
+	 <section id="section_907CFE8C707E4170AF6FEAEB19FB55CA"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<lq
+		 reftitle="Bruce Nevin, OASIS DITA Technical Committee mailing list">It seems to
+		  me that it is common for vendors and consultants to promote the use of vanilla
+		  DITA and to counsel their customers to minimise specialisation. Yes, users
+		  should proceed cautiously and circumspectly with specialisation, but if they
+		  think that it is a DITA best practice to use only the base content models they
+		  are badly misunderstanding that guidance. Certainly, minimising specialisation
+		  simplifies implementation, customisation, and support; possibly some vendors or
+		  consultants do not adequately communicate the point; possibly some do not fully
+		  embrace it. 
+		</lq> 
+		<lq
+		 reftitle="Eliot Kimber, OASIS DITA Technical Committee mailing list">The base
+		  DITA content models are *NOT* authoring models and cannot be. They are the
+		  models needed to enable an appropriate range of specializations and/or local
+		  mark-up practices. 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

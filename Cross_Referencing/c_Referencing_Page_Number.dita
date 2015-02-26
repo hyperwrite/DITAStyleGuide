@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D9255" status="new"> 
+  <title>Cross-referencing to a page number</title> 
+  <shortdesc>There is no specific mechanism for cross-referencing a page
+	 number, because DITA is a source format and page numbers are output-dependent.
+	 In page layout outputs, a cross-reference to an element in a topic will be
+	 automatically generated as a page reference. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>cross-references<indexterm>to page
+				number</indexterm></indexterm><indexterm>page number
+			 references</indexterm><indexterm>references<indexterm>to page
+				numbers</indexterm></indexterm><indexterm>xref
+			 element</indexterm><indexterm>elements<indexterm>xref</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>When you cross-reference to a topic, or to an element within a topic,
+		and then publish to a page layout format such as PDF, the publishing processor
+		will typically calculate the page number of the referenced topic or element. 
+	 </p> 
+	 <p>For example, a cross-reference to a figure will typically be rendered,
+		when published to PDF, as: 
+		<systemoutput>Figure 1: 
+		  <varname>Title of Figure</varname> (see page 
+		  <varname>number</varname>)</systemoutput>. 
+	 </p> 
+	 <p>DITA is designed around the concept of the separation of content and
+		form. Page numbers are part of the form, and are therefore always generated as
+		part of the publishing process that converts the DITA source to a reading
+		format output. 
+	 </p> 
+	 <p importance="high">Avoid cross-referencing simple paragraphs or other
+		points in a topic in order to generate a page number reference.
+		Cross-references should be to the topic as a whole. 
+	 </p> 
+	 <section id="section_14688365D74F41AEA6C8FC8444991FE0"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<lq reftitle="Eliot Kimber, Yahoo! DITA Users Group"> 
+		  <p>&gt;&gt;I'm using xrefs in a bookmap and would like the link text to
+			 be the page number of the linked topic. I am used to DocBook where I could use
+			 an refstyle attribute with select: pagenumber value. Is there anything similar
+			 I can use in DITA?&lt;&lt; 
+		  </p> 
+		  <p>The closest at the moment is to use @outputclass on xref and then
+			 provide custom processing that uses the outputclass value to do what you want.
+			 Easier said then done, especially for the PDF processing, but maybe Suite
+			 Solutions can at least point to the relevant code? 
+		  </p> 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

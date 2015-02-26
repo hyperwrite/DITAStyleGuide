@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<concept id="concept_7C3D99025782420EB9D9E09CC72997E9"> 
+  <title>Legacy Content</title> 
+  <shortdesc><?xm-replace_text Short Description?>
+  </shortdesc> 
+  <prolog><metadata><keywords><indexterm>legacy
+			 content</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p><?xm-replace_text Paragraph?>
+	 </p> 
+	 <section id="section_57E3307231624F25AC5EC247E870A7F4"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<p>Referring to the US Government's 
+		  <term>Open Government Directive</term>: 
+		  <lq
+		  reftitle="Kyle Lindsay, Vamosa, on LinkedIn Content Wrangler Community Discussion">
+			 
+			 <ul id="ul_EE6AE43E7CEB4570853CC584C9E34013"> 
+				<li id="li_B830D0D2E1C84F2CB6AD0BADE5670AAA"> Firstly, all Web
+				  content must be analyzed to discover what content the agency has and where it
+				  is stored. 
+				</li> 
+				<li id="li_3839AAACCDCA4BC2B8CF2474142815E3">Secondly, it must be
+				  enhanced to improve on the condition of the content 
+				</li> 
+				<li id="li_FB6AAB9964444A9AAE7CA9A8711639B2">Thirdly, it must be
+				  standardized to ensure content can be re-used 
+				</li> 
+				<li id="li_DB72D05CDA7149A28F9AC125FC302CF3">Fourthly, it needs to
+				  be findable, by being located within the Information Architecture in a suitable
+				  repository 
+				</li> 
+				<li id="li_8DFE9C28259D485EA0CF03B996363C75">And lastly, it needs
+				  to be monitored and maintained in real time against the organization's quality
+				  policies to ensure the quality standards that have been established continue to
+				  be met 
+				</li> 
+			 </ul> 
+		  </lq> 
+		</p> 
+	 </section> 
+  </conbody> 
+</concept> 

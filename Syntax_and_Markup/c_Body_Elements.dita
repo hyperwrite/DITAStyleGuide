@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D2470" status="new"> 
+  <title>Body elements</title> 
+  <shortdesc>The simple block structures within the body of topics are 
+	 <ph
+	  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_categorised"><?xm-replace_text Phrase?></ph>
+	 as the 
+	 <term>body elements</term>. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>elements<indexterm>body</indexterm></indexterm><indexterm>body
+			 elements</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>Body elements are the most common content authoring block elements, and
+		include: 
+	 </p> 
+	 <ul outputclass="listbullet" id="ul_564340C04DA74BA894D804012A2BBACF"> 
+		<li id="li_0F650A58E8CF4C4DAAFCFB11FBE61F09">paragraph 
+		</li> 
+		<li id="li_5FE7DCDC88B2457F975B10FB119B1842">list 
+		</li> 
+		<li id="li_000CBB95CEE845179352B48B821A455A">phrase 
+		</li> 
+		<li id="li_4F292C3B94544781AFAE2150586AFE7D">figure 
+		</li> 
+	 </ul> 
+  </conbody> 
+</concept> 

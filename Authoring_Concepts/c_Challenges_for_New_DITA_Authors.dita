@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept id="D9183"> 
+  <title>Challenges for new DITA authors</title> 
+  <shortdesc>The philosophical differences between style-based authoring and
+	 semantic authoring present the greatest challenges for new DITA authors. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>style vs
+			 format</indexterm><indexterm>separation of content and
+			 form</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>In style-based authoring, the structure of a document is defined by the
+		styles applied to its components. For example, a second level heading might be
+		defined in a document by the application of a 
+	 <option>heading 2</option> style. Likewise, the presentational style of the
+	 deliverable document is defined by styles embedded within the authored
+	 document. For example, text to be indented by 2 cm might be defined in the
+	 paragraph by the application of an 
+	 <option>Indent2</option> style. 
+	 </p> 
+	 <p>The separation of content and form in DITA sees the upper-level
+		structure being defined outside the content (in the ditamap), and the
+		presentational style being applied in a publishing process entirely separate
+		from the authoring process. The presentational form for a document can be
+		unknown to the DITA author. The same topic can have different appearances and
+		different structures when the same source content is used to produce different
+		deliverable documents. 
+	 </p> 
+	 <p>For example, a DITA topic in one deliverable document may have a 
+	 <option>heading 2</option> style applied during processing, but the same
+	 topic in a different deliverable document may have 
+	 <option>heading 4</option> applied. The publishing rules determine the
+	 mapping of DITA semantic elements to output presentational form. 
+	 </p> 
+	 <p>These differences between style-based authoring and semantic authoring
+		present the greatest challenge to new DITA authors. 
+	 </p> 
+	 <p> 
+		<draft-comment>Mention the difference between a heading and a title. 
+		</draft-comment> 
+	 </p> 
+	 <section id="section_898630BD571A4FD8807774911188B4B7"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<lq reftitle="Richard Ward, Yahoo! DITA Users Group"
+		 href="http://tech.dir.groups.yahoo.com/group/dita-users/message/14738">I've
+		  been reading about XML and Dita for the past couple of weeks, and for the most
+		  part, it all seems very exciting. I've got myself oXygen and am ready to go.
+		  But I have to admit it's fiendishly complex and I've yet to discover how I
+		  actually get the output to look the way I want it to look. I'm talking about
+		  the header1, header2 ... paragraph styles and the master page layout in my
+		  generated PDF. It's either so obvious that I've overlooked it, or its so
+		  complicated everyone just uses the default style and doesn't bother formatting
+		  the output. Richard 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

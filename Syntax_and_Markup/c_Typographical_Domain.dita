@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept id="D3783"> 
+  <title> Typographic (highlighting) domain</title> 
+  <prolog><metadata><keywords><indexterm>domains<indexterm>typographic</indexterm></indexterm><indexterm>typographic
+			 domain</indexterm><indexterm>highlighting domain<index-see>typographical
+				domain</index-see></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>The elements in the typographic domain are used to describe styling
+		characteristics. They are primarily intended as the basis for 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialisation"><?xm-replace_text Phrase?></ph>.
+		Avoid using these elements. 
+	 </p>
+	 <p importance="high">Semantic elements should always be used in preference
+		to typographic elements. 
+	 </p> 
+	 <section id="section_5046153081584DABACE573C5A1DDA51C"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<lq>Never use these elements when a semantically specific element is
+		  available. These elements are not intended for use by 
+		  <ph xml:lang="en-US">specializers</ph>, and are intended solely for use
+		  by authors when no semantically appropriate element is available and a
+		  formatting effect is required. 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

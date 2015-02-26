@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept id="D5113" xml:lang="en" status="new"> 
+  <title>File and folder structure</title> 
+  <shortdesc> When working with a file, you should create a folder structure
+	 that makes it easy for authors to locate topics to edit or cross-reference. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>separation
+			 of content and form</indexterm><indexterm>file
+			 naming<indexterm>conventions</indexterm></indexterm><indexterm>folder
+			 structure</indexterm><indexterm>structure of files and
+			 folders</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>The ideal file structure for a DITA project is to have ditamaps at the
+		root level of the documentation repository folder, and content topics stored in
+		sub-folders down from the root. This structure ensures that 
+		<term>topicref</term> links to content always move down the tree
+		structure. As ditamaps are an informational superset of topics, having ditamaps
+		in a 
+		<term>superfolder</term> is a logical approach. 
+	 </p> 
+	 <p>Images and other media resources should be stored in a separate folder
+		(eg, 
+		<filepath>/images</filepath>). 
+	 </p> 
+	 <p>There are a number of file topologies that you can use, including: 
+	 </p> 
+	 <ul outputclass="listbullet" id="ul_1829FF2C356D4B2A90820C961CD4F5A6"> 
+		<li id="li_B2E301DBA3F84F09A884F3872F873EF2">by information type (eg,
+		  concept, task, reference) 
+		</li> 
+		<li id="li_FAB323009C9D4ABFA596A069F89AF500">by system component
+		  documented (eg, engine, fuel system) 
+		</li> 
+		<li id="li_43006271035E421296DDDA7E92A86641">by subject area (eg, Getting
+		  Started, Working with Debits). 
+		</li> 
+	 </ul> 
+	 <p>Using a logical, context-free storage location for topics reduces the
+		problems associated with having to later move files from one project folder to
+		another project folder. It also makes the files easier to find. 
+	 </p> 
+	 <p importance="high">Never base storage locations on where you want to
+		output files to be generated, as this introduces context into file locations,
+		and breaks the fundamental principle of separation of content from format from
+		delivery. 
+	 </p> 
+	 <p>Avoid using a 
+		<term>flat</term> or 
+		<term>shallow</term> file structure, with hundreds of topic files stored
+		in one folder. This structure may result in slower file retrieval in DITA
+		editors, where the 
+		<uicontrol>File Open</uicontrol> dialog, for instance, needs to list all
+		the files for selection. 
+	 </p> 
+  </conbody> 
+</concept> 

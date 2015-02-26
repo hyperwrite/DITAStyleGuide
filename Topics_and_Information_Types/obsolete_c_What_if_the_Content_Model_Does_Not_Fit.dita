@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en-au" id="D2421"> 
+  <title>What if a content model doesn't fit?</title> 
+  <conbody> 
+	 <p> 
+		<draft-comment>This belongs in syntax, with a new title, such as Hacking
+		  the Content Model. File name would need changing too. May be already a topic
+		  with same purpose, so maybe merge? 
+		</draft-comment> 
+	 </p> 
+	 <section id="section_444AFE9E2D0C412FA36AAD511CD30B2C"
+	 audience="contributor"> 
+		<title>Rationale</title> 
+		<lq>I was wondering if anyone knows of an extension that's been developed
+		  that allows you to add a &lt;note&gt; element *between* &lt;step&gt; elements
+		  in a DITA task. (Even if you have to wrap it in an &lt;info&gt; element.) There
+		  are places in our documentation where we need a cautionary statement to come
+		  before a step or a series of steps. Putting it within the previous step's
+		  element won't cut it. 
+		</lq> 
+		<lq>For example: 
+		</lq> 
+		<codeblock>&lt;steps&gt; 
+      &lt;step&gt;&lt;cmd&gt;This is the first step.&lt;/cmd&gt;&lt;/step&gt; 
+      &lt;info&gt;&lt;note type="warning"&gt;Here is a warning statement that 
+      needs to come before the next step.&lt;/note&gt;&lt;/info&gt; 
+      &lt;step&gt;&lt;cmd&gt;This is the next step.&lt;/cmd&gt;&lt;/step&gt; 
+      &lt;step&gt;&lt;cmd&gt;You get the point.&lt;/cmd&gt;&lt;/step&gt; 
+      &lt;/steps&gt;</codeblock> 
+		<p><cite>Mike Kokic, correspondence to dita-users Yahoo group</cite> 
+		</p> 
+	 </section> 
+  </conbody> 
+</concept> 

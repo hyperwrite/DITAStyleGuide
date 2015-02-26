@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D9215" status="new"> 
+  <title>Nested content references</title> 
+  <shortdesc>Content references can be nested inside other content references. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>conref
+			 attribute</indexterm><indexterm>attributes<indexterm>conref</indexterm></indexterm><indexterm>transclusion</indexterm><indexterm>elements<indexterm>ph</indexterm><indexterm>tm</indexterm></indexterm><indexterm>ph
+			 element</indexterm><indexterm>tm element</indexterm><indexterm>nested content
+			 references</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>Nested conrefs are content references within other content references.
+		For example, a company name variable might be transcluded into a product name
+		variable. 
+	 </p> 
+	 <p>For example, the company name 
+		<q><ph
+		  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/ph_Subaru_company_name"><?xm-replace_text Phrase?></ph></q>
+		might be transcluded by itself, or within the full product name 
+		<q><ph
+		  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/ph_Subaru_company_name"><?xm-replace_text Phrase?></ph>
+		  
+		  <ph
+			conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/ph_Impreza_product_name"><?xm-replace_text Phrase?></ph>
+		  XRW</q>, which itself includes the product trademark. 
+	 </p> 
+	 <fig id="fig_F603CAB8079B48D1895D7A9F6F0D8FA1"> 
+		<title>Nested conref principles</title><image placement="break"
+		align="left" id="image_C84DA34975984A4AB5C62A6393614C23"
+		href="../images/nested_conref_schematic.svg" width="425px" height="66px"> 
+		  <alt>Schematic diagram showing a phrase and a tm element nested inside
+			 a phrase element 
+		  </alt></image> 
+	 </fig> 
+	 <p>The DITA code for such a nested conref might be: 
+		<codeblock>&lt;p&gt;The &lt;ph conref="co.dita#corpnames/var_xrw" /&gt; was released in 1990.&lt;/p&gt;</codeblock>where the 
+		<userinput>var_xrw</userinput> 
+		<synph>ph</synph> element in 
+		<filepath>co.dita</filepath> is: 
+		<codeblock>&lt;ph id="var_xrw"&gt;
+  &lt;ph conref="#corpnames/co"/&gt; &lt;tm conref="#corpnames/impxrw" tm="-dita-use-conref-target"/&gt;
+&lt;/ph&gt;</codeblock>and the 
+		<varname>co</varname> and 
+		<varname>impxrw</varname> elements are: 
+		<codeblock>&lt;ph id="co"&gt;<ph conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/ph_Subaru_company_name"><?xm-replace_text Phrase?></ph>&lt;/ph&gt;
+...
+&lt;tm id="impxrw" tmtype="reg" tmowner="FJ Heavy Industries"&gt;<ph conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/ph_Impreza_product_name"><?xm-replace_text Phrase?></ph> XRW&lt;/tm&gt;</codeblock> 
+	 </p> 
+	 <p
+	  conref="c_Reusing_Content_in_Different_Element.dita#D5030/p_text_elment_conref"><?xm-replace_text Paragraph?>
+	 </p> 
+  </conbody> 
+</concept> 

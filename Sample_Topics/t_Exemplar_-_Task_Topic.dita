@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_C4683F4710DD468C9A3383350C335F74" status="new"> 
+  <title>Setting the local directory</title> 
+  <shortdesc>When the FTP connection is established, the local files list will
+	 automatically display the contents of the local directory specified on the 
+	 <uicontrol>Advanced</uicontrol> tab. 
+  </shortdesc> 
+  <prolog><author
+	 conref="../../conref/conref_source_metadata.dita#topic_hw_conref_meta/author_tony_self"></author><metadata><keywords><indexterm>exemplar
+			 topic</indexterm></keywords></metadata>
+  </prolog> 
+  <taskbody> 
+	 <context id="context_F562A582175C43D18317AEE5DC9B4600">Use the 
+		<uicontrol>Default local directory:</uicontrol> field to specify the
+		starting local directory. 
+	 </context> 
+	 <steps id="steps_C14A5DBF013245C89CDCC8A8526F19A6"> 
+		<step id="step_02F3FCE41CF34FF585F61DD3032D6D2D"> 
+		  <cmd>Click the 
+			 <uicontrol>Advanced</uicontrol> tab. 
+		  </cmd> 
+		</step> 
+		<step id="step_55BA7DDFDD1845F9B6122691722F7794"> 
+		  <cmd>In the 
+			 <uicontrol>Servertype</uicontrol> field, select 
+			 <option>Default (Autodetect)</option>. 
+		  </cmd> 
+		  <info>Even if you know your particular server type, it is better to
+			 choose 
+			 <option>Default (Autodetect)</option> in case the server type changes
+			 during the life of the project. 
+		  </info> 
+		</step> 
+		<step id="step_81A348FD6C7F42C6B2646CF7736C6B42"> 
+		  <cmd>In the 
+			 <uicontrol>Default local directory:</uicontrol> field, enter (or
+			 browse for) the name of the local directory used to store temporary data. 
+		  </cmd> 
+		  <stepxmp><userinput>c:\temp</userinput> 
+		  </stepxmp> 
+		  <info><image placement="break" align="left"
+			 id="image_2363352E917344A591FEB60B480ECB01"
+			 href="../images/screen_capture_field_example.png" width="268px" height="61px"> 
+				<alt>Default local directory field 
+				</alt></image> 
+		  </info> 
+		</step> 
+		<step id="step_9EE00CE2EA0B452687F7313E5DFEE0FA"> 
+		  <cmd>Click 
+			 <uicontrol>OK</uicontrol>. 
+		  </cmd> 
+		  <info> 
+			 <note type="caution">Never enter your password when connecting to an
+				FTP site from within the corporate firewall. 
+			 </note> 
+		  </info> 
+		</step> 
+	 </steps> 
+	 <result id="result_15E77C61D61D4770A6224E0A74A787E3">When the FTP
+		connection is next established, the local files list will default to the
+		directory name entered. 
+	 </result> 
+  </taskbody> 
+</task> 

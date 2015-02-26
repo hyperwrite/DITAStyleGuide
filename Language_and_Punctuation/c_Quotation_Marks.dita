@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D9122" status="new"> 
+  <title>Quotation marks</title> 
+  <shortdesc>Quotation marks should not be included in DITA content. The marks
+	 should be added, if required, during the publishing process. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>quotation
+			 marks</indexterm><indexterm>quotations</indexterm><indexterm>elements<indexterm>lq</indexterm><indexterm>q</indexterm></indexterm><indexterm>q
+			 element</indexterm><indexterm>lq element</indexterm><indexterm>inverted
+			 commas</indexterm><indexterm>punctuation</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>Quotation marks are formatting constructs. They are arguably not
+		punctuation, but highlighting devices like bold and italics. (In fact, in some
+		cases, bold or italic is used in place of quotation marks.) However, they do
+		contribute to the communication of meaning, in that they often indicate
+		semantics. 
+	 </p> 
+	 <p>Most commonly, quotation marks indicate that the encapsulated text is a
+		literal quotation. DITA has 
+		<synph>q</synph> and 
+		<synph>lq</synph> elements (quotation and long quotation, respectively)
+		which should be used to mark up the semantic meaning of 
+		<q>quotation</q>. When the content is processed into a reading format,
+		the rendering process may highlight the quoted text with italics, single
+		quotation marks, double quotation marks, or any other available highlighting
+		device. Or it may leave the quoted text unadorned. Your role as an author is
+		simply to semantically identify quotations. 
+	 </p> 
+	 <p>Other common uses of quotation marks are for highlighting purposes only,
+		or for purposes more difficult to semantically identify. For example, quotation
+		marks may be used to highlight the use of a new term (<b>this is what is known
+		  as "WYSIOO"</b>), to indicate a foreign term (<b>they preferred the "status
+		  quo"</b>) to indicate irony (<b>his autobiography is a great "novel"</b>), to
+		cite a newspaper or reference (<b>it was in "The Age"</b>) or to reference
+		popular culture (<b>that sausage was "noice"</b>). 
+	 </p> 
+	 <p>If the DITA information type you are using does not provide a semantic
+		element, you should try to re-phrase the text so that it reads unambiguously
+		without the quotation marks. 
+	 </p> 
+	 <p>In the 
+		<cite>Cambridge Guide to Australian English Usage</cite>, author Pam
+		Peters points out that "ideally, the intended emphasis or meaning is conveyed
+		by the choice of words, appropriately arranged". 
+		<cite product="academic_only">(Peters, p670)</cite> For example,
+		prefixing the word 
+		<q>so-called</q> may help convey the meaning of irony or emphasis. 
+	 </p> 
+	 <p>Malcolm Parkes, author of 
+		<cite>Pause and Effect: An Introduction to the History of Punctuation in
+		  the West</cite>, wrote of the quotation mark: 
+	 </p> 
+	 <lq reftitle="Parkes 1993">Its primary function is to resolve structural
+		uncertainties in a text, and to signal nuances of semantic significance which
+		might otherwise not be conveyed at all, or would at best be much more difficult
+		for a reader to figure out. 
+	 </lq> 
+	 <p>According to Parkes, 
+		<q>quotation marks were gradually accepted during the first half of the
+		  eighteenth century</q>, which certainly means that Shakespeare managed without
+		them at all! 
+	 </p> 
+	 <p> 
+		<draft-comment>Maybe this belongs in Syntax and Mark-up? Hard to say, but
+		  it is probably more related to punctuation. 
+		</draft-comment> 
+	 </p> 
+	 <section id="section_0C51FE366C6B4E398F5F2E1FE7546BB7"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<p>The W3C HTML 5 standard directs that quotation marks (for 
+		  <synph>q</synph> elements) must 
+		  <b>not</b> be added by the author; they must instead be added by
+		  browsers (or other user agents) through devices such as CSS. Interestingly, by
+		  contrast, the XHTML standard makes no such ruling. 
+		</p> 
+		<lq reftitle="Robert Anderson, DITA TC List, 4 Mar 2009">The DITA
+		  specification should recommend that authors do not add quote punctuation on
+		  their own, and that rendering tools or stylesheets should add appropriate
+		  styling (such as locale-specific quotation marks). 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

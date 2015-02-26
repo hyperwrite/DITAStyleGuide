@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<concept id="concept_B467B8254BA24147BAF963529F1AC78A"> 
+  <title>Special characters and dates</title> 
+  <conbody> 
+	 <p>Special characters and dates require different handling than normal
+		text.
+	 </p>
+  </conbody> 
+</concept> 

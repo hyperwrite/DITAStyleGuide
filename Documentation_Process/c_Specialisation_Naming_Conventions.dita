@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D4737" status="new"> 
+  <title><ph
+	 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_Specialised_InitCap"><?xm-replace_text Phrase?></ph>
+	 element and attribute naming convention</title> 
+  <shortdesc><ph
+	 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_Specialised_InitCap"><?xm-replace_text Phrase?></ph>
+	 elements and attributes should be named using 
+	 <term>CamelCase</term> with the first character in lower case. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>naming
+			 conventions</indexterm><indexterm>file naming</indexterm><indexterm
+		  conref="../../conref/conref_source_metadata.dita#topic_hw_conref_meta/index_specialisation"><?xm-replace_text Index Term?></indexterm><indexterm>element
+			 naming</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>When the DITA schema is 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialised"><?xm-replace_text Phrase?></ph>
+		to suit a particular documentation purpose, the person creating the 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialisation"><?xm-replace_text Phrase?></ph>
+		(the 
+		<term
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/term_specialiser"><?xm-replace_text Term?></term>)
+		must choose names for elements and attributes. 
+	 </p> 
+	 <p>It is technically valid for the 
+		<term
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/term_specialiser"><?xm-replace_text Term?></term>
+		to use all lower case (<synph>buttonname</synph>), lower case with hyphens
+		(<synph>button-name</synph>), 
+		<term>CamelCase</term> (<synph>ButtonName</synph>), lower then CamelCase
+		(<synph>buttonName</synph>), or some other permutation. However, 
+		<term>CamelCase</term> with a lower case first letter is the preferred
+		convention. 
+	 </p> 
+	 <p importance="high">You should: 
+	 <ul outputclass="listbullet" id="ul_86F7706E47B345069F36D0DDC3C78E97"> 
+		<li id="li_D25DDF69703E4423B8279F1A20EC3F5D">use an identifying prefix to
+		  element names 
+		</li> 
+		<li id="li_171A6743BC334E49A9B18224ECC24C14">use element and attribute
+		  names in lower then 
+		  <term>CamelCase</term> 
+		</li> 
+	 </ul> 
+	 </p> 
+	 <p>In the previous example, the recommended name would therefore be 
+		<synph>hwButtonName</synph>. 
+	 </p> 
+	 <p importance="high">You must not use names already used in the base DITA
+		content model. 
+	 </p> 
+	 <p>The use of a prefix will make 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialised"><?xm-replace_text Phrase?></ph>
+		elements more 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_recognisable"><?xm-replace_text Phrase?></ph>,
+		and will avoid the chances of a name clash with base DITA names. 
+	 </p> 
+	 <section id="section_60FC19D36C874DA69A9542578C5A2A26"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<lq href="http://markmail.org/message/eqec7m24yt2a67nx"
+		 reftitle="Eric Sirois, OASIS DITA Technical Committee mailing list">I wonder if
+		  it make sense to add a prefix to the element names in your specialization, for
+		  instance something like &lt;sidName&gt;, so that a) the element name is a bit
+		  more descriptive in its use b) reduces the likelihood of colliding with another
+		  element 
+		</lq> 
+		<lq reftitle="DITAworks support documentation"
+		 href="http://support.ditaworks.com/problems_and_solutions/errors-in-dita-specializations-modeling/">
+		  
+		  <p>Next problem that we find in specialized models is a problem related
+			 to naming of newly defined topic types (infotypes) or elements. To be more
+			 precise, naming of your new elements or infotypes becomes a problem when you
+			 give them the same name as is already being used in basic DITA model 
+		  </p> 
+		  <p>Due to technical specifications of DITA specialization approach, it
+			 is not possible to use the same names for new infotypes or elements that are
+			 already defined in base DITA model or other models being used. This will result
+			 in conflict during name resolution and can lead to unpredictable results on the
+			 stage of DTD parsing and transformation. 
+		  </p> 
+		  <p><b>Solution:</b> 
+		  </p> 
+		  <p>Give unique names to your new infotypes and elements. It is a good
+			 strategy to choose some kind of prefix for the names of your specialized
+			 elements. In this way, you will most probably avoid naming conflicts with other
+			 models and also distinguish standard DITA elements easily from specialized
+			 elements later on when the content is being authored. 
+		  </p> 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

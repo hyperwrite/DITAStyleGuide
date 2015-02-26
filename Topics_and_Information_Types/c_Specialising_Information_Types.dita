@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_582EB46BEB214B09939A4BA5597D9827" status="new"
+ xml:lang="en"> 
+  <title><ph
+	 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_Specialised_InitCap"><?xm-replace_text Phrase?></ph>
+	 information types</title> 
+  <shortdesc><ph
+	 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_Specialised_InitCap"><?xm-replace_text Phrase?></ph>
+	 information types provide a topic architecture that closely matches the
+	 structure of your content. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm
+		  conref="../../conref/conref_source_metadata.dita#topic_hw_conref_meta/index_specialisation"><?xm-replace_text Index Term?></indexterm><indexterm>information
+			 types<indexterm
+			 conref="../../conref/conref_source_metadata.dita#topic_hw_conref_meta/index_specialised"><?xm-replace_text Index Term?></indexterm></indexterm><indexterm>content
+			 model</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>DITA is designed around topic 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialisation"><?xm-replace_text Phrase?></ph>.
+		Many types of content will not suit the structure of the DITA base information
+		types of concept, task and reference, but new information types, with a
+		structure to exactly suit the nature of the content, can be evolved from the
+		base types. 
+	 </p> 
+	 <p>A 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialised"><?xm-replace_text Phrase?></ph>
+		information type is always derived from another DITA information type, so that
+		you only need to define how your information type is different from what it is
+		based on. 
+	 </p> 
+  </conbody> 
+</concept> 

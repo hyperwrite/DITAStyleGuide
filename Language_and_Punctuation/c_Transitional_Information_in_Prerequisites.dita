@@ -1,0 +1,159 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D4705" status="new"> 
+  <title>Transitional information in semantic blocks</title> 
+  <shortdesc>Headings, stem sentences and transitional text phrases should not
+	 be used as a way of introducing semantic text blocks such as pre-requisites.
+	 The publishing process is capable of systematically adding the necessary
+	 transitional information, leading to consistency and simplicity. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>postreq
+			 element</indexterm><indexterm>prereq
+			 element</indexterm><indexterm>elements<indexterm>prereq</indexterm><indexterm>postreq</indexterm><indexterm>context</indexterm><indexterm>result</indexterm></indexterm><indexterm>context
+			 element</indexterm><indexterm
+		  conref="../../conref/conref_source_metadata.dita#topic_hw_conref_meta/index_labelling"><?xm-replace_text Index Term?></indexterm><indexterm>result
+			 element</indexterm><indexterm>transitional
+			 information</indexterm><indexterm>stem sentences</indexterm><indexterm>glue
+			 text</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p importance="high">Transitional text in elements such as pre-requisites
+		(<synph>prereq</synph>), context statements (<synph>context</synph>), results
+		(<synph>result</synph>), and post-requisites (<synph>postreq</synph>) should be
+		omitted. 
+	 </p> 
+	 <p>There are a number of ways in which transitional text is incorrectly
+		included in semantic blocks, such as in the following examples: 
+	 <ul id="ul_F2A959CB28A34B84A0860816EAD31BF8"> 
+		<li id="li_8805DA2BCBDC43078875E7CBB20F6C4C"><q>In this topic...</q>
+		  (within 
+		  <synph>shortdesc</synph>) 
+		</li> 
+		<li id="li_FD5527249F7C4EA7A00FA90CA1AFB350"><q>The system must meet the
+			 following conditions before starting the procedure...</q> (within 
+		  <synph><sep>context</sep></synph>) 
+		</li> 
+		<li id="li_1A9C424AE5334E38876039361F97DF7E"><q>Before entering the PIN
+			 you must complete some important checks...</q> (within 
+		  <synph>prereq</synph>) 
+		</li> 
+		<li id="li_2C238D3D12554167B647DC0E198BE2AB"><q>After completing the
+			 procedure you will find...</q> (within 
+		  <synph>postreq</synph>) 
+		</li> 
+		<li id="li_05B0E213BDE643449810CFEF0D792757"><q>In this procedure, the
+			 steps for...</q> (within 
+		  <synph>context</synph>) 
+		</li> 
+	 </ul> 
+	 </p> 
+	 <p>In DITA, alternative devices and a minimalist approach are used in place
+		of transitional text. These devices include a publishing process that can
+		systematically apply labels to parts of the output. For example, the words 
+		<q>Before you begin</q> and a graphical icon can be rendered in the
+		output immediately before every pre-requisite 
+		<synph>prereq</synph> element text. Such systematic and consistent
+		labelling allows semantic elements to be easily identified by the reader. 
+	 </p> 
+	 <p importance="high">If your publishing process treats semantic elements
+		such as 
+		<synph>postreq</synph> in the same way as normal paragraph
+		(<synph>p</synph>) elements, you should change your publishing process to
+		generate transitional information rather than change your writing approach to
+		introduce redundant transitional information in your content. 
+	 </p> 
+	 <p importance="high">Do not include labels, such as 
+		<q>Note</q>, within the text of admonishment elements. The appropriate
+		label or formatting will be applied when the paragraph is rendered during
+		publishing. 
+	 </p> 
+	 <section id="section_4BFAB814530B47FE99F03A2BA7F9041D"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<lq
+		 reftitle="Swinburne University of Technology - Structured Authoring class notes">
+		  
+		  <p>Q. The &lt;task&gt; topic has 
+			 <synph>prereq</synph> (pre-requisite) and &lt;result&gt; elements.
+			 When typing content into, for example, a 
+			 <synph>prereq</synph> element, should I include the label
+			 "Prerequisite: " at the start? 
+		  </p> 
+		  <p>A. The label is part of the format or presentation; it is not part
+			 of the content. Therefore, it should definitely 
+			 <b>not</b> be included. The processing can add those labels, or other
+			 formatting artifacts, if required. 
+		  </p> 
+		</lq> 
+		<p>On the 
+		  <xref href="http://tech.groups.yahoo.com/group/dita-users/"
+			scope="external" format="html">Yahoo! DITA Users Group list</xref>, Kristen
+		  James Eberlein provided three examples of how the presentation of
+		  pre-requisites can affect their construction. She provided examples of
+		  pre-requisites used with a heading, a stem sentence, and phrasing withing the
+		  paragraph. 
+		</p> 
+	 </section> 
+	 <example id="section_21B8F5BDCF8D4D97938715EC3A6685AE"
+	  audience="contributor"> 
+		<title>Using a heading</title> 
+		<p>Product: WebSphere Application Server 
+		</p> 
+		<p>URL: http://publib.boulder.ibm.com/infocenter/wasinfo/v6r0/topic/
+		  com.ibm.websphere.base.doc/info/aes/ae/tins_runSilent.html 
+		</p> 
+		<p> 
+		  <lq> 
+			 <p><b>Before you begin</b> 
+			 </p> 
+			 <p>[body of &lt;prereq&gt; element here -- snipped because it is
+				wordy and not very helpful] 
+			 </p> 
+		  </lq> 
+		</p> 
+	 </example> 
+	 <example id="section_22CC84E7470541F68A2F7CBC95A114CA"
+	  audience="contributor"> 
+		<title>Using a stem sentence</title> 
+		<p>Product: SAN Volume Controller 
+		</p> 
+		<p>URL: http://publib.boulder.ibm.com/infocenter/svcic/v3r1m0/topic/
+		  com.ibm.storage.svc.console.doc/svc_instsuprailups5115_228zf5.html 
+		</p> 
+		<p> 
+		  <lq> 
+			 <p>Complete the following prerequisites before installing the support
+				rails: 
+			 </p> 
+			 <p>Use the user's hardware location chart to determine where in the
+				rack that the 2145-1U uninterruptible power supply is to be installed. 
+			 </p> 
+			 <p>At the back of the rack, observe the Electronic Industries
+				Alliance (EIA) positions and determine where you are going to install the
+				2145-1U uninterruptible power supply. Because of its weight, position the
+				2145-1U uninterruptible power supply where it is easy to handle in one of the
+				lower positions in the rack. 
+			 </p> 
+		  </lq> 
+		</p> 
+	 </example> 
+	 <example id="section_9AB69717E2E64C4C8679CA030AA43D1B"
+	 audience="contributor"> 
+		<title>Using a phrase in the text</title> 
+		<p>Product: IBM Director 5.10 
+		</p> 
+		<p>URL: http://publib.boulder.ibm.com/infocenter/
+		  eserver/v1r2/topic/diricinfo_5.20/fqm0_t_installing_ibm_director_server_on_i5os_cd.html
+		  
+		</p> 
+		<p> 
+		  <lq>Before you install IBM Director Server, make sure that you have
+			 completed planning and preparing for the installation, and that the server
+			 meets the *hardware requirements* to install IBM Director. You also must meet
+			 the prerequisites included in *Preparing to install IBM Director on IBM i
+			 (formerly i5/OS)*. 
+		  </lq> 
+		</p> 
+	 </example> 
+  </conbody> 
+</concept> 

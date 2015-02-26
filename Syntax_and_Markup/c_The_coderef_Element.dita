@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D9343" rev="1.2" status="new"> 
+  <title>The 
+	 <synph>coderef</synph> element</title> 
+  <shortdesc>The 
+	 <synph>coderef</synph> element is used to reference external files, such as
+	 code samples, that are then imported as part of the processing to be rendered
+	 as standard text. The 
+	 <synph>coderef</synph> is an alternative to the 
+	 <synph>codeblock</synph> element for cases when the code is stored or
+	 maintained in its original form outside the DITA source. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>codeblock
+			 element</indexterm><indexterm>coderef
+			 element</indexterm><indexterm>transclusion</indexterm><indexterm>escape
+			 characters</indexterm><indexterm>conref</indexterm><indexterm>elements<indexterm>coderef</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>The 
+		<synph>coderef</synph> element, introduced in 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_DITA12"><?xm-replace_text Phrase?></ph>,
+		is a reference element like 
+		<synph>xref</synph> and 
+		<synph>conref</synph>. Its purpose is to allow the transclusion of XML
+		and other blocks of code from an external file. 
+	 </p> 
+	 <p>For example, you may want to include a sample block of HTML code stored
+		in its own HTML file. When the 
+		<synph>coderef</synph> is processed, the referenced code file is
+		imported, 
+		<term>escaped</term> (to convert the tagging delimiting characters such
+		as 
+		<q>&lt;</q> are displayed, rather than treated as DITA instructions), and
+		then output in the same way as a static 
+		<synph>codeblock</synph> element. 
+	 </p> 
+	 <section id="section_46AF48EB3E5D419D8E03A201CAAAC0C0"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<lq
+		 reftitle="Overview of DITA 1.2 presentation by Kristen James Ebelein, RealWorld DITA Conference, 14 September 2009">&lt;coderef&gt;
+		  element allows verbatim inclusion of text (such as source code). 
+		</lq> 
+		<lq reftitle="Don Day, Yahoo! DITA Users Group"
+		 href="http://tech.groups.yahoo.com/group/dita-users/message/17080"> The coderef
+		  element is new with 
+		  <ph
+			conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_DITA12"><?xm-replace_text Phrase?></ph>.
+		  Processing for the still-in-development 1.2 spec is supported in the latest
+		  DITA OT 1.5 tools (at least for HTML output). If you commit to using 1.2
+		  features, be aware that you create a dependency on content interchange with
+		  other sharers of your topics, and that things can change in the DTDs before 1.2
+		  becomes fully approved. 
+		</lq> 
+		<lq reftitle="Stan Doherty, Yahoo! DITA Users Group"
+		 href="http://tech.groups.yahoo.com/group/dita-users/message/17083"> The new
+		  DITA1.2 &lt;coderef&gt; element indeed works in all recent versions of
+		  DITA-OT1.5. I use it extensively in my production topics. Here's an example: 
+		  <codeblock>&lt;codeblock&gt;
+ &lt;coderef href="sources/ formatted_ text.txt" /&gt;
+&lt;/codeblock&gt;</codeblock> 
+		</lq> 
+		<lq href="http://lists.oasis-open.org/archives/dita/200712/msg00024.html"
+		reftitle="Eliot Kimber, OASIS DITA TC mailing list">The current wording: 
+		  <q>Create new coderef element modelled after xref, with equivalent
+			 attributes but no subelements, since the purpose of the element is to pull in
+			 the targetted file into the containing codeblock element, massaging &lt; and
+			 &gt; characters as necessary to make it valid CDATA.</q>" Inappropriately
+		  describes a transformation, as though the processing result was *always* to
+		  literally embed the referenced content in some new XML instance. It should
+		  simply say something like: 
+		  <q>the purpose is to present the literal character content of the
+			 referenced resource as though it occurred at the point of reference (e.g.,
+			 within a CDATA marked section or with any XML mark-up characters escaped).</q>.
+		  
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

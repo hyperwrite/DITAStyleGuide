@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<concept id="concept_7EFF0744D5144C8180FD9433AE4BD361"> 
+  <title>Programming domain</title> 
+  <prolog><metadata><keywords><indexterm>domains<indexterm>programming</indexterm></indexterm><indexterm>programming
+			 domain</indexterm><indexterm>exemplar<indexterm>chunking
+				attribute</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>The elements in the programming domain are designed for documenting
+		programming languages. 
+	 </p>
+  </conbody> 
+</concept> 

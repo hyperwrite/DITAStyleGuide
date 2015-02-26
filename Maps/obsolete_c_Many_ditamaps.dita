@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en-au" id="D2823"> 
+  <title>Many ditamaps for same content repository</title> 
+  <shortdesc><?xm-replace_text Short Description?>
+  </shortdesc> 
+  <conbody> 
+	 <p>Topic-level content reuse is simple to understand. 
+	 </p> 
+	 <p>A ditamap is an ingredient list of a collection. More than one ditamap
+		can reference the same topic. 
+	 </p> 
+	 <p>So if you have a repository of DITA content topics covering how to use a
+		range of cameras from the same manufacturer, we could create a ditamap for the 
+		<cite>Model 400 User Guide</cite>, another ditamap for the 
+		<cite>Model 700 User Guide</cite>, and another for the 
+		<cite>Model 700 Administrator's Guide</cite>. Some topics might be common
+		to all ditamaps, while others might be unique to one. 
+	 </p> 
+  </conbody> 
+</concept> 

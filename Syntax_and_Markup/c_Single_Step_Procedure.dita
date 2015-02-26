@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D9165" status="new"> 
+  <title>Single step procedure</title> 
+  <shortdesc>A procedure or task containing just one action should be marked-up
+	 using the normal steps/step/cmd structure. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>steps
+			 element</indexterm><indexterm>step element</indexterm><indexterm>single step
+			 procedure</indexterm><indexterm>elements<indexterm>steps</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p importance="high">A single step procedure should still be marked up
+		using the 
+		<synph>steps</synph> structure, rather than 
+		<synph>steps-unordered</synph> or 
+		<synph>steps-informal</synph>. 
+	 </p> 
+	 <p>Some writers object to the default processing of something like: 
+	 </p> 
+	 <codeblock>&lt;steps&gt; 
+       &lt;step&gt;&lt;cmd&gt;Eject!&lt;/cmd&gt;&lt;/step&gt; 
+&lt;steps&gt;</codeblock> 
+	 <p>as 
+	 </p> 
+	 <codeblock>1. Eject!</codeblock> 
+	 <p>because they feel the number is unwarranted or confusing. 
+	 </p> 
+	 <p>However, the semantics of the DITA source should always be observed over
+		any preference in output format. The output processing should be changed if the
+		output needs to be different (in our case, represented as a bulleted item
+		instead of a numbered item). The DITA source shouldn't be corrupted or 
+		<q>bent</q> to achieve a certain output result. 
+	 </p> 
+  </conbody> 
+</concept> 

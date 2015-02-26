@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D9105" status="new"> 
+  <title>Index see and see also</title> 
+  <shortdesc>Readers can be re-directed from a searched-for term to related
+	 terms in the index that provide further references. You can use the 
+	 <synph>index-see</synph> and 
+	 <synph>index-see-also</synph> indexing elements for this purpose. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>exemplar<indexterm>use of lines
+				element</indexterm></indexterm><indexterm>elements<indexterm>index-see</indexterm><indexterm>index-see-also</indexterm></indexterm><indexterm>index-see
+			 element</indexterm><indexterm>index-see-also
+			 element</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>The 
+		<synph>index-see</synph> element is used to redirect the reader to a
+		synonymous index term. The 
+		<synph>index-see</synph> element is nested inside a standard 
+		<synph>indexterm</synph> element, with 
+		<synph>indexterm</synph> containing the term to appear in the index, and
+		the 
+		<synph>index-see</synph> containing the term for readers to be pointed
+		to. The 
+		<synph>index-see</synph> must be the only child element of the parent 
+		<synph>indexterm</synph>. 
+	 </p> 
+	 <p>For example, the code 
+		<codeblock>&lt;indexterm&gt;forced induction
+   &lt;index-see&gt;turbocharger&lt;/index-see&gt;
+&lt;/indexentry&gt;</codeblock>will result in an output of: 
+		<lines>forced induction, See turbocharger</lines> 
+	 </p> 
+	 <p importance="high">Where possible, 
+		<synph>index-see</synph> entries should be placed in the ditamap 
+		<synph>topicmeta</synph>, because they are logically applicable at the
+		publication level, rather than the topic level. 
+	 </p> 
+	 <p>The structure of the 
+		<synph>index-see</synph> entry in the ditamap is shown in the example: 
+		<codeblock>&lt;map id="lumberer_om_05"&gt;
+  &lt;title&gt;Lumberer XT Owner's Manual&lt;/title&gt;
+  &lt;topicmeta&gt;
+    &lt;keywords&gt;
+      &lt;indexterm&gt;forced induction
+        &lt;index-see&gt;turbocharger&lt;/index-see&gt;
+      &lt;/indexterm&gt;
+    &lt;/keywords&gt;
+  &lt;/topicmeta&gt;
+  &lt;topicref...&gt;...&lt;/topicref&gt;
+  &lt;topicref...&gt;...&lt;/topicref&gt;
+  &lt;topicref...&gt;...&lt;/topicref&gt;
+		...
+&lt;/map&gt;</codeblock> 
+	 </p> 
+	 <p>The 
+		<synph>index-see-also</synph> element is similar in function to 
+		<synph>index-see</synph>, except that it also provides a page reference
+		to the original term. 
+	 </p> 
+	 <p>For example, the code 
+		<codeblock>&lt;indexterm&gt;forced induction
+   &lt;index-see-also&gt;turbocharger&lt;/index-see-also&gt;
+&lt;/indexentry&gt;</codeblock>will result in an output of: 
+		<lines status="changed">forced induction .................... 15
+      See also turbocharger</lines> 
+	 </p> 
+	 <p importance="high">Do not use 
+		<synph>index-see-also</synph> in the ditamap top level 
+		<synph>map</synph> element's 
+		<synph>topicmeta</synph>, although you can use it within the 
+		<synph>topicref</synph> element's 
+		<synph>topicmeta</synph> within the ditamap. 
+	 </p> 
+	 <p>In a hypertext document that supports indexes, the same example might be
+		displayed as:<image placement="break" align="left"
+		id="image_2D139760CC9F45D08FB229A561836EAA" href="../images/index_seealso.png"
+		width="195px" height="47px"> 
+		  <alt>Screen capture showing a see-also entry in a Help system 
+		  </alt></image> 
+	 </p> 
+	 <section id="section_AC5D71179161445F929EEECC3E5C1533"
+	 audience="contributor"> 
+		<title>Future Additions</title> 
+		<p>There are other indexing elements, such as index-base, index-sort-as,
+		  indexlist, indextermref, that need to be covered in 
+		  <ph
+		  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_DITA_Style_Manual"><?xm-replace_text Phrase?></ph>.
+		  
+		</p> 
+	 </section> 
+  </conbody> 
+</concept> 

@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_CC429DA19B98417EAF745F66926954D5" xml:lang="en"
+ status="new"> 
+  <title>The 
+	 <synph>copy-to</synph> attribute</title> 
+  <shortdesc>The 
+	 <synph>copy-to</synph> attribute of the 
+	 <synph>topicref</synph> element is used in the unusual situation where you
+	 need to create two copies of the same topic in the output, and to link to each
+	 copy of the output topic separately. The value of the attribute is the file
+	 name of the duplicate. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>copy-to
+			 attribute</indexterm><indexterm>attributes<indexterm>copy-to</indexterm></indexterm><indexterm>linktext
+			 element</indexterm><indexterm>topicmeta
+			 element</indexterm><indexterm>elements<indexterm>linktext</indexterm><indexterm>topicmeta</indexterm></indexterm><indexterm>duplicate
+			 topics</indexterm><indexterm>multiple navigation
+			 pathways</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>You can use the 
+		<synph>copy-to</synph> attribute of the ditamap 
+		<synph>topicref</synph> element when you need the output file name to
+		differ from what would otherwise be automatically generated, or when you need
+		two or more identical or almost identical copies of the same topic in the
+		output. The copies of the original topic can have different generated link text
+		and generated short descriptions. 
+	 </p> 
+	 <p>The value entered in the 
+		<synph>copy-to</synph> attribute is the duplicate file name, with a 
+		<filepath>.dita</filepath> extension. If you name the file 
+		<filepath>ej25_special.dita</filepath>, and generate to XHTML, the output
+		file name will be 
+		<filepath>ej25_special.html</filepath>. The original topic file name will
+		always be generated in the output; 
+		<synph>copy-to</synph> creates a duplicate file name, rather than
+		modifying the file name. 
+	 </p> 
+	 <p>The 
+		<synph>copy-to</synph> attribute will also let you apply different
+		metadata attributes (even 
+		<synph>navtitle</synph>) for each reference in the map. For example, you
+		could have one topic about saving data records, and use it in the ditamap twice
+		as 
+		<q>Saving Customer Records</q> and 
+		<q>Saving Staff Records</q>. 
+	 </p> 
+	 <p>The use of the 
+		<synph>copy-to</synph> attribute is appropriate in both the hierarchy
+		section of the ditamap and the reltable section. 
+	 </p> 
+	 <note>When using the 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_DITA_OT"><?xm-replace_text Phrase?></ph>,
+		the file extension provided in the 
+		<synph>copy-to</synph> attribute must be 
+		<filepath>.xml</filepath> or 
+		<filepath>.dita</filepath>. 
+	 </note> 
+	 <p>An example of when 
+		<synph>copy-to</synph> might be used to create two identical topics is as
+		follows. A Microsoft HTML Help system is being developed, where the same topic
+		needs to be displayed as a child of two different parent nodes in different
+		parts of the TOC hierarchy. Microsoft HTML Help has a 
+		<term
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/term_synchronise_toc"><?xm-replace_text Term?></term>
+		function, and a sequential browsing function. If the same HTML topic is used in
+		two different places in the TOC, the 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_synchronise"><?xm-replace_text Phrase?></ph>
+		function will always highlight the first occurrence of the topic file name in
+		the TOC pane, thus confusing the user who expects to see the topic in a
+		different section of the Help system. Using the 
+		<synph>copy-to</synph> attribute to specify an alternative file name for
+		the second instance in the DITA map file will result in two topics being
+		generated during processing, and the 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_synchronisation"><?xm-replace_text Phrase?></ph>
+		and other sequencing problems will not occur in the output. 
+	 </p> 
+	 <p>You should only use the 
+		<synph>copy-to</synph> attribute in 
+		<synph>topicref</synph> elements in relationship tables when you need to
+		create a second output file 
+		<b>and</b> you need to alter the topic's linking or short description
+		characteristics in the second copy. 
+	 </p> 
+	 <p status="changed">For example, you may want the information in a topic
+		about turbochargers to appear in the output twice, and to be referenced in the 
+		<systemoutput>Related Topics</systemoutput> link group in one instance as
+		
+		<q>XT Turbocharger Explained</q>, but in another output topic's 
+		<systemoutput>Related Topics</systemoutput> link group as 
+		<q>WRX Turbocharger Explained</q>. In this case, you would enter the
+		alternative linking text in a linktext element within a topicmeta element in
+		the topicref, such as: 
+		<codeblock>&lt;topicref href="turbo.dita" copy-to="xrw_turbo.dita"&gt;
+  &lt;topicmeta&gt;
+    &lt;linktext&gt;XRW Turbocharger Explained&lt;/linktext&gt;
+  &lt;/topicmeta&gt;
+&lt;/topicref&gt;</codeblock> 
+	 </p> 
+	 <p importance="high">Make sure you don't use the 
+		<synph>copy-to</synph> attribute when you only need to change the link
+		text; in this case, the 
+		<synph>linktext</synph> element can be used alone. 
+	 </p> 
+  </conbody> 
+</concept> 

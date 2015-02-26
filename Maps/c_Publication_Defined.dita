@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D9363" status="new"> 
+  <title>Publication and collection defined</title> 
+  <shortdesc>A publication (also known as the 
+	 <term>output</term> or the 
+	 <term>deliverable</term>) is the document, Web site, eBook, Help system or
+	 other product produced when a collection of DITA topics is processed through a
+	 publishing program. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>book</indexterm><indexterm>publication</indexterm><indexterm>output</indexterm><indexterm>collection</indexterm><indexterm>ditamap</indexterm><indexterm>deliverable
+			 document</indexterm><indexterm>processing
+			 output</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>In the DITA sense, a 
+		<term>publication</term> is the name given to a set of topics that are
+		assembled (from a pool of DITA source files) to form a deliverable document.
+		Because the term 
+		<term>publication</term> evokes a mental image of a printed work, the
+		terms 
+		<term>output</term> or 
+		<term>deliverable</term> are sometimes used for differentiation. 
+	 </p> 
+	 <p>When produced as a printed document, we might call the output of the
+		DITA publishing process a 
+		<q>book</q>. When produced for online delivery, we might call the output
+		a 
+		<q>Web site</q>. When produced as a CHM file, we might call the output a 
+		<q>Help system</q>. 
+	 </p> 
+	 <p>The term 
+		<term>collection</term> is used to describe a potential publication in
+		the DITA source. A ditamap 
+		<term>collection</term> is processed to become a 
+		<term>publication</term>. In other words, 
+		<term>collection</term> describes the source content, while 
+		<term>publication</term> describes the output format. A collection is
+		defined in DITA through a ditamap, or multiple embedded ditamaps. 
+	 </p> 
+	 <p>The process of transforming DITA source into an output format is known
+		as 
+		<term>publishing</term>, 
+		<term>processing</term>, or 
+		<term>transformation</term>, and the software tools for the process are
+		known as 
+		<term>processors</term>, 
+		<term>transformers</term>, or 
+		<term>publishing engines</term>. 
+	 </p> 
+  </conbody> 
+</concept> 

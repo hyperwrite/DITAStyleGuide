@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D3760" status="new"> 
+  <title>Paragraphs (and other block elements) within tables</title> 
+  <shortdesc>Avoid using block elements within normal tables. Only when a table
+	 cell contains more than one idea, fact or point should child block elements be
+	 used. Do not use block elements in simple tables. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>elements<indexterm>simpletable</indexterm><indexterm>p</indexterm><indexterm>table</indexterm></indexterm><indexterm>table
+			 entries</indexterm><indexterm>table
+			 cells</indexterm><indexterm>paragraphs<indexterm>within table
+				cells</indexterm></indexterm><indexterm>mixed
+			 content</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>In DITA, the cells of a table normally contain plain text (technically, 
+		<term>string data</term>). However, table cells may also contain
+		paragraphs, lists, and other block elements (<term>block data</term>). This
+		characteristic of table cells results in a choice for authors of whether to
+		enter plain text or paragraphs in cells. 
+	 </p> 
+	 <p>For example, a simple table cell could be coded as 
+		<term>string data</term> 
+		<codeph>&lt;stentry&gt;2.5 litre engine&lt;/stentry&gt;</codeph> or 
+		<term>block data</term> 
+		<codeph>&lt;stentry&gt;&lt;p&gt;2.5 litre
+		  engine&lt;/p&gt;&lt;/stentry&gt;</codeph>. It is also technically valid to have
+		a mix of string and block data, where one cell has plain text and another has
+		paragraphs. 
+	 </p> 
+	 <p>The best practice mark-up is the simplest mark-up. 
+	 </p> 
+	 <p importance="high">If there is just one block of text in the cell, then
+		the cell should be left as 
+		<term>string data</term>. This stores the minimum of mark-up, and
+		simplifies the processed output. If there are multiple blocks in the cell, then
+		paragraphs (or other block items) should be used. 
+		<term>String data</term> should not be used in the same cell as 
+		<term>block data</term>. 
+	 </p> 
+	 <p importance="high">If there is a need for one cell to include block
+		elements, then all cells should be consistently treated. Using mixed mark-up
+		methods (blocks in some cells and string-only in others) are likely to result
+		in inconsistent rendering of the output. 
+	 </p> 
+	 <p importance="high">In particular, simple tables
+		(<synph>simpletable</synph> elements) should be kept as simple as possible. If
+		a table requires block elements in cells, it should be coded as a normal table
+		rather than a simple table. 
+	 </p> 
+	 <section id="section_F7A3DD4A1D414E9DA215F60AD81B66C7"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<p>Don Day, in an e-mail to the Yahoo DITA Users list, wrote: 
+		  <lq>In order for DITA to provide a rich archetype for many possible
+			 constraints further down in the specialisation tree, the core elements must
+			 have inclusive content models. Simpletable is a case of a structure that can be
+			 filled either directly with string data (imagine a relational table in which a
+			 specialized stentry represents a specific datatype for its string content) or a
+			 truly simple table for discourse (in which paragraphs and other block items
+			 might be arranged for regular display in rows and columns). DITA provides the
+			 ability to support either constraint (string-only or block-only) through
+			 specialisation. If a department wants to impose a writing style that requires
+			 the use of paragraphs in table cells, that can be done as a specialisation that
+			 simply removes free text from the stentry content model. The increased use of
+			 DITA for narrative or office type content might eventually lead to a community
+			 effort to define such a general authoring specialisation, but in the meantime,
+			 you can just suggest to writers what your guidelines are--no different than
+			 other general word processors used for technical writing. Personally, I use the
+			 string mode as a "virtual first paragraph" when creating list items, table
+			 cells, or definition descriptions, and then use the paragraph mark-up when an
+			 explicit new paragraph is needed. The visual rendering should be more or less
+			 equivalent, to the degree that the matter of imposed structuring is a non-issue
+			 to me, but I can understand if others prefer to require explicit paragraphs in
+			 even the simple cases of single "implied paragraphs". 
+		  </lq> 
+		  <draft-comment>cite needed 
+		  </draft-comment> 
+		</p> 
+		<p>This rule conforms with similar rules for block items in notes (<xref
+		  scope="local" href="c_Paragraphs_within_Notes.dita#D9149"
+		  type="concept" format="dita"><?xm-replace_text Paragraphs (and other block elements) within notes?></xref>)
+		  and block items within lists (<xref scope="local"
+		  href="c_Paragraphs_within_List_Items.dita#D3980" type="concept" format="dita"><?xm-replace_text  Paragraphs (and other block elements) within list items?></xref>).
+		  
+		</p> 
+	 </section> 
+  </conbody> 
+</concept> 

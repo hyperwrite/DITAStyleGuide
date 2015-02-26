@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<concept id="concept_0A6D0A2A3523459F9FA9D5FF1E6757F0"> 
+  <title>The command element</title> 
+  <shortdesc>The command (<synph>cmd</synph>) element within the 
+	 <synph>step</synph> element contains a single, active voice instruction to
+	 the reader. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>cmd
+			 element</indexterm><indexterm>elements<indexterm>cmd</indexterm><indexterm>info</indexterm><indexterm>stepresult</indexterm></indexterm><indexterm>info
+			 element</indexterm><indexterm>stepresult
+			 element</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>A step in a task is made up of a command (<synph>cmd</synph>) element,
+		which is mandatory, and a number of optional elements such as 
+		<synph>stepresult</synph> and 
+		<synph>stepxmp</synph>. 
+	 </p> 
+	 <p>The 
+		<synph>cmd</synph> element describes the action that the reader must take
+		in order to complete the step. 
+	 </p> 
+	 <p importance="high">Use active voice and the imperative mood in writing
+		the command, and use only one, complete sentence. If you need to expand on the
+		details of the command, use a sibling information (<synph>info</synph>)
+		element. Do not include the system response or the result of the user
+		performing the action; that information should be described in a sibling step
+		result (<synph>stepresult</synph>) element. 
+	 </p> 
+	 <section id="section_90EBC0DCA017452BB4D5ADA61083E8FE"
+	  audience=" contributor"> 
+		<title>Rationale</title> 
+		<lq reftitle="Martin Polley, Yahoo! DITA Users Group"
+		 href="http://tech.dir.groups.yahoo.com/group/dita-users/message/7679"> 
+		  <p>Before 
+		  </p> 
+		  <p>&gt;&gt; &lt;cmd&gt;Use a web browser to log in to
+			 https://192.168.0.1, accept the certificate for the https connection. Use
+			 factory defaults to log in. Enter user name 'adminexampler' and password
+			 'passwordexample'.&lt;/ &gt; cmd&gt; &lt;&lt; 
+		  </p> 
+		  <p>Options: 
+		  </p> 
+		  <p> You could put the second sentence in an &lt;info&gt; after the
+			 &lt;cmd&gt;. (Or you could even break it down into two steps.) 
+		  </p> 
+		  <codeblock>&lt;step&gt; 
+      &lt;cmd&gt;Login to https://192...&lt;/cmd&gt; 
+      &lt;info&gt;Use factory default 
+      credentials--username:&lt;userinput&gt;adminexampler&lt;/userinput&gt;, 
+      password:&lt;userinput&gt;passwordexample&lt;/userinput&gt;&lt;/info&gt; 
+      &lt;/step&gt;</codeblock> 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

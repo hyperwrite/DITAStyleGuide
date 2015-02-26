@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept id="D9082" status="new"> 
+  <title>Granularity - one file per topic</title> 
+  <shortdesc>DITA topics should be saved as individual files, and the 
+	 <term>ditabase</term> composite topic should be avoided. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>granularity</indexterm><indexterm>file
+			 structure<indexterm>one topic per file</indexterm></indexterm><indexterm>chunk
+			 attribute</indexterm><indexterm>attributes<indexterm>chunk</indexterm></indexterm><indexterm>ditabase</indexterm><indexterm>composite
+			 topics</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p importance="high">Each DITA topic should be stored in its own file.
+		Although the 
+		<term>ditabase</term> (or composite) topic type technically permits
+		multiple topics to be nested in a single container topic file, this approach
+		should be avoided. The smaller the topic unit, the greater the opportunity for
+		re-use. 
+	 </p> 
+	 <p importance="high">Although it is possible to use the 
+		<synph>chunk</synph> attribute to merge multiple DITA source topics into
+		a single output topic when publishing to topic-based formats such as XHTML, the
+		simplest approach is one source topic to one output topic. 
+	 </p> 
+	 <section id="section_444AFE9E2D0C412FA36AAD511CD30B2C"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<p>Although chunking allows you to write in one large topic yet generate
+		  multiple smaller output topics, best practice is to write on a one-to-one, one
+		  source topic to one output topic, basis. 
+		</p> 
+		<p>On the OASIS DITA Technical Committee mailing list, Michael Priestley
+		  and Eliot Kimber discussed the argument of 
+		  <q>one file per topic</q>. 
+		</p> 
+		<lq
+		 reftitle="Michael Priestley, OASIS DITA Technical Committee mailing list">OK -
+		  so for legacy content that has not been chunked into topics, they still want to
+		  enforce the one topic per file constraint they have decided on, but without
+		  rewriting the content to match? The obvious option within the architecture is
+		  to combine the "senseless small crumbs" into one file for authoring, until it
+		  is ready to split out properly. 
+		</lq> 
+		<lq reftitle="Eliot Kimber, OASIS DITA Technical Committee mailing list">
+		  
+		  <p>A policy of exactly one file per topic is not an appropriate or
+			 sustainable policy for the simple reason that DITA requires that you use nested
+			 topics for certain content patterns. Because of this, you cannot state the
+			 policy this strictly. 
+		  </p> 
+		  <p>What you can do is say that each *standalone* topic is its own file.
+			 
+		  </p> 
+		  <p>That is, while abstractly we think of a topic as a standalone unit
+			 of information, the syntactic constraints that DITA imposes require that you
+			 sometimes use nested topics for content that is clearly not standalone. 
+		  </p> 
+		  <p>Thus the reality is that there are "standalone" topics and
+			 "dependent" topics. Dependent topics should almost never be separate documents
+			 while standalone topics should almost always be separate documents as a matter
+			 of good data management practice. [But note that there valid exceptions to both
+			 rules.] 
+		  </p> 
+		  <p>I agree very strongly with Michael that topics should not nest. 
+		  </p> 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

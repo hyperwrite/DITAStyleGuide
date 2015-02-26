@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D4819" rev="1.2" status="new"> 
+  <title>Transcluding a group of elements as a whole</title> 
+  <shortdesc>The 
+	 <synph>conrefend</synph> attribute was introduced in 
+	 <ph
+	  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_DITA12"><?xm-replace_text Phrase?></ph>
+	 to allow a group of adjacent elements to be transcluded as a group. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>conref
+			 attribute</indexterm><indexterm>conrefend
+			 attribute</indexterm><indexterm>attributes<indexterm>conref</indexterm><indexterm>conrefend</indexterm></indexterm><indexterm>transclusion</indexterm><indexterm>span<indexterm>conref</indexterm></indexterm><indexterm>content
+			 reference</indexterm><indexterm>group of elements<indexterm>transcluding
+				a</indexterm></indexterm><indexterm>set of elements<indexterm>transcluding
+				a</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>When you need to 
+		<term>conref</term> a series or sequence of elements in a structure like
+		a set of steps, there is no parent structure to reference. For example, if the
+		first three steps of the following sequence were to be re-used, there doesn't
+		seem to be a structure to group just those three steps and not the following
+		two. 
+	 </p> 
+	 <codeblock>&lt;task id="proc"&gt;
+...
+ &lt;steps&gt; 
+   &lt;step&gt;&lt;cmd id="A"&gt;Do this.&lt;/step&gt;
+   &lt;step&gt;&lt;cmd id="B"&gt;Then do that.&lt;/cmd&gt;&lt;/step&gt; 
+   &lt;step&gt;&lt;cmd id="C"&gt;Do the other.&lt;/cmd&gt;&lt;/step&gt;
+   &lt;step&gt;&lt;cmd id="D"&gt;Do something different.&lt;/cmd&gt;&lt;/step&gt;
+   &lt;step&gt;&lt;cmd id="E"&gt;Then do something else.&lt;/cmd&gt;&lt;/step&gt;
+ &lt;/steps&gt;
+...
+&lt;/task&gt;</codeblock> 
+	 <p>The only obvious approach is to reference step elements A, B and C
+		individually. 
+	 </p> 
+	 <p>However, in 
+		<ph
+		conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_DITA12"><?xm-replace_text Phrase?></ph>,
+		the 
+		<term>conref</term> feature was enhanced to make this sort of construct
+		possible. The new attribute which enables the feature is the 
+		<synph>conrefend</synph> attribute. You use the standard 
+		<synph>conref</synph> attribute to use that attribute to specify the 
+		<synph>id</synph> of the element at the start of the group of elements,
+		and the 
+		<synph>conrefend</synph> attribute to specify the 
+		<synph>id</synph> of the last element in the group of elements. If a 
+		<synph>conrefend</synph> attribute is not specified, the conref behaves
+		as a standard, single element transclusion. 
+	 </p> 
+	 <p>To re-use the first three steps in the preceding steps block example,
+		and add a different fourth step, the code would be: 
+		<codeblock>&lt;steps&gt;
+  &lt;step conref="abc.dita#proc/A" conrefend="abc.dita#proc/C"&gt;&lt;cmd/&gt;&lt;/step&gt;
+  &lt;step&gt;&lt;cmd&gt;Do something entirely new.&lt;/cmd&gt;&lt;/step&gt;
+&lt;/steps&gt;</codeblock> 
+	 </p> 
+	 <p>The content block has to be referenced at the step level, not at the 
+		<synph>cmd</synph> level, because the elements have to be adjacent (that
+		is, 
+		<term>siblings</term>). 
+	 </p> 
+	 <note>You could alternatively use the 
+		<synph>bodyDiv</synph> element introduced in 
+		<ph
+		conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_DITA12"><?xm-replace_text Phrase?></ph>
+		to group a set of elements into a single element, and then transclude the 
+		<synph>bodyDiv</synph> element as required. 
+	 </note> 
+  </conbody> 
+</concept> 

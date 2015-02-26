@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<concept id="concept_9C2779B85BBF4D2187009963576480D6"> 
+  <title>Other metadata</title> 
+  <shortdesc>In addition to the select attributes, DITA content includes many
+	 forms of metadata. These metadata elements and attributes are used to manage
+	 and 
+	 <ph
+	  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_organise"><?xm-replace_text Phrase?></ph>
+	 topics, ditamaps and publications. 
+  </shortdesc> 
+  <conbody> 
+  </conbody> 
+</concept> 

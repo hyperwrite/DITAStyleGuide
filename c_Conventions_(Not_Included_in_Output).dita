@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<concept id="concept_EF9238BA6640435990A8D61D7F801984"> 
+  <title>Conventions (Not Included in Output)</title> 
+  <shortdesc><?xm-replace_text Short Description?>
+  </shortdesc> 
+  <conbody> 
+	 <p>ditamap is not a term; it is just a normal word. The exception is when
+		it is being defined. Avoid starting a sentence with ditamap.
+	 </p>
+	 <p>conref is not a term; it is just a normal word. The exception is when it
+		is being defined. Avoid starting a sentence with conref.
+	 </p> 
+  </conbody> 
+</concept> 

@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en-au" id="D9200"> 
+  <title>External references in the relationship table</title> 
+  <shortdesc>Like other references in the ditamap, topic references in the
+	 relationship table can reference files external to the DITA collection, such as
+	 PDF files or Web URLs. The 
+	 <synph>scope</synph>, 
+	 <synph>format</synph> and 
+	 <synph>type</synph> attributes in the topicref are used to specify the
+	 external reference. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>relcell</indexterm><indexterm>relcolspec</indexterm><indexterm>format
+			 attribute</indexterm><indexterm>type attribute</indexterm><indexterm>scope
+			 attribute</indexterm><indexterm>attributes<indexterm>format</indexterm><indexterm>type</indexterm><indexterm>scope</indexterm></indexterm><indexterm>PDF<indexterm>links
+				to</indexterm></indexterm><indexterm>external
+			 links</indexterm><indexterm>Web<indexterm>links
+				to</indexterm></indexterm><indexterm>windows<indexterm>opening targets in
+				new</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p> A relationship table doesn't have to only refer to DITA topics within
+		the current project. Like 
+		<synph>topicref</synph> elements used in the hiearchy section of the
+		ditamap, 
+		<synph>topicref</synph> elements in the 
+		<synph>reltable</synph> can reference external files and URLs. 
+	 </p> 
+	 <p>If you want an external reference target to open in a new window when
+		output to a hypertext format, the approach is as follows. 
+	 <ol id="ul_BAA9D33D07A24DA0872C75432B26A1D6"> 
+		<li outputclass="listnumber" id="li_omit_type">Omit the 
+		  <synph>type</synph> attribute in the 
+		  <synph>relcolspec</synph> element (to apply the attribute to all 
+		  <synph>topicref</synph> elements in the column) or the 
+		  <synph>relcell</synph> element (to apply the attribute to all 
+		  <synph>topicref</synph> elements in the cell). 
+		</li> 
+		<li outputclass="listnumber" id="li_set_format">Set the 
+		  <synph>format</synph> attribute in the 
+		  <synph>relcolspec</synph> or the 
+		  <synph>relcell</synph> so that it describes the external file format
+		  (for example, if the external files are PDF files, set the 
+		  <synph>format</synph> attribute to 
+		  <userinput>pdf</userinput>). 
+		</li> 
+		<li outputclass="listnumber" id="li_37F990F00AA348A0BCE33596EEA7CC4D">Set
+		  the 
+		  <synph>scope</synph> attribute in the 
+		  <synph>relcolspec</synph> or 
+		  <synph>relcell</synph> to 
+	 <option>external</option>. 
+	 </li> 
+	 </ol> 
+	 </p> 
+	 <p>If you want the external reference target to open in the same window
+		(when permitted by the browser and the external document type), the approach is
+		as follows. 
+	 <ol id="ul_3483AAAEC3864E699915E1B78CBC1120"> 
+		<li id="li_4D6B94F30F0C406598EB1F32E8B11301"
+		conref="#D9200/li_omit_type"><?xm-replace_text List Item?>
+		</li>
+		<li id="li_BAB77626CB5548C6AEF08A9565113E45"
+		conref="#D9200/li_set_format"><?xm-replace_text List Item?>
+		</li>
+		<li outputclass="listnumber" id="li_ECADC65342F948359A35CC846764316A">Set
+		  the 
+		  <synph>scope</synph> attribute in the 
+		  <synph>relcolspec</synph> or 
+		  <synph>relcell</synph> to 
+		  <userinput>peer</userinput>. 
+		</li> 
+	 </ol> 
+	 </p> 
+	 <note>The type of output, and the publishing tool used, may affect the
+		functionality of the 
+		<synph>scope</synph> attribute setting. 
+	 </note> 
+	 <p> 
+		<draft-comment> Peer and external just indicate whether resource is same
+		  directory structure (relative) or external directory structure (absolute). Peer
+		  will be displayed in same window (in hypertext outputs, and let's face it, this
+		  is really specific to hypertext outputs) and external in new window (target). 
+		</draft-comment> 
+	 </p> 
+  </conbody> 
+</concept> 

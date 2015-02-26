@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<map id="map_96F7A8F6D82F4D008CF926B9460E9ED9"><title>Graphics and Figures</title>
+	<topicref format="dita" href="c_Working_with_Graphics_and_Figures.dita" navtitle="Graphics and figures" scope="local" type="concept">
+		<topicref format="dita" href="Graphics_and_Figures/c_Figures_or_Images.dita" navtitle="Figures and images" scope="local" type="concept"/>
+		<topicref format="dita" href="Graphics_and_Figures/c_Image_File_Types.dita" navtitle="Image file formats" scope="local" type="concept"><topicref format="dita" href="Graphics_and_Figures/c_Image_File_Management.dita" navtitle="Image file management" scope="local" type="concept"/><topicref format="dita" href="Graphics_and_Figures/c_Different_Graphics_for_Different_Outputs.dita" navtitle="Different graphics for different published media" scope="local" type="concept"/></topicref><topicref format="dita" href="Graphics_and_Figures/c_Image_Alignment_and_Placement.dita" navtitle="Image alignment, placement, and sizing" scope="local" type="concept"/><topicref format="dita" href="Graphics_and_Figures/c_Figure_Titles.dita" navtitle="Images in titles" scope="local" type="concept"/>
+		<topicref format="dita" href="Graphics_and_Figures/c_Callouts.dita" navtitle="Callouts" scope="local" type="concept"/>
+		<topicref format="dita" href="Graphics_and_Figures/c_Localising_Graphics.dita" navtitle="Localising graphics" scope="local" type="concept"/>
+		<topicref format="dita" href="Graphics_and_Figures/c_Multimedia_in_Topics.dita" navtitle="Multimedia in DITA topics" scope="local" type="concept"/><topicref format="dita" href="Graphics_and_Figures/c_Figures_Containing_Tables.dita" navtitle="Figures containing tables" scope="local" type="concept"/>
+		<topicref format="dita" href="Graphics_and_Figures/c_Image_Maps_in_DITA.dita" navtitle="Image maps" scope="local" type="concept">
+		</topicref><topicref format="dita" href="Graphics_and_Figures/c_WAI_Compliance.dita" navtitle="WAI compliance" scope="local" type="concept"/>
+	</topicref>
+</map>

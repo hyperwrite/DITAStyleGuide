@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_8DB675D4C37C4BD4BD309E3D8B6469CD" rev="1.2" xml:lang="en"
+ status="new"> 
+  <title>Links to glossary terms</title> 
+  <shortdesc>Special terms used in the body of DITA topics can be linked to
+	 their corresponding glossary entry definitions through the 
+	 <synph>keyref</synph> feature, introduced in 
+	 <ph
+	  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_DITA12"><?xm-replace_text Phrase?></ph>.
+	 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>glossref
+			 element</indexterm><indexterm>elements<indexterm>glossref</indexterm><indexterm>term</indexterm></indexterm><indexterm>glossary
+			 of terms</indexterm><indexterm>keyref attribute</indexterm><indexterm>keys
+			 attribute</indexterm><indexterm>href attribute</indexterm><indexterm>term
+			 element</indexterm><indexterm>attributes<indexterm>href</indexterm><indexterm>keyref</indexterm><indexterm>keys</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>In DITA content, the 
+		<synph>term</synph> element is used to semantically identify technical or
+		specialist terms, acronyms, abbreviations, and other items of jargon that need
+		to be defined to be understood by some readers. The terms used in a document
+		are normally defined in a separate glossary section. 
+	 </p> 
+	 <p>The glossary entry (<synph>glossentry</synph>) information type can be
+		used to define individual terms; those topics can then be collected into a
+		glossary section in the ditamap. 
+	 </p> 
+	 <p>Terms used within normal topic text can be linked, as part of the
+		publishing process, to any corresponding definition of that term in a 
+		<synph>glossentry</synph> topic. Linking is accomplished using the 
+		<synph>keyref</synph> attribute within the 
+		<synph>term</synph> element, and then defining the topic associated with
+		the 
+		<synph>keyref</synph> in the ditamap, through 
+		<synph>glosskey</synph> elements. (The 
+		<synph>keyref</synph> attribute was introduced in 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_DITA12"><?xm-replace_text Phrase?></ph>.)
+		
+	 </p> 
+	 <p
+	  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/glossary_linking_example_2"><?xm-replace_text Paragraph?>
+	 </p> 
+  </conbody> 
+</concept> 

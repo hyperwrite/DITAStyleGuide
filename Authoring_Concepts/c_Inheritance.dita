@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D1799" status="new"> 
+  <title>Inheritance</title> 
+  <shortdesc>Inheritance is a key technical feature of DITA, as it is
+	 inheritance that enables 
+	 <term
+	  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/term_specialisation"><?xm-replace_text Term?></term>
+	 of information types. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm
+		  conref="../../conref/conref_source_metadata.dita#topic_hw_conref_meta/index_specialisation"><?xm-replace_text Index Term?></indexterm><indexterm>inheritance</indexterm><indexterm>information
+			 types</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>In object-oriented programming, inheritance is a way to form new program
+		module 
+		<term>classes</term> using classes that have already been defined. DITA
+		is designed around the principle of inheritance. The DITA base content model
+		shows that even the three base information types (concept, task and reference) 
+		<term>evolve</term> from the 
+		<synph>topic</synph> 
+		<term>proto information type</term>, and share a common base structure
+		whose characteristics they inherit. 
+	 </p> 
+	 <fig id="fig_544ADBC2C2004692B1F7CA36F8BE0F92"> 
+		<title>Evolution of base information types</title><image
+		href="../images/info_type_content_model.png"
+		id="image_B4504A5B969A4CEDAF4B98853A6157C3" align="left" placement="break"
+		width="265px" height="88px"> 
+		  <alt>Information Type Content Model - Base 
+		  </alt></image> 
+	 </fig> 
+	 <p>This idea of inheritance continues down. A task's 
+		<synph>step</synph> element is based on topic's 
+		<synph>li</synph> element. 
+	 </p> 
+	 <p>The 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_DITA_Lang_Reference"><?xm-replace_text Phrase?></ph>
+		records the inheritance of each element. For example, the 
+		<synph>step</synph> element's inheritance is shown as 
+		<synph>topic/li</synph>, indicating that a 
+		<synph>topic</synph> information type's 
+		<synph>li</synph> element is 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialised"><?xm-replace_text Phrase?></ph>
+		to become 
+		<synph>task/step</synph>, a 
+		<synph>task</synph> information type's 
+		<synph>step</synph> element. 
+	 </p> 
+	 <p>DITA's inheritance model makes it easy to 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialise"><?xm-replace_text Phrase?></ph>
+		topics or special elements within topics. You only have to define how the
+		element is different from its immediate ancestor. 
+	 </p> 
+	 <p>This idea reminds us again of Darwinian theory. 
+	 </p> 
+	 <p> 
+		<fig id="fig_71A43A1AF6394D329C990A83AE79AB15"> 
+		  <title>Evolution of man and an information type</title> 
+		  <image href="../images/evolution.png"
+			id="image_FE7E78469C404AAFA662997E8B6C8ECF" align="left" placement="break"
+			width="308px" height="234px"> 
+			 <alt>Evolution of Man 
+			 </alt></image> 
+		</fig> 
+	 </p> 
+  </conbody> 
+</concept> 

@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<map id="map_68C4FBA800BD42C18919598674ED2B8E"><title>DITA Authoring Concepts</title>
+	<topicref format="dita" href="c_DITA_Authoring_Concepts.dita" navtitle="DITA authoring concepts" scope="local" type="concept">
+		<topicref format="dita" href="Authoring_Concepts/c_Introduction_to_DITA.dita" navtitle="Introduction to DITA" scope="local" type="concept">
+			<topicref format="dita" href="Authoring_Concepts/c_The_History_of_DITA.dita" navtitle="History of DITA" scope="local" type="concept"/>
+			<topicref format="dita" href="Authoring_Concepts/c_The_A_in_DITA.dita" navtitle="The A in DITA" scope="local" type="concept"/>
+			<topicref format="dita" href="Authoring_Concepts/c_OASIS_and_the_DITA_TC.dita" navtitle="OASIS and the DITA Technical Committee" scope="local" type="concept"/>
+			<topicref format="dita" href="Authoring_Concepts/c_DITA_Features.dita" navtitle="DITA features" scope="local" type="concept"/><topicref format="dita" href="Authoring_Concepts/c_Information_Types.dita" navtitle="Information typing" scope="local" type="concept"/><topicref format="dita" href="Authoring_Concepts/c_Topic_Based_Authoring.dita" navtitle="Topic-based authoring" scope="local" type="concept"/>
+			<topicref format="dita" href="Authoring_Concepts/c_Modularity.dita" navtitle="Modularity" scope="local" type="concept"/><topicref format="dita" href="Authoring_Concepts/c_Minimalism.dita" navtitle="Minimalism" scope="local" type="concept"/><topicref format="dita" href="Authoring_Concepts/c_What_is_Structured_Authoring.dita" navtitle="Structured authoring" scope="local" type="concept">
+			</topicref>
+			<topicref format="dita" href="Authoring_Concepts/c_Introduction_to_the_Separation_of_Content.dita" navtitle="The separation of content and form" scope="local" type="concept"/>
+			<topicref format="dita" href="Authoring_Concepts/c_Where_DITA_Fits_In.dita" navtitle="Where DITA fits..." scope="local" type="concept"/><topicref format="dita" href="Authoring_Concepts/c_Inheritance.dita" navtitle="Inheritance" scope="local" type="concept"/>
+			<topicref format="dita" href="Authoring_Concepts/c_Conditions_Filtering_Variants_and_ditaval.dita" navtitle="Conditions, filtering, variants and ditaval" scope="local" type="concept"/>
+			<topicref format="dita" href="Authoring_Concepts/c_Techniques.dita" navtitle="Techniques to learn" scope="local" type="concept"/>
+		</topicref>
+		<topicref format="dita" href="Authoring_Concepts/c_Distinction_between_Format_and_Style.dita" navtitle="Distinction between format and style, and data and metadata" scope="local" type="concept">
+			<topicref format="dita" href="Authoring_Concepts/c_Challenges_for_New_DITA_Authors.dita" navtitle="Challenges for new DITA authors" scope="local" type="concept"/>
+			<topicref format="dita" href="Authoring_Concepts/c_Content_or_Form.dita" navtitle="The blurred line between content and form" scope="local" type="concept"/>
+		</topicref>
+		<topicref format="dita" href="Authoring_Concepts/c_Specialisation.dita" navtitle="Specialisation" scope="local" type="concept"/>
+		<topicref format="dita" href="Authoring_Concepts/c_Generalisation.dita" navtitle="Generalisation" scope="local" type="concept"/><topicref format="dita" href="Authoring_Concepts/c_Constraints.dita" navtitle="Constraints" scope="local" type="concept"/>
+	</topicref>
+	<reltable id="reltable_F7A1847D5FF14F0A9AC88DB2B610C8DA" title="Relationship between Authoring Concepts Topics" toc="no">
+		<relheader><relcolspec type="task"/><relcolspec type="concept"/><relcolspec type="reference"/><relcolspec scope="external"/>
+		</relheader>
+		<relrow><relcell/><relcell>
+				<topicref format="dita" href="Authoring_Concepts/c_The_History_of_DITA.dita" navtitle="History of DITA" scope="local" type="concept">
+				</topicref></relcell><relcell/><relcell>
+				<topicref format="html" href="http://www.stc.org/ConfProceed/2003/PDFs/STC50-061.pdf" locktitle="yes" navtitle="STC Conference Paper: An XML Architecture for Technical Documentation: The Darwin Information Typing Architecture" scope="external">
+				</topicref>
+				<topicref format="html" href="http://www.oasis-open.org/committees/dita/" locktitle="yes" navtitle="OASIS DITA Technical Committee" scope="external">
+				</topicref></relcell>
+		</relrow>
+		<relrow><relcell/><relcell>
+				<topicref format="dita" href="Authoring_Concepts/c_OASIS_and_the_DITA_TC.dita" navtitle="OASIS and the DITA Technical Committee" scope="local" type="concept">
+				</topicref></relcell><relcell/><relcell>
+				<topicref format="html" href="http://www.oasis-open.org/join/categories.php" locktitle="yes" navtitle="OASIS membership categories" scope="external">
+				</topicref>
+				<topicref format="html" href="http://www.oasis-open.org/join/benefits-matrix.php" locktitle="yes" navtitle="OASIS Membership Benefits Matrix" scope="external">
+				</topicref></relcell>
+		</relrow>
+		<relrow><relcell/><relcell collection-type="family">
+				<topicref format="dita" href="Authoring_Concepts/c_The_A_in_DITA.dita" navtitle="The A in DITA" scope="local" type="concept">
+				</topicref></relcell><relcell/><relcell/>
+		</relrow>
+		<relrow><relcell/><relcell collection-type="family">
+				<topicref format="dita" href="Authoring_Concepts/c_What_is_Structured_Authoring.dita" navtitle="Structured authoring" scope="local" type="concept">
+				</topicref>
+				<topicref format="dita" href="Authoring_Concepts/c_Introduction_to_the_Separation_of_Content.dita" navtitle="The separation of content and form" scope="local" type="concept">
+				</topicref></relcell><relcell/><relcell/>
+		</relrow>
+		<relrow><relcell/><relcell>
+				<topicref format="dita" href="Authoring_Concepts/c_Topic_Based_Authoring.dita" navtitle="Topic-based authoring" scope="local" type="concept">
+				</topicref></relcell><relcell/><relcell>
+				<topicref format="html" href="http://www.econtentmag.com/Articles/ArticleReader.aspx?ArticleID=35804" locktitle="yes" navtitle="HATs Off to XML Help" scope="external">
+				</topicref></relcell>
+		</relrow>
+		<relrow><relcell/><relcell/><relcell/><relcell/>
+		</relrow>
+		<relrow><relcell/><relcell/><relcell/><relcell/>
+		</relrow>
+		<relrow><relcell/><relcell/><relcell/><relcell/>
+		</relrow>
+		<relrow><relcell/><relcell/><relcell/><relcell/>
+		</relrow>
+		<relrow><relcell/><relcell/><relcell/><relcell/>
+		</relrow>
+	</reltable>
+</map>

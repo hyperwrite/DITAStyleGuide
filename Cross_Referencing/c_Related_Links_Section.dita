@@ -1,0 +1,124 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D2362" status="new"> 
+  <title>Links in 
+	 <synph>related-links</synph> sections</title> 
+  <shortdesc>When a topic requires cross-references to other topics where those
+	 cross-references will always be valid in the context of the topic, they should
+	 be contained within a 
+	 <synph>related-links</synph> section after the topic body. In all other
+	 cases, cross-references should be defined in the relationship table of the
+	 ditamap. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>related-links
+			 element</indexterm><indexterm>elements<indexterm>related-links</indexterm></indexterm><indexterm>cross-references<indexterm>related
+				links</indexterm></indexterm><indexterm>linking<indexterm>related-links
+				section</indexterm></indexterm><indexterm>hyperlinks<indexterm>related-links
+				section</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>There are three methods through which links can be included in DITA
+		content: 
+	 </p> 
+	 <ul id="ul_7EAA209EE597429DACE250578E25058E"> 
+		<li id="li_BAF9FEDD4D344FDBAA740E7E2EF3DEB1">inserting 
+		  <synph>xref</synph> elements at any point within the body of a topic 
+		</li> 
+		<li id="li_618CFD276FFC4060A5ABEF33AD9517EC">inserting links in a 
+		  <synph>related-links</synph> section within a topic, outside the body
+		  of the topic 
+		</li> 
+		<li id="li_5EA6DFE634F14E76910AEDC8BECF9C94">defining link relationships
+		  between topics through relationship tables in the ditamap 
+		</li> 
+	 </ul> 
+	 <p importance="high">The most effective method for most documents is the
+		relationship table approach. However, if the cross-references will always be
+		appropriate for the topic, regardless of the context in which it is used, then
+		the 
+		<synph>related-links</synph> section can be used. 
+	 </p> 
+	 <p>The 
+		<synph>related-links</synph> section is technically metadata, and is
+		structured within the topic but outside the body section. It is made up of 
+		<synph>link</synph> elements, which are similar in function to an 
+		<synph>xref</synph> element. 
+	 </p> 
+	 <section id="section_8F6AB22B293D44B590EAF827C670BF7E"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<lq reftitle="Ament 2003, p14"> To help users navigate modular content,
+		  you link standalone content modules with cognitive bridges, or
+		  cross-references... . When separating different levels of information into
+		  distinct content modules, [you] physically separate modules that are
+		  thematically related. To make the relationships between the related modules
+		  explicit, you add cross-references that link the modules. 
+		</lq> 
+		<lq reftitle="Erik Hennum, correspondence to DITA TC List,
+ ehennum@us.ibm.com"> 
+		  <p>The value of link patterns or categories for structuring a set of
+			 articles shows up consistently in the Information Architecture and Hypertext
+			 Theory literature. For instance: 
+		  </p> 
+		  <ul outputclass="listbullet" id="ul_FB391B37D85041F3849C5F087DA4B95B"> 
+			 <li
+			  id="li_63AC5B67427A45459E925326CFB6D6BC">http://www.eastgate.com/patterns/Patterns.html
+				
+			 </li> 
+			 <li
+			  id="li_2B2D99828E6A47D7A50E8607740D3A9C">http://www.firstmonday.org/issues/issue7_10/harrison/
+				
+			 </li> 
+			 <li
+			  id="li_09C2E60BB85E4A0895B03FC7C67974CE">http://www.useit.com/alertbox/20050103.html
+				(see the Typed Links and Explicit Structure sections) 
+			 </li> 
+			 <li
+			  id="li_B61E754EAE284A9AAFF6DD176D6B6E26">http://www8.org/w8-papers/5b-hypertext-media/improving/improving.html
+				
+			 </li> 
+			 <li
+			  id="li_BFA0A12D8CE24C04A080E9C9430DA5CC">http://journals.tdl.org/jodi/article/view/jodi-26/27
+				
+			 </li> 
+		  </ul> 
+		  <p>The last one gives the cognitive and linguistic basis for the value
+			 of link patterns. "Relations might be specified in various directions ... by
+			 assigning separate information to the links. In this way, the reader might be
+			 spared the frustration of spending time clicking without retrieving desired
+			 information." 
+		  </p> 
+		</lq> 
+		<lq href="http://tech.groups.yahoo.com/group/dita-users/message/8890"
+		 reftitle="Severin Foreman, Yahoo! DITA Users Group"> 
+		  <p>I don't have an HCI study to cite, but I do have some good anecdotal
+			 evidence to share. Our team is migrating from HTML help to DITA. The legacy
+			 content makes liberal use of inline links, so when I suggested that we use DITA
+			 maps and reltables for all our linking, many people on the team objected (and
+			 some still do). But recently, one of the strongest proponents of inline links
+			 had a complete reversal on the subject. The following is excerpts from an
+			 e-mail thread that described why he changed his mind. 
+		  </p> 
+		  <p>From his first message: 
+			 <q>I'm starting to question if having links within the text is
+				effective. Many times when I'm reading through a help topic, I just skip over
+				these links continue reading the topic. If I do click on them as I read, I
+				really disrupt the flow of information and often have to page back to find my
+				place on the previous topic. They are annoying and actually disrupt my
+				understand of the topic. 
+			 </q> 
+		  </p> 
+		  <p>He also wrote this after I asked him why he had changed his mind: 
+			 <q>What sparked this change is that my home computer nearly fried
+				here a month ago, so I spent a lot of time reading help topics. It is a
+				different world when you are using the help, instead of creating it. I found
+				the info I needed, but wow, using the help was stressful. Was I entering the
+				right words? Should I click on that link, or will I find everything I need on
+				this topic? What should I do? I need to solve this problem... 
+			 </q> 
+		  </p> 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D9135" status="new"> 
+  <title>Keyboard keystrokes</title> 
+  <shortdesc>The 
+	 <synph>uicontrol</synph> element should be used when describing keys on a
+	 keyboard, and the 
+	 <synph>userinput</synph> element for describing a series of keystrokes that
+	 the user must input. The name of the key should not be encapsulated or
+	 bracketed. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>elements<indexterm>uicontrol</indexterm><indexterm>userinput</indexterm></indexterm><indexterm>keyboard</indexterm><indexterm>computer
+			 keyboard</indexterm><indexterm>keystrokes</indexterm><indexterm>Enter
+			 key</indexterm><indexterm>Tab key</indexterm><indexterm>user
+			 input</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p> 
+	 </p> 
+	 <p>It is not immediately obvious in DITA which element should be used to
+		mark up keyboard keys, such as 
+		<uicontrol>Enter</uicontrol>, 
+		<uicontrol>Ctrl</uicontrol> and 
+		<uicontrol>Backspace</uicontrol>. The best approach (without resorting to
+		
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialisation"><?xm-replace_text Phrase?></ph>)
+		is to use the 
+		<synph>uicontrol</synph> and 
+		<synph>userinput</synph> elements, depending on context. 
+	 </p> 
+	 <p importance="high">When describing keys on a computer keyboard, use the 
+		<synph>uicontrol</synph> element. For example, 
+		<codeph>&lt;p&gt;Use the &lt;uicontrol&gt;Tab&lt;uicontrol&gt; to move
+		  from field to field.&lt;/p&gt;</codeph>. 
+	 </p> 
+	 <note>Do not use the 
+		<synph>shortcut</synph> element; this element is for identifying keyboard
+		shortcuts in descriptions of user interface controls in windowed applications. 
+	 </note> 
+	 <p importance="high">When describing a series of keystrokes, or data, that
+		the user must input, use the 
+		<synph>userinput</synph> element. For example, 
+		<codeph>&lt;cmd&gt;Enter &lt;userinput&gt;1234&lt;/userinput&gt;, then
+		  &lt;uicontrol&gt;Tab&lt;/uicontrol&gt; to continue.&lt;/cmd&gt;</codeph>. 
+	 </p> 
+	 <p>Do not bracket the key name, such as by using square brackets around 
+		<q>Tab</q> to form 
+		<codeph>&lt;uicontrol&gt;[Tab]&lt;/uicontrol&gt;</codeph>. 
+	 </p> 
+	 <p>If the keyboard keys or keystrokes need to be rendered differently from
+		other user interface controls (such as fields and buttons) in the output, then
+		a 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialisation"><?xm-replace_text Phrase?></ph>
+		should be created. An alternative is to use a consistent 
+		<synph>outputclass</synph> attribute on the keyboard elements. 
+	 </p> 
+  </conbody> 
+</concept> 

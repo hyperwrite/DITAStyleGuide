@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D9071" status="new"> 
+  <title>Filtering composite (<term>ditabase</term>) topics</title> 
+  <shortdesc>Care must be taken when applying conditions to composite topics,
+	 as filtering a nested topic through the 
+	 <synph>topicref</synph> element will not necessarily result in the topic
+	 being excluded. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>ditabase</indexterm><indexterm>composite
+			 topics</indexterm><indexterm>filtering<indexterm>composite (ditabase)
+				topics</indexterm></indexterm><indexterm>conditional processing<indexterm>in
+				composite (ditabase) topics</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>Although you should avoid the use of composite topics in any case, there
+		are some complications when filtering such content. 
+	 </p> 
+	 <p>If you have a ditamap 
+		<synph>topicref</synph> element with a condition attribute pointing to a
+		topic within a composite topic file, then excluding elements with that
+		attribute in the build process will not result in the (nested) topic being
+		excluded from the output, unless that (nested) topic also has the condition
+		attribute. The processor will include the entire composite topic if any topic
+		within that composite topic is included in the published output. 
+	 </p> 
+	 <p>Even if the chunking feature is used to split the composite DITA topic
+		into multiple HTML topics, for example, the entire contents of the DITA topic
+		will be output unless condition attributes are applied within the topic. 
+	 </p> 
+  </conbody> 
+</concept> 

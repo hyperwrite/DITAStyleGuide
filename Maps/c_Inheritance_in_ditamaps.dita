@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D9346" status="new"> 
+  <title>Inheritance and cascades in ditamaps</title> 
+  <shortdesc>Properties in ditamaps sometimes cascade from parent elements to
+	 child elements. Some values in ditamaps also override the equivalent values in
+	 referenced topics. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>inheritance<indexterm>in
+				ditamaps</indexterm></indexterm><indexterm>cascades<indexterm>in
+				ditamaps</indexterm></indexterm><indexterm>elements<indexterm>topicgroup</indexterm></indexterm><indexterm>topicgroup
+			 element</indexterm><indexterm>ditamap</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>In the hierarchy section of a ditamap, attribute values in parent
+		topicref elements 
+		<term>cascade</term> down to child elements. For example, setting an 
+		<synph>audience</synph> attribute of 
+		<userinput>administrator</userinput> in a parent 
+		<synph>topicref</synph> will result in all child topicref elements being
+		treated, during processing to an output format, as though they also have an 
+		<synph>audience</synph> attribute of 
+		<userinput>administrator</userinput>. So if you want to exclude a 
+		<q>chapter</q> of a publication from an output using conditional
+		processing, you only need to set the metadata attribute on the chapter parent 
+		<synph>topicref</synph> element, and not on all individual 
+		<synph>topicref</synph> elements. 
+	 </p> 
+	 <p>If a conflicting attribute is set at a lower level, such as the case
+		where a parent 
+		<synph>product</synph> attribute is set to 
+		<userinput>pro</userinput> and a child 
+		<synph>product</synph> attribute is set to 
+		<userinput>lite</userinput>, the setting on the child 
+		<synph>topicref</synph> will override the setting on the parent. 
+	 </p> 
+	 <p>When you want to set attribute values for a group of topics that do not
+		have a common parent topicref, you can use the 
+		<synph>topicgroup</synph> element created for this very purpose. A 
+		<synph>topicgroup</synph> simply serves as a non-hierarchical container
+		for 
+		<synph>topicref</synph> elements in a ditamap. It has the same attributes
+		as a 
+		<synph>topicref</synph> element. 
+	 </p> 
+	 <p>Some elements and attributes in a ditamap are specifically designed to
+		override the corresponding settings in the topic itself. For example, a
+		navigation title (<synph>navtitle</synph>) attribute of the 
+		<synph>topicref</synph> in a ditamap will override the topic's 
+		<synph>title</synph> element as the source for the text to be used in the
+		output table of contents. 
+	 </p> 
+	 <section id="section_FA341ACCA0434A38ACD076E796439D1E"
+	 audience="contributor"> 
+		<title>Rationale</title> 
+		<lq reftitle="Eric Hennum suggested, OASIS DITA TC mailing list"> 
+		  <p> To avoid confusion of type hierarchies and containment hierarchies,
+			 I'd suggest the following terminology: 
+		  </p> 
+		  <p> 
+		  <ul id="ul_84321A4665CB4355BF7955ADD9441DF8"> 
+			 <li id="li_3238D0F132004999BB8ECA5283D6C242"> 
+				<p>"inherit" for type hierarchies 
+				</p> 
+			 </li> 
+			 <li id="li_0AC3AE7A18D74D018CF0D599FED35515"> 
+				<p>"cascade" for containment hierarchies 
+				</p> 
+			 </li> 
+		  </ul> 
+		  </p> 
+		  <p> Because topics are not part of the map containment hierarchy, maybe
+			 "propagate" or "populate" would be a better term. 
+		  </p> 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

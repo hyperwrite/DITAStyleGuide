@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<concept id="concept_070FA90CD7634C3080A5572F2D26B979"> 
+  <title>Phrases and Blocks</title> 
+  <shortdesc>DITA domain elements can be classified into 
+	 <term>block elements</term> and 
+	 <term>phrase elements</term>.
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>phrase
+			 elements</indexterm><indexterm>block elements</indexterm><indexterm>inline
+			 elements</indexterm><indexterm>span elements</indexterm><indexterm>paragraph
+			 elements</indexterm></keywords></metadata>
+  </prolog>
+  <conbody> 
+	 <p>In XML document mark-up languages, including DITA and XHTML, there are
+		typically two types of content mark-up elements: block (or paragraph) elements,
+		and phrase (or inline) elements.
+	 </p>
+	 <p>Phrases are spans of text within a larger block of text, such as words
+		within a paragraph. Typical phrase elements are term (<synph>term</synph>),
+		code phrase (<synph>codeph</synph>), quotation (<synph>q</synph>), and syntax
+		phrase (<synph>synph</synph>). 
+	 </p>
+	 <p>Blocks are paragraph-like elements, which are normally displayed with
+		spacing above and below the block. Typical block elements are paragraph
+		(<synph>p</synph>), code block (<synph>codeblock</synph>), long quotation
+		(<synph>lq</synph>), and note (<synph>note</synph>).
+	 </p> 
+  </conbody> 
+</concept> 

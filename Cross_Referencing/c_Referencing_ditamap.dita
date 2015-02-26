@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D9195" status="new"> 
+  <title>Cross-referencing a ditamap</title> 
+  <shortdesc>Cross-references to ditamaps should not be used, because DITA does
+	 not have a clear method for doing so, and the logic of linking to metadata is
+	 not strong. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>ditamap<indexterm>linking
+				to</indexterm></indexterm><indexterm>cross-references<indexterm>to
+				ditamap</indexterm></indexterm><indexterm>linking<indexterm>to
+				ditamap</indexterm></indexterm><indexterm>xref
+			 element</indexterm><indexterm>elements<indexterm>xref</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>Creating a cross-reference to a ditamap may at first seem to be
+		unremarkable. On reflection, however, cross-referencing a ditamap is
+		problematic. 
+	 </p> 
+	 <p>A ditamap is a specification for a published document, or for part of a
+		document (if nested or modular ditamaps are being used). As such, the ditamap
+		itself contains no content, and it doesn't make sense to link to nothing! More
+		logically, the cross-reference should be to the first topic referenced by the
+		ditamap. 
+	 </p> 
+	 <p>The solution is not as clear-cut as that, unfortunately. There are times
+		when you might want to cross-reference a chapter, as in 
+		<q>described in Chapter 2</q>. Chapter infrastructures are defined in the
+		map, and although they are not content, they are still likely targets of a
+		cross-reference. In any case, DITA topics are intended to be context-agnostic,
+		so cross-referencing a ditamap would restrict that topic's use to publications
+		where the referenced ditamap is also included. 
+	 </p> 
+	 <p>Further, DITA has no clear mechanism for cross-referencing ditamap 
+		<synph>topicref</synph> elements. 
+	 </p> 
+	 <p importance="high">Avoid cross-references to ditamaps. If required, it
+		may be better to cross-reference to the published version of the ditamap, such
+		as the PDF location or Web URL. 
+	 </p> 
+	 <section id="section_97DBF4B736CC4CF9A0FD4CB4CCF5BBF4"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<lq href="http://tech.groups.yahoo.com/group/dita-users/message/14204"
+		 reftitle="Deborah Pickett, Yahoo! DITA Users Group">As far as I know, the
+		  meaning of an xref to a ditamap is not defined by the standard. That may change
+		  in future versions of the standard. Until that happens, you can define it to
+		  mean anything you like in your sphere of influence. In my sphere of influence,
+		  I forbid xrefs to ditamaps on the grounds that "undefined" only means
+		  "undefined for now" and doesn't mean "implementation-defined". If authors want
+		  to reference an entire other publication then I make them reference the
+		  rendered version (pdf, chm) and set scope="external". If DITA-OT does any
+		  useful processing of an xref to a ditamap, then it's probably serendipity
+		  rather than by design. Just another one of those ways in which xref is
+		  underspecified... 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

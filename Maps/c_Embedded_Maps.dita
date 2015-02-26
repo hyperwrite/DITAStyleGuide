@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept id="D2069" status="new" xml:lang="en"> 
+  <title>Embedded (or nested) ditamaps</title> 
+  <shortdesc>The technique of using embedded, or nested, ditamaps can make it
+	 easier to manage documents by separating complex collections of topics into a
+	 number of smaller, simpler collections. 
+  </shortdesc> 
+  <prolog><author
+	 conref="../../conref/conref_source_metadata.dita#topic_hw_conref_meta/author_tony_self"></author><metadata><keywords><indexterm>mapref
+			 element</indexterm><indexterm>elements<indexterm>mapref</indexterm><indexterm>topicref</indexterm></indexterm><indexterm>nested
+			 ditamaps</indexterm><indexterm>modular<indexterm>ditamaps</indexterm></indexterm><indexterm>ditamap<indexterm>nested</indexterm></indexterm><indexterm>embedded
+			 ditamaps</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>The 
+		<synph>topicref</synph> elements in a ditamap usually reference a topic.
+		However, they can also reference ditamaps, which opens up the opportunity for
+		having 
+		<term>embedded</term> (or 
+		<term>nested</term>) maps. 
+	 </p> 
+	 <p>A reference to a ditamap differs from a reference to a topic in having a
+		
+		<synph>format</synph> attribute of 
+	 <option>ditamap</option>. The syntax of a reference to a ditamap is: 
+	 <codeblock>&lt;topicref 
+  format="ditamap"
+   href="engine/ej25.ditamap"
+   navtitle="2.5 Litre Engine"&gt;
+&lt;/topicref&gt;</codeblock> 
+	 </p> 
+	 <p><xref
+		href="c_Embedded_Maps.dita#D2069/fig_B339ABDFE1C54374B7D8D0EC5754DB63"
+		type="fig" format="dita" scope="local"><?xm-replace_text Re-used, embedded (or nested) ditamaps?></xref>
+		illustrates how ditamaps (such as the 
+		<cite>Storing Data</cite> and 
+		<cite>Widget Specifications</cite> ditamaps) can be nested within another
+		ditamap (in this case, the 
+		<cite>Widget User Guide</cite>). Nesting can continue down to many levels
+		deep. And ditamaps can be nested within 
+		<b>many</b> other ditamaps. 
+		<fig id="fig_B339ABDFE1C54374B7D8D0EC5754DB63"> 
+		  <title>Re-used, embedded (or nested) ditamaps</title><image
+		  placement="break" align="left"
+		  id="image_CAD5044560F74455AFB84066FB3C138A" href="../images/embedded_maps.gif"
+		  width="425px" height="235px"> 
+			 <alt>Diagram showing principle of re-used, embedded (or nested)
+				ditamaps 
+			 </alt></image> 
+		</fig> 
+	 </p> 
+	 <p>Nesting ditamaps is a useful tool in permitting content re-use and
+		authoring efficiency. 
+	 </p> 
+	 <p rev="1.2">The term 
+		<term>mapref</term> is sometimes used as shorthand for a 
+		<synph>topicref</synph> with a 
+		<synph>format</synph> attribute of 
+	 <option>ditamap</option>. Until 
+	 <ph
+	  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_DITA12"><?xm-replace_text Phrase?></ph>,
+	 there was no DITA element of 
+	 <synph>mapref</synph>, but 1.2 introduced a 
+	 <synph>mapref</synph> as a convenience element identical in functionality
+	 to 
+	 <synph>topicref</synph> with a 
+	 <synph>format</synph> attribute of 
+	 <option>ditamap</option>. 
+	 </p> 
+	 <section id="section_914C145F9F2B4F4AAA7A55E7796BD0BE"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<lq href="http://tech.groups.yahoo.com/group/dita-users/message/12930"
+		 reftitle="eborah Pickett, Yahoo! DITA Users Group"> 
+		  <p>&gt; But I'd like to have the navtitles of these nested maps appear
+			 in the TOC.&lt; 
+		  </p> 
+		  <p> If you still want to persevere, then it's too late at the
+			 map2htmtoc.xsl stage. Merged maps are dealt with at a much earlier stage
+			 (namely, mapref, which is one of the preprocess stages), which currently
+			 discards the root element (and its attributes, including title) of merged maps.
+			 You will need to look at the mapref XSLT (xsl/preprocess/maprefImpl.xsl) and
+			 change/override it to not throw this information away. 
+		  </p> 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

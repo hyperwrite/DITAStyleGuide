@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en-au" id="D9138">
+  <title>Styling Issues for Conditional Text</title>
+  <conbody>
+	 <p>
+		<draft-comment>This topic isn't really required; out of scope.
+		</draft-comment>
+	 </p>
+	 <section id="section_7FD0EC14D41041C9B84083DCD93AA220"
+	 audience="contributor">
+		<title>Rationale</title>
+		<lq
+		href="http://lists.oasis-open.org/archives/dita/200508/msg00090.html">
+		  <p>I'd suggest that our approach to style policies should consist of
+			 selectors and properties. In essence, a policy file should be able to attach
+			 any style or layout property (including an exclude or hide property) to any
+			 content fragment. The selectors should be CSS-like matches on inherited class,
+			 instance identifier, token value, or nesting of the above. The goal should be
+			 to put policy decisions in the hands of the broad audience that wouldn't be
+			 successful with XSLT. (Because XSLT is always available as a general fallback,
+			 style policies can provide a purely declarative set of selectors and properties
+			 rather than executable flow and expressions.) To produce books from bookmaps,
+			 the set of properties will need properties like page break and so on. A bit
+			 more on the thought:
+			 http://www.oasis-open.org/apps/org/workgroup/dita/email/archives/200409/msg00022.html
+		  </p>
+		  <p>Paul's note below highlights the convergence of this approach with
+			 DITA conditional values, which also provide a system of selectors and
+			 properties. In a perfect world, existing DITA values files would remain valid
+			 instances of the more general style policies format. A transform might be
+			 acceptable.
+		  </p> 
+		</lq>
+	 </section>
+  </conbody>
+</concept>

@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D9177" status="new"> 
+  <title>Paragraphs in reference topics</title> 
+  <shortdesc>Paragraph (<synph>p</synph>) elements should not be used in
+	 reference topics, as reference topics are intended to contain facts, not ideas.
+	 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>reference
+			 topic<indexterm>paragraphs
+				in</indexterm></indexterm><indexterm>elements<indexterm>p</indexterm><indexterm>refsyn</indexterm><indexterm>section</indexterm></indexterm><indexterm>paragraphs<indexterm>in
+				reference topics</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>Reference topics are designed to contain look-up information, typically 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_organised"><?xm-replace_text Phrase?></ph>
+		in a tabular form. As such, paragraph elements containing more narrative ideas
+		than look-up data will normally have no place in a reference topic. 
+	 </p> 
+	 <p>The DITA standard does not permit 
+		<synph>p</synph> elements in the body of a reference topic unless
+		contained within elements such as 
+		<synph>refsyn</synph> and 
+		<synph>section</synph>. 
+	 </p> 
+	 <p importance="high">Do not use workarounds (such as embedding p elements
+		in sections without titles) in order to include a paragraph. Avoid inserting
+		multiple paragraphs in syntax descriptions (<synph>refsyn</synph> elements), as
+		these elements are intended to be brief descriptions. 
+	 </p> 
+	 <p>As with other information types, you should avoid using section elements
+		wherever possible. 
+	 </p> 
+	 <section id="section_B1014A03BFD041B9B31D2256E6B9DE38"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<lq reftitle="Craig Sandvik, Yahoo! DITA Users Group"> 
+		  <p>Yves Barbion wrote: &gt; I see that a &lt;p&gt; is not permitted in
+			 &lt;refbody&gt;; it needs to be wrapped in a &lt;section&gt;. Is there any
+			 specific reason for this or is this a bug &gt; in the DTD? It's deliberate.
+			 References are expected to have sections right from the beginning, unlike
+			 concepts. If you want lead-in text, you still have the ability to include a
+			 &lt;shortdesc&gt; or &lt;abstract&gt;. 
+		  </p> 
+		  <p>You can also cheat and omit &lt;title&gt; from the first
+			 &lt;section&gt;. 
+		  </p> 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

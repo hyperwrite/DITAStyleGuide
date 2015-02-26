@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_25BED1F979EF41FC8B53C613B06D07F5"> 
+  <title><ph
+	 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_Specialisation_InitCap"><?xm-replace_text Phrase?></ph>
+	 elements</title> 
+  <shortdesc>Elements used primarily for 
+	 <ph
+	  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialisation"><?xm-replace_text Phrase?></ph>
+	 are categorised as 
+	 <term
+	  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/term_specialisation_elements"><?xm-replace_text Term?></term>.
+	 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm
+		  conref="../../conref/conref_source_metadata.dita#topic_hw_conref_meta/index_specialisation_elements"><?xm-replace_text Index Term?></indexterm><indexterm>elements<indexterm
+			 conref="../../conref/conref_source_metadata.dita#topic_hw_conref_meta/index_specialisation"><?xm-replace_text Index Term?></indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>The DITA 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialisation"><?xm-replace_text Phrase?></ph>
+		elements are those that are used for architectural purposes rather than for
+		semantic mark-up. In many cases, they are elements provided so that new
+		elements can be 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialised"><?xm-replace_text Phrase?></ph>
+		from them. 
+	 </p> 
+	 <p><ph
+		conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_Specialisation_InitCap"><?xm-replace_text Phrase?></ph>
+		elements include: 
+	 <ul outputclass="listbullet" id="ul_671B9F55D7EC481BB35496048DCD710B"> 
+		<li id="li_D57F74EC9BE64794AC9151FE62D52E3B">boolean 
+		</li> 
+		<li id="li_59F3A36AD57741A0B2FBAD5D79C49F22">data 
+		</li> 
+		<li id="li_0D5B69A45AD446B4962A23C162867272">data-about 
+		</li> 
+		<li id="li_31AA3C5A18C44267AA62F86CDF90926D">foreign 
+		</li> 
+		<li id="li_02A9DF976C1040A9822FA1090F5368FC">index-base 
+		</li> 
+		<li id="li_AE3B4D48548B4AC38F19BC2418DFF7E6">unknown 
+		</li> 
+	 </ul> 
+	 </p> 
+  </conbody> 
+</concept> 

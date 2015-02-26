@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D9079" status="new"> 
+  <title>Separating procedures into granular steps</title> 
+  <shortdesc>Steps within a task topic must be written so that a single step
+	 contains just one user action (known in DITA as a command). 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>step
+			 element</indexterm><indexterm>cmd
+			 element</indexterm><indexterm>command</indexterm><indexterm>action</indexterm><indexterm>line
+			 breaks</indexterm><indexterm>granularity</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>DITA task information types have a structure where each step is designed
+		to contain one command only. This one command per step principle can be
+		stretched a little, such as in the following example. 
+	 </p> 
+	 <codeblock>&lt;step&gt;&lt;cmd&gt;Enter your password, and 
+click &lt;uicontrol&gt;OK&lt;/uicontrol&gt;.&lt;/cmd&gt;&lt;/step&gt;</codeblock> 
+	 <p>In this example, there are technically two actions (entering the
+		password, and clicking the OK button), but a simple action such as 
+		<q>clicking OK</q> can be treated as part of the entering text step. 
+	 </p> 
+	 <p>However, aside from this exception, steps must be limited to one action
+		or command. For example, the following is semantically incorrect (although
+		technically 
+		<term>valid</term>). 
+	 </p> 
+	 <codeblock>&lt;step&gt;&lt;cmd&gt;Browse to https://abc.com, and accept 
+the security certificate. Use factory defaults to 
+log in. (Enter user name &lt;userinput&gt;admin&lt;/userinput&gt; 
+and password &lt;userinput&gt;password&lt;/userinput&gt;).&lt;/cmd&gt;&lt;/step&gt;</codeblock> 
+	 <p>New DITA adopters often ask how a line break can be inserted into a 
+		<synph>step</synph> command. The answer is that it can't, because a line
+		break is a formatting device, not a semantic device, and DITA only stores the
+		semantics. 
+	 </p> 
+	 <section id="section_27F89C9E90EE4D409754A0DD86D44C39"
+	 audience="contributor"> 
+		<title>Rationale</title> 
+		<p>On the DITA Yahoo! Users Group, Rich suggested the following: 
+		</p> 
+		<lq> 
+		  <codeblock>&lt;step&gt; 
+      &lt;cmd&gt;Login to https://192...&lt;/cmd&gt; 
+      &lt;info&gt;Use factory default 
+      credentials--username:&lt;userinput&gt;adminexampler&lt;/userinput&gt;, 
+      password:&lt;userinput&gt;passwordexample&lt;/userinput&gt;&lt;/info&gt; 
+      &lt;/step&gt;</codeblock> As I understand it, DITA intends for the step to begin w/ a 
+		  <codeph>&lt;cmd&gt;</codeph> which should be a terse imperative led by
+		  a verb. Peripheral information should be separately tagged as 
+		  <codeph>&lt;info&gt;</codeph>. I suppose your stylesheet can force your
+		  
+		  <codeph>&lt;info&gt;</codeph> to the start of a new line or not,
+		  thereby negating the need for any 
+		  <codeph>&lt;br&gt;</codeph> tag, which I don't believe is a valid DITA
+		  tag. 
+		</lq> 
+		<p><cite>Source:
+			 http://tech.groups.yahoo.com/group/dita-users/message/7678</cite> 
+		</p> 
+	 </section> 
+  </conbody> 
+</concept> 

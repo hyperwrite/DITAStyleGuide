@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D4753" status="new"> 
+  <title>Cross-references and typography in 
+	 <synph>shortdesc</synph> elements</title> 
+  <shortdesc>Although it is possible to embed a phrase (ph) element in a
+	 shortdesc, and then include formatting and xref elements within the phrase, it
+	 is not a semantically sound practice. 
+  </shortdesc> 
+  <prolog> 
+	 <author>Tony
+		Self</author><metadata><keywords><indexterm>hacks</indexterm><indexterm>workarounds</indexterm><indexterm>typographical
+			 domain elements<indexterm>in short
+				descriptions</indexterm></indexterm><indexterm>shortdesc
+			 element</indexterm><indexterm>ph
+			 element</indexterm><indexterm>elements<indexterm>ph</indexterm><indexterm>shortdesc</indexterm></indexterm><indexterm>cross-references<indexterm>in
+				short descriptions</indexterm></indexterm><indexterm>xref element<indexterm>in
+				shortdesc</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>At first glance, the 
+		<synph>shortdesc</synph> element seems unable to contain some inline
+		mark-up such as cross-references. On closer examination, it becomes apparent
+		that a 
+		<synph>ph</synph> inline element can be inserted, and that 
+		<synph>ph</synph> element can contain cross-references. 
+	 </p> 
+	 <p importance="high">Although the DITA language technically permits this
+		sort of mark-up construct, hacks such as this should not be used. 
+	 </p> 
+	 <p>Example of invalid code: 
+		<codeblock>&lt;shortdesc&gt;The &lt;xref href="c_turbo.dita#c4753/turbo_overview"&gt;
+turbocharger systems&lt;/xref&gt; uses...</codeblock> 
+	 </p> 
+	 <p>Example of technically valid, but unwise, code: 
+		<codeblock>&lt;shortdesc&gt;The &lt;ph&gt;&lt;xref href="c_turbo.dita#c4753/turbo_overview"&gt;
+turbocharger systems&lt;/xref&gt;&lt;/ph&gt; uses...</codeblock> 
+	 </p> 
+	 <p importance="high">The 
+		<synph>shortdesc</synph> element is intended to contain a brief synopsis
+		of the content of the topic, and isn't necessarily intended to be output as
+		part of the topic content. It is intended for link previews and hover text; it
+		doesn't make sense to include cross-references in these. 
+	 </p> 
+	 <p>In the same way, typographical elements such as bold (<synph>b</synph>)
+		and italic (<synph>i</synph>) are not usually appropriate in short
+		descriptions, even though they are technically valid, because short
+		descriptions are often rendered in plain text forms (such as in tooltips). If
+		you think you need such formatting, you should consider whether the content you
+		are including really belongs in a 
+		<synph>shortdesc</synph> element. 
+	 </p> 
+	 <p importance="high">The shortdesc should be treated as metadata, not
+		content. 
+	 </p> 
+	 <p>A 
+		<synph>shortdesc</synph> may legitimately need some inline mark-up, such
+		as where a superscript or subscript character is needed. For example, a 
+		<synph>shortdec</synph> might discuss water as 
+		<codeph>H&lt;sub&gt;2&lt;/sub&gt;O</codeph>. This will inevitably present
+		a problem when the 
+		<synph>shortdesc</synph> text is used in a context where subscripts are
+		not permitted, such as in a tooltip or an HTML topic title. 
+	 </p> 
+	 <p importance="high">Inline mark-up in a 
+		<synph>shortdesc</synph> should therefore be avoided where the formatting
+		of that mark-up in the output is important to its meaning. 
+	 </p> 
+  </conbody> 
+</concept> 

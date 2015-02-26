@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_FDC4B91535A64A78A123DD45D2AEECA1" xml:lang="en"
+ status="new"> 
+  <title>Content re-use</title> 
+  <conbody> 
+	 <lq reftitle="Pamela Kostur, The Rockley Group">Re-use, re-use, re-use,
+		re-use... content re-use is key to content management so it bears repeating
+		repeating repeating. Content re-use means that you can write content once and
+		use it wherever required, but it also means that you have to write content
+		consistently so that it can be re-used. 
+	 </lq> 
+  </conbody> 
+</concept> 

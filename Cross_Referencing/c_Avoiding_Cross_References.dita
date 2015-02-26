@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D9077" status="new"> 
+  <title>Avoiding in-text cross-references to topics</title> 
+  <shortdesc>Cross-references to other topics should be stored in the
+	 relationship table of the ditamap, external to the topic, and not in-line
+	 within the text of the topic. 
+  </shortdesc> 
+  <prolog><author
+	 conref="../../conref/conref_source_metadata.dita#topic_hw_conref_meta/author_tony_self"></author><metadata><keywords><indexterm>relationship
+			 table<indexterm>links
+				in</indexterm></indexterm><indexterm>reltable</indexterm><indexterm>links<indexterm>in
+				topics</indexterm></indexterm><indexterm>in-line
+			 links</indexterm><indexterm>xref element</indexterm><indexterm>related-links
+			 element</indexterm><indexterm>in-text links</indexterm><indexterm>Spool,
+			 Jared</indexterm><indexterm>cross-references<indexterm>to
+				topics</indexterm></indexterm><indexterm>elements<indexterm>xref</indexterm><indexterm>related-links</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>The ditamap's purpose is not limited to specifying the contents of a
+		collection. Automatic inter-topic links are also generated from the ditamap
+		topic hierarchy, and a relationship table section in the ditamap can further
+		extend this automatic linking. 
+	 </p> 
+	 <p>When the same topic appears in a different ditamap, its links will be
+		determined by the hierarchy and relationship table in that different ditamap.
+		In other words, topic-linking is not distributed across many topics, but 
+		<ph
+		conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_centralised"><?xm-replace_text Phrase?></ph>
+		in the ditamap. This makes maintenance far more efficient. 
+	 </p> 
+	 <p>Cross-references to other topics within paragraphs of a topic can be
+		problematic if the cross-referenced target is not always distributed with the
+		source topic. This can lead to broken links or false assumptions about links
+		being in place. 
+	 </p> 
+	 <p>You should therefore define inter-topic cross-references in the ditamap,
+		using the relationship table (<synph>reltable</synph>) feature. 
+	 </p> 
+	 <p>There is some evidence that linking outside the paragraph text in this
+		way may be more effective. 
+	 </p> 
+	 <lq reftitle="Gerry McGovern"
+	 href="http://www.gerrymcgovern.com/nt/2009/nt-2009-11-02-Web-links-action.htm">I've
+		found that the most effective links are written like headings, not part of
+		sentences at all. I've found that putting links in sentences reduces
+		readability and clickability. 
+	 </lq> 
+	 <p>Usability tests on the effectiveness of links conducted by Jared Spool
+		support the view that 
+		<ph
+		conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_externalised"><?xm-replace_text Phrase?></ph>
+		links are more effective than inline, embedded links. Spool's study concluded
+		that: 
+	 <ul outputclass="listbullet" id="ul_53E1159CB2F748BC928DE9F1F323FB99"> 
+		<li id="li_5119618F0B1B447082A4FDB13D52D5D5">Links are less usable when
+		  embedded in the text. 
+		</li> 
+		<li id="li_72714C97694F4B63947C01CF41EC7701">Longer links are more
+		  effective than shorter ones. 
+		</li> 
+		<li id="li_5AB41A54DD194C6EA1BE3377D678F930">People scan for target words
+		  - the scent of information. 
+		</li> 
+	 </ul> 
+	 </p> 
+	 <section id="section_BD3F8C4B0E0244A9ABEBB21F6A890BE6"
+	  audience="contributor"> 
+		<title>References</title> 
+		<ul id="ul_9373468A526A4DC7809CDEEB2EF7ECEC"> 
+		  <li id="li_F764975EA43B448BAF8047895514B3A6"><xref
+			 href="http://www.drdobbs.com/web-development/184413077"
+			 scope="external" format="html">The Scent of Information</xref> 
+		  </li> 
+		</ul> 
+	 </section> 
+  </conbody> 
+</concept> 

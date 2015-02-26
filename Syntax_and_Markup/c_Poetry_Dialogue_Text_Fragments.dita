@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept id="D9382" xml:lang="en" status="new"> 
+  <title>Poetry, 
+	 <ph
+	  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_dialogue"><?xm-replace_text Phrase?></ph>
+	 and fragments of text</title> 
+  <shortdesc>The 
+	 <synph>lines</synph> element is used for content where the line breaks are
+	 important to the meaning of the text. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>lines</indexterm><indexterm>elements<indexterm>lines</indexterm></indexterm><indexterm>poetry</indexterm><indexterm
+		  conref="../../conref/conref_source_metadata.dita#topic_hw_conref_meta/index_dialogue"><?xm-replace_text Index Term?></indexterm><indexterm>text
+			 fragments</indexterm><indexterm>line
+			 breaks</indexterm><indexterm>pre-formatting
+			 text</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>The 
+		<synph>lines</synph> element may be used to represent character 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_dialogue"><?xm-replace_text Phrase?></ph>,
+		and text fragments where the line breaks can be considered to be part of the
+		content. A good example of the 
+		<synph>lines</synph> element is to describe a poem. 
+	 </p> 
+	 <p>A processor will treat line-end characters within a 
+		<synph>lines</synph> element to be part of the data; normally, for most
+		other elements, line-end characters are ignored.
+	 </p>
+	 <p>The 
+		<synph>lines</synph> element is similar to the 
+		<synph>pre</synph> element in HTML. 
+	 </p> 
+  </conbody> 
+</concept> 

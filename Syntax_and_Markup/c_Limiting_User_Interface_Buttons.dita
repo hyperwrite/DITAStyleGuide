@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D9150" status="new"> 
+  <title>Listing user interface buttons</title> 
+  <shortdesc>Definition lists can contain images, and are therefore useful for
+	 explaining the meaning of buttons and graphics. 
+  </shortdesc> 
+  <prolog><metadata><keywords><indexterm>definition
+			 lists</indexterm><indexterm>lists<indexterm>definition
+				list</indexterm></indexterm><indexterm>elements<indexterm>dl</indexterm><indexterm>dlentry</indexterm><indexterm>dt</indexterm><indexterm>dd</indexterm></indexterm><indexterm>dl
+			 element</indexterm><indexterm>dlentry element</indexterm><indexterm>dd
+			 element</indexterm><indexterm>dt
+			 element</indexterm><indexterm>buttons</indexterm><indexterm>user interface
+			 controls</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>When describing a list of user interface items (such as buttons), the
+		definition list construct is semantically appropriate. A definition list
+		(<synph>dl</synph>) element contains one or more definition entry
+		(<synph>dlentry</synph>) elements, each typically containing a definition term
+		(<synph>dt</synph>) and a definition description (<synph>dd</synph>) element.
+		If you are explaining a button, control, or any other graphic, you can insert
+		an image in the definition term (<synph>dt</synph>) element. 
+	 </p> 
+	 <p>An example of such a definition list is: 
+		<codeblock>&lt;dl&gt;
+ &lt;dlentry&gt;
+  &lt;dt&gt;&lt;image href="sample_button.png" /&gt;&lt;/dt&gt;
+  &lt;dd&gt;Opens the directory associated with the document folder.&lt;/dd&gt;
+ &lt;/dlentry&gt;
+&lt;/dl&gt;</codeblock> 
+	 </p> 
+	 <p>In some cases, such as when describing buttons that can be chosen within
+		a step of a task, the 
+		<synph>choicetable</synph> element may be more appropriate. In other
+		cases, especially when the structure of the content is more complex than just
+		image and description, a table may be used. 
+	 </p> 
+	 <section id="section_AA1048BB210444528034CD1A14DCFBD7"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<lq reftitle="Bob Thomas, Yahoo! DITA Users Group"> 
+		  <p>&gt; I'm writing a topic to explain the buttons used on a particular
+			 page &gt; of the ui. &gt; &gt; I would like to list the button icons and write
+			 an explanation with &gt; each icon. &gt; &gt; In the world before structure I
+			 just used a table to present this &gt; kind of information. What would be the
+			 best practice within dita? A &gt; definition list? Doesn't feel quite right. 
+		  </p> 
+		  <p>Some sort of table construction in a reference topic seems to be the
+			 most semantically correct option. Certainly, the topic type is reference. 
+		  </p> 
+		  <p>You could try definition list 'dl'. Put a button icon in each 'dt'
+			 element and the explanations in the corresponding 'dd' elements. This is the
+			 best semantic match that I know about. 
+		  </p> 
+		</lq> 
+		<p><cite></cite> 
+		</p> 
+	 </section> 
+	 <example id="section_803E999D0C3348748A9F5E71409E9015"
+	  audience="contributor"> 
+		<title>Sample</title> 
+		<p> 
+		<dl> 
+		  <dlentry> 
+			 <dt><image placement="inline" href="../images/sample_button.png"
+				width="24px" height="20px" id="image_4D03C1D768824910A5F5A8A9ABF50B17"><?xm-replace_text Paragraph?>
+				  <alt>Typical user interface button 
+				  </alt></image> 
+			 </dt> 
+			 <dd>Opens the directory associated with the document folder. 
+			 </dd> 
+		  </dlentry> 
+		</dl> 
+		</p> 
+		<codeblock>&lt;dl&gt;
+ &lt;dlentry&gt;
+  &lt;dt&gt;&lt;image href="sample_button.png" /&gt;&lt;/dt&gt;
+  &lt;dd&gt;Opens the directory associated with the document folder.&lt;/dd&gt;
+ &lt;/dlentry&gt;
+&lt;/dl&gt;</codeblock> 
+	 </example> 
+  </conbody> 
+</concept> 

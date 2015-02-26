@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_497E21721B8E4EFCA2CFA36CB19CA38B" xml:lang="en"
+ status="new"> 
+  <title>The 
+	 <synph>importance</synph> attribute</title> 
+  <shortdesc>The relative importance or priority of a content element is
+	 recorded in the 
+	 <synph>importance</synph> attribute. Elements with a higher priority may be
+	 highlighted in the output. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>importance
+			 attribute</indexterm><indexterm>attributes<indexterm>importance</indexterm></indexterm><indexterm>priority</indexterm><indexterm>obsolete<indexterm>marking
+				elements as</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>Most DITA content elements include the 
+		<synph>importance</synph> attribute. You can use this attribute to
+		indicate the relative importance of an element, such as a step, in its broader
+		context. 
+	 </p> 
+	 <p>Valid values for the importance attribute are: 
+	 <ul id="ul_3DCF373D23CF4D49B73B03EECFC2385D"> 
+		<li id="li_90480FD45DF54CD89698E75027BC53A9">obsolete 
+		</li> 
+		<li id="li_30CF809AA4CA4431AD7D3E3C89EC31F8">deprecated 
+		</li> 
+		<li id="li_EE4D5B23004A4B0E8BF263EE7A6765DC">optional 
+		</li> 
+		<li id="li_EE2A1FA7245B4442B237F8A58F50BCA3">default 
+		</li> 
+		<li id="li_930F7070A80A4C5FB6C2882B97C17BAD">low 
+		</li> 
+		<li id="li_8A1CA7DAADB346CAA656E6123ED17671">normal 
+		</li> 
+		<li id="li_D7220CA537044447A5ACDFCF8A2FE33A">high 
+		</li> 
+		<li id="li_CD5A47C4A03B4EF493B785CC96D10389">recommended 
+		</li> 
+		<li id="li_15D79F2EA1F34E36948260CE3DA1D3FC">required 
+		</li> 
+		<li id="li_185412A1E1B24EA7B1D040936E96AD08">urgent 
+		</li> 
+	 </ul> 
+	 </p> 
+	 <p>Some publishing tools may highlight elements with a higher priority in
+		some way. For example, in a task topic, 
+		<synph>link</synph> elements (in the 
+		<synph>related-links</synph> section) marked with an 
+		<synph>importance</synph> attribute value of 
+	 <option>required</option> will be rendered in the pre-requisites section in
+	 the output. 
+	 </p> 
+  </conbody> 
+</concept> 

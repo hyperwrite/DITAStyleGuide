@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D9340" rev="1.2" status="new"> 
+  <title>Controlled values for attributes</title> 
+  <shortdesc>Controlled values for metadata attributes can be defined in a
+	 ditamap, and will apply when authoring topics referenced by the ditamap. These
+	 controlled values are defined in the 
+	 <synph>subjectScheme</synph> element. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>subjectScheme
+			 element</indexterm><indexterm>elements<indexterm>subjectScheme</indexterm></indexterm><indexterm>controlled
+			 values</indexterm><indexterm>attributes<indexterm>restricting choice of
+				values</indexterm></indexterm><indexterm>ditamap<indexterm>storing controlled
+				values</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p><ph
+		conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_DITA12"><?xm-replace_text Phrase?></ph>
+		introduced the ability for the author to specify a set of valid metadata
+		attribute values in the ditamap, and have the authoring tool validate the
+		topics to ensure only listed attribute values were used. 
+	 </p> 
+	 <p>The valid attribute values are stored in a 
+		<synph>subjectScheme</synph> section in the ditamap. 
+	 </p> 
+	 <p importance="high">You should store the 
+		<synph>subjectScheme</synph> in a nested ditamap. This is because 
+		<synph>subjectScheme</synph> sections are likely to be re-used, and
+		having separate files makes for easier 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_organisation"><?xm-replace_text Phrase?></ph>.
+		
+	 </p> 
+	 <p>This sample mark-up shows controlled values for the 
+		<synph>platform</synph> attribute of 
+	 <option>linux</option>, 
+	 <option>mswin</option>, and 
+	 <option>zos</option>: 
+	 <codeblock>&lt;subjectScheme&gt; 
+  &lt;subjectdef keys="os" navtitle="Operating system"&gt;
+    &lt;subjectdef keys="linux" navtitle="Linux"/&gt;
+    &lt;subjectdef keys="mswin" navtitle="Microsoft Windows"/&gt; 
+    &lt;subjectdef keys="zos" navtitle="z/OS"/&gt;
+  &lt;/subjectdef&gt;
+  &lt;enumerationdef&gt;
+    &lt;attributedef name="platform"/&gt;
+    &lt;subjectdef keyref="os"/&gt;
+  &lt;/enumerationdef&gt;
+&lt;/subjectScheme&gt;</codeblock> 
+	 </p> 
+	 <section id="section_F0F1DD142D01492AA7C6BFE4009F51DC"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<lq
+		 reftitle="Overview of DITA 1.2 presentation by Kristen James Ebelein, RealWorld DITA Conference, 14 September 2009">
+		  
+		  <p>Subject scheme map defines subjects and their relationships; can
+			 define a full subject taxonomy. Subjects may be associated with topics in other
+			 maps; among other things, this provides metadata that can be used to improve
+			 searching. One common usage: Define controlled values; use a map to define the
+			 values that are allowed in an attribute (such as audience). 
+		  </p> 
+		  <p>Processors can validate attribute settings to ensure conformance. 
+		  </p> 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

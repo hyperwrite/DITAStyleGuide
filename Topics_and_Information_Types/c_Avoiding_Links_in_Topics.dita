@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D9351" status="new"> 
+  <title>Avoiding linking in topics</title> 
+  <shortdesc>A topic with an embedded link is bound to the target of that link.
+	 If the target topic is not included in the same output, the link is not
+	 relevant (and will appear as a broken link in the output). Links should
+	 therefore be removed from the topic to the ditamap; the map being the place
+	 where context is stored. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>reltable</indexterm><indexterm>relationship
+			 table</indexterm><indexterm>context</indexterm><indexterm>separation of content
+			 and
+			 form</indexterm><indexterm>links<indexterm>embedded</indexterm></indexterm><indexterm>links<indexterm>generated</indexterm></indexterm><indexterm>hyperlinks</indexterm><indexterm>embedded
+			 links</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>For content to be truly separated from format, structure, context and
+		delivery, there can be no links embedded within the topic content, because
+		links contain 
+		<term>context</term>. 
+	 </p> 
+	 <p>Embedded links create a dependency upon the linked topics; the topic can
+		only make sense if the target topics for each of the links it are delivered
+		alongside it. If a target topic is not included in the same collection as the
+		topic, then the link will be broken. 
+	 </p> 
+	 <p>DITA includes automatic linking mechanisms based on relationships
+		established in 
+		<term>relationship table (reltable)</term> within the ditamap. Because
+		the ditamap defines the collection of topics to be delivered as a publication,
+		this is a more logical place for links between topics in the collection to be
+		defined. 
+	 </p> 
+  </conbody> 
+</concept> 

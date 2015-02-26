@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D9163" status="new"> 
+  <title>Content re-use definition</title> 
+  <shortdesc>Content re-use is a means of improving efficiency by eliminating
+	 repetition of phrases, blocks of text, topics, and even collections of topics. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>re-use</indexterm><indexterm>definition<indexterm>content
+				re-use</indexterm></indexterm><indexterm>transclusion</indexterm><indexterm>variables</indexterm><indexterm>snippets</indexterm><indexterm>content
+			 re-use</indexterm></keywords></metadata>
+  </prolog>
+  <conbody> 
+	 <p>The term 
+		<term>content re-use</term> means different things to different authors
+		and tool vendors, just as the term 
+		<term>single-sourcing</term> means different things. Sometimes, those
+		terms are used as glib marketing jargon. DITA supports a maximal implementation
+		of content re-use. 
+	 </p> 
+	 <p>Content re-use is achieved through the following strategies: 
+	 <ul outputclass="listbullet" id="ul_A32CE161E0F540E29658F7540C086945"> 
+		<li id="li_F92D20FE11B64332855160668EF05128">Creating multiple
+		  deliverable documents from the same source project. 
+		</li> 
+		<li id="li_681C00DF0A4647639C515F767008A292">Assembling a deliverable
+		  document by defining the sequence and hierarchy of content from topics selected
+		  from a shared repository. 
+		</li> 
+		<li id="li_9F0D302D48E448809C07E3A87E994CC2">Defining conditional
+		  publishing rules, where content can be omitted or included depending on the
+		  specification of the deliverable document. 
+		</li> 
+		<li id="li_7A30EE004EED49FD8312F059E34C99C8">Automated processing of a
+		  document's source to extract and re-assemble the content when creating a
+		  deliverable document. 
+		</li> 
+		<li id="li_0FBB51C38E3040ECA35BE873BB42660F">Transcluding content
+		  snippets from one topic into another topic. 
+		</li> 
+		<li id="li_3C8047CF324A499C9FC58031E70DD538">Using separately-maintained
+		  variables for repeated words or phrases. 
+		</li> 
+	 </ul>
+	 </p> 
+	 <section id="section_F707D2D756A34BFFA48EC0DE81D04565"
+	 audience="contributor"> 
+		<title>References</title> 
+		<p>Further Reading: 
+		  <xref href="http://dita.xml.org/reuse-strategies" scope="external"
+		  format="html">http://dita.xml.org/reuse-strategies</xref> 
+		</p> 
+	 </section> 
+  </conbody> 
+</concept> 

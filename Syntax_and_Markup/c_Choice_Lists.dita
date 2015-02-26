@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_B3C37DED7AF14E05B86CBE49DAC86C14" xml:lang="en"
+ status="new"> 
+  <title>Choice lists</title> 
+  <shortdesc>When writing task topics, the choice list structure can be used to
+	 describe alternative step choices. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>choice
+			 list</indexterm><indexterm>lists<indexterm>choice list in task
+				topic</indexterm></indexterm><indexterm>elements<indexterm>choices</indexterm><indexterm>choice</indexterm></indexterm><indexterm>choices
+			 element</indexterm><indexterm>choice element</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>A choice list is a special purpose list used within 
+		<synph>step</synph> elements in task topics to indicate that the user has
+		to choose one of several actions to complete the task. 
+	 </p> 
+	 <p>The choice list (<synph>choices</synph>) is similar in structure to the
+		general purpose unordered list (<synph>ul</synph>). A 
+		<synph>choices</synph> element contains one or more 
+		<synph>choice</synph> elements. 
+	 </p> 
+	 <p>An example of a choice list being used within a step is: 
+		<codeblock>&lt;step&gt;
+  &lt;cmd&gt;Place the car in gear.&lt;/cmd&gt;
+  &lt;choices&gt;
+    &lt;choice&gt;For automatic gearboxes, select &lt;uicontrol&gt;Park&lt;/uicontrol&gt;.&lt;/choice&gt;
+    &lt;choice&gt;For manual gearboxes, select first gear.&lt;/choice&gt;
+  &lt;/choices&gt;
+&lt;/step&gt;</codeblock> 
+	 </p> 
+  </conbody> 
+</concept> 

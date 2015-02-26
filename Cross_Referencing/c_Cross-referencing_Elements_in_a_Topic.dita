@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<concept id="concept_CFFB1D0AE8D04CBB96EF2A2630FCECFC"> 
+  <title>Cross-referencing elements in a topic</title> 
+  <shortdesc>Cross-references to elements within topics such as figures and
+	 tables allow a reader to easily navigate through a document, whether it is in a
+	 page layout format or a hypertext format. The 
+	 <synph>xref</synph> element is always used for cross-referencing elements
+	 within a topic.
+  </shortdesc> 
+  <conbody> 
+  </conbody> 
+</concept> 

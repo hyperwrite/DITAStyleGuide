@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en-au" id="Dc_Sample_Content_Model"> 
+  <title>Sample Content Model</title> 
+  <conbody> 
+	 <p>
+		<draft-comment>This topic isn't really needed.
+		</draft-comment>
+	 </p>
+	 <p>A simple example topic content model for describing a software feature
+		might be: 
+	 </p> 
+	 <ul outputclass="listbullet" id="ul_972431E5193B4A6EAFFAF316E2AC9AAE"> 
+		<li id="li_3AF22CE301A5423FB837D210A3CE9278">Feature Name 
+		</li> 
+		<li id="li_DC4EE71BA1894CAA8158A862FF957FA9">Feature Description 
+		</li> 
+		<li id="li_7BD1BD359B24483EBB18F9EC7C75AF4F">Terms 
+		</li> 
+		<li id="li_2FDE1162AB7E4CC98A375B416A5D2D2A">Relevant Concepts 
+		</li> 
+		<li id="li_93292A685B074363AA4AC47A20FE925F">System Dependencies 
+		</li> 
+		<li id="li_4ABFD1D089F541089BE690CFEF38553D">UI Configuration 
+		</li> 
+		<li id="li_A51C7046E6274655A43EB2482D0F83AE">Examples 
+		</li> 
+	 </ul> 
+  </conbody> 
+</concept> 

@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<task id="task_C4683F4710DD468C9A3383350C335F74" status="new"> 
+  <title>Configuring source addresses</title> 
+  <shortdesc>The IP address (or range of IP addresses) to which a security
+	 policy applies is set on the 
+	 <uicontrol>Source Address</uicontrol> tab of the 
+	 <wintitle>Configuration</wintitle> window. 
+  </shortdesc> 
+  <prolog><author>Michael Hughes</author><author
+	 conref="../../conref/conref_source_metadata.dita#topic_hw_conref_meta/author_tony_self"></author><metadata><keywords><indexterm>exemplar
+			 topic</indexterm><indexterm>choicetables</indexterm></keywords></metadata>
+  </prolog> 
+  <taskbody> 
+	 <prereq id="prereq_C2651B852F424E50BB266E45D2C2B5E8">You must have been
+		allocated a static IP address before configuring the address. 
+	 </prereq> 
+	 <context id="context_F562A582175C43D18317AEE5DC9B4600">Use the 
+		<uicontrol>Source Address</uicontrol> tab to specify the source IP
+		address for a security policy. 
+	 </context> 
+	 <steps id="steps_C14A5DBF013245C89CDCC8A8526F19A6"> 
+		<step id="step_02F3FCE41CF34FF585F61DD3032D6D2D"> 
+		  <cmd>Click the 
+			 <uicontrol>Source Address</uicontrol> tab. 
+		  </cmd> 
+		</step> 
+		<step id="step_81A348FD6C7F42C6B2646CF7736C6B42"> 
+		  <cmd>Select one of the following settings: 
+		  </cmd> 
+		  <choicetable id="choicetable_CE25D828DE3141D38A5668DF5F0BAA34"> 
+			 <chhead><choptionhd>Option</choptionhd><chdeschd>Description</chdeschd>
+				
+			 </chhead> 
+			 <chrow><choption>Any</choption> 
+				<chdesc>Applies the rule to any IP address.</chdesc> 
+			 </chrow> 
+			 <chrow><choption>Single IP Address</choption> 
+				<chdesc> 
+				  <p>Applies the rule to one IP address. 
+				  </p> 
+				  <note>Use the dotted decimal format. Example: 127.0.0.1 
+				  </note> 
+				</chdesc> 
+			 </chrow> 
+			 <chrow id="test_conref_choicetable"><choption>Network
+				  Address</choption> 
+				<chdesc>Applies the rule to a block of IP addresses. 
+				  <note type="other" othertype="Value">The entry after the slash is
+					 the prefix length, and is a number from 1 to 32. Example:<image
+					 placement="break" align="left"
+					 id="image_2363352E917344A591FEB60B480ECB01"
+					 href="../images/network_address.png" width="208px" height="51px"> 
+						<alt>Network address selection dropdown field 
+						</alt></image> 
+				  </note></chdesc> 
+			 </chrow> 
+			 <chrow><choption>Address Name</choption> 
+				<chdesc>Applies the rule to an address name created as a network
+				  object. 
+				  <note type="tip">If you use network objects in a policy, it is
+					 easier to define the policy if you pre-define those objects in 
+					 <menucascade><uicontrol>Configuration</uicontrol><uicontrol>Objects</uicontrol></menucascade>
+					 before you use them. 
+				  </note></chdesc> 
+			 </chrow> 
+			 <chrow><choption>Dynamic Address Name</choption> 
+				<chdesc>Applies the rule to a dynamic address name created as a
+				  network object.</chdesc> 
+			 </chrow> 
+		  </choicetable> 
+		</step> 
+		<step id="step_9EE00CE2EA0B452687F7313E5DFEE0FA"> 
+		  <cmd>Click 
+			 <uicontrol>OK</uicontrol>. 
+		  </cmd> 
+		</step> 
+	 </steps> 
+  </taskbody> 
+  <related-links> 
+	 <link href="t_mirage_engine_failure.dita#sample_task_topic_short"
+	  type="task" format="dita" scope="local" importance="required"> 
+		<linktext>Applying for Static IP Address Allocation 
+		</linktext> 
+	 </link> 
+  </related-links> 
+</task> 

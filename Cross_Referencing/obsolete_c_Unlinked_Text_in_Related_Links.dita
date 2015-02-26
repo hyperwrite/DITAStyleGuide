@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<concept id="concept_9A828F31219D40B389B3ED131FFAFAB6"> 
+  <title>Unlinked Text in Links</title> 
+  <shortdesc><?xm-replace_text Short Description?>
+  </shortdesc> 
+  <conbody> 
+	 <p importance="high">Do not include any unlinked text in the related links 
+		<synph>linklist</synph> element; it should contain only 
+		<synph>link</synph> elements. 
+	 </p> 
+	 <p> 
+		<draft-comment>The schema prevents this anyway? Furphy? 
+		</draft-comment> 
+		<draft-comment>This topic was Related Links Groups 
+		</draft-comment> 
+	 </p> 
+	 <section id="section_0E8F1155CB24418BBB10DA9F790CA806"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<p>Answering a question about whether additional text is allowed within
+		  the 
+		  <synph>link</synph> element but outside the child 
+		  <synph>linktext</synph> element: 
+		</p> 
+		<lq href="http://tech.groups.yahoo.com/group/dita-users/message/17034"
+		 reftitle="Kris Eberlein, Yahoo! DITA Users Group"> 
+		  <p>Having text like that plays havoc with localization anyway, so it
+			 was just too much trouble to even try. 
+		  </p> 
+		  <p> Go with relationship tables. Remember that you can use multiple
+			 relationship tables, if that makes them easier for you to work with. 
+		  </p> 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

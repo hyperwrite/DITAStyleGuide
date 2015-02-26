@@ -1,0 +1,141 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D9103" status="new"> 
+  <title>Avoiding chunk structure in topics</title> 
+  <shortdesc>The hierarchy of information chunks, and the sequence that chunks
+	 should appear in published collections, should be defined in the ditamap and
+	 not through section elements or nested topics. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>hierarchy</indexterm><indexterm>sequence</indexterm><indexterm>ditabase</indexterm><indexterm>composite
+			 topics</indexterm><indexterm>chunking</indexterm><indexterm>sections</indexterm><indexterm>section
+			 vs
+			 topic</indexterm><indexterm>elements<indexterm>section</indexterm></indexterm><indexterm>structure<indexterm>separation
+				of content and</indexterm></indexterm><indexterm>separation of content and
+			 form</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>A 
+		<term>chunk</term>, in this context, is an identifiable block or unit of
+		information, and 
+		<term>chunking</term> is the process of 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_organising"><?xm-replace_text Phrase?></ph>
+		information into units.
+	 </p>
+	 <p>DITA has a 
+		<synph>section</synph> element, used to divide topics into subsets of
+		information directly related to the topic. When writing content in DITA, you
+		will sometimes have to choose between chunking information into separate
+		topics, or using a single topic with the information chunked into sections
+		within that topic. 
+	 </p> 
+	 <p importance="high">In nearly all cases, separate, simple topics should be
+		preferred to sections. 
+	 </p> 
+	 <p>One of the reasons why 
+		<synph>section</synph> elements should be avoided is that they result in
+		hierarchy and sequence (document structure) being embedded in the topic. If a
+		chunk of content is contained within a section instead of a topic, it must
+		always appear in the same sequence within the containing topic. Structured as a
+		topic, the information can appear in any sequence, in any hierarchy, in any
+		collection. 
+	 </p> 
+	 <p>Sections are more difficult to re-use; the smaller the granularity of a
+		document, the more re-use opportunities there are. 
+	 </p> 
+	 <p>Cases where sections may be appropriate include single topics where the
+		idea covered has many facets. DITA does not permit sections within sections
+		(<term>nested sections</term>). 
+	 </p> 
+	 <p>It is technically possible to nest topics of different information types
+		within a 
+		<term>ditabase</term> (or 
+		<term>composite</term>) topic type. However, the 
+		<term>ditabase</term> topic is not intended for this purpose. It should
+		only be used to contain re-use elements for mixed information types. 
+	 </p> 
+	 <p>Using separate DITA topics doesn't mean that the topics must be
+		generated as separate topics in the output. If necessary, DITA source topics
+		can be grouped into a single output topic, for example, through the 
+		<synph>chunking</synph> attribute in the ditamap 
+		<synph>topicref</synph>. 
+	 </p> 
+	 <p importance="high">The ditamap is the correct place for hierarchy and
+		sequence to be recorded. 
+	 </p> 
+	 <section id="section_444AFE9E2D0C412FA36AAD511CD30B2C"
+	 audience="contributor"> 
+		<title>Rationale</title> 
+		<lq href="http://tech.groups.yahoo.com/group/dita-users/message/10325"
+		reftitle="Bob Thomas, Yahoo! DITA Users Group"> 
+		  <p>The separation of content and form is central to DITA. This 
+			 <i>separation</i> can be further refined into the separation of
+			 content, format, structure and delivery. 
+		  </p> 
+		  <p>The structure of a document should principally be stored in the
+			 ditamap. It is possible to store structure in topics (such as by creating
+			 topics within topics, conreffed or otherwise), but this approach generally
+			 breaks the rule of topics being small, stand-alone units, and restricts re-use.
+			 
+		  </p> 
+		</lq> 
+		<lq reftitle="Phil Grisier, Yahoo! DITA Users Group"
+		href="http://tech.groups.yahoo.com/group/dita-users/message/16277"> Generally I
+		  agree that sections should be avoided within a topic in favor of making them
+		  separate topics and stitched together with a map. I have found sections
+		  occasionally useful in high-level concepts when the concept has several facets.
+		  Using sections after the topic paragraph helps reinforce the faceted nature of
+		  the concept. Generally each section is a paragraph, or two paragraphs with a
+		  figure, bulleted list of (horrors!) a table. (:&gt;). If a section ends up
+		  requiring three paragraphs, my rule of thumb says it should be in a separate
+		  topic. I don't worry too much about the re-use issue in the case above. If
+		  someone wants to re-use a facet description somewhere else, I figure they can
+		  con-ref the section. Furthermore, I only use sections if the facet description
+		  really doesn't stand on it's own. 
+		</lq> 
+		<lq href="http://tech.groups.yahoo.com/group/dita-users/message/16255"
+		 reftitle="David Linton, Yahoo! DITA Users Group"> 
+		  <p> --- "mdd01pa" wrote: &gt; &gt; 
+			 <q>Is it possible to specialize the section element to allow other
+				section elements to be contained within it 
+			 </q> 
+		  </p> 
+		  <p>You can only add constraints when specializing, and the
+			 &lt;section&gt; element defined in &lt;topic&gt; already doesn't permit nested
+			 &lt;section&gt; elements, so any specialization of &lt;section&gt; must also
+			 not permit &lt;section&gt; (or any specialization of it.) When you want to make
+			 subsections, really you should use nested topics (and pull them in from the
+			 map.) I would recommend not using the plain &lt;section&gt; element at all if
+			 you can help it, but treating it purely as a base for specializations like
+			 &lt;example&gt;, &lt;context&gt; etc. 
+		  </p> 
+		</lq> 
+		<lq href="http://groups.yahoo.com/group/dita-users/message/16259"
+		reftitle="Eliot Kimber, Yahoo! DITA Users Group"> I have seen in myself and
+		  others a natural progression from "why can't I nest sections?" to "Everything
+		  is a topic". In particular, you start to arrive at the conclusion that if the
+		  author can set the title value, it should be a topic and if the title is
+		  invariant it is probably a section. Section is intended primarily for use in
+		  reference topics where each reference topic has a consistent set of sections,
+		  e.g., traditional man pages. They can be useful in other topic types as an
+		  informal titled division within a topic, but in general, you start to find that
+		  if it has an author-specified title it should probably be a subtopic. 
+		</lq> 
+		<lq reftitle="Eliot Kimber, OASIS DITA TC mailing list"> 
+		  <p>I originally had the same reaction as others in thinking that
+			 sections should be allowed to nest (you can check the mail archives). But upon
+			 further reflection I came to realize that everything you want to do with nested
+			 sections can be done with nested topics and you avoid the very real danger of
+			 putting a whole document in a single topic body. 
+		  </p> 
+		  <p>In short, DITA currently says that a topic is really the smallest
+			 atomic unit of content organization. Once you accept that, then lots of things
+			 become easier. 
+		  </p> 
+		  <p>Until you accept this you will likely be very frustrated. 
+		  </p> 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<concept id="concept_216DC7ADE74440EBB5F7BAEED9713BE6"> 
+  <title>The 
+	 <synph>source</synph> element</title> 
+  <shortdesc>When a topic is based on information from another resource,
+	 details of that related resource can be stored in the 
+	 <synph>source</synph> metadata element in the topic 
+	 <synph>prolog</synph> section. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><source
+	 href="http://dublincore.org/documents/dces/">Dublin Core Metadata Element
+		Set</source><metadata><keywords><indexterm>source
+			 element</indexterm><indexterm>Dublin Core
+			 Metadata</indexterm><indexterm>elements<indexterm>source</indexterm></indexterm><indexterm>attributes<indexterm>href</indexterm></indexterm><indexterm>href
+			 attribute</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>The 
+		<synph>source</synph> element in the topic 
+		<synph>prolog</synph> section is used to nominate the name and/or
+		location of information from which the topic was drawn or based. It is based on
+		the Dublin Core Metadata Initiative 
+	 <option>source</option> property. The location of the resource is recorded
+	 in the 
+	 <synph>source</synph> element's 
+	 <synph>href</synph> attribute. 
+	 </p> 
+	 <p>For example, if a topic was based on figures published in a Department
+		of Transport report, the source element may be coded as: 
+		<codeblock>&lt;source href="http://www.transport.gov.au/design/adr_online.aspx"&gt;
+  Australian Design Rules
+&lt;/source&gt;</codeblock> 
+	 </p> 
+	 <p>When published to an HTML-based output format, the address in the 
+		<synph>href</synph> attribute of the 
+		<synph>source</synph> element are included in the Dublin Core 
+		<synph>DC.source</synph> metadata in the head section of the HTML page. 
+	 </p> 
+  </conbody> 
+</concept> 

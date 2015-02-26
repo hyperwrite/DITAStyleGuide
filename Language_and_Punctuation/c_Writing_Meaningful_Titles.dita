@@ -1,0 +1,373 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_61BC51D8A66442A59443A02BD9F92AAF" xml:lang="en"
+ status="new"> 
+  <title>Crafting meaningful topic titles</title> 
+  <shortdesc>Writing accurate, concise and consistent topic titles is an
+	 important challenge for DITA authors. Guidelines for crafting title text make
+	 this task a little easier. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm
+		  conref="../../conref/conref_source_metadata.dita#topic_hw_conref_meta/index_labelling"><?xm-replace_text Index Term?></indexterm><indexterm>title
+			 element</indexterm><indexterm>elements<indexterm>title</indexterm></indexterm><indexterm>topic<indexterm>title</indexterm></indexterm><indexterm>concept
+			 topic<indexterm>title</indexterm></indexterm><indexterm>task
+			 topic<indexterm>title</indexterm></indexterm><indexterm>reference
+			 topic<indexterm>title</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>In topic-based authoring, chunks of information have a greater need to
+		be self-supporting, or standalone. This means that topics should be able to be
+		read on their own, without reliance on what comes before or after. A topic with
+		a heading of 
+		<q>Introduction</q> cannot be standalone, because it doesn't adequately
+		describe what the topic is about. 
+		<q>Introducing the 
+		  <ph
+		  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/ph_Subaru_company_name"><?xm-replace_text Phrase?></ph>
+		  Liberty</q> is a better label. 
+	 </p> 
+	 <p>The greater importance of titles in semantic, structured authoring
+		environments means that 
+		<ph
+		conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_labelling"><?xm-replace_text Phrase?></ph>
+		(and other forms of 
+		<ph
+		conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_cataloguing"><?xm-replace_text Phrase?></ph>)
+		needs to be thorough, and time and skill must be devoted to crafting meaningful
+		titles. 
+	 </p> 
+	 <p>In addition to helping the reader understand what a topic is about,
+		titles should also help the reader identify what kind of topic it is. From the
+		topic title, readers should know whether the topic will help them understand
+		something, help them do something, or provide supporting information. This can
+		be done by using different phrasing for titles for topics of different
+		information types. 
+	 </p> 
+	 <p importance="high">Titles must be meaningful, easy to read, accurate,
+		concise and consistent. 
+	 </p> 
+	 <p>When composing titles, try constructing them as sentence fragments. A
+		useful technique is to re-write the title after the content of the topic and
+		the short description are complete. 
+	 </p> 
+	 <p>Some more specific guidelines are: 
+	 <ul id="ul_7F9EAEAD18B44B048B7743B0E7E2F7BB"> 
+		<li id="li_AA1A08B8E8BC4A66986652BB15DD01C2">Do not use definite (eg, 
+		  <q>the</q>) and indefinite (eg, 
+		  <q>an</q>) articles (<q>Engine</q>, not 
+		  <q>The engine</q>). 
+		</li> 
+		<li id="li_D6EB2A83CB75465596735FE6EBFBF756">Use the singular, not plural
+		  (<q>Engine</q>, not 
+		  <q>Engines</q>). 
+		</li> 
+		<li id="li_C4548C6188BF465D90620BC5DB8ADFDD">Do not start titles with 
+		  <ph
+		  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_generalised"><?xm-replace_text Phrase?></ph>
+		  phrases (<q>Security</q> and 
+		  <q>Maintenance</q>, not 
+		  <q>About security</q> and 
+		  <q>Introduction to maintenance</q>). 
+		</li> 
+		<li id="li_0622B18A6B8746B88DFD53A634E8A36F">Do not use the ampersand
+		  character (<q>Controls and switches</q>, not 
+		  <q>Controls &amp; switches</q>). 
+		</li> 
+		<li id="li_A9E2216FEA594B26B7B0DD6A3C5420D0">Prefer the present
+		  participle (<term>-ing</term> form) verb and the imperative to the infinitive
+		  (<q>Starting the engine</q> or 
+		  <q>Start the engine</q>, not 
+		  <q>To Start the Engine</q>). 
+		</li> 
+		<li id="li_78C7110F8F7249F4ADA3A9C38FB17C3E">Do not attempt to use line
+		  breaks. 
+		</li> 
+		<li id="li_F740731E29BD48A1B641F3B1886FE188">Use plain language. 
+		</li> 
+		<li id="li_EB5B840DF44F43319DF7B4728C905604">Aim to use no more than
+		  eight words. 
+		</li> 
+		<li id="li_09D5D5B204814180967B3B52FEA2B765">Use sentence case. 
+		</li> 
+		<li id="li_B2A3415C684D4C5C94B91C61EB89110F">Use qualitative words to
+		  make the title more specific (<q>reducing report length</q>, not 
+		  <q>report length</q>, or 
+		  <q>advantages of forced induction engines</q>, not 
+		  <q>forced induction</q>). 
+		</li> 
+		<li id="li_0C80A1B9E9544CD9848530A449196438">Ensure that the titles can
+		  be understood out of context. 
+		</li> 
+		<li id="li_81B1F441A48B4EF2A51DA9C53F4A504A">Use consistent syntax and
+		  parallel construction. 
+		</li> 
+	 </ul> 
+	 </p> 
+	 <p>To help the reader identify the information type by the title, use the
+		following guidelines. 
+		<simpletable id="simpletable_7850D67F336647E6A912FCDFD3003184"> 
+		  <sthead><stentry>Information
+				Type</stentry><stentry>Syntax</stentry><stentry>Examples</stentry> 
+		  </sthead> 
+		  <strow><stentry>Concept</stentry><stentry>Start with a noun or
+				adjective</stentry><stentry><q>Client window</q>, 
+				<q><ph
+				  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/ph_Subaru_company_name"><?xm-replace_text Phrase?></ph>
+				  Liberty features</q>, 
+				<q>Important Considerations for Engine Modifications</q></stentry> 
+		  </strow> 
+		  <strow><stentry>Task</stentry><stentry>Start with a gerund or present
+				participle, and use singular nouns</stentry><stentry><q>Resetting the
+				  odometer</q>, 
+				<q>Printing the audit report</q></stentry> 
+		  </strow> 
+		  <strow><stentry>Reference</stentry><stentry>Start with a noun or
+				adjective, and include the reference construct (eg, 
+				<q>table</q>, 
+				<q>list</q>, etc)</stentry><stentry><q>Specification table</q>, 
+				<q>Product code list</q></stentry> 
+		  </strow> 
+		</simpletable> 
+	 </p> 
+	 <section id="section_444AFE9E2D0C412FA36AAD511CD30B2C"
+	 audience="contributor"> 
+		<title>Rationale</title> 
+		<p>Jakob Nielsen conducted some analysis into what constitutes good link
+		  text design. As DITA topic titles are used for automatically-generated links,
+		  many of Nielsen's recommendations could be applied to devising titles. 
+		  <lq reftitle="Jakob Nielsen's AlertBox"
+			href="http://www.useit.com/alertbox/nanocontent.html"> 
+			 <p>The two winning links also showcase principles for effective Web
+				content. Both links: 
+			 </p> 
+			 <ul id="ul_65D5E5CB670C4F5AA7C099820026486F"> 
+				<li id="li_7F6C30C3451D4919BD7D9C3325F994C9"> Use plain language 
+				</li> 
+				<li id="li_54C393A6FA8D41EA8DBF1AEC12852E30">Use specific
+				  terminology 
+				</li> 
+				<li id="li_CEC33A7C076D404D85E46110FB655B2E">Follow conventions for
+				  naming common features 
+				</li> 
+				<li id="li_AB04CAC9DB2B4021890BF607451C2C82">Front-load user- and
+				  action-oriented terms 
+				</li> 
+			 </ul> 
+			 <p>These links are infected by 3 nasties that cause bad content
+				usability: 
+			 <ul id="ul_9DBCF438960846CF833BE482AF282165"> 
+				<li id="li_AC7D42B6FC9049ED80A0A5DA266107F0"> Bland, generic words 
+				</li> 
+				<li id="li_D4415DE252464882A74B8E4BF056D8E0">Made-up words or terms
+				  
+				</li> 
+				<li id="li_C4D1E9AEDBC64DEFBCD11A07B2E075D6">Starting with
+				  blah-blah and deferring the information-carrying text to the end 
+				</li> 
+			 </ul> 
+		</p> 
+		</lq> 
+		</p> 
+		<p>Gerry McGovern, commenting on Nielsen's study, summarised some useful
+		  suggestions for titles. 
+		  <lq>Links and headings are very similar in their function. They act as
+			 signposts, as promises. Do not mislead or over-promise. One of the most common
+			 mistakes in link writing is that the link does not deliver on the promise. The
+			 links says "buy stamps here" or "download now", and four clicks later you're
+			 still not able to download. Now means now, not five clicks, two forms and four
+			 minutes later. Links and headings should be no more than 8 words. We did a
+			 study recently of 500 web news headings. Over 70 percent of them were 8 words
+			 or less. Avoid putting links in sentences because this makes it harder to read
+			 the sentence, and harder to understand what the purpose of the link is. Instead
+			 put links on separate lines after the content. Avoid PR, advertising and
+			 marketing gibberish at all costs. Please, please never, ever write anything
+			 like "solving tomorrow's problems today" or "excite your senses" or "the human
+			 element is providing comfort every day." Don't be smart, clever, obscure,
+			 vague. Be clear, compelling, concise, and always focus on what your customers
+			 really care about. And remember, what your customers really care about is very
+			 often not what you really care about. 
+		  </lq> 
+		</p> 
+		<lq reftitle="Tracey et al, 1965"> 
+		  <p>HOW TO WRITE TOPIC HEADINGS 
+		  </p> 
+		  <p>It is important to recognize that the topic title must characterize
+			 and introduce the thematic content, not merely categorize (label) the theme
+			 body. Topic titles are more likely to be representative and topically faithful
+			 if they are (1) constructed as sentence fragments, and (2) rewritten after
+			 composition of the theme. Title-writing guidelines are summarized here. 
+		  </p> 
+		  <p>... 
+		  </p> 
+		  <p>The author, reviewer and reader all need to know "what about?" the
+			 Topic Heading: 
+		  </p> 
+		  <ul id="ul_770C824AEB0F4F86A1DF03887FEB7A3E"> 
+			 <li id="li_77AFDE5E15E846C6A4E5612166BD7EE8">"Receiver Design"- what
+				about it? 
+				<ul id="ul_3B2ED75C34C843D1A49A8D9F0F3C95BD"> 
+				  <li id="li_FEEA682CE8EB411386A8C7C3FF8209CC">TRANSISTORIZATION OF
+					 RECEIVER DESIGN 
+				  </li> 
+				</ul> 
+			 </li> 
+			 <li id="li_77636D04E7C949EA8FE6DBF10C9E27EB"> "Target Tracking"- what
+				about it? 
+				<ul id="ul_4910A1DDFF7D4A189FC0F439E547EAB1"> 
+				  <li id="li_F43F359A89C9460BB85AE05FE3797AB6">NEED FOR REALISM IN
+					 TARGET UPDATING 
+				  </li> 
+				</ul> 
+			 </li> 
+		  </ul> 
+		  <p>Hence, the Topic heading should be a phrase (a sentence fragment of
+			 4 to 8 words), containing prepositions: 
+		  </p> 
+		  <ul id="ul_B8148492E5434E4CA57BBE62FCAFABA2"> 
+			 <li id="li_3F31AED3F178497998993FEAD45793F3">DESIGN OF TOW CABLE FOR
+				LOW DRAG 
+				<ul id="ul_761CCE2E04EE4F3E81740082AF53260C"> 
+				  <li id="li_D330A248CB3642A1A8F282453F235804">(not "Tow Cable
+					 Design") 
+				  </li> 
+				</ul> 
+			 </li> 
+			 <li id="li_D8B8C9B2487F4717B7C4D21E2D22060B">REDUCTION OF
+				NONSYSTEMATIC ERRORS 
+				<ul id="ul_F2DA32BC6E79426EA2A2A4B7EB726B09"> 
+				  <li id="li_69031827C17C45028325B3C01C3C48D2">(not "Nonsystematic
+					 Errors") 
+				  </li> 
+				</ul> 
+			 </li> 
+		  </ul> 
+		  <p>or infinitives: 
+		  </p> 
+		  <ul id="ul_E21972D1DE4B48E18368F78AF1BB4518"> 
+			 <li id="li_51D129EBD4E0402795660C18A30D57D8">THREE WAYS TO SIMPLIFY
+				ANTENNA DESIGN 
+				<ul id="ul_C61BAFB4567F42EF818C9FB998B0DF8F"> 
+				  <li id="li_CF4676BD7A704ABE9A9530A21AEE97E3">(not "Antenna
+					 Design") 
+				  </li> 
+				</ul> 
+			 </li> 
+		  </ul> 
+		  <p>or "ing" verbs: 
+		  </p> 
+		  <ul id="ul_75243BC3D30B490F8A8658157150BA03"> 
+			 <li id="li_D7D5F51E997E4E0F97760FD7F4587B46">CONTROLLING
+				CHARACTERISTIC IMPEDANCE 
+				<ul id="ul_D37EB35CFA1C4F949EB4CEA491C26292"> 
+				  <li id="li_69FE373292434758A3208557C759C695">(not "Characteristic
+					 Impedance") 
+				  </li> 
+				</ul> 
+			 </li> 
+		  </ul> 
+		  <p>If you can take a position, show your attitude with qualitative
+			 words: 
+		  </p> 
+		  <ul id="ul_153C0AB96BD6490CAE7011ADFD8C117C"> 
+			 <li id="li_4E5E8075AA834B7BAACD6672A20AA4D2">ADVANTAGES OF
+				INTERLACING INSTRUCTIONS 
+			 </li> 
+			 <li id="li_669A516741C3482F8E94293CC48CF348">LIMITATIONS OF ANALOG
+				AZIMUTH CONVERSION 
+			 </li> 
+			 <li id="li_22205F63D75F46D795BFBE770C55AB85">PITFALLS IN PROGRAM
+				SCHEDULE CONCURRENCIES 
+			 </li> 
+		  </ul> 
+		  <p>If at first you don't know "what about?" the topic heading, go back
+			 and revise it for greater pertinence after you have written out the Storyboard
+			 (or rough draft). 
+		  </p> 
+		</lq> 
+		<p> 
+		  <cite>Marcia Riefer Poulsen</cite> (in a presentation named 
+		  <cite>The Three Core Topic Types</cite>), suggested the following
+		  naming syntax for the three core DITA information types: 
+		  <lq href="http://www.slideshare.net/MarciaJohnston/three-topic-types"
+			reftitle="Marcia Riefer Poulsen (2006), Three Topic Types"> 
+			 <simpletable id="simpletable_55F6D5F97C4F422FAAE9FE5F7FB0CEF9"> 
+				<sthead><stentry>Information
+					 Type</stentry><stentry>Syntax</stentry><stentry>Examples</stentry> 
+				</sthead> 
+				<strow><stentry>Concept</stentry><stentry>Start with a noun or 
+					 <q>about</q>, or phrase as a
+					 question</stentry><stentry><q>About XYZ</q>, or 
+					 <q>XYZ</q>, or 
+					 <q>What is XYZ?</q></stentry> 
+				</strow> 
+				<strow><stentry>Task</stentry><stentry>Start with a gerund, an
+					 infinitive, an imperative, or 
+					 <q>how to</q>, or phrase as a
+					 question</stentry><stentry><q>Setting up XYZ</q>, 
+					 <q>To Set Up XYZ</q>, 
+					 <q>Set Up XYZ</q>, 
+					 <q>How to Set Up XYZ</q>, or 
+					 <q>How do I Set Up XYZ?</q></stentry> 
+				</strow> 
+				<strow><stentry>Reference</stentry><stentry>Start with a noun, or
+					 phrase as a question</stentry><stentry><q>Specifications</q>, 
+					 <q>Do You Need to get a Name?</q></stentry> 
+				</strow> 
+			 </simpletable> 
+		  </lq> 
+		</p> 
+		<p>By not starting topic titles with generic phrases such as 
+		  <q>How to</q> and 
+		  <q>About</q>, the problem of topics being difficult to identify in a
+		  list can be avoided. For example, in a list: 
+		  <sl> 
+			 <sli>About the 
+				<ph
+				 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/ph_Subaru_company_name"><?xm-replace_text Phrase?></ph>
+				
+				<ph
+				 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/ph_Impreza_product_name"><?xm-replace_text Phrase?></ph>
+				
+			 </sli> 
+			 <sli>About the 
+				<ph
+				 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/ph_Subaru_company_name"><?xm-replace_text Phrase?></ph>
+				Liberty 
+			 </sli> 
+			 <sli>About the 
+				<ph
+				 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/ph_Subaru_company_name"><?xm-replace_text Phrase?></ph>
+				Outback 
+			 </sli> 
+			 <sli>About the SAAB 9_2 
+			 </sli> 
+			 <sli>About the 
+				<ph
+				 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/ph_Subaru_company_name"><?xm-replace_text Phrase?></ph>
+				Forester 
+			 </sli> 
+		  </sl> all the topics tend to blur into one. Much easier to identify
+		  individual topics is a list such as: 
+		  <sl> 
+			 <sli><ph
+				conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/ph_Impreza_product_name"><?xm-replace_text Phrase?></ph>
+				key features 
+			 </sli> 
+			 <sli>Liberty key features 
+			 </sli> 
+			 <sli>Outback key features 
+			 </sli> 
+			 <sli>SAAB 9_2 key features 
+			 </sli> 
+			 <sli>Forester key features 
+			 </sli> 
+		  </sl> 
+		</p> 
+		<lq reftitle="Marcia Riefer Poulsen, 2006">Why structure topics by
+		  information type? So readers instantly know a topic's purpose: to help them
+		  understand something, to help them do something, to provide supporting details.
+		  
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<concept id="concept_F8F837BABC264A4482883B4D707557B4"> 
+  <title>Block and phrase elements</title> 
+  <shortdesc>Most DITA topic semantic elements can be categorised as 
+	 <term>block</term> or 
+	 <term>phrase</term> elements. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>block
+			 elements</indexterm><indexterm>phrase elements</indexterm><indexterm>inline
+			 elements</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>Block elements are paragraph-like elements that are typically displayed
+		in the output with space above and below the content, taking up the full width
+		of the available space. Phrase (or 
+		<term>inline</term>) elements are applied to words or phrases within a
+		block element, and typically do not force new lines in the output. 
+	 </p> 
+	 <p>Block elements can exist within other block elements, but not within
+		phrase elements. 
+	 </p> 
+	 <p>Phrase elements can exist within block elements and within other phrase
+		elements. 
+	 </p> 
+	 <p>Examples of block elements include: 
+	 <ul id="ul_23434BE4FD7D44818BD8422079269D02"> 
+		<li id="li_84762029EC214126A1C87B9126DB8579"><synph>p</synph> (paragraph)
+		  
+		</li> 
+		<li id="li_6A5A73C3688142C0BAB8A68B15380163"><synph>codeblock</synph> 
+		</li> 
+		<li id="li_2224C1C499FE454F8FC5BBAE0BF75869"><synph>steps</synph> 
+		</li> 
+		<li id="li_85A8B53175AE44EA80711B08A13BFDF9"><synph>msgblock</synph> 
+		</li> 
+		<li id="li_7B4C5598EAA645E1A5FA9D2D3334F672"><synph>title</synph> 
+		</li> 
+	 </ul> 
+	 </p> 
+	 <p>Examples of phrase elements include: 
+	 <ul id="ul_528342EC11D647CDBDA6FECAC343EF60"> 
+		<li id="li_08E9317BAA704303990859685C3F8DCA"><synph>term</synph> 
+		</li> 
+		<li id="li_07BBBAB1A89E4D1C89AE4F86FC565108"><synph>codeph</synph> 
+		</li> 
+		<li id="li_B6D1B6B595D34C4590CDADB17F11B5D4"><synph>uicontrol</synph> 
+		</li> 
+		<li id="li_CEA58A048EE84FA7802D1B06E86E5F22"><synph>msgph</synph> 
+		</li> 
+		<li id="li_23D0C26319E047CD86B61E74FFECDD05"><synph>tm</synph>
+		  (trademark) 
+		</li> 
+	 </ul> 
+	 </p> 
+  </conbody> 
+</concept> 

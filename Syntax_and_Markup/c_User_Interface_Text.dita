@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D9111" status="new"> 
+  <title>Messages displayed in a user interface</title> 
+  <shortdesc>DITA has four elements for marking up system messages, error
+	 messages, and other output from a computer system, or equipment user interface.
+	 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>system
+			 messages</indexterm><indexterm>user interface
+			 messages</indexterm><indexterm>messages<indexterm>system</indexterm></indexterm><indexterm>msgph
+			 element</indexterm><indexterm>msgblock
+			 element</indexterm><indexterm>systemoutput element</indexterm><indexterm>msgnum
+			 element</indexterm><indexterm>elements<indexterm>msgph</indexterm><indexterm>msgblock</indexterm><indexterm>system
+				output</indexterm><indexterm>msgnum</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>Whether it is through a software application, a machine instrument
+		panel, or a consumer electronic device display, information is commonly
+		displayed to the user through some sort of user interface. In some cases the
+		information takes the form of lights, gauges, and dials, in other cases the
+		information is audible, and in other cases it is textual or graphical. When
+		describing these messages from the equipment in DITA, a number of semantic
+		elements are used. 
+	 </p> 
+	 <p>The main message elements are: 
+	 <dl> 
+		<dlentry> 
+		  <dt>msgph 
+		  </dt> 
+		  <dd>A short textual message displayed on a screen, as a sound, or on a
+			 printout. This element is used when the message will be described or quoted
+			 within an existing paragraph or block element. 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt>msgblock 
+		  </dt> 
+		  <dd>A long, multi-line textual message displayed on a screen, as a
+			 sound, or on a printout. This element is used when the message will be
+			 described or quoted in its own block element (or paragraph). 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt>msgnum 
+		  </dt> 
+		  <dd>The identification number of a message, such as an error message,
+			 usually displayed on a screen or instrument panel, or on a printout. 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt>systemoutput 
+		  </dt> 
+		  <dd>The response from a system to user input of some kind. This element
+			 is part of the DITA software domain. 
+		  </dd> 
+		</dlentry> 
+	 </dl> 
+	 </p> 
+	 <p>Error messages are usually made up of a 
+		<synph>msgnum</synph> element (the error code) and a 
+		<synph>msgph</synph> or 
+		<synph>msgblock</synph> element. Likewise, status messages are best
+		described with 
+		<synph>msgph</synph> or 
+		<synph>msgblock</synph>. The result displayed on a calculator after a
+		user has entered an equation is best described with a 
+		<synph>systemoutput</synph> element. 
+	 </p> 
+	 <p>The distinction between a message and system output is that the message
+		is something produced by the system or device as part of its function, while a
+		system output is something that the system returns as a direct result of
+		something that the user inputs. Another way of putting it is that the 
+		<synph>systemoutput</synph> is used in conjunction with 
+		<synph>userinput</synph> to describe a 
+		<q>conversation</q> between the user and the system. 
+	 </p> 
+	 <p> 
+		<draft-comment>What about a light like the 
+		  <ph
+			conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/ph_Subaru_company_name"><?xm-replace_text Phrase?></ph>
+		  PIN pad which is both a user input device an output device? 
+		</draft-comment> 
+	 </p> 
+  </conbody> 
+</concept> 

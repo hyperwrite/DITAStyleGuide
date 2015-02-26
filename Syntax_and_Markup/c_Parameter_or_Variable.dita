@@ -1,0 +1,207 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D9373" status="new"> 
+  <title>Parameter and variable names</title> 
+  <shortdesc>DITA has four elements for distinguishing parameters, arguments
+	 and variables, depending on the context in which they are specified. 
+  </shortdesc> 
+  <prolog><metadata><keywords><indexterm
+		  audience="academic">exemplar<indexterm>definition lists, APIs, commands,
+				parameters, commands and
+				codeblock</indexterm></indexterm><indexterm>elements<indexterm>parmname</indexterm><indexterm>var</indexterm><indexterm>parml</indexterm><indexterm>varname</indexterm></indexterm><indexterm>parml
+			 element</indexterm><indexterm>parmname element</indexterm><indexterm>var
+			 element</indexterm><indexterm>varname
+			 element</indexterm><indexterm>parameters</indexterm><indexterm>variables</indexterm><indexterm>arguments</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>In computer science, a parameter is a type of variable which is passed
+		to a program or sub-routine. The term 
+		<term>parameter</term> is closely associated with the term 
+		<term>argument</term>; a parameter is defined in the procedure definition
+		itself, while the argument is the value passed to the procedure in the
+		procedure call. (In this context, a 
+		<term>procedure</term> means a program function, routine or sub-routine.)
+		
+	 </p> 
+	 <p>For example, in the 
+		<cmdname>CalcCharge</cmdname> procedure following, the parameters are 
+		<parmname>hourlyRate</parmname> and 
+		<parmname>numHours.</parmname>. 
+		<codeblock>Function CalcCharge(hourRate as Integer, numHours as Integer) as Integer
+  Return (hourRate * numHours)
+End Function</codeblock>When the 
+		<cmdname>CalcCharge</cmdname> procedure is called, the values passed to
+		the procedure are the arguments; in this case, the values 
+		<parmname>55</parmname> and 
+		<parmname>130</parmname>. 
+		<codeblock>grossFee = CalcCharge(55,130)</codeblock>In some cases, the values of variables will be passed as arguments;
+		that is, they will be a named substitute for the value. 
+		<codeblock>hr = 55
+co = 130
+grossFee = CalcCharge(hr,co)</codeblock> 
+	 </p> 
+	 <p>The three terms 
+		<term>parameter</term>, 
+		<term>argument</term>, and 
+		<term>variable</term> are often used interchangeably, to the point that
+		their specific meanings are often confused. To further confuse matters, their
+		meaning in documentation is subtly different. For example, a variable in
+		documentation is a placeholder in the text that the reader needs to substitute
+		with values particular to the reader. 
+	 </p> 
+	 <p>DITA has four elements used for identifying parameters, arguments, and
+		variables: 
+		<synph>parmname</synph> (parameter name), 
+		<synph>parml</synph> (parameter list), 
+		<synph>varname</synph> (variable name), and 
+		<synph>var</synph> (variable). 
+	 <dl> 
+		<dlentry> 
+		  <dt>parmname 
+		  </dt> 
+		  <dd>Used to identify programming parameters and arguments in commands,
+			 calls, and functions. Documentation usually focusses on the parameters (the
+			 information passed to a procedure), rather than the procedure's arguments, so 
+			 <synph>parmname</synph> is appropriately named. The 
+			 <synph>parmname</synph> element belongs to DITA's programming domain;
+			 it is intended for documenting APIs rather than applications. 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt>parml 
+		  </dt> 
+		  <dd>Used to identify a list of programming parameters and arguments in
+			 commands, calls, and functions. The parml element has a list structure,
+			 comprising 
+			 <synph>plentry</synph> (row), 
+			 <synph>pt</synph> (parameter term), and 
+			 <synph>pd</synph> (parameter definition). The 
+			 <synph>parmname</synph> element belongs to DITA's programming domain;
+			 it is intended for documenting APIs rather than applications. 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt>varname 
+		  </dt> 
+		  <dd>Used when the reader has to substitute a value that might be
+			 specific to their own context or environment. For example, when documenting how
+			 to log on to a system, the user name (which will vary from user to user) will
+			 be marked up as 
+			 <codeph>&lt;varname&gt;</codeph>. The 
+			 <synph>varname</synph> element belongs to DITA's software domain; it
+			 is intended for documenting software applications. 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt>var 
+		  </dt> 
+		  <dd>Used only in syntax diagrams (<synph>syntaxdiagram</synph>), which
+			 are special devices used to document programming languages, and 
+			 <term>application programming interfaces (APIs)</term>. The 
+			 <synph>var</synph> element belongs to DITA's programming domain; it
+			 is intended for documenting programming environments. 
+		  </dd> 
+		</dlentry> 
+	 </dl> 
+	 </p> 
+	 <p>When documenting the example <apiname>CalcCharge</apiname> function, the following approach
+			might be used.
+			<codeblock>&lt;p>The &lt;apiname>CalcCharge&lt;/apiname> has two parameters: 
+   &lt;parml>
+    &lt;plentry>
+     &lt;pt>rate&lt;/pt>
+     &lt;pd>The hourly rate charged to the client.&lt;/pd>
+    &lt;/plentry>
+    &lt;plentry>
+     &lt;pt>hours&lt;/pt>
+     &lt;pd>The total number of hours spent on the client's project.&lt;/pd>
+    &lt;/plentry>
+   &lt;/parml>
+  &lt;/p>
+  &lt;p>Both &lt;parmname>rate&lt;/parmname> and &lt;parmname>hours&lt;/parmname> must be integer values. &lt;/p></codeblock></p> 
+	 <p>By contrast, the <synph>varname</synph> element might be used in a description of a Vehicle
+			Identification Number in a car owner's manual as:
+			<codeblock>&lt;p&gt;The VIN number has the following structure:
+ &lt;varname&gt;Place of Manufacture&lt;/varname&gt;
+ &lt;varname&gt;Model&lt;/varname&gt;
+ &lt;varname&gt;Make&lt;/varname&gt;
+ &lt;varname&gt;Engine&lt;/varname&gt;
+ &lt;varname&gt;Type&lt;/varname&gt;
+ &lt;varname&gt;Equipment&lt;/varname&gt;
+ &lt;varname&gt;Check Digit&lt;/varname&gt;
+ &lt;varname&gt;Year of Manufacture&lt;/varname&gt;
+ &lt;varname&gt;Production Number&lt;/varname&gt;
+&lt;/p&gt;</codeblock>
+		</p> 
+	 <p>In a software user guide, the 
+		<synph>varname</synph> element might be used when describing a directory
+		location, as in: 
+		<codeblock>&lt;p&gt;The transfer file is generated by the &lt;cmdname&gt;Build&lt;/cmdname&gt; application into the
+&lt;filepath&gt;&lt;varname&gt;My Documents&lt;/varname&gt;\acme\xfer&lt;/filepath&gt; folder.&lt;/p&gt;</codeblock> 
+	 </p> 
+	 <p importance="high">In summary, use 
+		<synph>parmname</synph> for programming variables, parameters, and
+		arguments, and 
+		<synph>varname</synph> for other documentation variable placeholders. 
+	 </p> 
+	 <p>Do not use square brackets or other syntactical conventions for simple
+		variable names. If your publishing tool does not insert those conventions
+		during processing, you may need to configure the tool so that it does so. 
+	 </p> 
+	 <section id="section_DDB6DA41144C446183F66F69175F4BFB"
+	 audience="contributor"> 
+		<title>Rationale</title> 
+		<lq reftitle="David Linton, Yahoo! DITA Users Group"
+				href="http://tech.groups.yahoo.com/group/dita-users/message/16318" format="html">
+				<p>I wonder, what are other people doing when they have part of a keyword that they
+					need to denote should be replaced by the user with some value they know? </p>
+				<p>In the spec for &lt;varname&gt;, the example there says </p>
+				<codeblock>&lt;filepath&gt;
+&lt;varname&gt;install-dir&lt;/varname&gt;\projects\working\
+&lt;varname&gt;project-dir&lt;/varname&gt;
+\source\&lt;varname&gt;filename&lt;/varname&gt;.java
+&lt;/filepath&gt;</codeblock>
+				<p>Here, "install-dir", "project-dir" etc are replaced by the user's previous
+					choices. However, the spec itself says "The variable name (&lt;varname&gt;)
+					element defines a variable that must be supplied to a software application."
+					which sounds much more like it should represent a shell variable or something
+					like that. </p>
+				<p>Also, &lt;varname&gt; isn't allowed in &lt;apiname&gt; and some other elements,
+					so for example you can't have </p>
+				<p>Source code for &lt;apiname&gt;com.zapco.service.
+					&lt;varname&gt;MyService&lt;/varname&gt;.
+					&lt;varname&gt;MyService&lt;/varname&gt; Impl&lt;/apiname&gt; is found in the
+					directory
+					&lt;filepath&gt;src/main/java/com/zapco/service/&lt;varname&gt;MyService&lt;/varname&gt;/ </p>
+				<p>What is the original intent behind &lt;varname&gt;, and is there a better element
+					for me to use? I'm not sure &lt;apiname&gt; actually permits any child elements.
+				</p>
+			</lq> 
+		<lq reftitle="Jason Owen, Yahoo! DITA Users Group"
+		href="http://tech.groups.yahoo.com/group/dita-users/message/16326"> When
+		  documenting the API, use the &lt;synph&gt; or &lt;syntaxdiagram&gt; elements.
+		  Those elements have a child element &lt;var&gt; that you could use to tag
+		  variables in an API. 
+		</lq> 
+		<lq reftitle="David Linton, Yahoo! DITA Users Group"
+		href="http://tech.groups.yahoo.com/group/dita-users/message/16327"> Currently I
+		  get around it using &lt;codeph&gt; which does allow &lt;varname&gt;. The
+		  trouble is that enforces &lt;codeph&gt; having the same styling as
+		  &lt;apiname&gt;. If I switched to &lt;synph&gt; I would have to enforce
+		  &lt;var&gt; having the same styling as &lt;varname&gt;, so I don't really gain
+		  anything. I guess I should just accept that the DITA spec is confused about
+		  what &lt;varname&gt; is for. 
+		</lq> 
+		<lq reftitle="Phil Grisier, Yahoo! DITA Users Group"
+		 href="http://tech.groups.yahoo.com/group/dita-users/message/16333"> You used
+		  the &lt;varname&gt; element as intended by the spec. At least, that's how I use
+		  it. Don't confuse &lt;varname&gt; with &lt;parmname&gt;. 
+		</lq> 
+		<p> 
+		  <draft-comment>Cross-reference to a topic which explains syntax
+			 diagrams, use of synph, and use of choices. 
+		  </draft-comment> 
+		</p> 
+	 </section> 
+  </conbody> 
+</concept> 

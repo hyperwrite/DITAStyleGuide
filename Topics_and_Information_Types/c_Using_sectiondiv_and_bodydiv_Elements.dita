@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D9341" rev="1.2" status="new"> 
+  <title>Using 
+	 <synph>sectiondiv</synph> and 
+	 <synph>bodydiv</synph> Elements</title> 
+  <shortdesc>The 
+	 <synph>sectiondiv</synph> and 
+	 <synph>bodydiv</synph> elements are used to help authors re-use a group of
+	 block elements as a single unit. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>conref<indexterm>spanning</indexterm></indexterm><indexterm>elements<indexterm>sectiondiv</indexterm><indexterm>bodydiv</indexterm></indexterm><indexterm>sectiondiv
+			 element</indexterm><indexterm>bodydiv element</indexterm><indexterm>div
+			 elements</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p><ph
+		conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_DITA12"><?xm-replace_text Phrase?></ph>
+		introduced 
+		<synph>sectiondiv</synph> and 
+		<synph>bodydiv</synph> elements. These elements mimic the HTML 
+		<synph>div</synph> element, which is used to group blocks of content that
+		don't have any formal (or semantic) connection. In HTML, the 
+		<synph>div</synph> element is mainly used in conjunction with CSS and
+		Dynamic HTML. 
+	 </p> 
+	 <p>The 
+		<synph>bodydiv</synph> element allows block elements in the body of a
+		topic to be grouped and treated as a single unit in processing. The 
+		<synph>sectiondiv</synph> element likewise allows block elements in a
+		section of a topic to be grouped and treated as a single unit. The two elements
+		are intended as an aid for the author, and their use will be invisible to the
+		reader of the deliverable document. 
+	 </p> 
+	 <p>The most common use of 
+		<synph>sectiondiv</synph> and 
+		<synph>bodydiv</synph> is to group paragraphs so they can be re-used
+		(through a 
+		<term>conref</term>) as one unit, as an alternative to 
+		<term>conref spanning</term>, where a start and end point of a conref
+		source is specified. 
+	 </p> 
+	 <p importance="high">As you should avoid sections (and prefer separate
+		topics), the need to use the 
+		<synph>sectiondiv</synph> element will be limited. 
+	 </p> 
+	 <p>An example of the 
+		<synph>bodydiv</synph> element is: 
+		<codeblock>&lt;conbody&gt;
+...
+&lt;bodydiv id="ebd_intro"&gt;
+&lt;p&gt;The EBD functions by adjusting the distribution of braking force to the 
+rear wheels in accordance with the vehicle's loading condition and speed.&lt;/p&gt;
+&lt;p&gt;The EBD system is an integral part of the ABS system and uses some of the 
+ABS system's components to perform its function of optimizing the 
+distribution of braking force. If any of the ABS components used by 
+the EBD function fails, the EBD system also stops working.&lt;/p&gt;
+&lt;/bodydiv&gt; 
+&lt;/conbody&gt;</codeblock> 
+	 </p> 
+	 <p>The two paragraphs in the example might be re-used in another topic as: 
+		<codeblock>&lt;conbody&gt;
+&lt;p&gt;Your vehicle is equipped with Electronic Brakeforce Distribution (EBF).&lt;/p&gt;
+&lt;bodydiv conref="c_ebd.dita#concept_ebd_explanation/ebd_intro" /&gt;
+...
+&lt;/conbody&gt;</codeblock> 
+	 </p> 
+	 <section id="section_444AFE9E2D0C412FA36AAD511CD30B2C"
+	 audience="contributor"> 
+		<title>Rationale</title> 
+		<lq
+		reftitle="Overview of DITA 1.2 presentation by Kristen James Ebelein,RealWorld DITA Conference, 14 September 2009">
+		  
+		  <p>&lt;sectiondiv&gt; and &lt;bodydiv&gt; allow elements to be grouped
+			 within sections and body elements: 
+		  </p> 
+		  <ul id="ul_6719DBB9C5224690804762E8BD4C0613"> 
+			 <li id="li_B5B6B3CFBC5B422EBA487A78EBAABA38">These elements can nest
+				each other, but do not allow titles 
+			 </li> 
+			 <li id="li_C94952C6C59441FA9DBA87A59C80276C">Used to group elements
+				for reuse through conref 
+			 </li> 
+		  </ul> 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

@@ -1,0 +1,124 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_141498CD15574429BC13C95911FC8B60" xml:lang="en"
+ status="new"> 
+  <title>Image alignment, placement, and sizing</title> 
+  <shortdesc>The 
+	 <synph>align</synph>, 
+	 <synph>placement</synph>, 
+	 <synph>width</synph>, and 
+	 <synph>height</synph> attributes of the 
+	 <synph>image</synph> element are used to specify the placement and size of
+	 images when generated to an output delivery format. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>elements<indexterm>image</indexterm></indexterm><indexterm>attributes<indexterm>align</indexterm><indexterm>placement</indexterm><indexterm>height</indexterm><indexterm>width</indexterm></indexterm><indexterm>height
+			 attribute</indexterm><indexterm>width attribute</indexterm><indexterm>placement
+			 attribute</indexterm><indexterm>align attribute</indexterm><indexterm>image
+			 element</indexterm><indexterm>scaling images</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>The placement of the image on the output page or screen is defined in
+		the 
+		<synph>placement</synph> and 
+		<synph>align</synph> attributes. The 
+		<synph>placement</synph> attribute can be set to 
+	 <option>inline</option> (placing the image inline with the text in the
+	 paragraph in which it is placed) or 
+	 <option>break</option> (placing the image in its own block, with space
+	 above and below it). The 
+	 <synph>align</synph> attribute has valid values of 
+	 <option>left</option>, 
+	 <option>right</option>, 
+	 <option>center</option> and 
+	 <option>current</option>. These values specify how the image will be
+	 aligned on the page or screen. The 
+	 <synph>align</synph> attribute only has an effect if the placement is set
+	 to 
+	 <option>break</option>. 
+	 </p> 
+	 <p importance="high">To display the image in its own block, use the image
+		element independently of a paragraph element, set the 
+		<synph>placement</synph> attribute to break, and the alignment to 
+	 <option>left</option>, 
+	 <option>right</option>, or 
+	 <option>center</option>. 
+	 </p> 
+	 <p importance="high">To display an image within a paragraph or other block
+		element, set the 
+		<synph>placement</synph> attribute to 
+	 <option>inline</option>, and either omit the 
+	 <synph>align</synph> attribute or set it to 
+	 <option>current</option> (to inherit the alignment settings of the element
+	 in which the image is contained). 
+	 </p> 
+	 <p>The 
+		<synph>image</synph> element includes 
+		<synph>height</synph> and 
+		<synph>width</synph> attributes. These attributes are used to store the
+		intended display height and width of the image in the output, expressed in one
+		of a variety of units, including pixels (<option>px</option>), centimetres
+	 (<option>cm</option>), points (<option>pt</option>) and inches
+	 (<option>in</option>). 
+	 </p> 
+	 <note type="tip" product="academic_only">If you are using the DITA Open
+		Toolkit for publishing, you will get the best results if you always use pixels
+		as the unit for 
+		<synph>height</synph> and 
+		<synph>width</synph> attributes, with the dimensions being the actual
+		dimensions of the image. (In other words, do not scale the image using the 
+		<synph>height</synph> and 
+		<synph>width</synph> attributes.) 
+	 </note> 
+	 <section id="section_52FB32A3D2F84D7B91EC22D42E1A0F98"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<p> 
+		  <lq reftitle="Craig Sandvik, Yahoo! DITA Users Group"
+			href="http://tech.groups.yahoo.com/group/dita-users/message/15921">Up until
+			 DITA-OT 1.5, the fo plugin scales graphics from the dimensions supplied in the
+			 DITA source to 72 dots per inch. This enlarges most graphics since typical
+			 modern screenshots are at 96 dpi. Some workarounds for earlier versions: - If
+			 your authoring tool allows it, remove the height and width attributes from the
+			 &lt;image&gt; element in DITA source. - For the &lt;image&gt; element in DITA
+			 source, set the height and width attributes with px (pixel) units, as in
+			 "100px" - If you use a customization XSL, override named template "placeImage".
+			 Copy and paste the template from xsl/fo/commons.xsl, then comment out the code
+			 that scales @height and @width, or change 72 to a larger number (128 works well
+			 for print). 
+		  </lq> 
+		</p> 
+		<lq> 
+		  <p>Bitmap (or "raster") images are collections of pixels. Their
+			 dimensions are normally expressed in pixels. When displayed on a computer
+			 monitor, which is itself made up of pixels, what you see on the screen is what
+			 you expect to see. A pixel is a variable measurement unit... it has a different
+			 physical size depending upon the type of monitor or display being used. 
+		  </p> 
+		  <p>However, when you output a bitmap image to paper (or a paper
+			 simulator like PDF), the pixels need to be somehow converted to fixed physical
+			 measurements, such as millimetres. Some programs will scale the images to a
+			 fixed size using the resolution of the printing device. For example, if you
+			 have a 300 pixels per inch (DPI) printer, and you print a 300 pixel wide
+			 picture, its physical size on the printout will be 1 inch. 
+		  </p> 
+		  <p>When using the PDF2 transformation in the DITA Open Toolkit, the
+			 process uses 72 DPI as the basis for conversion to a fixed size. (72 DPI was
+			 the typical resolution for a cathode ray tube computer monitor at an 800 x 600
+			 setting.) Thus, our 300 pixel image will be displayed at a physical size of
+			 300/72 inches, or 4.2 inches. 
+		  </p> 
+		  <p>So, this is why your images seem to be displaying at a larger size
+			 in PDF than it in HTML format. Your monitor is displaying the image at perhaps
+			 96 DPI, while the PDF is showing it at 72 DPI. 
+		  </p> 
+		  <p>Now, for the possible solution. Firstly, make sure you always set
+			 the width and height attributes for the image to the dimensions of the image,
+			 in pixels. Don't use other measurements, such as 5cm. Don't scale the image by
+			 using a measurement other than the natural size of the image. Always include
+			 the px unit. (height="500" is very different to height="500px") 
+		  </p> 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

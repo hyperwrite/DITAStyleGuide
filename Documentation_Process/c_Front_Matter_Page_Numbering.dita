@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept id="D9048" xml:lang="en" status="new"> 
+  <title>Page numbering in page layout documents</title> 
+  <shortdesc>A single page number sequence through an entire page layout
+	 document generated from DITA is often preferable to the traditional system of
+	 different page number sequences for front matter and back matter. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>front
+			 matter<indexterm>page numbering</indexterm></indexterm><indexterm>back
+			 matter<indexterm>page numbering</indexterm></indexterm><indexterm>page
+			 numbering</indexterm><indexterm>pagination</indexterm><indexterm>numbering<indexterm>page</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>Traditional page numbering systems for printed documents have different
+		numbering ranges for front matter, body content, and back matter. For example,
+		the front matter (such as the Table of Contents, List of Figures, and
+		Acknowledgements) might be numbered in lower case Roman numerals, with the page
+		numbers restarting for the main body content in Arabic numerals. 
+	 </p> 
+	 <p>The historical reasons for the different numbering sequences trace back
+		to the production processes where the Table of Contents couldn't be created
+		until the body of the document was paginated. Technology has since removed that
+		limitation, but in general, the traditional numbering system has persisted. 
+	 </p> 
+	 <p importance="high">When creating PDF (or similar page layout) output
+		documents where the intention is that the documents will primarily be read
+		on-screen, you should process the document with a single page numbering
+		sequence. This will make it easier for the document to be navigated, when the
+		actual page numbers in the viewer match the page numbers displayed on the pages
+		in the document. 
+	 </p> 
+	 <section id="section_E8E65DC7FB6142B3A062B3F19E16836D"
+	 audience="contributor"> 
+		<title>Rationale</title> 
+		<p>Bob Doyle summarised a discussion on the Yahoo! DITA Users Group about
+		  page numbering as follows: 
+		  <lq reftitle="Bob Doyle, Yahoo! DITA Users Group">Traditional books use
+			 lower-case Roman numerals for introductory front material. This and folio-style
+			 chapter numbering, page 2-35, are deprecated practices today. 
+		  </lq> 
+		</p> 
+		<p>If PDF files are numbered with arabic numerals starting from the title
+		  page, they are much easier to view on-line, especially when the source has not
+		  or is unable to add hyperlinks from page references in the ToC, LoF, LoT,
+		  Index, and cross-references. At least you can then "Go to page" and be
+		  confident of arriving at the correct destination, instead of having to apply an
+		  offset to account for the 8 pp (or whatever) of roman-numbered frontmatter, or
+		  going to the trouble to massage the PDF file so that both roman and arabic page
+		  numbers can be used as "Go to page" targets. My question is "Why perpetuate a
+		  hangover from 19th century book printing whose rationale has long disappeared?"
+		  When books were set in hot metal, compositors typically started making up the
+		  type of the body of the book into arabic-numbered pages so that the editor
+		  could work off the page proofs to compile a table of Contents, list of Figures,
+		  list of Tables, Index, and replace the page-number placeholders of
+		  cross-references with the actual number. This also allowed the compositor to
+		  work more efficiently by doing something while the Preface and Introduction
+		  were being written by, respectively, a Famous Person and the Author. The
+		  bastard title, title page, imprint (copyright, legals, credits, etc.) and ToC,
+		  LoF, LoT, etc. were also typeset at this time. After all this frontmatter was
+		  typeset, proofed, and revised, it too was made up into pages. Now there was a
+		  bunch of pages that preceded page 1, so they were numbered in lower-case roman,
+		  I, ii, iii, iv, etc. With ToC, etc, xrefs, Index entries, etc. now able to be
+		  regenerated in minutes, there is no longer any need to number frontmatter in
+		  roman and the body in arabic. In fact, with PDF being the medium now used to
+		  submit camera art to printers, emailed to reviewers, etc., there are far more
+		  reasons to number straight through in arabic from the first to the last page.
+		  So don't bother. Here endeth the sermon. 
+		</p> 
+	 </section> 
+  </conbody> 
+</concept> 

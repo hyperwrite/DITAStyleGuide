@@ -1,0 +1,139 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D9112" status="new"> 
+  <title>Trademarks and service marks</title> 
+  <shortdesc>The trademark (<synph>tm</synph>) element is used to identify
+	 different types of trade and service marks, and to record the mark owner. While
+	 there is no direct provision for a trademark image, a workaround can be used
+	 for this purpose. 
+  </shortdesc> 
+  <prolog><author
+	 conref="../../conref/conref_source_metadata.dita#topic_hw_conref_meta/author_tony_self"></author><metadata><keywords><indexterm>tm
+			 element</indexterm><indexterm>elements<indexterm>tm</indexterm></indexterm><indexterm>trademark</indexterm><indexterm>registered
+			 trademark</indexterm><indexterm>intellectual
+			 property</indexterm><indexterm>service mark</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>A trademark is a distinctive word, phrase, sign, symbol or other
+		indicator used by an 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_organisation"><?xm-replace_text Phrase?></ph>
+		to identify its products or services, or the 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_organisation"><?xm-replace_text Phrase?></ph>
+		itself. Trademark laws vary from country to country, although there are
+		international conventions including the Trademark Law Treaty, the Madrid System
+		of registering trademarks in multiple jurisdictions, and 
+		<term
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/term_WTO"><?xm-replace_text Term?></term>
+		agreements. 
+	 </p> 
+	 <p>DITA includes a trademark (<synph>tm</synph>) element to identify
+		trademark words or phrases. However, there is specific provision for
+		identifying images as trademarks. 
+	 </p> 
+	 <p>The 
+		<synph>tm</synph> element has a required 
+		<synph>tmtype</synph> attribute, which has three valid values: 
+	 <dl> 
+		<dlentry> 
+		  <dt>reg 
+		  </dt> 
+		  <dd>registered trademark 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt>tm 
+		  </dt> 
+		  <dd>unregistered trademark 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt>sm 
+		  </dt> 
+		  <dd>service mark (not widely used outside USA) 
+		  </dd> 
+		</dlentry> 
+	 </dl> 
+	 </p> 
+	 <p>When processed to an output format, the value of the 
+		<synph>tmtype</synph> attribute will typically be used to apply the
+		applicable standard symbol to the trademark or service mark, such as ® or ™. 
+	 </p> 
+	 <p>The 
+		<synph>tm</synph> element also has an optional 
+		<synph>tmclass</synph> attribute, which can be used for different
+		classifications of 
+	 <option>reg</option>, 
+	 <option>tm</option>, and 
+	 <option>sm</option>. More importantly, the 
+	 <synph>tm</synph> element has 
+	 <synph>trademark</synph> and 
+	 <synph>tmowner</synph> attribute. The 
+	 <synph>trademark</synph> attribute is used when the content of the 
+	 <synph>tm</synph> element is different to the legal trademark itself. The 
+	 <synph>tmowner</synph> attribute is used to identify the name of the legal
+	 entity that owns the trademark. 
+	 </p> 
+	 <p>Without any special provision for identifying the trademark detail of an
+		image, a workaround is to code the trademark inside a 
+		<synph>term</synph> element inside the alternative text
+		(<synph>alt</synph> element) value for the image, as in the example: 
+		<codeblock>&lt;image href="..."&gt;
+ &lt;alt&gt;
+  &lt;term&gt;
+   &lt;tm tmtype="reg" tmowner="IBM Corp."&gt;IBM&lt;/tm&gt;
+  &lt;/term&gt;
+ Logo&lt;/alt&gt;
+&lt;/image&gt;</codeblock> 
+	 </p> 
+	 <section id="section_7284DE2B62DE4A38B9E880FC89BB246E"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<lq href="http://lists.oasis-open.org/archives/dita/200512/msg00000.html"
+		 reftitle="Don Day, OASIS DITA Technical Committee Minutes, 29 November 2005">I
+		  think there is a true semantic distinction between trademark text (the
+		  discoverable thing that takes the (TM) or (R) superscript qualifier) and a
+		  logo, which is not ordinarily used in discourse (as with "XML" in "DITA is an
+		  application of (Embedded image moved to file: pic22036.jpg) ") (FYI, there is a
+		  graphic [XML] at the end of that sentence). Lega29 l experts might be even
+		  quicker to point out the distinction between the two. The graphic might be an
+		  output expression of a full trademarked string, but anyone searching a document
+		  for trademark infringement will be doing the string analysis anyway. Even in
+		  the output, the text of the tm should go into the @alt="XML logo" attribute for
+		  the image. - (And the fact that IBM uses logos such as [eServer] in discourse
+		  all over the Web informs me that there are cases for such usage--I'm just
+		  trying to find the best practice for separating source from output concerns.) 
+		</lq> 
+		<lq reftitle="Don Day, Yahoo! DITA Users Group"
+		href="http://tech.groups.yahoo.com/group/dita-users/message/12204">The best
+		  practice that came out of that discussion was this: Don suggests also for Chris
+		  to consider this form: &lt;image href=""&gt;&lt;tm
+		  attrs...&gt;IBM&lt;/tm&gt;&lt;alt&gt;IBM Logo&lt;/alt&gt;&lt;/image&gt; This
+		  has the advantage of not creating any new mark-up, of not introducing image
+		  within keyword (which is what image within tm would imply), and of ensuring
+		  that tm can occur anywhere that you would want to place a logo anyway (that is,
+		  anyplace in which image is already allowed). There is little difference in
+		  terms of processing for output, and it retains the advantage of string
+		  searching for text of interest for policy-enforcing tools, and works fine for
+		  direct authoring. 
+		</lq> 
+		<lq href="http://tech.groups.yahoo.com/group/dita-users/message/12211"
+		reftitle="Jeremy Griffith, Yahoo! DITA Users Group">I like this solution. The
+		  only problem is that it is invalid, at least in DITA 1.1. &lt;g&gt; This
+		  appears to be the closest we can get without losing validity: 
+		  <codeblock>&lt;image href=""&gt;
+ &lt;alt&gt;
+  &lt;term&gt;
+   &lt;tm attrs...&gt;IBM&lt;/tm&gt;
+  &lt;/term&gt;
+ IBM Logo&lt;/alt&gt;
+&lt;/image&gt;</codeblock> The constraints are that &lt;image&gt; can contain only
+		  &lt;alt&gt; (no other elements and no text), and &lt;alt&gt; cannot contain
+		  &lt;tm&gt;. But &lt;alt&gt; can contain &lt;term&gt;, and &lt;term&gt; can
+		  contain &lt;tm&gt;. Since &lt;alt&gt; cannot contain &lt;ph&gt;, the Universal
+		  Solvent for such issues, we're lucky that &lt;term&gt; can mediate here. 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

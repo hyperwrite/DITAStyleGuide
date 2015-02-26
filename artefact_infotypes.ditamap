@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<map id="map_06FC9C73C1A04B5F83B490ECC27F3C4A"><title>Information Types and Topics</title>
+	<topicref format="dita" href="c_Topics_and_Information_Types.dita" navtitle="Information types and topics" scope="local" type="concept">
+		<topicref format="dita" href="Topics_and_Information_Types/c_Content_Models_and_Info_Types.dita" navtitle="Content models and information types" scope="local" type="concept">
+		</topicref>
+		<topicref format="dita" href="Topics_and_Information_Types/c_Information_Types_Explained.dita" navtitle="Information types" scope="local" type="concept">
+			<topicref format="dita" href="Topics_and_Information_Types/c_Concept.dita" navtitle="Concept" scope="local" type="concept"/>
+			<topicref format="dita" href="Topics_and_Information_Types/c_Task.dita" navtitle="Task" scope="local" type="concept">
+				<topicref format="dita" href="Topics_and_Information_Types/c_General_Tasks.dita" navtitle="General Task" scope="local" type="concept"/>
+			</topicref>
+			<topicref format="dita" href="Topics_and_Information_Types/c_Reference.dita" navtitle="Reference" scope="local" type="concept"/>
+			<topicref format="dita" href="Topics_and_Information_Types/c_Glossaries.dita" navtitle="Glossary entry" scope="local" type="concept">
+			</topicref>
+			<topicref format="dita" href="Topics_and_Information_Types/c_Using_Ditabase.dita" navtitle="Composite (ditabase)" scope="local" type="concept"/>
+			<topicref format="dita" href="Topics_and_Information_Types/c_Topic_Proto.dita" navtitle="Topic (proto information type)" scope="local" type="concept"/>
+			<topicref format="dita" href="Topics_and_Information_Types/c_Identifying_the_Information_Type.dita" navtitle="Identifying the information type" scope="local" type="concept">
+			</topicref>
+		</topicref>
+		<topicref format="dita" href="Topics_and_Information_Types/c_What_is_a_Topic.dita" navtitle="What is a topic?" scope="local" type="concept">
+			<topicref format="dita" href="Topics_and_Information_Types/c_How_Detailed_should_a_Topic_be.dita" navtitle="How detailed should a topic be?" scope="local" type="concept">
+				<topicref format="dita" href="Sample_Topics/t_mirage_engine_failure.dita" linking="targetonly" navtitle="Engine failure below 10,000 feet" print="no" scope="local" toc="no" type="task">
+					<topicmeta id="topicmeta_exemplar_topic">
+						<keywords><indexterm>exemplar topic</indexterm><indexterm>sample topic</indexterm><indexterm>example topic</indexterm>
+						</keywords>
+					</topicmeta>
+				</topicref>
+			</topicref>
+			<topicref format="dita" href="Topics_and_Information_Types/c_Granularity_One_File_per_Topic.dita" navtitle="Granularity - one file per topic" scope="local" type="concept"/>
+			<topicref format="dita" href="Topics_and_Information_Types/c_How_Chunking_Works.dita" navtitle="Chunking information into topics" scope="local" type="concept">
+			</topicref><topicref format="dita" href="Topics_and_Information_Types/c_Avoiding_Hierarchy_in_Topics.dita" navtitle="Avoiding chunk structure in topics" scope="local" type="concept"/>
+		</topicref>
+		<topicref format="dita" href="Topics_and_Information_Types/c_Working_with_Topics.dita" navtitle="Working with topics" scope="local" type="concept">
+			<topicref format="dita" href="Topics_and_Information_Types/c_Stub_Topics.dita" navtitle="Stem topics" scope="local" type="concept"/>
+			<topicref format="dita" href="Topics_and_Information_Types/c_Disambiguation_Topics.dita" navtitle="Disambiguation topics" scope="local" type="concept"/>
+			<topicref format="dita" href="Topics_and_Information_Types/c_Avoiding_Links_in_Topics.dita" navtitle="Avoiding linking in topics" scope="local" type="concept"/>
+			<topicref format="dita" href="Topics_and_Information_Types/c_Difference_between_Processes_Procedures_and_Tasks.dita" navtitle="The difference between processes, procedures and tasks" scope="local" type="concept"/>
+			<topicref format="dita" href="Topics_and_Information_Types/c_Using_sectiondiv_and_bodydiv_Elements.dita" navtitle="Using sectiondiv and bodydiv Elements" scope="local" type="concept"/>
+		</topicref>
+		<topicref format="dita" href="Topics_and_Information_Types/c_Specialising_Information_Types.dita" navtitle="Specialised information types" scope="local" type="concept">
+			<topicref format="dita" href="Topics_and_Information_Types/c_Types_of_Specialisation.dita" navtitle="Types of" scope="local" type="concept">
+			</topicref>
+			<topicref format="dita" href="Topics_and_Information_Types/c_Official_Specialisations.dita" navtitle="Official" scope="local" type="concept"/>
+			<topicref format="dita" href="Topics_and_Information_Types/c_To_Specialise.dita" navtitle="To specialise or not to specialise" scope="local" type="concept"/>
+			<topicref format="dita" href="Topics_and_Information_Types/c_Constraints_on_Specialisation.dita" navtitle="Limits on specialisation" scope="local" type="concept"/>
+		</topicref>
+		<topichead navtitle="Topic exemplars" print="no">
+			<topicref format="dita" href="Sample_Topics/t_Exemplar_-_Task_Topic_Configuring_Source_Addresses.dita" navtitle="Configuring source addresses" scope="local" type="task">
+				<topicmeta conref="#topicmeta_exemplar_topic">
+				</topicmeta>
+			</topicref>
+			<topicref format="dita" href="Sample_Topics/t_Exemplar_-_Task_Topic.dita" navtitle="Setting the local directory" scope="local" type="task"/>
+		</topichead>
+	</topicref>
+	<reltable id="reltable_813AB8BE878D41D3B26536E9E472A2CD" title="Relationships between Information Types topics" toc="no">
+		<relheader><relcolspec type="task"/><relcolspec type="concept"/><relcolspec type="reference"/><relcolspec scope="external"/>
+		</relheader>
+		<relrow><relcell/><relcell collection-type="family">
+				<topicref format="dita" href="Topics_and_Information_Types/c_What_is_a_Topic.dita" navtitle="What is a topic?" scope="local" type="concept">
+				</topicref>
+				<topicref format="dita" href="Topics_and_Information_Types/c_Information_Types_Explained.dita" navtitle="Information types" scope="local" type="concept">
+				</topicref></relcell><relcell/><relcell/>
+		</relrow>
+		<relrow><relcell/><relcell collection-type="family">
+				<topicref format="dita" href="Topics_and_Information_Types/c_Avoiding_Hierarchy_in_Topics.dita" navtitle="Avoiding chunk structure in topics" scope="local" type="concept"/>
+				<topicref format="dita" href="Topics_and_Information_Types/c_How_Chunking_Works.dita" navtitle="Chunking information into topics" scope="local" type="concept">
+				</topicref></relcell><relcell/><relcell/>
+		</relrow>
+		<relrow><relcell/><relcell collection-type="family">
+			</relcell><relcell/><relcell/>
+		</relrow>
+		<relrow><relcell/><relcell/><relcell/><relcell/>
+		</relrow>
+	</reltable>
+	<reltable id="reltable_28518CAA84034BF8A4B0FAB9CE1E9DE6" title="One Way Links between Information Type Topics" toc="no">
+		<relheader><relcolspec linking="sourceonly"/><relcolspec linking="targetonly"/>
+		</relheader>
+		<relrow><relcell>
+				<topicref format="dita" href="Topics_and_Information_Types/c_Avoiding_Links_in_Topics.dita" navtitle="Avoiding linking in topics" scope="local" type="concept">
+				</topicref></relcell><relcell>
+				<topicref format="dita" href="Topics_and_Information_Types/c_Avoiding_Hierarchy_in_Topics.dita" navtitle="Avoiding chunk structure in topics" scope="local" type="concept">
+				</topicref></relcell>
+		</relrow>
+		<relrow><relcell>
+			</relcell><relcell>
+			</relcell>
+		</relrow>
+		<relrow><relcell/><relcell/>
+		</relrow>
+	</reltable>
+</map>

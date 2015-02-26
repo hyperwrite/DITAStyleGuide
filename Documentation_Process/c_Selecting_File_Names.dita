@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_7C42D605A0804585AD2D32667F9B3CEF" xml:lang="en"
+ status="new"> 
+  <title>File names</title> 
+  <shortdesc>Having predictable, consistent file names makes it easier for DITA
+	 authors to locate topic and other files in a repository. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>file
+			 naming<indexterm>conventions</indexterm></indexterm><indexterm>names<indexterm>files</indexterm></indexterm><indexterm>underscores
+			 in file names</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>When choosing file names, observe the following guidelines. 
+	 <ul id="generic_file_naming_conventions" otherprops="hw"> 
+		<li id="li_6A7357B9E402414084D895039569C4A2">Use descriptive, short
+		  names, in lower case. 
+		</li> 
+		<li id="li_F585D61C85AF4E539058AC3E3F1B5B42">Use alphanumeric characters.
+		  
+		</li> 
+		<li id="li_E6DEDAB095EB4BA8AEE01F197A857714">Prefer complete words to
+		  abbreviations. 
+		</li> 
+		<li id="li_89F101D9C091465288A5F5EFCCEF31B8">Do not use spaces (use
+		  underscores rather than spaces between words). 
+		</li> 
+		<li id="li_01DC8EAAFB53453C93CCF763E82F4A6E">Prefix the file name with a
+		  character identifying the information type (<filepath>c</filepath>, 
+		  <filepath>t</filepath>, 
+		  <filepath>r</filepath>), separated by an underscore character. 
+		</li> 
+		<li id="li_28E148730A0443D1984A2926CC2DA43F">Be consistent. 
+		</li> 
+	 </ul> 
+	 </p> 
+	 <p>An example of a file name for a task topic with a title of 
+		<q>Refreshing the cache</q> is: 
+		<filepath>t_refreshing_the_cache.dita</filepath> 
+	 </p> 
+	 <p>The use of descriptive names and underscore separators aims to enhance
+		human readability and identification. 
+	 </p> 
+	 <section id="section_47866C089A664958BF1F46152965D79A"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<p>The above naming conventions largely follow the approach recommended
+		  by Sean Hower in 
+		  <cite>What's in a Name? Guidelines for Naming Files 
+		  </cite>, at 
+		  <xref href="http://www.techwr-l.com/node/509" scope="external"
+		  format="html"><?xm-replace_text http://www.techwr-l.com/node/509?></xref>. 
+		</p> 
+	 </section> 
+  </conbody> 
+</concept> 

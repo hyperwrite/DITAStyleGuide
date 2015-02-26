@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D9160" status="new"> 
+  <title>Stem topics</title> 
+  <shortdesc>Rather than manually creating links from parent topics to child
+	 topics, and arranging the links into a formatted table, you should take
+	 advantage of the ability to automatically generate links and descriptions to
+	 topics subordinate in the hierarchy. A parent 
+	 <term>stem topic</term> in the DITA source can become an important
+	 introductory topic in the deliverable document. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>stem
+			 topic</indexterm><indexterm>parent topics</indexterm><indexterm>stub
+			 topic</indexterm><indexterm>generated links</indexterm><indexterm>subordinate
+			 topics</indexterm><indexterm>Hughes, Mike</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>A 
+		<term>stem topic</term> is a short topic that contains very little
+		content, instead providing pointers (cross-reference links) to related
+		information. Stem topics are used as navigation aids for online documents. 
+	 </p> 
+	 <p product="academic_only">An example of a stem topic might be: 
+		<lq> 
+		  <p><b>Vehicle Model Specifications</b> 
+		  </p> 
+		  <p>There are 14 vehicle models in the 
+			 <ph
+			  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/ph_Subaru_company_name"><?xm-replace_text Phrase?></ph>
+			 passenger vehicle range. Detailed specifications are provided for each model. 
+		  </p> 
+		  <codeblock>[Link to Model 1] 
+... 
+[Link to Model 14]</codeblock> 
+		</lq> 
+	 </p> 
+	 <p>Stem topics should not contain descriptions of the related topics;
+		instead, the publishing process should be used to automatically insert links
+		and short descriptions to the related topics. Stem topics are typically 
+		<term>parent</term> topics in a Table of Contents hierarchy, where the
+		related topics are 
+		<term>children</term> of the (stem) parent. Avoiding content in stem
+		topics reduces the amount of redundant writing (writing a short description
+		twice, once in the stem topic and once in the target child topic), and avoids
+		embedded links that reduce re-usability (as the stem topic with an embedded
+		link can only be used if the linked topic is part of the same collection). 
+	 </p> 
+	 <p>For example, the following stem topic is not desirable, as it includes
+		content and embedded links. 
+	 </p> 
+	 <p> 
+		<fig id="fig_ED5CAD324D284C86A57BFD6159903A00"> 
+		  <title>Example of stem topic with embedded links and table
+			 formatting</title><image href="../images/hughes_stub_topic_example1.jpg"
+		  id="image_F69B25B8718C4DADBDCC9C15AC79E3A5" placement="break" align="left"
+		  width="372px" height="427px"> 
+			 <alt>Example of stem topic with embedded links and table formatting 
+			 </alt></image> 
+		</fig> 
+	 </p> 
+	 <p importance="high">You should instead use relationships in the ditamap to
+		automatically generate links to the child topics, and automatically place the
+		short descriptions of those child topics. This approach would result in the
+		following deliverable document. 
+	 </p> 
+	 <p> 
+		<fig id="fig_0658212DFAAD4E5DB086C8567E6E5B55"> 
+		  <title>Example of stem topic with generated links</title><image
+		  href="../images/hughes_stub_topic_example2.jpg"
+		  id="image_40EB4691EC2D47BD8349BB9319C68DBA" align="left" placement="break"
+		  width="393px" height="429px"> 
+			 <alt>Example of stem topic with generated links to subordinate topics
+				
+			 </alt></image> 
+		</fig> 
+	 </p> 
+	 <p>Although it may not have the same aesthetic appeal as the manually
+		created stem topic, the benefits of re-usability and efficiency outweigh the
+		look-and-feel. 
+	 </p> 
+	 <section id="section_70690ECD79A54F37BC36D8CE655D7D4D"
+	  audience="contributor"> 
+		<title>References</title> 
+		<ul id="ul_EC7009B9B78B44B5A0685DE59C607156"> 
+		  <li id="li_FF86A9966B5C41978CC3769572949AC5"
+			conref="../../conref/conref_source_references.dita#concept_60C4D0117D5941E4A5F815B50A7F8454/cite_Hughes_2009"><?xm-replace_text List Item?>
+		  </li> 
+		</ul> 
+		<p>Source of stem topic examples: 
+		  <cite>Hughes (2009)</cite> 
+		</p> 
+	 </section> 
+  </conbody> 
+</concept> 

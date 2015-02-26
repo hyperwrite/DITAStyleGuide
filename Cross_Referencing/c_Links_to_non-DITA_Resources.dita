@@ -1,0 +1,149 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<concept id="concept_A2EED5F6282845D3BC523F71BDA21DFD"> 
+  <title>Links to non-DITA resources</title> 
+  <shortdesc>Cross-references can be used to link from within DITA topics to
+	 non-DITA resources, such as Web URLs, e-mail addresses, and documents stored on
+	 file servers. The 
+	 <synph>scope</synph> and 
+	 <synph>format</synph> attributes of the cross-reference are used to define
+	 the nature of the linked resource, and indirectly the way the link will behave.
+	 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>elements<indexterm>xref</indexterm></indexterm><indexterm>attributes<indexterm>scope</indexterm><indexterm>format</indexterm></indexterm><indexterm>PDF<indexterm>linking
+				to</indexterm></indexterm><indexterm>HTML<indexterm>linking
+				to</indexterm></indexterm><indexterm>cross-references</indexterm><indexterm>xref
+			 element</indexterm><indexterm>linking</indexterm><indexterm>hyperlinks</indexterm><indexterm>Internet<indexterm>linking
+				to</indexterm></indexterm><indexterm>Web<indexterm>linking
+				to</indexterm></indexterm><indexterm>e-mail addresses<indexterm>linking
+				to</indexterm></indexterm><indexterm>scope
+			 attribute</indexterm><indexterm>peer</indexterm><indexterm>format
+			 attribute</indexterm><indexterm>external<indexterm>cross-references</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p> The four most important attributes in the cross-reference
+		(<synph>xref</synph>) element are 
+		<synph>href</synph>, 
+		<synph>type</synph>, 
+		<synph>scope</synph> and 
+		<synph>format</synph>. 
+	 </p> 
+	 <p>When linking to non-DITA resources such as PDF files or Web addresses,
+		the 
+		<synph>scope</synph> attribute describes whether the linked resource is
+		treated as part of the DITA collection or external to it. This setting will
+		ultimately determine how the HTML output code will be formed during the
+		publishing process, and then how the browser will handle the link. The 
+		<synph>format</synph> attribute describes the type of resource being
+		linked to. 
+	 </p> 
+	 <p>The main 
+		<synph>scope</synph> attribute values are: 
+	 <dl> 
+		<dlentry> 
+		  <dt>local 
+		  </dt> 
+		  <dd>the resource forms part of the content collection (and will
+			 typically be opened in the current browser when it is output to a hypertext
+			 form) 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt>external 
+		  </dt> 
+		  <dd>the resource is managed separately to the content collection (and
+			 will typically be opened in a new browser or tab when it is output to a
+			 hypertext form) 
+		  </dd> 
+		</dlentry> 
+	 </dl> 
+	 </p> 
+	 <note>The other valid 
+		<synph>scope</synph> attribute of 
+		<option>peer</option> is similar to 
+		<option>local</option>, but is used when the linked resource is not
+		available at build time. It is only relevant when linking to DITA resources. 
+	 </note> 
+	 <p>The valid 
+		<synph>format</synph> attribute values for non-DITA resources are: 
+	 <dl> 
+		<dlentry> 
+		  <dt>html 
+		  </dt> 
+		  <dd>the non-DITA file format of the linked resource is HTML or XHTML 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt>pdf 
+		  </dt> 
+		  <dd>the non-DITA file format of the linked resource is PDF 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt>txt 
+		  </dt> 
+		  <dd>the non-DITA file format of the linked resource is plain text 
+		  </dd> 
+		</dlentry> 
+	 </dl> 
+	 <dl> 
+		<dlentry> 
+		  <dt><varname>file type</varname> 
+		  </dt> 
+		  <dd>the three letter file extension of the non-DITA file format of the
+			 linked resource (for example, 
+			 <userinput>ppt</userinput> and 
+			 <userinput>odt</userinput>) 
+		  </dd> 
+		</dlentry> 
+	 </dl> 
+	 </p> 
+	 <p>An example of the code for a local and an external cross-reference link
+		is: 
+		<codeblock>&lt;xref href="somefile.html" format="html" scope="local" /&gt;
+&lt;xref href="somefile.doc" format="doc" scope="external" /&gt;
+&lt;xref href="http://abc.com/intro.htm" format="html" scope="external" /&gt;</codeblock> 
+	 </p> 
+	 <p> 
+		<draft-comment>Think about restructuring this topic so that some of it
+		  goes to "The xref Element", some stays as the Non-DITA links, and the topc
+		  about linking in a new window becomes a note in this topic. But maybe this
+		  structure is better for reference? 
+		</draft-comment> 
+	 </p> 
+	 <section id="section_D8D6678A3CC947D49EABDE17593C1E84"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<lq reftitle="Deborah Pickett, Yahoo! DITA Users Group"
+		 href="http://tech.groups.yahoo.com/group/dita-users/message/16348">georgerioux
+		  wrote: 
+		  <q>From what I can gather from reading the spec (which explicitly
+			 mentions linking to .txt files), you should be able to do this by setting the
+			 correct format (e.g., doc) and scope (e.g., peer) attributes, but when I add
+			 the xref in my source the link in the HTML output does not work. (I've tried
+			 several different combinations of scope and format.)</q> Try using
+		  scope="external" and copying the *.doc file manually to the output area after
+		  the build has finished. (scope="peer" is almost never what you want. It is for
+		  a very specific use that doesn't include what you are trying to do.) 
+		</lq> 
+		<lq href="http://groups.yahoo.com/group/dita-users/message/17635"
+		 reftitle="Deborah Pickett, Yahoo! DITA Users Group"> 
+		  <p>On 2010-03-18 05.38, mt_si_dad wrote: &gt; &lt;xref
+			 href="mailto:name@domain. com"&gt;Click to send e-mail&lt;/xref&gt; 
+		  </p> 
+		  <p>Yes, that looks good. I'd also recommend adding scope="external" so
+			 that the build knows not to try to follow the link. 
+		  </p> 
+		</lq> 
+		<lq reftitle="Eliot Kimber, Yahoo! DITA Users Group"
+		href="http://groups.yahoo.com/group/dita-users/message/17644"> You need to add
+		  scope="external" ( as you would for any reference to things that are outside of
+		  your DITA content set). You may need to also say format="email" or something
+		  but that probably shouldn't be necessary--most processors should just pass an
+		  external URI straight through to the output. 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

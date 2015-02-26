@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_B8AFB9DACC9140B79A6C5C6805FB461B" xml:lang="en"
+ status="new"> 
+  <title>Purpose of short descriptions</title> 
+  <shortdesc>Short descriptions typically perform three different functions:
+	 providing an overview in the first paragraph of the topic, as link preview text
+	 (or hover text) in hypertext outputs, and as part of the subordinate topic
+	 preview text in the parent of the topic. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords> 
+		  <indexterm>short description</indexterm><indexterm>shortdesc
+			 element</indexterm><indexterm>elements<indexterm>shortdesc</indexterm></indexterm><indexterm>link
+			 preview</indexterm><indexterm>hover text</indexterm><indexterm>subordinate
+			 topic preview</indexterm><indexterm>Scent of
+			 Information</indexterm><indexterm>tool tips</indexterm><indexterm>preview
+			 text</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>The short description (<synph>shortdesc</synph>) element allows a writer
+		to provide a short overview of the content of the topic. The 
+		<synph>shortdesc</synph> is typically generated as the first content
+		paragraph (after the title) in the output. However, some processors can omit
+		the short description from the topic entirely. The 
+		<synph>shortdesc</synph> is also typically used for link previews (in
+		hypertext output formats), and for subordinate topic preview summaries in
+		parent topics. Again, some processors may not generate the 
+		<synph>shortdesc</synph> elements in this way. Some processors may also
+		truncate the short description in a link preview or subordinate topic preview. 
+	 </p> 
+	 <fig id="fig_10C41259920E485680B01D302D70C4DF"> 
+		<title>Example of short descriptions as subordinate topic previews in
+		  HTML output</title><image placement="break" align="left"
+		id="image_423A1E59FFED4BF48DD30128EDF80423"
+		href="../images/shortdesc_example1.png" width="425px" height="273px"> 
+		  <alt>Screen capture of Web page with short description topic preview 
+		  </alt></image> 
+	 </fig> 
+	 <fig id="fig_BF4555B8C5194244AFF8AE68CBED00BE"> 
+		<title>Example of short description as link previews in HTML
+		  output</title><image placement="break" align="left"
+		id="image_C0E7D8568F9C4C29BA61274BA9F44EDB"
+		href="../images/shortdesc_example2.png" width="409px" height="71px"> 
+		  <alt>Screen capture showing mouse-hover popup text displaying short
+			 description of link target 
+		  </alt></image> 
+	 </fig> 
+	 <p>Short descriptions can be defined in the topic, or in the 
+		<synph>topicmeta</synph> section of the 
+		<synph>topicref</synph> in the ditamap. 
+	 </p> 
+	 <p importance="high">The short description should normally be defined in
+		the topic. Only if the topic has a different purpose in a particular ditamap
+		should the short description be defined in the map. 
+	 </p> 
+	 <p>Subordinate topic previews and link previews serve as 
+		<term>progressive disclosure devices</term>, which aim to provide the
+		reader with an understanding of what the linked topic contains, without having
+		to follow the link. This allows the user to navigate through the online
+		document more efficiently. 
+	 </p> 
+	 <p>As the first paragraph of the topic, the short description can serve as
+		an overview that allows the reader to quickly decide whether to read on. This
+		purpose is more readily achieved by the systematic use of short descriptions,
+		and visually identifying the short description in the output with distinctive
+		styling (thematic unity). 
+	 </p> 
+	 <fig id="fig_275868C76DAB420FA32BB9A95A5DE164"> 
+		<title>Example of short description styled distinctively in HTML
+		  output</title><image placement="break" align="left"
+		id="image_E055A962153C476A8724F7AE11C85673"
+		href="../images/shortdesc_example3.png" width="423px" height="153px"> 
+		  <alt>Example of short description styled distinctively in HTML output 
+		  </alt></image> 
+	 </fig> 
+	 <section id="section_9B19E8E852194A438CD3EC798E403814"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<p>Progressive disclosure devices are described by Jared Spool as
+		  providing 
+		  <q>the scent of information</q>. 
+		</p> 
+	 </section> 
+  </conbody> 
+</concept> 

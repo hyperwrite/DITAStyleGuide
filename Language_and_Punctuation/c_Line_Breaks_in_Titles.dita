@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D9377" status="new"> 
+  <title>Line breaks in titles</title> 
+  <shortdesc>There is no line break element or equivalent in DITA. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>line
+			 breaks</indexterm><indexterm>separation of content and
+			 form</indexterm><indexterm>workarounds</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>Line breaks are formatting constructs, so in general, DITA mark-up
+		doesn't provide for them. However, it's not quite so clear cut. Despite working
+		to the ideal that content should be separated from form, DITA does provide for
+		a good deal of form mark-up. 
+	 </p> 
+	 <p>Table column widths can be specified in DITA, even though that's form.
+		Image sizes can be specified in DITA, and that too is form. 
+	 </p> 
+	 <p>It is possible to use these loopholes in the separation of content and
+		form to make possible things such as line breaks in titles. For example, a
+		workaround is to place a one pixel by one pixel image within the title, and set
+		the image element's placement attribute to break. This will cause, in most
+		outputs, the title to be displayed with text before the image displayed on a
+		different line to text following. 
+	 </p> 
+	 <p importance="high">You must avoid the temptation to use such workarounds
+		in an attempt to introduce form into DITA content. 
+	 </p> 
+  </conbody> 
+</concept> 

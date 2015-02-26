@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_643E4066978E4D23B5FD3BEECCAA6C3C" xml:lang="en"
+ status="new"> 
+  <title>Figures containing tables</title> 
+  <shortdesc>Simple tables can be contained within figures instead of, or in
+	 addition to, images. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>tables</indexterm><indexterm>figures</indexterm><indexterm>fig
+			 element</indexterm><indexterm>simpletable
+			 element</indexterm><indexterm>elements<indexterm>fig</indexterm><indexterm>simpletable</indexterm><indexterm>lq</indexterm><indexterm>msgblock</indexterm><indexterm>codeblock</indexterm><indexterm>dl</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>Figures will normally contain images or other forms of graphical
+		illustration. However, they can also contain text-based objects such as simple
+		tables (<synph>simpletable</synph> elements), definition lists
+		(<synph>dl</synph> elements), code blocks (<synph>codeblock</synph> elements),
+		message blocks (<synph>msgblock</synph> elements), and long quotations
+		(<synph>lq</synph> elements). 
+	 </p> 
+	 <p>As a simple table can itself contain images, it is also possible to use
+		the 
+		<synph>simpletable</synph> structure to create figures comprising
+		multiple images and text fragments, such as a collection of images along with
+		supporting explanatory text. 
+	 </p> 
+	 <example id="example_CB747FA51A5E4690BA12F9BE9060E57E"> 
+		<title>Example of Code for Table Containing Images in a Figure
+		  Structure</title> 
+		<codeblock>&lt;fig&gt;
+ &lt;title&gt;Screen captures showing different rendering views&lt;/title&gt;
+ &lt;simpletable&gt;
+  &lt;strow&gt;
+   &lt;stentry&gt;
+    &lt;image href="../images/qa_dhtml_before.png"&gt;
+     &lt;alt&gt;Screen capture showing the standard display of a topic &lt;/alt&gt;
+    &lt;/image&gt;
+   &lt;/stentry&gt;
+  &lt;/strow&gt;
+  &lt;strow&gt;
+   &lt;stentry&gt;
+    &lt;image href="../images/qa_dhtml_after.png"&gt;
+     &lt;alt&gt;Screen capture showing the display of a topic in QA mode&lt;/alt&gt;
+    &lt;/image&gt;
+   &lt;/stentry&gt;
+  &lt;/strow&gt;
+ &lt;/simpletable&gt;
+&lt;/fig&gt;
+</codeblock> 
+	 </example> 
+  </conbody> 
+</concept> 

@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<reference id="reference_6FB31F18C6F749D78832DB80AA363731"
+ xml:lang="en" status="new"> 
+  <title>Programming domain elements</title> 
+  <shortdesc>The elements in the programming domain each have a specific
+	 semantic purpose. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>elements<indexterm>programming</indexterm></indexterm><indexterm>programming
+			 domain</indexterm></keywords></metadata>
+  </prolog> 
+  <refbody> 
+	 <simpletable id="simpletable_4211B5AF0F2E499E96062BE134E7530A"> 
+		<sthead><stentry>Element Name</stentry><stentry>Semantic
+			 Purpose</stentry> 
+		</sthead> 
+		<strow><stentry>apiname</stentry><stentry>API name</stentry> 
+		</strow> 
+		<strow><stentry>codeblock</stentry><stentry>code block</stentry> 
+		</strow> 
+		<strow><stentry>codeph</stentry><stentry>code phrase</stentry> 
+		</strow> 
+		<strow><stentry>option 
+		  </stentry><stentry>one of a set of options</stentry> 
+		</strow> 
+		<strow><stentry>parmname</stentry><stentry>parameter or
+			 argument</stentry> 
+		</strow> 
+		<strow><stentry>parml</stentry><stentry>parameter list</stentry> 
+		</strow> 
+		<strow><stentry>plentry</stentry><stentry>parameter list entry (within
+			 parml)</stentry> 
+		</strow> 
+		<strow><stentry>pt</stentry><stentry>parameter term (within
+			 plentry)</stentry> 
+		</strow> 
+		<strow><stentry>pd</stentry><stentry>parameter definition (within
+			 plentry)</stentry> 
+		</strow> 
+		<strow><stentry>synph</stentry><stentry>syntax phrase</stentry> 
+		</strow> 
+		<strow><stentry>syntaxdiagram</stentry><stentry>syntax diagram</stentry> 
+		</strow> 
+		<strow><stentry>groupseq</stentry><stentry>group of syntactic units (used
+			 only for syntax diagrams)</stentry> 
+		</strow> 
+		<strow><stentry>groupchoice</stentry><stentry>choice of a group of
+			 syntactic units (used only for syntax diagrams)</stentry> 
+		</strow> 
+		<strow><stentry>groupcomp</stentry><stentry>group of composite syntactic
+			 units (used only for syntax diagrams)</stentry> 
+		</strow> 
+		<strow><stentry>fragment</stentry><stentry>fragment of syntax (used only
+			 for syntax diagrams)</stentry> 
+		</strow> 
+		<strow><stentry>fragref</stentry><stentry>cross-reference to a fragment
+			 of syntax</stentry> 
+		</strow> 
+		<strow><stentry>synblk</stentry><stentry>block of small pieces of
+			 syntax</stentry> 
+		</strow> 
+		<strow><stentry>synnote</stentry><stentry>footnote within syntax (syntax
+			 note)</stentry> 
+		</strow> 
+		<strow><stentry>synnoteref</stentry><stentry>cross-reference to a syntax
+			 note</stentry> 
+		</strow> 
+		<strow><stentry>kwd</stentry><stentry>syntax keyword (used only for
+			 syntax diagrams)</stentry> 
+		</strow> 
+		<strow><stentry>var</stentry><stentry>variable that a user must supply
+			 (used only for syntax diagrams)</stentry> 
+		</strow> 
+		<strow><stentry>oper</stentry><stentry>operator character (such as +, -,
+			 and =) within syntax</stentry> 
+		</strow> 
+		<strow><stentry>delim</stentry><stentry>delimiter character (such as /,
+			 |, and ;) within syntax</stentry> 
+		</strow> 
+		<strow><stentry>sep</stentry><stentry>separator character within
+			 syntax</stentry> 
+		</strow> 
+		<strow><stentry>repsep</stentry><stentry>separator character for repeated
+			 syntax elements</stentry> 
+		</strow> 
+	 </simpletable> 
+  </refbody> 
+</reference> 

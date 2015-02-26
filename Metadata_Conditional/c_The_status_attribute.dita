@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_D23DDB4C2F2C486EAD83466749F6E524" xml:lang="en"
+ status="new"> 
+  <title>The 
+	 <synph>status</synph> attribute</title> 
+  <shortdesc>The position of a topic or content element in the development life
+	 cycle is recorded in the 
+	 <synph>status</synph> attribute. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>status
+			 attribute</indexterm><indexterm>attributes<indexterm>status</indexterm></indexterm><indexterm>Document
+			 Development Life Cycle</indexterm><indexterm>life
+			 cycle</indexterm><indexterm>project planning</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>Most DITA content elements include the 
+		<synph>status</synph> attribute. This attribute makes most sense when
+		applied to the top-level topic element, such as 
+		<synph>concept</synph>, 
+		<synph>task</synph> and 
+		<synph>reference</synph> elements, and you can use it to record the
+		status or progress of the information in its life cycle. 
+	 </p> 
+	 <p>Valid values for the 
+		<synph>status</synph> attribute are: 
+	 <ul id="ul_D11330BE1F4045A9A07395A4CF2B0D10"> 
+		<li id="li_FEE98AA837BB436AB4E147B1683F69F6">new 
+		</li> 
+		<li id="li_FC93C4318EE045B2BB567304B99237EA">changed 
+		</li> 
+		<li id="li_348EED304A63405987A42ABA9902CDAB">deleted 
+		</li> 
+		<li id="li_4176A8F61CCE4274BC88C25415ED5E98">unchanged 
+		</li> 
+	 </ul> 
+	 </p> 
+	 <p>Some authoring tools may highlight topics with different 
+		<synph>status</synph> attribute values in different ways, and some
+		publishing tools may also take advantage of the attribute values. 
+	 </p> 
+  </conbody> 
+</concept> 

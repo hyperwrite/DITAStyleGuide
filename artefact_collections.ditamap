@@ -1,0 +1,131 @@
+<?xml version="1.0"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<map id="map_3B5C4692E856416CBDA12430A4175CEF"><title>DITA Map Files</title>
+	<topicref format="dita" href="Maps/c_DITA_Map_Files.dita" navtitle="DITA map files" scope="local" type="concept">
+		<topicref format="dita" href="Maps/c_Working_with_Map_Files.dita" navtitle="Purpose of ditamap files" scope="local" type="concept">
+			<topicref format="dita" href="Maps/c_Publication_Defined.dita" navtitle="Publication and collection defined" scope="local" type="concept"/>
+			<topicref format="dita" href="Maps/c_Anatomy_of_ditamap.dita" navtitle="Anatomy of a ditamap file" scope="local" type="concept">
+			</topicref>
+			<topicref format="dita" href="Maps/c_Generated_Relationship_Links.dita" navtitle="Generated relationship links" scope="local" type="concept">
+			</topicref><topicref format="dita" href="Maps/c_Sample_ditamap_File.dita" linking="none" navtitle="Sample ditamap file" print="yes" product="academic_only" scope="local" toc="no" type="concept"/>
+		</topicref>
+		<topicref format="dita" href="Maps/c_Topic_Manifest.dita" navtitle="Topic manifest" scope="local" type="concept"/>
+		<topicref format="dita" href="Maps/c_Topic_Based_Architecture_Needs_TOC.dita" navtitle="Topic hierarchy" scope="local" type="concept">
+			<topicref format="dita" href="Maps/c_Structuring_a_TOC.dita" navtitle="Designing a topic hierarchy" scope="local" type="concept">
+			</topicref>
+			<topicref format="dita" href="Maps/c_Output_Styling.dita" navtitle="Heading levels and ditamaps" scope="local" type="concept"/>
+			<topicref format="dita" href="Maps/c_Controlling_Default_Page.dita" navtitle="Controlling the top node (default topic)" scope="local" type="concept"/>
+			<topicref format="dita" href="Maps/c_Excluding_Map_Topics_from_TOC.dita" navtitle="Excluding topics from the output TOC" scope="local" type="concept"/>
+			<topicref format="dita" href="Maps/c_glossref.dita" navtitle="Creating a Glossary of Terms" scope="local" type="concept"/>
+		</topicref>
+		<topicref format="dita" href="Maps/c_Understanding_Relationship_Tables.dita" navtitle="Relationship tables" scope="local" type="concept">
+			<topicref format="dita" href="Maps/c_Types_of_Relationship_Tables.dita" navtitle="Types of relationship tables" scope="local" type="concept"/>
+			<topicref format="dita" href="Maps/c_Labels_for_reltable_Links.dita" navtitle="Labels for reltable related topic links" scope="local" type="concept"/>
+			<topicref format="dita" href="Maps/c_Link_Text_for_Relationship_Tables.dita" navtitle="Link text for reltable related topic links" scope="local" type="concept"/>
+			<topicref format="dita" href="Maps/c_Storing_Relationship_Table_Maps_Separately.dita" navtitle="Storing relationship tables in separate, embedded ditamaps" scope="local" type="concept"/>
+			<topicref format="dita" href="Maps/c_Sample_reltable.dita" linking="none" navtitle="Sample relationship table" product="academic_only" scope="local" toc="no" type="concept"/>
+		</topicref>
+		<topicref format="dita" href="Maps/c_Linking_Relationships.dita" navtitle="Linking relationships" scope="local" type="concept">
+			<topicref format="dita" href="Maps/c_Hierarchical_Linking_Relationships.dita" navtitle="Hierarchical linking relationships" scope="local" type="concept">
+			</topicref>
+			<topicref format="dita" href="Maps/c_Relationship_Between_Hierarchy_and_reltable.dita" navtitle="Relationship between hierarchy and relationship table links" scope="local" type="concept"/>
+			<topicref format="dita" href="Maps/c_Collection_Types.dita" navtitle="Collection types" scope="local" type="concept">
+				<topicref format="dita" href="Maps/c_Collection_Type_Examples.dita" navtitle="Collection type examples" scope="local" type="concept">
+					<topicref format="dita" href="Maps/c_Collection_Type_Example_Family.dita" navtitle="Collection type example: family" scope="local" type="concept"/>
+					<topicref format="dita" href="Maps/c_Collection_Type_Example_Unordered.dita" navtitle="Collection type example: unordered" scope="local" type="concept"/>
+					<topicref format="dita" href="Maps/c_Collection_Type_Example_Sequence.dita" navtitle="Collection type example: sequence" scope="local" type="concept"/>
+					<topicref format="dita" href="Maps/c_Collection_Type_Example_Choice.dita" navtitle="Collection type example: choice" scope="local" type="concept"/>
+				</topicref>
+			</topicref>
+			<topicref format="dita" href="Maps/c_Linking_Attributes.dita" navtitle="The linking attribute" scope="local" type="concept"/>
+			<topicref format="dita" href="Maps/c_Breadcrumbs.dita" navtitle="Breadcrumbs" scope="local" type="concept"/>
+		</topicref>
+		<topicref format="dita" href="Maps/c_Inheritance_in_ditamaps.dita" navtitle="Inheritance and cascades in ditamaps" scope="local" type="concept"/>
+		<topicref format="dita" href="Maps/c_Embedded_Maps.dita" navtitle="Embedded (or nested) ditamaps" scope="local" type="concept"/>
+		<topicref format="dita" href="Maps/c_DITA_Map_Vocabulary.dita" navtitle="DITA map vocabulary" scope="local" type="concept">
+			<topicref format="dita" href="Maps/c_The_topicref_Element.dita" navtitle="The topicref element" scope="local" type="concept"/>
+			<topicref format="dita" href="Maps/c_topicref_href_attribute.dita" navtitle="The href attribute in a topic references" scope="local" type="concept"/><topicref format="dita" href="Maps/c_Using_Topicheads_in_a_Map.dita" navtitle="The topichead element" scope="local" type="concept"/>
+			<topicref format="dita" href="Maps/c_navref_Element.dita" navtitle="The navref element" scope="local" type="concept"/>
+			<topicref format="dita" href="Maps/c_copy-to_Attribute.dita" navtitle="The copy-to attribute" scope="local" type="concept"/>
+			<topicref format="dita" href="Maps/c_Chunk_Attribute.dita" navtitle="The chunk attribute" scope="local" type="concept"/><topicref format="dita" href="Maps/c_Non-DITA_Topic_References.dita" navtitle="Non-DITA topic references" scope="local" type="concept">
+				<topicref format="html" href="http://dita.xml.org/" locktitle="yes" navtitle="Sample Web Link in Same Window (Exemplar)" scope="peer"/>
+				<topicref format="html" href="http://dita.xml.org/" locktitle="yes" navtitle="Sample Web Link in New Window (Exemplar)" scope="external"/>
+			</topicref>
+			<topicref format="dita" href="Maps/c_Dangling_Topicrefs.dita" navtitle="Dangling topicrefs" scope="local" type="concept"/>
+		</topicref>
+		<topicref format="dita" href="Maps/c_bookmap_application.dita" navtitle="The bookmap feature" scope="local" type="concept">
+			<topicref format="dita" href="Maps/c_Nesting_bookmaps_Within_ditmaps.dita" navtitle="Nesting bookmaps within ditamaps" scope="local" type="concept"/><topicref format="dita" href="Maps/c_bookmap_example.dita" navtitle="Sample bookmap file" scope="local" type="concept"/>
+		</topicref>
+	</topicref>
+	<reltable id="reltable_EFC572F7C1D94653B8121CB5AA07E589" title="Relationships between Map topics" toc="no">
+		<relheader><relcolspec type="task"/><relcolspec type="concept"/><relcolspec type="reference"/>
+		</relheader>
+		<relrow><relcell/><relcell>
+				<topicref format="dita" href="Maps/c_Collection_Types.dita" navtitle="Collection types" scope="local" type="concept">
+				</topicref>
+				<topicref format="dita" href="Maps/c_Generated_Relationship_Links.dita" navtitle="Generated relationship links" scope="local" type="concept">
+				</topicref>
+				<topicref format="dita" href="Maps/c_Linking_Attributes.dita" navtitle="The linking attribute" scope="local" type="concept">
+				</topicref>
+				<topicref format="dita" href="Maps/c_Types_of_Relationship_Tables.dita" navtitle="Types of relationship tables" scope="local" type="concept">
+				</topicref></relcell><relcell/>
+		</relrow>
+		<relrow><relcell/><relcell>
+				<topicref format="dita" href="Maps/c_Anatomy_of_ditamap.dita" navtitle="Anatomy of a ditamap file" scope="local" type="concept">
+				</topicref>
+				<topicref format="dita" href="Maps/c_Understanding_Relationship_Tables.dita" navtitle="Relationship tables" scope="local" type="concept">
+				</topicref></relcell><relcell/>
+		</relrow>
+		<relrow><relcell/><relcell collection-type="family">
+				<topicref format="dita" href="Maps/c_Storing_Relationship_Table_Maps_Separately.dita" navtitle="Storing relationship tables in separate, embedded ditamaps" scope="local" type="concept"/>
+				<topicref format="dita" href="Maps/c_Embedded_Maps.dita" navtitle="Embedded (or nested) ditamaps" scope="local" type="concept"/></relcell><relcell/>
+		</relrow>
+		<relrow><relcell/><relcell/>
+		</relrow>
+		<relrow><relcell/><relcell/><relcell/>
+		</relrow>
+		<relrow><relcell/><relcell/><relcell/>
+		</relrow>
+		<relrow><relcell/><relcell/><relcell/>
+		</relrow>
+		<relrow><relcell/><relcell/><relcell/>
+		</relrow>
+		<relrow><relcell/><relcell/><relcell/>
+		</relrow>
+	</reltable>
+	<reltable id="reltable_B3E920721FCD4643966EA36F8BDD7DBB" title="One way links between Map topics" toc="no">
+		<relheader><relcolspec linking="sourceonly"/><relcolspec linking="targetonly"/>
+		</relheader>
+		<relrow><relcell>
+				<topicref format="dita" href="Maps/c_Anatomy_of_ditamap.dita" navtitle="Anatomy of a ditamap file" scope="local" type="concept">
+				</topicref></relcell><relcell>
+				<topicref format="dita" href="Maps/c_Understanding_Relationship_Tables.dita" navtitle="Relationship tables" scope="local" type="concept">
+				</topicref>
+				<topicref format="dita" href="Maps/c_Sample_ditamap_File.dita" navtitle="Sample ditamap file" scope="local" type="concept">
+				</topicref></relcell>
+		</relrow>
+		<relrow><relcell>
+				<topicref format="dita" href="Maps/c_Understanding_Relationship_Tables.dita" navtitle="Relationship tables" scope="local" type="concept">
+				</topicref></relcell><relcell>
+				<topicref format="dita" href="Maps/c_Sample_reltable.dita" navtitle="Sample relationship table" scope="local" type="concept">
+				</topicref></relcell>
+		</relrow>
+		<relrow><relcell/><relcell/>
+		</relrow>
+		<relrow><relcell/><relcell/>
+		</relrow>
+		<relrow><relcell/><relcell/>
+		</relrow>
+		<relrow><relcell/><relcell/>
+		</relrow>
+		<relrow><relcell/><relcell/>
+		</relrow>
+		<relrow><relcell/><relcell/>
+		</relrow>
+		<relrow><relcell/><relcell/>
+		</relrow>
+		<relrow><relcell/><relcell/>
+		</relrow>
+	</reltable>
+</map>

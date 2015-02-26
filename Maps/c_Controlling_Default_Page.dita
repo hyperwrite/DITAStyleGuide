@@ -1,0 +1,138 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="Dc_Controlling_Default_Page" status="new"> 
+  <title>Controlling the top node (default topic)</title> 
+  <shortdesc>DITA publishing tools sometimes process the hierarchy of a ditamap
+	 slightly differently for different target output formats. A workaround can be
+	 used to achieve greater consistency between different outputs to avoid
+	 confusing readers. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>default
+			 topic</indexterm><indexterm>home topic</indexterm><indexterm>top node in
+			 TOC</indexterm><indexterm>ditamap</indexterm><indexterm>map
+			 element</indexterm><indexterm>topicref
+			 element</indexterm><indexterm>elements<term>map</term><indexterm>topicref</indexterm></indexterm><indexterm>Eclipse
+			 Help</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>When a ditamap file is processed into a Help format, the first topic in
+		the ditamap hierarchy becomes the first (or default) topic displayed. In some
+		Help outputs, it also becomes the topic displayed when the 
+		<uicontrol>Home</uicontrol> button in the tri-pane navigation panel is
+		selected. 
+	 </p> 
+	 <p>Some Help formats allow for the nomination of a topic other than the
+		first topic as the default page, and perhaps yet another topic as the 
+		<term>Home topic</term>. DITA currently has no facility to record such an
+		alternative 
+		<term>Home topic</term> in the ditamap. 
+	 </p> 
+	 <p>In 
+		<keyword>Eclipse Help</keyword> outputs, the 
+		<term>TOC</term> generated from the ditamap includes the 
+		<synph>map</synph> element as its top node. This can cause some confusion
+		to the user, because the title highlighted in the TOC is different from the
+		title of the displayed topic. 
+	 </p> 
+	 <p>In the first example following, an 
+		<keyword>Eclipse Help</keyword> system is displaying an information set
+		using the collection's home address. The TOC is highlighting the ditamap's 
+		<synph>map</synph> element title, while the topic associated with the
+		first 
+		<synph>topicref</synph> in the ditamap is displayed. The second example
+		shows the same document, open at the home address, in 
+		<keyword>Microsoft HTML Help</keyword> format. In this type of output,
+		the 
+		<synph>map</synph> element in the ditamap is ignored when the TOC is
+		generated. 
+	 </p> 
+	 <fig id="fig_47358AC5E19947EE8B3219474A6E2C5F"> 
+		<title>Example of map title (with no associated topic) displaying in
+		  Eclipse Help TOC</title><image placement="break" align="left"
+		id="image_819DB84D6D164F7E8AC14B0F9BC7BBE2"
+		href="../images/eclipse_help_map_structure.png" width="425px" height="153px"> 
+		  <alt>Screen capture showing unlinked node at top of TOC in Eclipse Help
+			 output 
+		  </alt></image> 
+	 </fig> 
+	 <fig id="fig_860101953A9743348E3E93CF27EE90A8"> 
+		<title>Example of first topic title displaying in HTML Help
+		  TOC</title><image placement="break" align="left"
+		id="image_F87857EB003E4C2F9E752F40362E0E3F"
+		href="../images/html_help_map_structure.png" width="425px" height="125px"> 
+		  <alt>Screen capture showing normal linked node at top of TOC in HTML
+			 Help output 
+		  </alt></image> 
+	 </fig> 
+	 <p>One workaround is to structure the ditamap so that the first node is a 
+		<q>childless</q> 
+		<synph>topicref</synph> element with its 
+		<synph>toc</synph> attribute set to 
+	 <option>no</option>, and ensuring that the title of the 
+	 <synph>map</synph> element is the same as that first topic. This will
+	 result in the first topic not appearing in the TOC, creating the illusion that
+	 the top node links to the topic. The mark-up for the map would therefore follow
+	 this pattern: 
+	 <codeblock>&lt;map title="Introduction to World Time Pro"&gt;
+  &lt;topicref href="c_WorldTimePro.dita" toc="no"/&gt;
+  &lt;topicref href="c_CalculatingTime.dita"&gt;
+    &lt;topicref .... /&gt;
+    &lt;topicref .... /&gt;
+    ....
+  &lt;/topicref&gt;
+  &lt;topicref href="c_FractionConverter.dita" /&gt;
+  ....
+&lt;/map&gt;
+</codeblock> 
+	 </p> 
+	 <p importance="high">Although this workaround will deliver a good result,
+		take care that 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_focussing"><?xm-replace_text Phrase?></ph>
+		on the output format (the form) doesn't result in compromises to the
+		information design (the content), so that the separation of content and form is
+		
+		<ph
+		conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_honoured"><?xm-replace_text Phrase?></ph>.
+		
+	 </p> 
+	 <section id="section_265D935A2D2B4E6DBD85EE4AF8E2784D"
+	 audience="contributor"> 
+		<title>Rationale</title> 
+		<p><xref
+		  href="http://wiki.oasis-open.org/dita/DITA_Help_Special_Purpose_Topics"
+		  scope="external" format="html">Special Purpose Topics in DITA Help</xref>
+		  (OASIS DITA for Help Subcommittee Wiki) 
+		</p> 
+		<lq reftitle="Ian Larner, Yahoo! DITA Users Group"
+		href="http://tech.groups.yahoo.com/group/dita-users/message/8830"> 
+		  <p>&gt;&gt;Q. Does anybody know how you control which topic is attached
+			 to the top node of an Eclipse help plugin? By default, it is attached to the
+			 same topic as the first node immediately beneath it, which makes for a funny
+			 user experience. You can of course control it manually by editing the toc.xml
+			 file, but setting up the ditamap to make it generate that way is escaping
+			 me.&lt;&lt; 
+		  </p> 
+		  <p>Another, more usual, technique is to mark the first topicref in the
+			 map with toc="no". That adds it to the map element in the Eclipse toc, but not
+			 to the TOC itself. For example: 
+		  </p> 
+		  <p>DITA source: 
+		  </p> 
+		  <codeblock>&lt;map id="com.ipl.ditacars.doc" title="DITA car owner's manual"&gt; 
+      &lt;topicmeta&gt; 
+      &lt;keywords&gt;&lt;indexterm&gt;DITA car&lt;/indexterm&gt;&lt;/keywords&gt; 
+      &lt;/topicmeta&gt; 
+      &lt;topicref href="welcome.dita" navtitle="Welcome to your car" 
+      type="topic" toc="no"&gt; 
+      &lt;navref mapref="driving.ditamap"/&gt; 
+      ...</codeblock> 
+		  <p>Becomes in Eclipse: 
+			 <codeblock>&lt;toc label="DITA car owner's manual" topic="welcome.html"&gt; 
+      &lt;link toc="driving.xml"/&gt; 
+      ...</codeblock> 
+		  </p> 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

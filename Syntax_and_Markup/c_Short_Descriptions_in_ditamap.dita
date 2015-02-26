@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_FF2B816120DF42BCB0A27F30561661ED"> 
+  <title>Short descriptions in the ditamap</title> 
+  <shortdesc>Short descriptions specified in a DITA topic can be overriden by
+	 alternative short description elements in the ditamap. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>shortdesc</indexterm><indexterm>elements<indexterm>shortdesc</indexterm><indexterm>topicmeta</indexterm></indexterm><indexterm>short
+			 description<indexterm>specified in
+				ditamap</indexterm></indexterm><indexterm>topicmeta</indexterm><indexterm>alternative
+			 short description</indexterm><indexterm>overriding topic metadata in the
+			 ditamap</indexterm><indexterm>linktext<indexterm>specified in
+				ditamap</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>A short description (<synph>shortdesc</synph>) element naturally belongs
+		in the topic. The short description is typically rendered in the output as: 
+	 </p> 
+	 <ul id="ul_B60380A5F72E4B5A801C46412C7E66ED"> 
+		<li id="li_7346E86B4E064A4790F0B5C8CACF8BB7"> the first paragraph of the
+		  topic 
+		</li> 
+		<li id="li_0D895DE65D3A424BB6D15204060107B3">link preview text (in
+		  hypertext outputs) 
+		</li> 
+		<li id="li_7434AC1E6B054DF782F646C3BCDC4668">subordinate topic preview
+		  text in the topic's parent 
+		</li> 
+	 </ul> 
+	 <p>In some circumstances, you may want to override the subordinate topic
+		preview text with a publication-specific, alternative short description. To do
+		this, you need to specify the alternative short description in the ditamap.
+		This is done by adding a 
+		<synph>shortdesc</synph> element to the 
+		<synph>topicmeta</synph> element within the 
+		<term>topicref</term>. 
+	 </p> 
+	 <p>An example of the topicref mark-up is: 
+		<codeblock>&lt;topicref href="c_starting_xrw.dita" format="dita"&gt;
+  &lt;topicmeta&gt;
+    &lt;shortdesc&gt;The XRW is started by entering the PIN into the security
+    keypad, and then turning the ignition key.&lt;/shortdesc&gt;
+  &lt;/topicmeta&gt;
+&lt;/topicref&gt;</codeblock> 
+	 </p> 
+	 <note>Setting a 
+		<synph>linktext</synph> element within the 
+		<term>topicref's</term> 
+		<synph>topicmeta</synph> will similarly result in the generated
+		hierarchical links in hypertext output using this alternative link text, rather
+		than the topic's title. 
+	 </note> 
+	 <section id="section_9982B2AF11E24B38A165ADA3D87B63F8"
+	 audience="contributor"> 
+		<title>Rationale</title> 
+		<lq href="http://tech.groups.yahoo.com/group/dita-users/message/18413"
+		reftitle="Kris Eberlein, Yahoo! DITA Users Group"> You can use the content of a
+		  &lt;shortdesc&gt; set at the DITA map level to override ONLY the short
+		  description used for link previews. There is one exception: You set the
+		  @copy-to attribute on the &lt;topicref&gt; element. 
+		</lq> 
+	 </section> 
+	 <section id="section_90546E4F63D54BF6A9470ABF427A9319"
+	 audience="contributor"> 
+		<title>Observations</title> 
+		<p>Originally wrote the following, but found that this didn't work 
+		  <q>as advertised!</q> 
+		</p> 
+		<p> 
+		  <draft-comment>This text might be useful for a topic about the copy-to
+			 attribute, and about title overrides. 
+		  </draft-comment> 
+		</p> 
+		<p>In other cases, you may want to override all instances of the topic's
+		  short description with an alternative short description specified in the map.
+		  To do this, you must set the 
+		  <synph>copy-to</synph> attribute in the 
+		  <synph>topicref</synph> element in the map to specify an alternative
+		  file name for a second copy of the output file. When this nominated file is
+		  created, the 
+		  <synph>shortdesc</synph> (and any 
+		  <synph>linktext</synph> element, if specified) in the topic reference
+		  will be used in the duplicated topic. 
+		</p> 
+		<p>In the following example, the output HTML topic will be named 
+		  <filepath>wrx_start.html</filepath>, because the copy-to is specifying
+		  an alternative DITA file name of 
+		  <filepath>wrx_start.dita</filepath>. 
+		  <codeblock>&lt;topicref href="c_starting_wrx.dita" copy-to="wrx_start.dita" &gt;
+  &lt;topicmeta&gt;
+    &lt;shortdesc&gt;The WRX is started by entering the PIN into the security
+    keypad, and then turning the ignition key.&lt;/shortdesc&gt;
+  &lt;/topicmeta&gt;
+&lt;/topicref&gt;</codeblock>All short description instances will use the ditamap 
+		  <term>topicref's</term> short description rather than the topic's. 
+		</p> 
+	 </section> 
+  </conbody> 
+</concept> 

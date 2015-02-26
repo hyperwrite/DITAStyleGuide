@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_E3774F78EBF84998B5E56A474B0BA680" status="new"
+ xml:lang="en"> 
+  <title>The 
+	 <synph>props</synph> attribute</title> 
+  <shortdesc>The 
+	 <synph>props</synph> attribute is only used for 
+	 <ph
+	  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialising"><?xm-replace_text Phrase?></ph>
+	 new metadata attributes. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>attributes<indexterm>props</indexterm></indexterm><indexterm>select
+			 attributes</indexterm><indexterm>condition
+			 attributes</indexterm><indexterm>props attribute</indexterm><indexterm
+		  conref="../../conref/conref_source_metadata.dita#topic_hw_conref_meta/index_specialisation"><?xm-replace_text Index Term?></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>The 
+		<synph>props</synph> attribute is technically one of the select (or
+		condition) attributes, designed for filtering and flagging during publishing.
+		However, the 
+		<synph>props</synph> attribute is not intended to be used within a topic
+		or document. It is provided to be used as the basis for 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialised"><?xm-replace_text Phrase?></ph>
+		condition attributes. 
+	 </p> 
+	 <p importance="high">Do not use this attribute when authoring DITA topics
+		or maps. 
+	 </p> 
+  </conbody> 
+</concept> 

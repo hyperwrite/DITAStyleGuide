@@ -1,0 +1,119 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept id="D5122" status="new" xml:lang="en"> 
+  <title>Glossary entry</title> 
+  <shortdesc>The 
+	 <synph>glossentry</synph> 
+	 <ph
+	  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialised"><?xm-replace_text Phrase?></ph>
+	 information type was introduced to improve the glossary and terminology
+	 management. 
+  </shortdesc> 
+  <prolog><author
+	 conref="../../conref/conref_source_metadata.dita#topic_hw_conref_meta/author_tony_self"></author><metadata><keywords><indexterm>information
+			 types<indexterm>glossentry</indexterm></indexterm><indexterm>glossary entry
+			 information type</indexterm><indexterm>glossentry information
+			 type</indexterm><indexterm>glossary of terms</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>The 
+		<term>glossary entry</term> (<synph>glossentry</synph>) information type
+		is part of the DITA standard, but is not widely seen as one of the base DITA
+		information types. Technically, it is a 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialisation"><?xm-replace_text Phrase?></ph>
+		of the base concept information type. 
+	 </p> 
+	 <fig id="fig_AF763BA16CB44B62A59E207459E2C26B"> 
+		<title>Base and 
+		  <ph
+			conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialised"><?xm-replace_text Phrase?></ph>
+		  information types</title><image placement="break" align="left"
+		id="image_0AD410FD898A4AA4B7620590EC77E878"
+		href="../images/information_types_dita_1_2.svg" width="341px" height="171px"> 
+		  <alt>Schematic diagram showing base and specialised information types
+			 in DITA 
+		  </alt></image> 
+	 </fig> 
+	 <p>The structure of 
+		<synph>glossentry</synph> is quite simple. There are two main block
+		elements: 
+		<synph>glossterm</synph> and 
+		<synph>glossdef</synph>. The 
+		<synph>glossterm</synph> element (a 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialised"><?xm-replace_text Phrase?></ph>
+		
+		<synph>title</synph>) contains the name of the term, while the 
+		<synph>glossdef</synph> element (a 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialised"><?xm-replace_text Phrase?></ph>
+		
+		<synph>abstract</synph>) contains the definition of the term. 
+	 </p> 
+	 <p importance="high">Just one term should be defined in one glossary entry
+		topic. 
+	 </p> 
+	 <p>A document's glossary of terms is created by grouping glossary entry
+		topics in the ditamap. Except for small documents, using a separate ditamap for
+		the glossary, and then embedding the glossary ditamap in the main map for the
+		collection, is the architecture most easy to manage. 
+	 </p> 
+	 <p
+	 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/glossary_linking_explanation1"><?xm-replace_text Paragraph?>
+	 </p> 
+	 <p>The root element of a glossary entry topic is 
+		<synph>glossentry</synph>. 
+	 </p> 
+	 <section id="section_444AFE9E2D0C412FA36AAD511CD30B2C"
+	 audience="contributor"> 
+		<title>Rationale</title> 
+		<lq href="http://tech.groups.yahoo.com/group/dita-users/message/12411"
+		reftitle="Mike Blake, Yahoo! DITA Users Group">Are there best practices about
+		  links to glossary definitions from inside a topic or are such links considered
+		  bad practice to start with? 
+		</lq> 
+		<lq href="http://tech.groups.yahoo.com/group/dita-users/message/16577"
+		reftitle="Paul Anderson, Yahoo! DITA Users Group"> 
+		  <p>It is best to create a glossary map where there is a single
+			 top-level topicref to a title-only or summary topic called "Glossary". All the
+			 term topicref then appear as children of this top-level topicref. This results
+			 in the desired nesting in help outputs. We had to tweak the PDF output to get
+			 exactly what we want but it leverages the same strategy for glossary map
+			 creation. 
+		  </p> 
+		  <ul id="ul_9B56753D320B43C0AD08F4230A124A02"> 
+			 <li id="li_8B0DFB59DCC64EC8BB60F5D84BC43DA0">&gt;Separate Topics Per
+				Term 
+			 </li> 
+			 <li id="li_E334F88CE33A43599BF5EB69EE43A1D6">&gt;-- Create a topic
+				for each glossary term. 
+			 </li> 
+			 <li id="li_C75F5CA5047B40DD8EB1A8EA12D7EE5C">&gt;-- Writers include
+				terms one-by-one into maps. 
+			 </li> 
+			 <li id="li_4855C38DB6194840A3B78668BD13617E">&gt;-- Con: Writers must
+				know which terms to select and then include them. 
+			 </li> 
+			 <li id="li_865BF98F237B4CFD8F2E304A21509AB9">&gt;-- Con: Map must be
+				manually updated to include new terms. 
+			 </li> 
+		  </ul> 
+		  <p>This is the strategy that we use. We organize the individual term
+			 topics into different directories based on the scope of the term. Some terms
+			 are specific to a given product; others apply to multiple products in a suite;
+			 others apply to all products in all suites. In rare cases, the same term
+			 applies to multiple products but has a more specific definition for a given
+			 product. In this case we have two topics for that term and the author decides
+			 which to reference in their glossary map. (We plan to implement keyref to
+			 handle this more elegantly in the future.) 
+		  </p> 
+		  <p>For the moment, authors manually create the glossary map that
+			 contains the terms they want. Note that authors must sort the terms in the map
+			 manually. This means your translators must re-sort the map during localization
+			 projects. 
+		  </p> 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D9115" status="new"> 
+  <title>Valid referencing elements</title> 
+  <shortdesc>When using a conref in a topic to transclude text from another
+	 topic, the referencing element must be valid DITA XML. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>-dita-use-conref-target attribute
+			 value</indexterm><indexterm>attributes<indexterm>-dita-use-conref-target
+				value</indexterm></indexterm><indexterm>conref
+			 attribute</indexterm><indexterm>transclusion</indexterm><indexterm
+		  rev="1.2">constraints</indexterm><indexterm>validation</indexterm><indexterm>referencing
+			 element</indexterm><indexterm>referenced
+			 element</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>Conref transclusions involve two elements: the 
+		<term>referencing element</term> and the 
+		<term>referenced element</term>. The 
+		<term>referencing element</term> is the element that will be re-using the
+		content in the 
+		<term>referenced element</term> (the source of the re-usable content). 
+	 </p> 
+	 <p importance="high">When the element being transcluded requires particular
+		attributes or child elements, then these attributes and elements must also be
+		included in the referencing element code. 
+	 </p> 
+	 <p>For example, a 
+		<synph>step</synph> element 
+		<b>must</b> contain at least one 
+		<synph>cmd</synph> element. Therefore, the following mark-up would be
+		invalid DITA because the 
+		<synph>cmd</synph> element is missing. 
+	 </p> 
+	 <codeblock>&lt;step conref="t_starting.dita#t120/sec_code" /&gt;</codeblock> 
+	 <p>Instead, a 
+		<q>dummy</q> 
+		<synph>cmd</synph> element must be included for the mark-up to be valid,
+		as shown in the following. 
+	 </p> 
+	 <codeblock>&lt;step conref="t_starting.dita#t120/sec_code"&gt;&lt;cmd /&gt;&lt;/step&gt;</codeblock> 
+	 <p>If an attribute is mandatory in a transcluded element, such at the 
+		<synph>tmtype</synph> attribute in the trademark (<synph>tm</synph>)
+		element, the referencing element must include the attribute. However, a special
+		attribute value of 
+	 <option>-dita-use-conref-target</option> can be used to maintain the
+	 validity of the element, and specify that the referenced source element's
+	 attributes be used in the transclusion. 
+	 </p> 
+	 <p>The mark-up of a referencing element with a mandatory attribute would
+		therefore follow the pattern in the example: 
+		<codeblock>&lt;tm conref="conref_source.dita#names12/var_suparu" 
+ tmtype="-dita-use-conref-target" /&gt;</codeblock> 
+	 </p> 
+	 <p rev="1.2">If you are using constraints, a feature introduced in 
+		<ph
+		conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_DITA12"><?xm-replace_text Phrase?></ph>,
+		you must take care to avoid 
+		<term
+		conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/term_conreffing"><?xm-replace_text Term?></term>
+		elements from an unconstrained topic to a constrained topic. (In general,
+		referencing an unconstrained source topic element from a constrained topic will
+		only work if the constraint type is marked as weak, not strict.) 
+	 </p> 
+  </conbody> 
+</concept> 

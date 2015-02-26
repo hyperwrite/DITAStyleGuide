@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D4700" status="new"> 
+  <title>Distinction between format and style, and data and metadata</title> 
+  <shortdesc>In DITA, format has a different meaning to style. Likewise, the
+	 meanings of data and metadata are very different. These distinctions in meaning
+	 are important to understanding the broader concept of the separation of content
+	 and form. 
+  </shortdesc> 
+  <prolog><author
+	 conref="../../conref/conref_source_metadata.dita#topic_hw_conref_meta/author_tony_self"></author><metadata><keywords><indexterm>separation
+			 of content and form</indexterm><indexterm>format vs
+			 style</indexterm><indexterm>style vs format</indexterm><indexterm>data vs
+			 metadata</indexterm><indexterm>metadata vs
+			 data</indexterm><indexterm>presentational
+			 style</indexterm><indexterm>aesthetical style</indexterm><indexterm>writing
+			 style</indexterm><indexterm>authorial style</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>The word 
+		<q>style</q> in 
+		<q>Style Guide</q> is problematic, because it has a number of subtly
+		different meanings in this context. Style could mean aesthetic presentational
+		style, and it could mean writing or wording style. A style could be clean and
+		crisp (aesthetically) while being ponderous and wordy (stylistically). 
+	 </p> 
+	 <p>To distinguish between the two 
+		<q>styles</q>, 
+		<term>format</term> (or 
+		<term>presentational style</term>) should be used when referring to
+		aesthetical style, or the look and feel of the deliverable document. The term 
+		<term>writing style</term> should be used when referring to the authorial
+		style. 
+	 </p> 
+	 <p>In the broader concept of the separation of content and form, 
+		<term>writing style</term> belongs to 
+		<term>content</term>, while 
+		<term>format</term> belongs to 
+		<term>form</term>. 
+	 </p> 
+	 <p><ph
+		conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_DITA_Style_Manual"><?xm-replace_text Phrase?></ph>
+		touches on writing style, but does not address format at all. It 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_focusses"><?xm-replace_text Phrase?></ph>
+		on semantic mark-up, something that is not usually necessary in conventional
+		style guides. 
+	 </p> 
+	 <p>It is also important to understand the distinction between 
+		<term>data</term> and 
+		<term>metadata</term>. 
+		<term>Data</term> is analogous to 
+		<term>content</term>, while 
+		<term>metadata</term> refers to information 
+		<b>about</b> the content. 
+	 </p> 
+	 <p>For example, the 
+		<term>data</term> of a topic is the information that the reader reads
+		about the subject matter of the topic. The 
+		<term>metadata</term> is the supporting information about the topic that
+		the reader doesn't normally read or see, such as the creation date, the author,
+		the semantics of the textual components, and the copyright ownership. Metadata
+		is usually more important to the author than it is to the reader. 
+	 </p> 
+	 <p>Both 
+		<term>metadata</term> and 
+		<term>data</term> are in topics, but ditamaps should only contain 
+		<term>metadata</term>. (It is technically possible to store some data in
+		ditamaps, but you should avoid this practice.) 
+	 </p> 
+	 <section id="section_7B386BCAD89A49968F00B0A77730ABC5"
+	 audience="contributor"> 
+		<title>Rationale</title> 
+		<lq reftitle="JPL The Levels of Edit">We have also received many
+		  interesting and helpful comments from users of The Levels of Edit. One of the
+		  comments received after publication of the first edition was a question
+		  concerning the need for such a fine distinction between format and mechanical
+		  style. After all, what difference does it really make whether a particular
+		  instance of capitalization, say, is called format or style? The answer is that
+		  such distinctions are what make the levels-of-edit concept work, at least for
+		  us. If an editor is required to do a Format Edit, but not a Mechanical Style
+		  Edit (as often happens), the editor must know exactly what to do and what to
+		  leave undone. The Mechanical Style Edit lifts the effort into another level of
+		  edit (from Level 3 to Level 2) and could increase the cost. If the job is
+		  estimated on the basis of a Level 3 edit, the editor may overrun the
+		  estimate-with no justification-if he or she does not know the precise limits of
+		  the effort required. 
+		</lq> 
+		<lq
+		reftitle="Erik Hennum, OASIS DITA Technical Committee mailing list, 5 Sep 2009">*
+		  Content tends to be a flow with nested annotations (division, block, phrase,
+		  term, etc) and tends to be formatted for reading. * A metadata property (like
+		  other data) tends to be a data structure over atomic values and tends to enable
+		  operations on the content. I agree that the general tendency is only that --
+		  there are many hybrids and gray areas for content and data such as a flow that
+		  has a detailed structure embedding atomic values (witness API Reference) or a
+		  metadata value that consists of a brief mixed content (witness
+		  &lt;publisher&gt;). The distinction would be academic without the fallback to
+		  general processing. If the disclaimer specializes a footnote on the body, it
+		  will get formatted by default. By contrast, if it specializes &lt;data&gt; in
+		  the prolog, it will get ignored silently by default (because there's no known
+		  processing for a property with no semantics). 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

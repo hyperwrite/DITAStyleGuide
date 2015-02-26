@@ -1,0 +1,150 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D4980" status="new"> 
+  <title>Complex command reference content</title> 
+  <shortdesc>When documenting complex software command references, you can use
+	 a combination of DITA phrase elements to describe the syntax. The mark-up can
+	 be converted to syntax formatting conventions during the publishing process. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>kwd
+			 element</indexterm><indexterm>option element</indexterm><indexterm>oper
+			 element</indexterm><indexterm>var element</indexterm><indexterm>delim
+			 element</indexterm><indexterm>sep element</indexterm><indexterm>synph
+			 element</indexterm><indexterm>synblk
+			 element</indexterm><indexterm>elements<indexterm>kwd</indexterm><indexterm>synph</indexterm><indexterm>synblk</indexterm><indexterm>sep</indexterm><indexterm>delim</indexterm><indexterm>var</indexterm><indexterm>oper</indexterm><indexterm>option</indexterm></indexterm><indexterm>command
+			 syntax</indexterm><indexterm>syntax<indexterm>formatting
+				conventions</indexterm></indexterm><indexterm>formatting
+			 conventions<indexterm>syntax</indexterm></indexterm><indexterm>conventions<indexterm>formatting</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>In style-based authoring, formatting conventions have been used to
+		identify the parts of command syntax for computer software applications. In
+		this context, a command is a string of text that a user types in order to run
+		an application and pass arguments to the application. 
+	 </p> 
+	 <p>The 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/Microsoft_MOS_short"><?xm-replace_text Phrase?></ph>
+		suggests a syntax of: 
+	 </p> 
+	 <ul id="ul_60FF93A5A3BE40F495A2509946B3E1DB"> 
+		<li id="li_B225470FB45B4E57B83B3D3536D498B7">command in bold 
+		</li> 
+		<li id="li_8A56302110294F56AEC0444DC122EC6D">a set of choices surrounded
+		  by { } 
+		</li> 
+		<li id="li_5FCF5CB7EBF54CD0899614F63F935558"> individual choices
+		  separated by | 
+		</li> 
+		<li id="li_48FC5A99CB4143FAB0C7F94BBDA60AEC">variable names in italics 
+		</li> 
+		<li id="li_E0CFFA8D76D541379465F7904A51BDFB">repeatable arguments
+		  indicated by ... 
+		</li> 
+		<li id="li_EFB04572B26049978AE450EA017146D8">optional items surrounded by
+		  [ ] or [[ ]]. 
+		</li> 
+	 </ul> 
+	 <p>For example, a command syntax might be represented as 
+		<b>ant</b> [-f 
+		<i>filename</i>] [-logfile 
+		<i>filename</i>] [-verbose]. 
+	 </p> 
+	 <p>In DITA, the following semantic elements are used to identify the
+		components of a command: 
+	 <dl> 
+		<dlentry> 
+		  <dt>kwd 
+		  </dt> 
+		  <dd>A literal keyword used in a command, utility or batch file 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt>option 
+		  </dt> 
+		  <dd>an option or switch that modifies a command 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt>oper 
+		  </dt> 
+		  <dd>An operator (such as 
+			 <synph>*</synph>, 
+			 <synph>+</synph> or 
+			 <synph>=</synph>) 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt>var 
+		  </dt> 
+		  <dd>The name of a variable or argument 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt>delim 
+		  </dt> 
+		  <dd>A delimiter character used to identify the beginning or end of one
+			 part of the syntax 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt>sep 
+		  </dt> 
+		  <dd>A separator character such as a bracket that is used within syntax 
+		  </dd> 
+		</dlentry> 
+	 </dl> 
+	 </p> 
+	 <p>The syntax mark-up should be contained as a whole within a syntax phrase
+		(<synph>synph</synph>) or syntax block (<synph>synblk</synph>) element. 
+	 </p> 
+	 <p>An example of a marked up command line might be: 
+		<codeblock>&lt;synph&gt;
+ &lt;kwd&gt;ant&lt;/kwd&gt; &lt;option&gt;-f&lt;/option&gt; &lt;var&gt;filename&lt;/var&gt;
+ &lt;option&gt;-logfile&lt;/option&gt; &lt;var&gt;filename&lt;/var&gt;
+ &lt;option&gt;-verbose&lt;/option&gt;
+&lt;/synph&gt;</codeblock> 
+	 </p> 
+	 <p>A typical output of this code is: 
+	 </p> 
+	 <p><synph><kwd>ant</kwd> 
+		  <option>-f</option> 
+		  <var>filename</var> 
+		  <option>-logfile</option> 
+		  <var>filename</var> 
+		  <option>-verbose</option></synph> 
+	 </p> 
+	 <p>When the command syntax is being used within an instruction to a user
+		(usually within a task topic), the syntax should instead be contained within a 
+		<synph>userinput</synph> element, without the individual components of
+		the command semantically identified. 
+	 </p> 
+	 <section id="section_7083B4C3031B48C0A70DA16F82F9D0BE"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<lq reftitle="Martha Morgan, Yahoo! DITA Users Group"
+		 href="http://tech.dir.groups.yahoo.com/group/dita-users/message/11798">My
+		  colleagues and I can't come to agreement about how to tag command syntax
+		  content (not a diagram) in a reference topic. This is for a product that has a
+		  command-line interface. For example, how should we tag a command such as:
+		  cluster show [-instance] [-node {local | node_name}] [-node-uuid node_UUID]
+		  [-epsilon {true | false}] [-eligibility {true | false}] [-health {true |
+		  false}] In this example, the name of the command itself is "cluster show" and
+		  node_name and node_UUID are variables. My colleagues have all studied the
+		  specification to the point where we spend entire meetings debating like
+		  constitutional scholars over what each element was "meant" for, based on
+		  descriptions of the elements in the programming and software domains. Yet we
+		  are no closer to agreement on this issue than when we began discussions. Can
+		  anyone provide guidance on how command syntax content in a reference topic
+		  should be tagged? 
+		</lq> 
+		<lq reftitle="OASIS DITA Wiki"
+		href="http://wiki.oasis-open.org/dita/SyntaxDiagram">Two other elements in
+		  DITA's software domain cover the simple case of dialog or interaction between a
+		  computer and a user: &lt;systemoutput&gt; and &lt;userinput&gt;. By contrast,
+		  the &lt;syntaxdiagram&gt; and &lt;synph&gt; family covers actual programming
+		  syntax, not interaction. 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

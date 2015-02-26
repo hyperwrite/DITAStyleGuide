@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="Dc_Content_Models_and_Info_Types" status="new"> 
+  <title>Content models and information types</title> 
+  <shortdesc>A content model is a framework that represents the structure of
+	 the information to be stored. In DITA, a content model is implemented as an 
+	 <term>information type</term>, or 
+	 <term>topic type</term>. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>information
+			 types</indexterm><indexterm>topic types</indexterm><indexterm>content
+			 model</indexterm><indexterm>topic structure</indexterm><indexterm>base content
+			 model</indexterm><indexterm>architecture<indexterm>framework</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>A 
+		<term>content model</term> is an architectural framework for a collection
+		of content, representing the structure of the data to be stored. In a
+		structured authoring sense, a content model is a high level plan of the types
+		of information and an appropriate structure for its storage. For example, the
+		content model for a Frequently Asked Question (<term>FAQ</term>) of a manual
+		might describe a hierarchy of topics, broken down into title, question,
+		background, and answer. 
+	 </p> 
+	 <p>When we design an information architecture for storing information (or a
+		structure to suit our documentation), we are creating a 
+		<term>content (or information) model</term>. 
+	 </p> 
+	 <p>Top-level elements in DITA content models are topic types (or 
+		<term>information types</term>). A typical procedure manual may include
+		procedure, explanation, glossary and error message information types. 
+	 </p> 
+	 <p>DITA's base content model (that is, the standard, default DITA model)
+		defines three information types: concept, task and reference. These three types
+		all 
+		<term>inherit</term> characteristics of a proto information type, simply
+		named 
+		<synph>topic</synph>. The following diagram shows the basic information
+		types. 
+	 </p> 
+	 <p> 
+		<image href="../images/info_type_content_model.svg"
+		id="image_base_content_model" placement="break" width="265px" height="88px"
+		align="left"> 
+		  <alt>DITA base information types, showing concept, task and reference
+			 topics specialized from the topic proto-information type
+		  </alt> 
+		</image> 
+	 </p> 
+	 <p>Information architects are able to 
+		<ph
+		conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialise"><?xm-replace_text Phrase?></ph>
+		more types of topics, but must base their new information types on a base
+		information type. For example, a special 
+		<q>error list</q> topic might be a 
+		<ph
+		conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialised"><?xm-replace_text Phrase?></ph>
+		type of reference topic, as shown in the following diagram. 
+	 </p> 
+	 <p><image href="../images/info_type_specialisation.svg"
+		id="image_specialised_content_model" placement="break" width="265px"
+		height="141px" align="left"> 
+		  <alt>DITA content model showing a specialized errmsg information type
+			 specialised from reference
+		  </alt></image> 
+	 </p> 
+	 <p>In many cases, the DITA base content model may be adequate for your
+		needs. In other cases, your model may require the base content model to be 
+		<ph
+		conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialised"><?xm-replace_text Phrase?></ph>.
+		
+	 </p> 
+	 <p>One method of 
+		<ph
+		conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_analysing"><?xm-replace_text Phrase?></ph>
+		your content model is to ask questions about your content: 
+	 </p> 
+	 <ul id="ul_F12AB169EFC340D89995633F4083D8D3"> 
+		<li id="li_50B68C75A49E41A88C98407AA8B4A273">What type of topics do I
+		  need? 
+		</li> 
+		<li id="li_3F67B92864F245EBABECE6F5B0253433">Are the base information
+		  types adequate, or do I need 
+		  <ph
+		  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialised"><?xm-replace_text Phrase?></ph>
+		  information types? 
+		</li> 
+		<li id="li_784D5FED64554AA2B20C97C62DA97B16">Will I use compound topics? 
+		</li> 
+		<li id="li_BF40EC7F36B04D828901012A9D87FB22">How will I associate
+		  concepts, tasks and references? 
+		</li> 
+		<li id="li_3613872AB57047908FE0403AE01E3BB6">What will my document
+		  skeleton look like? 
+		</li> 
+		<li id="li_8931D10CBEB04EC0AD017DD413CE6A29">What single-sourcing will I
+		  do, and what metadata will I use for filtering and flagging? 
+		</li> 
+	 </ul> 
+  </conbody> 
+</concept> 

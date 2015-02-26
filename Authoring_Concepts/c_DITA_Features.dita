@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D1966" status="new"> 
+  <title>DITA features</title> 
+  <shortdesc>DITA incorporates features designed to improve the quality and
+	 efficiency of documentation. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>DITA<indexterm>features</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>DITA's features include: 
+	 <ul outputclass="listbullet" id="ul_135B8249B8D041BE8737934249989EB2"> 
+		<li id="li_9C95088BB80D4A918377173D3B27584D">modularity 
+		</li> 
+		<li id="li_B61F513A64794233AE4EB1F8ACDB50A4">structured authoring
+		  (reduces authoring time, increases analysis time) 
+		</li> 
+		<li id="li_EF93393F171D4BD68EAF048E85A8E0B7">information typing 
+		</li> 
+		<li id="li_F594E4E2B6F54D49AA37557E517304CA">minimalism 
+		</li> 
+		<li id="li_B10A72C0658C4FE6A551F1EE3C2ABB87">inheritance 
+		</li> 
+		<li id="li_E3139CED6ED748D59BDE11C543604E4D"><ph
+		  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialisation"><?xm-replace_text Phrase?></ph>
+		  
+		</li> 
+		<li id="li_AF63E3A3EAF149EF922477AA55043629">single-source 
+		</li> 
+		<li id="li_25377C03DC4647FE8AFAF7A35B3400C9">topic-based 
+		</li> 
+		<li id="li_A97F32720A614199993A901514CDCAC7">metadata 
+		</li> 
+		<li id="li_9A20472AB62045DF843AB1DE1FC9BFC5">conditional processing 
+		</li> 
+		<li id="li_FCEB84ACF9074E84AF912154223D23BD">component publishing 
+		</li> 
+		<li id="li_8F7E762BCF1D4C108ADB5EE606FE92C6">task-orientation 
+		</li> 
+		<li id="li_7E7F432C58DB4A42A4D9D7DE37D58AC7">content re-use 
+		</li> 
+		<li id="li_C1F522BBC1DD4874B9EF0AC4EA0015A2">translation-friendly
+		  structure 
+		</li> 
+	 </ul> 
+	 </p> 
+  </conbody> 
+</concept> 

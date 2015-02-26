@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D9360" status="new"> 
+  <title>Comments, 
+	 <synph>draft-comment</synph>, and 
+	 <synph>required-cleanup</synph> elements</title> 
+  <shortdesc>Standard XML comment mark-up, and DITA specific 
+	 <synph>draft-comment</synph> and 
+	 <synph>required-cleanup</synph> elements, allow authors to leave notes,
+	 comments and unfinished edits that will not be included in the output when the
+	 document is published. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>elements<indexterm>draft-comment</indexterm><indexterm>required-cleanup</indexterm></indexterm><indexterm>required-cleanup
+			 element</indexterm><indexterm>draft-comment element</indexterm><indexterm>XML
+			 comment</indexterm><indexterm>comments</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>Standard XML comment mark-up can be incorporated in DITA documents,
+		because DITA documents are, of course, XML documents. XML comments are
+		delimited by a 
+		<codeph>&lt;!--</codeph> prefix and a 
+		<codeph>--&gt;</codeph> suffix. 
+	 </p> 
+	 <p>An example of an XML comment is: 
+		<codeblock>&lt;p&gt;The kerb weight of the vehicle is 1395 kg.&lt;/p&gt;
+&lt;!-- Check this is the correct kerb weight for XRW model --&gt;</codeblock> 
+	 </p> 
+	 <p>The 
+		<synph>draft-comment</synph> phrase element is a DITA-specific
+		alternative to the XML comment, and has a similar purpose. 
+	 </p> 
+	 <p importance="high">Use the 
+		<synph>draft-comment</synph> element or XML comment if you want to leave
+		comments or notes for other authors. You should prefer the 
+		<synph>draft-comment</synph> element to XML comment, because it is
+		possible to deliberately include 
+		<synph>draft-comment</synph> content in the output for document review
+		and editing. 
+	 </p> 
+	 <p>An example of a 
+		<synph>draft-comment</synph> is: 
+		<codeblock>&lt;p&gt;The kerb weight of the vehicle is 1395 kg.
+&lt;draft-comment&gt;Check this is the correct kerb weight for XRW model&lt;/draft-comment&gt;
+&lt;/p&gt;</codeblock> 
+	 </p> 
+	 <p>The 
+		<synph>required-cleanup</synph> block element is used during the
+		migration of legacy (pre-DITA) content to DITA, to allow what would otherwise
+		be invalid mark-up to be preserved during conversion. It is most commonly used
+		by automatic conversion processes, such as the 
+		<keyword>H2D</keyword> HTML to DITA transformation provided in the DITA
+		Open Toolkit. 
+	 </p> 
+	 <p>The 
+		<synph>required-cleanup</synph> element can contain any well-formed
+		mark-up. 
+	 </p> 
+	 <p importance="high">Do not use the 
+		<synph>required-cleanup</synph> element for any purpose other than
+		identifying invalid DITA mark-up that needs to be corrected. 
+	 </p> 
+  </conbody> 
+</concept> 

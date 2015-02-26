@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D9081" status="new"> 
+  <title>Choice tables</title> 
+  <shortdesc>A choice table is used within a step in a task topic to describe a
+	 series of optional choices that a user must make before proceeding. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>choicetable
+			 element</indexterm><indexterm>elements<indexterm>choicetable</indexterm><indexterm>chhead</indexterm><indexterm>chdeschd</indexterm><indexterm>choption</indexterm><indexterm>chdesc</indexterm><indexterm>chrow</indexterm><indexterm>choptionhd</indexterm></indexterm><indexterm>keycol
+			 attribute</indexterm><indexterm>chhead element</indexterm><indexterm>choptionhd
+			 element</indexterm><indexterm>chrow element</indexterm><indexterm>choption
+			 element</indexterm><indexterm>chdeschd</indexterm><indexterm>chdesc
+			 element</indexterm><indexterm>attributes<indexterm>keycol</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>The 
+		<synph>choicetable</synph> element is an extremely useful device for
+		documenting options within a single step of a task. 
+	 </p> 
+	 <p>As the name suggests, 
+		<synph>choicetable</synph> content is structured in a table, with one
+		column for the option or choice, and another column for the description of the
+		option or choice. If column headings are required, they can be specified
+		through 
+		<synph>choptionhd</synph> and 
+		<synph>chdeschd</synph> elements within a 
+		<synph>chhead</synph> header row. A row within a choice table is defined
+		with a 
+		<synph>chrow</synph> element containing an option
+		(<synph>choption</synph>) element and a description (<synph>chdesc</synph>)
+		element. 
+	 </p> 
+	 <p importance="high">The recommended column headings are 
+		<q>Option</q> and 
+		<q>Description</q>. 
+	 </p> 
+	 <p>The structure of the choice table is shown in the code sample: 
+		<codeblock>&lt;choicetable&gt;
+  &lt;chhead&gt;
+    &lt;choptionhd&gt;Option&lt;/choptionhd&gt;
+    &lt;chdeschd&gt;Description&lt;/chdeschd&gt;
+  &lt;/chhead&gt;
+  &lt;chrow&gt;
+    &lt;choption&gt;Any&lt;/choption&gt;
+    &lt;chdesc&gt;Applies the rule to any IP address.&lt;/chdesc&gt;
+  &lt;/chrow&gt;
+  &lt;chrow&gt;
+    &lt;choption&gt;Single IP Address&lt;/choption&gt;
+    &lt;chdesc&gt;
+      &lt;p&gt;Applies the rule to one IP address.&lt;/p&gt; 
+      &lt;note&gt;Use the dotted decimal format. Example: 127.0.0.1&lt;/note&gt;
+    &lt;/chdesc&gt;
+  &lt;/chrow&gt;
+&lt;/choicetable&gt;</codeblock> 
+	 </p> 
+	 <fig id="fig_BFD63E4F563B413EA59C22F82BAAFA9D"> 
+		<title>Typical formatting of a 
+		  <synph>choicetable</synph> in an output format</title><image
+		placement="break" align="left"
+		id="image_B7E0ABA848EA4BB2A83F30739FE54C19"
+		href="../images/choicetable_example.png" width="417px" height="159px"> 
+		  <alt>Screen capture showing typical formatting of a choicetable in a
+			 reading format 
+		  </alt></image> 
+	 </fig> 
+	 <p importance="high">Although more than one 
+		<synph>choicetable</synph> is permitted in a step, only one should be
+		used. 
+	 </p> 
+	 <p>The 
+		<synph>choicetable</synph> has a key column (<synph>keycol</synph>)
+		attribute which nominates which column should be treated as row headings. For
+		most publishing tools, a setting of 
+		<userinput>0</userinput> will result in all of the row content (except
+		for the header row) displaying in Roman text, while a setting of 
+		<userinput>1</userinput> results in the first (choice) column content
+		displaying in bold. Although not often appropriate, a setting of 
+		<userinput>2</userinput> will result in the second (description) column
+		content typically displaying in bold. 
+	 </p> 
+	 <p importance="high">The recommended 
+		<synph>keycol</synph> attribute setting for the 
+		<synph>choicetable</synph> element is 
+		<userinput>1</userinput>. 
+	 </p> 
+	 <section id="section_7BC73295A7464F468B0EDEB4D082B209"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<lq reftitle="Deborah Pickett, Yahoo! DITA Users Group"
+		 href="http://tech.groups.yahoo.com/group/dita-users/message/7870">I might do
+		  that, if I thought that they were actually choices. I don't think of
+		  &lt;choices&gt; or &lt;choicetable&gt; as necessarily implying mutual
+		  exclusivity, so a command of "Enter one or more of the following things" could
+		  logically be followed by a &lt;choices&gt;, or a &lt;choicetable&gt;. Given
+		  your example, I think I'd use &lt;choicetable&gt;. If the table isn't really
+		  presenting a smorgasbord of things for the user to choose from, then I might
+		  instead stick a &lt;ul&gt; or &lt;simpletable&gt; into an &lt;info&gt; and put
+		  that into the step. It's less semantically loaded than &lt;choices&gt; or
+		  &lt;choicetable&gt;, though I suspect that it will render very similarly. 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

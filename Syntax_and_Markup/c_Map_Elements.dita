@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_8FEC51A86D17452EADDDCB301E91BE16" xml:lang="en"
+ status="new"> 
+  <title>Map elements</title> 
+  <shortdesc>The 
+	 <term>map elements</term> are the elements used in ditamaps and bookmaps. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>elements<indexterm>map</indexterm></indexterm><indexterm>map
+			 elements</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>The map elements are a small set of elements, some of which have been 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialised"><?xm-replace_text Phrase?></ph>
+		into other elements for use in bookmaps. 
+	 </p> 
+	 <p>The map elements include: 
+	 <ul outputclass="listbullet" id="ul_F2331A1DD05B4C7DB031D0EC6E6A551D"> 
+		<li id="li_AA645CF6342740FCBB75A89ACD45D443">map 
+		</li> 
+		<li id="li_42C738BBE0E840BCACFE6F072229E72D">topicref 
+		</li> 
+		<li id="li_A9EF1CEA64934E8F9C5A960300CC69C7">topicmeta 
+		</li> 
+		<li id="li_D78F40B554A34006AC9F6F7C2A6D7448">topicgroup 
+		</li> 
+		<li id="li_FC92D6F9A58E49E99F0FA57DEFA9D4F1">topichead 
+		</li> 
+		<li id="li_9ADFA03D7BC749338738B89EA3E215D1">reltable 
+		</li> 
+	 </ul> 
+	 </p> 
+  </conbody> 
+</concept> 

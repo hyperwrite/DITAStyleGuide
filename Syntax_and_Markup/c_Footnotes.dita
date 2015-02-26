@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<concept id="concept_CD95C22ECB1F48AABA15B9B93E6BE871" status="new"
+ xml:lang="en"> 
+  <title>Footnotes</title> 
+  <shortdesc>The footnote (<synph>fn</synph>) element is used to nominate
+	 supplementary information that is not appropriate to be included in the flow of
+	 the content. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>fn
+			 element</indexterm><indexterm>elements<indexterm>fn</indexterm></indexterm><indexterm>footnotes</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>A footnote is usually seen as being specific to page layout output
+		formats, so marking up text as a footnote could be viewed as recording
+		presentational information within content; something that DITA tries to avoid. 
+	 </p> 
+	 <p>However, footnotes can also be considered as semantic identifiers for
+		supplementary information that doesn't belong inline in the text. The footnote
+		content is not critical to understanding the content, but provides extra
+		information that may be useful to some readers. 
+	 </p> 
+	 <p>The footnote (<synph>fn</synph>) element is typically rendered in the
+		output as a number in the flow of the text and the footnote content at the
+		bottom of the page or topic. The footnote number is automatically calculated
+		during the publishing process. In hypertext output formats, the inline footnote
+		reference number may be hyperlinked to the footnote at the bottom of the topic.
+		Some publishing tools may display the footnote content in a popup window (in
+		some hypertext output formats). 
+	 </p> 
+	 <p>An example of a footnote (<synph>fn</synph>) element is: 
+		<codeblock>&lt;p&gt;Always wear a seatbelt.
+  &lt;fn&gt;Some jurisdictions allow a medical exemption from wearing a seat belt
+  in exceptional circumstances.&lt;/fn&gt;
+&lt;/p&gt;</codeblock> 
+	 </p> 
+	 <p> 
+	 </p> 
+  </conbody> 
+</concept> 

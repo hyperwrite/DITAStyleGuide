@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D2011" status="new"> 
+  <title>Limits on 
+	 <ph
+	  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialisation"><?xm-replace_text Phrase?></ph></title>
+  
+  <shortdesc>DITA 
+	 <ph
+	  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialisations"><?xm-replace_text Phrase?></ph>
+	 must conform with immutable rules contained within the DITA specification. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm
+		  conref="../../conref/conref_source_metadata.dita#topic_hw_conref_meta/index_specialisation_rules_of"><?xm-replace_text Index Term?></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p><ph
+		conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_Specialisation_InitCap"><?xm-replace_text Phrase?></ph>
+		is not an open-slather, no-rules process. It is a formal, defined process with
+		limitations. 
+	 </p> 
+	 <p>The main requirements of 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialisation"><?xm-replace_text Phrase?></ph>
+		are: 
+	 <ul outputclass="listbullet" id="ul_A0E6E1749B3542A885F53221C2DFBBFA"> 
+		<li id="li_840EDA8AC8394C36BF219318210DDCC0">You cannot make your 
+		  <ph
+			conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialised"><?xm-replace_text Phrase?></ph>
+		  DITA less restrictive than the DITA 
+		  <term>base content model</term>. 
+		  <ul outputclass="listbullet2" id="ul_F55A93190E9E4A71A5366CB90556A16B">
+			 
+			 <li outputclass="listbullet2"
+			  id="li_EEE40A52133140FCA347D42122DF39DA">You cannot make a mandatory element
+				optional, and you cannot make a mandatory attribute optional. 
+			 </li> 
+			 <li outputclass="listbullet2"
+			  id="li_D5CF0A7DABF949DAB4DE96546C6A382F">You cannot allow elements in positions
+				that are not allowed by the base content model. 
+			 </li> 
+		  </ul> 
+		</li> 
+		<li id="li_134DBC2C9BEB4256A72442CEE0F3D2A5">You cannot add new
+		  element-specific attributes. You can only create new global attributes (or
+		  attributes of elements in the base content model. 
+		</li> 
+	 </ul> 
+	 </p> 
+  </conbody> 
+</concept> 

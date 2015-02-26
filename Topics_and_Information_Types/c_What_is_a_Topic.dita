@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="Dc_What_is_a_Topic" status="new"> 
+  <title>What is a topic?</title> 
+  <shortdesc>A topic in DITA is an independent chunk of information covering a
+	 single idea or task, authored as a unit, and stored in its own file. Topics are
+	 
+	 <ph
+	  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_categorised"><?xm-replace_text Phrase?></ph>
+	 by information type. DITA's topic-based architecture enables the same topic to
+	 be used in different publications. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>topic</indexterm><indexterm>unit of
+			 discourse</indexterm><indexterm>modular</indexterm><indexterm>section vs
+			 topic</indexterm><indexterm>topic vs section</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>DITA is designed around a topic-based information architecture; topics
+		are the building blocks of DITA documents. The topic-based approach in DITA is
+		similar in many ways to the topic-based approach of most hypertext systems. 
+	 </p> 
+	 <p>The 
+		<ph
+		conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_DITA_Spec"><?xm-replace_text Phrase?></ph>
+		defines a topic as follows: 
+		<lq>A topic is a unit of information with a title and content, short
+		  enough to be specific to a single subject or answer a single question, but long
+		  enough to make sense on its own and be authored as a unit. 
+		</lq> 
+	 </p> 
+	 <p>The DITA approach is that the author writes a topic independently of the
+		publication in which it may eventually be published. (A publication is created
+		by assembling topics into a hierarchical structure and 
+		<q>publishing</q> the collection of topics to a reading format.) This 
+		<term>topic-oriented writing</term> is a disciplined approach to writing
+		that emphasises modularity and re-use of concise units of information<cite
+		product="academic_only"> (OASIS, 2007)</cite>. 
+	 </p> 
+	 <p>A topic is created as a standalone chunk of information, typically
+		limited to one idea. A well-written topic will fully convey that idea in one
+		reading. Technically, a DITA topic can be as minimal as just a title, but
+		practically that can only occur when the title alone conveys the idea
+		completely. A topic is stored in its own file. Topics are 
+		<ph
+		conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_categorised"><?xm-replace_text Phrase?></ph>
+		into different 
+		<term>information types</term>. 
+	 </p> 
+	 <p importance="high">Although topics can technically be broken down into
+		sections, you must take care to ensure that sections are not used as an
+		alternative to topics. Sections should only be used where the single idea being
+		conveyed in the topic is complex. Using sections instead of topics detracts
+		from modularity. 
+	 </p> 
+	 <note>A number of DITA (source) topics can be later assembled into a single
+		deliverable topic, such as an XHTML topic. DITA includes a 
+		<synph>chunk</synph> attribute for this purpose. You should not create
+		topics in DITA according to how you want the information chunked in the
+		deliverable reading format. 
+	 </note> 
+	 <section id="section_FDEFED9AB2AC4E2C9C830434E2769F21"
+	 audience="contributor"> 
+		<title>Rationale</title> 
+		<p>On the DITA TC mailing list, Eliot Kimber 
+		  <cite>(citation required) 
+		  </cite>started a discussion about the nature of a topic. His focus was
+		  on the use of section elements within topics. A section element is used to
+		  break up a topic into smaller units. Each section has a title. An alternative
+		  structure to a topic with sections is multiple topics (one per "section") bound
+		  together with a ditamap. The ditamap provides the sequence and hierarchical
+		  structure for the "sections". 
+		</p> 
+		<lq reftitle="Michael Gross, DCL News"> 
+		  <p><b>Definition of "Topic"</b> 
+		  </p> 
+		  <p>Topics are probably the most important new concept within DITA. The
+			 idea is to break down conventional documents into topics that can stand on
+			 their own. Each topic becomes separate units or files. These topics can then be
+			 reassembled into more traditional manuals by using a feature of DITA called
+			 maps. By breaking down documents into many standalone topics you increase the
+			 reusability of your data. For example, if you manufacture digital cameras and
+			 produce manuals for many cameras that each use the same memory card and
+			 mechanism, you can isolate the discussion of changing the memory card to its
+			 own topic. You can then more easily share that topic among the many manuals
+			 that need information. 
+		  </p> 
+		  <p>The challenge when converting legacy data, is that the delineation
+			 of the appropriate location to break down your data into standalone topics
+			 probably does not exist in your original document. Your documents were probably
+			 designed for paper manuals, so you'll need someone who knows the data well,
+			 perhaps even a Subject Matter Expert, go through the document to mark the
+			 pieces of your documents that make sense as separate topics. Since topics can
+			 contain subtopics, some serious thought needs to be put into this process. 
+		  </p> 
+		  <p outputclass="hwsource">Source: 
+			 <xref href="http://www.dclab.com/dita_conversion_tips.asp"
+			  scope="external" format="html">Michael Gross, DCLNews</xref> 
+		  </p> 
+		</lq> 
+		<lq reftitle="Marcia Riefer Poulsen, The Three Core Topic Types">What's a
+		  topic? An information chunk that answers one question, has a heading, and can
+		  stand alone (make sense in any context). 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

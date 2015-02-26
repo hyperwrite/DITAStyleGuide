@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D3779" status="new"> 
+  <title>Use of 
+	 <synph>class</synph> attribute</title> 
+  <shortdesc>The 
+	 <synph>class</synph> attribute is used in 
+	 <ph
+	  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialisation"><?xm-replace_text Phrase?></ph>,
+	 and should not be set by a DITA author. The 
+	 <synph>class</synph> attribute should not be confused with the 
+	 <synph>outputclass</synph> attribute. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>inheritance</indexterm><indexterm>class
+			 attribute</indexterm><indexterm>outputclass
+			 attribute</indexterm><indexterm>attributes<indexterm>class</indexterm><indexterm>outputclass</indexterm></indexterm><indexterm
+		  conref="../../conref/conref_source_metadata.dita#topic_hw_conref_meta/index_specialisation"><?xm-replace_text Index Term?></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>All DITA elements have a 
+		<synph>class</synph> attribute, but as a DITA author, you should never
+		change this attribute. In fact, most DITA editors will hide it from you. The
+		DITA 
+		<synph>class</synph> attribute is not the same as the HTML 
+		<synph>class</synph> attribute. (DITA's 
+		<synph>outputclass</synph> attribute is the closest equivalent to HTML
+		class.) 
+	 </p> 
+	 <p>All DITA based processors use the class attribute to determine how an
+		element should be processed, rather than by using the element name itself. This
+		is because 
+		<ph
+		conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialisation"><?xm-replace_text Phrase?></ph>
+		may make the element name unfamiliar to the processor, but the 
+		<synph>class</synph> will indicate the element's inheritance, and
+		therefore how it should be handled. 
+	 </p> 
+  </conbody> 
+</concept> 

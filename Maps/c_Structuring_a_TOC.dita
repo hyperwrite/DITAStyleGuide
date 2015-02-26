@@ -1,0 +1,187 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D2368" status="new"> 
+  <title>Designing a topic hierarchy</title> 
+  <shortdesc>A well-designed topic hierarchy will make the reader's task of
+	 finding information in a publication easier. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>exemplar<indexterm>footnote</indexterm></indexterm><indexterm>stub
+			 topic</indexterm><indexterm>mother-of-all-topics</indexterm><indexterm>summary
+			 topics</indexterm><indexterm>topichead
+			 element</indexterm><indexterm>elements<indexterm>topichead</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>Structuring the content of a document is one of the most important steps
+		in the authoring process. It is here that you establish the logical
+		relationship between topics, and add context to the set of topics. 
+	 </p> 
+	 <p>Some theoretical considerations to make when deciding on the structure
+		of topics include the following. 
+	 <ul id="ul_FD7136A7BBCD46DCA3DAC7A3EE4098E9"> 
+		<li id="li_B3C8E13975074BC29ED652CDE54FB1DD">The human mind can
+		  manipulate about four concepts at a time. 
+		</li> 
+		<li id="li_2E5A5A52847D463C9F506C0690FC3962">Humans make better decisions
+		  when presented with groups of seven choices (Miller's Law)<fn><ph
+			 conref="../../conref/conref_source_references.dita#concept_60C4D0117D5941E4A5F815B50A7F8454/ph_Miller_Seven"><?xm-replace_text Phrase?></ph></fn>.
+		  
+		</li> 
+	 </ul> 
+	 </p> 
+	 <p>Translated to a document structure, this points to an ideal document
+		structure made up of 
+		<term>parent topics</term> with seven 
+		<term>child topics</term> at every level, and no more than four 
+		<term>generations</term> of topic families. 
+	 </p> 
+	 <p>A three level hierarchy with seven topics per menu will permit 343
+		pages. Four layers of ten topics permits up to 10,000 topics, which is more
+		than enough for even the largest manuals. 
+	 </p> 
+	 <p>The human mind thinks in associative, rather than linear, patterns. Thus
+		we 
+		<q>get on the wrong track</q>, and 
+		<q>forget how we got onto this subject</q>. The human brain stores
+		information in this way also, by finding a similar experience and associating
+		it with the current experience (<q>this tastes like vinegar</q>). 
+	 </p> 
+	 <p>In DITA, concept information is separated from task and reference
+		information. This makes it more difficult to structure a document purely around
+		the goals of the reader, unless the nature of the information allows the
+		creation of standard sets of one concept, one task and one reference topic.
+		Such an information model would permit a TOC structure such as: 
+	 <ul id="ul_FA6B38BFD22E49F9B6A50BC702D949E0"> 
+		<li id="li_CA8120F7867E47D086733EF397AABCD8">Starting 
+		  <ul id="ul_4C661F30A3FC478C882E79874A614038"> 
+			 <li id="li_0C52EAF2385B4E169BC2E010C58F2DF3">Engine principles
+				(concept) 
+			 </li> 
+			 <li id="li_07E341711E394A209C99E8169B74926C">Starting the engine
+				(task) 
+			 </li> 
+			 <li id="li_9AD5D8F0B938453B9FDBF1C1A47C7E5F">Engine specifications
+				(reference) 
+			 </li> 
+		  </ul> 
+		</li> 
+	 </ul> 
+	 </p> 
+	 <p>An alternative approach would be to group concept topics, task topics
+		and reference topics, resulting in a high level structure such as: 
+	 <ul id="ul_1D4D42A3DA15496EAF3843C1DADEBBAA"> 
+		<li id="li_8CE757BACCEB46E795B05576AA2CA2E8">Car Concepts 
+		  <ul id="ul_F64AA91B7B89435E8346ABFBD8DB7EA1"> 
+			 <li id="li_64917478C70048148FB82DF1C5D71CC8">Starting 
+			 </li> 
+			 <li id="li_431EED1BD3DB4357BC606BAD79E73BAB">Driving 
+			 </li> 
+			 <li id="li_0A6686C4C8974C60B6245A2314477128">Stopping 
+			 </li> 
+		  </ul> 
+		</li> 
+		<li id="li_11F047536B1841658A9CD9100788C560">Car Tasks 
+		  <ul id="ul_6A5D4C63BAA942879A55E38F642927D5"> 
+			 <li id="li_AE22AA50E5D041A4828014E00A0733C3">Starting 
+			 </li> 
+			 <li id="li_39BEA4D3CAAD450BB8895BCE1A4CCDA6">Driving 
+			 </li> 
+			 <li id="li_4A914C8E6D1F4DEBBA4A6D288956D3FB">Stopping 
+			 </li> 
+		  </ul> 
+		</li> 
+		<li id="li_4447B23DA54B4CDA8971351692657517">Car Reference Information 
+		  <ul id="ul_1C67429B69FE44129FA66D6C38740B54"> 
+			 <li id="li_5F6EE2443E364C44A483CB4C3195ED9F">Starting 
+			 </li> 
+			 <li id="li_93A51BC407BA4C2C8B48874239235DBF">Driving 
+			 </li> 
+			 <li id="li_736604F4A40E46499AA8B6799E681068">Stopping 
+			 </li> 
+		  </ul> 
+		</li> 
+	 </ul> 
+	 </p> 
+	 <p>In reality, however, most information models do not have such a
+		repeatable structure. More likely is that there will be a concept topic that
+		has three or four related task topics, with a reference topic that might be
+		associated with a dozen concepts. 
+	 </p> 
+	 <p>The best structure for a particular document is not something that can
+		be easily prescribed; it is the responsibility of the author to devise a
+		logical structure that will support the aims of the deliverable document. 
+	 </p> 
+	 <p>You should consider the following questions when designing a TOC and a
+		structure for your topics: 
+	 <ul id="ul_2DB535D47D2A4BE89791A72E2D575A33"> 
+		<li id="li_DD14DF49F4C5493D894F14E8B8F2B97A">What level of detail will be
+		  used? 
+		</li> 
+		<li id="li_36EB32C36A4C4C228B21264E422E24DD">How much information will
+		  each node contain? 
+		</li> 
+		<li id="li_BB34167DC07148F287B60CE9D874EE1A">What nodes will connect to
+		  what other nodes? 
+		</li> 
+		<li id="li_67D63FF85ECC4BF18ADE893C7F80990B">What sort of links will be
+		  used? 
+		</li> 
+		<li id="li_F774BB7F46D144DE895FCCD750B6CEEC">What entry points are
+		  needed? 
+		</li> 
+	 </ul> 
+	 </p> 
+	 <p importance="high">Two more specific guidelines to adopt are: 
+	 </p> 
+	 <ul id="ul_9631D25F19C14FC99B93FBAF7D9CE7B8"> 
+		<li id="li_A581622047E24D8F91798DCCEE6B00A9">Designing your structure
+		  with a single node at the top of the tree hierarchy (a 
+		  <q>mother-of-all-topics</q>) from which all other topics branch. This
+		  helps ensure logical 
+		  <term>breadcrumb</term> links and other navigation pathways. 
+		</li> 
+		<li id="li_99E80B1138AB48BA894BDD06D300872D">Do not use topic headings
+		  (<synph>topichead</synph> elements). Instead, use stub or summary topics:
+		  topics that contain only a title. The publishing process can automatically
+		  build the content of such stub topics based on the short descriptions of its
+		  child topics. 
+		</li> 
+	 </ul> 
+	 <section id="section_4CA6F6AFF2BB479C84B84A9D1E33B46E"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<lq reftitle="Deborah Pickett, Yahoo! DITA Users Group"
+		 href="http://tech.groups.yahoo.com/group/dita-users/message/6699"> 
+		  <p>In dita-users@yahoogroups.com, "Chris Thompson" &lt;thomps@...&gt;
+			 wrote: 
+		  </p> 
+		  <p>&gt;&gt;&gt; I've seen DITA-based projects that present end-users
+			 with TOCs that organize topics around information types (Concepts, Tasks,
+			 Reference) at the top level, as opposed to organizing topics around user goals
+			 (e.g., Setting Up Projects, Copying Files, etc), which was the documentation
+			 standard before the advent of structured authoring. Organizing TOCs around
+			 information types separates concepts from related tasks and reference topics.
+			 This seems to be a major usability problem. Users don't open up help systems
+			 with the idea that they need to find a "concept" or a "procedure".&lt;&lt;&lt; 
+		  </p> 
+		  <p> Perhaps they do, sometimes. I can imagine going to the help saying
+			 "How do I ...?" or "What's ...?". If that's my question then structuring by
+			 infotype first isn't such a bad idea. But you're right, different people think
+			 differently about how to structure a help set. I did an experiment with the
+			 authors in my team, getting everyone to structure our product's help the
+			 "right" way, and there were as many structures as authors. We came to the
+			 conclusion that the ideas of infotype, product feature, workflow process, etc.,
+			 were largely orthogonal to each other, and that a single-hierarchy organization
+			 would never satisfy every user. How that translated to our documentation is
+			 that we realized the importance of each topic having a good set of related
+			 topic links. Of course, this is exactly what DITA reltables are for. So I don't
+			 know that there is "a" best practice as such. Each help set may have its own
+			 best view, and some help sets might benefit from multiple views
+			 (user-selectable ToCs, there's a thought). Given how the emphasis seems to be
+			 on using "search" features now for online help, perhaps the structure of a ToC
+			 doesn't matter that much. 
+		  </p> 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

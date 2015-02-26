@@ -1,0 +1,209 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_F75D02892F6344F58D3AF2C9F3A754E2" status="new"
+ xml:lang="en"> 
+  <title>Author, publisher and publication metadata</title> 
+  <shortdesc>Metadata relating to author, publisher and other publication
+	 details for a publication or a topic are stored in 
+	 <synph>author</synph>, 
+	 <synph>publisher</synph>, 
+	 <synph>copyright</synph>, and 
+	 <synph>prodinfo</synph> elements in the ditamap 
+	 <synph>topicmeta</synph> section or the topic 
+	 <synph>prolog</synph> section. 
+  </shortdesc> 
+  <prolog><copyright><copyryear year="2010"/><copyrholder>Tony
+		  Self</copyrholder></copyright><metadata><keywords><indexterm>metadata
+			 elements</indexterm><indexterm>author element</indexterm><indexterm>topicmeta
+			 element</indexterm><indexterm>copyright element</indexterm><indexterm>copyryear
+			 element</indexterm><indexterm>copyrholder
+			 element</indexterm><indexterm>keywords element</indexterm><indexterm>publisher
+			 element</indexterm><indexterm>metadata
+			 element</indexterm><indexterm>elements<indexterm>platform</indexterm><indexterm>component</indexterm><indexterm>prognum</indexterm><indexterm>featnum</indexterm><indexterm>prodname</indexterm><indexterm>vrmlist</indexterm><indexterm>brand</indexterm><indexterm>series</indexterm><indexterm>prodinfo</indexterm><indexterm>prolog</indexterm><indexterm>author</indexterm><indexterm>metadata</indexterm><indexterm>topicmeta</indexterm><indexterm>copyright</indexterm><indexterm>copyryear</indexterm><indexterm>copyrholder</indexterm><indexterm>keywords</indexterm><indexterm>publisher</indexterm></indexterm><indexterm>href
+			 attribute</indexterm><indexterm>type
+			 attribute</indexterm><indexterm>attributes<indexterm>href</indexterm><indexterm>type</indexterm></indexterm><indexterm>prolog
+			 element</indexterm><indexterm>prodinfo element</indexterm><indexterm>prodname
+			 element</indexterm><indexterm>vrmlist element</indexterm><indexterm>brand
+			 element</indexterm><indexterm>series element</indexterm><indexterm>platform
+			 element</indexterm><indexterm>prognum element</indexterm><indexterm>featnum
+			 element</indexterm><indexterm>component
+			 element</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>Publications, and individual topics, can have publication metadata
+		associated with them. This metadata includes: 
+	 <ul id="ul_4AFC1899CB2D44DAA6A1CDBEA0CFAC0A"> 
+		<li id="li_DEC250D9C6334D24B6F6EAD1E85E3AA2">the name of the author (or
+		  authors) 
+		</li> 
+		<li id="li_E8CCA7D9CC9042CD99696DFED42BA9CE">the name of the publisher 
+		</li> 
+		<li id="li_FC4CF56B7D834141906DDC00E2EB273C">the name of the copyright
+		  holder 
+		</li> 
+		<li id="li_28B1C20CA6D346FA9A4BF8FA4836DBB9">the product the information
+		  relates to 
+		</li> 
+	 </ul> 
+	 </p> 
+	 <p>This metadata is stored in a number of elements within the 
+		<synph>topicmeta</synph> section of a ditamap, and in the equivalent 
+		<synph>prolog</synph> section of a topic. 
+	 </p> 
+	 <p>The 
+		<synph>author</synph> element contains the name of the document or topic
+		author, and can be used as many times as required. It stores additional
+		information about the author in the following attributes: 
+	 <dl> 
+		<dlentry> 
+		  <dt>href 
+		  </dt> 
+		  <dd>contains the URL of the author's e-mail address or Web site, or the
+			 address of a DITA topic in the collection containing information about the
+			 author 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt>type 
+		  </dt> 
+		  <dd>allows the role of the author to be specified, with values of 
+		  <option>creator</option> (primary author) and 
+		  <option>contributor</option> (for contributing author). 
+		  </dd> 
+		</dlentry> 
+	 </dl> 
+	 </p> 
+	 <p>The 
+		<synph>publisher</synph> element contains the name of the document
+		publisher, and is only allowed to be used once. It stores additional
+		information about the publisher in the following attribute: 
+	 <dl> 
+		<dlentry> 
+		  <dt>href 
+		  </dt> 
+		  <dd>contains the URL of the publisher's e-mail address or Web site, or
+			 the address of a DITA topic in the collection containing information about the
+			 publisher 
+		  </dd> 
+		</dlentry> 
+	 </dl> 
+	 </p> 
+	 <p>The 
+		<synph>copyright</synph> element doesn't contain text; it only stores
+		information in nested elements and attributes. The copyright element can be
+		used as many times as required (to cater for joint copyright ownership of a
+		work). If there 
+		<b>is</b> more than one copyright holder, the 
+		<synph>type</synph> attribute can be used to nominate whether the holder
+		is the 
+	 <option>primary</option> holder or the 
+	 <option>secondary</option> holder. The 
+	 <synph>copyright</synph> element has two nested elements: 
+	 <synph>copyryear</synph> (which is mandatory) and 
+	 <synph>copyrholder</synph>. 
+	 </p> 
+	 <p>The 
+		<synph>copyryear</synph> element doesn't contain text, and only contains
+		one 
+		<synph>year</synph> attribute. You should enter the year of copyright in
+		this attribute, in 
+		<varname>YYYY</varname> format. More than one 
+		<synph>copyryear</synph> element can be included within a copyright
+		element if the copyright extends over more than one year. 
+	 </p> 
+	 <p>The 
+		<synph>copyrholder</synph> element simply contains the legal name of the
+		copyright holder. 
+	 </p> 
+	 <p>The 
+		<synph>prodinfo</synph> element contains information about the product
+		(or products) that are the subject matter of the publication or topic. The 
+		<synph>prodinfo</synph> element doesn't contain text; instead, it
+		contains the following elements: 
+	 <dl> 
+		<dlentry> 
+		  <dt><synph>prodname</synph> element 
+		  </dt> 
+		  <dd>the name of the product that is the subject matter 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt><synph>vrmlist</synph> element 
+		  </dt> 
+		  <dd>itself contains a series of 
+			 <synph>vrm</synph> elements that contain the version, release and
+			 modification information about the product 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt><synph>brand</synph> element 
+		  </dt> 
+		  <dd>the manufacturer or brand associated with the product 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt><synph>series</synph> element 
+		  </dt> 
+		  <dd>the product series that the product belongs to 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt><synph>platform</synph> element 
+		  </dt> 
+		  <dd>if the product is a software product, the platform or operating
+			 system that the product runs on 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt><synph>prognum</synph> element 
+		  </dt> 
+		  <dd>the product code, program number, order number or other identifying
+			 number used for the product 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt><synph>featnum</synph> element 
+		  </dt> 
+		  <dd>most relevant to the topic prolog, rather than map topicmeta, this
+			 is the internal feature number or other identifier 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt><synph>component</synph> element 
+		  </dt> 
+		  <dd>the component of the product that this topic relates to 
+		  </dd> 
+		</dlentry> 
+	 </dl> 
+	 </p> 
+	 <p>An example of a 
+		<synph>topicmeta</synph> section containing some of these elements is: 
+	 </p> 
+	 <codeblock>&lt;topicmeta&gt;
+  &lt;author href="mailto:leo@smiggins.com"&gt;Leo Smiggins&lt;/author&gt;
+  &lt;publisher&gt;FJ Heavy Industries&lt;/publisher&gt;
+  &lt;copyright&gt;
+    &lt;copyryear year="2009"&gt;&lt;/copyryear&gt;
+    &lt;copyrholder&gt;<ph conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/ph_Subaru_company_name"><?xm-replace_text Phrase?></ph> Australia&lt;/copyrholder&gt;
+  &lt;/copyright&gt;
+  &lt;prodinfo&gt;
+    &lt;prodname&gt;<ph conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/ph_Impreza_product_name"><?xm-replace_text Phrase?></ph> XRW&lt;/prodname&gt;
+    &lt;brand&gt;<ph conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/ph_Subaru_company_name"><?xm-replace_text Phrase?></ph>&lt;/brand&gt;
+    &lt;series&gt;<ph conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/ph_Impreza_product_name"><?xm-replace_text Phrase?></ph>&lt;/series&gt;	
+  &lt;/prodinfo&gt;
+&lt;/topicmeta&gt;
+</codeblock> 
+	 <section id="section_326677ADA27A4CDF817C924B642CA30D"
+	 audience="contributor"> 
+		<title>Rationale</title> 
+		<lq
+		reftitle="Robert D Anderson, OASIS DITA Technical Committee mailing list">I do
+		  not know of any internal usage, but there could be one that I simply haven't
+		  seen. I am pretty sure the href attribute was added originally for the reasons
+		  you suggest - to provide a reference to more information about the author. I
+		  think that the other linking attributes were added more recently under the
+		  proposal that made sure anything with @href also took scope/type/format. 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

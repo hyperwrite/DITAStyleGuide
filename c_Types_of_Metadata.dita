@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<concept id="concept_C82853D28AB14DBD89D73498C393F644"> 
+  <title>Metadata, conditional processing, and indexing</title> 
+  <conbody> 
+	 <lq reftitle="John Durham Peters">Knowledge is not gained by collecting
+		information, but by understanding what information to throw away. 
+	 </lq> 
+	 <section id="section_C43277E466EA4742A334F031FF06650F"
+	  audience="contributor"> 
+		<title>References</title> 
+		<p>John Durham Peters quotation from keynote address delivered at ANZCA
+		  2010, Canberra, Australia. 
+		</p> 
+	 </section> 
+  </conbody> 
+</concept> 

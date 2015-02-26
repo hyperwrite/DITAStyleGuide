@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<concept id="concept_0D3EEA8D8E4748BF96B81C2B0BB43492" xml:lang="en"
+ status="new"> 
+  <title>Breadcrumbs</title> 
+  <shortdesc>Breadcrumb trails are navigation tools used in some online
+	 document formats, and can be automatically generated from DITA source. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>breadcrumbs</indexterm><indexterm>navigation</indexterm><indexterm>Eclipse
+			 Help</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p> A feature of some document delivery formats, notably Eclipse Help, is
+		the 
+		<term>breadcrumb trail</term>. 
+		<term>Breadcrumbs</term> provide the user with the position of the
+		currently displayed topic in the TOC hierarchy through links to parent and
+		other ancestor topics. 
+	 </p> 
+	 <p><term>Breadcrumbs</term> are derived entirely from the TOC structure,
+		and do not need to be separately defined in the DITA source. 
+	 </p> 
+	 <fig id="fig_00DEC5C5D3A54B91972BEE80E51F56D9"> 
+		<title>TOC hierarchy used to derive breadcrumb trail in Eclipse Help
+		  output</title><image placement="break" align="left"
+		id="image_6CFEA481DA044C57A69D7C1417E4D5AB" href="../images/breadcrumbs.png"
+		width="425px" height="192px"> 
+		  <alt>Screen capture showing how TOC hierarchy is used to create a
+			 breadcrumb trail at the top of a topic 
+		  </alt></image> 
+	 </fig> 
+  </conbody> 
+</concept> 

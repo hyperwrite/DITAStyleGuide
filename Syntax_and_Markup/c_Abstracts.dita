@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_4A08D31C946B4B1885A80B60BAE70211" xml:lang="en"
+ status="new"> 
+  <title>Abstracts</title> 
+  <abstract>The 
+	 <synph>abstract</synph> element is similar to the 
+	 <synph>shortdesc</synph> element, in that it is used to contain a concise
+	 summary of the content of the topic. Abstracts should be used for special cases
+	 only, as they only offer advantages over short descriptions in limited
+	 scenarios. 
+	 <shortdesc>Abstracts can contain multiple 
+		<synph>shortdesc</synph> elements, which are typically processed slightly
+		differently to standalone 
+		<synph>shortdesc</synph> elements. 
+	 </shortdesc></abstract> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>abstract</indexterm><indexterm>shortdesc</indexterm><indexterm>Ockham's
+			 Razor</indexterm><indexterm>conref</indexterm><indexterm>filtering</indexterm><indexterm>conditional
+			 processing</indexterm><indexterm>conditional publishing<index-see>conditional
+				processing</index-see></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>DITA 
+		<synph>abstract</synph> elements are similar to short descriptions, but
+		allow for more complex information structures. An abstract can contain a range
+		of block elements such as paragraphs and notes, but can also contain one or
+		more 
+		<synph>shortdesc</synph> elements. 
+	 </p> 
+	 <p>A topic can contain either an 
+		<synph>abstract</synph> (which may include a nested 
+		<synph>shortdesc</synph>), or a standalone 
+		<synph>shortdesc</synph>, but not both. 
+	 </p> 
+	 <p>In general, a 
+		<synph>shortdesc</synph> should be used in preference to an 
+		<synph>abstract</synph>, following the principle that the simplest
+		approach is usually the best<cite product="academic_only"> (Ockham's
+		  Razor)</cite>. 
+	 </p> 
+	 <p importance="high">The 
+		<synph>abstract</synph> structure should be used for: 
+	 <ul id="ul_2469A8D22DD14C7A8F13566C077C1532"> 
+		<li id="li_A377CD02CD1B498591B91487044CEE32">topics where multiple short
+		  descriptions are needed because the topic is to be conditionally published 
+		</li> 
+		<li id="li_89D5B297815C488FA11F2276C6FED6BA">re-use topics, where
+		  multiple 
+		  <synph>shortdesc</synph> elements are going to be 
+		  <term>conreffed</term> into other topics 
+		</li> 
+		<li id="li_941035CA49684AE98BFD740CFA2F9AE1">complex topics where the 
+		  <synph>shortdesc</synph> is too limited to adequately summarise the
+		  topic content. 
+		</li> 
+	 </ul> 
+	 </p> 
+	 <p>Only the 
+		<synph>shortdesc</synph> element(s) within the 
+		<synph>abstract</synph> are included in the topic previews and link
+		previews. 
+	 </p> 
+	 <section id="section_D7599A646DC647D29B9827AB3E30AB3C"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<lq
+		 reftitle="Deborah Pickett, Yahoo! DITA Users Group">&lt;abstract&gt;&lt;shortdesc&gt;Last
+		  I saw, DITA-OT handles shortdesc only for preview text.&lt;/shortdesc&gt; If
+		  the shortdesc is inside an abstract, that works too, but you get only the
+		  shortdesc, not the whole abstract. If this paragraph were used as a topic
+		  preview you'd get only the first sentence in your preview.&lt;/abstract&gt; 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

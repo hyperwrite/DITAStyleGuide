@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en-au" id="D9185"> 
+  <title>A Definition of DITA</title> 
+  <shortdesc>DITA can be defined an open standard for creating, sharing and
+	 re-using content. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>DITA<indexterm>definition</indexterm></indexterm><indexterm>Rockley,
+			 Manning, et al</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>Just as they provided a good definition of what architecture means in
+		the DITA context, 
+		<cite>Rockley, Manning et al</cite> follow up with a lovely, succinct
+		definition of DITA. 
+	 </p> 
+	 <lq reftitle="Rockley, Manning, et al, 2009">DITA is an open content
+		standard that defines a common structure for content that promotes the
+		consistent creation, sharing, and reuse of content. 
+	 </lq> 
+  </conbody> 
+</concept> 

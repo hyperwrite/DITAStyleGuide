@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept id="D9342" rev="1.2" xml:lang="en" status="new"> 
+  <title>The text element</title> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>text
+			 element</indexterm><indexterm>elements<indexterm>text</indexterm><indexterm>ph</indexterm></indexterm><indexterm>ph
+			 versus text</indexterm><indexterm>text versus
+			 ph</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>The 
+		<synph>text</synph> element, introduced in 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_DITA12"><?xm-replace_text Phrase?></ph>,
+		identifies a snippet of plain text that has no other special meaning (or
+		presentation requirement). It should only be used when no other semantic
+		element is appropriate. The 
+		<ph>text</ph> element is almost identical to the 
+		<synph>ph</synph> element, but cannot contain nested semantic element in
+		the way that 
+		<synph>ph</synph> can contain, for example, 
+		<synph>image</synph> elements. 
+	 </p> 
+	 <p>At first look, there seems to be no reason for having an element to
+		contain text that has no semantic meaning! However, there are special
+		circumstances when the 
+		<synph>text</synph> element makes sense, and that's when some text needs
+		to be distinguished from other text, and when no other elements are allowed.
+		The most likely example of this is when some text needs to be transcluded with
+		a 
+		<term>conref</term> into a place where other elements are not permitted. 
+	 </p> 
+	 <p importance="high">Do not use 
+		<synph>text</synph> in a place where 
+		<synph>ph</synph> is valid. 
+	 </p> 
+	 <section id="section_37EA0C8F60594CCAA52F0C1A98C70495"
+	 audience="contributor"> 
+		<title>Rationale</title> 
+		<lq
+		reftitle="Overview of DITA 1.2 presentation by Kristen James Ebelein, RealWorld DITA Conference, 14 September 2009">&lt;text&gt;
+		  element allows semantic-free reuse of small pieces of text. Use of &lt;text&gt;
+		  is restricted to locations that do not allow semantic elements. 
+		</lq> 
+		<draft-comment>Need to associate this topic with a topic describing the
+		  ph element, when that's available. A good example is that ph can't be used
+		  inside term, but text can be. This would mean that rather than use ph as a
+		  container for variables in a conref source, text would be better. In the
+		  Artefact, a variable of "specialisation", set as a ph (in 1.1), can't be used
+		  inside a term. 
+		</draft-comment> 
+	 </section> 
+  </conbody> 
+</concept> 

@@ -1,0 +1,3 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en-au" id="Dc_Excluding_Topics_from_Output_TOC"><title>Excluding Topics from the Output Table of Contents</title><conbody><p>If a topic is to be included in the output file (eg, a CHM file) it must be nominated in the ditamap. The ditamap is used as the basis for the Table of Contents in many output types. To exclude a topic from the output table of contents, the relevant ditamap topicref must have its <synph>toc</synph> attribute set to <!--Original: <span @class=userinput>--><ph>no</ph>.</p></conbody></concept>

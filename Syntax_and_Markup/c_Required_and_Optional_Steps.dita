@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_2686B9CDFBD64B64A3B3422B6BDA4F48" xml:lang="en"
+ status="new"> 
+  <title>Required and optional steps</title> 
+  <shortdesc>The 
+	 <synph>importance</synph> attribute of a step is used to indicate whether
+	 an element is optional or mandatory. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>step
+			 element</indexterm><indexterm>substep element</indexterm><indexterm>importance
+			 attribute</indexterm><indexterm>attributes<indexterm>importance</indexterm></indexterm><indexterm>elements<indexterm>step</indexterm><indexterm>substep</indexterm></indexterm><indexterm>mandatory
+			 steps</indexterm><indexterm>optional steps</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>The 
+		<synph>step</synph> and 
+		<synph>substep</synph> elements have an optional 
+		<synph>importance</synph> attribute, which has two valid values: 
+	 <option>optional</option> and 
+	 <option>required</option>. The attribute is used to indicate whether the
+	 step is optional (within a set of mandatory steps), or required (within a set
+	 of optional steps). The 
+	 <option>optional</option> setting is more commonly used than 
+	 <option>required</option>. 
+	 </p> 
+	 <p>During processing to a reading format, steps with an 
+		<synph>importance</synph> attribute are typically rendered with an 
+		<q>Optional:</q> or 
+		<q>Required:</q> prefix. 
+	 </p> 
+	 <fig id="fig_E92CEFCC873B4ABCA90DCBF03B6100A2"> 
+		<title>Typical rendering of step with importance attribute
+		  set</title><image placement="break" align="left"
+		id="image_85E5C5B0B4C545A8B1BD4E8BE1AC2213"
+		href="../images/step_importance_attribute_rendered.png" width="242px"
+		height="82px"> 
+		  <alt>Screen capture showing typical rendering of step with importance
+			 attribute set 
+		  </alt></image> 
+	 </fig> 
+  </conbody> 
+</concept> 

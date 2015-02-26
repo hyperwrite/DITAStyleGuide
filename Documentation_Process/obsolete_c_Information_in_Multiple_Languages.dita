@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<concept id="concept_18BB0BEA9F3D4C63B77C9E768300FC7A"> 
+  <title>Information in multiple languages</title> 
+  <shortdesc>Use a mirrored architecture for 
+	 <ph xml:lang="en-AU">localised</ph> DITA content. 
+  </shortdesc> 
+  <prolog><metadata><keywords><indexterm
+		  xml:lang="en-AU">localisation</indexterm><indexterm>translation</indexterm><indexterm>languages<indexterm>information
+				in different</indexterm></indexterm></keywords></metadata>
+  </prolog>
+  <conbody> 
+	 <p>Translated DITA topics should be stored in a parallel, mirrored folder
+		structure, with the same file names as the original language source. 
+	 </p> 
+	 <section id="section_71E7E962B6964B3CBC1A45DA6C9175F3"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<lq reftitle="Troy Klukewich, Yahoo! DITA Users Group"
+		 href="http://tech.groups.yahoo.com/group/dita-users/message/18655"> 
+		  <p>In the last three organizations I've worked at, translated content
+			 and the source English were all stored in separate, parallel folders. 
+		  </p> 
+		  <p>One factor to consider is scalability and logistics of translations/
+			 localizations. As more languages are added, it is likely that multiple vendors
+			 will be involved in translations. Plus, I wouldn't ever want 25 to 40 languages
+			 all stored in the same file. 
+		  </p> 
+		  <p>Using a mirrored architecture, you can send off separate file
+			 packages for translation to multiple vendors at the same time for simultaneous
+			 translations. If translations are stored in the same file, a change in one
+			 translated section would trigger a diff for another vendor analyzing the file.
+			 Even if no translation is involved with the bogus diff (say in a formerly
+			 translated section), the analysis overhead adds up and there is an accumulated
+			 charge. 
+		  </p> 
+		  <p>I don't see how the translation logistics would be handled in a
+			 single file and I wouldn't want to figure it out. :-) Vendors I've worked with
+			 only want to see the source language (English in my case) in the files to be
+			 translated. Keep it clean and simple. 
+		  </p> 
+		  <p>In short, mirrored architecture is a standard approach for projects
+			 with multiple translations. 
+		  </p> 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

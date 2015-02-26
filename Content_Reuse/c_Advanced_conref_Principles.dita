@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_E77B6E87DE9A4ED2A87AFE886C55453F" rev="1.2"> 
+  <title>Advanced conref principles</title> 
+  <conbody> 
+	 <p>The features and capabilities of content referencing was extended in
+		DITA 1.2, making it possible to conref multiple elements at the one time, to
+		indirectly reference content, and to 
+		<term>push</term> content from the source element.
+	 </p>
+  </conbody> 
+</concept> 

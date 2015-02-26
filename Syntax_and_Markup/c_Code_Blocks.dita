@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<concept id="concept_29E26042B14844148E986C067FF3C8B8"> 
+  <title>Identifying programming code</title> 
+  <shortdesc>The codeblock and codeph elements are used to identify code
+	 snippets. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>codeph
+			 element</indexterm><indexterm>codeblock
+			 element</indexterm><indexterm>elements<indexterm>codeph</indexterm><indexterm>codeblock</indexterm></indexterm><indexterm>sample
+			 code</indexterm><indexterm>programming code</indexterm><indexterm>mark-up
+			 languages<indexterm>marking up</indexterm></indexterm></keywords></metadata>
+  </prolog>
+  <conbody> 
+	 <p>Examples of programming, scripting, or mark-up language code are marked
+		up using the code phrase (<synph>codeph</synph>) and code block
+		(<synph>codeblock</synph>) elements. As the element names suggest, code phrase
+		is used when the code sample occurs inline within a paragraph or other block
+		element, while code block is used when the code is more than one line long, and
+		is a block in its own right.
+	 </p>
+	 <p>Code block elements can be nested inside a paragraph (or other block
+		element).
+	 </p>
+	 <p>If you have text that introduces the codeblock and more text that
+		immediately explains the code, you can use a structure such as in the following
+		example:
+		<codeblock>&lt;p&gt;
+  If you display debugging information, such as in:
+  &lt;codeblock&gt;
+    debugText = app.name &amp; app.ver
+    debug.print("Value is " &amp; debugText)
+  &lt;/codeblock&gt;
+  you must launch the application in debugging mode.
+&lt;/p&gt;
+</codeblock>
+	 </p>
+	 <p>Line breaks can be used inside 
+		<synph>codeblock</synph> elements.
+	 </p> 
+  </conbody> 
+</concept> 

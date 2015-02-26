@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<concept id="concept_5D5C4AC88F44413C9B57B95C18B04FB1"> 
+  <title>User interface domain</title> 
+  <prolog><metadata><keywords><indexterm>domains<indexterm>user
+				interface</indexterm></indexterm><indexterm>user interface
+			 domain</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>The user interface domain elements are designed for documenting the user
+		interface of a software program. 
+	 </p>
+  </conbody> 
+</concept> 

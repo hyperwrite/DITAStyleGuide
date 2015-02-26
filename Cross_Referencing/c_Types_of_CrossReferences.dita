@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_0D4E2C09D8D54D17A857954732B0C79A" xml:lang="en"
+ status="new"> 
+  <title>Types of cross-references</title> 
+  <shortdesc>A cross-reference is used in DITA to link or associate one piece
+	 of content with another. The cross-reference (<synph>xref</synph>) element is
+	 the primary mechanism for cross-referencing, but other elements also have
+	 cross-referencing functions. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>elements<indexterm>step</indexterm><indexterm>xref</indexterm><indexterm>link</indexterm><indexterm>glossref</indexterm><indexterm>lq</indexterm><indexterm>source</indexterm></indexterm><indexterm>attributes<indexterm>href</indexterm></indexterm><indexterm>cross-references</indexterm><indexterm>hyperlinks</indexterm><indexterm>linking</indexterm><indexterm>xref
+			 element</indexterm><indexterm>href attribute</indexterm><indexterm>glossref
+			 element</indexterm><indexterm>lq element</indexterm><indexterm>link
+			 element</indexterm><indexterm>source element</indexterm><indexterm>page
+			 references</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>In DITA, cross-referencing is more than simple hyperlinking, or
+		references to page numbers or section titles. Topics, paragraphs, sections,
+		steps, figures, tables and many other DITA elements can be cross-referenced,
+		along with resources external to the DITA content such as Web addresses,
+		network files, and e-mail addresses. 
+	 </p> 
+	 <p>Cross-references are implemented primarily through the 
+		<synph>xref</synph> element and its 
+		<synph>href</synph> attribute. Also key to cross-referencing in DITA is
+		the 
+		<synph>id</synph> attribute: only elements with an 
+		<synph>id</synph> attribute can be cross-referenced. 
+	 </p> 
+	 <p>Cross-referencing features can sometimes be found in unexpected places.
+		For example, the 
+		<synph>lq</synph> element includes an 
+		<synph>href</synph> attribute, used for storing the URL of the source of
+		the quotation, if applicable. The 
+		<synph>source</synph> element in a topic's prolog and the 
+		<synph>link</synph> element in the 
+		<synph>related-links</synph> section also have an 
+		<synph>href</synph> attribute to store the URL of the original source of
+		the topic content, if applicable. 
+	 </p> 
+	 <p>Cross-references to different elements are resolved, when the collection
+		is processed (published), in different ways. For example, a cross-reference to
+		a 
+		<synph>step</synph> element may be rendered as the step number in the
+		output. 
+	 </p> 
+	 <p>The DITA syntax for referencing elements within the same topic is 
+		<codeph>#<varname>[topicid]</varname>/<varname>[elementid]</varname></codeph>.
+		
+	 </p> 
+	 <p importance="high">Avoid generic cross-references to simple paragraphs;
+		instead, cross-references should be to the topic as a whole. 
+	 </p> 
+  </conbody> 
+</concept> 

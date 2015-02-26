@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<concept id="concept_C0244E44A6AB4B12AA032411ABEA8AD8"> 
+  <title>DITA map vocabulary</title> 
+  <conbody> 
+	 <p>DITA includes a range of elements and attributes to manage references in
+		ditamaps, and to govern the way the references are treated during the
+		publishing process.
+	 </p>
+  </conbody> 
+</concept> 

@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D9118" status="new"> 
+  <title> Multimedia in DITA topics</title> 
+  <shortdesc>The 
+	 <synph>object</synph> element is used to embed multimedia in DITA topics. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>elements<indexterm>object</indexterm></indexterm><indexterm>object
+			 element</indexterm><indexterm>multimedia</indexterm><indexterm>Flash</indexterm><indexterm>SWF</indexterm><indexterm>MPG</indexterm><indexterm>QuickTime</indexterm><indexterm>applets</indexterm><indexterm>Java
+			 applets</indexterm><indexterm>movies</indexterm><indexterm>animation</indexterm><indexterm>video
+			 clips</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>Multimedia objects such as Flash animations, Java applets, and video
+		files can be included in DITA content using the 
+		<synph>object</synph> element. Obviously, when a topic which includes
+		multimedia is output to paper, the object cannot be properly rendered. You may
+		want to use conditional processing so that multimedia objects are only output
+		to online delivery formats. 
+	 </p> 
+	 <p>The DITA 
+		<synph>object</synph> element is based on the HTML 
+		<synph>object</synph> element, but with a smaller set of valid
+		attributes. If your DITA authoring tool does not provide good support for
+		embedding objects, you can alternatively use a Web authoring tool to place the 
+		<synph>object</synph> in an HTML page, and then copy the HTML 
+		<synph>object</synph> code into your DITA topic. 
+	 </p> 
+	 <p>An example of the DITA code to place a Flash animation in a topic is: 
+		<codeblock status="changed">&lt;object id="anim_ej25" data="../images/ej25.swf"
+	  type="application/x-shockwave-flash" width="350" height="100"&gt; 
+		&lt;param name="movie" value="../images/ej25.swf"/&gt; 
+		&lt;param name="quality" value="high"/&gt; 
+&lt;/object&gt;</codeblock> 
+	 </p> 
+	 <p>Attributes for the DITA 
+		<synph>object</synph> element that are common to the HTML 
+		<synph>object</synph> element are: 
+	 <ul id="ul_DE88DD69FB574043A638277C6054B617"> 
+		<li id="li_1D22535B72764B5F83019738C70857C9">archive 
+		</li> 
+		<li id="li_3D7182254FFD493782B836BF262F3680">classid 
+		</li> 
+		<li id="li_C62779C0787F4A0D84E20E9777C0BB59">codebase 
+		</li> 
+		<li id="li_AA7904F9AAE64DC592B32844588994B3">codetype 
+		</li> 
+		<li id="li_12DCA9A57D5247CCBB8B0ECD74068896">data 
+		</li> 
+		<li id="li_F2D269FA77DD4395B7362907CDDD7906">declare 
+		</li> 
+		<li id="li_E3C957C2B747440FB75A2D95104398B3">dir 
+		</li> 
+		<li id="li_37AE7677A9474A58A774C9DFB10A96A6">height 
+		</li> 
+		<li id="li_DBB8E75865A44C09BC0732D19A306BFC">name 
+		</li> 
+		<li id="li_0E0C2E0B89FA4662878B177157148729">standby 
+		</li> 
+		<li id="li_E1863B3BD90F464F8F02F3D6838CDD63">tabindex 
+		</li> 
+		<li id="li_69A1BDF2847F4D1884EA5AAD5ED8F632">type 
+		</li> 
+		<li id="li_60CBD6D34F20482CBE9F7D213EE822A7">usemap 
+		</li> 
+		<li id="li_65E9BFDC0845489DB28DA0330713CD5D">width 
+		</li> 
+		<li id="li_F5E803A70AE4492C90C9427DC384A623">xml:lang 
+		</li> 
+	 </ul> 
+	 </p> 
+	 <section id="section_5FA4F729C70F408DB51AB814C7646660"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<lq reftitle="Sowmya Kannan, Yahoo! DITA Users Group"
+		 href="http://tech.groups.yahoo.com/group/dita-users/message/12587"> 
+		  <codeblock>&lt;object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" 
+      codebase="http://download.macromedia.com/pub/shockwave/cabs/ 
+      flash/swflash.cab#version=6,0,0,0" 
+      data="../images/arch_Architecture.jpg" 
+      type="application/x-shockwave-flash" height="700" width="700" 
+      id="arch_Architecture" &gt; 
+      &lt;desc&gt;Message flow of web service request&lt;/desc&gt; 
+      &lt;param name="movie" value="../multimedia/arch_WebServiceFlow.swf"/&gt; 
+      &lt;/object&gt;</codeblock> 
+		</lq> 
+		<lq reftitle="Deborah Pickett"> 
+		  <p>When you add a multimedia element to a DITA topic (using the
+			 &lt;object&gt; element), you may find that the multimedia (eg, a QuickTime
+			 movie) does not display correctly in Firefox browsers. 
+		  </p> 
+		  <p>The problem is caused by a limitation of the DITA-OT. The Toolkit
+			 does not produce the correct cross-browser code to make embedded objects work
+			 (except for Flash, which does seem to work). 
+		  </p> 
+		  <p>To fix the DITA OT, you will need to edit the 
+			 <filepath>xsl/xslhtml/dita2htmlImpl.xsl</filepath> file to change the
+			 XSLT that the DITA &lt;object&gt; element produces. Refer to this 
+			 <xref href="http://www.alistapart.com/articles/flashembedcagematch/"
+			  scope="external" format="html">A List Apart</xref> article for examples of what
+			 DITA-OT should be producing, or just copy the Flash code already in
+			 dita2htmlImpl.xsl and amend it for Quicktime. 
+		  </p> 
+		</lq> 
+	 </section> 
+	 <section id="section_B5EB9C8FB9674F97AA1EE3D2DB20D269"
+	  audience="contributor"> 
+		<title>Test Area</title> 
+		<object id="object1" data="../images/ace.swf"
+		 type="application/x-shockwave-flash" width="350" height="100"> 
+		  <param name="movie" value="../images/ace.swf"/> 
+		  <param name="quality" value="high"/> 
+		</object> 
+	 </section> 
+  </conbody> 
+</concept> 

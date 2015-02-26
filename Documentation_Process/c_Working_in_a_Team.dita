@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D5123" status="new"> 
+  <title>Unit testing in a team</title> 
+  <shortdesc>A process where multiple authors are working on a large repository
+	 of topics can make it difficult to manage the quality and consistency of the
+	 content. 
+	 <term>Unit testing</term> is a technique to identify validation errors
+	 earlier in the documentation process.
+  </shortdesc>
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>unit
+			 testing</indexterm><indexterm>team</indexterm><indexterm>documentation
+			 process<indexterm>working in a
+				team</indexterm></indexterm></keywords></metadata>
+  </prolog>
+  <conbody> 
+	 <p>When a team of authors is working on the same collection of topics,
+		particularly when the collection is very large, it is sometimes difficult to
+		identify a problem with the build. For example, a topic referenced in the 
+		<term>master</term> ditamap may be invalid; finding that invalid topic in
+		a large collection will be difficult. 
+	 </p> 
+	 <p>Some information architects provide each author with a ditamap of that
+		author's topics. Before the author submits the final set of topics, the ditamap
+		must successfully and cleanly build as a unit. The author's ditamap can be
+		discarded after testing if it is not otherwise used for publishing.
+	 </p>
+	 <p>This unit testing approach allows any issues to be addressed in a
+		smaller, quicker to build, environment. 
+	 </p> 
+  </conbody> 
+</concept> 

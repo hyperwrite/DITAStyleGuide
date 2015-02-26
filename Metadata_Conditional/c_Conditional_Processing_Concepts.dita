@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_049B0A0D9ECA486D9DC9E1F9B33361EC" xml:lang="en"
+ status="new"> 
+  <title>Conditional processing concepts</title> 
+  <shortdesc>When DITA content is processed to a reading format, rules to
+	 exclude or highlight some of the content can be defined in a 
+	 <term>ditaval</term> file. This 
+	 <term>conditional processing</term> requires metadata attributes to be set
+	 on DITA elements that may possibly be excluded or highlighted. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>ditaval</indexterm><indexterm>conditional
+			 processing</indexterm><indexterm>filtering</indexterm><indexterm>flagging</indexterm><indexterm>attributes<indexterm>conditional
+				processing</indexterm></indexterm><indexterm>publishing<indexterm>conditional</indexterm></indexterm><indexterm>processing<indexterm>conditional</indexterm></indexterm><indexterm>metadata
+			 attributes</indexterm><indexterm>attributes<indexterm>audience</indexterm><indexterm>platform</indexterm><indexterm>product</indexterm><indexterm>otherprops</indexterm><indexterm>rev</indexterm></indexterm><indexterm>rev
+			 attribute</indexterm><indexterm>audience
+			 attribute</indexterm><indexterm>platform
+			 attribute</indexterm><indexterm>product
+			 attribute</indexterm><indexterm>otherprops
+			 attribute</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p><term>Conditional publishing</term> or 
+		<term>conditional processing</term> in DITA is the technique where
+		metadata attributes set in the DITA content are used as the basis for 
+		<term>filtering</term> (excluding) or 
+		<term>flagging</term> (highlighting) portions of the content during the
+		transformation process. The rules for what to filter or flag are typically
+		defined in a separate 
+		<term>DITA values</term> (<term>ditaval</term>) file, which is nominated
+		when the transformation process is started. 
+	 </p> 
+	 <p>Flagging is a method of highlighting where the content is highlighted
+		with a symbol or formatting. The rules for flagging are typically defined in
+		the 
+		<term>ditaval</term> file. 
+	 </p>
+	 <p>Nearly all DITA elements, from topics through to inline elements, have a
+		common set of metadata attributes intended for conditional processing: 
+	 <ul id="ul_8DCB587764E647AF89BC433941EBABD7"> 
+		<li id="li_00CAC0EE25BF42B7B1A22B7FD248981C">audience 
+		</li> 
+		<li id="li_62385C0A0EE04B26A3A839D37A284AC7">platform 
+		</li> 
+		<li id="li_5F45D50871234242A7F0A17AB45ACEA2">product 
+		</li> 
+		<li id="li_7FDD286706D94059A97AA5729EDDF124">otherprops 
+		</li> 
+	 </ul> 
+	 </p> 
+	 <p>For example, a paragraph in a topic might have an 
+		<synph>audience</synph> attribute of 
+		<userinput>administrator</userinput>, and in some contexts, the content
+		needs be published so that any 
+		<userinput>administrator</userinput> paragraphs are excluded. In this
+		case, the 
+		<term>ditaval</term> file would be defined so that elements with an 
+		<synph>audience</synph> attribute value of 
+		<userinput>administrator</userinput> are excluded. 
+	 </p>
+	 <p>The 
+		<synph>rev</synph> attribute, also common to most DITA elements, can be
+		used for flagging, but not filtering. It is used for recording the version or
+		revision of the documentation in which the element was added or changed.
+	 </p> 
+  </conbody> 
+</concept> 

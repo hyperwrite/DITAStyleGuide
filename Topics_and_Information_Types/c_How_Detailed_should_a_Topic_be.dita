@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D2366" status="new"> 
+  <title>How detailed should a topic be?</title> 
+  <shortdesc>A DITA topic should be as short as possible, but as long as is
+	 necessary to convey its information independently. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>granularity</indexterm><indexterm>topic<indexterm>length</indexterm></indexterm><indexterm>size<indexterm>topic</indexterm></indexterm><indexterm>length<indexterm>topic</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>The amount of information per topic within a publication is sometimes
+		referred to as 
+		<term>topic granularity</term>. A DITA topic should contain just one idea
+		or answer a single question. 
+	 </p> 
+	 <p>In some cases, a topic may be extremely short, as in the following
+		example of an emergency procedure for a jet fighter aircraft. 
+		<codeblock>&lt;task&gt;
+&lt;title&gt;Engine failure below 10,000 feet&lt;/title&gt;
+&lt;taskbody&gt;
+ &lt;steps&gt;
+  &lt;step&gt;&lt;cmd&gt;Eject.&lt;/cmd&gt;&lt;/step&gt;
+ &lt;/steps&gt;
+&lt;/taskbody&gt;
+&lt;/task&gt;</codeblock> 
+	 </p> 
+	 <p>In other cases, a topic describing a very complex procedure, a very
+		complex concept, an extensive glossary, or a lengthy reference table, may be
+		the equivalent of many pages long. For example, a reference topic listing all
+		the makes and models of cars of the 20th century is very lengthy, but still
+		covers just one subject. 
+	 </p> 
+	 <p importance="high">A topic should be as short as possible, but long
+		enough to be independent of other topics. In other words, it must make sense on
+		its own in any context. 
+	 </p> 
+	 <section id="section_444AFE9E2D0C412FA36AAD511CD30B2C"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<lq reftitle="Deborah Pickett, Yahoo! DITA Users Group"
+		 href="http://tech.dir.groups.yahoo.com/group/dita-users/message/6700"> 
+		  <p>I could be facile and say that a topic needs as much detail as a
+			 piece of string needs length, but there's often a bit of flexibility in a
+			 system, and it's probably up to you (as your company's information architect)
+			 to make an executive decision. The good news is that since it's all XML, if you
+			 find later that your decision was wrong then it isn't too difficult to refactor
+			 the content. 
+		  </p> 
+		  <p>For a lot of user documentation, both re-use and one-idea-per-topic
+			 tend to dictate the same amount of granularity. That's not by accident;
+			 topic-based authoring came about partly to make those two requirements roughly
+			 equivalent. 
+		  </p> 
+		  <p>But DITA is sometimes used for things that aren't so obviously user
+			 documentation. DITA-OT has a sample plugin that demonstrates topics describing
+			 Java APIs. There's quite a bit of nesting of topics. 
+		  </p> 
+		</lq> 
+		<lq reftitle="Ben David, Yahoo! DITA Users Group"
+		 href="http://tech.dir.groups.yahoo.com/group/dita-users/message/6715">"A topic
+		  should be like a woman's skirt - long enough to cover the essentials, and short
+		  enough to maintain interest." 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

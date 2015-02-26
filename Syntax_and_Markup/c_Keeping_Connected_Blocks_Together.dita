@@ -1,0 +1,111 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D9385" status="new"> 
+  <title>Keeping connected blocks together</title> 
+  <shortdesc>When a block element is logically subordinate to the one that
+	 precedes it, the subordinate block should be nested within the first block. In
+	 other words, subordinate blocks should be child nodes, not siblings, of the
+	 leading block. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>conref<indexterm>push</indexterm></indexterm><indexterm>connected
+			 blocks</indexterm><indexterm>stem
+			 sentences</indexterm><indexterm>elements<indexterm>sl</indexterm><indexterm>lq</indexterm><indexterm>codeblock</indexterm><indexterm>simpletable</indexterm></indexterm><indexterm>nested
+			 block elements</indexterm><indexterm>subordinate block
+			 elements</indexterm><indexterm>lead-in
+			 sentences</indexterm><indexterm>dependent block
+			 elements</indexterm><indexterm>re-use</indexterm><indexterm>translation</indexterm><indexterm>conref</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>When one block of text leads into a second block of text, the blocks
+		become interdependent. A risk exists that if only one of the paragraphs is
+		re-used, it will read out of context. 
+	 </p> 
+	 <p>For example, you may introduce a code sample with a stem sentence; the
+		stem sentence is in a paragraph (<synph>p</synph>) block, and the code sample
+		is in a logically subordinate 
+		<synph>codeblock</synph> block. 
+	 </p> 
+	 <codeblock>&lt;p&gt;The following code example shows how JavaScript 
+can be used in a link to print the current page:&lt;/p&gt;
+&lt;codeblock&gt;
+&amp;lt;a href="#" onclick="window.print()"&amp;gt; 
+ Print this page 
+&amp;lt;/a&amp;gt;
+&lt;/codeblock&gt;</codeblock> 
+	 <p>If the stem sentence paragraph is re-used outside the current topic, the
+		text won't make sense unless the following 
+		<synph>codeblock</synph> travels with it. Alternatively, a conref push
+		may inject another block between the first (<synph>p</synph>) block and the
+		second (<synph>codeblock</synph>) block, affecting the meaning of the stem
+		sentence. 
+	 </p> 
+	 <p>As the two blocks are logically connected, the codeblock should be
+		nested within the paragraph. The resultant code is: 
+	 </p> 
+	 <codeblock>&lt;p&gt;The following code example shows how JavaScript 
+can be used in a link to print the current page:
+&lt;codeblock&gt;
+&amp;lt;a href="#" onclick="window.print()"&amp;gt; 
+ Print this page 
+&amp;lt;/a&amp;gt;
+&lt;/codeblock&gt;&lt;/p&gt;</codeblock> 
+	 <p>Examples of content structures where nesting of subordinate blocks is
+		common include: 
+		<simpletable id="simpletable_7E4368FFD6E44F95A492BB7E2EE8359C"> 
+		  <strow><stentry>paragraphs within long quotes</stentry><stentry> 
+				<codeblock status="changed">&lt;lq&gt;
+ &lt;p&gt;There was movement at the station...&lt;/p&gt;
+ &lt;p&gt;That the colt from Old Regret...&lt;/p&gt;
+&lt;/lq&gt;</codeblock></stentry> 
+		  </strow> 
+		  <strow><stentry>long quotes within paragraphs</stentry><stentry> 
+				<codeblock status="changed">&lt;p&gt;Banjo Paterson started the work with:
+ &lt;lq&gt;There was movement at the station&lt;/lq&gt;
+&lt;/p&gt;</codeblock> 
+			 </stentry> 
+		  </strow> 
+		  <strow><stentry>tables within paragraphs</stentry><stentry> 
+				<codeblock>&lt;p&gt;Examples of content structures include:
+ &lt;simpletable&gt;
+ ...
+ &lt;/simpletable&gt;
+&lt;/p&gt;</codeblock></stentry> 
+		  </strow> 
+		  <strow><stentry>code blocks within paragraphs</stentry><stentry> 
+				<codeblock>&lt;p&gt;Client variables are set as in the example:
+ &lt;codeblock&gt;Dim cli as String
+  cli=43
+ &lt;/codeblock&gt;
+&lt;/p&gt;</codeblock></stentry> 
+		  </strow> 
+		  <strow><stentry>lists within paragraphs</stentry><stentry> 
+				<codeblock>&lt;p&gt;There are two XRW variants: 
+ &lt;sl&gt;
+  &lt;li&gt;XRW&lt;/li&gt;&lt;li&gt;XRW Super&lt;/li&gt;
+ &lt;/sl&gt;
+&lt;/p&gt;</codeblock></stentry> 
+		  </strow> 
+		</simpletable> 
+	 </p> 
+	 <p importance="high">Some content models may not permit nesting in this
+		way, such as where both the blocks are 
+		<synph>p</synph> elements, but as an objective, this nesting approach
+		should be preferred. 
+	 </p> 
+	 <note type="note" id="note_localisation_nested_blocks" status="changed">
+		There are some conflicting requirements when the content needs to be 
+		<ph
+		conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_localised"><?xm-replace_text Phrase?></ph>.
+		Including a block nested inside a paragraph, such as in the preceding examples,
+		will create some problems for translators. This creates a dilemma which may
+		eventually be solved by advancements in software tools. If you are writing for
+		translation, avoid including text after a nested block inside another block
+		element. The guidelines contained in the 
+		<cite>Best Practice for Leveraging Legacy Translation Memory when
+		  Migrating to DITA (Joseph &amp; Raya, 2007)</cite> whitepaper produced by the
+		OASIS DITA Translation Subcommittee should be followed when writing for
+		translation. 
+	 </note> 
+  </conbody> 
+</concept> 

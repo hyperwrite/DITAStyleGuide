@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<concept id="concept_4EBBFC6EB7C64016890684BD93A569B6"> 
+  <title>Avoiding Transitions in Topics</title> 
+  <shortdesc><?xm-replace_text Short Description?>
+  </shortdesc> 
+  <conbody> 
+	 <p importance="high">Avoid including transitional text in topics. 
+	 </p> 
+	 <p>Transitional text is text that leads the reader to a following topic, or
+		connects the topic to a previous topic. Examples of transitional text include: 
+		<q>As we saw previously...</q> and 
+		<q>This processed is explained later...</q>. In DITA, topics should be
+		designed to be context-agnostic, so that a topic can be re-used in different
+		publications or outputs, in different sequences. Transitional text reduces
+		re-use opportunities. 
+	 </p>
+	 <p>
+		<draft-comment>This could be merged with similar topics on glue text
+		</draft-comment>
+	 </p> 
+  </conbody> 
+</concept> 

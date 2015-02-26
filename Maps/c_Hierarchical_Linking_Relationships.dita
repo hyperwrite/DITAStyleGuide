@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_0CB5962F42AA4B60AA77CC9B4708B493" xml:lang="en"
+ status="new"> 
+  <title>Hierarchical linking relationships</title> 
+  <shortdesc>The hierarchical relationship of topic references in the ditamap
+	 can be used to generate links from parent topics to child topics, from child
+	 topics to parent topics, and between child topics. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>ditamap<indexterm>hierarchy</indexterm><indexterm>generated
+				links</indexterm></indexterm><indexterm>links<indexterm>generated from
+				ditamap</indexterm></indexterm><indexterm>hierarchical
+			 links</indexterm><indexterm>parent-child
+			 links</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>The hierarchy of topic references in the ditamap controls not only the
+		sequence of topics in the output and/or the TOC, but also influences
+		automatically-generated navigation links and generated summary content in
+		parent topics in some output formats. 
+	 </p> 
+	 <p>DITA permits you to adjust the basis on which the automatic navigation
+		links are generated through the 
+		<synph>collection-type</synph> attribute of the 
+		<synph>topicref</synph> element. 
+	 </p> 
+	 <p>Which collection type to use is dependent on the nature of the content.
+		However, if in doubt, leave the default, which provides links to any child
+		topics, and a link back from child to parent. This ensures that all topics in a
+		hypertext output such as HTML can be traversed using links alone. 
+	 </p> 
+  </conbody> 
+</concept> 

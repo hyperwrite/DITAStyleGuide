@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_997794F76EE8475380DA6816300573F9" xml:lang="en"
+ status="new"> 
+  <title>Managing re-use files</title> 
+  <shortdesc>There are two different approaches to managing DITA content re-use
+	 files, used to store 
+	 <term>conref</term> referenced source elements. The preferred approach is
+	 to store the elements centrally in a dedicated re-use topic. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>attributes<indexterm>toc</indexterm><indexterm>linking</indexterm><indexterm>print</indexterm><indexterm>processing-role</indexterm></indexterm><indexterm>print
+			 attribute</indexterm><indexterm>toc attribute</indexterm><indexterm>linking
+			 attribute</indexterm><indexterm>transclusion</indexterm><indexterm>processing-role
+			 attribute</indexterm><indexterm>conref</indexterm><indexterm>file
+			 management<indexterm>conref referenced
+				elements</indexterm></indexterm><indexterm>referenced
+			 elements</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>DITA can re-use an existing document fragment (essentially, any element)
+		from another topic through the 
+		<term>conref</term> feature. For example, a common warning needs only to
+		be written once, and then can be re-used throughout a document suite. The 
+		<term>conref</term> source can either be left in the topic in which they
+		happen to be first used, or moved to a dedicated re-usable content topic, whose
+		only purpose is to store re-usable fragments. 
+	 </p> 
+	 <p importance="high">In nearly all cases, the best approach is to store
+		re-usable components in a dedicated re-use topic, in a common location. This is
+		known as the 
+		<term
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/term_centralised_approach"><?xm-replace_text Term?></term>;
+		referenced conref source fragments are stored in a single location. 
+	 </p> 
+	 <p>The 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_centralised"><?xm-replace_text Phrase?></ph>
+		strategy of using one or more files to hold elements that you want to re-use
+		reduces dependencies. If you give a set of DITA topics to another writer, you
+		only need to provide the set of topics plus the re-use file. You don't need to
+		hunt around to find other topics that might contain re-used elements. The 
+		<ph
+		conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_centralised"><?xm-replace_text Phrase?></ph>
+		strategy also simplifies the associations (linkages) between files. 
+	 </p> 
+	 <p importance="high">You should assign file names prefixed with 
+		<filepath>conref_</filepath> to topics that are only used as stores for
+		re-use elements. 
+	 </p> 
+	 <fig id="fig_F83A00542DDC44588824AD7F2F6707BF"> 
+		<title>Example of conref source files within a conref
+		  folder</title><image placement="break" align="left"
+		id="image_78E7291CBF34429EBF08A1896A751065"
+		href="../../Artefact/images/conref_folder_structure.png" width="425px"
+		height="173px"> 
+		  <alt>Example of conref source files within a conref folder 
+		  </alt></image> 
+	 </fig> 
+	 <p>If you are using one conref source topic for all your re-use elements,
+		use the 
+		<term>ditabase</term> information type for this purpose. This information
+		type can contain both common elements and elements specific to different
+		information types. For larger documentation repositories, you should 
+		<ph
+		conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_organise"><?xm-replace_text Phrase?></ph>
+		your re-use elements into separate files for separate purposes, such as one
+		file for warnings, one file for variables, one file for steps, and so on. 
+	 </p> 
+	 <p importance="high">You should also make a practice of including the
+		dedicated re-use topic(s) in the collection's ditamap, with the 
+		<synph>toc</synph> attribute set to 
+	 <option>no</option>, the 
+	 <synph>linking</synph> attribute to 
+	 <option>none</option>, and the 
+	 <synph>print</synph> attribute set to no. Including the re-use topic in the
+	 map provides a reminder that the collection uses that specific re-use topic,
+	 and to include the topic when sending the collection source files to another
+	 author. This is especially important for large repositories of information, or
+	 where your 
+	 <term>CMS</term> uses the ditamap as a basis for copying or checking out
+	 files. If you have more than a handful of re-use topics, you should use a
+	 nested map to collect those re-use topics together, and then reference that map
+	 file in your collection's ditamap. 
+	 </p> 
+	 <note rev="1.2">In DITA 1.2, a 
+		<synph>processing-role</synph> attribute was introduced to the 
+		<synph>topicref</synph> element. Setting the value of this attribute to 
+		<option>resource-only</option> is a better alternative to setting 
+		<synph>toc</synph>, 
+		<synph>linking</synph> and 
+		<synph>print</synph> attributes otherwise required for DITA 1.1. It also
+		clearly identifies the referenced topic as simply a resource, and not
+		explicitly part of the content.
+	 </note> 
+	 <p rev="2">Ideally, 
+		<term>conref</term> topics should be stored in their own folder at one
+		directory level lower than the ditamap, or loosely in the same directory as the
+		ditamap. 
+	 </p> 
+  </conbody> 
+</concept> 

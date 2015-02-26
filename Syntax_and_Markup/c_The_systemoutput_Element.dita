@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_65223A6A603047F28BBB567AE32876FA" xml:lang="en"
+ status="new"> 
+  <title>Printouts, read-outs and other system output</title> 
+  <shortdesc>When a computer system, application or hardware equipment produces
+	 some output intended for reading by a user, the output is described in DITA
+	 using the 
+	 <synph>systemoutput</synph> element. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>elements<indexterm>systemoutput</indexterm></indexterm><indexterm><indexterm>systemoutput
+				element</indexterm></indexterm><indexterm><indexterm>printouts</indexterm></indexterm><indexterm><indexterm>read-outs
+				from systems</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>The system output (<synph>systemoutput</synph>) element is used to
+		describe the display or read-out from the device, application or system being
+		documented. The 
+		<synph>systemoutput</synph> element is similar to the 
+		<synph>msgph</synph> element in that both elements describe the output
+		from a system. The 
+		<synph>msgph</synph> element specifically describes a system message; 
+		<synph>systemoutput</synph> is less specific. 
+	 </p> 
+	 <p>The 
+		<synph>systemoutput</synph> element should also be used when describing
+		snippets of text from a printout from a computer application or system, such as
+		words on the printed page. 
+	 </p> 
+	 <p>Example: 
+		<codeblock>&lt;p&gt;Second and subsequent level numbers in a nested ordered 
+list are typically rendered following the format of 
+&lt;systemoutput&gt;1. a. I.&lt;/systemoutput&gt;.&lt;/p&gt; </codeblock> 
+	 </p> 
+  </conbody> 
+</concept> 

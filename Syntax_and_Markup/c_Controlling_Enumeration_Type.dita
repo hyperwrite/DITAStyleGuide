@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D9196"> 
+  <title>Controlling number (enumeration) type</title> 
+  <shortdesc>The style of numbers and symbols used in lists is applied by the
+	 publishing tool during processing. To use different number types, you must
+	 change the processing templates or routines. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>number
+			 type</indexterm><indexterm>enumeration</indexterm><indexterm>lists<indexterm>numbering
+				style</indexterm></indexterm><indexterm>ordered lists<indexterm>numbering
+				style</indexterm></indexterm><indexterm>unordered lists<indexterm>bullet
+				style</indexterm></indexterm><indexterm>steps<indexterm>numbering
+				style</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>By default, most DITA publishing tools render simple lists without
+		bullets or numbers, unordered lists with bullets, numbered lists with Arabic
+		numbers, and definition lists with the definition term as a hanging indent. 
+	 </p> 
+	 <p>Second and subsequent level numbers in a nested ordered list are
+		typically rendered following the format of 
+		<systemoutput>1. a. i.</systemoutput>. 
+	 </p> 
+	 <p>If an alternative enumeration scheme is required, the processing
+		routines must be modified. There is no specific enumeration type setting in
+		DITA, as list presentation is considered to be form, not content. 
+	 </p> 
+	 <p>If a particular list needs to be presented differently from other lists
+		using the same list element, the 
+		<synph>outputclass</synph> attribute may be used in conjunction with 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_customised"><?xm-replace_text Phrase?></ph>
+		processing routines. 
+	 </p> 
+	 <section id="section_DD1483524AB0420D8ED731DAF7F5CA6A"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<lq reftitle="Bryce Nordgren, Yahoo! DITA Users Group"> 
+		  <p>&gt;&gt;Does anyone know how to set the method for enumerating the
+			 &lt;li&gt; members of an &lt;ol&gt; element? The equivalent would be Docbook's
+			 numeration attribute, which offers arabic | loweralpha | lowerroman |
+			 upperalpha | upperroman DITA does not support this feature.&lt;&lt; 
+		  </p> 
+		  <p>Depending on the vendor, there may be no means to accomplish it. I
+			 would be tempted to consider this Yet Another Request for a set of "hints" to
+			 help control the text which is substituted for elements. In this case, the
+			 element is &lt;li&gt; and the text in question is the sequence value attached
+			 to an &lt;ol&gt;. Note that the semantics of &lt;li&gt; (the operational
+			 expectation) is that the contents are expected to be preceeded by _something_,
+			 be it a "bullet" or other graphic if it is contained within a &lt;ul&gt;; or a
+			 sequence value if it is contained within a &lt;ol&gt;. Further, the expectation
+			 is that one is capable of _referring_ to a specific &lt;li&gt; within an
+			 &lt;ol&gt; using only text substitution (e.g. an &lt;xref&gt; to an &lt;li&gt;
+			 within an &lt;ol&gt; should render the same text as is used to preceed the
+			 &lt;li&gt; contents. however, an &lt;xref&gt; to an &lt;li&gt; within a
+			 &lt;ul&gt; should result in an error.) This means that regardless of the
+			 medium, you can always say: "See step 2" or "See #2" even if the medium doesn't
+			 support hyperlinking. This is, of course, related to &lt;xref&gt; because the
+			 text values themselves are related. 
+		  </p> 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

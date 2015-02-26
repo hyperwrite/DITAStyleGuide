@@ -1,0 +1,122 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_606E86DBA96D4567A7CF5AE96CA5E5C8"> 
+  <title>About 
+	 <ph
+	  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_DITA_Style_Manual"><?xm-replace_text Phrase?></ph></title>
+  
+  <shortdesc>As more companies implement DITA to streamline the development of
+	 technical content, the demand for DITA-literate technical communicators is
+	 growing. 
+	 <ph
+	  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_DITA_Style_Manual"><?xm-replace_text Phrase?></ph>
+	 provides comprehensive, practical explanations of DITA elements and attributes.
+	 Real-world examples and clear recommendations show you how to create
+	 consistent, semantically-correct DITA content. 
+  </shortdesc> 
+  <prolog><author
+	 conref="../../conref/conref_source_metadata.dita#topic_hw_conref_meta/author_tony_self"></author>
+  </prolog> 
+  <conbody> 
+	 <p><ph
+		conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_DITA_Style_Guide_Full"><?xm-replace_text Phrase?></ph>
+		is designed to help DITA authors implement DITA consistently by providing an
+		authoritative reference (in the same way that 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/Chicago_short"><?xm-replace_text Phrase?></ph>
+		provides a reference for matters of language, writing and presentational
+		style). 
+	 </p> 
+	 <p>Some rules and recommendations may be controversial or contentious, and
+		you may not agree with them. However, the purpose of 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_DITA_Style_Manual"><?xm-replace_text Phrase?></ph>
+		is to make a 
+		<q>ruling</q> one way or the other, so that at least a consistent
+		approach can be adopted. 
+	 </p> 
+	 <p product="academic_only">For example, 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_DITA_Style_Manual"><?xm-replace_text Phrase?></ph>
+		tells you to use 
+		<synph>uicontrol</synph> element for keyboard keystrokes, rather than 
+		<synph>userinput</synph>. You could argue about whether this is right or
+		wrong, but the main point is that it makes a decision. It is meant to
+		supplement the Language Reference. 
+	 </p> 
+	 <p><ph
+		conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_DITA_Style_Manual"><?xm-replace_text Phrase?></ph>
+		is written for the DITA base content model, and not for 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialisations"><?xm-replace_text Phrase?></ph>.
+		(The nature of 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialisation"><?xm-replace_text Phrase?></ph>
+		would make it impossible to write usage rules!) 
+	 </p> 
+	 <p><ph
+		conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_DITA_Style_Manual"><?xm-replace_text Phrase?></ph>
+		is not an exhaustive set of rules or guidelines; it addresses the most common
+		questions that DITA users ask, based on analysis of the 
+		<cite>Yahoo! DITA Users Group</cite> mailing list<ph
+		product="academic_only"> over a three year period</ph>. 
+	 </p> 
+	 <p><ph
+		conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_DITA_Style_Manual"><?xm-replace_text Phrase?></ph>
+		is not authoring-tool specific, so by necessity it uses neutral code examples,
+		rather than examples of what might appear in a 
+		<term>WYSIOO</term> editor, or other tool-specific interactions. There
+		are many practical examples, most built around a fictitious car manual. 
+	 </p> 
+	 <p>Style guides are often arranged alphabetically, but 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_DITA_Style_Manual"><?xm-replace_text Phrase?></ph>
+		is arranged into nine chapters covering different aspects of DITA mark-up. It
+		is intended to be referenced, rather than read (it's not a 
+		<q>good read</q>), so the index is comprehensive. 
+	 </p> 
+	 <p><ph
+		conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_DITA_Style_Manual"><?xm-replace_text Phrase?></ph>
+		is not intended to teach you about DITA, and is aimed at people already working
+		in a DITA environment. It assumes a working knowledge of XML principles, such
+		as the way elements and attributes work. 
+	 </p> 
+	 <p><ph
+		conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_DITA_Style_Manual"><?xm-replace_text Phrase?></ph>
+		is specifically intended to be used in conjunction with, or as a supplement to,
+		the 
+		<ph
+		conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_DITA_Lang_Reference"><?xm-replace_text Phrase?></ph>,
+		and not as an alternative to it. The online version of 
+		<ph
+		conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_DITA_Style_Manual"><?xm-replace_text Phrase?></ph>
+		will have links to the 
+		<ph
+		conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_DITA_Lang_Reference"><?xm-replace_text Phrase?></ph>.
+		
+	 </p> 
+	 <p>In the medium term, it is planned that 
+		<ph
+		conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_DITA_Style_Manual"><?xm-replace_text Phrase?></ph>
+		will become an open source community resource, probably in the form of a
+		DITA-based Wiki. 
+		<ph product="academic_only">Justifications and rationale for rules and
+		  recommendations have been recorded in the source code, and although these will
+		  not be reproduced in the printed commercial version, they will be available in
+		  the open source community version to provide an audit trail for decisions. 
+		</ph> 
+	 </p> 
+	 <p><ph
+		conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_DITA_Style_Manual"><?xm-replace_text Phrase?></ph>
+		was written in 
+		<ph
+		conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_DITA11"><?xm-replace_text Phrase?></ph>,
+		and mostly follows its own recommendations! However, it's almost certain that
+		mistakes were made, despite best efforts to eliminate them. For changes and
+		errata, please visit 
+		<xref
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/xref_ditastyle_com"></xref>.
+		
+	 </p> 
+  </conbody> 
+</concept> 

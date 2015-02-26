@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D9085" status="new"> 
+  <title>Limiting the use of conditions</title> 
+  <shortdesc>You should take care to limit the complexity of conditions that
+	 you apply to content. Context-agnostic writing is often a better approach. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>context-agnostic
+			 writing</indexterm><indexterm>conditional
+			 processing<indexterm>limiting</indexterm></indexterm><indexterm>condition
+			 attributes<indexterm>limiting</indexterm></indexterm><indexterm>select
+			 attributes<indexterm>limiting</indexterm></indexterm><indexterm>metadata
+			 attributes<indexterm>limiting</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>In traditional publishing processes, 
+		<term>conditions</term> or 
+		<term>build tags</term> set on document elements have been a key enabler
+		of conditional publishing. Technical communicators working with tools such as 
+		<keyword>FrameMaker</keyword> and 
+		<keyword>RoboHelp</keyword> sometimes create complicated nested
+		conditions, so that numerous permutations of a document can be produced from
+		the one project. In a DITA authoring environment, which is modular and 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_library_focussed"><?xm-replace_text Phrase?></ph>
+		rather than 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_doc_focussed"><?xm-replace_text Phrase?></ph>,
+		there are additional, more flexible, mechanisms for single-sourcing. 
+	 </p> 
+	 <p>In a DITA environment, there should be greater focus on writing more 
+		<term>agnostically</term>, so that complicated conditions are not
+		necessary. DITA encourages more information analysis than earlier approaches to
+		documentation, and during that analysis, authors should investigate whether
+		context-agnostic writing may be a better approach than very context-specific
+		writing where conditions become overly important. 
+	 </p> 
+	 <p>For example, if a topic includes a product name, which may vary from
+		publication to publication, you may be able to phrase your content so that the
+		specific product name is not used. 
+	 </p> 
+  </conbody> 
+</concept> 

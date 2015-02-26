@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_2CCD8FC2365240F08FE6DD53E871943B" xml:lang="en"
+ status="new"> 
+  <title>Topic (proto information type)</title> 
+  <shortdesc>The 
+	 <term>topic</term> information type is the 
+	 <term>ancestor</term> of all DITA information types, and is used mainly as
+	 the basis for 
+	 <ph
+	  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialising"><?xm-replace_text Phrase?></ph>
+	 new information types. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>information
+			 types<indexterm>topic</indexterm></indexterm><indexterm>topic information
+			 type</indexterm><indexterm>proto information
+			 type</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>All DITA information types have 
+		<q>evolved</q> from the 
+		<term>topic</term> 
+		<term>proto information type</term>. The 
+		<term>topic</term> type is 
+		<term>weakly information typed</term>, or even 
+		<term>untyped</term>, in that it has generic rather than semantic
+		elements. It is designed as a starting point for 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialisation"><?xm-replace_text Phrase?></ph>,
+		and not for use as a container for structured, semantic content. 
+	 </p> 
+	 <p>Apart from for 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialisation"><?xm-replace_text Phrase?></ph>,
+		the other purpose of the untyped topic information type is to store legacy
+		information during the migration of style-based documents to DITA. For example,
+		when migrating untyped HTML content to DITA, it can be useful to first convert
+		HTML topics to untyped DITA topic, for later conversion to correctly typed DITA
+		information types such as concept, task and reference. 
+	 </p> 
+	 <p>The root element of an untyped topic is 
+		<synph>topic</synph>. 
+	 </p> 
+  </conbody> 
+</concept> 

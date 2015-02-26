@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_44C535ACF8BD4650A40F472900B49F9A"> 
+  <title>Graphics and figures</title> 
+  <prolog><metadata><keywords><indexterm>graphics</indexterm><indexterm>images</indexterm><indexterm>figures</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <lq reftitle="Napoléon Bonaparte"><ph xml:lang="fr">Un bon croquis vaut
+		  mieux qu'un long discours.</ph> (A good sketch is better than a long speech.) 
+	 </lq> 
+  </conbody> 
+</concept> 

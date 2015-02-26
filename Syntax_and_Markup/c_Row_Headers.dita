@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_568DD52E5D4D4879ADD0AA7C9D02617D"> 
+  <title>Column and row headers</title> 
+  <shortdesc>Information in tables is most often arranged in columns, although
+	 some tables are arranged into rows, and complex tables into both rows and
+	 columns. Column headings are defined using the 
+	 <synph>thead</synph> element, and row headings with the 
+	 <synph>rowheader</synph> attribute on the 
+	 <synph>table</synph> element or the 
+	 <synph>keycol</synph> attribute on the 
+	 <synph>simpletable</synph> element. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>simpletable
+			 element</indexterm><indexterm>table
+			 element</indexterm><indexterm>attributes<indexterm>rowheader</indexterm><indexterm>keycol</indexterm></indexterm><indexterm>elements<indexterm>simpletable</indexterm><indexterm>table</indexterm></indexterm><indexterm>rowheader
+			 attribute</indexterm><indexterm>keycol
+			 attribute</indexterm></keywords></metadata>
+  </prolog>
+  <conbody> 
+	 <p>A column header row is specified through a 
+		<synph>thead</synph> row in the table. The 
+		<synph>thead</synph> element contains normal table cell
+		(<synph>entry</synph>) elements.
+	 </p>
+	 <p>If the first cell in each row is a heading (in other words, if the first
+		column is a header column), you can specify this in the standard table by
+		setting the 
+		<synph>rowheader</synph> attribute to 
+	 <option>firstcol</option>. You cannot specify any other column to be the
+	 header column in a standard table. 
+	 </p>
+	 <p>With a 
+		<synph>simpletable</synph>, you can use the 
+		<synph>keycol</synph> attribute of the 
+		<synph>simpletable</synph> element to nominate the number of the column
+		that contains the row headings. For example, setting the 
+		<synph>keycol</synph> attribute of the 
+		<synph>simpletable</synph> element to 
+		<userinput>1</userinput>.
+	 </p> 
+	 <section id="section_BE3A05A903D04FB588BC221785BCAF42"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<lq reftitle="Deborah Pickett, Yahoo! DITA Users Group"
+		 href="http://tech.groups.yahoo.com/group/dita-users/message/16740"> 
+		  <p>&gt;&gt; I have some tables to convert where the heading is for a
+			 row rather than a column - just like a lot of "Contains" and "Contained by"
+			 tables in the DITA Specification, in fact - and couldn't see where to
+			 start.&lt;&lt; 
+		  </p> 
+		  <p>One is to switch from the CALS table element &lt;table&gt; to DITA's
+			 other table element &lt;simpletable&gt;. &lt;simpletable&gt; has a keycol
+			 attribute which you would set to 1 to make the first column a heading. 
+		  </p> 
+		  <p>Another is to stick to &lt;table&gt; which has a rowheader
+			 attribute. Set rowheader="firstcol " to indicate that the first column of a row
+			 is a heading. 
+		  </p> 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

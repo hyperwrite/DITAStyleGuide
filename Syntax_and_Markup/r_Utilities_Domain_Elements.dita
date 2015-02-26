@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="reference_6FB31F18C6F749D78832DB80AA363731"
+ xml:lang="en" status="new"> 
+  <title>Utilities domain elements</title> 
+  <shortdesc>The elements in the utilities domain each have a specific purpose
+	 in defining image map properties. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>elements<indexterm>utilities</indexterm></indexterm><indexterm>utilities
+			 domain</indexterm><indexterm>image
+			 maps</indexterm><indexterm>hypergraphics</indexterm></keywords></metadata>
+  </prolog> 
+  <refbody> 
+	 <simpletable id="simpletable_4211B5AF0F2E499E96062BE134E7530A"> 
+		<sthead><stentry>Element Name</stentry><stentry>Semantic
+			 Purpose</stentry> 
+		</sthead> 
+		<strow><stentry>imagemap</stentry><stentry>client-side image
+			 map</stentry> 
+		</strow> 
+		<strow><stentry>area</stentry><stentry>hotspot area within an image
+			 map</stentry> 
+		</strow> 
+		<strow><stentry>coords</stentry><stentry>co-ordinates of a hotspot area
+			 within an image map</stentry> 
+		</strow> 
+		<strow><stentry>shape</stentry><stentry>shape of a hotspot area within an
+			 image map</stentry> 
+		</strow> 
+	 </simpletable> 
+  </refbody> 
+</reference> 

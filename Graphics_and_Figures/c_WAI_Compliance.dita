@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D5125" status="new"> 
+  <title>WAI compliance</title> 
+  <shortdesc>So that output from your DITA source meets accessibility
+	 responsibilities, you must include alternative text representations of all
+	 images in DITA content. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>accessibility</indexterm><indexterm>WAI</indexterm><indexterm>attributes<indexterm>alt</indexterm></indexterm><indexterm>alt
+			 attribute</indexterm><indexterm>image element</indexterm><indexterm>alternative
+			 text</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>Graphics in HTML and other online formats must have alternative text
+		representations in order to comply with 
+		<term>Web Accessibility Initiative (WAI)</term> guidelines (and national
+		laws, such as 
+		<cite>US Section 508</cite>). 
+	 </p> 
+	 <p>You must include alternative text representation values in the 
+		<synph>alt</synph> attribute of all 
+		<synph>image</synph> elements. 
+	 </p> 
+	 <p>If the images are purely presentational in nature, they should be
+		applied via CSS (in the 
+		<term>presentation layer</term>). When an image is specified within a
+		CSS, there is no capacity to specify alternative text; such images are
+		considered to be simply decorative. This does not breach the WAI
+		recommendations. 
+	 </p> 
+	 <p>When graphics are used to denote notes, warnings, etc, it could be
+		argued that the images contain meaning. Therefore, CSS should not be used to
+		place such images; the HTML 
+		<synph>img</synph> element, with a descriptive 
+		<synph>alt</synph> attribute, should be used. These labels will be
+		applied by the DITA publishing process; as a DITA author, you only need to
+		apply the correct semantic mark-up, such as the 
+		<synph>note</synph> element and its 
+		<synph>type</synph> attribute. 
+	 </p> 
+	 <section id="section_735ED3953713415685E271DA4570022C"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<p>According to Derek Featherstone, an accessibility expert, alternative
+		  text is not required if the image has no semantic value and communicates no
+		  content. You may be able to overcome this by placing an 
+		  <synph>imagemap</synph> element with an 
+		  <synph>alt</synph> attribute, and then using CSS to provide a
+		  background image for that imagemap. 
+		</p> 
+	 </section> 
+  </conbody> 
+</concept> 

@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en-au" id="D3771"> 
+  <title>Issues with Graphics and Figures</title> 
+  <conbody> 
+	 <p>What graphic editors are people using to create
+		graphics/screenshots/etc? 
+	 </p> 
+	 <p>How are callouts handled (especially with translations in mind)? 
+	 </p> 
+	 <ul outputclass="listbullet" id="ul_B046B70F1C2D495F9CC4E8D8EEEBB6BE"> 
+		<li id="li_3A66227800014028AD84ACDFD591482A">Do you use numbered
+		  callouts? 
+		</li> 
+		<li id="li_E726E6ED89D54A45B97D5929CC0CF943">Do you use lettered
+		  callouts? 
+		</li> 
+		<li id="li_30271B55862243669B7AFF23AB4CDBB0">Do you translate your
+		  graphic source and reattach a newly translated graphic to the translated
+		  content? 
+		</li> 
+	 </ul> 
+	 <p>How are the graphics sized? 
+	 </p> 
+	 <ul outputclass="listbullet" id="ul_5E27D104C4424DD9B85213FEA6429C84"> 
+		<li id="li_845B3CD8F9334D2B8CC5E1676D6B18E4">Do you size the graphics
+		  appropriately in the graphics editor? 
+		</li> 
+		<li id="li_8F3F7659378F4B5B9B7AAE581AEB3491">Do you scale the graphic to
+		  fit appropriately in the DITA using the scaling and sizing attributes? 
+		</li> 
+		<li id="li_3C6138409BC348369CDCBA51EC8DC239">Does the stylesheet size all
+		  graphics to fit correctly? 
+		</li> 
+	 </ul> 
+	 <p>Do you create different versions of graphics for different outputs
+		(print, Web)? 
+	 </p> 
+	 <p/> 
+	 <p><b>Answers</b> 
+	 </p> 
+	 <p>[Yves] I teach my technical writers to used lettered callouts for two
+		reasons: 
+	 </p> 
+	 <ul outputclass="listbullet" id="ul_CB095C24BC3447B095908033553237A5"> 
+		<li id="li_9A40F269FF6C470581E4BABE369AF798">The letters cannot be
+		  confused with the numbers of the steps. 
+		</li> 
+		<li id="li_6A4B48D6CCCE487C88BC25391B9FE8EA">Letters are mostly
+		  language-independent.* 
+		</li> 
+	 </ul> 
+	 <section id="section_4DC8596E8DC94E11B2361A6E47790677"
+	  audience="contributor">
+		<title>Rationale</title>
+		<lq reftitle="Paul Masalsky, Yahoo! DITA Users Group"
+		 href="http://tech.groups.yahoo.com/group/dita-users/message/18807">I found that
+		  sharing an internal document could be problematic. In lieu of that, here are
+		  some suggestions that could help. I'll give a few raster image suggestions for
+		  now, I can provide vector image suggestions later if you like.
+		  <p> 
+		  <ul id="ul_C4236BECC460477B9A6024B026109F3A"> 
+			 <li id="li_5FEBA6067E5D4218BA59B49319D0BC28">Use only a higher-end
+				program (such as PhotoShop or FullShot) to capture raster images, such as
+				screen shots
+			 </li> 
+			 <li id="li_C498C2F6B72A4F8C80DAB8C53E12E868">Use JPG or PNG only for
+				photos and complex gradients, recommended 120 dpi
+			 </li> 
+			 <li id="li_88A1AE34770F43C9B83076C650A1EC68">Be aware that the
+				publishing program could distort JPG or PNG images, especially if they are
+				updated with different tools, becuase it must interpret metadata like sizing
+				and aliasing
+			 </li> 
+			 <li id="li_6989AD23692347928ADF1A06B620735C">Recommended for all
+				other images (like screen shots): GIF format (use "save for web"), 72 dpi
+				(alternatively 120 dpi if intended for printing)
+			 </li> 
+			 <li id="li_0EDAFF1511054084825895E79768A1F5">The publishing program
+				never seems to alter GIF images in any way (what you see is what you get)
+			 </li> 
+		  </ul> 
+		  </p>So let's say you're having trouble with blurry screen shots. I
+		  would give GIF format and 72 dpi a try, and see how it publishes to PDF format.
+		  We had very good results with this.Just let me know if you need anything
+		  further. - 
+		  <xref
+		  href="/group/dita-users/post?postID=q5lIzcK6NaTF4vLfQcElrHrWsjCiTlwgq__ZzSIk1k8x2bBv9XhP79JKhFPgE8FWGTLwdmam--8as689zK2__p8">paulmasalsky@...</xref>EMC
+		</lq>
+	 </section> 
+  </conbody> 
+</concept>

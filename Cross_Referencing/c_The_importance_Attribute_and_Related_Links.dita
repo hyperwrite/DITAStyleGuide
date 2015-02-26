@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<concept id="concept_103906FB444849D29ECFA9864B54A69E"> 
+  <title>The 
+	 <synph>importance</synph> attribute and related links</title> 
+  <shortdesc>Setting the 
+	 <synph>importance</synph> attribute of a 
+	 <synph>link</synph> element in the 
+	 <synph>related-links</synph> section in a task topic to 
+	 <option>required</option> will result in the link appearing in the
+	 pre-requisites section of the topic. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>attributes<indexterm>importance</indexterm></indexterm><indexterm>importance
+			 attribute</indexterm><indexterm>elements<indexterm>prereq</indexterm></indexterm><indexterm>prereq
+			 element</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>When writing a task topic, you will often include a pre-requisities
+		(<synph>prereq</synph>) element. In some cases, pre-requisites for the task
+		will include other procedures, described in separate topics. Logically, these
+		pre-requisite task topics should be linked to in the 
+		<synph>prereq</synph> block. 
+	 </p> 
+	 <p>Rather than including a link to an associated topic in an 
+		<synph>xref</synph> element in the 
+		<synph>prereq</synph> block, you should create a 
+		<synph>link</synph> element in the 
+		<synph>related-links</synph> section, and then set the 
+		<synph>importance</synph> attribute of the 
+		<synph>link</synph> element to 
+	 <option>required</option>. In typical output processing, this will result
+	 in the link being rendered at the end of the 
+	 <synph>prereq</synph> block. 
+	 </p> 
+  </conbody> 
+</concept> 

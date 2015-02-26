@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D2682" status="new"> 
+  <title>Sample bookmap file</title> 
+  <shortdesc>A sample bookmap illustrates how different semantic elements are
+	 arranged to form the structure of a conventional, printed book. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>sample
+			 bookmap</indexterm><indexterm>bookmap<indexterm>sample
+				code</indexterm></indexterm><indexterm>map file<indexterm>sample
+				code</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <codeblock>&lt;bookmap id="taskbook"&gt;
+ &lt;booktitle&gt;
+   &lt;mainbooktitle&gt;Product tasks&lt;/mainbooktitle&gt;
+   &lt;booktitlealt&gt;Tasks and what they do&lt;/booktitlealt&gt;
+ &lt;/booktitle&gt;
+ &lt;bookmeta&gt;
+   &lt;author&gt;John Doe&lt;/author&gt;
+   &lt;bookrights&gt;
+     &lt;copyrfirst&gt;
+       &lt;year&gt;2006&lt;/year&gt;
+     &lt;/copyrfirst&gt;
+     &lt;bookowner&gt;
+       &lt;person href="janedoe.dita"&gt;Jane Doe&lt;/person&gt;
+     &lt;/bookowner&gt;
+   &lt;/bookrights&gt;
+ &lt;/bookmeta&gt;
+ &lt;frontmatter&gt;
+   &lt;preface/&gt;
+ &lt;/frontmatter&gt;
+   &lt;chapter format="ditamap" href="installing.ditamap"/&gt;
+   &lt;chapter href="configuring.dita"/&gt;
+   &lt;chapter href="maintaining.dita"&gt;
+     &lt;topicref href="maintainstorage.dita"/&gt;
+     &lt;topicref href="maintainserver.dita"/&gt;
+     &lt;topicref href="maintaindatabase.dita"/&gt;
+   &lt;/chapter&gt;
+ &lt;appendix href="task_appendix.dita"/&gt;
+&lt;/bookmap&gt;</codeblock> 
+  </conbody> 
+</concept> 

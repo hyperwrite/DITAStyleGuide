@@ -1,0 +1,196 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_816100820F854C74B47BBBB133710971" xml:lang="en"
+ status="new"> 
+  <title>Structure of the 
+	 <synph>related-links</synph> section</title> 
+  <shortdesc>The 
+	 <synph>related-links</synph> section of a topic contains 
+	 <synph>link</synph> elements which can optionally be grouped into 
+	 <synph>linklist</synph> and 
+	 <synph>linkpool</synph> container elements. The structure of those elements
+	 influences how the links are displayed in the output, and how metadata
+	 attributes for the links are managed. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>elements<indexterm>related-links</indexterm><indexterm>link</indexterm><indexterm>linktext</indexterm><indexterm>linklist</indexterm><indexterm>linkpool</indexterm></indexterm><indexterm>related-links
+			 element</indexterm><indexterm>link element</indexterm><indexterm>linklist
+			 element</indexterm><indexterm>linkpool element</indexterm><indexterm>related
+			 topics</indexterm><indexterm>hyperlinks</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>One of the methods of defining links in DITA content is through a 
+		<synph>related-links</synph> section at the end of a topic, outside the
+		topic body. 
+	 </p> 
+	 <p>The 
+		<synph>related-links</synph> section has the following structure: 
+	 </p> 
+	 <p> 
+		<codeblock>&lt;topic&gt;
+  &lt;title&gt;...&lt;/title&gt;
+  &lt;body&gt;
+  ...
+  &lt;/body&gt;
+  &lt;related-links&gt;
+    &lt;link href="<varname>URL of referenced topic or resource</varname>"&gt;
+      &lt;linktext&gt;<varname>Display text for link</varname>&lt;/linktext&gt;
+    &lt;/link&gt;
+    &lt;link&gt;...&lt;/link&gt;
+    .
+    .
+    .
+  &lt;/related-links&gt;
+&lt;/topic&gt;</codeblock> 
+	 </p> 
+	 <p>To better 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_organise"><?xm-replace_text Phrase?></ph>
+		links, the link elements can be grouped into 
+		<synph>linklist</synph> and 
+		<synph>linkpool</synph> container elements. These container elements
+		allow metadata attributes to be applied to a set of links as a whole. 
+	 </p> 
+	 <p>For example, if you wanted to nominate that all links in a 
+		<synph>linklist</synph> have a 
+		<synph>product</synph> attribute of 
+		<userinput>lite</userinput>, you could use the following mark-up: 
+		<codeblock>&lt;related-links&gt;
+  &lt;linklist product="lite"&gt;
+    &lt;link&gt;...&lt;/link&gt;
+    &lt;link&gt;...&lt;/link&gt;
+    .
+    .
+  &lt;/linklist&gt;</codeblock> 
+	 </p> 
+	 <p>The 
+		<synph>linklist</synph> container is used when the order of the links is
+		important, as that order will be maintained when the content is processed to an
+		output format. The 
+		<synph>linkpool</synph> container does not imply any particular order.
+		(In this respect, 
+		<synph>linklist</synph> is like an ordered list, while 
+		<synph>linkpool</synph> is like an unordered list.) 
+	 </p> 
+	 <p>When in a 
+		<synph>linklist</synph> container, links in the output will typically be
+		displayed without a heading, and in the same order as the links are defined in
+		the 
+		<synph>linklist</synph>. When in a 
+		<synph>linkpool</synph> container, or when not contained (as simple link
+		elements within the 
+		<synph>related-links</synph> section), links in the output will be
+		grouped according to their information type (such as under headings of 
+		<q>Related Concepts</q>, 
+		<q>Related Tasks</q>, 
+		<q>Related References</q>, and 
+		<q>Related Information</q>). 
+	 </p> 
+	 <p>Within the 
+		<synph>link</synph> structure, the 
+		<synph>linktext</synph> element, which defines the display text for the
+		link, is optional. When there is no 
+		<synph>linktext</synph> element, the title of the referenced DITA topic
+		will be used as the display text for the link. 
+	 </p> 
+	 <p importance="high">You should not include the 
+		<synph>linktext</synph> element when linking to DITA topics. This will
+		force the title of the target to be used as the link text, and ensures that the
+		link text matches the target topic title. However, for links to non-DITA
+		resources such as Web sites or PDF documents, you should define the link text. 
+	 </p> 
+	 <note type="note"> 
+		<p>Some sample links are included in the 
+		  <synph>related-links</synph> section of this topic. These links will
+		  only appear in hypertext versions of 
+		  <ph
+			conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_DITA_Style_Manual"><?xm-replace_text Phrase?></ph>.
+		  The code for the sample links is: 
+		<table id="table_0C253A1C45864754B49EED625D344D5F" colsep="1" rowsep="1">
+		  
+		  <tgroup cols="2" colsep="1"><colspec colnum="1"
+			 colname="col1" colwidth="*"/><colspec colnum="2" colname="col2"
+			 colwidth="*"/><thead> 
+				<row> 
+				  <entry colname="col1">Type of link 
+				  </entry> 
+				  <entry colname="col2">Code 
+				  </entry> 
+				</row></thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1">Link to another DITA topic with no 
+					 <synph>linktext</synph> element 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <codeblock>&lt;link href="c_Scope_Attribute.dita"&gt;
+&lt;/link&gt;</codeblock> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">Link to another DITA topic with a 
+					 <synph>linktext</synph> element 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <codeblock>&lt;link href="c_Scope_Attribute.dita&gt;
+  &lt;linktext&gt;Alternative link to Scope Attribute
+  &lt;/linktext&gt;
+&lt;/link&gt;</codeblock> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">Link to an external Web site 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <codeblock>&lt;link format="html" scope="external" 
+href="http://www.hyperwrite.com/"&gt;
+  &lt;linktext&gt;HyperWrite Web Site&lt;/linktext&gt;
+&lt;/link&gt;</codeblock> 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> The three sample links are included in the 
+		<synph>related-links</synph> section twice: the first set of links is not
+		contained in a container element, while the second set of links is contained
+		within a 
+		<synph>linklist</synph> element. 
+		</p> 
+	 </note> 
+	 <section id="section_332238823F2449B1BFF19604FEEF98E9"
+	 audience="contributor"> 
+		<title>Rationale</title> 
+		<lq reftitle="Kris Eberlein, e-mail to DITA TC, 2 Dec 2009">General best
+		  practice is to only use &lt;linktext&gt; when you are constructing a link to a
+		  non-DITA resource. If the link is to a DITA resource, the processor will use
+		  the content of the &lt;title&gt; element for the link. 
+		</lq> 
+	 </section> 
+  </conbody> 
+  <related-links> 
+	 <link href="c_Scope_Attribute.dita" type="concept" format="dita"
+	 scope="local"><?xm-replace_text Linking in a new window?>
+	 </link> 
+	 <link href="c_Scope_Attribute.dita"> 
+		<linktext>Alternative link to Scope Attribute 
+		</linktext> 
+	 </link> 
+	 <link format="html" scope="external" href="http://www.hyperwrite.com/"> 
+		<linktext>HyperWrite Web Site 
+		</linktext> 
+	 </link> 
+	 <linklist> 
+		<link href="c_Scope_Attribute.dita" type="concept" format="dita"
+		scope="local"><?xm-replace_text Linking in a new window?>
+		</link> 
+		<link href="c_Scope_Attribute.dita"> 
+		  <linktext>Alternative linklist to Scope Attribute 
+		  </linktext> 
+		</link> 
+		<link format="html" scope="external" href="http://www.hyperwrite.com/"> 
+		  <linktext>HyperWrite Web Site 
+		  </linktext> 
+		</link> 
+	 </linklist> 
+  </related-links> 
+</concept> 

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<concept id="concept_B56C7FF5E35949DEBBA2C6A43C09E956"> 
+  <title>Information types and topics</title> 
+  <shortdesc>Topics are the building blocks of modular documents, and
+	 organising topics by semantic information types is one of the architectural
+	 features of DITA. 
+  </shortdesc> 
+  <conbody> 
+	 <lq reftitle="Frank Zappa">Information is not knowledge. Knowledge is not
+		wisdom. Wisdom is not truth. 
+	 </lq> 
+  </conbody> 
+</concept> 

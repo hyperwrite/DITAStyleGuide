@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xml:lang="en" id="D2068" status="new"> 
+  <title>Relationship tables</title> 
+  <shortdesc>Relationship tables are used to store linking relationships
+	 between topics in a collection in the ditamap, rather than in individual
+	 topics. Linking relationships are defined in a table-like structure, with rows
+	 in the table determining which topics are linked to which. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>reltable<index-see-also>relationship
+				table</index-see-also></indexterm><indexterm>elements<indexterm>reltable</indexterm></indexterm><indexterm>relationship
+			 table</indexterm><indexterm>automatic linking</indexterm><indexterm>linking
+			 relationships</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>Automated links based on non-hierarchical relationships are made
+		possible through 
+		<term>relationship tables</term> (or 
+		<term>reltables</term>). 
+	 </p> 
+	 <p>The coding for a 
+		<synph>reltable</synph> element within a ditamap is similar to that for a
+		table within a topic. It is common for a reltable to have three columns: one
+		for concept topics, one for task topics, and one for reference topics.
+		Relationships between topics of the three information types are specified in
+		the reltable rows. 
+	 </p> 
+	 <p>For example, you may 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_visualise"><?xm-replace_text Phrase?></ph>
+		the following reltable to associate the concept topic 
+		<filepath>c.dita</filepath> (<q>About Produce</q>) with the task
+		topic<filepath> t.dita</filepath> (<q>Choosing Produce</q>) and the reference
+		topic 
+		<filepath>r.dita</filepath> (<q>Available Produce</q>): 
+	 </p> 
+	 <table id="table_16BFCDBED68F4C2D8D50D1E121A64E04"> 
+		<tgroup cols="3" colsep="1"><colspec colname="col1"/><colspec
+		  colname="col2"/><colspec colname="col3"/> 
+		  <tbody> 
+			 <row valign="top"> 
+				<entry align="left">c.dita 
+				</entry> 
+				<entry align="left">t.dita 
+				</entry> 
+				<entry align="left">r.dita 
+				</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+	 <p>Such a reltable would generate the following links on the 
+		<q>Available Produce</q> reference topic: 
+	 </p> 
+	 <fig id="fig_758AA1A7BC044B6890FF7485A22D989F"> 
+		<title>Example of automatically-generated links</title><image
+		placement="break" align="left"
+		id="image_9F893A218BDA44F89E256756861B45AF"
+		href="../images/generated_links_example1.gif" width="180px" height="113px"> 
+		  <alt>Example of automatically-generated links in HTML output 
+		  </alt></image> 
+	 </fig> 
+	 <p>By manipulating the linking characteristics of the 
+		<synph>topicref</synph> elements in the reltable, you can finely tune the
+		way links are generated. 
+	 </p> 
+	 <p importance="high">Relationship tables can technically contain nested 
+		<synph>topicref</synph> elements (that form a hierarchy) within a 
+		<synph>relcell</synph>. However, you should avoid using this sort of
+		construct. 
+	 </p> 
+	 <section id="section_135C6A6267E84DD1B28062F04475D52E"
+	  audience="contributor"> 
+		<title>References</title> 
+		<p> 
+		  <draft-comment>The below example should be modified to be a Subaru or
+			 Heather example. 
+		  </draft-comment><xref
+		  href="http://www.infomanagementcenter.com/enewsletter/200511/second.htm"
+		  scope="external" format="html">Linking DITA Topics Through Relationship
+			 Tables</xref>, by Kylene Bruski. 
+		</p> 
+	 </section> 
+  </conbody> 
+</concept> 

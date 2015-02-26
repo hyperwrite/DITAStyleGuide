@@ -1,0 +1,119 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_BE445D9F41BF4C08BB887389FE691BE7" xml:lang="en"
+ status="new"> 
+  <title>Similar element names</title> 
+  <shortdesc>DITA includes semantic elements that have almost identical names
+	 to others, such as 
+	 <synph>keyword</synph> and 
+	 <synph>kwd</synph>. These similar elements are intended to be used in
+	 different authoring scenarios. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>elements<indexterm>keyword</indexterm><indexterm>kwd</indexterm><indexterm>var</indexterm><indexterm>varname</indexterm></indexterm><indexterm>keyword
+			 element</indexterm><indexterm>kwd element</indexterm><indexterm>var
+			 element</indexterm><indexterm>varname element</indexterm><indexterm>redundant
+			 elements</indexterm><indexterm>duplicate semantic element
+			 names</indexterm><indexterm>domains</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>DITA includes a 
+		<synph>keyword</synph> element, as well as a 
+		<synph>kwd</synph> element. It includes a 
+		<synph>var</synph> element, as well as a 
+		<synph>varname</synph> element. 
+	 </p> 
+	 <p>The reason for this apparent duplication is that DITA base elements are 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_organised"><?xm-replace_text Phrase?></ph>
+		into 
+		<term>domains</term> of: 
+	 <ul id="ul_4DE93EF5DA0942EE95673B744BE54638"> 
+		<li id="li_723F84FC672948258C89EAD9B2340399">programming 
+		</li> 
+		<li id="li_4CACFDCDBA384605A09DE03A2707818F">software 
+		</li> 
+		<li id="li_EA36D554BA7E440F9C115377FEEBFEDD">user interface 
+		</li> 
+		<li id="li_D8C490A039084654AAE87049D55E08C3">typographical (or
+		  highlighting) 
+		</li> 
+	 </ul> 
+	 </p> 
+	 <p>Different domains make it easier to identify elements relating to
+		different types of documentation. In different documents, some similar concepts
+		(such as keywords) have different semantic meanings. The differences between
+		the apparently duplicated elements, according to the 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_DITA_Lang_Reference"><?xm-replace_text Phrase?></ph>,
+		are as follows. 
+	 </p> 
+	 <table id="table_2777C9243C17480E91206A7329D7B373" colsep="1" rowsep="1"> 
+		<tgroup cols="3"> 
+		  <colspec colname="col1"/><colspec colname="col2"/><colspec
+		  colname="col3"/> 
+		  <thead> 
+			 <row valign="top"> 
+				<entry align="left">Element 
+				</entry> 
+				<entry align="left">Domain 
+				</entry> 
+				<entry align="left">Meaning 
+				</entry> 
+			 </row> 
+		  </thead> 
+		  <tbody> 
+			 <row valign="top"> 
+				<entry align="left"><synph>var</synph> 
+				</entry> 
+				<entry align="left">Programming 
+				</entry> 
+				<entry align="left">Within a syntax diagram, the 
+				  <synph>var</synph> element defines a variable for which the user
+				  must supply content, such as their user name or password. 
+				</entry> 
+			 </row> 
+			 <row valign="top"> 
+				<entry align="left"><synph>varname</synph> 
+				</entry> 
+				<entry align="left">Software 
+				</entry> 
+				<entry align="left">The 
+				  <synph>varname</synph> element defines a variable that must be
+				  supplied to a software application. The variable name element is very similar
+				  to the 
+				  <synph>var</synph> element, but variable name is used outside of
+				  syntax diagrams. 
+				</entry> 
+			 </row> 
+			 <row valign="top"> 
+				<entry align="left"><synph>kwd</synph> 
+				</entry> 
+				<entry align="left">Programming 
+				</entry> 
+				<entry align="left">The 
+				  <synph>kwd</synph> element defines a keyword within a syntax
+				  diagram. A keyword must be typed or output, either by the user or application,
+				  exactly as specified in the syntax definition. 
+				</entry> 
+			 </row> 
+			 <row valign="top"> 
+				<entry align="left"><synph>keyword</synph> 
+				</entry> 
+				<entry align="left">No particular domain; is used in the body and
+				  prolog. 
+				</entry> 
+				<entry align="left"><synph>keyword</synph> represents a word or
+				  phrase with special significance in a particular domain. In the general case, 
+				  <synph>keyword</synph> elements typically do not have any special
+				  semantics and processing associated with them, but can still be useful for 
+				  <ph xml:lang="en-US">organizing</ph> content for re-use or
+				  special processing. Topic description keywords are typically used for
+				  searching, retrieval and classification purposes. 
+				</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+  </conbody> 
+</concept> 

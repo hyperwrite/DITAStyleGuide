@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D5129" status="new"> 
+  <title>Cross-referencing figures</title> 
+  <shortdesc>Cross-references to figures are accomplished with the 
+	 <synph>xref</synph> element with a 
+	 <synph>type</synph> attribute of 
+	 <userinput>fig</userinput>. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>fig
+			 element</indexterm><indexterm>cross-references<indexterm>to
+				figures</indexterm></indexterm><indexterm>xref
+			 element</indexterm><indexterm>elements<indexterm>fig</indexterm><indexterm>xref</indexterm></indexterm><indexterm>type
+			 attribute</indexterm><indexterm>attributes<indexterm>type</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>When referring a reader to a figure (an image or illustration), you
+		should not hard-code the figure number. In most editing environments, you won't
+		know what the sequential figure number will be until the ditamap is processed
+		to a deliverable document. 
+	 </p> 
+	 <p importance="high">You must always use the 
+		<synph>xref</synph> element to cross-reference figures, with the 
+		<synph>type</synph> attribute set to 
+		<userinput>fig</userinput>. 
+	 </p> 
+	 <p>Cross-references to figures will typically be rendered as the local
+		language word for 
+		<q>Figure</q>, followed by the figure's sequential number in the topic
+		(for hypertext outputs) or in the publication (for page layout documents).
+		Because the figure number is not hard-coded, it will be recalculated each time
+		the ditamap containing the topic is processed. 
+	 </p> 
+	 <p>An example of the syntax of a cross-reference to a figure with an 
+		<synph>id</synph> attribute of 
+		<q>fig_ej25_engine</q> in the same topic is: 
+		<codeblock>&lt;xref href="#concept_ej25/fig_sample_darwin" type="fig"/&gt;</codeblock> 
+	 </p> 
+	 <p>You cannot cross-reference images, so if cross-references are important
+		for your document, use figures rather than simple images. You should include a 
+		<synph>title</synph> element in all figure elements, as the title is used
+		in the generation of cross-reference text in some publishing processes. 
+	 </p> 
+	 <section id="section_8FEE43C9670544B1A6F7706E1E50780E"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<lq reftitle="Deborah Pickett, Yahoo! DITA Users Group"
+		 href="http://tech.groups.yahoo.com/group/dita-users/message/12476"> 
+		  <p>&gt;&gt;Is there a way to reference a specific Figure number in a
+			 &lt;p&gt; (e.g., &gt; "As Figure 1 shows..."). If the Figure number changes due
+			 to adding/deleting figures, I want the cross-reference to update itself. Has
+			 anyone done this? 
+		  </p> 
+		  <p>Your mark-up should look like this for a within-topic link. The key
+			 is the empty xref; it pulls the number or title from the referenced element at
+			 build time. &lt;topic id="topicid"&gt; &lt;!-- .. --&gt; &lt;p&gt;As &lt;xref
+			 href="#topicid/figid"/&gt; shows...&lt;/p&gt; &lt;fig
+			 id="figid"&gt;...&lt;/fig&gt; &lt;/topic&gt;Cr 
+		  </p> 
+		</lq> 
+		<lq reftitle="Tony Self, e-mail correspondence with Annelise Smevik"> 
+		  <p> A figure is a container for an image, and it also contains a title.
+			 In XML code, it therefore looks like this: 
+			 <codeblock>&lt;fig id="cat_figure"&gt;
+  &lt;title&gt;Picture of a Cat&lt;/title&gt;
+  &lt;image href="images/cat.png"/&gt;
+&lt;/fig&gt;</codeblock> 
+		  </p> 
+		  <p> When you make a cross-reference, you must cross-reference the
+			 figure(&lt;fig&gt;), not the image. 
+		  </p> 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

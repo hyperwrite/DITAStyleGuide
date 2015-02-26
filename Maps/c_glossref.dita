@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_181CE2E77D6E42EABCBEAA59CD2E2D69" rev="1.2" xml:lang="en"
+ status="new"> 
+  <title>Creating a Glossary of Terms</title> 
+  <shortdesc>A Glossary of Terms is defined in a ditamap using either standard 
+	 <synph>topicref</synph> elements to glossary entry topics, or using 
+	 <synph>glossref</synph> elements (introduced in 
+	 <ph
+	  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_DITA12"><?xm-replace_text Phrase?></ph>).
+	 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>keyref
+			 attribute</indexterm><indexterm>attributes<indexterm>keyref</indexterm></indexterm><indexterm>indirection</indexterm><indexterm>abbreviated-form
+			 element</indexterm><indexterm>topicref element</indexterm><indexterm>glossref
+			 element</indexterm><indexterm>term
+			 element</indexterm><indexterm>elements<indexterm>term</indexterm><indexterm>topicref</indexterm><indexterm>glossref</indexterm><indexterm>abbreviated-form</indexterm></indexterm><indexterm>acronyms</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>A 
+		<term>Glossary of Terms</term> is made up of multiple small 
+		<synph>glossentry</synph> topics, each with a structure of a term
+		(<synph>glossterm</synph>) element followed by a definition
+		(<synph>glossdef</synph>) element. The glossary of terms is assembled by
+		referencing all the 
+		<synph>glossentry</synph> topics in a ditamap. 
+	 </p> 
+	 <p>In 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_DITA12"><?xm-replace_text Phrase?></ph>,
+		instead of using the standard 
+		<synph>topicref</synph> element to reference the 
+		<synph>glossentry</synph> topics, you can use the 
+		<synph>glossref</synph> element. The 
+		<synph>glossref</synph> element is 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialised"><?xm-replace_text Phrase?></ph>
+		from the 
+		<synph>topicref</synph> element, but differs in having a mandatory 
+		<synph>keys</synph> attribute. 
+	 </p> 
+	 <p>The 
+		<synph>keys</synph> attribute is used for the automatic generation of
+		links from terms in topic text to the corresponding glossary definition. The
+		links are 
+		<term>indirect links</term>, in that the term in the topic links to a
+		key, and the target of that key is defined in the ditamap. (This method of
+		linking is known as 
+		<term>indirection</term>.) 
+	 </p> 
+	 <p>The following code sample compares a topicref and a glossref: 
+		<codeblock>&lt;topicref href="mechanical/g_abs_brake_system.dita" /&gt;
+
+&lt;glossref  href="mechanical/g_brake_system.dita" keys="abs" /&gt;</codeblock> 
+	 </p> 
+	 <p>To specify that a link to be generated from a term to the glossary
+		definition during publishing, you must use a 
+		<synph>term</synph> element, or 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialised"><?xm-replace_text Phrase?></ph>
+		form of the 
+		<term>term</term> element named 
+		<synph>abbreviated-form</synph>. Both 
+		<synph>term</synph> and 
+		<synph>abbreviated-form</synph> elements have a 
+		<synph>keyref</synph> attribute, which is the reference to the
+		corresponding key in the ditamap 
+		<synph>glossref</synph> element. (The 
+		<synph>keyref</synph> attribute was introduced in 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_DITA12"><?xm-replace_text Phrase?></ph>.)
+		
+	 </p> 
+	 <p>For example, to specify a link from the acronym 
+		<term>ABS</term> to a glossary definition of 
+		<q>ABS Brake System</q>, the following code could be used: 
+		<codeblock>&lt;p&gt;Your car has &lt;abbreviated-form keyref="abs"/&gt;.</codeblock> 
+	 </p> 
+	 <p>Except for small documents, using a separate ditamap for the glossary of
+		terms, and then embedding the glossary ditamap in the main ditamap for the
+		collection, is the architecture most easy to manage. 
+	 </p> 
+  </conbody> 
+</concept> 

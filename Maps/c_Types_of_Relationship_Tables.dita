@@ -1,0 +1,140 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<concept id="concept_25F815C1FFB641608A6175A42B2639E9"> 
+  <title>Types of relationship tables</title> 
+  <shortdesc>Relationship tables can be designed to suit a variety of types of
+	 relationships, including one way links, and links associating concept, task and
+	 reference topics. 
+  </shortdesc> 
+  <prolog><metadata><keywords><indexterm>elements<indexterm>topicref</indexterm><indexterm>relcell</indexterm><indexterm>relcolspec</indexterm><indexterm>title</indexterm></indexterm><indexterm>attributes<indexterm>collection-type</indexterm><indexterm>linking</indexterm><indexterm>type</indexterm><indexterm>scope</indexterm></indexterm><indexterm>topicref
+			 element</indexterm><indexterm>relcolspec element</indexterm><indexterm>relcell
+			 element</indexterm><indexterm>title element</indexterm><indexterm>relationship
+			 table</indexterm><indexterm>collection-type
+			 attribute</indexterm><indexterm>linking attribute</indexterm><indexterm>type
+			 attribute</indexterm><indexterm>scope
+			 attribute</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>There are many different ways that you can 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_organise"><?xm-replace_text Phrase?></ph>
+		relationship tables. The most common are: 
+	 <dl> 
+		<dlentry> 
+		  <dt>source and target 
+		  </dt> 
+		  <dd>The 
+		  <option>source</option> column lists the topics in which a link will be
+		  included, and the 
+		  <option>target</option> column lists the topics that the source will be
+		  linked to (<q>from source, to target</q>). 
+		  <option>Target</option> topics do not have links back to the 
+		  <option>source</option> topic. 
+		  </dd> 
+		</dlentry> 
+	 </dl> 
+	 <dl> 
+		<dlentry> 
+		  <dt>task, concept, and reference 
+		  </dt> 
+		  <dd>Topics are 
+			 <ph
+			  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_organised"><?xm-replace_text Phrase?></ph>
+			 into columns by information type. Each topic in a cell will be linked to all
+			 other topics that are in other cells in the same row. Topics in the same cell
+			 will not be linked to each other unless that cell's 
+			 <synph>collection-type</synph> attribute is set to 
+			 <synph>family</synph>. 
+		  </dd> 
+		</dlentry> 
+	 </dl> 
+	 <dl> 
+		<dlentry> 
+		  <dt>task, concept, reference, and external 
+		  </dt> 
+		  <dd>Topics are 
+			 <ph
+			 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_organised"><?xm-replace_text Phrase?></ph>
+			 into columns by information type, with an extra column for link targets that
+			 are external to the ditamap collection. Each topic in a cell will be linked to
+			 all other topics that are in other cells in the same row, and all URLs listed
+			 in the 
+		  <option>external</option> cell in the same row. Topics in the same cell
+		  will not be linked to each other unless that cell's 
+		  <synph>collection-type</synph> attribute is set to 
+		  <synph>family</synph>. 
+		  </dd> 
+		</dlentry> 
+	 </dl> 
+	 </p> 
+	 <p>Some people have found that a four column arrangement of 
+		<varname>sourceonly task</varname>, 
+		<varname>targetonly concept</varname>, 
+		<varname>targetonly task</varname>, and 
+		<varname>targetonly reference</varname> is effective. 
+	 </p> 
+	 <p>The arrangement of the reltable is defined by the following attributes
+		in the 
+		<synph>relcolspec</synph> or 
+		<synph status="changed">relcell</synph> elements of the table: 
+	 <dl> 
+		<dlentry> 
+		  <dt>linking 
+		  </dt> 
+		  <dd>defines the rules by which links are generated 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt>type 
+		  </dt> 
+		  <dd>defines the information type (concept, task, reference, 
+			 <varname
+			  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/varname_specialised"><?xm-replace_text Variable Name?></varname>)
+			 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt>scope 
+		  </dt> 
+		  <dd>defines whether the related information is external to the
+			 collection (typically, a Web resource) 
+		  </dd> 
+		</dlentry> 
+	 </dl> 
+	 </p> 
+	 <p>A setting in the 
+		<synph>relcolspec</synph> element will cascade down to the 
+		<synph>relcell</synph> element. 
+	 </p> 
+	 <p>You can also choose to have a number of relationship tables of different
+		designs in the same ditamap. You can use the reltable's 
+		<synph>title</synph> attribute to label the different reltables in a map;
+		this 
+		<synph>title</synph> is not used in any output, so it is only an aid to
+		authors. 
+	 </p> 
+	 <section id="section_9AB9BD5E0B144945BE6E51B1F64939B8"
+	 audience="contributor"> 
+		<title>Rationale</title> 
+		<lq
+		href="http://dita.xml.org/improving-relationships-relationship-tables"
+		reftitle="Zachary Binder blog"> 
+		  <p>After doing a lot of research into relationship tables, my team
+			 nearly abandoned the effort because mapping a large number of topics in the
+			 standard three-column relationship table was too complex. However, once we
+			 realized that a four-column approach was much more effective in creating and
+			 maintaining the relationships between DITA topics, our information modeling and
+			 online help creation process became much easier to manage. 
+		  </p> 
+		  <p>While the four-column relationship table below has three more rows
+			 than the standard three-column relationship table, the larger table makes it
+			 much easier to maintain the relationships between the various relationships
+			 between the topics. In the example below, when a topic relationship changes,
+			 the writer can simply locate and modify a single row that defines the links for
+			 that topic. 
+		  </p> 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

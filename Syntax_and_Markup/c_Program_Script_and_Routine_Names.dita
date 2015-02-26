@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<concept id="concept_FC4DD9971C6A4670934ECDAD1442EDA8" xml:lang="en"
+ status="new"> 
+  <title>Program, script and routine names</title> 
+  <shortdesc>Program, routine, API and script names are identified using the 
+	 <synph>cmdname</synph> and 
+	 <synph>apiname</synph> elements. 
+  </shortdesc> 
+  <prolog><metadata><keywords><indexterm>elements<indexterm>cmdname</indexterm><indexterm>apiname</indexterm></indexterm><indexterm>apiname
+			 element</indexterm><indexterm>cmdname element</indexterm><indexterm>program
+			 names</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>The DITA programming domain is a set of mark-up elements used for
+		documenting programming languages and their use. The software domain is a
+		similar set of elements used for documenting software applications. 
+	 </p> 
+	 <p importance="high">To identify a program or script name within an
+		end-user's use of a software application, you should use the 
+		<synph>cmdname</synph> (command name) element (from the software domain).
+		
+	 </p> 
+	 <p importance="high">To identify a function, API or sub-routine within
+		documentation aimed at programmers, you should use the 
+		<synph>apiname</synph> (API name) element (from the programming domain). 
+	 </p> 
+	 <example id="example_06C65619AF3D495A906D6E05821821AC"> 
+		<title>Referring to a program name</title> 
+		<codeblock>&lt;step&gt;&lt;cmd&gt;After resetting the computer, run 
+the &lt;cmdname&gt;syscheck&lt;/cmdname&gt; program to verify 
+the recovery.&lt;/cmd&gt;&lt;/step&gt;</codeblock> 
+	 </example> 
+	 <example id="example_A4319F8EA57F4CD998E1115C1DB5AEE5"> 
+		<title>Referring to a sub-routine or function</title> 
+		<codeblock>&lt;p&gt;You can link the &lt;apiname&gt;print&lt;/apiname&gt; sub-routine to
+the button's &lt;apiname&gt;onclick&lt;/apiname&gt; event.&lt;/p&gt;</codeblock> 
+	 </example> 
+  </conbody> 
+</concept> 

@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D9180" status="new"> 
+  <title>Nested quotations</title> 
+  <shortdesc>Nested quotations are limited in DITA to quoted phrases within
+	 quoted blocks. Although it is possible to create workarounds to achieve nested
+	 block quotations, this approach should not be used as the result is
+	 semantically incorrect mark-up. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>nested
+			 quotations</indexterm><indexterm>quotation
+			 marks</indexterm><indexterm>quotations</indexterm><indexterm>lq
+			 element</indexterm><indexterm>q element</indexterm><indexterm>inverted
+			 commas</indexterm><indexterm>elements<indexterm>lq</indexterm><indexterm>q</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>Some complex quotations may include a quoted phrase within a quoted
+		block, or less commonly, a quoted block within another quoted block. 
+	 </p> 
+	 <p>In the first instance, a 
+		<synph>q</synph> element would be used within the 
+		<synph>lq</synph> block, and the processor would determine how quotation
+		marks might appear in the output (typically, single quotes within double
+		quotes). 
+	 </p> 
+	 <p>An 
+		<synph>lq</synph> element can contain multiple paragraph
+		(<synph>p</synph>) and other block elements. 
+	 </p> 
+	 <p>The DITA standard does not permit an 
+		<synph>lq</synph> to nest directly inside another 
+		<synph>lq</synph> element, but it does permit a nested 
+		<synph>lq</synph> provided it is contained within a block element such as
+		a 
+		<synph>fig</synph>. However, do not use this 
+		<q>loophole</q> to circumvent the disallowance of nested 
+		<synph>lq</synph> elements unless the use of the containing element is
+		semantically correct. 
+	 </p> 
+	 <p>In other words, the following: 
+	 </p> 
+	 <codeblock>&lt;p&gt;May read the description of John's speech at Sanjay's wedding.&lt;/p&gt; 
+ &lt;lq&gt;He rose from his seat and stood to his full height.
+  &lt;fig&gt;
+   &lt;lq&gt;I have known the groom for most of his life... I propose a toast to the groom.&lt;/lq&gt; 
+  &lt;/fig&gt; 
+  When he finished talking, he spilled his wine.
+ &lt;/lq&gt;
+&lt;/p&gt;</codeblock> 
+	 <p>might be valid DITA, but it is not semantically correct DITA, because
+		the contents of 
+		<synph>fig</synph> is not a figure. 
+	 </p> 
+	 <p importance="high">Try to find a way of restructuring the text so that
+		nested long quotations are not required. 
+	 </p> 
+	 <section id="section_392CB53A2A04457BB09F14AC8DBA3CA9"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<lq reftitle="Eliot Kimber, Yahoo! DITA Users Group">It is, ultimately,
+		  sufficient for the *prose* of the DITA spec to say "structures that allow
+		  nesting of &lt;lq&gt; within &lt;lq&gt; without an intervening block context
+		  establishing element (e.g., lists, figures, long quotes, or tables) is not
+		  allowed". The fact that you can't express this constraint declaratively in DTD
+		  or XSD syntax (but you almost could in SGML DTD syntax and might be able to in
+		  RNG and definitely can using Schematron) is really irrelevant--the DTDs are at
+		  most a convenience, but we cannot depend on them as the primary definition of
+		  what is or isn't allowed (even though that is how DITA has been largely defined
+		  to date). 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

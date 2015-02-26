@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en-au" id="D9136"> 
+  <title>Example: FAQ (or Question and Answer) as Specialised Information
+	 Type</title> 
+  <conbody> 
+	 <p><?xm-replace_text Paragraph?>
+	 </p> 
+	 <section id="section_444AFE9E2D0C412FA36AAD511CD30B2C"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<lq>ejosejulie wrote: &gt; In the troubleshooting section of the
+		  document, I want to design the &gt; page with all the questions in the
+		  beginning that is linked to the &gt; answers in the same page. Please explain
+		  how to do it? The low-tech way is to use &lt;xref&gt; for the questions at the
+		  beginning. Each one points to the Question+Answer which comes later in the
+		  topic. I'd probably use &lt;section&gt; for a Question+Answer, &lt;title&gt;
+		  for the question, and &lt;p&gt; for the answer. &lt;concept id="thistopic"&gt;
+		  &lt;title&gt;Troubleshooting&lt;/title&gt; &lt;conbody&gt; &lt;sl&gt;
+		  &lt;sli&gt;&lt;xref href="#thistopic/q1"&gt;What is
+		  foo?&lt;/xref&gt;&lt;/sli&gt; &lt;!-- More questions --&gt; &lt;/sl&gt;
+		  &lt;section id="q1"&gt; &lt;title&gt;What is foo?&lt;/title&gt; &lt;p&gt;foo is
+		  a word used as a placeholder by geeks.&lt;/p&gt; &lt;/section&gt; &lt;!-- More
+		  answers. --&gt; &lt;/conbody&gt; &lt;/concept&gt; 
+		</lq> 
+		<p><cite>Source: Deborah Pickett, Yahoo! DITA Users Group</cite> 
+		</p> 
+		<p> 
+		  <draft-comment>Turn this into a worked example... 
+		  </draft-comment> 
+		</p> 
+		<p>Follow up from Michael Priestley 
+		</p> 
+		<lq>Or a reference topic, with nested reference topic children - put the
+		  &lt;related-links&gt; to the children in the container reference topic. Same
+		  idea as others, but moving from xref and section to link and topic, which I
+		  tend to prefer for architectural reasons (like ability to integrate with
+		  map-based linking at some later point) 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

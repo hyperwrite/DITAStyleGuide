@@ -1,0 +1,3 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en-au" id="D9090"><title>Image Map Dilemma</title><conbody><p>Image maps can be defined in DITA, but rather than being content, image maps contain presentational information. (In theory, DITA should only contain content, and not any presentational form information.)</p></conbody></concept>

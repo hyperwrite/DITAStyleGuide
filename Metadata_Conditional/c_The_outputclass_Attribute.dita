@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D2985" status="new"> 
+  <title>The 
+	 <synph>outputclass</synph> attribute</title> 
+  <shortdesc>When you need an element to appear differently in the output from
+	 other elements with the same semantics, you can provide a value in the
+	 element's 
+	 <synph>outputclass</synph> attribute. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>attributes<indexterm>outputclass</indexterm></indexterm><indexterm>HTML<indexterm>class
+				attribute</indexterm></indexterm><indexterm>CSS</indexterm><indexterm>class
+			 attribute<indexterm>HTML</indexterm></indexterm><indexterm>outputclass
+			 attribute</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>Most block and phrase elements in DITA have an 
+		<synph>outputclass</synph> attribute. This attribute is used to provide
+		output styling information, when necessary. 
+	 </p> 
+	 <p>When published to an HTML-based output format, the value in the 
+		<synph>outputclass</synph> attribute of an element will be passed through
+		to the CSS 
+		<synph>class</synph> attribute in the HTML code. 
+	 </p> 
+	 <p importance="high">You should avoid using the 
+		<synph>outputclass</synph> attribute, as it is not a semantic marker. The
+		presentation of the output should be determined by the publishing tool
+		automatically converting semantic mark-up to formatting rules. 
+	 </p> 
+	 <section id="section_EDEAC53E1A2F47A18B8FDEC3246295ED"
+	 audience="contributor"> 
+		<title>Supplementary Information</title> 
+		<p>When generating HTML output from DITA source through the Open Toolkit,
+		  you can't have one topic attached to one CSS and another to another. However,
+		  you can use the outputclass element attribute to nominate a non-standard CSS
+		  class for a particular heading or paragraph, and then define that different
+		  class in the CSS file. That would be the way to make one topic look different
+		  from the others. 
+		</p> 
+	 </section> 
+  </conbody> 
+</concept> 

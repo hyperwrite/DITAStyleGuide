@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<concept id="concept_6530EA05F7BA4BE0A72AF25F6602E969"> 
+  <title><ph xml:lang="en-AU">Organising</ph> Relationship Tables</title> 
+  <shortdesc><?xm-replace_text Short Description?>
+  </shortdesc> 
+  <conbody> 
+	 <p> 
+		<draft-comment>Talk about nesting relationship tables, and having
+		  multiple relationship tables. Also, storing reltables in separate maps from the
+		  hierarchy. Diagram would help. This might become an essay (probably not as big
+		  as a paper). 
+		</draft-comment>
+		<draft-comment>Mention that in task-oriented documentation, the task
+		  should be the focal point for reltable design. The reltable can be started with
+		  a row for each task topic, and then concept and reference topicrefs added as
+		  required.
+		</draft-comment> 
+	 </p> 
+	 <section id="section_251C7AA9DF0340B1941298714F1DD762"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<p>http://dita.xml.org/improving-relationships-relationship-tables 
+		</p> 
+	 </section> 
+  </conbody> 
+</concept> 

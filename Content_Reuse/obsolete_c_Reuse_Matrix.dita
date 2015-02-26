@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xml:lang="en-au" id="D2089">
+  <title>Re-use Matrix</title>
+  <conbody>
+	 <p>A re-use matrix is a table or spreadsheet that allows you to plan and
+		manage the chunks of content that you have reused throughout a documentation
+		suite.
+	 </p>
+	 <p>The matrix may be arranged as below.
+	 </p>
+	 <table>
+		<tgroup cols="6"><colspec colname="col1"/><colspec
+		  colname="col2"/><colspec colname="col3"/><colspec colname="col4"/><colspec
+		  colname="col5"/><colspec colname="col6"/>
+		  <tbody>
+			 <row valign="top"> 
+				<entry align="left">  
+				</entry> 
+				<entry align="left">Description 
+				</entry> 
+				<entry align="left">ID 
+				</entry> 
+				<entry align="left">Located In 
+				</entry> 
+				<entry align="left">Related To 
+				</entry> 
+				<entry align="left">  
+				</entry> 
+			 </row>
+			 <row valign="top"> 
+				<entry align="left">Collection A 
+				</entry> 
+				<entry align="left">
+				  <p> 
+				  </p> 
+				</entry> 
+				<entry align="left">
+				  <p> 
+				  </p> 
+				</entry> 
+				<entry align="left">
+				  <p> 
+				  </p> 
+				</entry> 
+				<entry align="left">
+				  <p> 
+				  </p> 
+				</entry> 
+				<entry align="left">
+				  <p> 
+				  </p> 
+				</entry> 
+			 </row>
+			 <row valign="top"> 
+				<entry align="left">Collection B 
+				</entry> 
+				<entry align="left">
+				  <p> 
+				  </p> 
+				</entry> 
+				<entry align="left">
+				  <p> 
+				  </p> 
+				</entry> 
+				<entry align="left">
+				  <p> 
+				  </p> 
+				</entry> 
+				<entry align="left">
+				  <p> 
+				  </p> 
+				</entry> 
+				<entry align="left">
+				  <p> 
+				  </p> 
+				</entry> 
+			 </row>
+			 <row valign="top"> 
+				<entry align="left">Collection C 
+				</entry> 
+				<entry align="left">
+				  <p> 
+				  </p> 
+				</entry> 
+				<entry align="left">
+				  <p> 
+				  </p> 
+				</entry> 
+				<entry align="left">
+				  <p> 
+				  </p> 
+				</entry> 
+				<entry align="left">
+				  <p> 
+				  </p> 
+				</entry> 
+				<entry align="left">
+				  <p> 
+				  </p> 
+				</entry> 
+			 </row>
+		  </tbody>
+		</tgroup>
+	 </table>
+	 <p/>
+  </conbody>
+</concept>

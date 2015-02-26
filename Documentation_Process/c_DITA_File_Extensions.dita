@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept id="D5118" xml:lang="en" status="new"> 
+  <title>File extensions for DITA topics and ditamaps</title> 
+  <shortdesc>The 
+	 <filepath>.dita</filepath> file extension should be used for DITA topics,
+	 and the 
+	 <filepath>.ditamap</filepath> extension for ditamaps. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>file
+			 naming</indexterm><indexterm>file
+			 extensions</indexterm><indexterm>extensions<indexterm>file</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>Most DITA authoring tools allow you to save topics with 
+		<filepath>.dita</filepath> or 
+		<filepath>.xml</filepath> file extensions. 
+	 </p> 
+	 <p importance="high">Always use the 
+		<filepath>.dita</filepath> file extension. 
+	 </p> 
+	 <p>The reasons for using 
+		<filepath>.dita</filepath> extensions include: 
+	 <ul outputclass="listbullet" id="ul_C0A50A862CDC4368BA2F7DEBFE486DDE"> 
+		<li id="li_9BB687AE5C6240AE836DCB069CED074F">DITA authoring tools can be
+		  associated specifically with DITA topics. A generic 
+		  <filepath>.xml</filepath> file name doesn't identify the file
+		  sufficiently - it could be a DITA file or an XML file of any other type. For
+		  example, using the 
+		  <filepath>.dita</filepath> extension would allow you to configure
+		  Windows so that double-clicking the file opens it in your preferred DITA
+		  editor. 
+		</li> 
+		<li id="li_806FC0349D3B4363A955174B3985B970">It is easier for you to
+		  recognise DITA files when browsing folders by the unique 
+		  <filepath>.dita</filepath> file extension. 
+		</li> 
+		<li id="li_9ECB8F7ED1BA4F14AC84E18BF0F47353">Within a DITA process, there
+		  are XML file formats other than DITA topics and ditamaps. For example, there
+		  are XML build files and ditaval files. Using 
+		  <filepath>.dita</filepath> for topics helps differentiate topics from
+		  other supporting files. 
+		</li> 
+	 </ul> 
+	 </p> 
+	 <p>Most authoring tools also allow you to save ditamap files with a 
+		<filepath>.ditamap</filepath> extension or a 
+		<filepath>.xml</filepath> extension. 
+	 </p> 
+	 <p importance="high">Always use the 
+		<filepath>.ditamap</filepath> extension for all ditamap files, including
+		bookmaps. 
+	 </p> 
+  </conbody> 
+</concept> 

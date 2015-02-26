@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D9167" status="new"> 
+  <title>Image file formats</title> 
+  <shortdesc>Where there is no strong reason to choose another image file
+	 format, you should use SVG or PNG file formats in DITA topics. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>image
+			 element</indexterm><indexterm>elements<indexterm>image</indexterm></indexterm><indexterm>SVG</indexterm><indexterm>PNG</indexterm><indexterm>BMP</indexterm><indexterm>TIF</indexterm><indexterm>EPS</indexterm><indexterm>GIF</indexterm><indexterm>file
+			 formats<indexterm>image</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>DITA supports a variety of image formats. A more accurate assertion is
+		that you can place a reference to any sort of image file inside a DITA 
+		<synph>image</synph> element, and it will be up to the publishing
+		processor as to whether this image can be handled and generated into a reading
+		format. 
+	 </p> 
+	 <p>Typical image file types supported by current DITA processors include: 
+	 <dl> 
+		<dlentry> 
+		  <dt>GIF 
+		  </dt> 
+		  <dd>Compuserve Graphics Interchange Format 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt>JPG 
+		  </dt> 
+		  <dd>Joint Photographic Experts Group format 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt>BMP 
+		  </dt> 
+		  <dd>Microsoft Bitmap Picture format 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt>TIF (or TIFF) 
+		  </dt> 
+		  <dd>Tagged Image File Format 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt>PNG 
+		  </dt> 
+		  <dd>Portable Network Graphics format 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt>EPS 
+		  </dt> 
+		  <dd>Encapsulated PostScript format 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt>SVG 
+		  </dt> 
+		  <dd><term
+			 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/term_SVG"><?xm-replace_text Term?></term>
+			 XML format 
+		  </dd> 
+		</dlentry> 
+	 </dl> 
+	 </p> 
+	 <p importance="high">Unless you have specific reasons for choosing other
+		formats, you should use SVG for line drawings and diagrams. Likewise, for
+		photographs, use JPG with zero or low compression, particularly if you will be
+		publishing to print formats. For other purposes, you should prefer PNG. If your
+		publishing process does not support SVG, you may have to use PNG instead.
+		However, a better approach is to use a publishing process which supports SVG. 
+	 </p>
+	 <note type="note">These recommendations on image file types may not apply
+		for specific publishing scenarios. For example, if you are using DITA to
+		publish to high quality print, the TIFF format may be the best choice.
+	 </note> 
+  </conbody> 
+</concept> 

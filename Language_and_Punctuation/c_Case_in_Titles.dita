@@ -1,0 +1,201 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D9141" status="new"> 
+  <title>Case in titles</title> 
+  <shortdesc>Sentence case should be used for topic, section, figure, table and
+	 other titles. 
+  </shortdesc> 
+  <prolog><metadata><keywords><indexterm>capitals</indexterm><indexterm>upper
+			 case</indexterm><indexterm>case</indexterm><indexterm>letter
+			 case</indexterm></keywords></metadata>
+  </prolog>
+  <conbody> 
+	 <p>It is possible to create titles for topics, figures and tables with
+		letter case structures including the following: 
+	 <ul outputclass="listbullet" id="ul_0497C3F8284443B09FA63A86173627BA"> 
+		<li id="li_3AD58C77A224480099033F0E04E4EF46">start case (first letter of
+		  each word 
+		  <ph
+			conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_capitalised"><?xm-replace_text Phrase?></ph>,
+		  with the remainder lower case) 
+		</li> 
+		<li id="li_C137B86969E4489899A1A0E0B9DC069A">all capitals 
+		</li> 
+		<li id="li_02A58F492E304545B2E50FD00160F80F">title case (first letter of
+		  the first and last words 
+		  <ph
+			conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_capitalised"><?xm-replace_text Phrase?></ph>,
+		  nouns and verbs initial 
+		  <ph
+			conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_capitalised"><?xm-replace_text Phrase?></ph>,
+		  with the remainder lower case) 
+		</li> 
+		<li id="li_769572EBCD04493E93AD42A4F6FA57DF">all lower case 
+		</li> 
+		<li id="li_7BC443117AC048778E10867E30919F65">all lower case except the
+		  first letter 
+		</li> 
+		<li id="li_2DBDB5ABA91F4408B818983F05EDBD8A">sentence case (first word
+		  and proper nouns initial 
+		  <ph
+			conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_capitalised"><?xm-replace_text Phrase?></ph>,
+		  with the remainder lower case) 
+		</li> 
+		<li id="li_95E48F63FB5D4FA78B85CC7CFA5047B0">camel case (the first letter
+		  of each word 
+		  <ph
+			conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_capitalised"><?xm-replace_text Phrase?></ph>,
+		  with spaces and punctuation removed) 
+		</li> 
+	 </ul> 
+	 </p> 
+	 <p>Other variations are also possible, such as 
+		<q>all lower case except nouns</q>. 
+	 </p> 
+	 <p>For titles in publications, the following options are the most common: 
+	 <ul outputclass="listbullet" id="ul_B6489F2FF82C41948CBF79B1BC868653"> 
+		<li id="li_6D5887FE7221467C83CBB65DE23B5999">all capitals 
+		</li> 
+		<li id="li_CFA93AB662444ED1A92A19FE3D1CC425">title case 
+		</li> 
+		<li id="li_085198B7D20843D1BC4842919D4E553D">sentence case 
+		</li> 
+		<li id="li_339A8283F6124A28832353AEA9B03E7F">all lower case 
+		</li> 
+	 </ul> 
+	 </p> 
+	 <p>Title case and sentence case afford the maximum re-use possibilities,
+		because they can be easily transformed, in the processing stage, into: 
+	 <ul outputclass="listbullet" id="ul_A11DB01862F045AFB8905EC51A45DDCB"> 
+		<li id="li_A438966B8F274192A7CDB249CF9C6BA9">start case 
+		</li> 
+		<li id="li_42FA43FB55EF48CBAD41BA69C5ED7BD1">all capitals 
+		</li> 
+		<li id="li_BCFAC876F4A6485C8DD45C38921E130E">all lower case 
+		</li> 
+		<li id="li_ECDDDD9021D945138D21E111CC997B6F">camel case 
+		</li> 
+	 </ul> 
+	 </p> 
+	 <p importance="high">You should use sentence case for all titles in DITA,
+		other than publication titles. Sentence case is easier for an author to use, as
+		it has simpler rules (first word and proper nouns must be initial 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_capitalised"><?xm-replace_text Phrase?></ph>).
+		
+	 </p> 
+	 <p>The preceding applies to English, and may not be applicable in other
+		languages (and writing systems) such as German, for example, where the first
+		letter of all nouns is 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_capitalised"><?xm-replace_text Phrase?></ph>.
+		
+	 </p> 
+	 <section id="section_B4CF3F28BDA148F1A5C9F0622C400303"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<p>Some, but not all, letter case formats can be transformed
+		  automatically into other letter case formats. For example, a sentence case
+		  title can be transformed into an all capitals title. However, an all capitals
+		  title cannot be transformed automatically into a title case title, because it
+		  cannot be deduced which letters should remain in capitals (unless the parts of
+		  speech of individual words are marked up as metadata). The following matrix
+		  shows which letter cases can be automatically converted to another. 
+		<table id="table_072C6DC7BFEC4F40BCD1FA00AB05635D" colsep="1" rowsep="1">
+		  
+		  <tgroup cols="5"><colspec colname="col1"/><colspec
+			 colname="col2"/><colspec colname="col3"/><colspec colname="col4"/><colspec
+			 colname="col5"/> 
+			 <thead> 
+				<row valign="top"> 
+				  <entry align="left">  
+				  </entry> 
+				  <entry align="left">ALL CAPITALS 
+				  </entry> 
+				  <entry align="left">Title Case 
+				  </entry> 
+				  <entry align="left">Sentence Case 
+				  </entry> 
+				  <entry align="left">all lower case 
+				  </entry> 
+				</row> 
+			 </thead> 
+			 <tbody> 
+				<row valign="top"> 
+				  <entry align="left">ALL CAPITALS LETTER CASE (OR ACLC) FORMAT 
+				  </entry> 
+				  <entry align="left">  
+				  </entry> 
+				  <entry align="left">NO (Can't identify nouns and verbs) 
+				  </entry> 
+				  <entry align="left">NO (Can't identify proper nouns) 
+				  </entry> 
+				  <entry align="left">YES 
+				  </entry> 
+				</row> 
+				<row valign="top"> 
+				  <entry align="left">Title Case Letter Case (or TCLC) Format 
+				  </entry> 
+				  <entry align="left">YES 
+				  </entry> 
+				  <entry align="left">  
+				  </entry> 
+				  <entry align="left">NO (Can't identify nouns and verbs) 
+				  </entry> 
+				  <entry align="left">YES 
+				  </entry> 
+				</row> 
+				<row valign="top"> 
+				  <entry align="left">Sentence case letter case (or SCLC) format 
+				  </entry> 
+				  <entry align="left">YES 
+				  </entry> 
+				  <entry align="left">NO (Can't identify nouns and verbs) 
+				  </entry> 
+				  <entry align="left">  
+				  </entry> 
+				  <entry align="left">YES 
+				  </entry> 
+				</row> 
+				<row valign="top"> 
+				  <entry align="left">all lower case letter case (or alclc) format 
+				  </entry> 
+				  <entry align="left">YES 
+				  </entry> 
+				  <entry align="left">NO (Can't identify nouns and verbs) 
+				  </entry> 
+				  <entry align="left">NO 
+				  </entry> 
+				  <entry align="left">  
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+		</p> 
+		<p>Title case is defined by the complicated rules of: 
+		<ul outputclass="listbullet" id="ul_78AA07A1D7FC45C4B926DBB19D19A941"> 
+		  <li id="li_760E8C1809C94E44869F89A0D0BEEC3F">Always 
+			 <ph
+			 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_capitalised"><?xm-replace_text Phrase?></ph>
+			 the first and last word. 
+		  </li> 
+		  <li id="li_8F455DE94FD8475A9282BA0978CF7A78">Capitalise all nouns and
+			 verbs. 
+		  </li> 
+		  <li id="li_79B350F35BED45CE8222460304F6BDCF">Do not use full stops or
+			 exclamation points. 
+		  </li> 
+		</ul><cite>Source:
+		  http://editing.suite101.com/article.cfm/how_to_write_in_title_case</cite> 
+		</p> 
+		<p>If proper nouns are semantically identified in the title, title case
+		  could also be derived from sentence case, and vice versa. 
+		</p> 
+		<lq reftitle="JoAnn Hackos, OASIS DITA Adoption TC correspondence">I'd
+		  prefer title case for the title of a document. Prefer sentence case for topic
+		  titles. 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

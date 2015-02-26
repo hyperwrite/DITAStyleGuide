@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D5112" status="new"> 
+  <title>Notes and extra information in a step</title> 
+  <shortdesc>Information that supplements or supports a procedural step can be
+	 included within an 
+	 <synph>info</synph> element. The 
+	 <synph>info</synph> element in turn can contain block elements such as 
+	 <synph>note</synph> elements. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>elements<indexterm>note</indexterm><indexterm>step</indexterm><indexterm>info</indexterm></indexterm><indexterm>note
+			 element</indexterm><indexterm>info element</indexterm><indexterm>notes within
+			 steps</indexterm><indexterm>warnings within
+			 steps</indexterm><indexterm>cautions within
+			 steps</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>A command (<synph>cmd</synph>) element in a task topic step cannot
+		contain a 
+		<synph>note</synph> element. Extra information to help explain the step
+		should be contained in an 
+		<synph>info</synph> element. 
+	 </p> 
+	 <p>If the extra information is a warning, caution or otherwise requires
+		special highlighting, you can place a 
+		<synph>note</synph> element within an 
+		<synph>info</synph> element. 
+	 </p> 
+	 <p>The coding of a 
+		<synph>note</synph> within an 
+		<synph>info</synph> element is shown in the example: 
+		<codeblock>&lt;step&gt;
+  &lt;cmd&gt;Click &lt;uicontrol&gt;OK&lt;/uicontrol&gt;.&lt;/cmd&gt; 
+	 &lt;info&gt;
+			 &lt;note type="caution"&gt;Never enter your password when connecting to an
+				FTP site from within the corporate firewall.&lt;/note&gt;
+  &lt;/info&gt;
+&lt;/step&gt;</codeblock> 
+	 </p> 
+	 <fig id="fig_EBEE64998C4E4F4394BC44F3EDF44283"> 
+		<title>Typical rendered result of a 
+		<option>caution</option> 
+		<synph>note</synph> in an 
+		<synph>info</synph> element within a 
+		<synph>step</synph></title><image placement="break" align="left"
+		id="image_4B2303E13BCE4072B7098350D14792B8"
+		href="../images/note_in_step_rendered.png" width="416px" height="81px"> 
+		  <alt>Screen capture showing rendered result of a note (caution) in an
+			 info element within a step 
+		  </alt></image> 
+	 </fig> 
+	 <note>For some documents, particularly for the machine industry, there are
+		strict standards regarding the placement of 
+		<term>hazard statements</term> (warnings, cautions and other 
+		<term>admonishments</term>). Before 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_DITA12"><?xm-replace_text Phrase?></ph>,
+		it was not always possible to place warning statements to conform with the ANSI
+		Z535 and ISO 3864-2 standards for hazard statements without 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialising"><?xm-replace_text Phrase?></ph>
+		the 
+		<synph>task</synph> information type. 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_DITA12"><?xm-replace_text Phrase?></ph>
+		introduced a new information type, 
+		<synph>machineryTask</synph>, which fully conforms with the requirements
+		of ANSI Z535 and ISO 3864-2. 
+	 </note> 
+	 <section id="section_8C626ABEE0F8437AB76ACC68127FE42C"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<lq reftitle="Yahoo! XMetaL Users Group"> 
+		  <p>Q: We are using XMetaL Author Edition version 5.1.1. with our own
+			 DITA set up. This topic is set as "task" and includes sets of unordered steps
+			 with substeps. (However, the same thing happens in numbered steps without
+			 substeps.) I am having a real problem inserting a Note following a step. When
+			 the cursor is placed following step 7 (or anywhere in the previous six steps)
+			 and then select menu Insert &gt; Paragraph &gt; Note, the Note is inserted
+			 following step 10! It does not seem to matter where the cursor is, all the
+			 notes go in the same spot, one after the other. Is this a bug? Or is something
+			 else wrong? The same thing happens in tag view as well, no matter where I put
+			 the cursor. 
+		  </p> 
+		  <p>A: The note is getting tossed down to the bottom of your list of
+			 steps because that is the closest location to the cursor where the note element
+			 is allowed by the DITA Task DTD. Notes aren't allowed directly as a child
+			 element of step or cmd, and since the element you're trying to insert using the
+			 menu isn't allowed in that location, XmetaL is doing its best by putting nit in
+			 the closest legal location it can find. If you want to insert a note in a task
+			 step, you can insert an &lt;info&gt; element, then insert a note element. Info
+			 is just a container in this case, and can be inserted after the &lt;cmd&gt;
+			 element in a step. The &lt;info&gt; element doesn't have any implications for
+			 output formatting - the note will appear as it would in any other context. 
+		  </p> 
+		  <p>One way to get around not knowing off the top of your head what's
+			 allowed where by the DTD is to use the Element List window in XmetaL. You can
+			 find it under the View menu. Unlike drop-down menus, the Element List will only
+			 show elements that are allowed by the DTD at the cursor's current position. To
+			 insert an element, you can select the element and click [Apply], or just
+			 double-click it. Our writers use it religiously. 
+		  </p> 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

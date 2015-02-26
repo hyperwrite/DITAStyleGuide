@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en-au" id="D3500"> 
+  <title>Common Specialisations</title> 
+  <shortdesc><?xm-replace_text Short Description?>
+  </shortdesc> 
+  <conbody> 
+	 <p><?xm-replace_text Paragraph?>
+	 </p> 
+	 <p>Another interesting difference is that DITA allows other information
+		types to be defined through 
+		<term>specialisations</term>. Some common DITA specialisations are: 
+	 <ul id="ul_8779728F2586448F8D619114A8CC7FCE"> 
+		<li id="li_8FDB894ACB934943804162E968EB71ED">API Description 
+		</li> 
+		<li id="li_964AFD71264E45A88884A0474A4AFC40">FAQ 
+		</li> 
+		<li id="li_CF751732C15949199D0D172CB163340F">Troubleshooting 
+		</li> 
+	 </ul> 
+	 </p> 
+  </conbody> 
+</concept> 

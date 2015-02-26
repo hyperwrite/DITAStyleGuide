@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_72D3389B805549649605386052826D30" xml:lang="en"
+ status="new"> 
+  <title>Conditional titles</title> 
+  <shortdesc>A 
+	 <synph>title</synph> element in DITA does not have the normal metadata
+	 attributes used for conditional publishing. However, it is possible to
+	 carefully use conditions on elements nested within a title element. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>elements<indexterm>title</indexterm></indexterm><indexterm>title
+			 element</indexterm><indexterm>conditional
+			 processing</indexterm><indexterm>conditional publishing<index-see>conditional
+				processing</index-see></indexterm><indexterm>metadata
+			 attributes</indexterm><indexterm>filtering</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>Filtering 
+		<synph>title</synph> elements during publishing is risky, because 
+		<synph>title</synph> is sometimes a required element. Topic titles are a
+		good example; a topic must always have a 
+		<synph>title</synph> element. Removing a topic's 
+		<synph>title</synph> element during publishing would result in invalid
+		DITA, and the processing would inevitably fail. For this reason, the title
+		element doesn't have 
+		<synph>audience</synph>, 
+		<synph>platform</synph>, 
+		<synph>product</synph> and 
+		<synph>otherprops</synph> attributes. 
+	 </p> 
+	 <p>If it is necessary to apply conditions to parts of a title, you can mark
+		up the 
+		<synph>title</synph> element text with phrase (<synph>ph</synph>)
+		elements, and apply condition attributes to that element. 
+	 </p> 
+	 <section id="section_462FE45722034DB28A1C1C1625E03C82"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<lq href="http://tech.groups.yahoo.com/group/dita-users/message/17379"
+		 reftitle="Eliot Kimber, Yahoo! DITA Users Group">Use &lt;ph&gt; within title to
+		  have conditional title content. All topics *must* have a title, therefore
+		  &lt;title&gt; is not conditional. 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D1821" status="new"> 
+  <title>Indexing</title> 
+  <shortdesc>DITA incorporates powerful features for indexing, including
+	 multi-level indexing, and 
+	 <q>see</q> and 
+	 <q>see-also</q> redirection. Index entries can be applied in the ditamap,
+	 in the topic prolog, and inline within the topic content. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>indexes</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>The indexing features in DITA are built around three elements: 
+		<synph>indexterm</synph>, 
+		<synph>index-see</synph>, and 
+		<synph>index-see-also</synph>. These elements can technically be placed
+		at almost any point in the body of a topic, as well as in the topic 
+		<synph>prolog</synph> and in the 
+		<synph>topicmeta</synph> of the topicref in the ditamap. However, to
+		avoid potential translation and processing complications, the elements should
+		be deliberately placed in specific locations within the topic or map. 
+	 </p> 
+  </conbody> 
+</concept> 

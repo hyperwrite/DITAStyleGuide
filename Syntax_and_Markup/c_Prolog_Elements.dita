@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D2468" status="new"> 
+  <title>Prolog elements</title> 
+  <shortdesc>A topic's metadata is stored in a range of 
+	 <term>prolog elements</term>. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>elements<indexterm>prolog</indexterm></indexterm><indexterm>prolog
+			 elements</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>The DITA prolog elements contain the main metadata for a topic or
+		collection. 
+	 </p> 
+	 <p>The types of information recorded in the prolog include: 
+	 <ul outputclass="listbullet" id="ul_671B9F55D7EC481BB35496048DCD710B"> 
+		<li id="li_D57F74EC9BE64794AC9151FE62D52E3B">author 
+		</li> 
+		<li id="li_59F3A36AD57741A0B2FBAD5D79C49F22">copyright information 
+		</li> 
+		<li id="li_0D5B69A45AD446B4962A23C162867272">critical tracking dates 
+		</li> 
+		<li id="li_29EBE084D14A426ABAB78D9C72B0984B">permissions for
+		  use/management of the content 
+		</li> 
+		<li id="li_21EFEC7A955C4AF295272FA8B6CD1839">extensive metadata about the
+		  content of the document 
+		</li> 
+	 </ul> 
+	 </p> 
+  </conbody> 
+</concept> 

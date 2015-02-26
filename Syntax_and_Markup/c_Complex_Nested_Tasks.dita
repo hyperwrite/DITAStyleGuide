@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D9095" status="new"> 
+  <title>Complex nested tasks</title> 
+  <shortdesc>A complex process made up of a number of procedures can be
+	 documented by collecting, through the ditamap, the constituent task topics
+	 under a process stub topic. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>attributes<indexterm>collection-type</indexterm></indexterm><indexterm>collection-type
+			 attribute</indexterm><indexterm>task
+			 topic</indexterm><indexterm>processes</indexterm><indexterm>procedures</indexterm><indexterm>complex
+			 tasks</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>Tasks are sometimes differentiated into procedures and processes, where
+		processes are high level overviews of a set of procedures, while procedures are
+		detailed instructions for performing a task. 
+	 </p> 
+	 <p>A process could be documented using a 
+		<synph>task</synph> information type, with each step of the process
+		correlating to a procedure. 
+	 </p> 
+	 <fig id="fig_31C1D4048B9C4663B64414C239E8AAD6"> 
+		<title>Structural relationship between process and
+		  procedures</title><image placement="break" align="left"
+		id="image_C88B033A518C41BCB507F0F6BB849551"
+		href="../images/processes_vs_procedures_1.png" width="425px" height="411px"> 
+		  <alt>Schematic showing structural relationship between process and
+			 procedures 
+		  </alt></image> 
+	 </fig> 
+	 <p>While it is possible to hyperlink the individual steps of the process to
+		the corresponding procedure topic, this is not recommended. Nor is it
+		recommended to provide a 
+		<synph>related-links</synph> section in the process topic to link to the
+		related procedure topics. 
+	 </p> 
+	 <p>Best practice is to leave the high level process topic as a 
+		<term>stub topic</term>, with minimal information in it (typically just a
+		title and a short description). The information type of the process topic
+		should be either 
+		<synph importance="high">concept</synph> or 
+		<synph>task</synph>. The procedure topics should be arranged as child
+		topics of the process topic in the ditamap, with the 
+		<synph>collection-type</synph> attribute of the process (parent) topic
+		set to 
+	 <option>sequence</option>. This arrangement will result in the process
+	 steps being automatically generated during processing, with the steps based on
+	 the titles of the child procedure topics. Any short descriptions in the
+	 procedure topics will also be included with the process steps. The 
+	 <option>sequence</option> setting will result in the generated links being
+	 arranged in to a numbered list. 
+	 </p> 
+	 <p>The 
+		<term>stub topic</term> approach to processes allows for much easier
+		re-use, and removes re-keying of process steps. If one procedure is not used in
+		a particular publishing scenario, the process topic won't need to be edited at
+		all. 
+	 </p> 
+	 <fig id="fig_D0D9B81D97CB41F2AB7C37B1608467CD"> 
+		<title>Example of a stub topic after processing</title><image
+		id="image_89B9709DD38B45AB9F1178C602E6AEF5"
+		href="../images/stub_topic_example.png" width="425px" height="236px"
+		placement="break" align="left"> 
+		  <alt>Example of a stub topic (with just a title and a short
+			 description) after processing, 
+		  </alt></image> 
+	 </fig> 
+	 <section id="section_EF56937526A14CAB916EE4FD42AC63FD"
+	 audience="contributor"> 
+		<title>Rationale</title> 
+		<lq reftitle="Ted Kuster, on Yahoo! DITA Users Group"
+		href="http://tech.groups.yahoo.com/group/dita-users/message/9746">I wouldn't
+		  say we've solved the problem, exactly, but we have gotten into the habit of
+		  using a lot of super-tasks (I think I heard Amber Swope propose that term),
+		  which to us means nothing more than a task with a shortdesc and an empty body
+		  tag whose only purpose is to contain bottom-level tasks. In our CMS (such as it
+		  is) we track these as "containers" and in our style guide we prohibit nesting
+		  them any deeper than two levels. If you count substeps, that gives you three
+		  levels of nesting. When someone thinks they need more levels than that, I
+		  encourage rethinking the task structure instead. 
+		</lq> 
+		<lq reftitle="Eliot Kimber, Yahoo! DITA Users Group">Body is optional in
+		  topic (and all the standard specializations of it) so you don't need an empty
+		  body element, just omit it entirely. That is, the smallest allowed topic is:
+		  &lt;topic id="topic-id"&gt; &lt;title&gt;Topic Title&lt;/title&gt;
+		  &lt;/topic&gt; 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

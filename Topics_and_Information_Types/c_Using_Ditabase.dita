@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D9113" status="new"> 
+  <title>Composite (<term>ditabase</term>)</title> 
+  <shortdesc>The 
+	 <term>composite</term> or 
+	 <term>ditabase</term> topic is a now obsolete tool for collecting multiple
+	 topics and nesting them within a single topic file. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>information
+			 types<indexterm>dita</indexterm><indexterm>ditabase</indexterm><indexterm>composite</indexterm></indexterm><indexterm>ditabase
+			 information
+			 type<index-see-also>ditabase</index-see-also></indexterm><indexterm>ditabase</indexterm><indexterm>dita
+			 information type</indexterm><indexterm>composite information
+			 type</indexterm><indexterm>composite topics</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>In the early days of DITA, the composite, or 
+		<term>ditabase</term>, information type was developed as a way of
+		collecting topics together for publication before the 
+		<term>ditamap</term> was created. 
+	 </p> 
+	 <p>The ditabase composite topic allows other topics (of any information
+		type) to be nested within it. 
+	 </p> 
+	 <p>The ditamap is a superior method for collecting topics together, and
+		should always be used in preference to ditabase. 
+	 </p> 
+	 <p>However, ditabase still has some use as a container for re-use
+		information, because it allows concept, task, reference and other information
+		type elements to be contained within the same topic. This can be useful if you
+		want to 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_organise"><?xm-replace_text Phrase?></ph>
+		snippets of conref source information into a single topic. 
+	 </p> 
+	 <p>Do not use ditabase as a means of creating an output topic with mixed
+		information types. If this is necessary, you should use the 
+		<synph>chunk</synph> attribute as an alternative. 
+	 </p> 
+	 <p>The root element of a ditabase topic is 
+		<synph>dita</synph>. 
+	 </p> 
+	 <section id="section_444AFE9E2D0C412FA36AAD511CD30B2C"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<lq
+		 reftitle="Joe Gershon, OASIS DITA Technical Committee mailing list">We need to
+		  remain focused. Who is our primary target user group? What are their use cases?
+		  AFAIK the answers are tech pubs groups documenting technical documentation of
+		  hardware and software systems. For this user group and set of use cases,
+		  ditabase is not a best practice (beyond perhaps a quick and dirty migration
+		  path). For meeting notes, white papers, and a host of other things ditabase may
+		  be the best practice, but those users and use cases are not (correct me if I'm
+		  wrong) the primary target of the DITA TC. 
+		</lq> 
+		<lq reftitle="Jeff Ogden, OASIS DITA Technical Committee mailing list"> 
+		  <p>The problem I've seen is that users and organizations that are new
+			 to DITA often choose to use ditabases or deeply nested topics for what I
+			 consider the wrong reasons.  Often the reason is that ditabases and nested
+			 topics are "easy" since they are similar to what they have been doing in Word
+			 or in docbook or in some other "traditional" tool. So they adopt a practice of
+			 using a ditabase or deeply nested topics without having to confront the issue
+			 of possibly needing to rewrite some of their content into a topic oriented
+			 style or to sort out mixed content within the same topic (the differences
+			 between concept, reference, and task). And they duck having to learn how to
+			 really use and benefit from maps. 
+		  </p> 
+		  <p>The challenge for us is how to find a way to explain best practices
+			 as compared with what is simply allowed.  And we have to do this without
+			 confusing new users who may already be overwhelmed with too much new
+			 information as they are getting started. 
+		  </p> 
+		  <p>This makes me think that new users should be encouraged to start off
+			 using maps and avoid using ditabases or nested topics. As they gain more
+			 experience they can choose to use ditabases or nested topics.  
+		  </p> 
+		  <p>For similar reasons I think new users should initially avoid the use
+			 of conref in maps and possibly conref entirely. Later as they gain experience
+			 they can choose to add the use of conref in topics if they wish.  And later
+			 still and with even more caution they can choose to use conref in maps. 
+		  </p> 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

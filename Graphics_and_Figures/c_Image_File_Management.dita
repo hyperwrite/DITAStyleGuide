@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D9336" status="new"> 
+  <title>Image file management</title> 
+  <shortdesc>Image files should be stored separately from topic files. Images
+	 can be re-used by referencing the same file name, by conref to an 
+	 <synph>image</synph> element, or by conref to a 
+	 <synph>fig</synph> element. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>elements<indexterm>image</indexterm><indexterm>fig</indexterm></indexterm><indexterm>image
+			 element</indexterm><indexterm>fig element</indexterm><indexterm>conref
+			 attribute</indexterm><indexterm>attributes<indexterm>conref</indexterm></indexterm><indexterm>transclusion</indexterm><indexterm>file
+			 management<indexterm>image</indexterm></indexterm><indexterm>image file
+			 management</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>Although there is no technical reason for taking this approach, you
+		should store image files in a separate folder from content topics, for ease of 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_organisation"><?xm-replace_text Phrase?></ph>
+		and file management. Use a consistent folder name for images, typically 
+		<filepath>/images</filepath>. 
+	 </p> 
+	 <p>Image files should be re-used as required in different topics across
+		your content repository. Simplistically, image file re-use can be a matter of
+		referencing the same image file. An example of this type of re-use is: 
+		<codeblock>&lt;concept&gt;
+...
+&lt;img href="../images/ej25.png" width="480px" height="360px" /&gt;
+...
+&lt;/concept&gt;
+
+&lt;task&gt;
+...
+&lt;img href="../images/ej25.png"  width="480px" height="360px" /&gt;
+...
+&lt;/task&gt;</codeblock> 
+	 </p> 
+	 <p>Like other DITA elements, image elements can be re-used through conref
+		transclusion. An alternative method to simplistic re-use of image files is to
+		re-use 
+		<synph>image</synph> elements by conref, as in the example: 
+		<codeblock>&lt;concept id="concept_engines"&gt;
+...
+&lt;img id="img_ej25_engine" href="../images/ej25.png"
+ width="480px" height="360px" /&gt;
+...
+&lt;/concept&gt;
+
+&lt;task&gt;
+...
+&lt;img conref="#concept_engines/img_ej25_engine" href="-dita-use-conref-target" /&gt;
+...
+&lt;/task&gt;</codeblock> 
+	 </p> 
+	 <p>Because the 
+		<synph>href</synph> attribute of the 
+		<synph>image</synph> element is mandatory, you must set the value of the 
+		<synph>href</synph> attribute of the referencing 
+		<synph>image</synph> to 
+	 <option>-dita-use-conref-target</option>. 
+	 </p> 
+	 <p>The conref method has the advantage that attributes are also re-used,
+		reducing some duplication of effort. However, if you deliberately want to have
+		different attributes for different uses of the image, the simple file re-use
+		method can be used. 
+	 </p> 
+	 <p>If you are using figure (<synph>fig</synph>) structures instead of
+		simple images, you can either conref the 
+		<synph>image</synph> element or the 
+		<synph>fig</synph> element. The method to choose will depend on whether
+		you want to re-use the attributes and elements of the figure element. 
+	 </p> 
+	 <p rev="1.2">In 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_DITA12"><?xm-replace_text Phrase?></ph>,
+		you can use the 
+		<synph>keyref</synph> feature to indirectly reference an image or figure,
+		as an alternative to conref. 
+	 </p> 
+	 <image audience="contributor" placement="break" align="center"
+	  href="-dita-use-conref-target" id="image_924D5219E0A448BAA25F0C8BEEDE2C3E"
+	  conref="c_Image_File_Management.dita#D9336/img_ej25_engine"></image> 
+	 <section id="section_0B555CFEDB7D4ED0A9A9B5D337563861"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<lq reftitle="Alexander Pranko, Yahoo! DITA Users Group"
+		 href="http://tech.groups.yahoo.com/group/dita-users/message/15635">Does someone
+		  have a recommendation or can share experiences about image management
+		  strategies within DITA? In the simplest case, it is recommended to place all
+		  images into one topic and refer these images using conref attribute from
+		  content topics. This allows reusing image attributes and, in general, improves
+		  control over images in the content. But what about more complex cases? 
+		</lq> 
+		<lq reftitle="Eliot Kimber, Yahoo! DITA Users Group"
+		 href="http://tech.groups.yahoo.com/group/dita-users/message/15649">You could
+		  also rely on your CMS or some other intermediary to map from "logical" graphic
+		  references to process-instance-specific graphics, such as language-specific
+		  graphics based on the language specified as input to the production process,
+		  but of course this requires custom processing that is outside the current DITA
+		  standard. 
+		</lq> 
+	 </section> 
+	 <section id="section_8EFF7108F15A41988008AB5154A28F4D"
+	  audience="contributor"> 
+		<title>Reference</title> 
+		<p>This is a testing area for image re-use. 
+		</p><image id="img_ej25_engine"
+		href="../images/ej25_turbo_engine_WRX.jpg" width="425px" height="340px"
+		placement="break" align="right"> 
+		  <alt>Photograph of turbocharged EJ25 engine 
+		  </alt></image> 
+	 </section> 
+  </conbody> 
+</concept> 

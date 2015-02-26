@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D2834" status="new"> 
+  <title>Heading levels and ditamaps</title> 
+  <shortdesc>The topic hierarchy in the ditamap is used to generate heading
+	 levels and styles in page layout outputs. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>headings<indexterm>levels</indexterm></indexterm><indexterm>headings<indexterm>styles</indexterm></indexterm><indexterm>styles<indexterm>heading</indexterm></indexterm><indexterm>topic
+			 hierarchy<indexterm>heading
+				styles</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>In DITA, each topic is written as a standalone chunk of content. The
+		style in which a topic title, for example, is eventually presented to the user
+		is determined by the position of the topic in the relevant ditamap. 
+	 </p> 
+	 <p>For example, if a topic called 
+		<q>About SD Cards</q> is located at: 
+		<codeblock>Camera Model 700 &gt; Storing Pictures &gt; Memory &gt; About SD Cards</codeblock>then its heading style in RTF output might be 
+		<systemoutput>Heading 4</systemoutput>. 
+	 </p> 
+	 <p>If that same topic is re-used in a different ditamap, located at: 
+		<codeblock>Taking Pictures &gt; Storing &gt; About SD Cards</codeblock>then its heading style in RTF output might be 
+		<systemoutput>Heading 3</systemoutput>. The topic is identical, but its
+		presentation is appropriate to the output context. 
+	 </p> 
+	 <p>And it gets better! Topic titles can be different in different ditamaps.
+		
+	 </p> 
+  </conbody> 
+</concept> 

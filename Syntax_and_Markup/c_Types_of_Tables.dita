@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_004AF201DB18436098E65BA6670EA8CA" xml:lang="en"
+ status="new"> 
+  <title>Types of tables</title> 
+  <shortdesc>There are two different types of general purpose tables in DITA, 
+	 <synph>table</synph> and 
+	 <synph>simpletable</synph>, both of which are based on the CALS table model
+	 standard. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>tables<indexterm>types
+				of</indexterm></indexterm><indexterm>table
+			 element</indexterm><indexterm>simpletable
+			 element</indexterm><indexterm>elements<indexterm>table</indexterm><indexterm>simpletable</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>The two types of general purpose tables in base DITA are: 
+	 <dl> 
+		<dlentry> 
+		  <dt>table 
+		  </dt> 
+		  <dd>The standard 
+			 <synph>table</synph> structure is designed for complex, tabular
+			 information, where a title can be applied to the table. The 
+			 <synph>table</synph> can also be easily cross-referenced, and a 
+			 <q>List of Tables</q> generated during the publishing process. 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt>simpletable 
+		  </dt> 
+		  <dd>The 
+			 <synph>simpletable</synph> structure is a much simplified design,
+			 with no provision for titles or cross-referencing. It is used for informal,
+			 simple tabular information. 
+		  </dd> 
+		</dlentry> 
+	 </dl> 
+	 </p> 
+	 <p>Both types of table are based on the CALS standard table structure; the
+		table structure of HTML is based on the same standard. 
+	 </p> 
+	 <p>DITA also includes some special purpose tables, including relationship
+		tables (used in ditamaps for cross-reference metadata) and 
+		<synph>properties</synph> tables (used in reference topics). 
+	 </p> 
+  </conbody> 
+</concept> 

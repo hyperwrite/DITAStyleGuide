@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D2209" status="new"> 
+  <title>The separation of content and form</title> 
+  <shortdesc>Fundamental to structured authoring is the concept of the
+	 separation of content from presentation and delivery. The way a piece of text 
+	 <term>looks</term> during authoring is irrelevant. The formatting and
+	 presentation are post-authoring considerations, and activities possibly not
+	 performed by a technical writer. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>separation
+			 of content and form</indexterm><indexterm>semantic
+			 mark-up</indexterm><indexterm>workflow</indexterm><indexterm>DITA<indexterm>authoring
+				environment</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>DITA has no native presentation format. Tagging within DITA simply
+		labels what the information is, and not what it looks like. A phrase within a
+		sentence may be a window name, and that is how it is marked up. This approach
+		is known as 
+		<term>semantic mark-up</term>. Whether a semantically marked-up phrase
+		eventually gets displayed in bold, or in red, or in a box, or not at all, is
+		determined later, outside the authoring process. 
+	 </p> 
+	 <p>Documents are never displayed to the reader in DITA; DITA is not a
+		presentation format. 
+		<term>Content</term> is almost completely separated from 
+		<term>presentational form</term> and 
+		<term>delivery format</term>. Wherever possible, 
+		<term>context</term> is also separated from 
+		<term>content</term>. 
+	 </p> 
+	 <p product="academic_only">The schematic following shows how this
+		separation impacts a technical communications team. 
+	 </p> 
+	 <fig id="fig_941E17D09FE748239153DEFFB63E07C6" product="academic_only"> 
+		<title>Workflow in a DITA authoring environment</title><image
+		placement="break" align="left"
+		id="image_43FD950772914BDF98681729BA64BCA9" href="../images/DITA_workflow.svg"
+		width="425px" height="218px"> 
+		  <alt>Flowchart showing workflow in a DITA authoring environment 
+		  </alt></image> 
+	 </fig> 
+	 <p>In order to make editing friendlier, many DITA editing programs display
+		the DITA content in a graphical user interface. This approach is described as 
+		<term>WYSIOO - What You See is One Option</term>. What you see as a DITA
+		author may be nothing like how the reader will perceive the document, but it is
+		one display option! (<term>WYSIOO</term> is a play on the familiar term 
+		<term>WYSIWYG</term>, or 
+		<term>What You See Is What You Get</term>.) 
+	 </p> 
+  </conbody> 
+</concept> 

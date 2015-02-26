@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_C6893437671A40DA9149877170D070EA" xml:lang="en"
+ status="new"> 
+  <title>Working with mark-up</title> 
+  <conbody> 
+	 <p>There are a number of concepts and principles of XML mark-up in general,
+		and DITA mark-up in particular. 
+	 </p>
+  </conbody> 
+</concept> 

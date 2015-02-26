@@ -1,0 +1,3 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en-au" id="D5137"><title>SVG Tips</title><conbody><p>Make sure you SVG editor is fully W3C SVG compliant. You will have fewer problems in Inkscape (an open source dedicated SVG editor) than you might have in a commercial tool such as Illustrator. Microsoft Visio also seems to provide compliant SVG output.</p><p>You should also try to draw your images in the size in which you wish to render the in the output. </p></conbody></concept>

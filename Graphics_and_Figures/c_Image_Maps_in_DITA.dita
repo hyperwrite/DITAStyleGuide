@@ -1,0 +1,197 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D1970" status="new"> 
+  <title>Image maps</title> 
+  <shortdesc>The 
+	 <synph>imagemap</synph> element is used to define image maps (<term>hotspot
+		graphics</term>) in DITA topics. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>elements<indexterm>imagemap</indexterm><indexterm>shape</indexterm><indexterm>area</indexterm><indexterm>coords</indexterm><indexterm>xref</indexterm><indexterm>image</indexterm></indexterm><indexterm>imagemap
+			 element</indexterm><indexterm>image element</indexterm><indexterm>shape
+			 element</indexterm><indexterm>coords element</indexterm><indexterm>xref
+			 element</indexterm><indexterm>area element</indexterm><indexterm>map element in
+			 HTML</indexterm><indexterm>HTML<indexterm>map
+				element</indexterm></indexterm><indexterm>hypergraphics</indexterm><indexterm>image
+			 maps</indexterm><indexterm>segmented
+			 hypergraphics</indexterm><indexterm>hotspot
+			 graphics</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>Image maps, also known as 
+		<term>hotspot graphics</term> and 
+		<term>segmented hypergraphics</term>, can be defined in DITA content
+		using the 
+		<synph>imagemap</synph> element and its child elements. An imagemap
+		element is applied to a standard 
+		<synph>image</synph> element. Obviously, when a topic which includes an
+		image map is output to paper, the linking function will be lost; however, the
+		static image will be rendered. You may want to use conditional processing so
+		that image map graphics are only output to online delivery formats. 
+	 </p> 
+	 <p>The DITA 
+		<synph>imagemap</synph> element is 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_modelled"><?xm-replace_text Phrase?></ph>
+		on the HTML 4.1 
+		<synph>map</synph> element, but uses elements where HTML uses attributes.
+		
+	 </p> 
+	 <table id="table_CCD8BD52788F4906A1A2272248F6325F" colsep="1" rowsep="1"> 
+	 <title>Comparison of HTML and DITA image map element names</title> 
+	 <tgroup cols="2"><colspec colnum="1" colname="col1" colwidth="*"/><colspec
+		colnum="2" colname="col2" colwidth="*"/><thead> 
+		  <row> 
+			 <entry colname="col1">DITA mark-up 
+			 </entry> 
+			 <entry colname="col2">HTML mark-up 
+			 </entry> 
+		  </row></thead> 
+		<tbody> 
+		  <row> 
+			 <entry colname="col1"><synph>imagemap</synph> element 
+			 </entry> 
+			 <entry colname="col2"><synph>map</synph> element 
+			 </entry> 
+		  </row> 
+		  <row> 
+			 <entry colname="col1"><synph>image</synph> element (inside 
+				<synph>imagemap</synph>) 
+			 </entry> 
+			 <entry colname="col2"><synph>img</synph> element (outside 
+				<synph>map</synph>) 
+			 </entry> 
+		  </row> 
+		  <row> 
+			 <entry colname="col1"><synph>area</synph> element 
+			 </entry> 
+			 <entry colname="col2"><synph>area</synph> element 
+			 </entry> 
+		  </row> 
+		  <row> 
+			 <entry colname="col1"><synph>shape</synph> element 
+			 </entry> 
+			 <entry colname="col2"><synph>shape</synph> attribute of 
+				<synph>area</synph> element 
+			 </entry> 
+		  </row> 
+		  <row> 
+			 <entry colname="col1"><synph>coords</synph> element 
+			 </entry> 
+			 <entry colname="col2"><synph>coords</synph> attribute of 
+				<synph>area</synph> element 
+			 </entry> 
+		  </row> 
+		  <row> 
+			 <entry colname="col1"><synph>href</synph> attribute of 
+				<synph>xref</synph> element 
+			 </entry> 
+			 <entry colname="col2"><synph>href</synph> attribute of 
+				<synph>area</synph> element 
+			 </entry> 
+		  </row> 
+		  <row> 
+			 <entry colname="col1">text content of 
+				<synph>xref</synph> element 
+			 </entry> 
+			 <entry colname="col2"><synph>alt</synph> attribute of 
+				<synph>area</synph> element 
+			 </entry> 
+		  </row> 
+		</tbody> 
+	 </tgroup> 
+	 </table> 
+	 <p>The 
+		<synph>imagemap</synph> element has two child elements: an 
+		<synph>image</synph> element and an 
+		<synph>area</synph> element. The 
+		<synph>image</synph> element defines the image to which the clickable
+		hotspot areas will be overlaid. The 
+		<synph>area</synph> element contains 
+		<synph>shape</synph>, 
+		<synph>coords</synph>, and 
+		<synph>xref</synph> elements which specify the hotspot co-ordinates and
+		link targets. 
+	 </p> 
+	 <p>An example of the DITA code to place an image map in a topic is: 
+		<codeblock>&lt;imagemap&gt;
+  &lt;image href="../images/ej25.png" /&gt;
+  &lt;area&gt;
+    &lt;shape&gt;rect&lt;/shape&gt;
+    &lt;coords&gt;0,10,60,75&lt;/coords&gt;
+    &lt;xref href="c_intercooler.dita"&gt;Intercooler&lt;/xref&gt;
+  &lt;/area&gt;
+  &lt;area&gt;
+    &lt;shape&gt;circle&lt;/shape&gt;
+    &lt;coords&gt;30,120,30&lt;/coords&gt;
+    &lt;xref href="c_expansion.dita"&gt;Expansion tank&lt;/xref&gt;
+  &lt;/area&gt;
+&lt;/imagemap&gt;</codeblock> 
+	 </p> 
+	 <note> If your DITA authoring tool does not provide good support for
+		creating image maps, you can alternatively use a Web authoring tool to define
+		the 
+		<synph>map</synph> in an HTML page, change the HTML attributes to DITA
+		elements, and then copy the resultant code into your DITA topic. 
+	 </note> 
+	 <p importance="high">Image maps are not permitted within a figure
+		(<synph>fig</synph>) structure. 
+	 </p> 
+	 <section id="section_2267D08C77344D53BD9B431E109910E4"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<p>The DITA &lt;imagemap&gt; structure is similar to the XHTML
+		  &lt;map&gt; structure. Accordingly, you can create your image maps in an XHTML
+		  editor, and then insert the generated code into your DITA topic. 
+		<ol outputclass="listnumber" id="ol_49198F7309F34E02A77C24C0183D1661"> 
+		  <li outputclass="listnumber"
+			id="li_1485C2076D5D427AA2BCC257DCD16143">In your XHTML editor, create the image
+			 map using the (already-created) image file. The code will have the following
+			 structure: &lt;img src="tip-ing.jpg" height="12" width="12"&gt; &lt;map
+			 name="test"&gt; &lt;area shape="rect" coords="0,0,21,12" href="tip.xml"/&gt;
+			 &lt;/map&gt; 
+		  </li> 
+		  <li outputclass="listnumber"
+			id="li_E52825D59DB2466E91CEAB10C28E3F67">In your XML editor, insert the basic
+			 &lt;imagemap&gt; mark-up, using the same image file name: &lt;imagemap&gt;
+			 &lt;image href="xxxx.jpg"&gt; &lt;area&gt; &lt;shape&gt;&lt;/shape&gt;
+			 &lt;coords&gt;&lt;/coords&gt; &lt;xref href="yyyy.xml"/&gt; &lt;/area&gt;
+			 &lt;imagemap&gt; 
+		  </li> 
+		  <li outputclass="listnumber"
+			id="li_B7D645B63DEB45CF824F98E22DD36630">Copy the XHTML "shape" attribute value
+			 into the DITA &lt;shape&gt; element 
+		  </li> 
+		  <li outputclass="listnumber"
+			id="li_F03D06F1CD614BC9A9B7D21FD68A6DE0">Copy the XHTML "coords" attribute
+			 value into the DITA &lt;coords&gt; element. 
+		  </li> 
+		</ol> 
+		</p> 
+		<lq reftitle="Deborah Pickett, DITA Yahoo! Users Group"
+		 href="http://tech.groups.yahoo.com/group/dita-users/message/14723"> 
+		  <p>The 
+			 <synph>&lt;imagemap&gt;</synph> element's inheritance is from the
+			 proto-topic's &lt;fig&gt; element. This inheritance precludes the use of 
+			 <synph>&lt;imagemap&gt;</synph> within a 
+			 <synph>&lt;fig&gt;</synph> element; consequently, image maps cannot
+			 be given figure numbers. 
+		  </p> 
+		  <p>A workaround might be to place an &lt;imagemap&gt; within a
+			 &lt;p&gt; element, and then nest that &lt;p&gt; within the &lt;fig&gt;.
+			 However, this workaround is not semantically correct, and should therefore not
+			 be used. 
+		  </p> 
+		  <p>Figure numbers are likely to be inappropriate for on-screen
+			 delivery, so this limitation may not be significant. (An image map has no
+			 functionality when transformed to paper, and most on-screen formats are
+			 topic-based and non-hierarchical, where sequential numbers are irrelevant.) 
+		  </p> 
+		  <p>However, &lt;fig&gt; elements also contain a title, which may be
+			 required for on-screen outputs. The semantically-correct solution is to
+			 specialise &lt;fig&gt; into an alternative imagemap element. 
+		  </p> 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

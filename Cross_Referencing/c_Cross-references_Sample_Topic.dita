@@ -1,0 +1,162 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<concept id="concept_sample_xref"> 
+  <title>Sample topic - cross-references</title> 
+  <shortdesc>This topic shows a variety of cross-referencing methods, and the
+	 rendered results of those cross-references. 
+  </shortdesc> 
+  <prolog><metadata><keywords><indexterm>exemplar
+			 topic</indexterm><indexterm>sample topic</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p id="sample_xref_para">This is a paragraph in a topic, with an 
+		<synph>id</synph> attribute of 
+		<userinput>sample_xref_para</userinput>. 
+	 </p> 
+	 <p> 
+		<fig id="fig_sample_darwin"> 
+		  <title>Sample figure of Charles Darwin</title><image placement="break"
+		  align="left" id="image_darwin" href="../images/darwin.jpg"> 
+			 <alt>Sample Photo of Charles Darwin 
+			 </alt></image> 
+		</fig> 
+	 <table id="table_sample_photographers"> 
+	 <title>Sample Table of photographic credits</title> 
+	 <tgroup cols="2"><colspec colnum="1" colname="col1" colwidth="*"/><colspec
+		colnum="2" colname="col2" colwidth="*"/><thead> 
+		  <row> 
+			 <entry colname="col1">Photo Description 
+			 </entry> 
+			 <entry colname="col2">Photographer 
+			 </entry> 
+		  </row></thead> 
+		<tbody> 
+		  <row> 
+			 <entry colname="col1">Charles Darwin 
+			 </entry> 
+			 <entry colname="col2">Julia Margaret Cameron 
+			 </entry> 
+		  </row> 
+		</tbody> 
+	 </tgroup> 
+	 </table> 
+	 </p> 
+	 <simpletable id="simpletable_sample_infotypes"> 
+		<sthead><stentry>Base Information Types 
+		  </stentry><stentry>Root Element</stentry> 
+		</sthead> 
+		<strow><stentry>Concept information type 
+		  </stentry><stentry><synph>concept</synph></stentry> 
+		</strow> 
+		<strow><stentry>Task information
+			 type</stentry><stentry><synph>task</synph></stentry> 
+		</strow> 
+		<strow><stentry>Reference information
+			 type</stentry><stentry><synph>reference</synph></stentry> 
+		</strow> 
+		<strow><stentry>Untyped topic
+			 proto-information</stentry><stentry><synph>topic</synph></stentry> 
+		</strow> 
+		<strow><stentry>Composite (<term>ditabase</term>)
+			 topic</stentry><stentry><synph>dita</synph></stentry> 
+		</strow> 
+	 </simpletable> 
+	 <section id="section_Typical_Sample"> 
+		<title>Typical section</title> 
+		<p>This is a typical section in a topic, and like all 
+		  <synph>section</synph> elements, may be the target of a
+		  cross-reference. 
+		</p> 
+		<p>This is a sample ordered list: 
+		</p> 
+		<ol id="ol_16F76A04E9BA46D6BDF9BFB84DB52024"> 
+		  <li id="li_0A7626E65A494CA9BCE7115496D7AEE7">primary 
+		  </li> 
+		  <li id="li_step2_sample">secondary 
+		  </li> 
+		  <li id="li_C5462DB753464BE7B2CC048A9C0B597A">tertiary 
+		  </li> 
+		</ol> 
+		<p>Cross-references to steps in a task topic behave in a similar way. 
+		</p> 
+	 </section> 
+	 <section id="section_C1FD4591CD2C4E7399937D6C08C35A18"> 
+		<title>Cross-reference samples</title> 
+		<p>The following are examples of different types of cross references. 
+		  <simpletable id="simpletable_630ED84D068E44D3B5672ECE0561FF42"> 
+			 <sthead><stentry>Cross-reference</stentry><stentry>Code</stentry><stentry>Result</stentry>
+				
+			 </sthead> 
+			 <strow><stentry>To a section</stentry><stentry> 
+				  <codeblock>&lt;xref href="c_Cross-references_Sample_Topic.dita
+#concept_sample_xref/section_Typical_Sample" type="section"/&gt;</codeblock></stentry><stentry><xref
+				  href="c_Cross-references_Sample_Topic.dita#concept_sample_xref/section_Typical_Sample"
+				  type="section" format="dita" scope="local"><?xm-replace_text Typical section?></xref></stentry>
+				
+			 </strow> 
+			 <strow><stentry>To a numbered item (in an ordered
+				  list)</stentry><stentry> 
+				  <codeblock>&lt;xref href="c_Cross-references_Sample_Topic.dita
+#concept_sample_xref/li_step2_sample" type="li"/&gt;</codeblock></stentry><stentry><xref
+				  href="c_Cross-references_Sample_Topic.dita#concept_sample_xref/li_step2_sample"
+				  type="li" format="dita" scope="local"><?xm-replace_text li_step2_sample?></xref></stentry>
+				
+			 </strow> 
+			 <strow><stentry>To a step</stentry><stentry> 
+				  <codeblock>&lt;xref href="../Sample_Topics/t_mirage_engine_failure.dita
+#sample_task_topic_short/mirage_step1" type="step" format="dita" scope="local"&gt;</codeblock></stentry><stentry><xref
+				  href="../Sample_Topics/t_mirage_engine_failure.dita#sample_task_topic_short/mirage_step1"
+				  type="step" format="dita" scope="local"><?xm-replace_text      Eject.          ?></xref></stentry>
+				
+			 </strow> 
+			 <strow><stentry>To a figure</stentry><stentry> 
+				  <codeblock>&lt;xref href="c_Cross-references_Sample_Topic.dita
+#concept_sample_xref/fig_sample_darwin" type="fig"/&gt;</codeblock></stentry><stentry><xref
+				  href="c_Cross-references_Sample_Topic.dita#concept_sample_xref/fig_sample_darwin"
+				  type="fig" format="dita" scope="local"><?xm-replace_text Sample figure of Charles Darwin?></xref></stentry>
+				
+			 </strow> 
+			 <strow><stentry>To a table</stentry><stentry> 
+				  <codeblock>&lt;xref href="c_Cross-references_Sample_Topic.dita
+#concept_sample_xref/table_sample_photographers" type="table"/&gt;</codeblock></stentry><stentry><xref
+				  href="c_Cross-references_Sample_Topic.dita#concept_sample_xref/table_sample_photographers"
+				  type="table" format="dita" scope="local"><?xm-replace_text Sample Table of photographic credits?></xref></stentry>
+				
+			 </strow> 
+			 <strow><stentry>To a simple table (not recommended, as not supported
+				  by many processors)</stentry><stentry> 
+				  <codeblock>&lt;xref href="c_Cross-references_Sample_Topic.dita
+#concept_sample_xref/simpletable_sample_infotypes" type="simpletable"/&gt;</codeblock></stentry><stentry><xref
+				  href="c_Cross-references_Sample_Topic.dita#concept_sample_xref/simpletable_sample_infotypes"
+				  type="simpletable" format="dita" scope="local"><?xm-replace_text Sample Table of Photographic Credits?></xref></stentry>
+				
+			 </strow> 
+			 <strow><stentry>To an image (not logical, as there is no text or
+				  number to use for the link text)</stentry><stentry> 
+				  <codeblock>&lt;xref href="c_Cross-references_Sample_Topic.dita
+#concept_sample_xref/image_darwin" type="topic"/&gt;</codeblock></stentry><stentry><xref
+				  href="c_Cross-references_Sample_Topic.dita#concept_sample_xref/image_darwin"
+				  type="image" format="dita" scope="local"><?xm-replace_text image_darwin?></xref></stentry>
+				
+			 </strow> 
+			 <strow><stentry>To an image, with content in the 
+				  <synph>xref</synph></stentry><stentry> 
+				  <codeblock>&lt;xref href="c_Cross-references_Sample_Topic.dita
+#concept_sample_xref/image_darwin" type="topic"&gt;Darwin in profile&lt;/xref&gt;</codeblock> 
+				</stentry><stentry><xref
+				  href="c_Cross-references_Sample_Topic.dita#concept_sample_xref/image_darwin"
+				  type="topic" format="dita" scope="local">Darwin in profile</xref> 
+				</stentry> 
+			 </strow> 
+		  </simpletable> 
+		</p> 
+		<p> 
+		  <draft-comment>Make sure the topic that references this topic also
+			 references a description of the valid type attributes from the DITA Language
+			 Reference, common/thetypeattribute.html 
+		  </draft-comment> 
+		</p> 
+	 </section> 
+  </conbody> 
+</concept> 

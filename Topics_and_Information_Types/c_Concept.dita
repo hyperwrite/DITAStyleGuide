@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D2078" status="new"> 
+  <title>Concept</title> 
+  <shortdesc>The 
+	 <term>concept</term> topic is one of the three base DITA information types.
+	 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>information
+			 types<indexterm>concept</indexterm></indexterm><indexterm>concept information
+			 type</indexterm><indexterm>concept topic</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p id="p_concept_summary">Concept topics are used to document conceptual or overview information.
+			They contain background information that users must know before they can successfully
+			work with a product or within a process. Concepts can be broken into sections, but they
+			are primarily comprised of simple paragraphs and unordered lists. </p> 
+	 <p id="p_concept_answers_question">Concept topics answer the question <q>what is?</q>. </p> 
+	 <p>The root element of a concept topic is 
+		<synph>concept</synph>. 
+	 </p> 
+	 <p/> 
+  </conbody> 
+</concept> 

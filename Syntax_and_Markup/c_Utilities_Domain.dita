@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<concept id="concept_0281586C69A74F0FAA1CD3481FCE5F14"> 
+  <title>Utilities domain</title> 
+  <prolog><metadata><keywords><indexterm>domains<indexterm>utilities</indexterm><indexterm>image
+				map</indexterm></indexterm><indexterm>utilities
+			 domain</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>The utilities domain elements are non-semantic elements used in defining
+		image maps.
+	 </p>
+  </conbody> 
+</concept> 

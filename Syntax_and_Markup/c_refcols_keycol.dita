@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D9333" status="new"> 
+  <title>The 
+	 <synph>keycol</synph> and 
+	 <synph>refcols</synph> attributes</title> 
+  <shortdesc>The 
+	 <synph>keycol</synph> and 
+	 <synph>refcols</synph> attributes are used to control the way in which 
+	 <synph>choicetable</synph>, 
+	 <synph>simpletable</synph> and 
+	 <synph>properties</synph> tables are processed to a reading format. The 
+	 <synph>keycol</synph> attribute nominates which column is used for row
+	 headings, while 
+	 <synph>refcols</synph> nominates which columns will be automatically linked
+	 (although this functionality is not yet implemented in all publishing tools). 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>attributes<indexterm>refcols</indexterm><indexterm>keycol</indexterm></indexterm><indexterm>refcols
+			 attribute</indexterm><indexterm>keycol
+			 attribute</indexterm><indexterm>elements<indexterm>choicetable</indexterm><indexterm>simpletable</indexterm><indexterm>properties</indexterm></indexterm><indexterm>choicetable
+			 element</indexterm><indexterm>simpletable
+			 element</indexterm><indexterm>properties element</indexterm><indexterm>row
+			 headings</indexterm><indexterm>linking<indexterm>in
+				tables</indexterm></indexterm><indexterm>tables<indexterm>refcols
+				attribute</indexterm><indexterm>keycol
+				attribute</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>The 
+		<synph>choicetable</synph>, 
+		<synph>simpletable</synph> and 
+		<synph>properties</synph> table elements have a 
+		<synph>refcols</synph> attribute and a 
+		<synph>keycol</synph> attribute. 
+	 </p> 
+	 <p>The key column (<synph>keycol</synph>) attribute nominates which column
+		in the table should be used for any row headings. For most publishing tools, a
+		setting of 
+		<userinput>0</userinput> (no column is the key column) will result in all
+		of the row content displaying in Roman text, while a setting of greater than
+		zero will result in the corresponding column being displayed in bold (or
+		otherwise highlighted). For example, a setting of 
+		<userinput>1</userinput> results in the first column content displaying
+		in bold. 
+	 </p> 
+	 <p>The cross-reference columns (<synph>refcols</synph>) attribute functions
+		in a similar way to 
+		<synph>keycol</synph> attribute. It designates the number of the columns
+		that contain references, with the intention that the contents of these columns
+		will be automated linked during processing to an output format. Columns are
+		identified by a space-delimited list of numbers. For example, a setting of 
+		<userinput>1 3</userinput> indicates that the first and third columns
+		contain cross-reference information. The 
+		<synph>refcols</synph> attribute is not used by many, if any, publishing
+		tools. However, it is provided in the DITA standard for possible future use. 
+	 </p> 
+	 <section id="section_5E3505C000FA4E5E9241E9594C1E5D2F"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<lq href="http://tech.groups.yahoo.com/group/dita-users/message/15537"
+		 reftitle="Kristen James Eberlein, Yahoo! DITA Users Group"> I believe that the
+		  @refcol (sic) attribute -- while listed in the DITA specification -- is not
+		  currently supported by the DITA OT. 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

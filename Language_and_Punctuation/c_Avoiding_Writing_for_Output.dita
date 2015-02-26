@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D5133" status="new"> 
+  <title>Avoiding writing for output</title> 
+  <shortdesc>Do not include formatting information in your DITA content topics.
+	 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>separation
+			 of content and
+			 form</indexterm><indexterm>agnostic<indexterm>presentation</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>If you find that you are deliberately coding your DITA topics in such a
+		way as to achieve a particular output effect, you are without doubt taking the
+		wrong path. DITA topics must be delivery-agnostic; they must be free of as much
+		context (how the information is going to be used, presented or sequenced) as
+		possible. 
+	 </p> 
+  </conbody> 
+</concept> 

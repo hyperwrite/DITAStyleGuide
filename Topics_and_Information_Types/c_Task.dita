@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D2079" status="new"> 
+  <title>Task</title> 
+  <shortdesc>The 
+	 <term>task</term> topic is one of the three base DITA information types. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>information
+			 types<indexterm>task</indexterm></indexterm><indexterm>task information
+			 type</indexterm><indexterm>task topic</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p id="p_task_intro">Task topics are used to document the steps of a particular task or procedure,
+			or to document the stages within a high level process. Task topics are the building
+			blocks for task-oriented documentation. Task topics are more strictly structured than
+			concept and reference topics. </p> 
+	 <p id="p_task_answers_question">Task topics address the question of <q>how to?</q>. </p> 
+	 <p>The root element of a task topic is 
+		<synph>task</synph>. 
+	 </p> 
+  </conbody> 
+</concept> 

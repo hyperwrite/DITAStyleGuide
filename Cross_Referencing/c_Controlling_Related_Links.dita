@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D1972" status="new"> 
+  <title>Removing related links from the output</title> 
+  <shortdesc>Related links can be removed from the output by setting the 
+	 <synph>linking</synph> attribute of the 
+	 <synph>topicref</synph> element in the ditamap to 
+	 <option>none</option>. If you are producing HTML-based output, you can
+	 alternatively change the CSS class definition so that generated links are not
+	 displayed. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>elements<indexterm>related-links</indexterm><indexterm>topicref</indexterm><indexterm>map</indexterm><indexterm>reltable</indexterm></indexterm><indexterm>attributes<indexterm>linking</indexterm></indexterm><indexterm>relationship
+			 table<indexterm>hiding
+				links</indexterm></indexterm><indexterm>reltable<indexterm>hiding
+				links</indexterm></indexterm><indexterm>map
+			 element</indexterm><indexterm>CSS</indexterm><indexterm>cascading style
+			 sheets</indexterm><indexterm>links<indexterm>hiding in
+				output</indexterm></indexterm><indexterm>hyperlinks<indexterm>hiding in
+				output</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>When DITA content is processed to HTML output, links to related topics
+		(if any) are typically placed (by the publishing process) at the bottom of each
+		topic. Some publishing tools generate these links with a 
+		<term>Cascading Style Sheet (CSS)</term> class of 
+		<synph>ullinks</synph> for the 
+		<synph>ul</synph> or 
+		<synph>ol</synph> element, and a class of 
+		<synph>ulchildlink</synph> for each of the 
+		<synph>li</synph> elements. 
+	 </p> 
+	 <p>If you don't want these links to appear in the output, there are a few
+		options. 
+	 </p> 
+	 <p>Firstly, it's important to understand why the links are there. The links
+		are either generated because the topic has a 
+		<synph>related-links</synph> element, or because related links have been
+		automatically generated based on the ditamap topic hierarchies (parent/child
+		relationships) or relationship table links. 
+	 </p> 
+	 <p>If you don't want the links generated from the 
+		<synph>related-links</synph> section, you may consider removing the
+		section from the topic, or using conditional processing to exclude it. 
+	 </p> 
+	 <p>If you don't want the links generated from the hierarchy, set the 
+		<synph>linking</synph> attribute of the 
+		<synph>map</synph> or top-level 
+		<synph>topicref</synph> elements in the ditamap to 
+	 <option>none</option>. 
+	 </p> 
+	 <p>If you don't want the links generated from the relationship table in
+		your ditamap, set the 
+		<synph>linking</synph> attribute of the 
+		<synph>reltable</synph> element to 
+	 <option>none</option>. 
+	 </p> 
+	 <p>An alternative method is to nominate a custom stylesheet for the output,
+		and set that stylesheet so that classes of 
+		<synph>ullinks</synph> and 
+		<synph>ulchildlink</synph> have a CSS styling of 
+		<codeph>display=none</codeph>. 
+	 </p> 
+  </conbody> 
+</concept> 

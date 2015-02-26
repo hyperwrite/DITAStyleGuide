@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D5030" status="new"> 
+  <title>Re-using content from different elements</title> 
+  <shortdesc>When re-using content through the conref feature, the referenced
+	 element type must match the referencing element type. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>conref
+			 attribute</indexterm><indexterm>attributes<indexterm>conref</indexterm></indexterm><indexterm>transclusion</indexterm><indexterm>re-use</indexterm><indexterm>content
+			 re-use</indexterm><indexterm>workarounds<indexterm>conref</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>You cannot re-use the text of one element directly inside the text of
+		another. 
+	 </p> 
+	 <p>For example, you cannot conref the text of a paragraph
+		(<synph>p</synph>) element into a 
+		<synph>note</synph> element as in: 
+		<codeblock>&lt;p id="wiper_blades"&gt;...&lt;/p&gt;
+...
+
+&lt;note conref="conref_source.dita#cref_terms/wiper_blades" /&gt;</codeblock>The referenced element must match the referencing element. 
+	 </p> 
+	 <p>When transcluding phrase elements, you can work around the matching
+		elements requirement that by wrapping the text to be re-used in a generic
+		phrase (<synph>ph</synph>) element. You can then re-use the 
+		<synph>ph</synph> element within other elements. 
+	 </p> 
+	 <p>For example, if you want to re-use the words 
+		<q>STi Web Site</q> within normal paragraph text, as a citation
+		(<synph>cite</synph>) element, and within cross-reference elements, you can use
+		the approach: 
+		<codeblock>&lt;ph id="sti_web"&gt;STi Web Site&lt;/ph&gt;
+...
+
+&lt;p&gt;
+  The &lt;ph conref="conref_source.dita#cref_terms/sti_web" /&gt;...
+&lt;/p&gt;
+
+&lt;p&gt;
+  As listed on the &lt;cite&gt;&lt;ph conref="conref_source.dita#cref_terms/sti_web" /&gt;&lt;/cite&gt;
+&lt;/p&gt;
+
+&lt;xref href="http://sti.<ph conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/ph_Subaru_company_name"><?xm-replace_text Phrase?></ph>.com.au" scope="external" format="html"&gt;
+		&lt;ph conref="conref_source.dita#cref_terms/sti_web" /&gt;
+&lt;/xref&gt;</codeblock> 
+	 </p> 
+	 <p rev="1.2" id="p_text_elment_conref"><ph
+		conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_DITA12"><?xm-replace_text Phrase?></ph>
+		introduced the 
+		<synph>text</synph> element. Use this element in preference to the 
+		<synph>ph</synph> element for re-using text snippets. 
+	 </p> 
+	 <section id="section_9FF81B6AB8A24726B47D1E324370488A"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<lq reftitle="Michael Priestley, Yahoo! DITA Users Group"
+		 href="http://tech.groups.yahoo.com/group/dita-users/message/11889"> 
+		  <p>&gt;&gt;is there a way to reuse the text content of one element as
+			 the text content of a different element?&lt;&lt; 
+		  </p> 
+		  <p>Generally speaking, yes: by enclosing them both in a &lt;ph&gt;,
+			 which is allowed in most text contexts. In your particular case, try creating a
+			 set of child links in the chapter topic. You can put them in a linklist to give
+			 them a specific intro etc. The links should auto-expand to include the title
+			 and shortdesc of all target topics. That way you don't have to conref. In the
+			 HTML output, even the links (at least to immediate children of the chapter
+			 topic) get auto-created based on the hierarchy of the topicrefs in the map. If
+			 you're willing to get into PDF customization, this would be another approach to
+			 take, which would save you from hand-coding links that are redundant with the
+			 TOC organization. 
+		  </p> 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

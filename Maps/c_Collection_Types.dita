@@ -1,0 +1,133 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D9214" status="new"> 
+  <title>Collection types</title> 
+  <shortdesc>The 
+	 <synph>collection-type</synph> attribute of the 
+	 <synph>topicref</synph> element defines the relationship between any nested
+	 topic references within a ditamap. Changing the collection type affects the way
+	 in which automatic links and topic previews are generated when the ditamap is
+	 processed to an output format. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>collection-type
+			 attribute</indexterm><indexterm>attributes<indexterm>collection-type</indexterm></indexterm><indexterm>generated
+			 links</indexterm><indexterm>links<indexterm>generated</indexterm></indexterm><indexterm>topic
+			 previews</indexterm><indexterm>previews<indexterm>topic</indexterm></indexterm><indexterm>automatically-generated
+			 links</indexterm><indexterm>parent-child links</indexterm><indexterm>topicref
+			 element<indexterm>attributes</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p> The way links are generated during output processing is dependent upon
+		the 
+		<synph>collection-type</synph> attribute of 
+		<term>parent</term> 
+		<synph>topicref</synph> elements in the hierarchy section of the ditamap,
+		or the containing 
+		<synph>relcell</synph> section in the reltable section of the ditamap. (A
+		parent 
+		<synph>topicref</synph> is one containing nested 
+		<synph>topicref</synph> elements, or 
+		<term>child nodes</term>.) The 
+		<synph>collection-type</synph> therefore defines the type of hierarchical
+		relationship between members of the same 
+		<term>branch</term> of a ditamap 
+		<term>tree</term>, or in the same cell in the relationship table 
+		<synph>relcell</synph> element. 
+	 </p> 
+	 <p>There are five collection types in DITA: 
+	 <dl> 
+		<dlentry> 
+		  <dt>unordered 
+		  </dt> 
+		  <dd>A collection of topics where links are generated from parent to
+			 children, and from children to parent. 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt>family 
+		  </dt> 
+		  <dd>A collection of topics where links are generated from parent to
+			 children, from children to parent, and from sibling to sibling. 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt>sequence 
+		  </dt> 
+		  <dd>A collection of topics where links are generated from parent to
+			 children, from children to parent, and from child to previous sibling (if
+			 applicable) and next sibling (if applicable). 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt>choice 
+		  </dt> 
+		  <dd>Not commonly used, but is intended for situations where the reader
+			 needs to select one child topic to proceed. This might be useful when the
+			 output document is an interactive decision-support application. Most processors
+			 treat 
+		  <option>choice</option> in the same way as 
+		  <option>unordered</option>. 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt>tree 
+		  </dt> 
+		  <dd><i>Tree</i> is not supported. 
+		  </dd> 
+		</dlentry> 
+	 </dl> 
+	 </p> 
+	 <p>Example syntax: 
+		<codeph>&lt;topicref href="abc.dita" collection-type="sequence"
+		  /&gt;</codeph> 
+	 </p> 
+	 <p>Although 
+		<synph>collection-type</synph> attributes are valid in relationship table
+		
+		<synph>relcell</synph> elements, some don't make a lot of sense in that
+		context.
+	 </p>
+	 <p>For example, setting a 
+		<synph>collection-type</synph> in a relationship table cell to 
+	 <option>sequence</option> will result in a 
+	 <uicontrol>Next Topic</uicontrol> link in the output linking to the next
+	 topic referenced in the cell, rather than the next topic in the TOC sequence
+	 (as may logically be expected by the reader). 
+	 </p> 
+	 <p importance="high">Although it is possible to set a 
+		<synph>collection-type</synph> attribute of 
+	 <option>sequence</option> to a 
+	 <synph>relcell</synph> element, this is generally confusing to the user, as
+	 it will set a topic sequence that differs from the sequence of topics in the
+	 hierarchy. The same logic applies to the 
+	 <option>choice</option> attribute value. For this reason, avoid using 
+	 <synph>collection-type</synph> attribute values of 
+	 <option>sequence</option> and 
+	 <option>choice</option>. An exception is when you are creating documents
+	 with multiple sequential navigation pathways. 
+	 </p> 
+	 <p>Likewise, a 
+		<term>reltable</term> doesn't often have parent/child relationships like
+		the hierarchy section of the map does, so using a 
+	 <option>family</option> 
+	 <synph>collection-type</synph> again rarely makes sense in 
+	 <term>reltables</term>. 
+	 </p> 
+	 <section id="section_3874427C3C724D80AA52537D3E994732"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<lq reftitle="Deborah Pickett, Yahoo! DITA Users Group">Unordered is the
+		  default if you don't specify a collection type. With
+		  collection-type="unordered", normally the output gives you an unordered list of
+		  child links. Choice is supposed to indicate that the reader should pick one
+		  child topic from those supplied. Example: a parent topic "Installing the
+		  software" with two child topics "Installing the software using the command
+		  line" and "Installing the software using the GUI". DITA-OT doesn't do anything
+		  different when publishing "unordered" or "choice". The specification for
+		  collection-type is here:
+		  http://docs.oasis-open.org/dita/v1.1/CD01/langspec/common/topicref-atts.html 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

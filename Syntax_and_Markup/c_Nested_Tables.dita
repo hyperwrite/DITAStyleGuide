@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_E9B15996F6DC41B8B45093F68D91261A" xml:lang="en"
+ status="new"> 
+  <title>Nested tables</title> 
+  <shortdesc>Simple tables can be inserted within a cell of an existing table
+	 to create complex nested tables. However, you should not use such complex
+	 tables. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>tables<indexterm>nested</indexterm></indexterm><indexterm>nested
+			 tables</indexterm><indexterm>simple
+			 tables</indexterm><indexterm>elements<indexterm>table</indexterm><indexterm>simpletable</indexterm></indexterm><indexterm>complex
+			 tables</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>DITA supports nested tables (<synph>table</synph> and 
+		<synph>simpletable</synph>) through a small workaround. While the DITA
+		content model does not allow a table cell (<synph>entry</synph> element) to
+		include a 
+		<synph>table</synph> element, it does allow a 
+		<synph>p</synph> element. And a 
+		<synph>p</synph> element can contain a table. 
+	 </p> 
+	 <p>A table can therefore be nested within a table cell provided a paragraph
+		is first added. This results in the following structure: 
+		<codeblock>&lt;table&gt;
+ &lt;tbody&gt;
+  &lt;row&gt;
+   &lt;entry&gt;
+     &lt;p&gt;&lt;table&gt;....&lt;/table&gt;&lt;/p&gt;
+   &lt;/entry&gt;
+  ...
+  &lt;/row&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;</codeblock> 
+	 </p> 
+	 <p importance="high">In the interests of simplicity, you should not use
+		nested tables. Complex tables can often be avoided by chunking the information
+		into smaller units. 
+	 </p> 
+	 <p>If the type of information is such that nested tables are absolutely
+		necessary, you should only include simple tables (<synph>simpletable</synph>)
+		within other tables. In other words, you should use a 
+		<synph>simpletable</synph> within a (normal) 
+		<synph>table</synph>, or a 
+		<synph>simpletable</synph> within a 
+		<synph>simpletable</synph>, but not a (normal) 
+		<synph>table</synph> within a (normal) 
+		<synph>table</synph>. The more complex structure of normal tables (such
+		as titles and column specifications) may cause processing problems. It is not
+		semantically sound to include a full table structure within an existing full
+		table structure. 
+	 </p>
+	 <note type="note">Some publishing tools cannot process nested tables.
+	 </note> 
+  </conbody> 
+</concept> 

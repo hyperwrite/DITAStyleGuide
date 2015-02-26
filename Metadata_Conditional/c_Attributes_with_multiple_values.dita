@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_6E8A4D9D94AA450EA4DAE3CC5C70BF9A" xml:lang="en"
+ status="new"> 
+  <title>Attributes with multiple values</title> 
+  <shortdesc>You can have more than one value for a select attribute. The
+	 different values are stored in the one attribute, separated by spaces.
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>attributes<indexterm>conditional
+				processing</indexterm><indexterm>multiple
+				values</indexterm></indexterm><indexterm>metadata attributes<indexterm>multiple
+				values</indexterm></indexterm><indexterm>multiple values in
+			 attributes</indexterm><indexterm>delimiting attribute
+			 values</indexterm><indexterm>select attributes<indexterm>multiple
+				values</indexterm></indexterm></keywords></metadata>
+  </prolog>
+  <conbody> 
+	 <p>In many cases, you may want to apply more than one value to a metadata
+		attribute. For example, a paragraph may relate to audiences of both 
+		<userinput>admin</userinput> and 
+		<userinput>manager</userinput>. 
+	 </p> 
+	 <p>Attributes can take more than one value. Spaces are used as 
+		<term>delimiters</term>, to separate the different values. For example, a
+		paragraph with two audience values would be marked up as: 
+		<codeblock>&lt;p audience="admin manager"&gt;The installation...&lt;/p&gt;</codeblock> 
+	 </p> 
+	 <p importance="high">Obviously, then, individual values of metadata
+		attributes must not contain spaces. 
+	 </p> 
+	 <section id="section_2EF15A956EF14781B01F79983AA156A8"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<lq reftitle="Phil Grisier, Yahoo! FrameMaker DITA Users Group"
+		 href="http://tech.groups.yahoo.com/group/framemaker-dita/message/3059"> In DITA
+		  by design, the filtering attributes @product, @audience, etc, use space as the
+		  separator between different filtering values. This lets you apply multiple
+		  filtering criteria to elements, just as you can apply multiple FrameMaker
+		  conditions to the same piece of text. For example: 
+		  <sl> 
+			 <sli>product="Basic Version-1" 
+			 </sli> 
+			 <sli id="li_4908740E9DC448E4BD3415E9AEF2DEA1">product="DeLuxe
+				Version-1" 
+			 </sli> 
+			 <sli id="li_4DE24177557443229F652D88D6865D52">product="Basic
+				Version-2" 
+			 </sli> 
+			 <sli id="li_7668DD308265425988307D123417CCA4">product="DeLuxe
+				Version_2" 
+			 </sli> 
+		  </sl> 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_89CD6D153FD84BBA88C394DA0715DC87" xml:lang="en"
+ status="new"> 
+  <title>Parameter lists</title> 
+  <shortdesc>When documenting programming functions and interfaces, the
+	 parameter list can be used to explain parameters passed between applications
+	 and functions. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>parameter
+			 lists</indexterm><indexterm>lists<indexterm>parameter
+				list</indexterm></indexterm><indexterm>elements<indexterm>parml</indexterm><indexterm>plentry</indexterm><indexterm>pt</indexterm><indexterm>pd</indexterm></indexterm><indexterm>parml
+			 element</indexterm><indexterm>plentry element</indexterm><indexterm>pt
+			 entry</indexterm><indexterm>pd entry</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>Parameter lists are a special purpose list used to describe parameters
+		in a program or application programming interface. The parameter list
+		(<synph>parml</synph>) is similar in structure to the general purpose
+		definition list (<synph>dl</synph>). 
+	 </p> 
+	 <p> A parameter list (<synph>parml</synph>) element contains one or more
+		parameter list entry (<synph>plentry</synph>) elements, each typically
+		containing a parameter name or term (<synph>pt</synph>) and a parameter
+		description (<synph>pd</synph>) element. 
+	 </p> 
+	 <p>An example of a parameter list being used to explain some programming code is:
+			<codeblock>&lt;codeblock&gt;callHelp(hFileName, contentId)&lt;/codeblock&gt;
+&lt;p&gt;where
+&lt;parml&gt;
+ &lt;plentry&gt;
+  &lt;pt&gt;hFileName&lt;/pt&gt;
+  &lt;pd&gt;is the relative path to the Help file&lt;/pd&gt;
+ &lt;/plentry&gt;
+ &lt;plentry&gt;
+  &lt;pt&gt;contentId&lt;/pt&gt;
+  &lt;pd&gt;is the context ID of the topic to display&lt;/pd&gt;
+ &lt;/plentry&gt;
+&lt;/parml&gt;
+&lt;/p&gt;</codeblock>
+		</p> 
+  </conbody> 
+</concept> 

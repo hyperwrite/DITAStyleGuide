@@ -1,0 +1,111 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D1828" status="new"> 
+  <title>The 
+	 <synph>linking</synph> attribute</title> 
+  <shortdesc>The 
+	 <synph>linking</synph> attribute of the 
+	 <synph>topicref</synph> and 
+	 <synph>relcell</synph> elements in the ditamap is used to specify the way
+	 in which links are generated during publishing. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>attributes<indexterm>linking</indexterm></indexterm><indexterm>topicref
+			 element</indexterm><indexterm>relcell element</indexterm><indexterm>relcolspec
+			 element</indexterm><indexterm>elements<indexterm>relcell</indexterm><indexterm>topicref</indexterm></indexterm><indexterm>reltable</indexterm><indexterm>automatic
+			 linking</indexterm><indexterm>preventing automatic
+			 linking</indexterm><indexterm>relationship
+			 table</indexterm><indexterm>ditamap</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>The 
+		<synph>topicref</synph> element (in the hierarchy section of the ditamap)
+		and the 
+		<synph>relcolspec</synph> and 
+		<synph>relcell</synph> elements (in the reltable section of the ditamap)
+		have a 
+		<synph>linking</synph> attribute. This attribute allows fine-tuning of
+		the way in which links are automatically generated in the output publication. 
+	 </p> 
+	 <p>The 
+		<synph>linking</synph> attribute values are: 
+	 <dl> 
+		<dlentry> 
+		  <dt>targetonly 
+		  </dt> 
+		  <dd>A topic can only be linked to and cannot link to other topics. 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt>sourceonly 
+		  </dt> 
+		  <dd>A topic cannot be linked to but can link to other topics. 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt>normal 
+		  </dt> 
+		  <dd>A topic can be linked to and can link to other topics. Use this to
+			 override the linking value of a parent topic. 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt>none 
+		  </dt> 
+		  <dd>A topic cannot be linked to or link to other topics. 
+		  </dd> 
+		</dlentry> 
+	 </dl> 
+	 </p> 
+	 <p>Example syntax: 
+		<codeph>&lt;topicref href="abc.dita" linking="sourceonly" /&gt;</codeph> 
+	 </p> 
+	 <p>An example of the use of the 
+		<synph>linking</synph> attribute is in the case where you don't want the
+		links to the parent topic to appear in each child topic. By setting the parent
+		topic's 
+		<synph>linking</synph> attribute to 
+	 <option>sourceonly</option>, the output result will show links from the
+	 parent to child topics, but not from child topics to the parent. 
+	 </p> 
+	 <p>Similarly, if you did not want a particular branch of the ditamap
+		hierarchy to have any generated links, you could set the parent topicref's 
+		<synph>linking</synph> attribute to 
+	 <option>none</option>. 
+	 </p> 
+	 <section id="section_52C95486F27146E68BE506C3183282F5"
+	 audience="contributor"> 
+		<title>Rationale</title> 
+		<lq>Q. I'm setting up a relationship table. So far, so good. But I'm
+		  facing the following issue. I have 3 tasks that must be linked to a fourth one
+		  which, in turn, must not be linked to the 3 other tasks. How can I set this
+		  relationship for tasks in the same cell? A. Looks like you'll want to include
+		  the following around all 4 &lt;topicref&gt;s in the cell:            
+		  &lt;topicgroup collection-type = "family"/&gt;   Then, the first 3
+		  &lt;topicref&gt;s should specify &lt;topicref type = "task" linking =
+		  "sourceonly"&gt; so the DITA OT will regard them as only linking to other
+		  task topics specified in the cell (not as "targets" for links).   The last
+		  &lt;topicref&gt; should specify &lt;topicref type = "task" linking =
+		  "targetonly"&gt; so it will only be linked *to*, and not contain any links back
+		  to the other 3 topics. <cite>Question (nhezumi) and Answer (Paul Masalsky) on
+			 Yahoo! DITA Users Group</cite> 
+		</lq> 
+		<lq reftitle="Deborah Pickett, Yahoo! DITA Users Group"> 
+		  <p>Q. I want to remove the "Parent Topic" link sections from a ditamap,
+			 but retain the Next/Previous link sections. Do I do this with a reltable? 
+		  </p> 
+		  <p>A. You could set @linking="sourceonly" on a "parent" topicref. That
+			 would stop anything 
+			 <b>in this part of the TOC</b> from linking to that parent topic. If
+			 you value the parent link generated for some (but not all) of the "child"
+			 topics, you could add those back in with another topicref hierarchy with
+			 @toc="no" and @print="no" to get just the relationships. 
+		  </p> 
+		</lq> 
+		<lq reftitle="Yuki, Yahoo! DITA Users Group">The other solution is to set
+		  linking="none" on all of the top-level topicrefs in your map. But if I set
+		  linking="none", I lost breadcrumbs too. 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

@@ -1,0 +1,131 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<concept id="concept_3A4DA885664C4A97B88D86376DE8833C" xml:lang="en"> 
+  <title>Other approaches to information types</title> 
+  <shortdesc>DITA is not the only approach to embrace the concept of 
+	 <term>information types</term>. 
+	 <ph
+	  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_InfoMapping"><?xm-replace_text Phrase?></ph>
+	 pioneered the concept. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>information
+			 types</indexterm><indexterm>Infomation Mapping</indexterm><indexterm>AML
+			 (Assistance Mark-up Language)</indexterm><indexterm>Microsoft AML (Assistance
+			 Mark-up Language)</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>When working in a topic-based writing architecture, topics are the
+		building blocks of documents (or 
+		<term>collections</term>). One of the ideas common to writing
+		methodologies and content models is 
+		<term>information types</term>. 
+	 </p> 
+	 <p>DITA's three information types are 
+		<term>descended</term> (in the Darwinian sense) from the 
+		<term>topic</term> proto information type. 
+	 </p> 
+	 <p> 
+		<fig id="fig_F8A1D54C170349BE93464EF0181B6650"> 
+		  <title>DITA Base Content Model</title><image
+		  href="../images/info_type_content_model.gif"
+		  id="image_F4A91DE81F9B466C9F388573B08B7D48" align="left" placement="break"
+		  width="265px" height="88px"> 
+			 <alt>Base DITA information model with three core information types of
+				concept, task and reference 
+			 </alt></image> 
+		</fig> 
+	 </p> 
+	 <p>Likewise, the 
+		<ph
+		conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_InfoMapping"><?xm-replace_text Phrase?></ph>
+		methodology categorises topics (or 
+		<term>maps</term>, in 
+		<term>IM</term> terminology) into information types, although the
+		categorisation is different. And Microsoft identified eight slightly different
+		information types for its Assistance Mark-up Language (AML) schema. 
+	 </p> 
+	 <table id="table_D82186C1A41746C98605C115D521FED1" colsep="1"> 
+		<tgroup cols="3"><colspec colname="col1"/><colspec
+		  colname="col2"/><colspec colname="col3"/> 
+		  <thead> 
+			 <row valign="top"> 
+				<entry align="left">DITA (Base) Information Types 
+				</entry> 
+				<entry align="left">Information Mapping Information Types 
+				</entry> 
+				<entry align="left">Microsoft AML Content Types 
+				</entry> 
+			 </row> 
+		  </thead> 
+		  <tbody> 
+			 <row valign="top"> 
+				<entry align="left"> 
+				  <ul outputclass="tablelistbullet"
+				  id="ul_231D2A36752743718A8C137A75B80ABC"> 
+					 <li outputclass="tablelistbullet"
+					 id="li_C4F4D9462201423E8804B259F4997CA2">Concept 
+					 </li> 
+					 <li outputclass="tablelistbullet"
+					 id="li_689E3EF749CE4F658B7447DB818EAE5D">Task 
+					 </li> 
+					 <li outputclass="tablelistbullet"
+					 id="li_41E32C1463434CCE9386EB397C775F3D">Reference 
+					 </li> 
+				  </ul> 
+				</entry> 
+				<entry align="left"> 
+				  <ul outputclass="tablelistbullet"
+				  id="ul_8DD375E01FAD40038309DEC5C7133295"> 
+					 <li outputclass="tablelistbullet"
+					 id="li_3BE0C5B8E8474A48B8C4AC8F1DA89F18">Principle 
+					 </li> 
+					 <li outputclass="tablelistbullet"
+					 id="li_D48C7198F6CC487890E97E68EC8DFCBF">Process 
+					 </li> 
+					 <li outputclass="tablelistbullet"
+					 id="li_5FD3E21769314754B666AC4534ABF9A7">Procedure 
+					 </li> 
+					 <li outputclass="tablelistbullet"
+					 id="li_41E9F54EEC4142AF97462C278141D250">Concept 
+					 </li> 
+					 <li outputclass="tablelistbullet"
+					 id="li_3A71DC68232041B2A30D8DBA09C42BFA">Structure 
+					 </li> 
+				  </ul> 
+				</entry> 
+				<entry align="left"> 
+				  <ul outputclass="tablelistbullet"
+				  id="ul_5C9830DCEA544270A5426E0CDB8B5C70"> 
+					 <li outputclass="tablelistbullet"
+					 id="li_90C717C82E2344369EF1F5451E339CDE">Conceptual 
+					 </li> 
+					 <li outputclass="tablelistbullet"
+					 id="li_FEDF49DA09134F3199A74056AF7659D1">FAQ 
+					 </li> 
+					 <li outputclass="tablelistbullet"
+					 id="li_A2D31092056D4810BD5248321A2F6868">Glossary 
+					 </li> 
+					 <li outputclass="tablelistbullet"
+					 id="li_D0D8DFD27E8F4407BBA16DD6CAFBE561">Procedural 
+					 </li> 
+					 <li outputclass="tablelistbullet"
+					 id="li_79B68E39CAEC4D7DAA240FC14E258B82">Reference 
+					 </li> 
+					 <li outputclass="tablelistbullet"
+					 id="li_985A525526C944C1BC3CA2ADFF7C9179">Reusable 
+					 </li> 
+					 <li outputclass="tablelistbullet"
+					 id="li_6D6912C133544FAF9C1A6BA606019E8C">Troubleshooting 
+					 </li> 
+					 <li outputclass="tablelistbullet"
+					 id="li_434AEBB015B243BC98DEF6FAF8F6778E">Tutorial 
+					 </li> 
+				  </ul> 
+				</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+  </conbody> 
+</concept> 

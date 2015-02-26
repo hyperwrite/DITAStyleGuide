@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_B83BDD2510714DC2A3B4B8959F2C628B" xml:lang="en"
+ status="new"> 
+  <title>Information typing</title> 
+  <shortdesc><term>Information typing</term> is a methodology which underpins
+	 DITA. Information is structured by topics with content models appropriate to
+	 the nature of the content. The three base DITA information types are concept,
+	 task and reference. 
+  </shortdesc> 
+  <prolog><author
+	 conref="../../conref/conref_source_metadata.dita#topic_hw_conref_meta/author_tony_self"></author><metadata><keywords><indexterm>information
+			 types</indexterm></keywords></metadata>
+  </prolog>
+  <conbody>
+	 <p
+	  conref="../Topics_and_Information_Types/c_Information_Types_Explained.dita#D1639/infotype_categories"><?xm-replace_text Paragraph?>
+	 </p>
+	 <p>Information typing is also used in other methodologies such as 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_InfoMapping"><?xm-replace_text Phrase?></ph>.
+	 </p>
+  </conbody> 
+</concept>

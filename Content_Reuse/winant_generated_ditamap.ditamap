@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<map>
+   <topicref href="Content_Reuse/c_Conref_Element_Must_Be_Valid.dita" scope="local" format="dita" />
+   <topicref href="Content_Reuse/c_Conref_of_Siblings.dita" scope="local" format="dita" />
+   <topicref href="Content_Reuse/c_Conref_Push.dita" scope="local" format="dita" />
+   <topicref href="Content_Reuse/c_Conref_vs_Conditions.dita" scope="local" format="dita" />
+   <topicref href="Content_Reuse/c_Content_Reuse_Definition.dita" scope="local" format="dita" />
+   <topicref href="Content_Reuse/c_Indirection_with_keyref.dita" scope="local" format="dita" />
+   <topicref href="Content_Reuse/c_Linking_Dangers_with_Content_Reuse.dita" scope="local" format="dita" />
+   <topicref href="Content_Reuse/c_Nested_Conrefs.dita" scope="local" format="dita" />
+   <topicref href="Content_Reuse/c_Organising_Reuse_Elements.dita" scope="local" format="dita" />
+   <topicref href="Content_Reuse/c_Reusing_Content_in_Different_Element.dita" scope="local" format="dita" />
+   <topicref href="Content_Reuse/c_Using_Entities_for_Variables.dita" scope="local" format="dita" />
+   <topicref href="Content_Reuse/c_Variables_conrefs_or_attributes.dita" scope="local" format="dita" />
+   <topicref href="Content_Reuse/c_Writing_For_Reuse.dita" scope="local" format="dita" />
+   <topicref href="Content_Reuse/c_Writing_for_Reuse_2.dita" scope="local" format="dita" />
+</map>

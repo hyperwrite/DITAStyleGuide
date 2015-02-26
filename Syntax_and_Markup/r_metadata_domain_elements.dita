@@ -1,0 +1,127 @@
+<?xml version="1.0"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<reference id="reference_6FB31F18C6F749D78832DB80AA363731" status="new"
+ xml:lang="en"> 
+  <title>Metadata domain elements</title> 
+  <shortdesc>The elements in the metadata domain each have a specific semantic
+	 purpose. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>elements<indexterm>software</indexterm></indexterm><indexterm>software
+			 domain</indexterm></keywords></metadata>
+  </prolog> 
+  <refbody> 
+	 <simpletable id="simpletable_4211B5AF0F2E499E96062BE134E7530A"> 
+		<sthead><stentry>Element Name</stentry><stentry>Semantic
+			 Purpose</stentry> 
+		</sthead> 
+		<strow><stentry>index-see</stentry><stentry>redirection to another index
+			 entry</stentry> 
+		</strow> 
+		<strow><stentry>index-see-also</stentry><stentry>additional redirection
+			 to another index entry</stentry> 
+		</strow> 
+		<strow><stentry>index-sort-as</stentry><stentry>alternative sort phrase
+			 for an index entry</stentry> 
+		</strow> 
+		<strow><stentry>topicgroup</stentry><stentry>non-hierarchical group of
+			 topics in a ditamap</stentry> 
+		</strow> 
+		<strow><stentry>topichead</stentry><stentry>title only heading entry in a
+			 ditamap</stentry> 
+		</strow> 
+		<strow><stentry>authorinformation</stentry><stentry>author information
+			 (in a bookmap)</stentry> 
+		</strow> 
+		<strow><stentry>addressdetails</stentry><stentry>address details (in a
+			 bookmap)</stentry> 
+		</strow> 
+		<strow><stentry>administrativearea</stentry><stentry>address county,
+			 state, province or other administrative area within address details (in a
+			 bookmap)</stentry> 
+		</strow> 
+		<strow><stentry>contactnumber</stentry><stentry>contact telephone number
+			 within a group of contact numbers (in a bookmap)</stentry> 
+		</strow> 
+		<strow><stentry>contactnumbers</stentry><stentry>group of contact
+			 telephone numbers within address details (in a bookmap)</stentry> 
+		</strow> 
+		<strow><stentry>country</stentry><stentry>address country within address
+			 details (in a bookmap)</stentry> 
+		</strow> 
+		<strow><stentry>emailaddresses</stentry><stentry>group of e-mail
+			 addresses within address details (in a bookmap)</stentry> 
+		</strow> 
+		<strow><stentry>emailaddress</stentry><stentry>e-mail address within a
+			 group of e-mail addresses (in a bookmap)</stentry> 
+		</strow> 
+		<strow><stentry>firstname</stentry><stentry>first or given name within
+			 name details (in a bookmap)</stentry> 
+		</strow> 
+		<strow><stentry>generationidentifier</stentry><stentry>generation
+			 identifier within name details (in a bookmap)</stentry> 
+		</strow> 
+		<strow><stentry>honorific</stentry><stentry>honorific within name details
+			 (in a bookmap)</stentry> 
+		</strow> 
+		<strow><stentry>lastname</stentry><stentry>last or family name within
+			 name details (in a bookmap)</stentry> 
+		</strow> 
+		<strow><stentry>locality</stentry><stentry>locality or city within
+			 address details (in a bookmap)</stentry> 
+		</strow> 
+		<strow><stentry>localityname</stentry><stentry>locality name within
+			 locality (in a bookmap)</stentry> 
+		</strow> 
+		<strow><stentry>middlename</stentry><stentry>middle name within name
+			 details (in a bookmap)</stentry> 
+		</strow> 
+		<strow><stentry>namedetails</stentry><stentry>name details within 
+			 <ph
+			  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_organisation"><?xm-replace_text Phrase?></ph>
+			 information (in a bookmap)</stentry> 
+		</strow> 
+		<strow><stentry>organizationinfo</stentry><stentry><ph
+			 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_organisation"><?xm-replace_text Phrase?></ph>
+			 information (in a bookmap)</stentry> 
+		</strow> 
+		<strow><stentry>organizationname</stentry><stentry><ph
+			 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_organisation"><?xm-replace_text Phrase?></ph>
+			 name within 
+			 <ph
+			  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_organisation"><?xm-replace_text Phrase?></ph>
+			 name details (in a bookmap)</stentry> 
+		</strow> 
+		<strow><stentry>organizationnamedetails</stentry><stentry><ph
+			 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_organisation"><?xm-replace_text Phrase?></ph>
+			 name details within name details (in a bookmap)</stentry> 
+		</strow> 
+		<strow><stentry>otherinfo</stentry><stentry>other information within 
+			 <ph
+			  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_organisation"><?xm-replace_text Phrase?></ph>
+			 name details (in a bookmap)</stentry> 
+		</strow> 
+		<strow><stentry>personinfo</stentry><stentry>person information (in a
+			 bookmap)</stentry> 
+		</strow> 
+		<strow><stentry>personname</stentry><stentry>person name within name
+			 details (in a bookmap)</stentry> 
+		</strow> 
+		<strow><stentry>postalcode</stentry><stentry>postal code or zip code
+			 within locality (in a bookmap)</stentry> 
+		</strow> 
+		<strow><stentry>thoroughfare</stentry><stentry>street, road, or other
+			 thoroughfare within address details (in a bookmap)</stentry> 
+		</strow> 
+		<strow><stentry>url</stentry><stentry>URL or URI within a group of URLs
+			 (in a bookmap)</stentry> 
+		</strow> 
+		<strow><stentry>urls</stentry><stentry>group of URLs or URIs within 
+			 <ph
+			  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_organisation"><?xm-replace_text Phrase?></ph>
+			 details (in a bookmap)</stentry> 
+		</strow> 
+	 </simpletable> 
+  </refbody> 
+</reference> 

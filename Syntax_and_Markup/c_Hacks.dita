@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D4699" status="new"> 
+  <title>Hacks</title> 
+  <shortdesc>Avoid 
+	 <term>hacking</term>: using mark-up workarounds that either break the DITA
+	 language rules or break the semantic integrity. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>hacks</indexterm><indexterm>workarounds</indexterm><indexterm>tag
+			 abuse</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p importance="high">Do not corrupt the semantics of a topic or document to
+		achieve a formatting outcome. This is known as 
+		<term>tag abuse</term>.
+	 </p> 
+	 <p>For example, don't use tables for formatting only. Don't use a
+		combination of elements, such as 
+		<synph>cite</synph> within 
+		<synph>codeblock</synph>, so that custom processing rules can be set up
+		for a particular formatting objective.
+	 </p> 
+	 <section id="section_0F5F949696FA4BE4A888FF787B0F4B6E"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<lq reftitle="Glenn Emerson, Yahoo! DITA Users Group"
+		 href="http://tech.groups.yahoo.com/group/dita-users/message/17484">I second
+		  Eliot's comment. Never deviate from a standard usage of mark-up just to get a
+		  certain appearance in the output. You'll create more future headaches than you
+		  solve. One of the beauties of a standard is that anyone who knows it can work
+		  with the content. However, if you don't follow the standard, others will be in
+		  for lots of little surprises. 
+		</lq> 
+		<p><b>Comment</b> 
+		</p> 
+		<lq reftitle="Paul Masalsky, Yahoo! DITA Users Group">Our workaround for
+		  this issue involves taking some chances with table cells. For example, with
+		  &lt;cite&gt; in a table cell, we determined that it is highly unlikely (though
+		  certainly not impossible) that book citations appear in table cells that incur
+		  page breaks. Therefore we could strip the keep-together attribute for table
+		  cells where &lt;cite&gt; was a child. This eliminated the issue with text
+		  scrunching of content within &lt;cite&gt;. We're hoping the issue reporting
+		  queue doesn't fill up with table cell problems. But I don't think it will, and
+		  solving the problem with scrunching text in &lt;cite&gt; will go over well. 
+		</lq> 
+		<p><b>Reply</b> 
+		</p> 
+		<lq reftitle="Julio Vazquez, Yahoo! DITA Users Group">While this may be a
+		  decent workaround, it muddies the cite semantic for your information. This
+		  probably is not an issue now, but when search engines become more powerful and
+		  folks can query for topics that contain citations, this will create a large
+		  number of false positives in the results. As this is an issue only when it
+		  comes to PDF generation, maybe there should be an attribute on elements that
+		  could cause this sort of problem to create some sort of break anywhere for pdf
+		  to trigger when they are in tables. I'm sure it's not going to be a simple
+		  matter to implement but I'd rather see the transform provide a method than a
+		  workaround that sullies semantics. 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D2978" status="new"> 
+  <title>Figures and images</title> 
+  <shortdesc>Images are placed in topic content using the 
+	 <synph>image</synph> element. The image element can stand alone, or can be
+	 contained within a figure (<synph>fig</synph>) element. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>SVG</indexterm><indexterm>images</indexterm><indexterm>graphics</indexterm><indexterm>figures</indexterm><indexterm>fig
+			 element</indexterm><indexterm>image element</indexterm><indexterm>inline
+			 images</indexterm><indexterm>elements<indexterm>fig</indexterm><indexterm>image</indexterm></indexterm><indexterm>illustrations</indexterm><indexterm>photo
+			 credits</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>Although images can be placed in a DITA topic as 
+		<synph>image</synph> elements without a surrounding 
+		<synph>figure</synph> element, figures are generally the best way to
+		structure graphics and other illustrations. The exception is for simple inline
+		images (that is, images that are part of the flow of the text), where an
+		independent 
+		<synph>image</synph> element should be used. 
+	 </p> 
+	 <p>Most commonly, images are stored is separate files external to DITA, but
+		it is possible to embed XML-based image formats, such as 
+		<term>SVG</term>, within the DITA topic XML. 
+	 </p> 
+	 <p><term>Figures</term> in DITA are container elements typically comprising
+		a 
+		<synph>title</synph> element, an 
+		<synph>image</synph> element, and a 
+		<synph>desc</synph> element. 
+	 </p> 
+	 <p>The following example shows the DITA code for a typical figure. 
+		<codeblock>&lt;fig&gt;
+ &lt;title&gt;Charles Darwin&lt;/title&gt;
+ &lt;desc&gt;
+  &lt;cite&gt;Photo: Library of Congress, Prints &amp; Photographs
+  Division, [reproduction number, LC-USZ61-104]&lt;/cite&gt;
+ &lt;/desc&gt;
+ &lt;image placement="inline" align="right" width="208px" height="320px"
+  href="../images/darwin_library_of_congress.jpg"&gt;
+  &lt;alt&gt;Photo of Charles Darwin: Library of Congress, Prints and
+  Photographs Division, [reproduction number, LC-USZ61-104]&lt;/alt&gt;
+ &lt;image&gt;
+&lt;/fig&gt;</codeblock> 
+	 </p> 
+	 <p>The 
+		<synph>title</synph> element contains a short, descriptive title of the
+		figure. The 
+		<synph>image</synph> element's attributes contains the location,
+		dimensions and placement of the image file, and a child 
+		<synph>alt</synph> element containing an alternative text description of
+		the image (for reading devices that don't display images or readers who don't
+		see images). The 
+		<synph>desc</synph> element contains further information about the image,
+		including any photo credits or citations. 
+	 </p> 
+	 <p>Although the 
+		<synph>title</synph> element appears before the 
+		<synph>img</synph> element in DITA mark-up, the sequence can be altered
+		in the output by modifying the publishing process. Do not break the semantics
+		by using workarounds (such as moving the 
+		<synph>title</synph> to 
+		<synph>figgroup</synph> element after the 
+		<synph>img</synph>) to achieve a formatting outcome. 
+	 </p> 
+	 <p>The sample figure DITA code might result in the following when
+		transformed into XHTML. 
+		<fig id="fig_9C377B1DB174464FA43E76B6C4760D7F"> 
+		  <title>Example of a figure rendered in XHTML</title><image
+		  placement="break" align="left"
+		  id="image_144990A88AC2488DACEA0E7D5EDA0F4E"
+		  href="../images/figure_example_result.png" width="341px" height="441px"> 
+			 <alt>Example of a figure rendered in XHTML 
+			 </alt></image> 
+		</fig> 
+	 </p> 
+	 <section id="section_B2DBA589D438488E84BE5B277E4C1833"
+	 audience="contributor"> 
+		<title>Rationale</title> 
+		<p>Answering a question about whether images should be placed directly
+		  (in a stepresult element) or in a figure structure: 
+		  <lq reftitle="Leigh White, Yahoo! DITA Users Group"
+		  href="http://tech.groups.yahoo.com/group/dita-users/message/17506">I'd say that
+			 if everything is working for you now, there is no need to change
+			 anything...doesn't seem like there is any tag abuse going on. &lt;fig&gt;, to
+			 my thinking, is to be used when you need to add a caption, description or other
+			 data to an &lt;image&gt;. Some groups prefer the practice of using
+			 &lt;image&gt; only for inline images and &lt;fig&gt; for all others, but unless
+			 you really need the additional data, I think &lt;fig&gt; is overkill. Your main
+			 concern is, if you are editing transforms, to make sure that you are
+			 accommodating both &lt;image&gt; and &lt;fig&gt; correctly. The default OT
+			 transforms already do this. As for &lt;ul&gt; vs. &lt;choices&gt;, while
+			 &lt;choices&gt; is the more semantically accurate tag for that kind of
+			 information, it is, after all, just a specialization of &lt;ul&gt;. So, if you
+			 do not find it a problem that your choices are not absolutely semantically
+			 tagged as such, then there's no functional reason to change it. 
+		  </lq> 
+		</p> 
+	 </section> 
+  </conbody> 
+</concept> 

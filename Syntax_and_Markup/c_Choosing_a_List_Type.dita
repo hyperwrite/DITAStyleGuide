@@ -1,0 +1,175 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_154220B965BB4734A1029A994B5DC554" xml:lang="en"
+ status="new"> 
+  <title>Types of lists</title> 
+  <shortdesc>There are four semantically-distinct general purpose list types in
+	 DITA, each of which is typically rendered differently in the output. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>lists</indexterm><indexterm>simple
+			 lists</indexterm><indexterm>ordered lists</indexterm><indexterm>bullet
+			 lists</indexterm><indexterm>definition lists</indexterm><indexterm>unordered
+			 lists</indexterm><indexterm>numbered
+			 lists</indexterm><indexterm>elements<indexterm>sl</indexterm><indexterm>dl</indexterm><indexterm>ul</indexterm><indexterm>ol</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>The four list types in base DITA are: 
+	 <dl> 
+		<dlentry> 
+		  <dt>Simple Lists 
+		  </dt> 
+		  <dd>A simple list (<synph>sl</synph>) is one where the items in the
+			 list are short phrases, and where the order of items in the list is not
+			 important. The list is usually rendered with each item on a separate line,
+			 without bullets or numbers. 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt>Bulleted (unordered) Lists 
+		  </dt> 
+		  <dd>An unordered list (<synph>ul</synph>) is one where the order of
+			 items in the list is not important. The list is usually rendered with bullets
+			 against each list item. The items are typically blocks of text. 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt>Numbered (ordered) Lists 
+		  </dt> 
+		  <dd>An ordered list (<synph>ol</synph>) is one where the order of items
+			 is critical to the meaning. The list is usually rendered with sequential
+			 numbers against the list items. 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt>Definition Lists 
+		  </dt> 
+		  <dd>A definition list (<synph>dl</synph>) is one comprising a set of
+			 terms and corresponding definitions. The list is usually rendered with
+			 definitions indented from the term and on the next line, or with definitions
+			 indented from the term on the same line as the term. 
+		  </dd> 
+		</dlentry> 
+	 </dl> 
+	 </p> 
+	 <p>These lists are semantically distinct, although the difference between a
+		simple list and an unordered list is minor. Some processors may output simple
+		lists as inline lists, rather than block lists (separate lines per item). 
+	 </p> 
+	 <p importance="high">List types are not interchangeable; the content of the
+		list will determine which list type is appropriate for it. Choose a list type
+		by considering the nature of the list, not by the way you think the list will
+		be rendered in the output. 
+	 </p> 
+	 <fig id="fig_176CCEBE157D4B5D98E40233B0A75C59"> 
+		<title>The difference between simple and unordered lists</title><image
+		placement="break" align="left" href="../images/sl_vs_ul.png" width="425px"
+		height="173px" id="image_9620853062E04B72B5AED6C50B3B33F6"> 
+		  <alt>Screen captures showing the typical rendering difference between
+			 simple and unordered lists in PDF output 
+		  </alt> 
+		</image> 
+	 </fig> 
+	 <fig id="fig_5B230E12D4E440EA8AE6D95E4890A278"> 
+		<title>The difference between definition and unordered
+		  lists</title><image placement="break" align="left"
+		id="image_46E0C9B1ABE54285A2C7C7C7F5E61BED"
+		alt="Screen captures showing the difference between unordered and definition lists in PDF output"
+		href="../images/list_types_1.png" width="413px" height="358px"> 
+		  <alt>Screen captures showing the difference between unordered and
+			 definition lists in PDF output 
+		  </alt> 
+		</image> 
+	 </fig> 
+	 <p importance="high">Although simple lists are technically valid inside
+		ordered, unordered and definition list items, you should avoid nesting simple
+		lists inside other lists. 
+	 </p> 
+	 <p>DITA includes some other special purpose list structures, such as
+		parameter list (<synph>parml</synph>) and choice list (<synph>choices</synph>).
+		
+	 </p> 
+	 <section id="section_7E813A60BA5C4503ACC9ECBA0FD64830"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<lq reftitle="DITA Language Reference">The simple list (&lt; sl&gt;)
+		  element contains a simple list of items of short, phrase-like content, such as
+		  in documenting the materials in a kit or package. On output, the list should
+		  have no bullets, on the assumption that each item is short enough to fit on one
+		  line, and needs no additional differentiation from its neighbors. 
+		</lq> 
+		<lq href="http://tech.groups.yahoo.com/group/dita-users/message/16678"
+		 reftitle="Julio J. Vazquez, Yahoo! DITA Users Group"> For the case where you
+		  wanted a &lt;ul&gt; without bullets, you should be using &lt;sl&gt;. As for the
+		  other cases, I agree with both Eliot and Gunner. You really should try to
+		  define what your semantics are and either use the correct base element or
+		  specialize. However, if you add a value to an outputclass attribute, then you
+		  have to provide an XSLT that tests the value of the outputclass attribute for a
+		  specific element class. If you're not familiar with XSLT, XSL-FO and XPATH,
+		  this can be daunting, though you can look through the existing code to get some
+		  ideas. 
+		</lq> 
+		<lq reftitle="aero13972486, Yahoo! DITA Users Group"
+		href="http://tech.groups.yahoo.com/group/dita-users/message/16644"> Hope this
+		  is the right group for this type of question. What element should I use to
+		  describe a piece of text that is place next to a textfield and is used to
+		  describe it. I'm using UICONTROL for the textfield &lt;uicontrol&gt;Name&lt;
+		  /uicontrol&gt; and then the text should read "Your full name. This is shown in
+		  reports and listings. e.g. *John Smith*" 
+		</lq> 
+		<lq reftitle="Julio Vazquez, Yahoo! DITA Users Group"
+		 href="http://tech.groups.yahoo.com/group/dita-users/message/16644"> Hi Aero,
+		  This falls into the area of the difference between a description of something
+		  and the actual something. Here's a stab of what I would do if I were
+		  documenting this in a help system. &lt;dl&gt;&lt;dlhead&gt;
+		  &lt;dthd&gt;Control&lt; /dthd&gt;&lt;ddhd&gt; Meaning&lt;/
+		  ddhd&gt;&lt;/dlhead&gt; &lt;dlentry&gt; &lt;dt&gt;&lt;uicontrol&gt;
+		  Name&lt;/uicontrol&gt; &lt;/dt&gt; &lt;dd&gt;Your full name, for example
+		  &lt;userinput&gt;John Smith&lt;/userinput&gt; .&lt;/dd&gt; &lt;/dlentry&gt;
+		  &lt;/dl&gt; This also gives me the ability to reuse any of the entries I need
+		  elsewhere. 
+		</lq> 
+		<lq reftitle="Phil Grisier, Yahoo! DITA Users Group">For example, someone
+		  authors a bulleted list where the order is important because they build the
+		  case for some point of view. In such a case, the items are related and not
+		  independent thoughts. In such cases, authors should decorate them accordingly.
+		  It's our natural language to do so. When people list their arguments in a
+		  debate, they use an ordered construct by saying something like, "First, I don't
+		  like those shoes. Second, they don't match my handbag, and third -- the don't
+		  even fit!". 
+		</lq> 
+	 </section> 
+	 <example id="section_3589A74F43744A359C875F52029E0C24"
+	  audience="contributor"> 
+		<title>Examples of Lists</title> 
+		<p>The 
+		  <ph
+			conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/ph_Subaru_company_name"><?xm-replace_text Phrase?></ph>
+		  
+		  <ph
+			conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/ph_Impreza_product_name"><?xm-replace_text Phrase?></ph>
+		  range includes two turbo-charged models: 
+		  <sl> 
+			 <sli>WRX 
+			 </sli> 
+			 <sli>WRX STi 
+			 </sli> 
+		  </sl> 
+		</p> 
+		<p>The 
+		  <ph
+			conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/ph_Subaru_company_name"><?xm-replace_text Phrase?></ph>
+		  
+		  <ph
+			conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/ph_Impreza_product_name"><?xm-replace_text Phrase?></ph>
+		  range includes two turbo-charged models: 
+		<ul id="ul_55D023BE03ED4162B59466BD815DD806"> 
+		  <li id="li_57B2565B3F584A818CD4753ADFFE31C7">WRX 
+		  </li> 
+		  <li id="li_BC8E3FF882D64EDDA5B62B0C6B066568">WRX STi 
+		  </li> 
+		</ul> 
+		</p> 
+	 </example> 
+  </conbody> 
+</concept> 

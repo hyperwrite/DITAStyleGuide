@@ -1,0 +1,154 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D3781" status="new"> 
+  <title>Lists within paragraphs</title> 
+  <shortdesc>Whether a list is contained within a paragraph, or whether it
+	 occurs as a separate parallel block after the paragraph, depends on the
+	 context. If the paragraph contains a lead-in to the list, then that list is
+	 bound to the paragraph, and the list should be a child of the paragraph. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>lists</indexterm><indexterm>paragraphs<indexterm>containing
+				lists</indexterm></indexterm><indexterm>lead-in
+			 sentences</indexterm><indexterm>stem
+			 sentences</indexterm><indexterm>translation</indexterm><indexterm>nested</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>DITA permits you to use a structure for a list of items where the list
+		exists within a paragraph element. You can alternatively create a list
+		structure without a surrounding paragraph. In other words, both of the
+		following are valid. 
+	 </p> 
+	 <codeblock>&lt;p&gt;
+ &lt;ul&gt;
+  &lt;li&gt;Point 1&lt;/li&gt;
+  &lt;li&gt;Point 2&lt;/li&gt;
+ &lt;/ul&gt;
+&lt;/p&gt; 
+</codeblock> 
+	 <p>and 
+	 </p> 
+	 <codeblock>&lt;ul&gt;
+ &lt;li&gt;Point 1&lt;/li&gt;
+ &lt;li&gt;Point 2&lt;/li&gt;
+&lt;/ul&gt;</codeblock> 
+	 <p>The best choice is the structure that is semantically correct, and that
+		will depend upon the context. 
+	 </p> 
+	 <p>In most cases, the second option (a standalone list structure) is
+		correct semantically, because most lists do not logically fall within a
+		paragraph, and cannot be logically be surrounded by a paragraph. Further, if
+		the paragraph has no content other than the list, then it is probably
+		superfluous. 
+	 </p> 
+	 <p>However, in some cases, the list may logically belong within the same
+		idea as the surrounding paragraph. In such cases, there will be text within the
+		paragraph element before and/or after the list element. For example: 
+	 </p> 
+	 <codeblock>&lt;p&gt;The four turbo-charged models are: 
+ &lt;sl&gt;
+  &lt;sli&gt;XRW&lt;/sli&gt;
+  &lt;sli&gt;XRW Super&lt;/sli&gt;
+  &lt;sli&gt;Lumberer XT&lt;/sli&gt;
+  &lt;sli&gt;Liberty GT.&lt;/sli&gt;
+ &lt;/sl&gt; 
+ &lt;/p&gt;</codeblock> 
+	 <p>A more complex example is: 
+		<codeblock>&lt;p&gt;The four turbo-charged models 
+ &lt;sl&gt;
+ &lt;sli&gt;XRW&lt;/sli&gt;
+  &lt;sli&gt;XRW Super&lt;/sli&gt;
+  &lt;sli&gt;Lumberer XT&lt;/sli&gt;
+  &lt;sli&gt;Liberty GT&lt;/sli&gt;
+ &lt;/sl&gt; 
+ are the most expensive of their makes.&lt;/p&gt;</codeblock> 
+	 </p> 
+	 <p>When considering content re-use, the paragraph in the preceding example
+		could be re-used, and would always include the list, as it is part of the same
+		idea. The list could also be re-used without the paragraph text. But the
+		paragraph text could not be re-used without the list. 
+	 </p> 
+	 <p>Some people treat lead-in sentences, or stem sentences, in the same way.
+		
+		<ph importance="high">If a stem sentence ends with a colon, then it
+		  should only be re-used with the list it supports. Therefore, the stem sentence
+		  and the list should be in the same semantic element. 
+		</ph> 
+	 </p> 
+	 <fig id="fig_783BDD9FF2994425A982532EC255D7D9"> 
+		<title>Comparison between parallel and embedded lists</title><image
+		placement="break" align="left"
+		id="image_D9E4BBAB09BE4B29B9FC3CA45F5FA61B"
+		href="../images/parallel_vs_embedded_lists.png" width="341px" height="220px"> 
+		  <alt>Diagram showing the difference between parallel stem sentence and
+			 list and list embedded in stem sentence paragraph 
+		  </alt></image> 
+	 </fig> 
+	 <note
+	  conref="c_Keeping_Connected_Blocks_Together.dita#D9385/note_localisation_nested_blocks"><?xm-replace_text {note}?>
+	 </note> 
+	 <section id="section_B47D99AED67C48609C8D5A4B289B784E"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<p>There is mixed opinion on this issue on the DITA forums. One of the
+		  strongest views expressed varies from my own views, because I think it doesn't
+		  take into account the semantic binding of a stem sentence to its following
+		  text. The view that block items should not be used as inline items is a furphy,
+		  because there is not neat separation of block and inline in DITA. For example,
+		  a list item is a block element, but it appears within an unordered list
+		  element, which is a block element. A list is just that: a list. Lists can be
+		  inline lists, bulleted lists, or numbered lists. Whether the list is displayed
+		  in separate paragraphs or on the one line is a matter for processing, not for
+		  authoring. 
+		</p> 
+		<p>My approach, of allowing lists within paragraphs if the context
+		  suggests that, is consistent with other guidelines such as 
+		  <xref href="c_Paragraphs_within_Notes.dita#D9149"
+		  type="concept" format="dita" scope="local"><?xm-replace_text Paragraphs (and other block elements) within notes?></xref>
+		  and 
+		  <xref href="c_Paragraphs_Inside_Tables.dita#D3760" type="concept"
+		  format="dita" scope="local"><?xm-replace_text Paragraphs (and other block elements) within tables?></xref>.
+		  
+		</p> 
+		<lq
+		reftitle="Gershon Joseph, OASIS DITA Technical Committee mailing list"
+		href="http://markmail.org/thread/kuexf4klb423jbfv"> 
+		  <p>The next issue (which you didn't mention) is nesting &lt;ul&gt; and
+			 other lists inside &lt;p&gt;, such as: 
+		  </p> 
+		  <codeblock>&lt;p&gt;Please remember to eat at least two of the 
+following every day:
+ &lt;ul&gt;
+  &lt;li&gt;apple&lt;/li&gt;
+  &lt;li&gt;orange&lt;/li&gt;
+  &lt;li&gt;lemon&lt;/li&gt;
+  &lt;li&gt;tomatoe&lt;/li&gt;
+&lt;/ul&gt;.&lt;p&gt;</codeblock> 
+		  <p>Aside from the messed up output this will generate (unless you code
+			 intelligence in the stylesheets to insert punctuation etc) it will have
+			 negative translation side effects (is &lt;ul&gt; a block or inline element?) I
+			 think we listed &lt;ul&gt; as a block element, so it should not be used as an
+			 inline element. I often find users marking up as follows: 
+		  </p> 
+		  <codeblock>&lt;p&gt;In order to install Acme Pro Plus Plus, 
+your system must meet the following requirements: 
+&lt;ul&gt;
+  &lt;li&gt;Pentium 4 CPU or later&lt;/li&gt;
+  &lt;li&gt;1 GB RAM or more&lt;/li&gt;
+  &lt;li&gt;At least 350 MB free disk space&lt;/li&gt; 
+&lt;/ul&gt; 
+&lt;/p&gt;</codeblock> 
+		  <p>IMO, this should be marked up as follows, with the &lt;ul&gt; being
+			 a following sibling of &lt;p&gt;, not a child of &lt;p&gt;: 
+		  </p> 
+		  <codeblock>&lt;p&gt;In order to install Acme Pro Plus Plus, 
+your system must meet the following requirements:&lt;/p&gt; 
+&lt;ul&gt;
+  &lt;li&gt;Pentium 4 CPU or later&lt;/li&gt;
+  &lt;li&gt;1 GB RAM or more&lt;/li&gt;
+  &lt;li&gt;At least 350 MB free disk space&lt;/li&gt; 
+&lt;/ul&gt;</codeblock> 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

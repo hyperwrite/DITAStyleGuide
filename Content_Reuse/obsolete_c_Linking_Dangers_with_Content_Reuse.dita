@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en-au" id="D3751"> 
+  <title>Problems with links in re-used content</title> 
+  <conbody> 
+	 <p>There is a danger in including links (<synph>xref</synph> elements)
+		within the text of a topic. This potential problem did not exist in many
+		earlier authoring environments. But with comprehensive content re-use, the
+		eventual context of a topic is unknown to the author. Including a link creates
+		a dependency on the link target. If the source topic is used in a collection
+		(or information set) that does not include the target, the link will be broken.
+		
+	 </p> 
+	 <p>The solution to this problem in DITA is map-based linking. Links can be
+		automatically generated at the bottom of each topic, with the links based on
+		either the structure of the hierarchy of 
+		<term>topicrefs</term> in the ditamap, or instructions in a 
+		<term>relationship table</term> in the map. 
+	 </p> 
+  </conbody> 
+</concept> 

@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D1980" status="new"> 
+  <title><ph
+	 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_Organisation_InitCap"><?xm-replace_text Phrase?></ph>
+	 of DITA elements</title> 
+  <shortdesc>Elements in DITA are grouped together into a number of categories
+	 for 
+	 <ph
+	  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_organisational"><?xm-replace_text Phrase?></ph>
+	 and comprehension purposes. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm
+		  conref="../../conref/conref_source_metadata.dita#topic_hw_conref_meta/index_organisation_of_elements"><?xm-replace_text Index Term?></indexterm><indexterm>DITA<indexterm>elements</indexterm></indexterm><indexterm>categories
+			 of elements</indexterm><indexterm>element
+			 domains</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>DITA elements can be broadly 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_categorised"><?xm-replace_text Phrase?></ph>
+		as follows: 
+	 </p> 
+	 <ul outputclass="listbullet" id="ul_CE8C6D73CEB94934BA7C52C515CC11C3"> 
+		<li id="li_9FCAF72B0B8341E4803B6034D1F30118">topic elements 
+		</li> 
+		<li id="li_B20D2F3980254D198D59C5F988064702">map elements 
+		</li> 
+		<li id="li_A7FDBE57A85540E393E86FC686DCD741">body elements 
+		</li> 
+		<li id="li_5BD476187CB2467D88BF33F480AA1D77">prolog elements 
+		</li> 
+		<li id="li_31954C625C724E6E8A1F330DEF3D2FDE">domain elements 
+		</li> 
+		<li id="li_7E9EE555E264441D910DB8DCC7DA5B8A"><ph
+		  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialisation"><?xm-replace_text Phrase?></ph>
+		  elements 
+		</li> 
+	 </ul> 
+	 <p>In fact, this is how the 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_DITA_Lang_Reference"><?xm-replace_text Phrase?></ph>
+		groups DITA elements. This 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_categorisation"><?xm-replace_text Phrase?></ph>
+		of the various elements is partly to aid understanding, and partly to make it
+		technically easier for the schema files (DTD and XSD) to be managed. 
+	 </p> 
+	 <p>Elements used within topics can also be differently 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_categorised"><?xm-replace_text Phrase?></ph>
+		as block or phrase elements. 
+	 </p> 
+  </conbody> 
+</concept> 

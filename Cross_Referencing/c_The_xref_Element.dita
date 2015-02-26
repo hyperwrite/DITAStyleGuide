@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<concept id="concept_1976AE4D9BD0406695EE4ECDBF53CE90" xml:lang="en"
+ status="new"> 
+  <title>The 
+	 <synph>xref</synph> element</title> 
+  <shortdesc>The cross-reference element is used for linking or otherwise
+	 cross-referencing text within a topic to other topics, elements within a topic,
+	 or resources external to the DITA collection. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>xref
+			 element</indexterm><indexterm>elements<indexterm>xref</indexterm></indexterm><indexterm>cross-references</indexterm><indexterm>links</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>The cross-reference (<synph>xref</synph>) element allows you to link
+		text within the body of a DITA topic to different 
+		<term>target</term> resources. Although you can manually specify the text
+		for the cross-reference or link itself, in most cases you should let DITA 
+		<term>calculate</term> the text based on the type of resource you are
+		linking to. You specify that you want DITA to calculate the cross-reference
+		text by leaving the element empty. For example, if you cross-reference a figure
+		(<term>fig</term>) element, the cross-reference text may be automatically
+		generated as 
+		<systemoutput>Figure 15</systemoutput>. If you provide text within the 
+		<synph>xref</synph> element, that text will be used as the
+		cross-reference text. 
+	 </p> 
+	 <p>Likewise, if you cross-reference a topic, and leave the 
+		<synph>xref</synph> element empty, the target topic title will be used as
+		the cross-reference text. For examples of automatically-generated
+		cross-reference text, see 
+		<xref href="c_Cross-references_Sample_Topic.dita#concept_sample_xref"
+		 type="concept" format="dita" scope="local"><?xm-replace_text Sample topic - Cross-references?></xref>.
+		
+	 </p> 
+	 <p>The cross-reference (<synph>xref</synph>) element has the following
+		attributes: 
+	 <dl> 
+		<dlentry> 
+		  <dt>href 
+		  </dt> 
+		  <dd>nominates the address of the resource to be referenced, such as a
+			 topic, a block within a topic, a PDF file, an external Web resource, or an
+			 e-mail address. 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt>type 
+		  </dt> 
+		  <dd>describes the type of resource being referenced, such as 
+			 <userinput>concept</userinput> for a DITA concept topic, 
+			 <userinput>li</userinput> for a list item in a list within a topic, 
+			 <userinput>fn</userinput> for a footnote within a topic, 
+			 <userinput>fig</userinput> for a figure within a topic, or 
+			 <userinput>table</userinput> for a table within a topic. 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt>format 
+		  </dt> 
+		  <dd>describes the file format of resource being referenced, such as 
+			 <userinput>dita</userinput> for a DITA topic, 
+			 <userinput>pdf</userinput> for a PDF file, and 
+			 <userinput>html</userinput> for a Web resource. 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt>scope 
+		  </dt> 
+		  <dd>indicates whether the referenced resource is within the same
+			 document as the topic (<option>local</option>), or whether it is external to
+		  the document (<option>external</option>). 
+		  </dd> 
+		</dlentry> 
+	 </dl> 
+	 </p> 
+	 <p>The syntax of the 
+		<synph>href</synph> attribute is illustrated through the following
+		examples: 
+	 <ul id="ul_B4FACE72071C4F568EB15F21979AF701"> 
+		<li id="li_60F59DE1F4BD459D80F6F3F8B22B842C">Reference to a topic (or the
+		  first topic in a composite (<term>ditabase</term>) topic): 
+		  <userinput>"file.dita"</userinput> 
+		</li> 
+		<li id="li_95097C195DCC4357B60049E08B5E4747">Reference to a specific
+		  topic in a composite (<term>ditabase</term>) topic: 
+		  <userinput>"file.dita#topicid"</userinput> 
+		</li> 
+		<li id="li_65AF3A9992CC44F7AE1544D6679C9900">Reference to an element
+		  inside a DITA topic: 
+		  <userinput>"file.dita#topicid/elementid"</userinput> 
+		</li> 
+		<li id="li_D1B70DADDBFB4872873CDB4622AF5CDC">Reference to an element in a
+		  ditamap: 
+		  <userinput>"collection.ditamap#map-branch"</userinput> 
+		</li> 
+		<li id="li_46497B73CD34448A9D70A70B92AFAD9A">Reference to an image: 
+		  <userinput>"example.png"</userinput> 
+		</li> 
+		<li id="li_C7E14BB35E8548988A590AB1DE12D9ED">Reference to an external
+		  resource: 
+		  <userinput>"http://www.example.org"</userinput> 
+		</li> 
+	 </ul> 
+	 </p> 
+  </conbody> 
+</concept> 

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_06973EEB3FED4FD9872307D3FC966682"> 
+  <title>File and folder naming conventions</title> 
+  <shortdesc>Using an 
+	 <ph
+	  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_organisation_wide"><?xm-replace_text Phrase?></ph>,
+	 well-documented file naming and folder structure convention will improve the
+	 usability of the authoring process for DITA authors, especially those working
+	 in a team. 
+  </shortdesc> 
+  <prolog><author
+	 conref="../../conref/conref_source_metadata.dita#topic_hw_conref_meta/author_tony_self"></author><metadata><keywords><indexterm>file
+			 naming<indexterm>conventions</indexterm></indexterm><indexterm>folder
+			 names</indexterm><indexterm>directory names</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p importance="high">Use descriptive folder and file names. Use 
+		<filepath>.dita</filepath> as the file extension for topic files, and 
+		<filepath>.ditamap</filepath> for ditamap files. File names are
+		case-sensitive, and lower case file names are preferred. Prefix topic names
+		with a letter corresponding to their information type. 
+	 </p> 
+  </conbody> 
+</concept> 

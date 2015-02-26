@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D9160" status="new"> 
+  <title>Disambiguation topics</title> 
+  <shortdesc>Disambiguation topics help direct readers to the appropriate
+	 content where a term or concept is ambiguous and may refer to more than one
+	 topic. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>disambiguation</indexterm><indexterm>parent
+			 topics</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p><term>Disambiguation topics</term> help clarify ambiguity when one term
+		or topic title may relate to a number of different topics. For example, a term 
+		<q>ABS</q> may stand for 
+		<q>Anti-lock Braking System</q> or for 
+		<q>Automatic Brightness Sequencer</q>. A disambiguation topic is
+		typically a single topic explaining the different uses of the term, and links
+		to the relevant alternative topics. 
+	 </p> 
+  </conbody> 
+</concept> 

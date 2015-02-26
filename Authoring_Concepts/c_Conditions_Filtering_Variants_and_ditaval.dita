@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_62DC88738DF34255844A153A04EA1981" xml:lang="en"
+ status="new"> 
+  <title>Conditions, filtering, variants and ditaval</title> 
+  <shortdesc>Many confusing terms are used to describe different parts of the
+	 conditional publishing process. Understanding the terms is key to understanding
+	 the concepts. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>variables</indexterm><indexterm>variants</indexterm><indexterm>conditional
+			 processing</indexterm><indexterm>conditional publishing<index-see>conditional
+				processing</index-see></indexterm><indexterm>metadata
+			 attributes</indexterm><indexterm>attributes</indexterm><indexterm>ditaval</indexterm><indexterm>profiling</indexterm><indexterm>filtering</indexterm><indexterm>flagging</indexterm><indexterm>excluding<indexterm>content</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>Different technologies, and different authoring tools, use the terms 
+		<term>conditions</term>, 
+		<term>conditional publishing</term>, 
+		<term>variables</term>, 
+		<term>variants</term>, 
+		<term>flagging</term>, 
+		<term>profiling</term>, and 
+		<term>filtering</term> in different ways. 
+	 </p> 
+	 <p>DITA has built-in features to enable some content to be excluded or
+		highlighted during the publishing process. These features are standard metadata
+		attributes that can be applied to most DITA elements, and a 
+		<term>ditaval</term> standard used to define how attributes are handled
+		during publishing. 
+	 </p> 
+	 <p>For example, the same topic might appear in an administrator manual and
+		a consumer manual, but some paragraphs may only apply to the administrator. If
+		those paragraphs are identified with an 
+		<synph>audience</synph> attribute of 
+		<userinput>administrator</userinput>, they can be conditionally excluded
+		from the output if an 
+		<synph>exclude</synph> rule is defined in the 
+		<term>ditaval</term> file used for publishing. 
+	 </p> 
+	 <p>In DITA, 
+		<term>conditional publishing</term> describes the process where the
+		metadata and 
+		<term>ditaval</term> features are used together. Content identified with
+		metadata attributes can be either 
+		<term>excluded</term> or 
+		<term>flagged</term> (highlighted in some way). Excluding content is
+		commonly referred to as 
+		<term>filtering</term>. 
+	 </p> 
+	 <p>The term 
+		<term>variable</term> is sometimes used within DITA authoring teams to
+		describe a word, phrase or block of text that is managed in one place, usually
+		through the content reference (<term>conref</term>) or key reference
+		(<term>keyref</term>) feature. The term 
+		<term>variants</term> is not so commonly used, but may refer to two or
+		more slightly different renditions of the same source topic. 
+	 </p> 
+	 <p><term>Profiling</term> is sometimes used to describe the technique of
+		filtering the content displayed in a DITA editor based on the metadata
+		attributes. (Not many DITA editors support profiling.) 
+	 </p> 
+  </conbody> 
+</concept> 

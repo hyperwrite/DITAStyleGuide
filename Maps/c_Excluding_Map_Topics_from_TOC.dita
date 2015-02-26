@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<concept id="concept_CB9DCCEEE29D42FEA8E053DB8A0D88E2" xml:lang="en"
+ status="new"> 
+  <title>Excluding topics from the output TOC</title> 
+  <shortdesc>When generating an output which includes a 
+	 <term>TOC</term>, you may want to generate a topic from your ditamap but
+	 not have it appear in the output TOC. This is achieved through the 
+	 <synph>toc</synph> and 
+	 <synph>linking</synph> attributes of the 
+	 <synph>topicref.</synph> 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>excluding</indexterm><indexterm>TOC<indexterm>excluding
+				topics from</indexterm></indexterm><indexterm>topicref
+			 element</indexterm><indexterm>parent-child
+			 relationships</indexterm><indexterm>generated
+			 links</indexterm><indexterm>filtering</indexterm><indexterm>attributes<indexterm>linking</indexterm><indexterm>toc</indexterm></indexterm><indexterm>elements<indexterm>topicref</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>By default, every topic referenced in the ditamap will be included in
+		the output, regardless of whether it is referenced in the hierarchy section of
+		the map or the 
+		<synph>reltable</synph> section of the map. 
+	 </p> 
+	 <p>There will be cases where a topic in your collection should not appear
+		in the output TOC. An example may be where you have a topic containing an
+		example, which you will reference from a concept topic. You may arrange the
+		topic hierarchy so that the example topic is a 
+		<term>child</term> of the concept topic. You want a link to be
+		automatically generated from parent to child, based on the hierarchy, but you
+		don't want the example topic to appear as the sole child of the concept topic
+		in the TOC. 
+	 </p> 
+	 <p>To exclude the topic from the output TOC, you must set the relevant 
+		<synph>topicref</synph> element's 
+		<synph>toc</synph> attribute to 
+	 <option>no</option>. 
+	 </p> 
+	 <p>An example of the mark-up is: 
+		<codeblock>&lt;topicref
+  format="dita"
+  href="Reference/FeatureComparisonTable.dita"
+  navtitle="Features in different versions of World Time Pro"
+  scope="local"
+  type="reference"
+  linking="yes"
+  toc="no" /&gt;
+</codeblock> 
+	 </p> 
+	 <p>If you do not want the parent-child link to automatically generate
+		(because you want to link manually, or through a 
+		<term>reltable</term> relationship), you must set the hierarchy 
+		<synph>topicref</synph> element's 
+		<synph>linking</synph> attribute to 
+	 <option>none</option>. 
+	 </p> 
+	 <note>If you want to entirely exclude a topic included in a ditamap from
+		the output, you should delete from the ditamap 
+		<b>all</b> 
+		<synph>topicref</synph> elements linking to that topic, including any in
+		the relationship table. If you are using conditional publishing, you can set
+		the filtering metadata attributes (such as 
+		<codeph>&lt;topicref audience="administrator"... /&gt;</codeph>) on 
+		<b>all</b> 
+		<synph>topicref</synph> elements linking to the topic to be filtered
+		during the publishing process. 
+	 </note> 
+  </conbody> 
+</concept> 

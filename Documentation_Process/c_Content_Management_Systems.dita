@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_888615C9ABDC4B7B9EEB8024675FF79E" xml:lang="en"
+ status="new"> 
+  <title>Content Management Systems</title> 
+  <shortdesc>Although it is possible to create, manage and edit content in DITA
+	 without a 
+	 <term>CMS</term>, it is invariably easier with the aid of a 
+	 <term>CMS</term>. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>CMS</indexterm><indexterm>Content
+			 Management System</indexterm><indexterm>managing DITA
+			 content</indexterm><indexterm>management of
+			 content</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>A 
+		<term>Content Management System</term> (<term>CMS</term>) is a software
+		system for managing the documentation development life cycle, including the
+		processes of creating, updating, publishing, and translating information. A 
+		<term>CMS</term> is particularly important for modular documentation
+		approaches such as DITA, as it allows authors to locate topics or elements
+		already written, manage file and folder naming without breaking
+		cross-referencing and other relationship links, manage content references,
+		allow multiple authors to work collectively on the same documents, and store
+		previous versions of topics for backup, archiving and other version control
+		purposes. 
+	 </p> 
+	 <p>Many systems also allow a 
+		<term>release state</term> to be used to manage the progression of
+		information from draft, through review, approval and release. Most systems
+		include user rights management, so that different users are given different
+		access to the information according to their role in the documentation process.
+		
+	 </p> 
+	 <p>In a DITA project, content management is more important if collaboration
+		is required. If one person is responsible for all of the six stages of the
+		content life cycle, the task of managing content is simple. But when there are
+		many authors, many editors, many languages, complicated approval rules, and
+		complicated archival requirements, the management task becomes enormous, and a 
+		<term>CMS</term> becomes a requirement. 
+	 </p> 
+	 <p>A 
+		<term>CMS</term> typically supports the following features. 
+	 <ul outputclass="listbullet" id="ul_EFD0FAEAC140439A850D701932BD7759"> 
+		<li id="li_F182EEC8AFF8458DA7D007E9EFBF92F8">Import and creation of
+		  documents and multimedia material. 
+		</li> 
+		<li id="li_FE2A0E1A8C91477DB71AAA6116D3604B">Identification of all key
+		  users and their roles. 
+		</li> 
+		<li id="li_0183185C555441DDAD3BDFB6FE145159">The ability to assign roles
+		  and responsibilities to different instances of content categories or types. 
+		</li> 
+		<li id="li_C176197D81BC490EBC25F1022721E2A8">The ability to alert
+		  interested users to changes in content. 
+		</li> 
+		<li id="li_3A984572B77C4808A941E953B5FF8D81">The ability to track and
+		  manage multiple versions of a single instance of content. 
+		</li> 
+		<li id="li_28AE571F6A12486281D600DFF0C170F3">The ability to search
+		  through the text or metadata of all content. 
+		</li> 
+		<li id="li_5EC16266C11B4CC99E99E9BB551142A6">The ability to publish the
+		  content. 
+		</li> 
+	 </ul> 
+	 </p> 
+	 <p>Content within a DITA 
+		<term>CMS</term> is normally stored (in DITA format) within a database 
+		<term>repository</term>. A database makes it easier to manage multiple
+		versions, and retrieve and archive content. Some systems use an XML database, a
+		type of database technology 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_optimised"><?xm-replace_text Phrase?></ph>
+		for working with XML files. 
+	 </p> 
+  </conbody> 
+</concept> 

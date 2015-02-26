@@ -1,0 +1,139 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="Dc_Conditional_Processing_at_Topic_Level"
+ status="new"> 
+  <title>Excluding topics: conditional processing at topic level</title> 
+  <shortdesc>If a whole topic is to be excluded from the output in a
+	 conditional processing scenario (that is, the condition applies to a whole
+	 topic), the metadata attribute must be defined in the topic reference in the
+	 ditamap. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>exemplar<indexterm>use of bold to
+				stress words</indexterm></indexterm><indexterm>conditional
+			 processing<indexterm>excluding
+				topics</indexterm></indexterm><indexterm>elements<indexterm>topicref</indexterm></indexterm><indexterm>excluding<indexterm>topics</indexterm></indexterm><indexterm>filtering<indexterm>conditional
+				processing</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>If you want to exclude a topic in a collection from the output, you have
+		a number of options. These include: 
+	 </p> 
+	 <ul outputclass="listbullet" id="ul_13BE8EA3638943C791258C9193C5E7F9"> 
+		<li id="li_3473B006B66D4B699C1CFE707ECB4F32">Not including the topic in
+		  the ditamap, and processing a different ditamap when the topic 
+		  <b>is</b> required. 
+		</li> 
+		<li id="li_1B789594F50148868EEFE17E8CB28E38">Setting a condition
+		  attribute in the topic so that the topic can be filtered during the build
+		  process. 
+		</li> 
+		<li id="li_64EC090460E64304BD993233C421F9D8">Setting a condition
+		  attribute in the topicref in the ditamap. 
+		</li> 
+	 </ul> 
+	 <p importance="high">The best option is to construct different ditamap
+		files for different publication outputs, rather than try to use the same
+		ditamap with many condition attributes. The effort required to set up and
+		maintain the condition attributes is a lot higher than working with different
+		maps, particularly when the technique of using nested maps is used. 
+	 </p> 
+	 <p importance="high">If having separate ditamaps is not practical, the best
+		approach is to filter at the ditamap level (that is, apply the condition
+		attribute value in the 
+		<synph>topicref</synph> element). If the topic is also referenced in the
+		reltable section of the map, you must also apply the condition attribute to
+		those 
+		<synph>topicref</synph> elements. 
+	 </p> 
+	 <p>If a topic is to be excluded from an output based on conditions, logic
+		suggests that the filtering condition attribute should be applied to the topic
+		root element, and 
+		<b>not</b> to the 
+		<synph>topicref</synph> element (as recommended). For example, if the
+		topic is intended for administrators only, then the condition metadata should
+		be stored in the topic. However, excluding the entire content of a topic would
+		leave an empty XML file; that is, an XML file without a root element. Such a
+		file would be invalid, as an XML file must have a root element! The processing
+		would then have to stop. 
+	 </p> 
+	 <p>Applying a filtering attribute to the 
+		<synph>topicref</synph> element in the ditamap will only exclude the
+		topic from the output if there is only the one reference to that topic. You
+		should take care if applying conditions in the topic that you apply the
+		conditions to all references to the topic, and that you do not leave 
+		<term>dangling topicrefs</term>. 
+	 </p> 
+	 <section id="section_DAEC147BA9054AC18CE573DD820F0FEB"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<p> The exception would be if the condition was only specific to one
+		  particular map context. A compromise might be to set the attribute value in
+		  both the ditamap's topicref 
+		  <b>and</b> in the topic. 
+		</p> 
+		<lq reftitle="Correspondence: Tony Self to Dave Gash, 16 June 2010"> 
+		  <p> Well, it's all quite logical, really. A topicref is a reference to
+			 a topic. If you conditionalise the topicref, you are setting a condition for
+			 the reference to the topic. You're not setting a condition for the topic
+			 itself. A topicref in the hierarchical section of the map isn't superior to the
+			 topicref in a reltable. 
+		  </p> 
+		  <p> If you set a condition on the topic itself, the logic is that topic
+			 is specific to a particular situation, and not the use of that topic (a
+			 topicref is defining the use of the topic). Having said that, you end up
+			 getting into logical dilemmas if your map says "include TopicA", but TopicA
+			 says "don't include me". In that case, should the reference to the topic also
+			 disappear magically from the output (ie, should the link disappear from the
+			 TOC)? In reality, what also happens in that situation is that an empty topic is
+			 created (&lt;html&gt;&lt;/html&gt;). 
+		  </p> 
+		  <p> Think of another scenario. You have a topic that occurs in the TOC,
+			 but you need to conditionalise some of the cross-referencing. (In situation A,
+			 I don't want any cross-references to reference topics to appear, although I do
+			 want them in my document.) Logically, then, you'd conditionalise the topicrefs
+			 in the reltable, but not in the hierarchy. That's dandy, and that will work
+			 beautifully at present. However, you seem to be hoping that conditionalising
+			 one topicref for exclusion should result in all topicrefs being excluded. 
+		  </p> 
+		  <p> In summary, if you need a topic to be excluded from a particular
+			 output, you need to either conditionalise 
+			 <b>all</b> topicrefs to that topic in the map, or create a unique map
+			 for that particular output. 
+		  </p> 
+		</lq> 
+		<lq href="http://tech.groups.yahoo.com/group/dita-users/message/15875"
+		reftitle="Deborah Pickett, Yahoo! DITA Users Group"> 
+		  <p>&gt;&gt;Assuming the ditaval file contains the following line: 
+			 <codeph> &lt;prop att='audience' val='core' action='exclude'
+				/&gt;</codeph>, any topicref with audience="core" should not appear in
+			 output.&lt;&lt; 
+		  </p> 
+		  <p>Correct. 
+		  </p> 
+		  <p>&gt;&gt;There should be no navigation links (TOC, related links,
+			 etc.),&lt;&lt; 
+		  </p> 
+		  <p> Correct, mostly. 
+		  </p> 
+		  <p>&gt;&gt; and the content of the topic to which the topicref points
+			 should also not appear. &lt;&lt; 
+		  </p> 
+		  <p>Incorrect. Here's how to think properly about filtering: by
+			 filtering the topicref element, all you are doing is removing *that one
+			 reference* to *that* topic. Any other references elsewhere in the document
+			 (such as another topicref anywhere else in the map, or an xref in another
+			 topic) will be unaffected, unless they also have the same filtering attribute
+			 (audience="core"). If you really want to remove any trace of the topic, you
+			 have to be certain that no other reference to that topic remains, anywhere in
+			 any file that can be reached from the input map, even indirectly. Filter them
+			 all, is usually what you have to do. Try to not get into the habit of putting
+			 filtering attributes on the root element of a file (e.g., topic). Filtering
+			 will remove that element, leaving an XML file without a root element, which is
+			 illegal XML. DITA-OT checks for this but you get a warning because it is
+			 usually a result of authors thinking the wrong way about how filtering works. 
+		  </p> 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

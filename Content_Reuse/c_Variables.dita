@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<concept id="concept_9D578ED756174EF49F8DB3F080C0E050"> 
+  <title>Variables</title> 
+  <conbody>
+	 <p><term>Variables</term> are often used phrases (such as product names)
+		that are re-used by replacing the value of the variable at the time the
+		information is published. 
+	 </p>
+  </conbody>
+</concept> 

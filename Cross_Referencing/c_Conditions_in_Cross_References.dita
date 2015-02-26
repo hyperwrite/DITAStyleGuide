@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<concept id="concept_5ED05886AB184031B5A4A9F8FD5D58E5"> 
+  <title>Conditions in cross-references</title> 
+  <shortdesc>The standard DITA metadata attributes of 
+	 <synph>audience</synph>, 
+	 <synph>platform</synph>, 
+	 <synph>product</synph>, and 
+	 <synph>otherprops</synph> can be applied to 
+	 <synph>xref</synph> elements to allow conditional processing of
+	 cross-references. Positioning cross-references at the end of a sentence makes
+	 it easier to exclude the cross-reference without affecting the sense of the
+	 sentence. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>conditional
+			 processing<indexterm>cross-references</indexterm></indexterm><indexterm>xref
+			 element</indexterm><indexterm>elements<indexterm>xref</indexterm></indexterm><indexterm>metadata
+			 attributes</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>If you need to cross-reference different resources for different
+		publication variants, use the 
+		<synph>audience</synph> attribute to define these conditions. For
+		example, if the PDF version of the output links to a different resource than
+		the Help version, you could include two adjacent 
+		<synph>xref</synph> elements, one with the 
+		<synph>audience</synph> attribute set to 
+		<userinput>pdf_user</userinput>, and the other set to 
+		<userinput>help_user</userinput>. 
+	 </p> 
+	 <p rev="1.2" importance="high">For 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_DITA12"><?xm-replace_text Phrase?></ph>
+		and above, the 
+		<synph>keyref</synph> mechanism should be used in preference to
+		duplicating and 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_conditionalising"><?xm-replace_text Phrase?></ph>
+		elements. 
+	 </p> 
+	 <p>If you are using cross-references in conjunction with conditional
+		processing, positioning an in-text cross-reference (<synph>xref</synph>)
+		element at the end of a sentence makes it easier to exclude. 
+	 </p> 
+	 <p>For example, if a cross-reference is to be included in the Web rendition
+		of a DITA collection, but excluded from the PDF rendition, then 
+		<synph>audience</synph> attribute might be used to differentiate the
+		PDF-only text. 
+	 </p> 
+	 <p>The code: 
+		<codeblock status="changed">&lt;p&gt;The coolant expansion tank is attached to 
+the firewall&lt;ph audience="help_user"&gt;, as shown in 
+&lt;xref href="c_engine_bay#eng_bay/fig_coolant_system" type="fig"/&gt;&lt;/ph&gt;.
+&lt;/p&gt;</codeblock>might be rendered in the output as 
+		<systemoutput>The coolant expansion tank is attached to the
+		  firewall.</systemoutput> when the 
+		<userinput>help_user</userinput> content is excluded, and as 
+		<systemoutput>The coolant expansion tank is attached to the firewall, as
+		  shown in Figure 3.</systemoutput> otherwise. 
+	 </p> 
+	 <section id="section_36BD018D02AD4877AE90639506C7699E"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<lq reftitle="Paul Masalsky, Yahoo! DITA Users Group"
+		 href="http://tech.groups.yahoo.com/group/dita-users/message/17086"> 
+		  <p>We have this situation for cross references, too. Some topics are
+			 included in PDFs but not in help systems. Other topics, included in both PDF
+			 and help, might cross reference topics that are excluded from the help systems.
+			 
+		  </p> 
+		  <p>To include those cross references for PDF, we use &lt;xref
+			 audience="PDF_user"&gt; (or similar for the parent of &lt;xref&gt;, such as a
+			 &lt;p&gt;). To exclude them for help generation, we specify
+			 audience="help_user" in our ditaval files, which has the effect of excluding
+			 the cross references identified by audience="PDF_user".It bends the meaning of
+			 the "audience" attribute a bit, but we find it has worked pretty well. 
+		  </p> 
+		</lq> 
+		<lq reftitle="Patrick Quinlan, Yahoo! DITA Users Group"
+		 href="http://tech.groups.yahoo.com/group/dita-users/message/13157">We've run
+		  into a similar, though reversed, issue where we have xrefs that are fine in the
+		  PDF, but we don't want them in the HTML. Our solution is to train authors to
+		  place that kind of xref at the beginning or end of a sentence. For example: The
+		  vDisk store can be accessed by the farm, as shown in &lt;xref="figure
+		  reference"/&gt;. The text ",as shown in &lt;xref="figure reference"/&gt;" is
+		  marked with a PDF condition. The result for PDF: The vDisk store can be
+		  accessed by the farm, as shown in Figure 5 on page 117. The result for HTML:
+		  The vDisk store can be accessed by the farm. 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<concept id="concept_EDA7EA985A0C439FA48E294A8582F9A8"> 
+  <title>Stub (or Summary) Topics with Generated Content</title> 
+  <shortdesc><?xm-replace_text Short Description?>
+  </shortdesc> 
+  <conbody> 
+	 <p> 
+		<draft-comment>Describe stub or disambiguation topics that use generated
+		  child topic short descriptions. Show how collection-type attribute affects the
+		  way these child topics are listed. Refer to Swinburne DITA strategy if
+		  necessary, or use the Collection Type Examples parent node from this Maps
+		  chapter. Screen captures of the different results would be useful. Perhaps move
+		  some content from discussion of 
+		  <synph>shortdesc</synph> in the Exegesis. 
+		</draft-comment> 
+		<draft-comment>There is a reference to generated summary content in
+		  (stub) parent topics in Hierarchical Linking Relationships. 
+		</draft-comment> 
+	 </p> 
+  </conbody> 
+</concept> 

@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D9331" status="new"> 
+  <title>Attaching data to content</title> 
+  <shortdesc>Detailed metadata associated with a DITA element can be stored in 
+	 <synph>data</synph> elements in the flow of the content. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>elements<indexterm>data</indexterm><indexterm>data-about</indexterm></indexterm><indexterm>data
+			 element</indexterm><indexterm>data-about
+			 element</indexterm><indexterm>metadata</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>Despite the name, the 
+		<synph>data</synph> element is for metadata stored in the flow of the
+		content within the topic body. It is most useful as the basis for 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialising"><?xm-replace_text Phrase?></ph>
+		other elements. 
+	 </p> 
+	 <p>Within base DITA, you would most likely use the 
+		<synph>data</synph> element to store information about the source of code
+		fragments, citations, or quotations. However, it is not a commonly used
+		element. 
+	 </p> 
+	 <p>The 
+		<synph>data</synph> element can be nested inside many DITA elements.
+		Other 
+		<synph>data</synph> elements can be nested inside a 
+		<synph>data</synph> element. A 
+		<synph>data-about</synph> element can also be nested inside a 
+		<synph>data</synph> element. The 
+		<synph>data</synph> element has a number of attributes, including: 
+	 <dl> 
+		<dlentry> 
+		  <dt>name 
+		  </dt> 
+		  <dd>the unique name for the piece of data 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt>value 
+		  </dt> 
+		  <dd>the value of the piece of data 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt>href 
+		  </dt> 
+		  <dd>a link to the resource used for the piece of data 
+		  </dd> 
+		</dlentry> 
+	 </dl> 
+	 </p> 
+	 <p>For example, the detailed source of a long quotation is contained in 
+		<synph>data</synph> elements in the following sample: 
+		<codeblock>&lt;lq reftitle="Lynch and Horton (2009)" href="http://webstyleguide.com/"&gt;
+  &lt;data name="ref_Lynch_Horton"&gt;
+    &lt;data name="date_retrieved" value="13 September 2009" /&gt;
+    &lt;data name="chapter" value="9" /&gt;
+    &lt;data name="pub_type" value="web" /&gt;
+    &lt;data name="page_URL" href="http://webstyleguide.com/wsg3/9-editorial-style/2-structuring-prose.html" /&gt;
+    &lt;data name="pub_title"&gt;Web Style Guide&lt;/data&gt;
+    &lt;data name="edition" value="3" /&gt;
+  &lt;/data&gt;
+The inverted pyramid style used in journalism works well on web
+pages...
+&lt;/lq&gt;</codeblock> How the metadata stored in the 
+		<synph>data</synph> element structure is used is up to the authoring and
+		publishing tools used. 
+	 </p> 
+	 <section id="section_12C0DC7DDF96468387F3660333FE348D"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<lq reftitle="Erik Hennum, DITA TC mailing list"><data></data>I believe
+		  the thought was that the &lt;data&gt; element should provide extensibility for
+		  properties attached to content in the flow. The concern about adding content
+		  elements was the risk of abuse -- using data as a method of adding content to
+		  the flow rather than properties of the content in the flow. With that in mind,
+		  &lt;data&gt; itself can refer to resources relevant to the topic or part of the
+		  body flow within the topic. The &lt;ph&gt; element can provide a description
+		  about the related resource. But, it seems a little odd to embed a link in a
+		  description when the resource is identified by the &lt;data&gt; element. 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

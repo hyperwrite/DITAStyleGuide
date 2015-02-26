@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D2634" status="new"> 
+  <title>Collection type example: 
+  <option>family</option></title> 
+  <conbody> 
+	 <fig id="fig_3741993117EE458EB34D075FB968D044"> 
+		<title>Example of 
+		<option>family</option> collection type</title><image placement="break"
+		align="left" id="image_60D015A2198842D18BC1E74846DE9123"
+		href="../images/collection_type_family.gif" width="409px" height="292px"> 
+		  <alt>Example of family collection type 
+		  </alt></image> 
+	 </fig> 
+  </conbody> 
+</concept> 

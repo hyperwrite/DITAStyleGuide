@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_1F7A97DDF96E4CA2ADE638C3E0FA8AF1" status="new"
+ xml:lang="en"> 
+  <title>Avoiding special characters in file names</title> 
+  <shortdesc>Special characters must not be used in file names. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>exemplar<indexterm>inline
+				cross-reference</indexterm></indexterm><indexterm>special
+			 characters<indexterm>in file
+				names</indexterm></indexterm><indexterm>symbols<indexterm>in file
+				names</indexterm></indexterm><indexterm>URI</indexterm><indexterm>URL</indexterm><indexterm>IETF</indexterm><indexterm>file
+			 naming<indexterm>special
+				characters</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>Using special characters in file names may cause some problems or errors
+		in some authoring and publishing tools. Special characters in this context
+		means symbols, typographical characters, punctuation characters, spaces,
+		diacritical characters, and non-Latin characters. 
+	 </p> 
+	 <p importance="high">You must treat file names as though they are URIs, and
+		follow the IETF syntax conventions for URI naming. 
+	 </p> 
+	 <p> Refer to 
+		<xref href="http://www.ietf.org/rfc/rfc3986" scope="external"
+		 format="html">IETF Uniform Resource Identifier (URI): Generic Syntax</xref> for
+		the comprehensive URI guidelines. 
+	 </p> 
+	 <section id="section_6B77DA45822B4AFAA014CE7C5BBF96D0"
+	  audience="contributor"> 
+		<title>Observations</title> 
+		<p>This is an example of where an inline xref is appropriate, as it is
+		  central to the topic message. The topic won't stand alone without the link;
+		  therefore, it should not be conditional in any way (and thus shouldn't be
+		  created as a reltable link). It may be able to be incorporated within a
+		  related-links structure after the topic body, but semantically it is not a
+		  related link, but an integral link. 
+		</p> 
+	 </section> 
+	 <section id="section_1D67A95988AF401AB84ED841A6751D88"
+	  audience="contributor">
+		<title>Rationale</title>
+		<lq reftitle="Erlend Legenger, e-mail correspondence, 6 April 2011">I
+		  totally agree with this, but I think that it can be said stronger - that in
+		  fact all such file names in DITA 
+		  <b>are</b> URIs, and thus 
+		  <b>must</b> follow the standards for URI naming. I know that you can
+		  use a space in a file name and get away with it in for example the DOT, but
+		  that is a bug in the tools; the tools should validate that all "file names"
+		  (such as in &lt;topicref href="file-name-which-is-actually-a-URI.dita"
+		  type="task"&gt;) are legal URIs and thus fail the build when for example a
+		  space is used in the file name. I am not 100% sure about this, but I think I
+		  remember Eliot writing something about this on the DITA mailing list, but
+		  cannot find the piece right now.
+		</lq>
+	 </section>
+  </conbody> 
+</concept> 

@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept id="D9383" xml:lang="en" status="new"> 
+  <title>Elements for pre-publish review</title> 
+  <shortdesc>The draft-comment element allows review and discussion information
+	 to be embedded within topic mark-up. The more basic XML comment can also be
+	 used for a similar purpose. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>elements<indexterm>draft-comment</indexterm><indexterm>required-cleanup</indexterm></indexterm><indexterm>draft-comment
+			 element</indexterm><indexterm>required-cleanup
+			 element</indexterm><indexterm>author comments</indexterm><indexterm>review
+			 comments</indexterm><indexterm>comments</indexterm><indexterm>XML
+			 comment</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>In a typical documentation process, incomplete information will often
+		prevent the completion of a topic. To help track and manage the incomplete
+		information, an author can add 
+		<synph>draft-comment</synph> phrase elements. The 
+		<synph>draft-comment</synph> element is also useful during the peer
+		review and editing stages to leave remarks or suggestions for the author to
+		consider or implement. 
+	 </p> 
+	 <p>The 
+		<synph>draft-comment</synph> element has an 
+		<synph>author</synph> attribute, used to record the name of the author of
+		the comment. An example of the mark-up is: 
+		<codeblock>&lt;p&gt;The MY11 XRW uses an AHA turbocharger.
+  &lt;draft-comment author="Leo"&gt;
+     Check if this changed after product meeting
+  &lt;/draft-comment&gt;
+&lt;p&gt;</codeblock> 
+	 </p> 
+	 <p>The 
+		<synph>draft-comment</synph> element should not be confused with the 
+		<synph>required-cleanup</synph> element. The 
+		<synph>required-cleanup</synph> element is intended only for identifying
+		text in imported topics (typically, topics converted from XHTML to DITA) where
+		the mark-up was not cleanly converted. In other words, 
+		<synph>required-cleanup</synph> content needs a human author to manually
+		correct the mark-up to preserve the original intent. 
+	 </p> 
+	 <p>Any 
+		<synph>draft-comment</synph> content will normally be removed during the
+		publishing process. However, some authoring tools allow 
+		<synph>draft-comment</synph> elements to be deliberately included in the
+		output. 
+	 </p> 
+	 <p>The draft-comment element is not allowed in some structures. An
+		alternative is to use standard XML comment special element. Many authoring
+		tools allow the addition of XML comments in the 
+		<term>WYSIOO</term> editor. 
+	 </p> 
+	 <p>The mark-up of an XML comment is shown in the example: 
+		<codeblock>&lt;!-- Check that the last step is required for MY11 model --&gt;</codeblock> 
+	 </p> 
+  </conbody> 
+</concept> 

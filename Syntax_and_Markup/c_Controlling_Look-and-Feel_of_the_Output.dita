@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<concept id="concept_826D9E08A85A4491874A81CA6B06614D" xml:lang="en"
+ status="new"> 
+  <title>Controlling the look-and-feel of the output</title> 
+  <shortdesc>If an element with no specific semantic difference needs to be
+	 formatted differently in the output, you can apply the 
+	 <synph>outputclass</synph> attribute to the appropriate element. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>outputclass
+			 attribute</indexterm><indexterm>attributes<indexterm>outputclass</indexterm></indexterm><indexterm>CSS</indexterm><indexterm>output
+			 styling</indexterm><indexterm>look-and-feel</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>The 
+		<synph>outputclass</synph> attribute can be used to specify a particular
+		formatting characteristic during processing to an output deliverable document.
+		Nearly all DITA content elements have an 
+		<synph>outputclass</synph> attribute. 
+	 </p> 
+	 <p>For example, if you want one paragraph to be formatted differently in
+		the output, you could use the attribute as shown in the mark-up: 
+		<codeblock>&lt;p&gt;You need outside mirrors...&lt;/p&gt;
+&lt;p outputclass="red_highlight"&gt;Your car's mirrors...&lt;/p&gt;</codeblock> 
+	 </p> 
+	 <p>When generating HTML output, the DITA source 
+		<synph>outputclass</synph> attribute value will be generated as an HTML
+		CSS 
+		<synph>class</synph> attribute. 
+	 </p> 
+	 <p importance="high">Normally, the semantic difference between elements
+		should drive formatting, rather than arbitrary and subjective application of 
+		<synph>outputclass</synph> attributes. You should therefore use the 
+		<synph>outputclass</synph> attribute only as a last resort. 
+	 </p> 
+	 <p>For example, if a paragraph (<synph>p</synph>) element needs to be
+		formatted differently because the paragraph contains a note or tip, the 
+		<synph>note</synph> element, which will be formatted differently to the
+		standard paragraph in the output, should be used, without any need for the 
+		<synph>outputclass</synph> attribute. 
+	 </p> 
+  </conbody> 
+</concept> 

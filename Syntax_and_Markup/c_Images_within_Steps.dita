@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D9193" status="new"> 
+  <title>Images within steps</title> 
+  <shortdesc>Images that support a procedural step can be included within a 
+	 <synph>stepxmp</synph> or an 
+	 <synph>info</synph> element. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>image
+			 element</indexterm><indexterm>elements<indexterm>image</indexterm><indexterm>stepxmp</indexterm><indexterm>info</indexterm></indexterm><indexterm>info
+			 element</indexterm><indexterm>stepxmp
+			 element</indexterm><indexterm>images<indexterm>within
+				steps</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>Images can be used to support documentation of task steps, as 
+		<synph>image</synph> elements within the 
+		<synph>cmd</synph> element, or as 
+		<synph>image</synph> elements within the 
+		<synph>stepxmp</synph> or 
+		<synph>info</synph> elements. 
+	 </p> 
+	 <fig id="fig_228DD270C6B548EC901E95FA0B58FD1D"> 
+		<title>Task topic 
+		  <synph>steps</synph> structure showing 
+		  <synph>image</synph> within a 
+		  <synph>step</synph></title><image placement="break" align="left"
+		id="image_11DE216A311F408A87C3FD0B99C65DB8"
+		href="../images/task_topic_steps_structure.png" width="425px" height="233px"> 
+		  <alt>Screen capture of task topic in DITA editor showing semantic
+			 elements 
+		  </alt></image> 
+	 </fig> 
+	 <fig id="fig_915174A5B38B4ACCB1369CD9FEF79B1F"> 
+		<title>Typical rendered result of steps mark-up</title><image
+		placement="break" align="left"
+		id="image_48666BE8847D44C7ADD61D0F13A75C04"
+		href="../images/task_topic_steps_structure_rendered.png" width="425px"
+		height="173px"> 
+		  <alt>Screen capture showing the rendered result of steps mark-up 
+		  </alt></image> 
+	 </fig> 
+  </conbody> 
+</concept> 

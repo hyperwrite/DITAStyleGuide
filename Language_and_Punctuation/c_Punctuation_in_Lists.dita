@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D9140" status="new"> 
+  <title>Punctuation in lists</title> 
+  <shortdesc>Ordered and unordered list items should have no terminating
+	 punctuation marks, such as commas, semicolons, and full stops, except when all
+	 items in a list are complete sentences. This approach 
+	 <ph
+	  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_maximises"><?xm-replace_text Phrase?></ph>
+	 re-usability. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>punctuation<indexterm>lists</indexterm></indexterm><indexterm>bullet
+			 lists</indexterm><indexterm>numbered lists</indexterm><indexterm>ordered
+			 lists</indexterm><indexterm>lists<indexterm>punctuation</indexterm></indexterm><indexterm>unordered
+			 lists</indexterm><indexterm>simple lists</indexterm><indexterm>serial
+			 commas</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>Punctuation in lists is already a contentious issue, but content re-use
+		with conditional publishing in DITA makes it a little more so. 
+	 </p> 
+	 <p>Punctuation options for ordered and unordered lists include: 
+	 <ul id="ul_829A409438A14A7F95502B75878AF814"> 
+		<li id="li_AA936EE0411A4E359E9BBB877E42CFA2">comma terminators for all
+		  items except the last, which has a full stop 
+		</li> 
+		<li id="li_EA54BB5B98474507ACD1186C2B9379D1">semicolon terminators for
+		  all items except the last, which has a full stop 
+		</li> 
+		<li id="li_B2740D0548BB417A88752C829C45FE53">no terminators except for
+		  the last, which has a full stop 
+		</li> 
+	 </ul> 
+	 </p> 
+	 <p>Some conventions include the word 
+		<q>and</q> at the end of the second last item. 
+	 </p> 
+	 <p>Writing in a DITA environment, the context is removed from the content.
+		This means that a list in the DITA source may not appear in the same sequence
+		in the output. Some items might be removed by conditional publishing; for
+		example, items relating to the administrator audience might be omitted from an
+		output intended for novice users. 
+	 </p> 
+	 <p>Because the second last item and the last item cannot be always
+		identified, it is counter-productive to add 
+		<q>and</q> or different punctuation (eg, a full stop) at that point. (In
+		other words, the second last and last items can't be treated as exceptions.) 
+	 </p> 
+	 <p importance="high">List items should therefore have no closing
+		punctuation, to 
+		<ph
+		conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_maximise"><?xm-replace_text Phrase?></ph>
+		re-usability. An exception to this guideline is in the case of a list where all
+		items are complete sentences. 
+	 </p> 
+	 <p>In other cases, if considered necessary, a full stop can be added to the
+		end of a list by the publishing process. For this approach to work, it is vital
+		that 
+		<b>all</b> lists, including those with complete sentences, have no
+		terminators. 
+	 </p> 
+	 <section id="section_8F08087F970A459EA0AD76D5B6337C68"
+	 audience="contributor"> 
+		<title>Rationale</title> 
+		<p>A list may not include all list items in all outputs. For example, a
+		  list of product components may vary from model to model. Some punctuation
+		  approaches will not work for such conditional publishing scenarios. For
+		  example, a bullet list where all but the last item is terminate by a comma will
+		  only work if the last item (terminated by a full stop) is always present. If
+		  missing, the whole list will terminate with a comma. 
+		</p> 
+		<p>There is a trade-off between usability and grammatical correctness.
+		  Some DITA adopters might object strongly to a list without a terminator, such
+		  as the one within this topic, because it can be considered grammatically
+		  incorrect. 
+		</p> 
+		<p>Adding a full stop at the end of all lists in the processing stage is
+		  a good solution. To get around the problem of some lists containing complete
+		  sentences with terminating full stops, an 
+		  <synph>outputclass</synph> attribute could be used to force different
+		  processing on those different list styles. Alternatively, specialisation could
+		  be used to create 
+		  <term>punctuated list</term> and 
+		  <term>unpunctuated list</term> variants. 
+		</p> 
+		<p><?xm-replace_text Paragraph?>
+		</p> 
+	 </section> 
+  </conbody> 
+</concept> 

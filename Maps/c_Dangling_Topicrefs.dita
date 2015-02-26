@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D9104" status="new"> 
+  <title>Dangling topicrefs</title> 
+  <shortdesc>If a ditamap includes a reference to a topic that does not exist,
+	 the publishing process will generate output with a broken link. It will not
+	 gracefully omit the reference. You should therefore take care to avoid these 
+	 <term>dangling topicref</term>. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>dangling
+			 topicref</indexterm><indexterm>ditamap</indexterm><indexterm>broken
+			 link</indexterm><indexterm>topicref
+			 element</indexterm><indexterm>onlytopic.in.map</indexterm><indexterm>links<indexterm>broken</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>A 
+		<term>dangling topicref</term> is a reference in a ditamap to a topic
+		that does not exist in the collection. If you comprehend a 
+		<synph>topicref</synph> to be a link, a 
+		<term>dangling topicref</term> is the same as a broken link. 
+	 </p> 
+	 <p>You may expect that the processing process will cope gracefully with the
+		missing reference, but that is not necessarily the case. In short, it is bad
+		practice to have 
+		<term>dangling topicref</term> in a ditamap. A 
+		<term>dangling topicref</term> should be considered an authoring error,
+		even though it is not, strictly speaking, an XML error. 
+	 </p> 
+	 <p product="academic_only">There is an 
+		<parmname>onlytopic.in.map</parmname> parameter in the Ant build file
+		that will be interpreted by some publishing tools (such as the DITA Open
+		Toolkit) as an instruction to include topics referenced in the hierarchy part
+		of the ditamap but not those referenced in the relationship table. This
+		parameter does overcome the problem of 
+		<term>dangling topicrefs</term> in the 
+		<synph>reltable</synph>, but has no effect on 
+		<term>dangling topicrefs</term> in the hierarchy. 
+	 </p> 
+	 <p>Good file management practices will help avoid 
+		<term>dangling topicrefs</term>. 
+	 </p> 
+	 <section id="section_803834BEE5954DA78C488FDB509D83AE"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<lq href="http://tech.groups.yahoo.com/group/dita-users/message/11500"
+		 reftitle="Deborah Pickett, Yahoo! DITA Users Group">I placated the authors with
+		  the following advice, my own take on "then don't do that": - Some of the
+		  relationships could obviously be pushed down into the submaps, because they
+		  were exactly the kind of relationships that were suited to this, and they were
+		  never conditional on both topics being present, possibly because both topics
+		  were always present. Pushing these down to the submaps was just a matter of
+		  someone having the time to do it. - Some of the relationships were dependent on
+		  two topics, each of which were in different submaps A and B. The relationship
+		  should exist only if A and B were included. These relationships were to be
+		  pushed into a new map AintersectionB, which has no ToC hierarchy and only a
+		  small reltable containing the relationships that link topics in A with topics
+		  in B. The job of including the AintersectionB submap was given to whichever map
+		  includes both A and B. The number of these intersection-maps is, for our
+		  documentation, thankfully small. - Some of the relationships were so special
+		  that they really could only be seen to belong to one particular output. In
+		  those cases, living in the top-level map is probably the least-worst place for
+		  those relationships. For us, there are not many categories of this kind of
+		  relationship. So the tech pubs team has a plan to move forward and break up the
+		  monolithic reltables into manageable chunks. I don't think that it's finished,
+		  or I would have heard of further problems. 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D9210" status="new"> 
+  <title>Cross-references in titles</title> 
+  <shortdesc>You should not use cross-reference elements within topic titles. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>cross-references<indexterm>in
+				title</indexterm></indexterm><indexterm>title
+			 element</indexterm><indexterm>elements<indexterm>title</indexterm><indexterm>xref</indexterm></indexterm><indexterm>topic
+			 title</indexterm><indexterm>exemplar<indexterm>tip</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>The 
+		<synph>title</synph> element cannot directly contain an 
+		<synph>xref</synph> element, primarily because titles are used in many
+		different presentational contexts, some of which do not support child elements.
+		For example, the 
+		<synph>title</synph> element of a DITA topic may become the 
+		<synph>title</synph> element in the 
+		<synph>head</synph> section of an output XHTML file, which must be plain
+		text. Likewise, the title element of a DITA topic may be used as the basis for
+		link text in its parent topic. 
+	 </p> 
+	 <p>Including child elements in titles therefore reduces the opportunities
+		for re-use, increases the risk of a transformation error caused by
+		mis-interpretation of the mark-up, and complicates what should be a simple
+		semantic element. 
+	 </p> 
+	 <p>However, it 
+		<b>is</b> technically possible to embed 
+		<synph>xref</synph> or other child elements within a 
+		<synph>title</synph> element by nesting them within an (allowed) 
+		<synph>ph</synph> element. While the 
+		<synph>title</synph> element cannot contain 
+		<synph>xref</synph> elements, it 
+		<b>can</b> contain 
+		<synph>ph</synph> elements, and 
+		<synph>ph</synph> elements can contain 
+		<synph>xref</synph> elements. 
+	 </p> 
+	 <note type="tip">Carefully weigh up the implications before using this
+		workaround. 
+	 </note> 
+  </conbody> 
+</concept> 

@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<map id="map_68C4FBA800BD42C18919598674ED2B8E"><title>Microsoft Manual of Style Cross-References</title> 
+<reltable id="reltable_3C413AE049814A759759A349D67BDB4B" title="Relationship with Microsoft Manual of Style" toc="no"> 
+  <relheader><relcolspec linking="sourceonly"/><relcolspec linking="targetonly"/> 
+  </relheader> 
+  <relrow><relcell> 
+	 </relcell><relcell> 
+		<topicref format="htm" href="MSMOS/idh_online_help.htm" locktitle="yes" scope="peer" navtitle="Online Help"> 
+		</topicref> 
+		<topicref format="htm" href="MSMOS/idh_attribute.htm" locktitle="yes" navtitle="Attribute" scope="peer"> 
+		</topicref> 
+	 </relcell> 
+  </relrow> 
+  <relrow><relcell> 
+		<topicref format="dita" href="Language_and_Punctuation/c_Writing_Meaningful_Titles.dita" navtitle="Crafting meaningful topic titles" scope="local" type="concept"> 
+		</topicref></relcell><relcell> 
+		<topicref format="htm" href="MSMOS/idh_headings_and_subheadings.htm" locktitle="yes" scope="peer" navtitle="Headings and Subheadings"> 
+		</topicref></relcell> 
+  </relrow> 
+  <relrow><relcell> 
+		<topicref format="dita" href="Syntax_and_Markup/c_Complex_Command_References.dita" navtitle="Complex command reference content" scope="local" type="concept"> 
+		</topicref></relcell><relcell> 
+		<topicref format="htm" href="MSMOS/idh_command_syntax.htm" locktitle="yes" scope="peer" navtitle="Command Syntax"> 
+		</topicref></relcell> 
+  </relrow> 
+  <relrow><relcell> 
+		<topicref format="dita" href="Syntax_and_Markup/c_Parameter_or_Variable.dita" navtitle="Parameter and variable names" scope="local" type="concept"> 
+		</topicref> 
+		<topicref format="dita" href="Syntax_and_Markup/c_Complex_Command_References.dita" navtitle="Complex command reference content" scope="local" type="concept"> 
+		</topicref></relcell><relcell> 
+		<topicref format="htm" href="MSMOS/idh_command_syntax.htm" locktitle="yes" scope="peer" navtitle="Command Syntax"> 
+		</topicref></relcell> 
+  </relrow> 
+  <relrow><relcell/><relcell/> 
+  </relrow> 
+  <relrow><relcell/><relcell/> 
+  </relrow> 
+  <relrow><relcell/><relcell/> 
+  </relrow> 
+</reltable> 
+</map> 

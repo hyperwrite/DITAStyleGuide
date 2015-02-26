@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<reference id="reference_6FB31F18C6F749D78832DB80AA363731" status="new"
+ xml:lang="en"> 
+  <title>User interface domain elements</title> 
+  <shortdesc>The elements in the user interface domain each have a specific
+	 semantic purpose. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>elements<indexterm>user
+				interface</indexterm></indexterm><indexterm>user interface
+			 domain</indexterm></keywords></metadata>
+  </prolog> 
+  <refbody> 
+	 <simpletable id="simpletable_4211B5AF0F2E499E96062BE134E7530A"> 
+		<sthead><stentry>Element Name</stentry><stentry>Semantic
+			 Purpose</stentry> 
+		</sthead> 
+		<strow><stentry>uicontrol</stentry><stentry>user interface
+			 control</stentry> 
+		</strow> 
+		<strow><stentry>wintitle</stentry><stentry>window title</stentry> 
+		</strow> 
+		<strow><stentry>menucascade</stentry><stentry>menu cascade</stentry> 
+		</strow> 
+		<strow><stentry>shortcut</stentry><stentry>shortcut</stentry> 
+		</strow> 
+		<strow><stentry>screen</stentry><stentry>character (text only) screen 
+		  </stentry> 
+		</strow> 
+	 </simpletable> 
+  </refbody> 
+</reference> 

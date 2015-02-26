@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D2633" status="new"> 
+  <title>Collection type examples</title> 
+  <shortdesc>The effect of the 
+	 <synph>collection-type</synph> attribute on the output publication is well
+	 illustrated with examples of the results of the use of different types. 
+  </shortdesc> 
+  <prolog><metadata><keywords><indexterm>collection-type
+			 attribute<indexterm>examples</indexterm></indexterm><indexterm>generated
+			 links<indexterm>examples</indexterm></indexterm><indexterm>reltable<indexterm>examples
+				of links</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <section id="section_4F7D617E2969490CB58C183D5B893E3F"
+	  audience="contributor"> 
+		<title>Future enhancements</title> 
+		<p> Change the examples in this group of topics to 
+		  <ph
+			conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/ph_Subaru_company_name"><?xm-replace_text Phrase?></ph>
+		  examples from subaru_repository.ditamap. 
+		</p> 
+	 </section> 
+  </conbody> 
+</concept> 

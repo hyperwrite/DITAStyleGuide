@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D1835" status="new"> 
+  <title>Where DITA fits...</title> 
+  <shortdesc>DITA is technically defined as an XML application, and is
+	 therefore built on XML language standards. XML itself is based on other
+	 character representation rules. DITA can also be used in conjunction with
+	 related standards and technologies. 
+  </shortdesc> 
+  <prolog><author
+	 conref="../../conref/conref_source_metadata.dita#topic_hw_conref_meta/author_tony_self"></author><metadata><keywords><indexterm>XHTML</indexterm><indexterm>XML</indexterm><indexterm>S1000D</indexterm><indexterm>DocBook</indexterm><indexterm>SGML</indexterm><indexterm>Unicode</indexterm><indexterm>base
+			 content model</indexterm><indexterm>DITA<indexterm
+			 conref="../../conref/conref_source_metadata.dita#topic_hw_conref_meta/index_specialisation"><?xm-replace_text Index Term?></indexterm></indexterm><indexterm>DITA<indexterm>framework</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <fig id="fig_931AF34A597D4BD093F8E72848557733"> 
+		<title>DITA in relation to other standards and technologies</title> 
+		<desc>Diagram: 
+		  <cite>ComTech/Quadralay Presentation (Webinar), Jen Linton and Andrew
+			 VanConas</cite> 
+		</desc><image placement="break" align="left"
+		id="image_D7703730C33D49F581AD80FCB1DDAE20"
+		href="../images/BlockDiagram_DITA_within_XML.svg" width="425px" height="228px">
+		  
+		  <alt>Block diagram showing where DITA fits in a world of standards and
+			 technologies 
+		  </alt></image> 
+	 </fig> 
+  </conbody> 
+</concept> 

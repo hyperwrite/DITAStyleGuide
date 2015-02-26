@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<concept id="concept_05F6F743635C43FB8410C0246DB2BAB6"> 
+  <title>Acknowledgements</title> 
+  <conbody> 
+	 <p>I would like to thank the people who helped me bring 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_DITA_Style_Manual"><?xm-replace_text Phrase?></ph>
+		project to fruition. 
+	 </p> 
+	 <p>I owe a huge debt of gratitude to Scott Prentice, who spent a great deal
+		of time and effort on a technical review of the content. 
+	 </p> 
+	 <p>I give special thanks to Kris Eberlein, Gary Kilsen, Sarah O'Keefe, and
+		Kathy Betts, who inspired, supported and/or encouraged me in this project. I 
+		<q>dips me lid</q> to John Hunt, who first got me involved in the DITA
+		world. To the Yahoo! DITA Users Group community, and especially those such as
+		Deb Pickett who patiently and diligently answer the questions of others, thank
+		you! 
+	 </p> 
+	 <p>Thank you Mike Hughes and Jen Linton for permission to reproduce some
+		illustrations and examples in this Guide. 
+	 </p> 
+	 <p>Thanks also to Fiona Self for undertaking the copy editing task, and to
+		Nolwenn Kerzreho for reviewing the content. Su-Laine Yeo and the JustSystems
+		team deserve my gratitude for their support for the project. It would also be
+		remiss of me not to mention the help of Matthew Ellison, Suku Sinnappan, Helen
+		Self, and Joe Welinske. To anyone whose acknowledgement I've overlooked, I
+		sincerely apologise! 
+	 </p> 
+	 <p>A project of this time and nature takes a lot of time and emotional
+		energy, and I give thanks to my wife Penny Bradley for helping me every step of
+		the way. 
+	 </p> 
+	 <p>It is also important to me that I acknowledge the efforts of the OASIS
+		DITA Technical Committee and the OASIS DITA Adoption Technical Committee, whose
+		members generously donate countless hours of their considerable experience and
+		expertise to the technical communication community. 
+	 </p> 
+  </conbody> 
+</concept> 

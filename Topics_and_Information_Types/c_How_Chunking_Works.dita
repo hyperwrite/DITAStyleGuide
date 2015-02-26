@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D9106" status="new"> 
+  <title>Chunking information into topics</title> 
+  <shortdesc>Documents can be broken down into smaller 
+	 <term>chunks</term> of content that can be treated as modular building
+	 blocks. 
+	 <term>Chunks</term> should be 
+	 <ph
+	  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_organised"><?xm-replace_text Phrase?></ph>
+	 into separate topic files. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>chunking</indexterm><indexterm>sections<indexterm>within
+				topics</indexterm></indexterm><indexterm>topic<indexterm>chunking</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>With topic-based documentation, the way in which information is broken
+		down and 
+		<term>chunked</term> into topics is very important. A user guide with one
+		very long topic 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_organised"><?xm-replace_text Phrase?></ph>
+		into sections is poorly chunked. Topics should be small, self-contained,
+		granular units of content. In general, the smaller the topic size, the greater
+		the chance that topic can be re-used in another deliverable document. 
+	 </p> 
+	 <p>The process of 
+		<term>chunking</term> involves 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_analysing"><?xm-replace_text Phrase?></ph>
+		the components of the information to be documented, identifying the blocks of
+		content that can stand alone as information units, and then splitting those
+		units into separate 
+		<term>chunks</term>. 
+	 </p> 
+	 <p importance="high">In DITA, standalone 
+		<term>chunks</term> can be 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_organised"><?xm-replace_text Phrase?></ph>
+		into topics, sections within topics, or topics within topics. You should aim to
+		have separate topics for each chunk, and to avoid sections and composite
+		topics. 
+	 </p> 
+	 <p> Information in a DITA source topic doesn't have to be delivered at the
+		same granularity. For example, a family of DITA topics may be output as a
+		single HTML topic. (The 
+		<synph>chunking</synph> attribute in the 
+		<synph>topicref</synph> element in the ditamap is used for this purpose.)
+		
+	 </p> 
+	 <section id="section_444AFE9E2D0C412FA36AAD511CD30B2C"
+	 audience="contributor"> 
+		<title>Rationale</title> 
+		<lq
+		href="http://www.technicalauthoring.com/wiki/index.php/Writing_process_documents#Chunking"
+		reftitle="TechWriter Wiki"> 
+		  <p>Chunking can be used to: 
+		  </p> 
+		  <p> 
+		  <ul id="ul_449A2CF9603C47109B37E6D04749954F"> 
+			 <li id="li_9D0417844133444D9E465E6771A1323A">Identify logical
+				groupings of activities within the organization or system (for example, Commit
+				order, Organize delivery, Inform parties); 
+			 </li> 
+			 <li id="li_396A81B1ED10412F85C5BE276282C219">Identify sets of
+				activities that take place at different times (for example, Daily balance,
+				Monthly close, Annual close); 
+			 </li> 
+			 <li id="li_B3C9824C78454B7E827FE7B29C1065BC">Identify alternative
+				activities within the process (for example, Maintain affiliate vendor, Maintain
+				3rd party vendor); 
+			 </li> 
+			 <li id="li_674A2ECB9A504C6492B6C94FBB5A37F7">Any combination of the
+				above. 
+			 </li> 
+		  </ul> 
+		  </p> 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

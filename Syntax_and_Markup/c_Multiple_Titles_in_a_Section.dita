@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_752CC81097E146D7ABB2EFD2E013E521" xml:lang="en"
+ status="new"> 
+  <title>Titles</title> 
+  <shortdesc>A title is not the same as a heading. A topic, a figure, a table
+	 and a section should each have only one title. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>sections</indexterm><indexterm>headings</indexterm><indexterm>title
+			 element</indexterm><indexterm>section element</indexterm><indexterm>topic
+			 element</indexterm><indexterm>fig element</indexterm><indexterm>table
+			 element</indexterm><indexterm>titles</indexterm><indexterm>figures</indexterm><indexterm>elements<indexterm>section</indexterm><indexterm>title</indexterm><indexterm>topic</indexterm><indexterm>fig</indexterm><indexterm>table</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>The intention of the DITA approach is that the elements most commonly
+		cross-referenced, such as topics, sections, figures and tables, should have a
+		title. In some cases, the title element is mandatory. 
+	 </p> 
+	 <p importance="high">Even though the DITA DTD may technically allow
+		multiple titles to exist in one section, you should limit your section content
+		to one title. Do not use titles as though they are headings. If you need
+		multiple headings in a section, chances are that you really need multiple
+		sections. 
+	 </p> 
+	 <section id="section_9B7C0F0E8EAE4969A688A99AFBF756E5"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<lq reftitle="Eliot Kimber, Yahoo! DITA Users Group"
+		 href="http://tech.groups.yahoo.com/group/dita-users/message/16280">Multiple
+		  titles are allowed by the *DTD* but not by the language of the specification. 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

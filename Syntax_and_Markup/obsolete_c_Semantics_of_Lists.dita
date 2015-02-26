@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en-au" id="D9197"> 
+  <title>The Semantics of Lists</title> 
+  <conbody> 
+	 <p>It is possible that an unordered list's items might be re-sequenced (if
+		not randomised), such as where the unordered list comprises possible answers
+		for a multiple choice question in a Learning specialisation topic. 
+	 </p>
+	 <p>Perhaps discuss that lists can be sorted during processing. Maybe use
+		linklist and linkpool as examples.
+	 </p> 
+	 <section id="section_4A66AFF8CDFB4F2885A50A44DFC7855E"
+	 audience="contributor"> 
+		<title>Rationale</title> 
+	 </section> 
+  </conbody> 
+</concept> 

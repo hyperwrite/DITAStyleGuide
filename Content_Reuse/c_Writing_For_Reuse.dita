@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D9347" status="new"> 
+  <title>Writing for re-use</title> 
+  <shortdesc>You should embrace a style or method of writing that produces
+	 content suitable for re-use. This method includes an aim to 
+	 <ph
+	  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_minimise"><?xm-replace_text Phrase?></ph>
+	 context. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>re-use</indexterm><indexterm>writing<indexterm>for
+				re-use</indexterm></indexterm><indexterm>context-agnostic
+			 writing</indexterm><indexterm>content re-use</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>In a linear writing environment, you tend to write in the context of the
+		document you are creating. In modular writing, the writing needs to be removed
+		from the context of its use. A modular topic might be used in different
+		manuals, and in entirely different contexts. A description of a memory card may
+		end up in a camera manual, a Netbook Help system, and a mobile phone Web-based
+		user guide. 
+	 </p> 
+	 <p>In DITA, any 
+		<term>taggable</term> element can be re-used through the 
+		<term>conref</term> mechanism. This means that paragraphs (block
+		elements) or phrases (inline elements) can be re-used. For example, a 
+		<synph>note</synph> block might be used in multiple topics, and even more
+		than once in an individual topic. Likewise, a procedural step, or a product
+		name, might be a re-usable element. 
+	 </p> 
+	 <p importance="high">In a DITA authoring environment, you must therefore
+		assume that almost everything you write may end up being re-used elsewhere. You
+		must avoid including context in your writing, as context restricts the ability
+		to re-use. 
+	 </p> 
+	 <p>For example, you should avoid phrasing such as 
+		<q>in the following paragraphs</q>, or 
+		<q>as discussed earlier</q>, or 
+		<q>in the diagram below</q>. 
+	 </p> 
+	 <p>You should also avoid using 
+		<term>restrictive references</term> where possible. For example, a step
+		command such as 
+		<q>Click Print in the navigation pane on the left</q> restricts the
+		re-use of that step to cases where the Print button is located in the
+		navigation pane on the left. While 
+		<q>Click Print</q> or 
+		<q>Click Print in the navigation panel</q> might sacrifice a little
+		clarity, the benefits of re-use (including editing and translation efficiency)
+		are usually worth the trade. 
+	 </p> 
+	 <p>It could be argued that making compromises to writing style in order to
+		improve the opportunities for re-use results in poorer writing. However, the
+		writing of technical documents is inextricably linked with the business
+		requirements of budgets and deadlines. Trade-offs are common in technical
+		documentation, so the trade-off between writing style and re-use is just
+		another. 
+	 </p> 
+	 <section id="section_08F7B4413DC2494BBD95C261FD183871"
+	  audience="contributor"> 
+		<title>Further information and suggestions</title> 
+		<p> Some DITA authors suggest that re-use at phrase level should be
+		  avoided. The rationale is that translation of a phrase is more difficult
+		  without the context, that a change to a re-used phrase may have unintended
+		  consequences in some sentences that use that phrase, and that filtering with
+		  conditions is easier to manage if there are different paragraphs, rather than
+		  lots of phrase alternatives within one paragraph. The conclusion was best
+		  practice is topic re-use, then paragraph re-use if required. 
+		</p> 
+	 </section> 
+  </conbody> 
+</concept> 

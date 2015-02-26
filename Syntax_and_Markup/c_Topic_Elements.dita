@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D2469" status="new"> 
+  <title>Topic elements</title> 
+  <shortdesc>The 
+	 <term>topic elements</term> are the basic structural building blocks of all
+	 information types. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>elements<indexterm>topic</indexterm></indexterm><indexterm>topic
+			 elements</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>The topic elements are the main structural elements of topics. Some
+		topic elements are generic (ie, inherited from the 
+		<term>topic</term> proto information type), while others are specific to
+		the concept, task or reference information types. 
+	 </p> 
+	 <p>Examples of topic elements include: 
+	 <ul outputclass="listbullet" id="ul_F2331A1DD05B4C7DB031D0EC6E6A551D"> 
+		<li id="li_AA645CF6342740FCBB75A89ACD45D443">topic (and concept, task,
+		  reference, glossentry) 
+		</li> 
+		<li id="li_42C738BBE0E840BCACFE6F072229E72D">titlealts 
+		</li> 
+		<li id="li_A9EF1CEA64934E8F9C5A960300CC69C7">shortdesc 
+		</li> 
+		<li id="li_7CFDFDA5F24B4B8BBCA64704DAD3FEEA">body (and refbody, conbody,
+		  taskbody, glossBody) 
+		</li> 
+		<li id="li_8C680DDA5D004D4F932523D944A73427">section 
+		</li> 
+		<li id="li_31B54CD2731F4B1F99C49A2839C5E6F0">example 
+		</li> 
+		<li id="li_7353D26E0685456B9AA7446301D700E2">related-links 
+		</li> 
+	 </ul> 
+	 </p> 
+  </conbody> 
+</concept> 

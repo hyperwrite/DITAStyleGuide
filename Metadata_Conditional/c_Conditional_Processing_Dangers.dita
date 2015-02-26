@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D9078" status="new"> 
+  <title>Conditional processing dangers</title> 
+  <shortdesc>Any filtering conditions that apply must still result in valid
+	 DITA mark-up. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>filtering</indexterm><indexterm>conditional
+			 processing<indexterm>dangers</indexterm></indexterm><indexterm>Web only
+			 content</indexterm><indexterm>print only
+			 content</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>When using filtering in single-sourcing, you must be careful to ensure
+		that a conditional processing rule doesn't result in invalid DITA. Filtering
+		must not result in a required element being removed during processing. 
+	 </p> 
+	 <p>For example, in the following snippet, if a condition of 
+		<q>exclude web_only and exclude print_only</q> was set, there would be no
+		steps in the task, and the topic would be invalid. (The 
+		<synph>steps</synph> element requires at least one child 
+		<synph>step</synph> element.) 
+	 </p> 
+	 <codeblock> 
+      &lt;task id="myTopic"&gt; 
+      &lt;title&gt;Making a Warranty Claim&lt;/title&gt; 
+      &lt;taskbody&gt; 
+      &lt;context&gt;...&lt;/context&gt; 
+	     &lt;steps&gt;
+        &lt;step otherprops="web_only"&gt;...&lt;/step&gt; 
+        &lt;step otherprops="print_only"&gt;...&lt;/step&gt;
+      &lt;/steps&gt; 
+      &lt;result&gt;...&lt;/result&gt; 
+      &lt;/taskbody&gt; 
+      &lt;/task&gt; </codeblock> 
+  </conbody> 
+</concept> 

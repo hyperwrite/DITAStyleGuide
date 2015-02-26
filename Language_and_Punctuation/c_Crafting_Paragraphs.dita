@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<concept id="concept_D94B6F1140A4479BA5EF7B33C6BAC5E2" xml:lang="en"
+ status="new"> 
+  <title>Crafting paragraphs</title> 
+  <shortdesc>A paragraph should contain one unit of thought or action, or main
+	 point, and should be typically three to eight sentences in length. All of the
+	 sentences in a paragraph should relate to its main point. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>paragraphs</indexterm><indexterm>writing<indexterm>paragraphs</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p> 
+	 </p> 
+	 <p>A paragraph should start with a 
+		<term>topic sentence</term>. A topic sentence establishes the paragraph's
+		main idea, and therefore discloses the subject of the paragraph to the reader.
+		This structure help scanning readers move quickly through a text. 
+	 </p> 
+	 <p>The sentences that follow should support the topic sentence by
+		elaborating on the main point. Paragraphs should be three to eight sentences in
+		length. 
+	 </p> 
+	 <p>To avoid closing off opportunities for re-using paragraphs in different
+		contexts, do not use cohesive or transitional devices at the end of a paragraph
+		that tie it to the next paragraph. 
+	 </p> 
+	 <section id="section_C69A46B004E34958B52364D0F562705F"
+	 audience="contributor"> 
+		<title>Rationale</title> 
+		<lq reftitle="Peters (2004:406)">For the reader, paragraphs should
+		  correlate with units of thought or action in the writing. They should provide
+		  digestible blocks of information or narrative, by which the reader can
+		  cumulatively absorb the whole. Ideally (at least in informative and
+		  argumentative writing) the paragraph begins with a topic sentence, which
+		  signals in general terms whatever it will focus on. 
+		</lq> 
+		<lq reftitle="Peters (2004:407)">Writing guides sometimes advocate
+		  including a cohesive or transitional device at the end of each paragraph, as
+		  well as at the beginning of the next. This becomes very tedious if done over
+		  every paragraph break – and is not necessary if there’s adequate cohesion at
+		  the start of new paragraphs with what has gone before. 
+		</lq> 
+		<lq reftitle="Dorothy Turner, HyperGrammar, uOttawa"
+		href="http://www.writingcentre.uottawa.ca/hypergrammar/parunif.html">A 
+		  <xref
+		  href="http://www.uottawa.ca/academic/arts/writcent/hypergrammar/paragrph.html#paragraphs"
+		  scope="external" type="html"> paragraph</xref> is unified when every 
+		  <xref
+		  href="http://www.uottawa.ca/academic/arts/writcent/hypergrammar/subjpred.html#sentence"
+		  scope="external" type="html"> sentence</xref> develops the point made in the 
+		  <xref
+		  href="http://www.uottawa.ca/academic/arts/writcent/hypergrammar/partopic.html#topic%20sentence"
+		  scope="external" type="html"> topic sentence</xref>. It must have a single
+		  focus and it must contain no irrelevant facts. Every sentence must contribute
+		  to the paragraph by explaining, exemplifying, or expanding the topic sentence.
+		  In order to determine whether a paragraph is well developed or not, ask
+		  yourself: "What main point am I trying to convey here?" (topic sentence) and
+		  then "Does every sentence clearly relate to this idea?" 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

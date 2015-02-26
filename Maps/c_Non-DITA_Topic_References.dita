@@ -1,0 +1,160 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_08CDC56E8ECB4CD9B2450E1E408EB0C8" xml:lang="en"
+ status="new"> 
+  <title>Non-DITA topic references</title> 
+  <shortdesc>A ditamap can include references to non-DITA resources, such as
+	 PDF documents, spreadsheet files, presentation files, online tutorials, HTML
+	 files, and Internet addresses. The 
+	 <synph>topicref</synph> element is used for these references, with 
+	 <synph>format</synph> and 
+	 <synph>scope</synph> attributes describing the type of resource. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>attributes<indexterm>scope</indexterm><indexterm>format</indexterm><indexterm>navtitle</indexterm><indexterm>locktitle</indexterm></indexterm><indexterm>elements<indexterm>topicref</indexterm></indexterm><indexterm>links<indexterm>to
+				PDF and other files</indexterm><indexterm>to Internet
+				resources</indexterm></indexterm><indexterm>topic references<indexterm>to
+				non-DITA resources</indexterm></indexterm><indexterm>topicref
+			 element</indexterm><indexterm>non-DITA content in
+			 ditamaps</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p> Sometimes, a deliverable document in a DITA workflow will not be made
+		up exclusively of DITA content. For example, a user manual may need to include
+		a PDF form, or a Web site may need to include an interactive Flash tutorial
+		created by another party. In such cases, when specifying the ditamap (a 
+		<term>manifest</term> of content for your deliverable document), you may
+		need to include references to non-DITA resources. 
+	 </p> 
+	 <p>These non-DITA resources are referenced through the standard 
+		<synph>topicref</synph> element, but with two attributes set to nominate
+		that the referenced files are non-DITA, and external to the project. These two
+		attributes are 
+		<synph>format</synph> and 
+		<synph>scope</synph>. You would also normally provide a navigation title
+		(<synph>navtitle</synph> attribute) and lock the title (setting the 
+		<synph>locktitle</synph> attribute to 
+	 <option>yes</option>) so that the processor doesn't try to retrieve the
+	 topic from the referenced resource. 
+	 </p> 
+	 <p>Further, you may want the TOC in the output, generated from the ditamap,
+		to include links to Web sites or e-mail addresses. You can do this by again
+		using the standard 
+		<synph>topicref</synph> element, but with the 
+		<synph>format</synph> attribute set to 
+	 <option>html</option> and the 
+	 <synph>scope</synph> attribute set to 
+	 <option>external</option>. 
+	 </p> 
+	 <p>The following code example shows a reference to a Web site, and a
+		reference to a PDF file located in a folder relative to the output folder. 
+	 </p> 
+	 <codeblock>&lt;topicref 
+  format="html"
+  href="http://www.<ph conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/ph_Subaru_company_name"><?xm-replace_text Phrase?></ph>.com.au/"
+  locktitle="yes" navtitle="<ph conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/ph_Subaru_company_name"><?xm-replace_text Phrase?></ph> Australia Web Site" scope="external"/&gt;
+&lt;topicref format="pdf" href="pdf/2006_impre_brochure.pdf" locktitle="yes" navtitle="<ph conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/ph_Subaru_company_name"><?xm-replace_text Phrase?></ph> <ph conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/ph_Impreza_product_name"><?xm-replace_text Phrase?></ph> 2006 Brochure" scope="peer"/&gt;</codeblock> 
+	 <p>Valid 
+		<synph>format</synph> attribute values are: 
+	 <dl> 
+		<dlentry> 
+		  <dt>dita 
+		  </dt> 
+		  <dd>for DITA topics 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt>html 
+		  </dt> 
+		  <dd>for HTML or XHTML resources 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt>pdf 
+		  </dt> 
+		  <dd>for PDF documents 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt>ditamap 
+		  </dt> 
+		  <dd>for embedded ditamap files 
+		  </dd> 
+		</dlentry> 
+	 </dl> 
+	 </p> 
+	 <p>However, the 
+		<synph>format</synph> attribute accepts any string, so if you are
+		referencing another type of resource, you can use the file extension (without
+		the 
+		<q>.</q>). For example, if you are referencing a Word 2007 document, you
+		would use 
+		<userinput>docx</userinput> as the 
+		<synph>format</synph> attribute value. 
+	 </p> 
+	 <p>Valid 
+		<synph>scope</synph> attribute values are: 
+	 <dl> 
+		<dlentry> 
+		  <dt>local 
+		  </dt> 
+		  <dd> the resource is part of the current content collection 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt>peer 
+		  </dt> 
+		  <dd>the resource is part of the current content collection, but will
+			 not be available when the ditamap is processed (the resource will be separately
+			 created) 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt>external 
+		  </dt> 
+		  <dd>the resource is not part of the current content collection 
+		  </dd> 
+		</dlentry> 
+	 </dl> 
+	 </p> 
+	 <p>The 
+		<synph>scope</synph> attribute also has an effect on what window the
+		resource opens in (when generated to a hypertext output). 
+	 </p> 
+	 <section id="section_9656347964604C8B8D882494324F70BB"
+	 audience="contributor"> 
+		<title>Rationale</title> 
+		<lq reftitle="Ray, Yahoo! DITA Users Group"
+		href="http://tech.groups.yahoo.com/group/dita-users/message/14822"> I have
+		  several DITA maps across several products. I want to leverage (that is, re-use)
+		  topics from one project in another. I know I can specify a topic as "external"
+		  in the DITA map, but the transform just gives me a link to it. I want it to run
+		  through the DITA map and, where necessary, "gather" the external topics I'm
+		  pointing to and include them in the transformed set of HTML or XHTML files. Am
+		  I missing something? Can DITA really not do this? 
+		</lq> 
+		<lq reftitle="Eliot Kimber, Yahoo! DITA Users Group"
+		 href="http://tech.groups.yahoo.com/group/dita-users/message/14823">Scope="external"
+		  means "not part of this publication", not "not part of the directory structure
+		  beneath this map." So just say scope="local" and you should be fine (maybe, see
+		  below). Note that when you process maps that point to topics stored in
+		  locations that are not below the top-level map, you need to specify two
+		  parameters to the Toolkit so it will do the right thing: - generate.copy.outer
+		  - set to the value "2", which causes the toolkit to copy everything into the
+		  same relative structure as part of the processing. - outer.control - set to
+		  "quiet" so you don't get pointless warnings about files outside the main
+		  directory tree. When you do this make sure that your target temp directories
+		  and output directories have enough ancestor directories to accommodate any
+		  directories above and to the side of the main input map's directory. If you
+		  have things stored in really divergent locations, then you probably need to
+		  have some sort of pre-process that moves the "external" topics into a better
+		  location and then updates references to those topics before you apply the main
+		  Toolkit processing. In general, if you have this situation, you should have all
+		  the source stored in a common location (e.g. a single network drive), so that,
+		  for example, all products or publications and common topics are stored under a
+		  common parent directory to minimize the problem. Trying to include topics from
+		  two different drives or mount points would probably not work at all. 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

@@ -1,0 +1,199 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D9096" status="new"> 
+  <title>Placement of 
+	 <synph>indexterm</synph> elements</title> 
+  <shortdesc>The 
+	 <synph>indexterm</synph> element is pure metadata, and does not display.
+	 You should place index entries in the 
+	 <synph>prolog</synph> section of the topic, or in the 
+	 <synph>topicmeta</synph> section of the 
+	 <synph>topicref</synph> in the ditamap only if the term is specific to a
+	 particular publication. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>indexing</indexterm><indexterm>indexterm
+			 element</indexterm><indexterm>elements<indexterm>indexterm</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>The alphabetical index of a publication is derived, during the
+		publishing process, from index keyword terms placed by the author throughout
+		topics in the document. Index keyword terms are defined through the 
+		<synph>indexterm</synph> element. 
+	 </p> 
+	 <p>DITA allows 
+		<synph>indexterm</synph> elements to be placed in: 
+	 <ul outputclass="listbullet" id="ul_B66442F2790D4737A22F08DDFAFA6634"> 
+		<li id="li_9070E85A05994E83AA5B02A792F66A01">the 
+		  <synph>topicref</synph> in the ditamap 
+		</li> 
+		<li id="li_789D0BFD643148929AB1F088BEDB6417">the 
+		  <synph>prolog</synph> in the topic 
+		</li> 
+		<li id="li_68BD2FA3BD6543ED946BD9091596BD7F">the 
+		  <synph>shortdesc</synph> (and 
+		  <synph>abstract</synph>) in the topic 
+		</li> 
+		<li id="li_863429D7548B40DCA4AF264761745237">the 
+		  <synph>body</synph> of the topic 
+		</li> 
+	 </ul> 
+	 </p> 
+	 <p>However, having index entries scattered throughout the text creates
+		maintenance problems, and may lead to difficulties in translation and
+		processing. 
+	 </p> 
+	 <p importance="high">Where possible, 
+		<synph>indexterm</synph> elements should be placed in the topic 
+		<synph>prolog</synph> section, outside the body of the topic content. In
+		the 
+		<synph>prolog</synph>, index entries must be contained within a 
+		<synph>keywords</synph> element. 
+	 </p> 
+	 <p importance="high">When specific to a publication (and therefore not
+		always applicable to the topic), the 
+		<synph>indexterm</synph> elements should be placed in the 
+		<synph>topicmeta</synph> section within the 
+		<synph>topicref</synph> element in the ditamap. An example of this may be
+		a term that is used by one 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_organisation"><?xm-replace_text Phrase?></ph>
+		but not others, where different ditamaps define output for different 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_organisations"><?xm-replace_text Phrase?></ph>.
+		
+	 </p> 
+	 <p>Index terms should only be placed within the body text where topics are
+		relatively long. In such cases, index entries in the output might otherwise
+		point to the start of a section of content, rather than the point at which the
+		term is mentioned. 
+	 </p> 
+	 <p importance="high">When you need to place the index entry within the body
+		of a topic, follow these placement guidelines: 
+	 <ul outputclass="listbullet" id="ul_2853CC7EDD9C4F2AB3E976A9F1851550"> 
+		<li id="li_CA894B04B7AB46769DDA0CF01200D946">for block-level (paragraph)
+		  elements: immediately following the start tag of the containing element 
+		</li> 
+		<li id="li_7248546A5AD84CD99A6CE9FF5364E118">at sentence level:
+		  immediately preceding the sentence 
+		</li> 
+		<li id="li_26D63E870DE3438CBE71AAFF61BC569D">at word or phrase level:
+		  immediately preceding the text 
+		</li> 
+	 </ul> 
+	 </p> 
+	 <note>The contents of 
+		<synph>indexterm</synph> elements are never rendered in the output,
+		including when the 
+		<synph>indexterm</synph> elements are inline within the body of the
+		content. Thus, the mark-up: 
+		<codeph>&lt;p&gt;The EJ25
+		  &lt;indexterm&gt;turborcharger&lt;/indexterm&gt; forced
+		  induction...&lt;/p&gt;</codeph> will render as 
+		<systemoutput>The EJ25 forced induction...</systemoutput>. 
+	 </note> 
+	 <p importance="high">In some cases, you may feel you want to use an 
+		<synph>indexterm</synph> at a particular point in the document where 
+		<synph>indexterm</synph> is not allowed. Although you may be able to
+		technically work around the problem by inserting a phrase (<synph>ph</synph>)
+		element and then inserting the 
+		<synph>indexterm</synph> element is the 
+		<synph>ph</synph> element, do not do this. Only insert an index term
+		where the element is valid. 
+	 </p> 
+	 <section id="section_F86D31A5B6E0471EB9452145DC8BF564"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<lq href="http://tech.groups.yahoo.com/group/dita-users/message/16905"
+		 reftitle="cathywildhaber, Yahoo! DITA Users Group"> 
+		  <p>When we began using indexterms, we used them within the body of
+			 topics, not realizing that words tagged as &lt;indexterm&gt; are stripped from
+			 output. 
+		  </p> 
+		  <p>We have since switched to placing indexterms within the topic
+			 prolog. However, for those items we tagged prior to instituting this best
+			 practice: Is there any way to make words tagged as 
+			 <synph>indexterm</synph> show in output, perhaps through modification
+			 of the transforms? 
+		  </p> 
+		</lq> 
+		<lq reftitle="Scott Prentice, Yahoo! DITA Users Group"
+		 href="http://tech.groups.yahoo.com/group/dita-users/message/17357">The only
+		  drawback of using indexterms in the prolog is that for non-general index
+		  entries in long topics you're likely to have misaligned page numbers in printed
+		  output. The page numbers associated with an index entry will be the page with
+		  the topic heading, and the actual term/concept being indexed may be many pages
+		  away. If your readers are aware of this indexing method (page numbers point to
+		  the heading that contains the entry), this may not be a problem, but some
+		  readers may just give up on using your index if it seems to be incorrect. As
+		  with many things in DITA, it's a trade off that you need to decide based on
+		  your content and audience. 
+		</lq> 
+		<p>The counter-argument to Scott Prentice's view is that best practice
+		  for chunking points towards small topics, so the instance of a large topic that
+		  my render across multiple pages in a page layout option should be rare. In such
+		  cases, inline index terms would be appropriate. 
+		</p> 
+		<lq reftitle="Anna van Raaphorst, Yahoo! DITA Users Group"
+		href="http://tech.groups.yahoo.com/group/dita-users/message/17353"> I agree
+		  with Steve. I think the cleanest and most reuse-friendly way to index is in a
+		  topic prolog. 
+		</lq> 
+		<lq
+		reftitle="OASIS DITA Translation Subcommittee Best Practice for Indexing DITA topics">
+		  
+		  <p>In the DITA model, Index &lt;indexterm&gt; tags may be inserted
+			 inline (meaning before, after, or within sentences or phrases) in most DITA
+			 elements, including the block elements of paragraph, bulleted list, and
+			 numbered list. They are used to create in-situ index references to the topic or
+			 to text within the topic. 
+		  </p> 
+		  <p>Recommended Best Practices: 
+		  <ul outputclass="listbullet" id="ul_51AA4C328D4D43C7944666185E7848EB"> 
+			 <li id="li_41B6E047070546C18528E4E6AC17B303">Insert index entries
+				that refer to entire topics in the prolog element using the &lt;keywords&gt;
+				tag... Index entries using the &lt;keywords&gt; tag in the prolog are processed
+				to refer to the page that contains the title of the topic. 
+			 </li> 
+			 <li id="li_F50E6E8389E14AA982A8292B2282F4E8">Insert block-level index
+				tags immediately following the start tag of the applicable containing block
+				element. 
+			 </li> 
+			 <li id="li_7222414BC7874464A1E8B56EA0444E0E">Insert a sentence-level
+				index tag immediately preceding the sentence in which the text occurs. 
+			 </li> 
+			 <li id="li_854B7E3331354FE4A94DC81349F6E0C1">Insert word or
+				phrase-level index tag immediately preceding the text to which it applies. You
+				must retype the word or phrase in the &lt;indexterm&gt; element. If you tag an
+				existing word or phrase as an &lt;indexterm&gt;, it will not appear in the
+				final text of the block. 
+			 </li> 
+			 <li id="li_E1ABF2490C4741A09DC6E37C1DDFAD5E">Avoid relocating an
+				index tag within a text that has not changed since the last translation when
+				you have pointed to a specific word or phrase in the text. A relocated index
+				term generates a fuzzy match because the segmentation of the sentence changes
+				from that stored in the translation memory. 
+			 </li> 
+		  </ul> 
+		  </p> 
+		</lq> 
+		<lq
+		reftitle="OASIS DITA Translation Subcommittee Best Practice for Indexing DITA topics">...inserting
+		  an inline element such as &lt;indexterm&gt; anywhere into a block element may
+		  present problems for translation... After a word or phrase has been enclosed in
+		  the &lt;indexterm&gt; tag, it is no longer recognized as part of the text of
+		  the block element. 
+		</lq> 
+	 </section> 
+	 <section id="section_BFE2CB5BF7004B81B36D10321ED46DFB"
+	 audience="contributor"> 
+		<title>References</title> 
+		<ul id="ul_AED6DB79F480489BBC899BB50D206ECC"> 
+		  <li id="li_EFA1A67134864EE0BCFD1D30EADD128C"><cite>Indexing Effectively
+				in DITA (SDI Global Solutions Whitepaper),
+				http://www.sdicorp.com/Resources/White_Papers.aspx</cite> 
+		  </li> 
+		</ul> 
+	 </section> 
+  </conbody> 
+</concept> 

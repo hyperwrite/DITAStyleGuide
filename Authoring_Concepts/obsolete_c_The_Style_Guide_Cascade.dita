@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en-au" id="D5147"> 
+  <title>The style guide cascade</title> 
+  <shortdesc>Most end-to-end authoring and publishing processes are governed by
+	 more than one style guide or reference, and the rules in different style guides
+	 take precedence over others. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>cascade<indexterm>style
+				guide</indexterm></indexterm><indexterm>style
+			 guide</indexterm><indexterm>Macquarie Dictionary</indexterm><indexterm>Fowler's
+			 Modern English Usage</indexterm><indexterm>AGPS Style
+			 Manual</indexterm><indexterm>Microsoft Manual of
+			 Style</indexterm><indexterm>corporate style manual</indexterm><indexterm>house
+			 style guide</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>Publishers, authors and editors rarely use one style guide or reference
+		to control consistency. Instead, dictionaries, grammar guides, thesauruses, and
+		other reference works are used collectively. House style guides normally
+		nominate only variations from a public reference work. For example, a corporate
+		style manual doesn't contain a complete standalone set of rules; it might
+		reference spelling from the 
+		<cite>Macquarie Dictionary</cite>, language usage from 
+		<cite>Fowler's</cite>, nomenclature rules from the 
+		<cite>Microsoft Manual of Style</cite>, and other house style rules,
+		which in turn might be built on the 
+		<cite>AGPS Style Manual</cite>. 
+	 </p> 
+	 <fig id="fig_A0A547FE43A54044A2913EBD3CF3AB56"> 
+		<title>Typical cascade of rules between style guides and
+		  references</title><image href="../images/style_guide_cascade.jpg"
+		id="image_4CA803D0D2104779A4102FCED574CD03" align="left" placement="break"
+		width="492px" height="369px"> 
+		  <alt>Diagram showing inter-relationship between different types of
+			 style guides 
+		  </alt></image> 
+	 </fig> 
+	 <p> 
+	 </p> 
+	 <p> 
+		<draft-comment>This needs to be expanded; extract topics from academic
+		  paper on style guides. 
+		</draft-comment> 
+	 </p> 
+  </conbody> 
+</concept> 

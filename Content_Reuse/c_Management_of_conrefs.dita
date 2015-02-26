@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D2821" status="new"> 
+  <title>Finding elements to re-use</title> 
+  <shortdesc>Logically 
+	 <ph
+	  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_organising"><?xm-replace_text Phrase?></ph>
+	 re-use elements into re-use files is one strategy to make re-use easier, but a
+	 DITA 
+	 <term>Content Management System</term> will provide management features
+	 superior to files in a simple file system. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>re-use<indexterm>finding elements
+				to re-use</indexterm></indexterm><indexterm>content re-use<indexterm>finding
+				elements to re-use</indexterm></indexterm><indexterm>finding re-use
+			 elements</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>One of the challenges of working with re-use elements is how to find and
+		otherwise manage them. 
+	 </p> 
+	 <p>The questions that content authors encounter include: 
+	 <ul outputclass="listbullet" id="ul_543F8B922C0D417F9F7ABFA41756624B"> 
+		<li id="li_3A68403BE41D4AFDA3950538888D3FBE">How do I know whether I have
+		  previously written something that I need to re-use? 
+		</li> 
+		<li id="li_82F4532F5FCE4753B2CA999810226C20">If I know I've already
+		  written something on this subject, but where did I write that? 
+		</li> 
+		<li id="li_8B467CC6C5204A1781E5FA06B9977CCC">If I have a chunk of
+		  information that I know will be common to three similar tasks, which task do I
+		  put the "master" one in? 
+		</li> 
+		<li id="li_51B0213BC6DE494EBF29416C08200083">Can I have conrefs that
+		  conref other chunks? Or is that crazy? 
+		</li> 
+	 </ul> 
+	 </p> 
+	 <p>Using 
+		<ph
+		conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_centralised"><?xm-replace_text Phrase?></ph>
+		files to store re-use elements is one strategy that partly helps to resolve
+		these questions. Using logical names for re-use elements is another. However,
+		DITA-aware 
+		<term>Content Management Systems</term> have built-in tools for finding
+		re-use opportunities and maintaining re-use elements. 
+	 </p> 
+  </conbody> 
+</concept> 

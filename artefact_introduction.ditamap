@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<map id="map_68C4FBA800BD42C18919598674ED2B8E"><title>DITA Style Guide Introduction</title>
+	<topichead navtitle="Introduction">
+		<topicref format="dita" href="Authoring_Concepts/c_About_the_Style_Guide.dita" navtitle="About" scope="local" type="concept"/><topicref format="dita" href="Authoring_Concepts/c_Role_of_Best_Practice_Guide.dita" navtitle="The role of a style guide" scope="local" type="concept"/>
+		<topicref format="dita" href="Authoring_Concepts/c_Acknowledgements.dita" navtitle="Acknowledgements" scope="local" type="concept"/></topichead>
+</map>

@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_F8FC7750E5CA411CB7B3BF3DE0D1F07E" xml:lang="en"
+ status="new"> 
+  <title>Filtering ditamaps</title> 
+  <shortdesc>When filtering a nested ditamap, you should apply the condition
+	 attribute to the reference (<synph>topicref</synph> or 
+	 <synph>mapref</synph> element) to the nested ditamap, rather than to the 
+	 <synph>map</synph> element. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>mapref
+			 element</indexterm><indexterm>topicref element</indexterm><indexterm>map
+			 element</indexterm><indexterm>conditional
+			 processing</indexterm><indexterm>metadata
+			 attributes</indexterm><indexterm>select
+			 attributes</indexterm><indexterm>condition
+			 attributes</indexterm><indexterm>filtering<indexterm>ditamaps</indexterm></indexterm><indexterm>elements<indexterm>map</indexterm><indexterm>mapref</indexterm><indexterm>topicref</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>It is possible in DITA, and often good practice, to have nested
+		ditamaps. Although it does depend on circumstance, it is generally better
+		practice to apply conditions to the 
+		<synph>topicref</synph> or 
+		<synph>mapref</synph> element, rather than the 
+		<synph>map</synph> element of the nested ditamap. 
+	 </p> 
+	 <p>The reason for this, and a point that should always be considered when
+		deciding on a filtering strategy, is the reduced processing load during
+		generation of the output. If the processor has to read in a topic, or a nested
+		map, only to find it's not needed in the current build because of the filtering
+		metadata, it is an inefficient model. It is much better for the exclusion to be
+		notified to the processor before having to load the file. 
+	 </p> 
+  </conbody> 
+</concept> 

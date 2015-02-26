@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<map id="map_7F35E1F0F06F49329336FE73D506FC33"><title>Cross-referencing</title> 
+<topicref format="dita" href="c_Cross-referencing.dita" navtitle="Cross-referencing" scope="local" type="concept"> 
+  <topicref format="dita" href="Cross_Referencing/c_Types_of_CrossReferences.dita" navtitle="Types of cross-references" scope="local" type="concept"/> 
+  <topicref format="dita" href="Cross_Referencing/c_The_xref_Element.dita" navtitle="The xref element" scope="local" type="concept"/> 
+  <topicref format="dita" href="Cross_Referencing/c_Avoiding_Cross_References.dita" navtitle="Avoiding in-text cross-references to topics" scope="local" type="concept"/> 
+  <topicref format="dita" href="Cross_Referencing/c_Cross-referencing_Topics_and_External_Resources.dita" navtitle="Cross-referencing topics and external resources" scope="local" type="concept"> 
+	 <topicref format="dita" href="Cross_Referencing/c_Referencing_through_href_attribute.dita" navtitle="Format of href attribute in cross-references" scope="local" type="concept"/> 
+	 <topicref format="dita" href="Cross_Referencing/c_Links_to_non-DITA_Resources.dita" navtitle="Links to non-DITA resources" scope="local" type="concept"/> 
+	 <topicref format="dita" href="Cross_Referencing/c_Scope_Attribute.dita" navtitle="Linking in a new window" scope="local" type="concept"/> 
+	 <topicref format="dita" href="Cross_Referencing/c_Links_to_Glossary_Terms.dita" navtitle="Links to glossary terms" scope="local" type="concept"/> 
+	 <topicref format="dita" href="Cross_Referencing/c_Indirection_with_keyref.dita" navtitle="Indirect linking with keys" scope="local" type="concept"/> 
+  </topicref> 
+  <topicref format="dita" href="Cross_Referencing/c_Cross-referencing_Elements_in_a_Topic.dita" navtitle="Cross-referencing elements in a topic" scope="local" type="concept"> 
+	 <topicref format="dita" href="Cross_Referencing/c_Cross_Referencing_Figures.dita" navtitle="Cross-referencing figures" scope="local" type="concept"/> 
+	 <topicref format="dita" href="Cross_Referencing/c_Cross_Referencing_Tables.dita" navtitle="Cross-referencing tables" scope="local" type="concept"/> 
+	 <topicref format="dita" href="Cross_Referencing/c_Referencing_Page_Number.dita" navtitle="Cross-referencing to a page number" scope="local" type="concept"/> 
+	 <topicref format="dita" href="Cross_Referencing/c_Referencing_Step_Numbers.dita" navtitle="Cross-referencing a step" scope="local" type="concept"/> 
+	 <topicref format="dita" href="Cross_Referencing/c_Cross-referencing_a_Transcluded_Element.dita" navtitle="Cross-referencing a transcluded element" scope="local" type="concept"/> 
+  </topicref> 
+  <topicref format="dita" href="Cross_Referencing/c_Related_Links_Section.dita" navtitle="Links in related-links sections" scope="local" type="concept"> 
+	 <topicref format="dita" href="Cross_Referencing/c_Structure_of_related_links_Element.dita" navtitle="Structure of the related-links section" scope="local" type="concept"/> 
+	 <topicref format="dita" href="Cross_Referencing/c_The_desc_Element_in_Links.dita" navtitle="The desc element in links" scope="local" type="concept"/> 
+	 <topicref format="dita" href="Cross_Referencing/c_The_importance_Attribute_and_Related_Links.dita" navtitle="The importance attribute and related links" scope="local" type="concept"/> 
+	 <topicref format="dita" href="Cross_Referencing/c_The_linkinfo_Element.dita" navtitle="The linkinfo element" scope="local" type="concept"/> 
+  </topicref> 
+  <topicref format="dita" href="Cross_Referencing/c_Managing_Cross-references.dita" navtitle="Managing cross-references" scope="local" type="concept"> 
+	 <topicref format="dita" href="Cross_Referencing/c_Referencing_ditamap.dita" navtitle="Cross-referencing a ditamap" scope="local" type="concept"/> 
+	 <topicref format="dita" href="Cross_Referencing/c_Controlling_Related_Links.dita" navtitle="Removing related links from the output" scope="local" type="concept"/> 
+	 <topicref format="dita" href="Cross_Referencing/c_Conditions_in_Cross_References.dita" navtitle="Conditions in cross-references" scope="local" type="concept"/> 
+  </topicref> 
+  <topicref format="dita" href="Cross_Referencing/c_Cross_References_in_Titles.dita" navtitle="Cross-references in titles" scope="local" type="concept"/> 
+  <topicref format="dita" href="Cross_Referencing/c_Cross-references_Sample_Topic.dita" navtitle="Sample topic - cross-references" print="no" scope="local" type="concept" product="academic_only"/> 
+</topicref> 
+<reltable id="reltable_C08230F05024447ABE2264327402CDC7" title="Relationship between Cross-ReferenceTopics" toc="no"> 
+  <relheader><relcolspec type="task"/><relcolspec type="concept"/><relcolspec type="reference"/><relcolspec scope="external"/> 
+  </relheader> 
+  <relrow><relcell/><relcell collection-type="family"> 
+		<topicref format="dita" href="Cross_Referencing/c_Scope_Attribute.dita" navtitle="Linking in a new window" scope="local" type="concept"/> 
+		<topicref format="dita" href="Cross_Referencing/c_Links_to_non-DITA_Resources.dita" navtitle="Links to non-DITA resources" scope="local" type="concept"/></relcell><relcell/><relcell/> 
+  </relrow> 
+  <relrow><relcell/><relcell collection-type="family"> 
+	 </relcell><relcell/><relcell/> 
+  </relrow> 
+  <relrow><relcell/><relcell collection-type="family"> 
+	 </relcell><relcell/><relcell/> 
+  </relrow> 
+  <relrow><relcell/><relcell/><relcell/><relcell/> 
+  </relrow> 
+</reltable> 
+<reltable id="reltable_2929202D86AA49E4B1B37C0847D9C75D" title="One Way Links in Cross-Reference Section" toc="no"> 
+  <relheader><relcolspec linking="sourceonly"/><relcolspec linking="targetonly"/> 
+  </relheader> 
+  <relrow><relcell> 
+		<topicref format="dita" href="Cross_Referencing/c_Cross_Referencing_Figures.dita" navtitle="Cross-referencing figures" scope="local" type="concept"/> 
+		<topicref format="dita" href="Cross_Referencing/c_Types_of_CrossReferences.dita" navtitle="Types of cross-references" scope="local" type="concept"/> 
+		<topicref format="dita" href="Cross_Referencing/c_Referencing_Step_Numbers.dita" navtitle="Cross-referencing a step" scope="local" type="concept"/></relcell><relcell> 
+		<topicref format="dita" href="Cross_Referencing/c_Cross-references_Sample_Topic.dita" navtitle="Sample topic - cross-references" scope="local" type="concept"/></relcell> 
+  </relrow> 
+  <relrow><relcell> 
+		<topicref format="dita" href="Cross_Referencing/c_The_xref_Element.dita" navtitle="The xref element" scope="local" type="concept"> 
+		</topicref></relcell><relcell> 
+		<topicref format="dita" href="Cross_Referencing/c_Cross-referencing_Elements_in_a_Topic.dita" navtitle="Cross-referencing elements in a topic" scope="local" type="concept"> 
+		</topicref> 
+		<topicref format="dita" href="Cross_Referencing/c_Referencing_through_href_attribute.dita" navtitle="Format of href attribute in cross-references" scope="local" type="concept"/> 
+		<topicref format="dita" href="Cross_Referencing/c_Scope_Attribute.dita" navtitle="Linking in a new window" scope="local" type="concept"/></relcell> 
+  </relrow> 
+  <relrow><relcell/><relcell/> 
+  </relrow> 
+  <relrow><relcell/><relcell/> 
+  </relrow> 
+</reltable> 
+</map> 

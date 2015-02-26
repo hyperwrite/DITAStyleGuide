@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D9345" status="new"> 
+  <title>Different graphics for different published media</title> 
+  <shortdesc>When a graphic needs to be presented differently for different
+	 output media, you should either include multiple versions of the graphics and
+	 use conditional processing to filter the required output, or use the 
+	 <synph>keyref</synph> feature. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>keyref
+			 attribute</indexterm><indexterm>attributes<indexterm>keyref</indexterm><indexterm>conkeyref</indexterm></indexterm><indexterm>conditional
+			 processing</indexterm><indexterm>conkeyref
+			 attribute</indexterm><indexterm>filtering</indexterm><indexterm>graphics<indexterm>different
+				resolutions</indexterm></indexterm><indexterm>single
+			 sourcing<indexterm>graphics</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>In many cases, the graphic used for a particular publishing output needs
+		to be different to that used for an alternative output. For example, a high
+		resolution PNG image might be required for the PDF output of a topic, but a
+		smaller JPG image required for an eBook output. 
+	 </p> 
+	 <p rev="1.2">The 
+		<synph>keyref</synph> attribute introduced in 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_DITA12"><?xm-replace_text Phrase?></ph>
+		allows different image files to be used for the same illustration when a
+		different map is used. Provided a different map file is used for PDF and eBook
+		outputs in the preceding example, the keyref would point to different image
+		files in each map. 
+	 </p> 
+	 <p rev="1.2">This technique would not be relevant if the same map was being
+		used to generate both outputs. 
+	 </p> 
+	 <p rev="1.2">Using the 
+		<synph>conkeyref</synph> attribute would be another strategy, where the
+		figure or image element is transcluded using 
+		<term>conref</term>, where the conref source file is specified in the
+		ditamap rather than in the 
+		<synph>conref</synph> attribute in the topic. Different variants of the
+		ditamap, sharing (through nesting) everything except the 
+		<synph>conkeyref</synph> targets, would also be required to complete the
+		process. 
+	 </p> 
+	 <note>Some publishing tools and processes also allow you to swap the images
+		(during processing) with images of the appropriate size and resolution for the
+		target output. 
+	 </note> 
+  </conbody> 
+</concept> 

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<concept id="concept_2EC329120E184EF98A46651F0C1D3590"> 
+  <title>Software domain</title> 
+  <prolog><metadata><keywords><indexterm>domains<indexterm>software</indexterm></indexterm><indexterm>software
+			 domain</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>The software domain elements are designed for documenting the operation
+		of a software program. 
+	 </p>
+  </conbody> 
+</concept> 

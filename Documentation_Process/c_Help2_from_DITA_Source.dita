@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en-au" id="D9094"> 
+  <title>Microsoft Help 2 from DITA Source</title> 
+  <conbody> 
+	 <p>If you need to create Microsoft Visual Studio Help 2 output, the best
+		approach is to create an HTML Help (.chm) file through the DITA Open Toolkit
+		normally, and then use a tool such as HelpWare FAR to convert the .chm file to
+		.hxs format. 
+	 </p> 
+	 <p><xref href="http://www.helpware.net/FAR/index.html" scope="external"
+		format="html"><?xm-replace_text http://www.helpware.net/FAR/index.html?></xref>
+		
+	 </p> 
+  </conbody> 
+</concept> 

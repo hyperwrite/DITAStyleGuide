@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D4771" status="new"> 
+  <title>Different languages</title> 
+  <shortdesc>The 
+	 <synph>xml:lang</synph> attribute stores the human language of the content,
+	 and can be applied to any DITA element. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>human
+			 languages</indexterm><indexterm
+		  conref="../../conref/conref_source_metadata.dita#topic_hw_conref_meta/index_localisation"><?xm-replace_text Index Term?></indexterm><indexterm>translation</indexterm><indexterm>languages<indexterm>content
+				in
+				different</indexterm></indexterm><indexterm>dialects</indexterm><indexterm>varieties</indexterm><indexterm>English<indexterm>varieties
+				of</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>It is not unusual to have content in more than one language in the same
+		deliverable document, or even in the same topic. For example, a topic in German
+		documenting a software application with a user interface in English might need
+		to explain English language error messages. 
+	 </p> 
+	 <p>Every DITA element, including 
+		<synph>map</synph> elements, topic elements, block elements and phrase
+		elements, has an 
+		<synph>xml:lang</synph> attribute which stores the ISO 639 code of the
+		human language in which the content is written. 
+	 </p> 
+	 <p>If one topic has a mix of varieties or dialects of the same language,
+		such as some US English and some UK English, the varieties can be managed
+		through the 
+		<synph>xml:lang</synph> attribute. 
+	 </p> 
+	 <p>For example, if the bulk of a concept topic's content was in US English,
+		but one phrase was in UK English, the concept element's 
+	 <option>xml:lang</option> attribute should be set to 
+	 <option>en-US</option>, and the phrase marked up with 
+	 <synph>ph</synph> or text with the 
+	 <synph>xml:lang</synph> attribute set to 
+	 <option>en-UK</option>. 
+	 </p> 
+	 <p>If you need to deliver entire documents in different varieties or
+		dialects of the same language, where there are significant spelling,
+		punctuation and grammatical differences, you should treat the varieties as
+		separate languages and manage the task as a 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_localisation"><?xm-replace_text Phrase?></ph>
+		project. 
+	 </p> 
+	 <section id="section_444AFE9E2D0C412FA36AAD511CD30B2C"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<p>Q. How can I use DITA to provide a US English and a UK English version
+		  of the same content? 
+		</p> 
+		<p>A. Treat the variety of English as another language. The xml:lang
+		  attribute (en-us or en-gb) can be used to track and manage any
+		  "generated-at-publishing-time" text, such as "Related Concepts". 
+		</p> 
+	 </section> 
+  </conbody> 
+</concept> 

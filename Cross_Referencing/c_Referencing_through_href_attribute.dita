@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D9209" status="new"> 
+  <title>Format of 
+	 <synph>href</synph> attribute in cross-references</title> 
+  <shortdesc>The 
+	 <synph>href</synph> attribute requires the address of the referenced
+	 resource to be in the standard URI format. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>URL</indexterm><indexterm>URI</indexterm><indexterm>href
+			 attribute</indexterm><indexterm>attributes<indexterm>href</indexterm></indexterm><indexterm>elements<indexterm>xref</indexterm><indexterm>source</indexterm><indexterm>link</indexterm><indexterm>glossref</indexterm><indexterm>lq</indexterm></indexterm><indexterm>SMB</indexterm><indexterm>protocol</indexterm><indexterm>linking
+			 protocol</indexterm><indexterm>ampersand character</indexterm><indexterm>slash
+			 character</indexterm><indexterm>exemplar<indexterm>context-agnostic</indexterm><indexterm>conref</indexterm></indexterm><indexterm>backslash
+			 character</indexterm><indexterm>resources<indexterm>links</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>The resources being referenced in 
+		<synph>xref</synph>, 
+		<synph>link</synph>, 
+		<synph>lq</synph>, 
+		<synph>glossref</synph>, and 
+		<synph>source</synph> elements are specified in the 
+		<synph>href</synph> attribute. 
+	 </p> 
+	 <p
+	  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/p_URI_definition_1"><?xm-replace_text Paragraph?>
+	 </p> 
+	 <p
+	  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/p_file_resource_2"><?xm-replace_text Paragraph?>
+	 </p> 
+	 <p
+	  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/p_slash_3"><?xm-replace_text Paragraph?>
+	 </p> 
+	 <p
+	  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/p_ampersand_4"><?xm-replace_text Paragraph?>
+	 </p> 
+	 <section id="section_729B7E8636104B6FABE4A5E3E9181601"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<lq reftitle="Deborah Pickett, Yahoo! DITA Users Group"
+		 href="http://tech.groups.yahoo.com/group/dita-users/message/15374">DITA does
+		  not speak in terms of file paths. It knows only URLs. When you use a DITA
+		  document it is mandatory that you use URLs. Hence, as David said, don't say
+		  "c:\My Documents", say "file:/c:/My%20Documents". Don't say "\\server\share",
+		  say "smb://server/share". 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

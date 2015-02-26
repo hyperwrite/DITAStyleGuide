@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<concept id="concept_FDFE1531F09F4AB0B7CE61BA74BE4EB8"> 
+  <title>Marking up mark-up languages</title> 
+  <shortdesc>The syntax phrase (<synph>synph</synph>) element can be used to
+	 describe elements and attributes in a mark-up language. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>mark-up
+			 languages</indexterm><indexterm>XML
+			 languages<indexterm>documenting</indexterm></indexterm><indexterm>synph
+			 element</indexterm><indexterm>elements<indexterm>synph</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>When documenting XML mark-up languages, you should use the syntax phrase
+		(synph) element to identify the names of language elements and attributes. 
+	 </p> 
+	 <p importance="high">Do not use angular brackets to identify names of
+		elements, or prefix attribute names with 
+		<q>@</q>. These formatting conventions should be added, if required,
+		during the publishing process. 
+	 </p> 
+	 <p>You should consider 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialising"><?xm-replace_text Phrase?></ph>
+		
+		<synph>synph</synph> into two separate elements, one to identify elements
+		and one to identify attributes, to better semantically differentiate the two. 
+	 </p> 
+	 <p>If you are including code snippets rather than describing the name of an
+		element or attribute, use the code phrase (<synph>codeph</synph>) or code block
+		(<synph>codeblock</synph>) element, and not the 
+		<synph>synph</synph> element. 
+	 </p> 
+	 <section id="section_65A4075534554B969C701B8C3B0DBAEE"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<lq reftitle="Tony Self, private correspondence, 3 July 2010"> 
+		  <p> ...the question you raised about the use of angular brackets to
+			 describe XML or other mark-up elements, rather than leaving them unadorned
+			 within a DITA &lt;synph&gt; element. This very subject was raised within the
+			 DITA TC when the 1.2 spec was being put together. One of the views was: 
+		  </p> 
+		  <p> &gt;&gt; I consciously use the most formal notation when writing
+			 about both elements and attributes: The &lt;step&gt; element; and The @conref
+			 attribute. ... IBM style mandates always using angle brackets--but also because
+			 of feedback that I have gotten in the past couple of years teaching workshops
+			 about DITA -- most participants found the formal notation to be the easiest to
+			 read and understand. &lt;&lt; 
+		  </p> 
+		  <p> The counter arguments included: 
+		  </p> 
+		  <ul id="ul_1ED34F6123604C17A5119F9E42AE568F"> 
+			 <li id="li_C32CC21FB41C457BB01CEAE8007E7C3A">IBM style rules were
+				presentation rules (for deliverables), not mark-up rules, and weren't
+				separating content from form. 
+			 </li> 
+			 <li id="li_748D68648BA74E6F9CEE0D51FEE9E522">To a novice user,
+				reading something about @conref is confusing, as the @ sign is not used
+				anywhere in mark-up. The user might end up trying to code something as &lt;li
+				@conref="abc"&gt; and wonder why it doesn't work. 
+			 </li> 
+			 <li id="li_71B44CF6A26F467085B16121EF004968"> If element or attribute
+				names might be sometimes be pulled, automatically, out of some other database,
+				DTD or reference, adding brackets and @ signs for formatting purposes might
+				create problems. 
+			 </li> 
+			 <li id="li_2DFCAF0DD2464D7FABBD5A2D2A854663">Semantically, the step
+				element is named "step", not "&lt;step&gt;". 
+			 </li> 
+			 <li id="li_A089918CDC34479EA38C13CFC72EB223">If brackets and other
+				formatting conventions are required in the output, they should be added in
+				processing. 
+			 </li> 
+			 <li id="li_4AD397C0EF0742E788AA61D846442921"> If parts of the
+				documentation are to be used to generate programming elements (such as a
+				reference topic being used to create tooltips in the application), then having
+				angular brackets in the extracted content might cause trouble down the line
+				(such as the bracketed element names being treated as HTML code). 
+			 </li> 
+		  </ul> 
+		  <p> My opinion is that the adornment of brackets and @ signs should be
+			 added in the processing, but that means the mark-up must distinguish between
+			 element and attribute syntax phrases. Currently, I don't do that! I rely on the
+			 word "element" or "attribute" after the element/attribute name for
+			 identification. I should have specialised! 
+		  </p> 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

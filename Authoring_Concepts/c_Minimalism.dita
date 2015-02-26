@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_4D6F168A500A4E2CAAD3510DC906FC06" xml:lang="en"
+ status="new"> 
+  <title>Minimalism</title> 
+  <shortdesc>Particularly for procedural documentation, DITA topics should be
+	 written following the minimalism approach. Information should be arranged in
+	 succinct, action-oriented topics that help readers to understand quickly what
+	 they need to know. 
+  </shortdesc> 
+  <prolog><author
+	 conref="../../conref/conref_source_metadata.dita#topic_hw_conref_meta/author_tony_self"></author><metadata><keywords><indexterm>minimalism</indexterm><indexterm>Caroll,
+			 John</indexterm><indexterm>Nurnberg Funnel</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>Minimalism is an instructional design technique, 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_popularised"><?xm-replace_text Phrase?></ph>
+		by John Carroll in his 1990 book 
+		<cite>The Nurnberg Funnel: Designing Minimalist Instruction for Practical
+		  Computer Skill 
+		</cite>. The DITA methodology embraces the concepts of minimalism. 
+	 </p> 
+	 <p>Minimalism is an approach that presents the reader with the smallest
+		amount of information necessary to achieve the reader's goals. The needs of the
+		reader (or the learner), and not the system being documented, guide the
+		information architecture and the writing style. 
+	 </p> 
+	 <p>You can see minimalism principles in particular in the 
+		<term>task</term> information type (one of the three base information
+		types in DITA), which discourages the inclusion of information not directly
+		related to the procedure by the task topic's strict content model. 
+	 </p> 
+	 <p importance="high">For technical documents produced in a DITA
+		environment, design information specifically so that readers only have to read
+		to learn something or to do something. 
+	 </p> 
+	 <section id="section_94CC8C7E07E24FAEB101741A11292B0E"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<lq reftitle="DITA Architecture Specification 1.0"> 
+		  <p>Topic-oriented authoring for conceptual and task information has its
+			 roots in 
+			 <term>Minimalism</term>, an instructional design technique first
+			 espoused by John Carroll. The minimalist approach to information design
+			 focusses on identifying the smallest amount of instruction that allows for the
+			 successful completion of a task, or that provides basic knowledge of a concept.
+			 Readers have goals, and they want to achieve those goals as quickly as
+			 possible. Generally, readers don't want to read information just for the
+			 pleasure of reading. They are reading to learn or to do something. 
+		  </p> 
+		  <p>Some of the key principles of 
+			 <term>Minimalism</term> are: 
+		  </p> 
+		  <sl> 
+			 <sli>Support actions. Let people act as they learn, and let them
+				pursue the goals they want to accomplish. 
+			 </sli> 
+			 <sli>Document tasks, not tools or functions. 
+			 </sli> 
+			 <sli>Help readers anticipate and avoid errors. 
+			 </sli> 
+			 <sli>Let readers explore. They don't need explained what they can
+				discover for themselves. 
+			 </sli> 
+		  </sl> 
+		</lq> 
+		<lq reftitle="Nikki Ward, I'd Rather Be Writing Blog"
+		 href="http://www.idratherbewriting.com/2009/12/27/if-no-one-reads-the-manual-thats-okay/comment-page-1/#comment-147580">...the
+		  more you give people to read the more time and money is wasted 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

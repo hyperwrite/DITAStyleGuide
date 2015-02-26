@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D5135" status="new"> 
+  <title>Linking in a new window</title> 
+  <shortdesc>The 
+	 <synph>scope</synph> attribute of the cross-reference (<synph>xref</synph>)
+	 is used to nominate whether the target topic, file or other resource is
+	 external to the DITA source topics. Some publishing tools (such as the DITA
+	 Open Toolkit) will generate cross-references with an 
+	 <userinput>external</userinput> scope attribute as hyperlinks that will
+	 open the target in a new window. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>xref
+			 element</indexterm><indexterm>elements<indexterm>xref</indexterm></indexterm><indexterm>scope
+			 attribute</indexterm><indexterm>attributes<indexterm>scope</indexterm></indexterm><indexterm>cross-references</indexterm><indexterm>windows<indexterm>open
+				link targets in
+				new</indexterm></indexterm><indexterm>links</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>If a topic being referenced in an 
+		<term>xref</term> is external to the document content, the 
+		<synph>xref</synph> element's 
+		<synph>scope</synph> attribute should be set to 
+		<userinput>external</userinput> to semantically identify this
+		relationship. 
+	 </p> 
+	 <p importance="high">If you want a cross-referenced Web or external
+		resource to open in a new window, code the 
+		<synph>xref</synph> as in the example: 
+		<codeblock>&lt;xref href="..../somefile.html" format="html" scope="external" /&gt;</codeblock> 
+	 </p> 
+	 <note>Opening external target resources in a new window is a processing
+		function, and is therefore dependent upon the publishing tool used and its
+		configuration. This 
+		<ph
+		conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_behaviour"><?xm-replace_text Phrase?></ph>
+		is not part of the DITA standard itself. 
+	 </note> 
+  </conbody> 
+</concept> 

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D2636" status="new"> 
+  <title>Collection type example: 
+  <option>sequence</option></title> 
+  <conbody> 
+	 <fig id="fig_3177E5FAC8B747FE9452C1821C33A5DB"> 
+		<title>Example of 
+		<option>sequence</option> collection type</title><image placement="break"
+		align="left" id="image_F1B09D5F4AB04D0D9946DE7AD86CE560"
+		href="../images/collection_type_sequence.gif" width="407px" height="185px"> 
+		  <alt>Example of sequence collection type 
+		  </alt></image> 
+	 </fig> 
+  </conbody> 
+</concept> 

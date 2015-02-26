@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<concept id="concept_3EC0486995EC49A88542A99EFCB313D0" xml:lang="en"
+ status="new"> 
+  <title>Structured authoring</title> 
+  <shortdesc><term>Structured authoring</term> can mean many things, but in the
+	 context of this document, structured authoring means a 
+	 <ph
+	  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_standardised"><?xm-replace_text Phrase?></ph>,
+	 methodological approach to content creation incorporating systematic 
+	 <ph
+	  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_labelling"><?xm-replace_text Phrase?></ph>,
+	 modular, topic-based architecture, constrained writing environments, and the
+	 separation of content and form. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>SGML</indexterm><indexterm>structured
+			 authoring<indexterm>definition</indexterm></indexterm><indexterm>structured
+			 writing</indexterm><indexterm>Information
+			 Mapping</indexterm><indexterm>STOP</indexterm><indexterm>Horn,
+			 Robert</indexterm><indexterm>XML</indexterm><indexterm>modular</indexterm><indexterm>separation
+			 of content and form</indexterm><indexterm>open
+			 source</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>The term 
+		<term>structured authoring</term> is applied to a wide variety of writing
+		approaches, to the point that the meaning is virtually lost. Some say that most
+		technical writing is 
+		<q>structured authoring</q> or 
+		<q>structured writing</q>, because the writing process is approached in a
+		methodical structured way. According to this definition, all documents with
+		some sort of structure must have been the result of a structured approach. 
+	 </p> 
+	 <p>Methodological or scientific approaches to writing technical documents
+		became prominent in the 1960s, with Robert Horn's structured writing ideas
+		(later to become 
+		<ph
+		conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_InfoMapping"><?xm-replace_text Phrase?></ph>)
+		and the 
+		<term>STOP</term> methodology (developed at Hughes-Fullerton) 
+		<cite product="academic_only">(Tracey et al, 1965)</cite> being two of
+		the intellectual products of that era. The development of 
+		<term>SGML</term> almost two decades later enabled structured approaches
+		to be enforced by software tools. The development of 
+		<term>XML</term> in the late 1990s transformed the way in which knowledge
+		was stored. XML permitted structured information standards to be created for
+		the storage of knowledge and data for all types of industries. 
+		<term>XML</term> allowed standards such as 
+		<term>Chemical Mark-up Language</term>, 
+		<term>Mathematics Mark-up Language</term>, 
+		<term>Channel Definition Format</term>, 
+		<term
+		conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/term_SVG"><?xm-replace_text Term?></term>,
+		
+		<term>Open Document Format</term>, and hundreds of others to be created
+		by industry, government and special interest groups. In the documentation
+		field, new forms of structured writing approaches emerged, enabled by 
+		<term>XML</term> and the new culture of the open source movement. Amongst
+		these standards was 
+		<term>DITA</term>. 
+	 </p> 
+	 <p>A modern definition of what we now mean by 
+		<term>structured authoring</term> is: 
+		<lq>A 
+		  <ph
+		  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_standardised"><?xm-replace_text Phrase?></ph>
+		  methodological approach to the creation of content incorporating information
+		  types, systematic use of metadata, 
+		  <term>XML</term>-based semantic mark-up, modular, topic-based
+		  information architecture, a constrained writing environment with
+		  software-enforced rules, content re-use, and the separation of content and
+		  form. 
+		</lq> 
+	 </p> 
+	 <section id="section_02C7688E500C44F480079D547C41B6E0"
+	 audience="contributor"> 
+		<title>References</title> 
+		<ul id="ul_63890CD2ACF846F3873AF857DD7EF5C1"> 
+		  <li id="li_5A76AD842C374711ABE50648376F2599"
+		  conref="../../conref/conref_source_references.dita#concept_60C4D0117D5941E4A5F815B50A7F8454/cite_Horn_1999"><?xm-replace_text List Item?>
+		  </li> 
+		  <li id="li_00A210BC42B84A60AA79D2FCCF656B4C"
+		  conref="../../conref/conref_source_references.dita#concept_60C4D0117D5941E4A5F815B50A7F8454/cite_Weiss_1999"><?xm-replace_text List Item?>
+		  </li> 
+		  <li id="li_1E84C76A03A941C4BEB20CA4E92C48C2"
+		  conref="../../conref/conref_source_references.dita#concept_60C4D0117D5941E4A5F815B50A7F8454/cite_Trace_Stop_1965"><?xm-replace_text List Item?>
+		  </li> 
+		</ul> 
+	 </section> 
+  </conbody> 
+</concept> 

@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D1987" status="new"> 
+  <title>The content reference (<synph>conref</synph>) attribute</title> 
+  <shortdesc>The 
+	 <term>conref</term> feature allows DITA content to be used in any number of
+	 different places in a collection. The 
+	 <synph>conref</synph> attribute in a referencing topic specifies the source
+	 topic and the element within that topic to re-use. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>conref</indexterm><indexterm>content
+			 reference</indexterm><indexterm>attributes<indexterm>conref</indexterm></indexterm><indexterm>cross-references</indexterm><indexterm>references</indexterm><indexterm>transclusion</indexterm><indexterm>re-use</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>In DITA, content can be re-used at the topic level (by using one topic
+		in many ditamaps), at the block level, or at the phrase level. Any DITA
+		element, be it a paragraph, a table, a task pre-requisite, a user interface
+		control, a term, a cross-reference, or any other tagged chunks, can be re-used
+		elsewhere. The mechanism for block and phrase level re-use is the 
+		<term>content reference</term>, or 
+		<term>conref</term>. 
+	 </p> 
+	 <p>The key to content referencing, or 
+		<term>transclusion</term>, is the ability to identify a chunk of content
+		using a simple naming structure. 
+	 </p> 
+	 <p>A content reference is specified by entering the address of the content
+		to be re-used in the 
+		<synph>conref</synph> attribute of the element into which it will be
+		included or 
+		<term>transcluded</term>. The 
+		<synph>conref</synph> attribute value has the following syntax: 
+	 </p> 
+	 <codeblock><varname>topicfilename</varname>#<varname>topicid</varname>/<varname>elementid</varname></codeblock> 
+	 <p>where 
+		<varname>topicfilename</varname> is the file name of the topic containing
+		the content to be transcluded, 
+		<varname>topicid</varname> is the 
+		<synph>id</synph> attribute of the topic, and 
+		<varname>elementid</varname> is the 
+		<synph>id</synph> attribute of the element to be re-used. (This naming
+		convention is also used for cross-referencing and other types of linking.) 
+	 </p> 
+	 <p>For example, if the source of the content to be transclude is a
+		paragraph (p) element with an 
+		<synph>id</synph> attribute of 
+		<userinput>intercooler_temperature</userinput>, in a topic with a file
+		name of 
+		<filepath>c_intercooler.dita</filepath> and an 
+		<synph>id</synph> attribute of 
+		<userinput>concept_turbo_intercooler</userinput>, then the referencing
+		paragraph element will be coded as: 
+		<codeblock>&lt;p conref="c_intercooler.dita#concept_turbo_intercooler/intercooler_temperature"/&gt;</codeblock> 
+	 </p> 
+	 <p>The conref idea originated in SGML. 
+	 </p> 
+	 <section id="section_E334706CC7EA4B709C99E5CDBE544690"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<lq reftitle="Michael Gross, DCLNews"
+		 href="http://www.dclab.com/dita_conversion_tips.asp">In addition to the ability
+		  to break down documents into topics. DITA provides a mechanism called 
+		  <term>conref</term>, which allows you to reuse chunks of text by
+		  referring to them from other documents. Reducing the amount of duplicated text
+		  is always a good idea, and cleaning up your data may result in more candidates
+		  for CONREF reuse. So for instance, you might have a warning throughout your
+		  manuals "This camera is not waterproof. Please do not use this camera in the
+		  rain." CONREF allows you to place that text in one location, and pull it in any
+		  number of others, thereby only having to maintain one version of this text. If
+		  you want to take advantage of the CONREF mechanisms as part of your legacy
+		  conversion, you'll need to think about how you might look through your document
+		  set and find candidates for CONREF reuse. 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

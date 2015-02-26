@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D3768" status="new"> 
+  <title>Titles and headings</title> 
+  <shortdesc>Titles are used in a number of mark-up structures in DITA. Titles
+	 are a mix of content and metadata. The mark-up in titles should be kept as
+	 simple as possible, and workarounds to achieve specific formatting outcomes
+	 should not be used. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>titles</indexterm><indexterm>elements<indexterm>title</indexterm></indexterm><indexterm>headings</indexterm><indexterm>phrase
+			 mark-up in titles</indexterm><indexterm>title
+			 element</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>A title is not the same as a heading. A title is usually considered part
+		of the content (and is typically rendered in the output as a heading), but it
+		also has a role as a metadata container. For example, the title might be used
+		as the basis for link text, outside the context of its topic. In that context,
+		mark-up such as a footnote (<synph>fn</synph>) or cross-reference
+		(<synph>xref</synph>) wouldn't make any sense. 
+	 </p> 
+	 <p>A number of mark-up structures in DITA have titles, including: 
+	 <ul id="ul_398232B9D52B422793282606149D02D3"> 
+		<li id="li_4BACFEFD9E604B639B6177B4816D7E33">map 
+		</li> 
+		<li id="li_7559B08DFEA245F0BECB026237A7B48E">topic 
+		</li> 
+		<li id="li_1B8B31C0F1C7425C84E3904EA2283233">table 
+		</li> 
+		<li id="li_2C59FBD6E38F417A8C7D243A8B50A0A9">data 
+		</li> 
+		<li id="li_3496C4827E0847D78A64CD20C4C730BE">link list 
+		</li> 
+		<li id="li_6CCD31A27B6545B296507A1A77F9946F">syntax diagram 
+		</li> 
+		<li id="li_49D70D05CB2C45E08B3704663EA9DDF6">figure 
+		</li> 
+		<li id="li_8670D909992E44BF87D77393D21BB7F5">section 
+		</li> 
+		<li id="li_549425340ABA40E7BF22FE47DBDB50A7">example 
+		</li> 
+	 </ul> 
+	 </p> 
+	 <p importance="high">Avoid using phrase-level mark-up in titles,
+		particularly when the motivation is to achieve a presentational outcome. For
+		example, do not use footnote (<synph>fn</synph>) elements in titles, as the
+		presentational outcome when a title is displayed in a pop-up window is likely
+		to be unpredictable. 
+	 </p> 
+	 <p importance="high">If a 
+		<synph>title</synph> element does not permit a particular type of
+		phrase-level element, do not devise workarounds to force such elements in
+		place. 
+	 </p> 
+	 <p>For example, 
+		<synph>title</synph> does not permit the 
+		<synph>cite</synph> element, but does permit the general phrase
+		(<synph>ph</synph>) element. That phrase element can itself contain 
+		<synph>cite</synph>. So while the code 
+		<codeph>&lt;title&gt;Such is Life &lt;ph&gt;&lt;cite&gt;Ned
+		  Kelly&lt;/cite&gt;&lt;/ph&gt;&lt;/title&gt;</codeph> is technically correct, it
+		nonetheless constitutes a workaround, and should not be used. 
+	 </p> 
+	 <section id="section_1A8C74461E014C6594D496BFCCF539C5"
+	 audience="contributor"> 
+		<title>Rationale</title> 
+		<p>A discussion on the DITA Users list centred around why footnote
+		  &lt;fn&gt; elements cannot be included within a title &lt;title&gt; element.
+		  One of the examples cited for why such a footnote might be needed was for a
+		  title of "On the differences between apples and oranges [This research was made
+		  possible with the gracious help of ...]". 
+		</p> 
+		<p>DITA aims to separate content from form, and it is interesting that a
+		  footnote can be regarded as a formatting construct. Trying to include a
+		  footnote in a title might be an attempt to dictate presentation within the
+		  content. 
+		</p> 
+	 </section> 
+  </conbody> 
+</concept> 

@@ -1,0 +1,113 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D9170" status="new"> 
+  <title><ph
+	 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_Organising_InitCap"><?xm-replace_text Phrase?></ph>
+	 elements within re-use topics</title> 
+  <shortdesc>You should use logical, identifiable 
+	 <synph>id</synph> attributes. Short phrase-level elements intended for
+	 re-use can be 
+	 <ph
+	  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_organised"><?xm-replace_text Phrase?></ph>
+	 into tables for ease of maintenance. 
+  </shortdesc> 
+  <prolog><author
+	 conref="../../conref/conref_source_metadata.dita#topic_hw_conref_meta/author_tony_self"></author><metadata><keywords><indexterm
+		  conref="../../conref/conref_source_metadata.dita#topic_hw_conref_meta/index_organising_reuse"><?xm-replace_text Index Term?></indexterm><indexterm>variables</indexterm><indexterm>snippets</indexterm><indexterm>re-use<indexterm
+			 conref="../../conref/conref_source_metadata.dita#topic_hw_conref_meta/index_organising"><?xm-replace_text Index Term?></indexterm></indexterm><indexterm>content
+			 re-use<indexterm
+			 conref="../../conref/conref_source_metadata.dita#topic_hw_conref_meta/index_organising"><?xm-replace_text Index Term?></indexterm></indexterm><indexterm>transclusion<indexterm
+			 conref="../../conref/conref_source_metadata.dita#topic_hw_conref_meta/index_organising"><?xm-replace_text Index Term?></indexterm></indexterm><indexterm>conref<indexterm
+			 conref="../../conref/conref_source_metadata.dita#topic_hw_conref_meta/index_organising"><?xm-replace_text Index Term?></indexterm></indexterm><indexterm>naming
+			 conventions</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p importance="high">Easy-to-identify 
+		<synph>id</synph> attributes should be used for re-use elements. In
+		choosing names, you should prefix the 
+		<synph>id</synph> values to indicate the purpose of the element, such as:
+		
+	 <dl> 
+		<dlentry> 
+		  <dt>var_ 
+		  </dt> 
+		  <dd>for short re-use phrases and variables 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt>term_ 
+		  </dt> 
+		  <dd>for terms and definitions 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt>step_ 
+		  </dt> 
+		  <dd>for task steps 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt>warning_ 
+		  </dt> 
+		  <dd>for warning notes 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt>fig_ 
+		  </dt> 
+		  <dd>for figures 
+		  </dd> 
+		</dlentry> 
+	 </dl> 
+	 </p> 
+	 <p> To provide a reference for how re-use elements are meant to be used,
+		you may choose to 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_organise"><?xm-replace_text Phrase?></ph>
+		re-use phrases (or 
+		<term>variables</term>) into tables, where a description of the element's
+		intended use can be documented alongside the re-use content. 
+	 </p> 
+	 <fig id="fig_conref_source_table"> 
+		<title>Conref source file with re-use elements 
+		  <ph
+		  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_organised"><?xm-replace_text Phrase?></ph>
+		  with a table</title><image placement="break" align="left"
+		id="image_912043D3342947A2AB5DE84603D6E1F4"
+		href="../images/conref_organisation_table.png" width="425px" height="372px"
+		status="changed"> 
+		  <alt>Screen capture of DITA editor showing conref variables organised
+			 into a table 
+		  </alt></image> 
+	 </fig> 
+	 <section id="section_3D52B0AE6F5D44DFBF364CFBC337A49C"
+	 audience="contributor"> 
+		<title>Rationale</title> 
+		<lq href="http://tech.groups.yahoo.com/group/dita-users/message/7064"
+		reftitle="JoAnn Hackos, Yahoo DITA Users Group"> 
+		  <p>We're quite scrupulous in promoting the best practice of linking by
+			 conref to content that has been moved out of its original context and into a
+			 separate file or collection file. 
+		  </p> 
+		  <p>As a result, the ownership of the referenced content is
+			 well-established and changes are better controlled and monitored. The danger to
+			 using conrefs to embedded content is changes to that content that are largely
+			 uncontrolled. This practice also ensures that the translation of the content is
+			 controlled as a reusable element rather than being translated in context in its
+			 "home" location. 
+		  </p> 
+		  <p>When a block of content is identified for reuse through conrefs, we
+			 suggest that the author or architect remove the content from the "home"
+			 location and create new file in a "common" folder or defined location. The file
+			 may contain only a single block of content or may contain more than one related
+			 content blocks. For example, we might group all the Dangers in a common file so
+			 that they are easier to maintain and find. 
+		  </p> 
+		  <p>This practice seems to keep everything well organized. It also is
+			 supported by the Best Practice for conrefs that has been developed by the OASIS
+			 DITA Translation Subcommittee. 
+		  </p> 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

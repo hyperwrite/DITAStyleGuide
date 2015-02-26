@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en-au" id="D2824">
+  <title>Transclusion</title>
+  <conbody>
+	 <p>An old OASIS News story from 2002, titled 
+		<cite>The Holy Grail of Content Reuse: IBM's DITA XML</cite>, 
+		<ph xml:lang="en-AU">summarises</ph> conrefs well, and also introduces
+		the idea of 
+		<term>transclusion</term>.
+	 </p>
+	 <lq>
+		<p>DITA design focuses upon the "topic" as a conceptual unit of
+		  authoring. Larger documents can be created by aggregating topic units. A
+		  "content referencing" (conref) mechanism may be used at the mark-up level to
+		  combine several topics into a single document, or to share content among
+		  topics.
+		</p>
+		<p>The DITA design has a unified content reuse mechanism by which an
+		  element can replace itself with the content of a like element elsewhere, either
+		  in the current topic or in a separate topic that shares the same content
+		  models. The distinction between reusable content and reusing content, which is
+		  enshrined in the file entity scheme, disappears: Any element with an ID, in any
+		  DITA topic, is reusable by conref.
+		</p>
+		<p>DITA's conref 'transclusion' mechanism is similar to the SGML conref
+		  mechanism, which uses an empty element as a reference to a complete element
+		  elsewhere. However, DITA requires that at least a minimal content model for the
+		  referencing element be present, and performs checks during processing to ensure
+		  that the replacement element is valid in its new context. This mechanism goes
+		  beyond standard XInclude, in that content can be incorporated only when it is
+		  equivalent: If there is a mismatch between the reusing and reused element
+		  types, the conref is not resolved. It also goes beyond standard entity reuse,
+		  in that it allows the reused content to be in a valid XML file with a DTD. The
+		  net result is that reused content gets validated at authoring time, rather than
+		  at reuse time, catching problems at their source.
+		</p>
+	 </lq>
+  </conbody>
+</concept>

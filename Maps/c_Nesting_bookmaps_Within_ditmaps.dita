@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D9181" status="new"> 
+  <title>Nesting bookmaps within ditamaps</title> 
+  <shortdesc>For complex collection structures, only use bookmap at the top
+	 level. Any nested maps should be ditamaps. 
+  </shortdesc> 
+  <prolog><metadata><keywords><indexterm>nested
+			 ditamaps</indexterm><indexterm>maps<indexterm>nested</indexterm></indexterm><indexterm>bookmap</indexterm><indexterm>map
+			 structure</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p importance="high">You should not nest bookmaps within ditamaps, as the
+		structure will cause confusion for both processing software and for
+		documentation authors. 
+	 </p> 
+	 <p importance="high">If you need to re-use content from a bookmap inside a
+		ditamap, then a lower-level ditamap should be nested in the bookmap, and that
+		lower level ditamap re-used in the main ditamap. In fact, except for small
+		documents, you should aim to have the top-level bookmap contain only map
+		references, and no topic references. 
+	 </p> 
+	 <section id="section_0B42E91E8575447CA431050C678D2C7C"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<lq reftitle="Bruce Nevin, OASIS DITA Technical Committee mailing list"
+		 href="http://lists.oasis-open.org/archives/dita/200906/msg00021.html">Now that
+		  &lt;bookmap has been provided, my sense is that it should be thought of as
+		  hierarchically above &lt;map&gt;, and this usage of referencing &lt;bookmap&gt;
+		  from &lt;map&gt; should be prohibited or at least cautioned against, not least
+		  because of the issues you're raising. 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

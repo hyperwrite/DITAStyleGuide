@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D2638" status="new"> 
+  <title>Collection type example: 
+  <option>unordered</option></title> 
+  <conbody> 
+	 <fig id="fig_7CD5CB99BA0D4E01845D5B8EF90CE2ED"> 
+		<title>Example of 
+		<option>unordered</option> collection type</title><image
+		placement="break" align="left"
+		id="image_FEE7D0218E424CB0A5636B321E3BBFC8"
+		href="../images/collection_type_unordered.gif" width="407px" height="185px"> 
+		  <alt>Example of unordered collection type 
+		  </alt></image> 
+	 </fig> 
+  </conbody> 
+</concept> 

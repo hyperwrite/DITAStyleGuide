@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_E497B4D555794C5CB0EBEF9D2B66753B" xml:lang="en"
+ status="new"> 
+  <title>Paragraphs</title> 
+  <shortdesc>Paragraphs are the basic components of topics. A paragraph
+	 (<synph>p</synph>) element should be a self-contained unit dealing with one
+	 idea or point, typically expressed in two or more related sentences. The 
+	 <synph>p</synph> element should be used when no other semantically-specific
+	 block element is available. 
+  </shortdesc> 
+  <conbody> 
+	 <section id="section_E3FC126AF1A244E9A681C3F067BCB4D8"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<lq reftitle="Hudson, 1993">There are two purposes for paragraphs, the
+		  one logical and the other practical. The logical purpose is to signal stages in
+		  a narrative or argument. The practical one is to relieve the forbidding gloom
+		  of a solid page of text. 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

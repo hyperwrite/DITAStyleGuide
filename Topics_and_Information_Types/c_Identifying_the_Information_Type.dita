@@ -1,0 +1,148 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D1986" status="new"> 
+  <title>Identifying the information type</title> 
+  <shortdesc>Concept, task and reference topics contain different types of
+	 content. Concept topics contain explanations, task topics contain procedural
+	 steps, and reference topics contain tabular look-up information. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>information
+			 types<indexterm>identifying</indexterm></indexterm><indexterm>identifying
+			 information types</indexterm><indexterm>topic
+			 types<indexterm>identifying</indexterm></indexterm><indexterm>content
+			 model</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>An important skill of an author working in a DITA environment is 
+		<term>typing</term> information correctly into information types. 
+	 </p> 
+	 <p>Of the three base DITA information types: 
+	 </p> 
+	 <ul id="ul_606B1DFB438F4FB189DF4A670BC0CF74"> 
+		<li id="li_736FDDDF72504D168D3C8D795DB19FBB"> 
+		  <term>Concept</term> topics are used for overviews of tasks or
+		  overviews of reference information. They tend to be short and simple. 
+		</li> 
+		<li id="li_BC2DED4F050B44588F26E0A4473652E5"><term>Task</term> topics
+		  contain procedural steps. 
+		</li> 
+		<li id="li_CF6C494C99A94070A29B1E13953122B9"><term>Reference</term>
+		  topics detail properties and other reference (as opposed to narrative)
+		  information, typically in tabular form. 
+		</li> 
+	 </ul> 
+	 <p>In some types of documents, an instruction may be described with a set
+		of concept, task and reference topics. For example, the use of a car's alarm
+		system may be covered by: 
+	 <ul id="ul_D0FEC827AD01474C99E40F4862686A6C"> 
+		<li id="li_CB4305F25254403E8DD76AF6A5D53108"><q>Alarm systems</q>
+		  (concept) 
+		</li> 
+		<li id="li_89E0E72433C14D7CA00BD75FDD97EABF"><q>Setting the alarm</q>
+		  (task) 
+		</li> 
+		<li id="li_FD572A40401F4094B4F0B59DB39C25EC"><q>Alarm codes</q>
+		  (reference) 
+		</li> 
+	 </ul> 
+	 </p> 
+	 <p>Such a set of topics would be associated using a 
+		<term>reltable</term>, so that the topics would be linked or associated
+		in the deliverable document. A typical procedure will require a concept topic
+		and a task topic, and may require a reference topic. 
+	 </p> 
+	 <p>While task information is generally easy to identify, it can be
+		difficult to distinguish concept from reference information. 
+		<xref
+		href="c_Identifying_the_Information_Type.dita#D1986/table_concept_vs_reference"
+		type="table" format="dita" scope="local"><?xm-replace_text Characteristics of concept and reference topics ?></xref>
+		explains some of the characteristics of concept topics compared with reference
+		topics. 
+	 </p> 
+	 <table id="table_concept_vs_reference" rowheader="firstcol"> 
+	 <title>Characteristics of concept and reference topics </title> 
+	 <tgroup cols="3" colsep="1" rowsep="1"><colspec colname="col1"/><colspec
+		colname="col2"/><colspec colname="col3"/> 
+		<thead> 
+		  <row valign="top"> 
+			 <entry align="left">  
+			 </entry> 
+			 <entry align="left">Concept 
+			 </entry> 
+			 <entry align="left">Reference 
+			 </entry> 
+		  </row> 
+		</thead> 
+		<tbody> 
+		  <row valign="top"> 
+			 <entry align="left">Purpose/Function 
+			 </entry> 
+			 <entry align="left"> 
+				<p>Explanatory 
+				</p> 
+			 </entry> 
+			 <entry align="left"> 
+				<p>Fact 
+				</p> 
+			 </entry> 
+		  </row> 
+		  <row valign="top"> 
+			 <entry align="left">Access Frequency 
+			 </entry> 
+			 <entry align="left"> 
+				<p>A few times 
+				</p> 
+			 </entry> 
+			 <entry align="left"> 
+				<p>Repeatedly, when needed 
+				</p> 
+			 </entry> 
+		  </row> 
+		  <row valign="top"> 
+			 <entry align="left">Book Context 
+			 </entry> 
+			 <entry align="left"> 
+				<p>Front, Middle 
+				</p> 
+			 </entry> 
+			 <entry align="left"> 
+				<p>Back 
+				</p> 
+			 </entry> 
+		  </row> 
+		  <row valign="top"> 
+			 <entry align="left">Content or Data 
+			 </entry> 
+			 <entry align="left"> 
+				<p>Content 
+				</p> 
+			 </entry> 
+			 <entry align="left"> 
+				<p>Data 
+				</p> 
+			 </entry> 
+		  </row> 
+		</tbody> 
+	 </tgroup> 
+	 </table> 
+	 <p> 
+	 </p> 
+	 <section id="section_964F04901FB04F6ABDF3ED35650398C8"
+	 audience="contributor"> 
+		<title>Rationale</title> 
+		<p>Here's how 
+		  <xref href="http://www.dclab.com/dita_conversion_tips.asp"
+			scope="external" format="html">Michael Gross of DCLNews</xref> describes topics
+		  following on from his camera manual example. 
+		  <lq>In addition to breaking the documents into topics, DITA provides
+			 for three built-in topic types, Tasks (such as "Changing the Memory Card"),
+			 Concepts ("How Lighting Affects Your Pictures"), and References ("Physical
+			 Specifications of the Camera"). The types of topics would normally not have
+			 been defined in the source data. Just as in deciding where to break down your
+			 topics, you may need someone who knows the data to go through it and define
+			 DITA topic types. 
+		  </lq> 
+		</p> 
+	 </section> 
+  </conbody> 
+</concept> 

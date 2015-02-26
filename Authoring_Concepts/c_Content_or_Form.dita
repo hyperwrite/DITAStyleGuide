@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D4707" status="new"> 
+  <title>The blurred line between content and form</title> 
+  <shortdesc>Text that labels the content that follows should be applied in the
+	 publishing process, and not included in the content itself. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>separation
+			 of content and form</indexterm><indexterm>labels</indexterm><indexterm>special
+			 formatting of elements</indexterm><indexterm>note
+			 element</indexterm><indexterm>elements<indexterm>note</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>The difference between content and form is sometimes surprisingly
+		difficult to identify. 
+	 </p> 
+	 <p>For example, in the following sample, the word 
+		<q>Note:</q> looks like part of the content, but on deeper reflection, it
+		turns out to be part of the presentational form.<image placement="break"
+		align="left" id="image_DE26E95839464D6E89F87DF15B3DB552"
+		href="../images/content_form_example1.png" width="228px" height="73px"> 
+		  <alt>Screen capture showing difference showing one rendition of a Note 
+		  </alt></image>This becomes more obvious when you look at alternative
+		ways of presenting the same information, such as the following: 
+		<image placement="break" align="left"
+		 href="../images/content_form_example2.png" width="259px" height="87px"
+		 id="image_34376A750DEC499BAE09B83963827674"> 
+		  <alt>Screen capture showing difference showing a rendition of a Note
+			 with an icon 
+		  </alt></image><image placement="break" align="left"
+		href="../images/content_form_example3.png" width="259px" height="109px"
+		id="image_E3581D0114A643CA9746970396FF7C5B"> 
+		  <alt>Screen capture showing difference showing a rendition of a Note
+			 with borders 
+		  </alt></image> 
+	 </p> 
+	 <p importance="high">The mark-up of that element in DITA must always follow
+		the pattern: 
+		<codeblock>&lt;note&gt;Before having...&lt;/note&gt;</codeblock>and never: 
+		<codeblock>&lt;note&gt;Note: Before having...&lt;/note&gt;</codeblock> 
+	 </p> 
+	 <p>Embedding the label for an element in its text will limit the ways in
+		which the element can be presented. 
+	 </p> 
+	 <p>Ensuring that form is not mixed with content can be quite challenging
+		when publishing tools don't make a sufficient distinction between text with a
+		specific purpose and more general text. For example, when task topics are
+		published through the default DITA Open Toolkit, no special formatting or 
+		<ph
+		conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_labelling"><?xm-replace_text Phrase?></ph>
+		is applied to pre-requisite (<synph>prereq</synph>) elements. Avoid the
+		temptation to add form to the content, and instead work to modify the
+		publishing templates, stylesheets and processes so that the required formatting
+		is applied during processing. 
+	 </p> 
+	 <p>Ensuring that labels are applied in the publishing process rather than
+		in the content will also simplify 
+		<ph
+		conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_localisation"><?xm-replace_text Phrase?></ph>,
+		as there is less text to translate. 
+	 </p> 
+  </conbody> 
+</concept> 

@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="Dc_Techniques" status="new"> 
+  <title>Techniques to learn</title> 
+  <shortdesc>Authors moving from style-based authoring to structured authoring
+	 in a DITA environment will need to build chunking, 
+	 <ph
+	  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_labelling"><?xm-replace_text Phrase?></ph>
+	 and linking skills, and to understand the technique of separation of content
+	 and form. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>chunking</indexterm><indexterm
+		  conref="../../conref/conref_source_metadata.dita#topic_hw_conref_meta/index_labelling"><?xm-replace_text Index Term?></indexterm><indexterm>linking</indexterm><indexterm>separation
+			 of content and form</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>DITA authoring requires you to have skills that you may have used in
+		style-based authoring, but which you will certainly need to use differently.
+		Some skills may be entirely new to you. These skills are: 
+	 <dl> 
+		<dlentry> 
+		  <dt>Chunking 
+		  </dt> 
+		  <dd>Chunking refers to the way in which you break down information into
+			 smaller pieces. The term is particularly (but not exclusively) used to describe
+			 the way in which information is broadly 
+			 <ph
+			  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_categorised"><?xm-replace_text Phrase?></ph>
+			 into 
+			 <term>information types</term>, or 
+			 <term>topic types</term>. 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt><ph
+			 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_Labelling_InitCap"><?xm-replace_text Phrase?></ph>
+			 (or metadata creation) 
+		  </dt> 
+		  <dd> Labels and catalogue information are part of a topic's or
+			 collection's metadata. Metadata allows content to be filtered, sorted,
+			 processed, and otherwise manipulated. Choosing accurate labels will result in
+			 more flexible documents. 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt>Linking 
+		  </dt> 
+		  <dd>Linking can be viewed as a technique for defining relationships
+			 between topics. In DITA, best practice is to link topics by defining the ways
+			 in which topics are associated, rather than manually choosing what text is
+			 linked to which topic. 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt>Separating content from form 
+		  </dt> 
+		  <dd>In the writing phase of structured authoring, there is no place for
+			 
+			 <term>form</term> (format, style and presentation). Form is not the
+			 author's job. Content can be so separated by using semantics to identify each
+			 element of the document. For example, rather than think that a word needs to be
+			 displayed in bold, you need to think about what it is that makes it necessary
+			 to distinguish that word from the others. 
+		  </dd> 
+		</dlentry> 
+	 </dl> 
+	 </p> 
+  </conbody> 
+</concept> 

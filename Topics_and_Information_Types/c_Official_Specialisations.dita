@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<concept id="concept_AC62ED0B3FE14DEE86A1517EC160AA9B"> 
+  <title><q>Official</q> 
+  <ph
+	conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialisations"><?xm-replace_text Phrase?></ph></title>
+  
+  <shortdesc>Some 
+	 <ph
+	  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialised"><?xm-replace_text Phrase?></ph>
+	 information types have been developed by the same standards body that is
+	 responsible for the DITA standard itself. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>exemplar<indexterm>inline
+				cross-reference</indexterm></indexterm><indexterm
+		  conref="../../conref/conref_source_metadata.dita#topic_hw_conref_meta/index_specialisation"><?xm-replace_text Index Term?></indexterm><indexterm>OASIS</indexterm><indexterm>DITA
+			 Technical Committee</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <section id="section_95E4FD53DB0940C0A2D7E08FADB39CBF"> 
+		<p>A number of sub-committees of the OASIS DITA Technical Committee have
+		  been formed to look at ways of making DITA more suitable for specific purposes.
+		  For example, the DITA Semiconductor Information Design Sub-committee is working
+		  out how to make DITA suit semiconductor documentation. The result of the
+		  sub-committee's work will most likely be semiconductor 
+		  <ph
+		  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialisations"><?xm-replace_text Phrase?></ph>.
+		  Such 
+		  <ph
+		  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialisations"><?xm-replace_text Phrase?></ph>
+		  might be viewed as being 
+		  <q>official</q>, in that they are published and supported by the
+		  governing DITA Technical Committee, rather than being just a company-specific 
+		  <ph
+		  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialisation"><?xm-replace_text Phrase?></ph>.
+		  
+		</p> 
+		<p>For 
+		  <ph
+		  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialisations"><?xm-replace_text Phrase?></ph>
+		  to be effective, processors have to be written to work with the 
+		  <ph
+		  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialised"><?xm-replace_text Phrase?></ph>
+		  DITA. For example, once your DITA content uses other than base content model
+		  DITA, you can't get your document to look 
+		  <q>special</q> unless you write a processor specific to your 
+		  <ph
+			conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialisation"><?xm-replace_text Phrase?></ph>.
+		  
+		</p> 
+	 </section> 
+  </conbody> 
+</concept> 

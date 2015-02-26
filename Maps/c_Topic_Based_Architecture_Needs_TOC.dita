@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D2619" status="new"> 
+  <title>Topic hierarchy</title> 
+  <shortdesc>In DITA, the sequence and hierarchy of the topics to be published
+	 are defined in the 
+	 <term>ditamap</term> through nested 
+	 <synph>topicref</synph> elements. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>TOC</indexterm><indexterm>Table of
+			 Contents</indexterm><indexterm>ditamap</indexterm><indexterm>maps</indexterm><indexterm>topic-based
+			 authoring</indexterm><indexterm>Help systems</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>A topic-based document architecture relies on a device to bind the
+		topics together into a structured output publication. A Help system is a good
+		example of a topic-based document architecture. The binding device in Help
+		systems is called the 
+		<term>Table of Contents, or TOC</term>. The 
+		<term>TOC</term> is used by the author to choose the topics that will be
+		included in the publication, and the order in which they will be presented in
+		navigation. In most Help systems, the 
+		<term>TOC</term> is also presented to the reader as an expandable and
+		collapsible tree of links, which the reader can use to navigate through the
+		document. 
+	 </p> 
+	 <fig id="fig_2B8FCE3205314BB692C87EA16D1B3A63"> 
+		<title>Example of a Table of Contents (from a Help file)</title><image
+		placement="break" align="left"
+		id="image_76E843ED83CD45DD96D908FB24903A67" href="../images/toc_example.gif"
+		width="245px" height="309px"> 
+		  <alt>Example of a Table of Contents in a Help file 
+		  </alt></image> 
+	 </fig> 
+	 <p>Being topic-based, DITA also needs a TOC-type device to bind 
+		<term>collections</term> of DITA topics together, and the 
+		<term>ditamap</term> is used for that purpose. The ditamap not only
+		specifies what topics are to be included in the output, but specifies the
+		sequence and hierarchy of the topics through nested 
+		<synph>topicref</synph> elements 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_organised"><?xm-replace_text Phrase?></ph>
+		into a tree structure. 
+	 </p> 
+	 <p>When DITA is transformed into a Help format, the ditamap is used to
+		derive the appropriate 
+		<term>TOC</term> file. When DITA is transformed into a page layout format
+		such as PDF, the ditamap is used to derive the Table of Contents and the
+		heading styles in the output content. 
+	 </p> 
+	 <p/> 
+  </conbody> 
+</concept> 

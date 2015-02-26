@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D2624" status="new"> 
+  <title>Generated relationship links</title> 
+  <shortdesc>Cross-reference links based on the relationships defined in the
+	 hierarchy and reltable sections of the ditamap can be automatically generated
+	 and added to the bottom of output topics, in both hypertext and paged media
+	 outputs. Most publishing tools support this DITA feature. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>generated
+			 links</indexterm><indexterm>automatically-generated
+			 links</indexterm><indexterm>relationship
+			 links</indexterm><indexterm>reltable</indexterm><indexterm>examples<indexterm>generated
+				relationship links</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>When a ditamap is 
+		<term>processed</term> (transformed into a reading format), particularly
+		to a hypertext format, cross-referencing links can be automatically generated.
+		For example, the samples following show some automatically generated related
+		topics links. 
+	 </p> 
+	 <fig id="fig_0E4318496C854EDBA9A72CE61E561548"> 
+		<title>Generated links in HTML output</title><image placement="break"
+		align="left" id="image_893F4E5FCF354452AE31079B37E8EBAE"
+		href="../images/collection_links_html.gif" width="409px" height="292px"> 
+		  <alt>Collection Links in HTML output 
+		  </alt></image> 
+	 </fig> 
+	 <fig id="fig_C735D928918A47D2825A5BEA5D464ECD"> 
+		<title>Generated links in PDF output</title><image placement="break"
+		align="left" id="image_30FE3B2547D64ABBB96929266A6FCB2D"
+		href="../images/collection_links_pdf.gif" width="425px" height="183px"> 
+		  <alt>Collection links in PDF output
+		  </alt></image> 
+	 </fig> 
+  </conbody> 
+</concept> 

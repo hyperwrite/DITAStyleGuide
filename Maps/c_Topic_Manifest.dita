@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_75DDC6623DAF476089F37844B51C0293" xml:lang="en"
+ status="new"> 
+  <title>Topic manifest</title> 
+  <shortdesc>Any topics referenced anywhere in the ditamap will be processed
+	 into the output publication. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>topicref
+			 element</indexterm><indexterm>print
+			 attribute</indexterm><indexterm>attributes<indexterm>print</indexterm></indexterm><indexterm>manifest</indexterm><indexterm>picking
+			 list</indexterm><indexterm>ditamap</indexterm><indexterm>map</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>Topics to be included in the output are referenced through 
+		<synph>topicref</synph> elements in the ditamap. The 
+		<synph>topicref</synph> elements (and 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialisations"><?xm-replace_text Phrase?></ph>
+		of 
+		<synph>topicref</synph>) are used both in the hierarchy and the
+		relationship table sections of the map. If a ditamap includes an embedded map
+		(a 
+		<synph>topicref</synph> referencing a ditamap rather than a DITA topic),
+		then topics referenced by 
+		<synph>topicref</synph> elements in the embedded map will also be
+		included in the output. 
+	 </p> 
+	 <p>Simplistically, any topic referenced in the ditamap will be included in
+		the output. An exception is for topics with the 
+		<synph>topicref</synph> element's 
+		<synph>print</synph> attribute set to 
+	 <option>no</option>; these topics will not be included in page layout
+	 outputs (such as PDF). 
+	 </p> 
+  </conbody> 
+</concept> 

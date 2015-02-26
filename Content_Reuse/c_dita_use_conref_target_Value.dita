@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_77DD3AD959D8472890737F4C60E9D89D" xml:lang="en"
+ status="new"> 
+  <title>The 
+  <option>-dita-use-conref-target</option> attribute value</title> 
+  <shortdesc>A special attribute value of 
+	 <option>-dita-use-conref-target</option> can be used to force the attribute
+	 value of the source of a conref to be used in the referencing element. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>-dita-use-conref-target attribute
+			 value</indexterm><indexterm>conref<indexterm>-dita-use-conref-target
+				value</indexterm></indexterm><indexterm>transclusion<indexterm>-dita-use-conref-target
+				value</indexterm></indexterm><indexterm>enumerated attribute
+			 values</indexterm><indexterm>attributes<indexterm>-dita-use-conref-target
+				value</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>The attributes on some DITA elements are mandatory, such as the
+		trademark type (<synph>tmtype</synph>) attribute of a trademark
+		(<synph>tm</synph>) element. When you conref such an element, the source
+		element's attributes are not ascribed to the referencing element. The
+		referencing conref element is therefore invalid, because it lacks the mandatory
+		attribute. 
+	 </p> 
+	 <p>For example, the trademark element:
+			<codeblock>&lt;tm id="tm_hyperwrite" tmtype="reg"&gt;HyperWrite&lt;/tm&gt;</codeblock>would
+			logically be referenced using conref as:
+			<codeblock>&lt;tm conref="#about_company/tm_hyperwrite"/&gt;</codeblock>However, because
+			that referencing <synph>tm</synph> element does not include a <synph>tmtype</synph>
+			attribute, it is invalid. </p> 
+	 <p>To circumvent the invalidity, you could also include the attribute in
+		the referencing element, as: 
+		<codeblock>&lt;tm conref="#about_company/tm_hyperwrite" tmtype="reg"/&gt;</codeblock> 
+	 </p> 
+	 <p>However, this involves repeating the same information, which goes
+		against the ideal of re-using rather than copying. 
+	 </p> 
+	 <p>DITA elements that have mandatory attributes, or that have 
+		<term>enumerated</term> values (that is, a fixed choice of valid values),
+		also have a 
+	 <option>-dita-use-conref-target</option> value. This value forces the
+	 attribute value of the conref source (the referenced element) being used in the
+	 referencing element. 
+	 </p> 
+	 <p>A conref to a trademark could therefore be coded as: 
+		<codeblock>&lt;tm conref="#about_company/tm_hyperwrite" tmtype="-dita-use-conref-target"/&gt;</codeblock> 
+	 </p> 
+	 <section id="section_866867D04F454769BD3783B7F12401C2"
+	 audience="contributor"> 
+		<title>Rationale</title> 
+		<lq reftitle="DITA 1.1 Language Specification">The value
+		  -dita-use-conref-target is available on enumerated attributes, and may also be
+		  specified manually on other attributes. It indicates that when the element uses
+		  conref to pull in content, the attribute with a value of
+		  "-dita-use-conref-target" should also be pulled in from the target. 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

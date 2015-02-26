@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_BDCD39B6997048C9B6DD72DFF5DBADBC" xml:lang="en"
+ status="new"> 
+  <title>Variables using 
+	 <term>conref</term> and filtering</title> 
+  <shortdesc>Single-source publishing relies heavily on the concept of 
+	 <term>variables</term>. While DITA does not have a specifically named 
+	 <term>variables</term> feature, it does readily support variables
+	 functionality. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>ditaval</indexterm><indexterm>variables</indexterm><indexterm>filtering</indexterm><indexterm>conditional
+			 processing</indexterm><indexterm>conditional publishing<index-see>conditional
+				processing</index-see></indexterm><indexterm>conref
+			 attribute</indexterm><indexterm>content
+			 reference<indexterm>variables</indexterm></indexterm><indexterm>content
+			 reference<index-see>conref</index-see></indexterm><indexterm>transclusion<indexterm>variables</indexterm></indexterm><indexterm>attributes<indexterm>conref</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>In the context of single-source publishing, a variable is an element
+		that is used throughout the content of a publication in place of a normal fixed
+		unit of text. When the document is published, the variable element is replaced
+		with a nominated phrase or block of text. Variables allow numerous text changes
+		to be made with very little effort. 
+	 </p> 
+	 <p>For example, documentation might be required for a product sold under
+		two brand names, 
+		<varname>Legend</varname> and 
+		<varname>Liberty</varname>. Instead of 
+		<term>hard-coding</term> the product name, a variable of 
+		<varname>brand_name</varname> might be used whenever the product is
+		mentioned in the text. During the publishing of the documentation for the 
+		<varname>Liberty</varname> brand, the 
+		<varname>brand_name</varname> variable is replaced with the word 
+		<q>Liberty.</q> 
+	 </p> 
+	 <p>In DITA, variables are implemented through the 
+		<term>conref</term> and 
+		<term>ditaval</term> filtering features. The variable is coded as 
+		<term>conreffed</term> element, such as 
+		<codeph>&lt;ph conref="abc.dita#product" /&gt;</codeph>. The 
+		<term>conref</term> source is coded using metadata attributes that can be
+		used for filtering, such as: 
+	 </p> 
+	 <codeblock>&lt;ph id="product"&gt;
+  &lt;ph product="Liberty"&gt;Liberty&lt;/ph&gt;
+  &lt;ph product="Legend"&gt;Legend&lt;/ph&gt;
+&lt;/ph&gt;</codeblock> 
+	 <p>When the content is published, the conditional filtering in the 
+		<term>ditaval</term> can be set so that only the applicable product name
+		element is included in the output. 
+	 </p> 
+	 <example id="example_A9AC090DA0C24201B63D6553AB6F5C93"
+	 audience="contributor"> 
+		<title>Example of variable code for testing</title> 
+		<p>This is the source of the 
+		  <term>conref</term>: 
+		  <ph id="product"><ph product="Liberty">Liberty</ph><ph
+			 product="Legacy">Legend</ph></ph> 
+		</p> 
+		<p>The 
+		  <ph conref="#concept_BDCD39B6997048C9B6DD72DFF5DBADBC/product"><?xm-replace_text Phrase?></ph>
+		  is a family vehicle available as a sedan or station wagon. 
+		</p> 
+		<p>To see the result of this construct in output, you must exclude either
+		  
+		  <codeph>product="Legend"</codeph> or 
+		  <codeph>product="Liberty"</codeph> in the filtering conditions (in the 
+		  <term>ditaval</term>). 
+		</p> 
+	 </example> 
+	 <section id="section_81517FB4BF8147A182E325D536F984F8"
+	 audience="contributor"> 
+		<title>Rationale</title> 
+		<lq reftitle="Jim Tivy, Yahoo! DITA Users Group"
+		href="http://tech.groups.yahoo.com/group/dita-users/message/8910"> 
+		  <p>My use of conref for a variable is when the variable is content that
+			 is valid DITA content - is an instance of some DITA class. Having "generic"
+			 data for the variable helps the author visualize what the content model will be
+			 when the variable is assigned to any particular value. As well, setting up
+			 variable values can be done in the authoring tool. 
+		  </p> 
+		  <p>For example if you have generic data of: 
+			 <codeblock>&lt;ph conref=/a/vars/ReUseFrags#Topic/CoName&gt;
+ &lt;ph&gt;&lt;b&gt;CoName&lt;/b&gt;&lt;/ph&gt;&lt;ph&gt;CoLocation&lt;/ph&gt;
+&lt;/ph&gt;</codeblock>at publish time you could replace it with 
+			 <codeblock>&lt;ph conref=/a/vars/ReUseFrags#Topic/CoName&gt;
+ &lt;ph&gt;&lt;b&gt;XYZ Corp.&lt;/b&gt;&lt;/ph&gt;&lt;ph&gt;Paris&lt;/ph&gt;
+&lt;/ph&gt;</codeblock> 
+		  </p> 
+		</lq> 
+		<p><cite>Source: ()</cite> 
+		</p> 
+	 </section> 
+  </conbody> 
+</concept> 

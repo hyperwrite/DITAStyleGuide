@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en-au" id="D2007"> 
+  <title>Types of 
+	 <ph
+	  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialisation"><?xm-replace_text Phrase?></ph></title>
+  
+  <shortdesc>Structural 
+	 <ph
+	  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialisation"><?xm-replace_text Phrase?></ph>
+	 is used to design completely new information types. Domain 
+	 <ph
+	  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialisation"><?xm-replace_text Phrase?></ph>
+	 is used to modify the design of semantic elements within an information type. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm
+		  conref="../../conref/conref_source_metadata.dita#topic_hw_conref_meta/index_specialisation_types_of"><?xm-replace_text Index Term?></indexterm><indexterm
+		  conref="../../conref/conref_source_metadata.dita#topic_hw_conref_meta/index_domain_specialisation"><?xm-replace_text Index Term?></indexterm><indexterm
+		  conref="../../conref/conref_source_metadata.dita#topic_hw_conref_meta/index_structural_specialisation"><?xm-replace_text Index Term?></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>There are two types of 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialisation"><?xm-replace_text Phrase?></ph>:
+		
+	 </p> 
+	 <ul outputclass="listbullet" id="ul_BFFD7F3FC9FC4ECCADBC123CD37FE6D6"> 
+		<li id="li_91C94468C1934D7589C2047F3D0146B6">structural 
+		  <ph
+			conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialisation"><?xm-replace_text Phrase?></ph>
+		  (topic or map level), and 
+		</li> 
+		<li id="li_6181E946E4214ABDBF6F39A1DD5CC4E1">domain 
+		  <ph
+			conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialisation"><?xm-replace_text Phrase?></ph>
+		  (element level). 
+		</li> 
+	 </ul> 
+	 <p>Structural 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialisation"><?xm-replace_text Phrase?></ph>
+		is used to design complely new information types, such as an architecture to
+		suit Java API documentation. 
+	 </p> 
+	 <fig id="fig_452D07238CC94E9593408DDDCE8776E7"> 
+		<title>Examples of 
+		  <ph
+			conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialised"><?xm-replace_text Phrase?></ph>
+		  information types</title><image href="../images/specialisation_schematic.svg"
+		id="image_E5D2563485D640D9904D0378529061CB" align="left" placement="break"
+		alt="Schematic showing examples of specialised information types evolved from the base information types"
+		width="424px" height="249px"> 
+		  <alt>Schematic showing examples of specialised information types
+			 evolved from the base information types 
+		  </alt></image> 
+	 </fig> 
+	 <p>Domain 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialisation"><?xm-replace_text Phrase?></ph>
+		is used to modify the design of the semantic elements and attributes within an
+		information type, such as creating a new element named 
+		<synph>partnumber</synph>. 
+	 </p> 
+	 <p>Sometimes, 
+		<term>configuration</term> is confused with 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialisation"><?xm-replace_text Phrase?></ph>.
+		Configuration is a technique where the author or 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_organisation"><?xm-replace_text Phrase?></ph>
+		chooses not to use all the DITA elements and topic types. Configuration
+		restricts, but does not extend. 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_Specialisation_InitCap"><?xm-replace_text Phrase?></ph>
+		defines new elements and information types. 
+	 </p> 
+  </conbody> 
+</concept> 

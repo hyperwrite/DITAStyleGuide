@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_90AA268C0E84428891BBA3DBB09DC1AF" xml:lang="en"
+ status="new"> 
+  <title>The 
+	 <synph>desc</synph> element in links</title> 
+  <shortdesc>Descriptive metadata can be added to 
+	 <synph>link</synph> elements in the 
+	 <synph>related-links</synph> section. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>desc
+			 element</indexterm><indexterm>related-links
+			 elements<indexterm>desc</indexterm></indexterm><indexterm>elements<indexterm>desc</indexterm><indexterm>link</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>The 
+		<synph>desc</synph> element inside the 
+		<synph>link</synph> element holds a description of the link target. The 
+		<synph>desc</synph> content is not rendered as content, but will
+		typically appear as tooltip text in online outputs. 
+	 </p> 
+  </conbody> 
+</concept> 

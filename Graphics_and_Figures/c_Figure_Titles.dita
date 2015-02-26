@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D2978" status="new"> 
+  <title>Images in titles</title> 
+  <shortdesc>Images in topic, figure, and other titles, while technically
+	 valid, should not be used. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>figure<indexterm>titles</indexterm></indexterm><indexterm>images<indexterm>within
+				title</indexterm></indexterm><indexterm>elements<indexterm>fig</indexterm><indexterm>title</indexterm></indexterm><indexterm>title
+			 element<indexterm>images within</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>Although other 
+		<synph>title</synph> elements (including section titles) can technically
+		contain images and figures (in that images within topic and section titles are
+		valid DITA), these structures should be avoided. Titles are used for purposes
+		other than simply rendering headings in the output, and in some uses (such as
+		for running headers in page layout outputs) images in titles will produce
+		undesirable or unintended results. 
+	 </p> 
+	 <section id="section_B2DBA589D438488E84BE5B277E4C1833"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<p> 
+		  <codeblock>&lt;fig&gt;&lt;title&gt;Example of a Build File File&lt;image 
+      href="Images/buildfile.png"/&gt;&lt;/title&gt;&lt;/fig&gt; </codeblock> Note it says "...Build File File"? The way it displayed, I assumed
+		  the code was: 
+		  <codeblock>&lt;fig&gt;&lt;title&gt;Example of a Build File &lt;image 
+      href="Images/buildfile.png"/&gt;File&lt;/title&gt;&lt;/fig&gt; </codeblock>Anyway, although your code may well be valid, it doesn't seem
+		  right. The &lt;fig&gt; element can contain a title, THEN &lt;image&gt;. So the
+		  code sequence should be: 
+		  <codeblock>&lt;fig&gt;&lt;title&gt;Blah&lt;/title&gt;&lt;image href="blah.png" /&gt;&lt;/fig&gt; </codeblock>Yes, a title 
+		  <b>can</b> contain an image, but in the context of your example, the
+		  image is really part of the fig, not part of the title. If it was a picture of
+		  the title, or more likely a picture included in the title, then that might be
+		  fair enough. 
+		</p> 
+	 </section> 
+  </conbody> 
+</concept> 

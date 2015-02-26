@@ -1,0 +1,146 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D3763" status="new"> 
+  <title>Restricting authors and limiting element choices</title> 
+  <shortdesc>To make it easier for authors to choose semantic mark-up elements,
+	 it is possible to reduce the number of elements available for selection. This
+	 restriction can be managed by an authoring tool, or through the 
+	 <term>constraints</term> mechanism introduced in 
+	 <ph
+	  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_DITA12"><?xm-replace_text Phrase?></ph>.
+	 
+  </shortdesc> 
+  <prolog><author
+	 conref="../../conref/conref_source_metadata.dita#topic_hw_conref_meta/author_tony_self"></author><metadata><keywords><indexterm>restricting
+			 available
+			 elements</indexterm><indexterm>constraints</indexterm><indexterm>limiting
+			 element choices</indexterm><indexterm>controlling element
+			 choices</indexterm><indexterm>reducing element
+			 choices</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>Some authoring teams choose to restrict the DITA elements they allow
+		their authors to use. This might be an informal restriction (<q>don't do it or
+		  else!</q>), or a formal restriction (by software). 
+	 </p> 
+	 <p>Some DITA authoring tools provide the facility to restrict or limit the
+		elements displayed in the authoring interface. The restrictions are usually
+		managed on the basis of element mark-up domains, which are groups of elements
+		intended for common subject matter. 
+	 </p> 
+	 <fig id="fig_663B66675B7A48D787449D8A0AD91C48"> 
+		<title>Example of an authoring tool dialog box for hiding DITA mark-up
+		  domains</title><image placement="break" align="left"
+		id="image_B6B7EF4BBC204A878C291A39276D9BA5"
+		href="../images/restricting_tags_xmetal.png" width="342px" height="174px"> 
+		  <alt>Screen capture showing options dialog in authoring tool for hiding
+			 DITA domains 
+		  </alt></image> 
+	 </fig> 
+	 <p rev="1.2">The 
+		<term>constraints</term> mechanism introduced in 
+		<ph
+		conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_DITA12"><?xm-replace_text Phrase?></ph>
+		provides a standard for creating constrained information types, which can be
+		used to make the element choices for the author simpler. 
+	 </p> 
+	 <p> 
+	 </p> 
+	 <section id="section_C742B1E2656A474789BA532BD8D2F1E1"
+	 audience="contributor"> 
+		<title>Rationale</title> 
+		<lq reftitle="Eliot Kimber, OASIS DITA Technical Committee mailing list">
+		  
+		  <p>A general statement: Users are always allowed to limit features as a
+			 matter of local policy. For example, you might impose a policy that all conrefs
+			 must be to resources in a particular place in your storage system. That sort of
+			 constraint has no effect on the processing result, it only constrains what
+			 authors are allowed to do. However, this type of constraint is a matter of
+			 local policy that users choose to impose on themselves. 
+		  </p> 
+		  <p>If a tool, inadvertently or by design, imposes a constraint that is
+			 not inherent in the spec, it must at least clearly document that constraint.
+			 That suggests there needs to be a conformance category like "conforming with
+			 limits" meaning that the processor can correctly process only a subset of all
+			 possible valid DITA documents. 
+		  </p> 
+		</lq> 
+		<lq
+		href="http://tagsmiths.com/index.html?/AuthoringEnvironments.html&amp;1"
+		reftitle="Bob Thomas (&lt;Tagsmiths/&gt;)"> 
+		  <p><b>Constraints, why authors need them</b> 
+		  </p> 
+		  <p>You may be able to make good use of constraints in your authoring
+			 environment. 
+		  </p> 
+		  <p><b>A metaphor to consider</b> 
+		  </p> 
+		  <p>You won't die of thirst if you have a working firehose, but there
+			 are better ways to get a drink of water. Similarly, your tag (element) choices
+			 when writing should give you everything that you need, but nothing more. 
+		  </p> 
+		  <p><b>Why impose constraints on tag choices beyond those that exist in
+				base DITA?</b> 
+		  </p> 
+		  <p>For authoring, there are far too many tags available in contexts
+			 where they don't make sense. These tags make sense for creating DITA
+			 specializations, but not for authoring. Of course, tags that don't make sense
+			 to you may be essential to somebody else. 
+		  </p> 
+		  <p><b>So, I've got a lot of tags; who cares?</b> 
+		  </p> 
+		  <p>Unnecessary tags cause problems: 
+		  </p> 
+		  <p> 
+		  <ul id="ul_3C60240336CB42E08EF6356771A3165C"> 
+			 <li id="li_C20646D4924B49B1A466AF99C89096B9">In tag lists within XML
+				editing environments, tags that you need are obscured by those that you don't
+				need. Authors must then shift more of their attention from composition to using
+				the authoring tool. 
+			 </li> 
+			 <li id="li_D4845E6ED66341F594A09D9996DE34FC">Authors have more
+				trouble making consistent tagging choices when there is more than one plausible
+				way to tag something. Consequently, arbitrary differences in both structure and
+				in look and feel show up in the outputs. This problem tends to increase as the
+				number of tags available across contexts increases. 
+			 </li> 
+			 <li id="li_98795DA7BD8847D797BC7D79EA8AC8DA">Authors may ignore
+				semantics and select an inappropriate tag so that they can achieve a formatting
+				effect in the output. 
+			 </li> 
+		  </ul> 
+		  </p> 
+		  <p><b>What do I gain from limiting tag choices?</b> 
+		  </p> 
+		  <p>You immediately mitigate the problems that were just discussed. Once
+			 tag choices are limited to only those tags that authors need, authors make
+			 better tagging choices in less time. This streamlining accelerates the
+			 authoring process because it relieves the author of low-level consistency
+			 chores that exist when greater numbers of tags are available. 
+		  </p> 
+		  <p><b>Why are there so many tags in DITA?</b> 
+		  </p> 
+		  <p>The base DITA DTDs have been created with a number of design goals
+			 besides authoring. Chief among these is semantic extensibility through DITA's
+			 specialization mechanism (meaning that you can extend DITA to add tag names and
+			 structures that make sense for your purposes). One by-product of providing a
+			 robust environment for specialization is a family of DTDs that allows lots of
+			 flexibility. This translates directly into a plethora of tags appearing in the
+			 authoring environment, many of which will never be appropriate for your
+			 authoring needs. 
+		  </p> 
+		  <p><b>How do I limit tagging choices?</b> 
+		  </p> 
+		  <p>DITA 1.2 will introduce a constraints mechanism that will fill this
+			 need. However, it is not clear how soon this mechanism will be supported by XML
+			 authoring tools; although, it would be surprising if most vendors weren't
+			 already working on this. 
+		  </p> 
+		  <p>You can provide constraints for authors through a couple of methods:
+			 1) configure your XML editor to hide tags that you do not wish to use in any
+			 context, and 2) create authoring DTDs for the base DITA information types. 
+		  </p> 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

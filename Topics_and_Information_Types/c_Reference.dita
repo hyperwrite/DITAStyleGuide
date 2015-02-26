@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D2080" status="new"> 
+  <title>Reference</title> 
+  <shortdesc>The 
+	 <term>reference</term> topic is one of the three base DITA information
+	 types. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>information
+			 types<indexterm>reference</indexterm></indexterm><indexterm>reference
+			 information type</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p id="p_reference_intro">Reference topics are used to describe features of sets of things, such
+			as codes, types and commands. Information that normally demands tabular presentation
+			probably belongs in reference topics. Catalogues, directories and bibliographies are
+			good examples of reference topic information. Reference topics are often <ph
+				conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_organised"
+				><?xm-replace_text Phrase?></ph> into tables. </p> 
+	 <p id="p_reference_answers_question">Reference topics contains <q>facts without explanation</q>. </p> 
+	 <p>The root element of a reference topic is 
+		<synph>reference</synph>. 
+	 </p> 
+  </conbody> 
+</concept> 

@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_0AB1120C7BD84716978E34C3ED98A611" xml:lang="en"
+ status="new"> 
+  <title>Short descriptions</title> 
+  <shortdesc>The short description (or 
+	 <term>shortdesc</term>) is arguably the most important component of a DITA
+	 topic, and is also one of the most difficult elements to write. Short
+	 descriptions should be written for every topic. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>shortdesc
+			 element</indexterm><indexterm>elements<indexterm>shortdesc</indexterm></indexterm><indexterm>short
+			 description</indexterm><indexterm>abstract</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>Short descriptions serve multiple purposes within a document. This is
+		one of the reasons that it is difficult to categorise 
+		<synph>shortdesc</synph> as content (data) or metadata. Technically, 
+		<synph>shortdesc</synph> is metadata because it falls outside the topic 
+		<synph>body</synph> element. 
+	 </p> 
+	 <p>To complicate matters further, DITA includes a semantically similar
+		element, the 
+		<synph>abstract</synph>, which serves a similar function (and can act as
+		an alternative) to 
+		<synph>shortdesc</synph>. 
+	 </p> 
+	 <p>Writing short descriptions induces the writer to clarify the main thesis
+		of the topic. If you cannot write a short description of within the recommended
+		50 word limit, the topic is probably too complex and needs to be divided. If
+		the short description doesn't add any meaning to the topic, then the topic may
+		not contain a coherent idea. 
+	 </p> 
+	 <p importance="high">A concise and complete short description should be
+		written for every DITA topic. 
+	 </p> 
+	 <section id="section_D72927B7F7BA420C83C3AC5191BD70E9"
+	 audience="contributor"> 
+		<title>References</title> 
+		<ul id="ul_F5409854CB75459DA20F6F47B9EF84DD"> 
+		  <li id="li_524521F32F2F486FA6B3F7DEE8D475A7"
+		  conref="../../conref/conref_source_references.dita#concept_60C4D0117D5941E4A5F815B50A7F8454/cite_Eberlein_2007"><?xm-replace_text List Item?>
+		  </li> 
+		</ul> 
+	 </section> 
+  </conbody> 
+</concept> 

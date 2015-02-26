@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<concept id="concept_DDB9674AE8A34EE9A18B0969F0A559C0"> 
+  <title>The 
+	 <synph>scope</synph> attribute in a topic reference</title> 
+  <shortdesc>A topic reference (<synph>topicref</synph>) in a ditamap can
+	 reference content that is outside the DITA topic repository. The 
+	 <synph>scope</synph> attribute is used to specify whether the resource is
+	 local references the topic (or other resource) to be included in the output
+	 publication through the 
+	 <synph>href</synph> attribute. The value of the 
+	 <synph>href</synph> attribute must conform to the standard URI format. 
+  </shortdesc> 
+  <conbody> 
+	 <p>If a topic being referenced in a 
+		<term>ditamap</term> is external to the document content, the 
+		<synph>topicref</synph> element's 
+		<synph>scope</synph> attribute should be set to 
+		<userinput>external</userinput> to semantically identify this
+		relationship. 
+	 </p> 
+	 <p>For example: 
+		<codeblock>&lt;xref href="..../somefile.html" format="html" scope="external" /&gt;</codeblock> 
+	 </p> 
+	 <p> 
+		<draft-comment>Cross-reference this to toc in Cross-references section
+		  about scope attribute, named "linking to external resources in a new window". 
+		</draft-comment> 
+	 </p> 
+	 <section id="section_4E4124839CE047D2A190E7A4D279D8F6"
+	 audience="contributor"> 
+		<title>Rationale</title> 
+		<lq href="http://tech.groups.yahoo.com/group/dita-users/message/16957"
+		reftitle="Deborah Pickett, Yahoo! DITA Users Group"> 
+		  <lines>Hi Brenda, 
+On 2010-01-21 08.07, brendaoakley999 wrote: 
+&gt; Am researching the best way to use xref with a relative path to a peer 
+&gt; document in an Eclipse Infocenter (DITAOT "Eclipse Help" output),[...] 
+&gt; I believe this use is supported 
+&gt; technically by the DITA 1.1 architectural spec for scope=peer.
+That's one of the use cases for which scope=peer was designed. Go ahead and use it, 
+keeping in mind (as you said) that it's up to you to keep the links correct. scope=peer in 
+the context of a CHM is almost always a bad idea, on account of the way that relative 
+URLs work inside them. For HTML, I can imagine cases analogous to the Eclipse help 
+you mention, but they're pretty rare in my experience. </lines> 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

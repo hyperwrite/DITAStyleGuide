@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D9149" status="new"> 
+  <title>Paragraphs (and other block elements) within notes</title> 
+  <shortdesc>Avoid using block elements within notes. Only when a note is
+	 comprised of more than one idea or point should child block elements be used. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>elements<indexterm>note</indexterm><indexterm>p</indexterm></indexterm><indexterm>paragraphs<indexterm>inside
+				notes</indexterm></indexterm><indexterm>note
+			 element</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>The 
+		<synph>note</synph> element can contain one or more paragraph
+		(<synph>p</synph>) or other 
+		<term>block data</term> elements. Both 
+		<synph>note</synph> and 
+		<synph>p</synph> are block elements. 
+	 </p> 
+	 <p>Mark-up options of: 
+	 </p> 
+	 <codeblock>&lt;note&gt;
+ There are four forced induction models.
+&lt;/note&gt;</codeblock> 
+	 <p>and 
+	 </p> 
+	 <codeblock>&lt;note&gt;
+ &lt;p&gt;There are four forced induction models.&lt;/p&gt;
+&lt;/note&gt;</codeblock> 
+	 <p>are both valid, but using both mark-up options will result in
+		inconsistency. 
+	 </p> 
+	 <p>It is arguable that the two options are semantically different. A
+		paragraph is a self-contained unit dealing with a single idea. A note has a
+		separate semantic purpose, to highlight ancillary or associated ideas. A single
+		note therefore has no need to contain a paragraph. However, in many cases,
+		there will be more than one ancillary (note) idea, resulting in a need to break
+		the note text into constituent blocks. 
+	 </p> 
+	 <p>The simplest form of mark-up reflects the best practice. 
+	 </p> 
+	 <p importance="high">If there is just one block of text in the note, then
+		the note should be left as string-only. This stores the minimum of mark-up, and
+		simplifies the processed output. If there are multiple blocks in the note, then
+		paragraphs, lists (or other block elements) should be used. Never start with
+		string data followed by a block. 
+	 </p> 
+	 <p importance="high">In a set of notes, if there is a need for one note to
+		include block elements, then all notes in the set should be consistently
+		treated. Using mixed mark-up methods (blocks in some notes and string-only in
+		others) are likely to result in inconsistent rendering of the output. 
+	 </p> 
+	 <p importance="high">String-only text should not be used in the same note
+		alongside block elements. 
+	 </p> 
+	 <section id="section_1EEBB9F57CDD4E80A6E0BF88E680AE82"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<p>This rule conforms with similar rules for block items in table cells
+		  (<xref href="c_Paragraphs_Inside_Tables.dita#D3760" type="concept"
+		  format="dita" scope="local"><?xm-replace_text Paragraphs (and other block elements) within tables?></xref>)
+		  and block items within lists (<xref scope="local"
+		  href="c_Paragraphs_within_List_Items.dita#D3980" type="concept" format="dita"><?xm-replace_text  Paragraphs (and other block elements) within list items?></xref>).
+		  
+		</p> 
+	 </section> 
+  </conbody> 
+</concept> 

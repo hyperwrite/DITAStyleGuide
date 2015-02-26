@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D9335" status="new"> 
+  <title>The difference between processes, procedures and tasks</title> 
+  <shortdesc>A procedure is a synonym for a task, but a process is an upper
+	 level series of major steps, with those major steps being procedures or tasks.
+	 Tasks are made up of actions or steps. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>processes</indexterm><indexterm>procedures</indexterm><indexterm>task</indexterm><indexterm>step
+			 element</indexterm><indexterm>steps</indexterm><indexterm>action</indexterm><indexterm>work
+			 instruction</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>A process is an upper level description of a series of major steps
+		required to accomplish an objective. Processes are generally made up of
+		procedures or tasks. A task is another way of describing a procedure. Another
+		way of putting it is that a process is a sequence of tasks. 
+	 </p> 
+	 <p rev="1.2">DITA does not distinguish between processes and tasks,
+		although 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_DITA12"><?xm-replace_text Phrase?></ph>
+		does provide 
+		<term>strict task</term> and 
+		<term>general task</term> variants of the 
+		<term>task</term> information type. 
+	 </p> 
+	 <p>The term 
+		<term>task</term> is used in DITA, in preference to procedure, work
+		instruction or unit rule. A 
+		<term>task topic</term> contains one procedure or task, and is made up of
+		a series of steps. In turn, steps are made up of commands (or actions), step
+		results, and perhaps substeps. 
+	 </p> 
+	 <p>In a process, each step outlines the result or outcome of a task, and
+		that step is typically linked to the task topic that details that step at a
+		lower level. 
+	 </p> 
+	 <section id="section_753259701D95435881306F38D1022A62"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<p>The Swinburne University of Technology Policies and Procedures
+		  database (http://www.swinburne.edu.au/corporate/registrar/ppd/faq.htm#12) uses
+		  a three level categorisation, where: 
+		<ul id="ul_676176A02AD8468C9F8A40B3E8DBB32D"> 
+		  <li id="li_B3E260422FFD4659A5EF8BCEE9224D76"><term>policies</term>
+			 regulates, directs and controls actions and conduct 
+		  </li> 
+		  <li id="li_B54E377372C8410CA343D7C417574A98"><term>procedures</term>
+			 instruct users how to implement a policy at a high level (without detailed
+			 instructions) 
+		  </li> 
+		  <li id="li_FF33E511D595444C80A58A07D94BC799"><term>unit rules</term>
+			 (or 
+			 <term>work instructions</term>) defines the detailed steps for
+			 carrying out tasks within a procedure. 
+		  </li> 
+		</ul> 
+		</p> 
+		<p>Management consultant Gary Eckstein's blog (http://idoinfotech.com/)
+		  includes a diagram illustrating the continuum from upper level processes
+		  through to lower level work instructions, using a four level taxonomy. 
+		</p> 
+		<fig id="fig_16DD6861BD9544C49A275F9EF44DB1DD"> 
+		  <title>The continuum from process to work instruction
+			 (idoinfotech.com)</title><image placement="break" align="left"
+		  id="image_B5BF1EBCC14B448EAA6899A36DD8A154"
+		  href="../images/process_levels_idoinfotech-com.png" width="425px"
+		  height="400px"> 
+			 <alt>Diagram of process levels, showing the continuum from process to
+				work instruction 
+			 </alt></image> 
+		</fig> 
+		<p>According to ISO 26514, a 
+		  <term>procedure</term> is an 
+		  <q>ordered series of steps that specify how to perform a task</q>, a 
+		  <term>step</term> is 
+		  <q>one element (numbered list item) in a procedure that tells a user to
+			 perform an action (or actions)</q>, an 
+		  <term>action</term> is the 
+		  <q>element of a step that a user performs during a procedure</q>, and
+		  upper level processes are left undefined. A task is what the user does, and a
+		  procedure documents the steps in that task; the user performs a task that the
+		  procedure documents. 
+		</p> 
+		<p>A similar ontology 
+		  <draft-comment>check whether this word is correct or if taxonomy or
+			 vocabulary would be better 
+		  </draft-comment>could be created for steps and actions: the action is
+		  what the user does, while the step documents the action. 
+		</p> 
+	 </section> 
+	 <section id="section_72E019A7E7534CC5A3585E0F3E0362CE"
+	 audience="contributor"> 
+		<title>References</title> 
+		<ul id="ul_505C725EFC7C49B282C7ADC569626BF9"> 
+		  <li id="li_E7FD08991D8E4814995F2642CD6FA529"
+		  conref="../../conref/conref_source_references.dita#concept_60C4D0117D5941E4A5F815B50A7F8454/cite_ISO26514-2008"><?xm-replace_text List Item?>
+		  </li> 
+		</ul> 
+	 </section> 
+  </conbody> 
+</concept> 

@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D9334" status="new"> 
+  <title>Making 
+	 <synph>shortdesc</synph> elements compulsory</title> 
+  <shortdesc>It is possible for publishing teams to make the use of short
+	 descriptions mandatory through 
+	 <term
+	  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/term_specialisation"><?xm-replace_text Term?></term>
+	 and 
+	 <term>constraints</term> mechanisms within DITA. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>shortdesc</indexterm><indexterm>elements<indexterm>shortdesc</indexterm></indexterm><indexterm>mandatory
+			 elements</indexterm><indexterm>constraints</indexterm><indexterm
+		  conref="../../conref/conref_source_metadata.dita#topic_hw_conref_meta/index_specialisation"><?xm-replace_text Index Term?></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>Some publications managers may wish to make the use of 
+		<synph>shortdesc</synph> mandatory within a DITA authoring team. To make
+		such an element mandatory in DITA, 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialisation"><?xm-replace_text Phrase?></ph>
+		or constraints have to be used. (Some authoring tools also allow configuration
+		independently of DITA to make elements mandatory.) 
+	 </p> 
+	 <p>In 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialisation"><?xm-replace_text Phrase?></ph>,
+		the schema designer creates a new information type (for example, 
+		<synph>myconcept</synph>), with 
+		<synph>shortdesc</synph> defined as a required element within that
+		information type. (The 
+		<synph>shortdesc</synph> doesn't have to be renamed under this approach.)
+		
+	 </p> 
+	 <p rev="1.2">Using constraints (<ph
+		conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_DITA12"><?xm-replace_text Phrase?></ph>
+		and above), the base topic element (for example, 
+		<synph>concept</synph>) is provided with an override rule to make the
+		structure stricter in that the 
+		<synph>shortdesc</synph> element becomes mandatory. 
+	 </p> 
+  </conbody> 
+</concept> 

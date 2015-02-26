@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D1818" status="new"> 
+  <title>Purpose of ditamap files</title> 
+  <shortdesc>DITA map files are used for defining the topics of a publication,
+	 specifying the topic sequence, and controlling linking between topics. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>ditamap</indexterm><indexterm>manifest</indexterm><indexterm>metadata<indexterm>map
+				level</indexterm></indexterm><indexterm>navigation</indexterm><indexterm>hierarchy</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>DITA map (or 
+		<term>ditamap</term>) files have three primary purposes: 
+	 <dl> 
+		<dlentry> 
+		  <dt>Topic Manifest 
+		  </dt> 
+		  <dd>To define the topics to be processed into the output publication. 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt>Hierarchy Definition 
+		  </dt> 
+		  <dd>To define the sequence and hierarchy of topics in the output so
+			 that the heading levels, table of contents, parent-child links, and other
+			 navigation pathways (such as breadcrumb links) can be constructed. 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt>Linking Relationships 
+		  </dt> 
+		  <dd> To define the relationships between topics so that related topics
+			 links and other context-specific links can be automatically constructed. 
+		  </dd> 
+		</dlentry> 
+	 </dl> 
+	 </p> 
+	 <p>A map has two main components: the hierarchy (of which there is one per
+		map), and the relationship table (of which there can be none or many). Both are
+		primarily made of 
+		<term>topic references</term> (<synph>topicref</synph> elements). 
+	 </p> 
+	 <p>A 
+		<term>ditamap</term> file is not a topic: it contains no content. It is,
+		however, a type of DITA XML file. A 
+		<term>ditamap</term> file can also contain publication- or
+		output-specific metadata. 
+	 </p> 
+	 <p>You can create as many ditamaps as you need. For example, you might
+		create one map file for your 
+		<cite><ph
+		  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/ph_Subaru_company_name"><?xm-replace_text Phrase?></ph>
+		  
+		  <ph
+			conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/ph_Impreza_product_name"><?xm-replace_text Phrase?></ph>
+		  XRW Owner's Manual</cite>, another for the 
+		<cite><ph
+		  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/ph_Subaru_company_name"><?xm-replace_text Phrase?></ph>
+		  
+		  <ph
+		  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/ph_Impreza_product_name"><?xm-replace_text Phrase?></ph>
+		  XR Owner's Manual</cite>, and another for the 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/ph_Subaru_company_name"><?xm-replace_text Phrase?></ph>
+		
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/ph_Impreza_product_name"><?xm-replace_text Phrase?></ph>
+		Web site. 
+	 </p> 
+  </conbody> 
+</concept> 

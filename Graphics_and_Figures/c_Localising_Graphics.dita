@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D9089" status="new"> 
+  <title><ph
+	 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_Localising_InitCap"><?xm-replace_text Phrase?></ph>
+	 graphics</title> 
+  <shortdesc>Where possible, graphics that include text should be managed in 
+	 <term>SVG</term> format to simplify 
+	 <ph
+	  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_localisation"><?xm-replace_text Phrase?></ph>.
+	 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>callouts</indexterm><indexterm>translation<indexterm>graphics</indexterm></indexterm><indexterm>SVG</indexterm><indexterm
+		  conref="../../conref/conref_source_metadata.dita#topic_hw_conref_meta/index_localising_graphics"><?xm-replace_text Index Term?></indexterm><indexterm
+		  conref="../../conref/conref_source_metadata.dita#topic_hw_conref_meta/index_localisation_graphics"><?xm-replace_text Index Term?></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>In many cases, documents written in a DITA environment will be
+		translated to another language. 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_Localisation_InitCap"><?xm-replace_text Phrase?></ph>
+		software programs and XML languages work incredibly well together, so the 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_localisation"><?xm-replace_text Phrase?></ph>
+		process is generally very efficient. However, 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_localisation"><?xm-replace_text Phrase?></ph>
+		runs into a stumbling block where graphics include words. 
+	 </p> 
+	 <p>The problem is essentially eliminated if the graphic is in 
+		<term
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/term_SVG"><?xm-replace_text Term?></term>
+		format, because, being an XML format, translatable text can be extracted out of
+		an image and the translated text reinserted. 
+	 </p> 
+	 <p>For raster graphics, where the text in a graphic is made up of
+		uneditable pixels, you should use a key for callouts. The callout therefore
+		becomes a key reference (for example, 
+		<q>A</q>) to the description, which is typically recorded in a table or
+		definition list under the graphic. 
+	 </p> 
+  </conbody> 
+</concept> 

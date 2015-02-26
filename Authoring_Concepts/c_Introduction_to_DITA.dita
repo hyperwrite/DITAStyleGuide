@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D1763" status="new"> 
+  <title>Introduction to DITA</title> 
+  <shortdesc>DITA is an XML standard, an architectural approach, and a writing
+	 methodology, developed by technical communicators for technical communicators. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>Darwin,
+			 Charles</indexterm><indexterm>On the Origin of the
+			 Species</indexterm><indexterm>evolution</indexterm><indexterm
+		  conref="../../conref/conref_source_metadata.dita#topic_hw_conref_meta/index_specialisation"><?xm-replace_text Index Term?></indexterm><indexterm>Darwinian
+			 Theory</indexterm><indexterm>DITA<indexterm>definition</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>DITA stands for the Darwin Information Typing Architecture. 
+	 </p> 
+	 <p>The 
+		<q>Darwin</q> is in homage to Charles Darwin, the famed scientist
+		credited with the theory of evolution following the publication of his 
+		<cite>On the Origin of Species</cite>. DITA incorporates principles of 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialisation"><?xm-replace_text Phrase?></ph>,
+		adaption and inheritance that are reminiscent of Darwinian theory (only in a
+		completely different field!). 
+	 </p> 
+	 <fig id="fig_2ABB69FE28C44DA1A2E5A24810FA01A3"> 
+		<title>Charles Darwin</title> 
+		<desc><cite>Photo: Library of Congress, Prints &amp; Photographs
+			 Division, [reproduction number, LC-USZ61-104]</cite> 
+		</desc><image placement="break" align="left"
+		id="image_0F40D4050A6C465AB0FD8E1B1036329E"
+		href="../images/darwin_library_of_congress.jpg" width="208px" height="320px"> 
+		  <alt>Photo of Charles Darwin: Library of Congress, Prints &amp;
+			 Photographs Division, [reproduction number, LC-USZ61-104] 
+		  </alt></image> 
+	 </fig> 
+	 <p><q>Information Type</q> refers to the focus on 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_categorisation"><?xm-replace_text Phrase?></ph>
+		of information. (<i>Typing</i> means 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_categorisation"><?xm-replace_text Phrase?></ph>
+		in this context, not keyboarding!) 
+	 </p> 
+	 <p><q>Architecture</q> indicates that DITA is not just an XML standard; it
+		is an approach, a workflow, a methodology, and a philosophy. 
+	 </p> 
+	 <p>One good, short definition of DITA is: 
+		<lq reftitle="OASIS, DITA XML Cover Pages"
+		 href="http://xml.coverpages.org/dita.html">DITA defines an XML architecture for
+		  designing, writing, managing, and publishing many kinds of information in print
+		  and on the Web. 
+		</lq> 
+	 </p> 
+	 <p>Adopting a DITA approach is not really about tools and technologies.
+		DITA represents a change to the way that information is developed. 
+	 </p> 
+  </conbody> 
+</concept> 

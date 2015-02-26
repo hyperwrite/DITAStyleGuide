@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_13B5790CDDCB4467A547F8C01220CF11" xml:lang="en"
+ status="new"> 
+  <title>Cross-referencing topics and external resources</title> 
+  <shortdesc>Cross-references are commonly made to other DITA topics in a
+	 collection, and to information resources outside the collection. These external
+	 targets can be any type of electronic resource that can be addressed through a
+	 URI, including e-mail addresses, documents on a network file server, and Web
+	 content.
+  </shortdesc> 
+  <conbody>
+  </conbody> 
+</concept>

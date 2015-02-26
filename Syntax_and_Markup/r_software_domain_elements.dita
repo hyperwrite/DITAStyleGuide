@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="reference_6FB31F18C6F749D78832DB80AA363731"
+ xml:lang="en" status="new"> 
+  <title>Software domain elements</title> 
+  <shortdesc>The elements in the software domain each have a specific semantic
+	 purpose. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>elements<indexterm>software</indexterm></indexterm><indexterm>software
+			 domain elements</indexterm></keywords></metadata>
+  </prolog> 
+  <refbody> 
+	 <simpletable id="simpletable_4211B5AF0F2E499E96062BE134E7530A"> 
+		<sthead><stentry>Element Name</stentry><stentry>Semantic
+			 Purpose</stentry> 
+		</sthead> 
+		<strow><stentry>msgph</stentry><stentry>message phrase</stentry> 
+		</strow> 
+		<strow><stentry>msgblock</stentry><stentry> message block</stentry> 
+		</strow> 
+		<strow><stentry>msgnum</stentry><stentry>message number</stentry> 
+		</strow> 
+		<strow><stentry>cmdname</stentry><stentry>command name</stentry> 
+		</strow> 
+		<strow><stentry>varname</stentry><stentry>variable (to be provided by
+			 user) name</stentry> 
+		</strow> 
+		<strow><stentry>filepath</stentry><stentry>file name or path, or
+			 URI</stentry> 
+		</strow> 
+		<strow><stentry>userinput</stentry><stentry>user input</stentry> 
+		</strow> 
+		<strow><stentry>systemoutput</stentry><stentry>system output</stentry> 
+		</strow> 
+	 </simpletable> 
+  </refbody> 
+</reference> 

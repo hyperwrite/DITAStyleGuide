@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept id="D9120" xml:lang="en" status="new"> 
+  <title>The DITA publishing process</title> 
+  <shortdesc>XSL-T and XSL-FO are the technologies that underpin most DITA
+	 publishing tools. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>XSL-T</indexterm><indexterm>XSL-FO</indexterm><indexterm>publishing<indexterm>process</indexterm></indexterm><indexterm>publishing<indexterm>tools</indexterm></indexterm><indexterm>processors</indexterm><indexterm>rendering
+			 engines</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>DITA content can be published to a range of output reading formats using
+		a number of tools. The publishing tools, or DITA processors, use a number of
+		different technologies. 
+	 </p> 
+	 <p>The majority of processors use two key technologies: 
+	 <dl> 
+		<dlentry> 
+		  <dt>XSL-T 
+		  </dt> 
+		  <dd>to transform DITA into another mark-up language, including HTML and
+			 DocBook 
+		  </dd> 
+		</dlentry> 
+	 </dl> 
+	 <dl> 
+		<dlentry> 
+		  <dt>XSL-FO 
+		  </dt> 
+		  <dd>an XML formatting language used as an intermediary format when DITA
+			 is processed to a page layout format such as PDF and RTF 
+		  </dd> 
+		</dlentry> 
+	 </dl> 
+	 </p> 
+	 <p>The processing involves a number of steps that interpret ditamaps,
+		resolve conref transclusion elements, resolve cross-references, apply
+		formatting numbering and labels, and map DITA elements to output format
+		elements. 
+	 </p> 
+	 <p><xref
+		href="c_DITA_Publishing_Process.dita#D9120/fig_xsl_process_schematic"
+		type="fig" format="dita" scope="local"><?xm-replace_text Overview of typical DITA transformation to PDF?></xref>
+		shows an overview of the tools and upper-level processes involved in converting
+		DITA to PDF. 
+	 </p> 
+	 <fig id="fig_xsl_process_schematic"> 
+		<title>Overview of typical DITA transformation to PDF</title><image
+		placement="break" align="left"
+		id="image_6124035E932D46159B8ED982E4BAE0FB"
+		href="../images/xsl_in_publishing.svg" width="429px" height="135px"> 
+		  <alt>Schematic showing processes involved in transforming DITA to PDF 
+		  </alt></image> 
+	 </fig> 
+	 <section id="section_1E08C6A084AB42A29F8F7759FF2A7728"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<lq reftitle="Deborah Pickett, Yahoo! DITA Users Group"
+		 href="http://tech.groups.yahoo.com/group/dita-users/message/12911"> 
+		  <p>It's a series of pipeline steps, just like when you publish to HTML.
+			 For PDF2 in particular, the steps are: 
+		  </p> 
+		  <ol id="ol_A35AC2A96DF241D59D6174A860DFD589"> 
+			 <li id="li_2D3DA4C02FBA4A8DBBEC9AD0BABFBE33">DITA-OT preprocess. All
+				outputs do this. This includes conref resolution, mapref merging, pulling text
+				in xrefs and other things that you usually want. 
+			 </li> 
+			 <li id="li_9EB6A150A6EB4DDBBD2CD892F76E47EE">Merge DITA topics. PDF2
+				takes the input map and produces a single large XML file containing all of the
+				DITA topics, in the desired output order. 
+			 </li> 
+			 <li id="li_198596E138FE4AFDA31158AA41EA235B">DITA to XSLFO. This is
+				the part that most of the PDF2 plugin XSLT code is doing. XSLFO is a
+				page-description language expressed in XML. Sometimes XSLFO is just called XSL,
+				in case you are looking it up online. 
+			 </li> 
+			 <li id="li_BF39B8C7273D49B98CB36DEF7A4F726A">Font munging. Only PDF2
+				does this. The input XSLFO is processed into XSLFO that includes font mapping
+				information. 
+			 </li> 
+			 <li id="li_B6DE9AE680C542098EC629A9CA205362">Index munging. Only PDF2
+				does this. The index markers in the XSLFO are processed into slightly different
+				XSLFO. 
+			 </li> 
+			 <li id="li_27DDBE13E9314507B65B55677BDE6A19">PDF rendering. An
+				external program renders the XSLFO into PDF. RenderX XEP is one program which
+				does this. Apache FOP is another which you could use. Antenna House sells one
+				too. 
+			 </li> 
+		  </ol> 
+		  <p>So the PDF production could be seen as a post-processing stage. You
+			 don't have to pay money if the free renderer (FOP) produces good-enough output.
+			 XSLFO is standardized enough that you should be able to slot any XSLFO
+			 processor into that part of the pipeline. 
+		  </p> 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

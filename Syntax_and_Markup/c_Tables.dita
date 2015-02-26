@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_6884C7A0BBBF4792B2CF765F85CFB261"> 
+  <title>Tables</title> 
+  <shortdesc>The purpose of a table is to structure, 
+	 <ph
+	  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_organise"><?xm-replace_text Phrase?></ph>
+	 and present factual data that a user will need to look up or reference. There
+	 are two general purpose table types in DITA: 
+	 <synph>table</synph> and 
+	 <synph>simpletable</synph>. 
+  </shortdesc> 
+</concept> 

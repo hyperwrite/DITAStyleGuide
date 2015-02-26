@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D2622" status="new"> 
+  <title>Anatomy of a ditamap file</title> 
+  <shortdesc>DITA maps files are primarily made up of 
+	 <synph>topicref</synph>, 
+	 <synph>topichead</synph>, 
+	 <synph>topicgroup</synph> and 
+	 <synph>topicmeta</synph> elements. DITA map files may also contain
+	 relationship tables, made up of rows and cells containing 
+	 <synph>topicref</synph> elements. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>topicref
+			 element</indexterm><indexterm>topicgroup
+			 element</indexterm><indexterm>topichead
+			 element</indexterm><indexterm>reltable</indexterm><indexterm>relcell
+			 element</indexterm><indexterm>relrow element</indexterm><indexterm>relheader
+			 element</indexterm><indexterm>topicmeta
+			 element</indexterm><indexterm>elements<indexterm>topicmeta</indexterm><indexterm>topicgroup</indexterm><indexterm>tophchead</indexterm><indexterm>reltable</indexterm><indexterm>relcell</indexterm><indexterm>relrow</indexterm><indexterm>relheader</indexterm></indexterm><indexterm>hierarchy</indexterm><indexterm>ditamap</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>The vocabulary of a ditamap file is quite simple. The principal element
+		is the topic reference (<synph>topicref</synph>), which is simply a link to a
+		topic to be included in the collection. The 
+		<synph>topicref</synph> elements can be nested, allowing you to build a
+		hierarchy of links to topics. 
+	 </p> 
+	 <p>Other elements which you can use to refine the hierarchy are: 
+	 <dl> 
+		<dlentry> 
+		  <dt><synph>topichead</synph> 
+		  </dt> 
+		  <dd>an unlinked heading (or group) in the hierarchy 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt><synph>topicgroup</synph> 
+		  </dt> 
+		  <dd>a way of grouping 
+			 <synph>topicref</synph> elements together without affecting the
+			 hierarchy (used for applying characteristics to a group of topics at a time) 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt><synph>topicmeta</synph> 
+		  </dt> 
+		  <dd>metadata for the topic that applies specifically to the context of
+			 the publication defined by the ditamap 
+		  </dd> 
+		</dlentry> 
+	 </dl> 
+	 </p> 
+	 <p>As well as linking to topics, 
+		<synph>topicref</synph> elements can link to other ditamaps, thus
+		permitting the embedding and re-use of ditamaps. 
+	 </p> 
+	 <p>A ditamap file may also contain one or more 
+		<term>relationship table (or reltable)</term> sections. A 
+		<term>reltable</term> is made up of rows (<synph>relrow</synph> elements)
+		of cells (<synph>relcell</synph> elements), usually with a header row
+		(<synph>relheader</synph> elements). Cells contain 
+		<synph>topicref</synph> elements that link to topics. The relationship
+		between 
+		<synph>topicref</synph> elements within rows and cells determines how
+		generated links will appear in the output. 
+	 </p> 
+  </conbody> 
+</concept> 

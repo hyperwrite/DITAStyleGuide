@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<map id="map_E34A7858619F469188424213B49B5034"><title>Metadata, Conditional Processing, and Indexing</title>
+	<topicref format="dita" href="c_Types_of_Metadata.dita" navtitle="Metadata, conditional processing, and indexing" scope="local" type="concept">
+		<topicref format="dita" href="Metadata_Conditional/c_Conditional_Processing_Concepts.dita" navtitle="Conditional processing concepts" scope="local" type="concept"/>
+		<topicref format="dita" href="Metadata_Conditional/c_Select_Attributes.dita" navtitle="Condition (or select) attributes" scope="local" type="concept">
+			<topicref format="dita" href="Metadata_Conditional/c_Attributes_with_multiple_values.dita" navtitle="Attributes with multiple values" scope="local" type="concept"/>
+			<topicref format="dita" href="Metadata_Conditional/c_Controlled_Attribute_Values.dita" navtitle="Controlled values for attributes" scope="local" type="concept"/>
+			<topicref format="dita" href="Metadata_Conditional/c_Conventions_for_otherprops.dita" navtitle="Conventions for the otherprops attribute" scope="local" type="concept"/>
+			<topicref format="dita" href="Metadata_Conditional/c_The_props_Attribute.dita" navtitle="The props attribute" scope="local" type="concept"/>
+		</topicref>
+		<topicref format="dita" href="Metadata_Conditional/c_Filtering_and_Flagging.dita" navtitle="Filtering and flagging" scope="local" type="concept">
+			<topicref format="dita" href="Metadata_Conditional/c_Conditional_Processing_at_Topic_Level.dita" navtitle="Excluding topics: conditional processing at topic level" scope="local" type="concept"/>
+			<topicref format="dita" href="Metadata_Conditional/c_Conditional_Processing_Dangers.dita" navtitle="Conditional processing dangers" scope="local" type="concept"/>
+			<topicref format="dita" href="Metadata_Conditional/c_Transclusions_vs_Conditions.dita" navtitle="Conditions versus transclusion" scope="local" type="concept"/>
+			<topicref format="dita" href="Metadata_Conditional/c_Include_Exclude_Conditions.dita" navtitle="Include and exclude filtering actions" scope="local" type="concept"/>
+			<topicref format="dita" href="Metadata_Conditional/c_Limiting_Conditions.dita" navtitle="Limiting the use of conditions" scope="local" type="concept"/>
+			<topicref format="dita" href="Metadata_Conditional/c_Filtering_ditamaps.dita" navtitle="Filtering ditamaps" scope="local" type="concept"/>
+			<topicref format="dita" href="Metadata_Conditional/c_Filtering_Composite_Topics.dita" navtitle="Filtering composite (ditabase) topics" scope="local" type="concept"/>
+			<topicref format="dita" href="Metadata_Conditional/c_Markup_Print_NonPrint_Metadata.dita" navtitle="Print versus non-print metadata" scope="local" type="concept"/>
+		</topicref>
+		<topicref format="dita" href="Metadata_Conditional/c_Other_Metadata.dita" navtitle="Other metadata" scope="local" type="concept">
+			<topicref format="dita" href="Metadata_Conditional/c_Managing_Metadata.dita" navtitle="Managing metadata elements and attributes" scope="local" type="concept"/>
+			<topicref format="dita" href="Metadata_Conditional/c_Critical_Dates.dita" navtitle="Critical dates" scope="local" type="concept"/>
+			<topicref format="dita" href="Metadata_Conditional/c_Author_and_Publisher_Metadata.dita" navtitle="Author, publisher and publication metadata" scope="local" type="concept"/>
+			<topicref format="dita" href="Metadata_Conditional/c_The_outputclass_Attribute.dita" navtitle="The outputclass attribute" scope="local" type="concept"/>
+			<topicref format="dita" href="Metadata_Conditional/c_The_status_attribute.dita" navtitle="The status attribute" scope="local" type="concept"/>
+			<topicref format="dita" href="Metadata_Conditional/c_The_importance_Attribute.dita" navtitle="The importance attribute" scope="local" type="concept"/>
+			<topicref format="dita" href="Metadata_Conditional/c_The_source_Element.dita" navtitle="The source element" scope="local" type="concept"/>
+		</topicref>
+		<topicref format="dita" href="Metadata_Conditional/c_Indexing.dita" navtitle="Indexing" scope="local" type="concept">
+			<topicref format="dita" href="Metadata_Conditional/c_Placement_of_Index_Terms.dita" navtitle="Placement of indexterm elements" scope="local" type="concept"/>
+			<topicref format="dita" href="Metadata_Conditional/c_Nesting_Index_Entries.dita" navtitle="Nesting index entries" scope="local" type="concept"/>
+			<topicref format="dita" href="Metadata_Conditional/c_Index_See_SeeAlso.dita" navtitle="Index see and see also" scope="local" type="concept"/>
+			<topicref format="dita" href="Metadata_Conditional/c_Re-using_Index_Entries.dita" navtitle="Re-using index entries" scope="local" type="concept"/>
+		</topicref>
+	</topicref>
+	<reltable id="reltable_2F16B44FE7F443738DB6EACB359A6BE1" title="Relationships between Metadata Topics" toc="no">
+		<relheader><relcolspec type="task"/><relcolspec type="concept"/><relcolspec type="reference"/>
+		</relheader>
+		<relrow><relcell/><relcell/><relcell/>
+		</relrow>
+		<relrow><relcell/><relcell/><relcell/>
+		</relrow>
+		<relrow><relcell/><relcell/><relcell/>
+		</relrow>
+		<relrow><relcell/><relcell/><relcell/>
+		</relrow>
+		<relrow><relcell/><relcell/><relcell/>
+		</relrow>
+		<relrow><relcell/><relcell/><relcell/>
+		</relrow>
+		<relrow><relcell/><relcell/><relcell/>
+		</relrow>
+		<relrow><relcell/><relcell/><relcell/>
+		</relrow>
+		<relrow><relcell/><relcell/><relcell/>
+		</relrow>
+		<relrow><relcell/><relcell/><relcell/>
+		</relrow>
+	</reltable>
+	<reltable id="reltable_2622C711844E4F99B2DE4C700D5BED54" title="One Way Relationships between Metadata Topics" toc="no">
+		<relheader><relcolspec linking="sourceonly"/><relcolspec linking="targetonly"/>
+		</relheader>
+		<relrow><relcell/><relcell/>
+		</relrow>
+		<relrow><relcell/><relcell/>
+		</relrow>
+		<relrow><relcell/><relcell/>
+		</relrow>
+		<relrow><relcell/><relcell/>
+		</relrow>
+		<relrow><relcell/><relcell/>
+		</relrow>
+		<relrow><relcell/><relcell/>
+		</relrow>
+		<relrow><relcell/><relcell/>
+		</relrow>
+		<relrow><relcell/><relcell/>
+		</relrow>
+		<relrow><relcell/><relcell/>
+		</relrow>
+		<relrow><relcell/><relcell/>
+		</relrow>
+	</reltable>
+</map>

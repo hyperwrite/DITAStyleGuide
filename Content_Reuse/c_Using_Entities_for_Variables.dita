@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D9213" status="new"> 
+  <title>Using internal entities for variables</title> 
+  <shortdesc>Internal entities are an XML feature for creating typing
+	 shortcuts. They should be avoided in DITA authoring. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>entities</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>Internal entities function as typing shortcuts in XML documents. They
+		allow a string or phrase to be defined in the head of the XML file, and then
+		used in the body of the content using a shortcut notation. For example, the
+		phrase 
+		<q><ph
+		  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/ph_Subaru_company_name"><?xm-replace_text Phrase?></ph>
+		  Lumberer</q> may be defined as 
+		<codeph>&lt;!ENTITY lumberer "<ph
+		  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/ph_Subaru_company_name"><?xm-replace_text Phrase?></ph>
+		  Lumberer"&gt;</codeph>, and that 
+		<varname>lumberer</varname> entity used within the document as 
+		<codeph>&amp;lumberer;</codeph>. They can theoretically be used for
+		creating variables. 
+	 </p> 
+	 <p importance="high">Do not use internal entities. Their use inhibits
+		interchange, and they are technically difficult for authors to work with. They
+		are also changed during XSL transformations, resulting in inconsistent output
+		results. 
+	 </p> 
+	 <section id="section_1550E491428B476ABC62DEA8CC5BC114"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<lq reftitle="Eliot Kimber, Yahoo! DITA Users Group"
+		 href="http://tech.groups.yahoo.com/group/dita-users/message/13092"> 
+		  <p>&gt;&gt; For support of variables in content we use entities. This
+			 is quite effective because you can reference entities in all places of XML
+			 (even attribute values). &lt;&lt; 
+		  </p>I recommend strongly *against* using entities for this, for the
+		  following reasons: - They only work with DTD-based documents (or at least,
+		  documents with DOCTYPE declarations). - They are a purely syntactic mechanism,
+		  not a semantic one. That means that most, if not all, XML-aware CMS systems
+		  cannot manage them in any useful way. By the same token, they are not available
+		  to most XML processing tools, such as XSLT transforms and XQueries. - Most, if
+		  not all, XML-aware CMS systems resolve all entities as a side effect of
+		  ingesting documents. Only a markup-based approach will work reliably in all XML
+		  processing environments. Note that DITA 1.2's upcoming keyref feature provides
+		  a general mechanism for using text strings by reference. DITA 1.2 also provides
+		  some new phrase-level elements specifically motivated by the need to be able to
+		  use strings by conref in many places. 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

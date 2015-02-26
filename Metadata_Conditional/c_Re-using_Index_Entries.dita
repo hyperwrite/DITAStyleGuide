@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_90A7725F4B0A4BF3861F91870752C4FC" xml:lang="en"
+ status="new"> 
+  <title>Re-using index entries</title> 
+  <shortdesc>You can create a special ditamap which has a sole purpose of being
+	 the container for common 
+	 <synph>indexterm</synph> elements for re-use in the 
+	 <synph>prolog</synph> section of topics (and the 
+	 <synph>topicmeta</synph> section of ditamaps, if required) through the 
+	 <term>conref</term> feature.
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>indexes</indexterm><indexterm>conref<indexterm>indexes</indexterm></indexterm><indexterm>indexterm
+			 element</indexterm><indexterm>elements<indexterm>indexterm</indexterm></indexterm><indexterm>content
+			 re-use<indexterm>indexes</indexterm></indexterm><indexterm>transclusion<indexterm>of
+				indexes</indexterm></indexterm></keywords></metadata>
+  </prolog>
+  <conbody> 
+	 <p>Like most DITA elements, index elements can be re-used through the 
+		<term>conref</term> mechanism. There are good reasons why you might want
+		to re-use index entries, including consistency of wording and punctuation, and
+		reduced translation costs. (Even if used in more than one place, re-used index
+		entries only have to be translated once in the conref source.) 
+	 </p> 
+	 <p>You may find that you can better manage the re-use of index terms if
+		they are stored in their own, standalone, ditamap. That index re-use ditamap
+		will never be processed, and never embedded in another ditamap; it is only used
+		for the purposes of re-use. Such a ditamap file should be named with a prefix
+		of 
+		<filepath>conref_source_</filepath>. The ditamap could easily be used by
+		many authors working in the same team. 
+	 </p> 
+	 <p>The code for an index re-use ditamap would follow the pattern: 
+		<codeblock>&lt;map id="conref_index_reuse"&gt;
+  &lt;title&gt;Index Term Re-use&lt;/title&gt;
+  &lt;topicmeta&gt;
+    &lt;keywords&gt;
+      &lt;indexterm id="index_turbocharger"&gt;turbocharger&lt;/indexterm&gt;
+      &lt;indexterm id="index_keypad_PIN"&gt;keypad
+        &lt;indexterm&gt;PIN&lt;/indexterm&gt;
+      &lt;/indexterm&gt;
+      &lt;indexterm id="index_immobiliser"&gt;immobiliser&lt;/indexterm&gt;
+      ...
+    &lt;/keywords&gt;
+  &lt;/topicmeta&gt;
+&lt;/map&gt;</codeblock> 
+	 </p> 
+	 <section id="section_7E76DD9FAD0244D1910E91112DCB1D72"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<lq href="http://www.sdicorp.com/Resources/White_Papers.aspx"
+		 reftitle="ndexing Effectively in DITA (SDI Global Solutions Whitepaper)"> 
+		  <p> If you have a number of information sets that have the same basic
+			 structure and use the same terms, you might notice that the index structure is
+			 the same or similar. Much like content that is reused in different information
+			 sets, you can use index structures in different information sets. 
+		  </p> 
+		  <p> In keeping with maximizing the portability of the topics, put the
+			 index terms within the metadata for the &lt;topicref&gt; elements for each
+			 topic, or in the &lt;topicmeta&gt; element before any &lt;topicref&gt;
+			 elements. To minimize the localization costs, use a container, an index-only
+			 DITAMAP, to hold the index terms, and conref those structures into the DITAMAP
+			 that you are using to create your output. The DITAMAP that contains the index
+			 terms never gets processed; its only reason to exist is as a source for
+			 reusable index terms. Structured this way, you translate only the index-only
+			 DITAMAP; the referring DITAMAPs do not contain any index content. 
+		  </p> 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

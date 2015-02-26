@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_7C34D2D0467245149EB3FDF4B9D59518" xml:lang="en"
+ status="new"> 
+  <title>Cross-referencing a transcluded element</title> 
+  <shortdesc>When re-using content with content references
+	 (<term>conref</term>), you must cross-reference to the instance of a conref
+	 transclusion, and not to the original source of the conref. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>elements<indexterm>xref</indexterm></indexterm><indexterm>transclusion</indexterm><indexterm>attributes<indexterm>conref</indexterm></indexterm><indexterm>xref
+			 element</indexterm><indexterm>conref
+			 attribute</indexterm><indexterm>cross-references<indexterm>to a conref
+				transclusion</indexterm></indexterm><indexterm>content
+			 re-use<indexterm>referencing a conref
+				transclusion</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>If you need to cross-reference a transcluded element (that is, the
+		target of a conref), you should cross-reference the instance of the conref, and
+		not the original element. 
+	 </p> 
+	 <p>For example, in the following content: 
+		<codeblock>&lt;concept id="fuel_filter"&gt;
+...
+&lt;p&gt;For more information, see &lt;xref type="fig".../&gt;.&lt;/p&gt;
+...
+&lt;fig id="fig_fuel_sys" conref="conref_source.dita#conref_figs/fuelsys"
+&lt;/fig&gt;
+...
+&lt;/concept&gt;</codeblock> there are two 
+		<synph>fig</synph> elements. The first 
+		<synph>fig</synph> element, 
+		<userinput>fig_fuel_sys</userinput>, is the element containing the
+		conref, or the referencing element. The other 
+		<synph>fig</synph> element, 
+		<userinput>fuelsys</userinput> in the topic named 
+		<filepath>conref_source.dita</filepath>, is the source of the conref, or
+		the referenced element. The cross-reference in this scenario must be to the
+		referencing element, and not the referenced conref source. This means the
+		cross-reference code must be: 
+		<codeblock>&lt;xref href="#fuel_filter/fig_fuel_sys" type="fig" /&gt;</codeblock> 
+	 </p> 
+	 <section id="section_52E3FB8FFC884DA59AAB3EC7B98C1DD0"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<lq href="http://tech.groups.yahoo.com/group/dita-users/message/18959"
+		 reftitle="Robert D Anderson, Yahoo! DITA Users Group"> 
+		  <p>Typically - the way the toolkit expects you to reference the table
+			 is at the point where it is reused. So, you would have something like this - an
+			 ID on the table that is referencing your reusable component, and a reference to
+			 that ID. 
+			 <codeblock>&lt;topic id="final-topic"&gt;
+...
+&lt;p&gt;See the table below: &lt;xref
+href="#final-topic/one_instance"/&gt;&lt;/p&gt;
+&lt;table id="one_instance"
+conref="reusable-component.dita#reusable/table"&gt;...&lt;/table&gt;
+
+...
+&lt;/topic&gt;
+</codeblock> 
+		  </p> 
+		  <p>If your xref were in another document, it would of course include
+			 the file name: 
+			 <codeblock>&lt;xref
+href="final-topic.dita#final-topic/one_instance"/&gt;
+</codeblock> 
+		  </p> 
+		  <p>From a pure OT perspective - it doesn't really know what to do if
+			 your reference goes to the reusable component, as you noticed. It doesn't know
+			 that the referenced table will be, in effect, moving to another location; it
+			 has no way to know whether that reusable component is valid where defined, or
+			 if it's (as in this case) a fragment that is really meaningless on its own.
+			 There's also the pesky problem of what to do if the table is reused twice -
+			 even if the &lt;xref&gt; knew that the table was a moving target, it wouldn't
+			 know which target to follow. 
+		  </p> 
+		  <p>Sort of sounds like an unhelpful "working as designed" answer, but I
+			 think that by adjusting the &lt;xref&gt; to look like the one above, both PDF
+			 and XHTML will work correctly. 
+		  </p> 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

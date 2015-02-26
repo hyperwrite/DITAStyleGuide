@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D3753" status="new"> 
+  <title>Stem sentences in task topics</title> 
+  <shortdesc>Stem sentences cannot be used to introduce steps in a task topic.
+	 The topic title provides sufficient context for the user to understand the
+	 purpose of the procedure. 
+  </shortdesc> 
+  <prolog><metadata><keywords><indexterm>stem
+			 sentences</indexterm><indexterm>task
+			 topic</indexterm><indexterm>context</indexterm><indexterm>elements<indexterm>context</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>The DITA 
+		<term>task</term> information task doesn't have a dedicated element for a
+		stem sentence to introduce the steps. The assumption that can be drawn is that
+		a stem sentence (eg, 
+		<q>To change the wheel, proceed as follows</q>) is not required. A
+		descriptive topic title will obviate the need for a stem sentence, particularly
+		when used in conjunction with a carefully crafted short description. 
+	 </p> 
+	 <p importance="high">Do not break the semantics of your content by trying
+		to force a stem sentence into a structure where it is not clearly permitted.
+		For example, do not include a stem sentence as the last paragraph in the 
+		<synph>context</synph> element, using the logic that it will be rendered
+		immediately before the step block. 
+	 </p> 
+	 <p>The DITA Technical Committee did not forget to include a stem sentence
+		element. It was deliberately not included, after careful consideration and
+		consensus amongst the committee members. 
+	 </p> 
+	 <section id="section_444AFE9E2D0C412FA36AAD511CD30B2C"
+	 audience="contributor"> 
+		<title>Rationale</title> 
+		<lq href="http://dita.xml.org/wiki/myths-about-technical-writing"
+		reftitle="DITA.xml Wiki: Myths about Technical Writing">Stem sentences in
+		  technical communication have long been considered a standard practice to
+		  introduce new content, especially steps in a task. The task stem sentence,
+		  generally consisting of a partial sentence such as "To start the machine:" ,
+		  followed by "1. Plug it in.", "2. Turn it on.," etc., is not supported by any
+		  explicit DITA element in the DITA Task information type. See How to do it with
+		  DITA (http://dita.xml.org/wiki/stem-sentences). 
+		</lq> 
+		<p>Ted Kuster, of CollabNet Inc, found that to be the case. He dispensed
+		  with stem sentences altogether, going straight from the shortdesc into the
+		  steps. 
+		  <lq reftitle="Ted Kuster, Yahoo! DITA Users Group"
+		  href="http://tech.dir.groups.yahoo.com/group/dita-users/message/8219">I find
+			 that if you are very careful to draft the shortdesc right, this makes for a
+			 brisker, more efficient flow. But it does take some getting used to, from the
+			 authoring side. 
+		  </lq> 
+		</p> 
+	 </section> 
+  </conbody> 
+</concept> 

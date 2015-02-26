@@ -1,0 +1,139 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_411EB14DCE0C400E8C21C1A15E5B0926" rev="1.2" xml:lang="en"
+ status="new"> 
+  <title>General Task</title> 
+  <shortdesc>The 
+	 <term>general task</term> information type was introduced in 
+	 <ph
+	  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_DITA12"><?xm-replace_text Phrase?></ph>
+	 as a less prescriptive alternative to the task (or 
+	 <term>strict task</term>) information type. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>information
+			 types<indexterm>general task</indexterm></indexterm><indexterm>general task
+			 information type</indexterm><indexterm>task information
+			 type</indexterm><indexterm>task topic</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>In 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_DITA12"><?xm-replace_text Phrase?></ph>,
+		the task information type was separated into 
+		<term>general task</term> and 
+		<term>strict task</term>. Technically speaking, the 
+		<term>general task</term> is now the base task information type, because
+		strict type is implemented as a 
+		<term>constrained</term> version of general task. (<ph
+		conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_DITA12"><?xm-replace_text Phrase?></ph>
+		also introduced the constraints feature, which allows the rules of an
+		information type to be tightened in a simpler way than otherwise creating a 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialised"><?xm-replace_text Phrase?></ph>
+		information type.) 
+		<fig id="fig_AF763BA16CB44B62A59E207459E2C26B"> 
+		  <title>Task information types in base 
+			 <ph
+			  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_DITA12"><?xm-replace_text Phrase?></ph></title><image
+		  placement="break" align="left"
+		  id="image_0AD410FD898A4AA4B7620590EC77E878"
+		  href="../images/information_types_taskmodel.svg" width="303px" height="144px"> 
+			 <alt>Schematic diagram showing general and strict task in base
+				content model in DITA 1.2 
+			 </alt></image> 
+		</fig> 
+	 </p> 
+	 <p>For documenting most procedures, the 
+		<term>strict task</term> is the more appropriate choice. Conceptually, it
+		is best to think of the 
+		<term>task</term> information type as meaning 
+		<term>strict task</term>. The 
+		<term>strict task</term> information type is the equivalent of the 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_DITA11"><?xm-replace_text Phrase?></ph>
+		
+		<term>task</term>, while the general task has much more relaxed content
+		rules. 
+	 </p> 
+	 <note
+	  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/note_stricttask_equals_task"><?xm-replace_text {note}?>
+	 </note> 
+	 <p>Wherever possible, you should prefer the 
+		<term>strict task</term>. If your 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_organisation_poss"><?xm-replace_text Phrase?></ph>
+		content model is more appropriately served by general task, then stick to
+		general task across the document repository. Avoid mixing 
+		<term>strict task</term> and 
+		<term>general task</term> in the same publication. 
+	 </p> 
+	 <section id="section_70E1EF792ED046E29630F95E62724E2B"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<lq
+		 reftitle="OASIS DITA Adoption Committee - DITA 1.2 Feature Article: Task Model">
+		  
+		  <p><ph
+			 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_DITA12"><?xm-replace_text Phrase?></ph>
+			 introduces the General Task Model as an alternative to the 
+			 <ph
+			  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_DITA10"><?xm-replace_text Phrase?></ph>
+			 and 1.1 Strict Task Model. It also adds capabilities to the &lt;steps&gt;
+			 content unit for both task models. 
+		  </p> 
+		  <p>Use the DITA General Task Model when your information model calls
+			 for a task structure that is not well supported by the DITA Strict Task Model
+			 or when you need to constrain the elements in a task in a way that is unique to
+			 your organization’s needs. Use the DITA General Task Model to convert existing
+			 tasks to DITA that do not yet conform to your task information model. 
+		  </p> 
+		  <p><ph
+			 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_DITA12"><?xm-replace_text Phrase?></ph>
+			 also includes the new Machinery Task Model, designed to conform to the
+			 requirements of the machine industry, especially in the construction of pre-
+			 and post-requirements. 
+		  </p> 
+		  <p>The new DITA General Task Model allows the following: 
+		  </p> 
+		  <ul id="ul_A4CCBFFA9ECA4AA2BD7CCA3BB5A890ED"> 
+			 <li id="li_21C58EA701F140A9BB83E1D67071F85C">Add a &lt;section&gt;
+				with an optional &lt;title&gt; before the steps in the task. 
+			 </li> 
+			 <li id="li_DC5E8F7EA1B5475C94B337DB35D8814C">Vary the order of
+				&lt;prereq&gt;, &lt;context&gt;, and &lt;section&gt; before the steps in the
+				task. It's common for some organizations to present &lt;context&gt; information
+				before &lt;prereq&gt;, and, in the past, the DITA-OT stylesheets had to be
+				customized to switch them around, which is beyond the capability of most users
+				who are not well-versed in advanced XSLT coding techniques. 
+			 </li> 
+			 <li id="li_BA926A6D1ED34D5A8CE59B837C2615CB">Select the new
+				&lt;steps-informal&gt; content unit, which allows you to construct steps using
+				ordered and unordered lists, paragraphs, and other less semantically specified
+				elements than &lt;step&gt; and &lt;cmd&gt;. 
+			 </li> 
+			 <li id="li_273F9D6E4D5A46F3A14D2785C58902E2">Include more than one
+				example or pre-requisite in a task after the completion of the steps. 
+			 </li> 
+		  </ul> 
+		  <p>Note that the DITA General Task Model, the DITA Strict Task Model,
+			 and the Machinery Task Model are not mutually compatible. Both DITA Strict Task
+			 Model and the Machinery Task Model have been redesigned as constraints of the
+			 General Task Model. 
+		  </p> 
+		  <p>You are not able to use a conref between a constrained and a more
+			 general task model. A constrained task cannot conref from an unconstrained
+			 task. Conref requires that the conref target be at least as constrained (and
+			 compatibly constrained) as the conref source (that is, the document making the
+			 conref link). Otherwise, you cannot be assured that the conrefed data is valid
+			 in the using context. 
+		  </p> 
+		  <p>We advise organizations to use only one task model unless the
+			 content in two areas of publications is completely mutually exclusive and will
+			 never be shared. Note, however, that a fundamental DITA principle is the
+			 ability to exchange content throughout an organization. It is, therefore, best
+			 to avoid using more than one task model. 
+		  </p> 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

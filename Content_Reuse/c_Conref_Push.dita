@@ -1,0 +1,188 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D9356" rev="1.2" status="new"> 
+  <title>The conref push technique</title> 
+  <shortdesc>The 
+	 <term>conref push</term> technique allows content from a source topic to be
+	 inserted into another topic, without any special code in the topic where the
+	 content will be re-used. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>attributes<indexterm>conref</indexterm><indexterm>conaction</indexterm></indexterm><indexterm>conaction
+			 attribute</indexterm><indexterm>conref
+			 attribute</indexterm><indexterm>push</indexterm><indexterm>conref<indexterm>push</indexterm></indexterm><indexterm>transclusion<indexterm>conref
+				push</indexterm></indexterm><indexterm>content re-use<indexterm>conref
+				push</indexterm></indexterm><indexterm>re-use<indexterm>conref
+				push</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>The normal method of using content references is to reference, in the 
+		<synph>conref</synph> attribute of an element in a topic, the element in
+		a source file that you want to re-use, and 
+		<term>pull in</term> that element's value. 
+	 </p> 
+	 <p>In 
+		<ph
+		conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_DITA12"><?xm-replace_text Phrase?></ph>,
+		an alternative method of content referencing was introduced, allowing the value
+		of an element to be 
+		<term>pushed</term>, or injected, from the source element into a topic
+		where it is to be re-used. This technique is known as 
+		<term>conref push</term>. 
+	 </p> 
+	 <p>A scenario in which 
+		<term>conref push</term> would be useful would be where a car
+		manufacturer produces driver manuals that are 
+		<ph
+		conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_customised"><?xm-replace_text Phrase?></ph>
+		by the local car dealer before printing. The 
+		<ph
+		conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_customisation"><?xm-replace_text Phrase?></ph>
+		might simply involve inserting paragraphs with local contact details. The
+		dealer would not want to modify the manufacturer-supplied content, because
+		otherwise those changes would have to be repeated when the manufacturer
+		modified the content. 
+	 </p> 
+	 <p>The conref push mechanism requires elements in the target topic (the
+		topic where the content is to be 
+		<term>pushed</term>) having id elements, as the push mechanism inserts
+		elements before or after a named element, or replaces the named element. 
+	 </p> 
+	 <p>For example, there might be a need to insert dealer contact details
+		between these two paragraphs: 
+		<codeblock>&lt;p id="regular_servicing"&gt;You should have your car serviced regularly.&lt;/p&gt;
+&lt;p&gt;The service intervals...&lt;/p&gt;</codeblock> 
+	 </p> 
+	 <p>The paragraph to be 
+		<term>injected</term> would be maintained in the topic where conref
+		source elements are stored. To 
+		<term>push</term> the paragraph, a 
+		<synph>conref</synph> attribute and a 
+		<synph>conaction</synph> attributes must be specified; the 
+		<synph>conref</synph> attribute is a reference to the point in the target
+		topic where the content is to be pushed, and the 
+		<synph>conaction</synph> nominates whether the element is injected
+		before, after, or replaces the referenced element. If the conref source topic
+		is included within a ditamap, the conref push will be processed during
+		publishing of that ditamap. 
+	 </p> 
+	 <p>To confirm that the topic will be valid after the element is pushed,
+		actions that inject content before or after an element require a 
+		<q>dummy</q> placeholder element of the same type as the referenced
+		element in the conref source topic. 
+	 </p> 
+	 <p>For example, a new paragraph would be inserted after the 
+		<userinput>regular_servicing</userinput> paragraph with the following
+		code in the conref source topic: 
+		<codeblock>&lt;p conaction="mark" conref="c_servicing.dita#service/regular_servicing" /&gt;
+&lt;p conaction="pushafter"&gt;
+  Your local dealer is Snell Performance Vehicles.
+&lt;/p&gt;</codeblock> 
+	 </p> 
+	 <p>To insert a new paragraph before the 
+		<userinput>regular_servicing</userinput> paragraph, the following code
+		would be used: 
+		<codeblock>&lt;p conaction="pushbefore"&gt;
+  You can have your car serviced at Snell Performance Vehicles, your local dealer.
+&lt;/p&gt;
+&lt;p conaction="mark" conref="c_servicing.dita#service/regular_servicing" /&gt;</codeblock> 
+	 </p> 
+	 <p>To replace the 
+		<userinput>regular_servicing</userinput> paragraph, the following code
+		would be used: 
+		<codeblock>&lt;p conaction="pushreplace" conref="c_servicing.dita#service/regular_servicing"&gt;
+  You should have your car serviced regularly by Snell Performance Vehicles.
+&lt;/p&gt;</codeblock> 
+	 </p> 
+	 <p>The valid values for the 
+		<synph>conaction</synph> attribute are: 
+	 <dl> 
+		<dlentry> 
+		  <dt>pushreplace 
+		  </dt> 
+		  <dd>replaces the referenced element with the re-use element 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt>pushbefore 
+		  </dt> 
+		  <dd>injects the re-use element after the referenced element 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt>pushafter 
+		  </dt> 
+		  <dd>injects the re-use element before the referenced element 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt>mark 
+		  </dt> 
+		  <dd>used as a placeholder in the re-use topic when 
+		  <option>pushbefore</option> or 
+		  <option>pushafter</option> actions are used 
+		  </dd> 
+		</dlentry> 
+	 </dl> 
+	 </p> 
+	 <section id="section_F9A2D4228D164F01B069F5C564DF522C"
+	 audience="contributor"> 
+		<title>Rationale</title> 
+		<lq
+		reftitle="JoAnn Hackos, OASIS DITA Adoption TC Mailing List, 12 Oct 2009">Here
+		  are two other scenarios: 1) Printer manufacturer has just discovered that
+		  Microsoft has changed a configuration in Windows that invalidates their
+		  instruction for installing the printer driver for the new machine. They need to
+		  issue a "patch" to the topic on their website explaining a workaround until
+		  they can update their driver. Within a few days, they will have the driver
+		  updated and will no longer require the patch. They do not want to change the
+		  source topic. A Conref push will allow them to input a temporary fix. [by the
+		  way, this actually happened but the manual was already printed. They had to
+		  open every box in inventory and put in a flyer with the correction. However,
+		  the correction was only valid for about a week] 2) Company provides third-party
+		  documentation as part of their complete package to customers, in addition to
+		  their own documentation. All the content is in DITA including the third-party.
+		  They want to insert a specific warning into the third-party documentation that
+		  they provide to their customers without asking the third party to make the
+		  change for contractual reasons. Conref push should help this as long as the
+		  third party includes the @ids. 
+		</lq> 
+		<lq
+		reftitle="Kristen Eberlein, OASIS DITA Adoption TC Mailing List, 16 Oct 2009">Adding
+		  content to auto-generated DITA topics A software company generates hundreds of
+		  API reference topics every night, using an automated process that builds the
+		  topics from the product source code. The company's technical writer wants to
+		  add some additional content to the files, to make them more useful for end
+		  readers, but he knows that his edits would be overwritten every evening. The
+		  conref push mechanism provides a solution. The writer drafts the content to be
+		  pushed into the API reference topics by referencing persistent @id attributes
+		  in the auto-generated topics. Every night the topics are regenerated, and every
+		  night the human-authored text is pushed into the topics. Providing a temporary
+		  fix for a documentation issue A printer manufacturer discovers that Microsoft
+		  has changed a configuration setting in Windows; this change invalidates the
+		  manufacturers instructions for installing a printer driver. They need to issue
+		  a patch to the installation topic on their Web site. Since the company will
+		  have an updated driver in a matter of days, they do not want to change the
+		  source for the installation topic. Using the conref push mechanism, they can
+		  create a temporary fix that will be simple to remove once the printer driver is
+		  updated. Reusing topics between documentation teams A large company uses DITA
+		  for their technical documentation. One product, an integrated development
+		  environment (IDE), is the basis for another software product. The installation
+		  process for the two applications is almost (but not quite) identical; there is
+		  one extra window for the second product. The IDE is released before all the
+		  development work on the second product is completed. However, since the
+		  information developers for the IDE know that another documentation team will
+		  reuse their installation topic, they added @id attributes in the necessary
+		  places. The technical writers for the second product then use conref push to
+		  add the content for the additional installation step. Modifying third-party
+		  documentation A hardware company provides their customers with a documentation
+		  package that includes some third-party documentation. They need to add a
+		  warning to the third-party documentation, but for contractual reasons, they do
+		  not want to ask the third party to make the change. Since all the documentation
+		  is sourced in DITA and the third-party documentation contains @id attributes in
+		  the necessary places, the hardware company can use conref push to add the
+		  warning. 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

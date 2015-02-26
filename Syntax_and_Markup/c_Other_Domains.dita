@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<concept id="concept_016C23D8A0184B85A9913BEA5215E21C"> 
+  <title>Metadata domain</title> 
+  <prolog><metadata><keywords><indexterm>domains<indexterm>metadata</indexterm><indexterm>indexing</indexterm><indexterm>xNAL</indexterm></indexterm><indexterm>metadata
+			 domain</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>The metadata domain elements are designed for describing index entries
+		and map-level metadata elements. 
+	 </p>
+  </conbody> 
+</concept> 

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en-au" id="D9039"> 
+  <title>Using the 
+	 <synph>term</synph> Element When Defining a Term</title> 
+  <conbody> 
+	 <p>How should an expansion of acronym, abbreviation or other term be
+		handled? For example, in the snippet: 
+	 </p> 
+	 <lq><q>technologies such as XML Localization Interchange File Format
+		  (XLIFF)</q> 
+	 </lq> 
+	 <p>should the mark-up be: 
+	 </p> 
+	 <codeblock>technologies such as XML Localization Interchange File Format (&lt;term&gt;XLIFF&lt;/term&gt;)</codeblock> 
+	 <p>or 
+	 </p> 
+	 <codeblock>technologies such as &lt;term&gt;XML Localization Interchange File Format&lt;/term&gt; (&lt;term&gt;XLIFF&lt;/term&gt;)</codeblock> 
+	 <p>or 
+	 </p> 
+	 <codeblock>technologies such as &lt;term&gt;XML Localization Interchange File Format&lt;/term&gt; (XLIFF)</codeblock> 
+	 <p>or something else? 
+	 </p> 
+  </conbody> 
+</concept> 

@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<map id="map_E3225340EF0E442A9993CAB1EDA6D5EF"><title>Language and Punctuation</title>
+	<topicref format="dita" href="c_Language_and_Punctuation.dita" navtitle="Language and punctuation" scope="local" type="concept">
+		<topicref format="dita" href="Language_and_Punctuation/c_Avoiding_Writing_for_Output.dita" navtitle="Avoiding writing for output" scope="local" type="concept"/><topicref format="dita" href="Language_and_Punctuation/c_Glue_Text.dita" navtitle="Stem sentences, glue text, and other transitional information" scope="local" type="concept">
+			<topicref format="dita" href="Language_and_Punctuation/c_Transitional_Information_in_Prerequisites.dita" navtitle="Transitional information in semantic blocks" scope="local" type="concept"/>
+			<topicref format="dita" href="Language_and_Punctuation/c_Stem_Sentences_in_Task_Topics.dita" navtitle="Stem sentences in task topics" scope="local" type="concept"/>
+		</topicref>
+		<topicref format="dita" href="Language_and_Punctuation/c_Punctuation_in_Lists.dita" navtitle="Punctuation in lists" scope="local" type="concept"/>
+		<topicref format="dita" href="Language_and_Punctuation/c_Titles_and_Headings.dita" navtitle="Titles and headings" scope="local" type="concept">
+			<topicref format="dita" href="Language_and_Punctuation/c_Case_in_Titles.dita" navtitle="Case in titles" scope="local" type="concept">
+			</topicref>
+			<topicref format="dita" href="Language_and_Punctuation/c_Line_Breaks_in_Titles.dita" navtitle="Line breaks in titles" scope="local" type="concept"/>
+			<topicref format="dita" href="Language_and_Punctuation/c_Where_Titles_Are_Used.dita" navtitle="Where topic titles are used" scope="local" type="concept"/>
+			<topicref format="dita" href="Language_and_Punctuation/c_Writing_Meaningful_Titles.dita" navtitle="Crafting meaningful topic titles" scope="local" type="concept"/>
+			<topicref format="dita" href="Language_and_Punctuation/c_Conditions_in_Titles.dita" navtitle="Conditional titles" scope="local" type="concept"/></topicref>
+		<topicref format="dita" href="Language_and_Punctuation/c_Crafting_Paragraphs.dita" navtitle="Crafting paragraphs" scope="local" type="concept"/><topicref format="dita" href="Language_and_Punctuation/c_Varieties_of_English.dita" navtitle="Different languages" scope="local" type="concept"/>
+		<topicref format="dita" href="Language_and_Punctuation/c_Quotation_Marks.dita" navtitle="Quotation marks" scope="local" type="concept">
+			<topicref format="dita" href="Language_and_Punctuation/c_Nested_Quotations.dita" navtitle="Nested quotations" scope="local" type="concept"/>
+		</topicref>
+	</topicref>
+	<reltable id="reltable_813AB8BE878D41D3B26536E9E472A2CD" title="Relationships between Language and Punctuation topics" toc="no">
+		<relheader><relcolspec type="task"/><relcolspec type="concept"/><relcolspec type="reference"/><relcolspec scope="external"/>
+		</relheader>
+		<relrow><relcell/><relcell collection-type="family">
+			</relcell><relcell/><relcell/>
+		</relrow>
+		<relrow><relcell/><relcell/><relcell/><relcell/>
+		</relrow>
+		<relrow><relcell/><relcell/><relcell/><relcell/>
+		</relrow>
+		<relrow><relcell/><relcell/><relcell/><relcell/>
+		</relrow>
+	</reltable>
+	<reltable id="reltable_28518CAA84034BF8A4B0FAB9CE1E9DE6" title="One Way Links between Language and Punctuation  Topics" toc="no">
+		<relheader><relcolspec linking="sourceonly"/><relcolspec linking="targetonly"/>
+		</relheader>
+		<relrow><relcell>
+				<topicref format="dita" href="Language_and_Punctuation/c_Writing_Meaningful_Titles.dita" navtitle="Crafting meaningful topic titles" scope="local" type="concept">
+				</topicref></relcell><relcell>
+				<topicref format="dita" href="Language_and_Punctuation/c_Case_in_Titles.dita" navtitle="Case in titles" scope="local" type="concept">
+				</topicref></relcell>
+		</relrow>
+		<relrow><relcell/><relcell/>
+		</relrow>
+		<relrow><relcell/><relcell/>
+		</relrow>
+	</reltable>
+</map>

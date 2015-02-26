@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D2640" status="new"> 
+  <title>Collection type example: 
+  <option>choice</option></title> 
+  <conbody> 
+	 <fig id="fig_8D01BC0A2A11465A96D53376A00A92D3"> 
+		<title>Example of 
+		<option>choice</option> collection type</title><image placement="break"
+		align="left" id="image_E751738C7D384852A4BADC06657EBCEF"
+		href="../images/collection_type_choice.gif" width="407px" height="185px"> 
+		  <alt>Example of choice collection type 
+		  </alt></image> 
+	 </fig> 
+  </conbody> 
+</concept> 

@@ -1,0 +1,176 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept id="D4752" xml:lang="en" status="new"> 
+  <title>Conditions versus transclusion</title> 
+  <shortdesc>Transclusion, or content referencing, can sometimes achieve the
+	 same publishing aim as conditional processing. There are pros and cons for
+	 either method. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>transclusion</indexterm><indexterm>variables</indexterm><indexterm>conref</indexterm><indexterm>conditional
+			 processing</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>There are single-source publishing scenarios where a desired result can
+		be achieved with either conditional processing or with transclusion (the 
+		<term>conref</term> feature). 
+	 </p> 
+	 <p>For example, if a product name was going to vary between two choices
+		from publication to publication, conditional processing with a product
+		attribute could be used to exclude the inappropriate product name (to leave the
+		appropriate product name). The code might look like: 
+		<codeph>&lt;ph product="Liberty"&gt;Liberty&gt;&lt;ph
+		  product="Legend"&gt;Legend&lt;/ph&gt;</codeph>. When a ditaval rule of exclude
+		elements with a product attribute of Liberty is applied, the remaining code
+		would be 
+		<codeph>&lt;ph product="Legend"&gt;Legend&lt;/ph&gt;</codeph>. 
+	 </p> 
+	 <p>The alternative approach would be to use transclusion, such as through a
+		content reference (<term>conref</term>) to achieve the same result. The product
+		name would not be included directly in the text; instead, a conref would be
+		used to draw the phrase in from a separate conref file. The code might look
+		like: 
+		<codeph>&lt;ph conref="conref_source/product_name" /&gt;</codeph>. When a
+		publication for the product with a name of 
+		<q>Legend</q> is required, the conref source file could be modified so
+		that the conref source code was: 
+		<codeph>&lt;ph id="product_name"&gt;Legend&lt;/ph&gt;</codeph>. 
+	 </p> 
+	 <p rev="1.2">The 
+		<synph>keyref</synph> feature introduced in 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_DITA12"><?xm-replace_text Phrase?></ph>
+		makes this second transclusion method a lot easier and cleaner. 
+	 </p> 
+	 <p>There are pros and cons with either approach. 
+	 </p> 
+	 <p>The main advantages of the conditional processing method are: 
+	 <ul id="ul_7D3F8F65B099497E80A5F10DEFA61BE9"> 
+		<li id="li_382E5C16BB174F87A406964F5C4DCA05">all variations are visible
+		  to the author 
+		</li> 
+		<li id="li_195759CC1D0C49AEA832861062820D81">a review version of the
+		  document can be produced that shows all variations 
+		</li> 
+	 </ul> 
+	 </p> 
+	 <p>The main advantages of the transclusion method are: 
+	 <ul id="ul_C0363855AC8E47C2802CCB6C89EAAD0C"> 
+		<li id="li_BDC87CC9C71E415BAC377C0A7953A9FD">topics are easier for an
+		  author to read 
+		</li> 
+		<li id="li_3FB7BBB64FB44BFFA68AE4A3B4393BD3">doesn't rely on metadata 
+		</li> 
+		<li id="li_55662528087F4135B161FCF5CAF31102" status="changed">easier to
+		  maintain if new variations are introduced (only the conref source file needs to
+		  be updated) 
+		</li> 
+		<li id="li_2CD0605F1EAF4ED1A2A1BCCDDA8CA0F7">can cope better with large
+		  numbers of conditions 
+		</li> 
+	 </ul> 
+	 </p> 
+	 <section id="section_E5FDA883622A4FEC8A2E1B3689E21ECA"
+	 audience="contributor" status="new"> 
+		<title>Rationale</title> 
+		<lq reftitle="Eric Armstrong, Yahoo! DITA Users Group"
+		href="http://tech.groups.yahoo.com/group/dita-users/message/11320"> 
+		  <simpletable id="simpletable_BDF7F555ABD44D01A3364EFC5F3B21AD"> 
+			 <sthead> 
+				<stentry>Characteristic 
+				</stentry> 
+				<stentry>Conditionals 
+				</stentry> 
+				<stentry>Composition 
+				</stentry> 
+			 </sthead> 
+			 <strow> 
+				<stentry>Authoring 
+				</stentry> 
+				<stentry>All variations side by side, easily compared. 
+				</stentry> 
+				<stentry>Multiple variations make topic harder to read. Readability
+				  requires a sophisticated editor that does smart colour coding. 
+				</stentry> 
+			 </strow> 
+			 <strow> 
+				<stentry>Review 
+				</stentry> 
+				<stentry>Possible to create a version for review that shows all
+				  conditional variants (ideally with the metadata displayed) 
+				</stentry> 
+				<stentry>Must review final publications to ensure accuracy. 
+				</stentry> 
+			 </strow> 
+			 <strow> 
+				<stentry>Metadata 
+				</stentry> 
+				<stentry>May need to extend the standard set of metadata. Metadata
+				  lacks hierarchy, and doesn't support boolean combinations (e.g.
+				  platform=solaris /or /linux). 
+				</stentry> 
+				<stentry>No need to extend metadata. No need to deal with metadata
+				  restrictions. No need to tag elements with metadata at all. Potential for
+				  generating a def'n file from components to simulate boolean logic and
+				  hierarchy. 
+				</stentry> 
+			 </strow> 
+			 <strow> 
+				<stentry>Design 
+				</stentry> 
+				<stentry>Metadata needs to be designed correctly at the outset to
+				  minimize the need for change. When change does occur, elements tags with old
+				  metadata values need to be modified. 
+				</stentry> 
+				<stentry>Anywhere metadata would have been used, a variable is
+				  created. Different substitution-sets (definition files) are created to reflect
+				  different combinations of (virtual) "metadata". 
+				</stentry> 
+			 </strow> 
+			 <strow> 
+				<stentry>Maintenance 
+				</stentry> 
+				<stentry>When change does occur, elements tags with old metadata
+				  values need to be modified. 
+				</stentry> 
+				<stentry>When the need for new conditionals surfaces, existing text
+				  can be replaced with conrefs. No tags ever change in source text. The
+				  production system changes, instead. 
+				</stentry> 
+			 </strow> 
+			 <strow> 
+				<stentry>Training 
+				</stentry> 
+				<stentry> 
+				  <p>Writers need to understand the metadata model to tag things
+					 correctly (hierarchy, inclusion vs. exclusion, substitutions for boolean
+					 combinations) 
+				  </p> 
+				  <p>Andrea Leszek
+					 &lt;http://www.x-pubs.com/site/program_detail/344/&gt; 
+				  </p> 
+				</stentry> 
+				<stentry>Writers need to know location of definition file and need
+				  to know when to reference it in lieu of inserting text. 
+				</stentry> 
+			 </strow> 
+		  </simpletable> 
+		</lq> 
+		<lq reftitle="Karen Felker, Tom Sawyer Software">We are currently
+		  converting all our documentation from Frame into XML. Our company produces
+		  software for several different software platforms ©++, .NET, Java, and more).
+		  As a result, we have six or more software-platform-based versions of multiple
+		  procedures. When these were in Frame, we applied conditions for each software
+		  platform. Often we used six or more conditions in one sentence. As you already
+		  know, when we convert to DITA, these multi-conditioned sentences have to be
+		  duplicated and tagged with an attribute. Now we have one XML file that
+		  represents what used to be a one-page task. But because we have so many
+		  versions of this task, the file is over 1000 lines long, and still growing. We
+		  apply the product attribute to steps to distinguish between the platforms. Some
+		  writers want to break the file up into multiple files, based on the software
+		  platform. Others argue that all platforms should be kept in one file, because
+		  it's still one task. 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="sample_task_topic_short"> 
+  <title>Engine failure below 10,000 feet</title> 
+  <taskbody> 
+	 <steps id="steps_0034ECB8E9B74C7E82D2474DFF2BA124"> 
+		<step id="mirage_step1"> 
+		  <cmd>Eject. 
+		  </cmd> 
+		</step> 
+	 </steps> 
+  </taskbody> 
+</task> 

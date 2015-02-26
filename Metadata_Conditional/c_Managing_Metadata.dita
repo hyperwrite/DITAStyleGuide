@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D9380" status="new"> 
+  <title>Managing metadata elements and attributes</title> 
+  <shortdesc>The use of metadata elements and attributes may be best managed by
+	 a Content Management System. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>metadata<indexterm>managing</indexterm></indexterm><indexterm>CMS</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>When working in a topic-based, modular architecture, where metadata
+		plays a key role, one of the major challenges for authors is managing metadata.
+		In this respect, 
+		<q>managing metadata</q> means such things as ensuring consistent
+		metadata use, using metadata for retrieval of authoring topics, enforcing
+		business metadata rules, and effective use of conditional metadata attributes.
+		The most effective way of managing metadata is through a 
+		<term>Content Management System</term> (<term>CMS</term>). 
+	 </p> 
+	 <p>If a 
+		<term>CMS</term> is not being used, you may find that recording metadata
+		attribute values used in a collection inside a comments area within the ditamap
+		XML code might be helpful. 
+	 </p> 
+	 <p>There are some DITA software tools that provide some features that
+		leverage metadata, such as reporting on attribute values in a collection. You
+		may find these tools useful in supplementing your authoring tool features. Two
+		such tools are 
+		<keyword>DITAinformationcenter</keyword> and 
+		<keyword>WinANT Echidna</keyword>. 
+	 </p> 
+  </conbody> 
+</concept> 

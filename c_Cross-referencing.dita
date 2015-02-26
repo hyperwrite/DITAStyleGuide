@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_05723D99BDA9446C95835E79454CC32B" status="new"
+ xml:lang="en"> 
+  <title>Cross-referencing</title> 
+  <shortdesc>Cross-references are a means of binding individual topics into a
+	 coherent and navigable document. 
+  </shortdesc> 
+  <prolog><metadata><keywords><indexterm>linking<index-see-also>links</index-see-also></indexterm><indexterm>links<index-see-also>linking</index-see-also></indexterm></keywords></metadata>
+  </prolog>
+  <conbody> 
+	 <lq reftitle="Gerry McGovern"
+	  href="http://www.gerrymcgovern.com/nt/2009/nt-2010-02-02-Too-much-information.htm">There
+		is no greater skill a web professional needs to develop than the ability to
+		create quality links. Many websites do not need more publishing. Rather, they
+		need more linking of content in appropriate task journeys. Linking is a complex
+		skill because it requires you to see the task through your customer's eyes. 
+	 </lq> 
+  </conbody> 
+</concept> 

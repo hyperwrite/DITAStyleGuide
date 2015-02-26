@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D5136" status="new"> 
+  <title>The role of a style guide</title> 
+  <shortdesc>A style guide provides advice on the optimal use of approaches,
+	 procedures and processes. A DITA style guide focusses on best practice
+	 application of the DITA standard. 
+  </shortdesc> 
+  <prolog><author
+	 conref="../../conref/conref_source_metadata.dita#topic_hw_conref_meta/author_tony_self"></author><metadata><keywords><indexterm>role
+			 of a style guide</indexterm><indexterm>best
+			 practice</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>The primary purpose of a style guide is to promote consistency. Style
+		guides also aim to codify best practice. What the term 
+		<term>best practice</term> actually means is not universally understood
+		or agreed. Understanding what constitutes best practice in DITA is made more
+		challenging by the difficulty in finding agreed practices in this field, let
+		alone best practice. Something as simple as whether paragraphs should exist
+		within list items is not clear-cut. 
+	 </p> 
+	 <p
+	  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/p_styleguide_defined"><?xm-replace_text Paragraph?>
+	 </p> 
+	 <p>It is just as easy to lazily create poorly marked-up DITA documents as
+		it is to create poorly styled word processing documents. To maximise the
+		opportunities of DITA, it is important that the semantic elements are applied
+		consistently across a publications department, and indeed across the DITA
+		authoring community. 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_DITA_Style_Manual"><?xm-replace_text Phrase?></ph>
+		is intended to serve as an authoritative reference that defines a best practice
+		conventions for mark-up, writing style, naming, and structure. 
+	 </p> 
+	 <section id="section_DE71B29761A24547843099B86DA545EE"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<lq
+		 reftitle="Molly Riddell, LinkedIn Content Wrangler Community discussion">My
+		  biggest tip is never to assume that DITA/XML will naturally converge different
+		  authors to greater consistency or minimalism-- it is just as easy to develop
+		  poorly-written (and structured!) content within the guidelines of DITA as it is
+		  within a DTP environment. What I would recommend is to focus also on developing
+		  a useful and comprehensive style guide that clearly defines preferred writing
+		  style and structure, with specific, illustrative examples of how the content
+		  should be marked up across different topics. In any implementation, it is
+		  expected that there are at least several different authors-- so it is also
+		  helpful to establish consistent conventions for topic naming and versioning.
+		  This can ensure that information is easily navigated and tracked, no matter who
+		  is editing it. 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

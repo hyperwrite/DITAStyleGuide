@@ -1,0 +1,179 @@
+<?xml version="1.0"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<map id="map_78CB86B379AE4B74959E5C4848FA2A8D"><title>Syntax and Mark-up</title>
+	<topicref format="dita" href="c_Syntax_and_Markup.dita" navtitle="Syntax and mark-up" scope="local" type="concept">
+		<topicref format="dita" href="Syntax_and_Markup/c_Organisation_of_DITA_Elements.dita" navtitle="of DITA elements" scope="local" type="concept">
+			<topicref format="dita" href="Syntax_and_Markup/c_Phrases_and_Blocks.dita" navtitle="Block and phrase elements" scope="local" type="concept"/><topicref format="dita" href="Syntax_and_Markup/c_Topic_Elements.dita" navtitle="Topic elements" scope="local" type="concept"/>
+			<topicref format="dita" href="Syntax_and_Markup/c_Map_Elements.dita" navtitle="Map elements" scope="local" type="concept"/>
+			<topicref format="dita" href="Syntax_and_Markup/c_Body_Elements.dita" navtitle="Body elements" scope="local" type="concept"/>
+			<topicref format="dita" href="Syntax_and_Markup/c_Prolog_Elements.dita" navtitle="Prolog elements" scope="local" type="concept"/>
+			<topicref format="dita" href="Syntax_and_Markup/c_Domain_Elements.dita" navtitle="Domain elements" scope="local" type="concept"/>
+			<topicref format="dita" href="Syntax_and_Markup/c_Specialisation_Elements.dita" navtitle="elements" scope="local" type="concept"/>
+		</topicref>
+		<topicref format="dita" href="Syntax_and_Markup/c_Mark-up_Concepts.dita" navtitle="Working with mark-up" scope="local" type="concept">
+			<topicref format="dita" href="Syntax_and_Markup/c_ID_Attributes.dita" navtitle="Element IDs" scope="local" type="concept">
+			</topicref>
+			<topicref format="dita" href="Syntax_and_Markup/c_Multiple_Titles_in_a_Section.dita" navtitle="Titles" scope="local" type="concept"/>
+			<topicref format="dita" href="Syntax_and_Markup/c_Hacks.dita" navtitle="Hacks" scope="local" type="concept"/>
+			<topicref format="dita" href="Syntax_and_Markup/c_Required_Cleanup.dita" navtitle="Comments, draft-comment and required-cleanup elements" scope="local" type="concept"/>
+			<topicref format="dita" href="Syntax_and_Markup/c_Use_of_Class_Attribute.dita" navtitle="Use of class attribute" scope="local" type="concept"/>
+			<topicref format="dita" href="Syntax_and_Markup/c_Apparently_Duplicate_Semantic_Elements.dita" navtitle="Similar element names" scope="local" type="concept"/>
+			<topicref format="dita" href="Syntax_and_Markup/c_Controlling_Look-and-Feel_of_the_Output.dita" navtitle="Controlling the look-and-feel of the output" scope="local" type="concept"/>
+			<topicref format="dita" href="Syntax_and_Markup/c_Attaching_Data_to_Content.dita" navtitle="Attaching data to content" scope="local" type="concept"/>
+		</topicref>
+		<topicref format="dita" href="Syntax_and_Markup/c_List_of_Domains.dita" navtitle="Element domains" scope="local" type="concept">
+			<topicref chunk="to-content" format="dita" href="Syntax_and_Markup/c_Programming_Domain.dita" navtitle="Programming domain" scope="local" type="concept">
+				<topicref format="dita" href="Syntax_and_Markup/r_programming_domain_elements.dita" navtitle="Programming domain elements" scope="local" type="reference"/>
+			</topicref>
+			<topicref chunk="to-content" format="dita" href="Syntax_and_Markup/c_User_Interface_Domain.dita" navtitle="User interface domain" scope="local" type="concept">
+				<topicref format="dita" href="Syntax_and_Markup/r_userinterface_domain_elements.dita" navtitle="User interface domain elements" scope="local" type="reference"/>
+			</topicref>
+			<topicref chunk="to-content" format="dita" href="Syntax_and_Markup/c_Software_Domain.dita" navtitle="Software domain" scope="local" type="concept">
+				<topicref format="dita" href="Syntax_and_Markup/r_software_domain_elements.dita" navtitle="Software domain elements" scope="local" type="reference"/>
+			</topicref>
+			<topicref chunk="to-content" format="dita" href="Syntax_and_Markup/c_Utilities_Domain.dita" navtitle="Utilities domain" scope="local" type="concept">
+				<topicref format="dita" href="Syntax_and_Markup/r_Utilities_Domain_Elements.dita" navtitle="Utilities domain elements" scope="local" type="reference"/>
+			</topicref>
+			<topicref chunk="to-content" format="dita" href="Syntax_and_Markup/c_Other_Domains.dita" navtitle="Metadata domain" scope="local" type="concept">
+				<topicref format="dita" href="Syntax_and_Markup/r_metadata_domain_elements.dita" navtitle="Metadata domain elements" scope="local" type="reference"/>
+			</topicref>
+			<topicref chunk="to-content" format="dita" href="Syntax_and_Markup/c_Typographical_Domain.dita" navtitle="Typographic (highlighting) domain" scope="local" type="concept">
+				<topicref format="dita" href="Syntax_and_Markup/r_Typography_Domain_Elements.dita" linking="targetonly" navtitle="Typographic domain elements" scope="local" toc="no" type="reference"/>
+			</topicref>
+		</topicref>
+		<topicref format="dita" href="Syntax_and_Markup/c_Short_Descriptions.dita" navtitle="Short descriptions" scope="local" type="concept">
+			<topicref format="dita" href="Syntax_and_Markup/c_Purpose_of_Short_Descriptions.dita" navtitle="Purpose of short descriptions" scope="local" type="concept"/>
+			<topicref format="dita" href="Syntax_and_Markup/c_Guidelines_for_Crafting_Short_Descriptions.dita" navtitle="Guidelines for crafting short descriptions" scope="local" type="concept"/>
+			<topicref format="dita" href="Syntax_and_Markup/c_Abstracts.dita" navtitle="Abstracts" scope="local" type="concept"/>
+			<topicref format="dita" href="Syntax_and_Markup/c_Formatting_in_shortdesc.dita" navtitle="Cross-references and typography in shortdesc elements" scope="local" type="concept"/>
+			<topicref format="dita" href="Syntax_and_Markup/c_Making_shortdesc_Mandatory.dita" navtitle="Making shortdesc elements compulsory" scope="local" type="concept"/>
+			<topicref format="dita" href="Syntax_and_Markup/c_Short_Descriptions_in_ditamap.dita" navtitle="Short descriptions in the ditamap" scope="local" type="concept"/>
+		</topicref>
+		<topicref format="dita" href="Syntax_and_Markup/c_Lists.dita" navtitle="Lists" scope="local" type="concept">
+			<topicref format="dita" href="Syntax_and_Markup/c_Choosing_a_List_Type.dita" navtitle="Types of lists" scope="local" type="concept"/>
+			<topicref format="dita" href="Syntax_and_Markup/c_Definition_Lists_vs_Tables.dita" navtitle="Definition lists versus tables" scope="local" type="concept"/>
+			<topicref format="dita" href="Syntax_and_Markup/c_Lists_within_Paragraphs.dita" navtitle="Lists within paragraphs" scope="local" type="concept"/>
+			<topicref format="dita" href="Syntax_and_Markup/c_Controlling_Enumeration_Type.dita" navtitle="Controlling number (enumeration) type" scope="local" type="concept"/>
+			<topicref format="dita" href="Syntax_and_Markup/c_Limiting_User_Interface_Buttons.dita" navtitle="Listing user interface buttons" scope="local" type="concept"/>
+			<topicref format="dita" href="Syntax_and_Markup/c_Parameter_Lists.dita" navtitle="Parameter lists" scope="local" type="concept"/>
+			<topicref format="dita" href="Syntax_and_Markup/c_Choice_Lists.dita" navtitle="Choice lists" scope="local" type="concept"/>
+		</topicref>
+		<topicref format="dita" href="Syntax_and_Markup/c_Paragraphs.dita" navtitle="Paragraphs" scope="local" type="concept">
+			<topicref format="dita" href="Syntax_and_Markup/c_Keeping_Connected_Blocks_Together.dita" navtitle="Keeping connected blocks together" scope="local" type="concept"/>
+			<topicref format="dita" href="Syntax_and_Markup/c_Paragraphs_Inside_Tables.dita" navtitle="Paragraphs (and other block elements) within tables" scope="local" type="concept"/>
+			<topicref format="dita" href="Syntax_and_Markup/c_Paragraphs_within_Notes.dita" navtitle="Paragraphs (and other block elements) within notes" scope="local" type="concept"/>
+			<topicref format="dita" href="Syntax_and_Markup/c_Paragraphs_within_List_Items.dita" navtitle="Paragraphs (and other block elements) within list items" scope="local" type="concept"/>
+			<topicref format="dita" href="Syntax_and_Markup/c_Paragraphs_in_Reference_Topics.dita" navtitle="Paragraphs in reference topics" scope="local" type="concept"/>
+			<topicref format="dita" href="Syntax_and_Markup/c_Poetry_Dialogue_Text_Fragments.dita" navtitle="Poetry, and fragments of text" scope="local" type="concept"/>
+			<topicref format="dita" href="Syntax_and_Markup/c_Code_Blocks.dita" navtitle="Identifying programming code" scope="local" type="concept">
+			</topicref>
+		</topicref>
+		<topicref format="dita" href="Syntax_and_Markup/c_Procedures.dita" navtitle="Procedures and steps" scope="local" type="concept">
+			<topicref format="dita" href="Syntax_and_Markup/c_Semantics_in_Steps.dita" navtitle="Semantics in steps" scope="local" type="concept"/>
+			<topicref format="dita" href="Syntax_and_Markup/c_Separating_Procedures_Into_Granular_Steps.dita" navtitle="Separating procedures into granular steps" scope="local" type="concept"/>
+			<topicref format="dita" href="Syntax_and_Markup/c_Two_Tasks_on_One_Task_Topic.dita" navtitle="Restricting tasks to one procedures only" scope="local" type="concept"/>
+			<topicref format="dita" href="Syntax_and_Markup/c_Sentence_Syntax_in_prereq.dita" navtitle="The prereq element" scope="local" type="concept"/>
+			<topicref format="dita" href="Syntax_and_Markup/c_Sub_Steps.dita" navtitle="Substeps within steps" scope="local" type="concept"/>
+			<topicref format="dita" href="Syntax_and_Markup/c_Single_Step_Procedure.dita" navtitle="Single step procedure" scope="local" type="concept"/>
+			<topicref format="dita" href="Syntax_and_Markup/c_The_command_Element.dita" navtitle="The command element" scope="local" type="concept"/>
+			<topicref format="dita" href="Syntax_and_Markup/c_Required_and_Optional_Steps.dita" navtitle="Required and optional steps" scope="local" type="concept"/>
+			<topicref format="dita" href="Syntax_and_Markup/c_Complex_Nested_Tasks.dita" navtitle="Complex nested tasks" scope="local" type="concept"/>
+			<topicref format="dita" href="Syntax_and_Markup/c_Notes_in_Steps.dita" navtitle="Notes and extra information in a step" scope="local" type="concept"/>
+			<topicref format="dita" href="Syntax_and_Markup/c_Images_within_Steps.dita" navtitle="Images within steps" scope="local" type="concept"/>
+			<topicref format="dita" href="Syntax_and_Markup/c_Choice_Tables.dita" navtitle="Choice tables" scope="local" type="concept"/>
+			<topicref format="dita" href="Syntax_and_Markup/c_Steps_and_Steps_Informal.dita" navtitle="Non-sequential procedural steps" scope="local" type="concept"/>
+		</topicref>
+		<topicref format="dita" href="Syntax_and_Markup/c_Tables.dita" navtitle="Tables" scope="local" type="concept">
+			<topicref format="dita" href="Syntax_and_Markup/c_Types_of_Tables.dita" navtitle="Types of tables" scope="local" type="concept"/>
+			<topicref format="dita" href="Syntax_and_Markup/c_Working_with_Tables.dita" navtitle="Working with tables" scope="local" type="concept"/>
+			<topicref format="dita" href="Syntax_and_Markup/c_refcols_keycol.dita" navtitle="The keycol and refcols attributes" scope="local" type="concept"/>
+			<topicref format="dita" href="Syntax_and_Markup/c_Row_Headers.dita" navtitle="Column and row headers" scope="local" type="concept"/>
+			<topicref format="dita" href="Syntax_and_Markup/c_Nested_Tables.dita" navtitle="Nested tables" scope="local" type="concept"/>
+		</topicref>
+		<topicref format="dita" href="Syntax_and_Markup/c_Phrases.dita" navtitle="Phrases" scope="local" type="concept">
+			<topicref format="dita" href="Syntax_and_Markup/c_Program_Script_and_Routine_Names.dita" navtitle="Program, script and routine names" scope="local" type="concept"/>
+			<topicref format="dita" href="Syntax_and_Markup/c_Parameter_or_Variable.dita" navtitle="Parameter and variable names" scope="local" type="concept"/>
+			<topicref format="dita" href="Syntax_and_Markup/c_User_Interface_Text.dita" navtitle="Messages displayed in a user interface" scope="local" type="concept"/>
+			<topicref format="dita" href="Syntax_and_Markup/c_The_systemoutput_Element.dita" navtitle="Printouts, read-outs and other system output" scope="local" type="concept"/><topicref format="dita" href="Syntax_and_Markup/c_Legal_Aspects_of_Trademarks.dita" navtitle="Trademarks and service marks" scope="local" type="concept"/>
+			<topicref format="dita" href="Syntax_and_Markup/c_Keystrokes.dita" navtitle="Keyboard keystrokes" scope="local" type="concept"/>
+			<topicref format="dita" href="Syntax_and_Markup/c_Footnotes.dita" navtitle="Footnotes" scope="local" type="concept"/>
+			<topicref format="dita" href="Syntax_and_Markup/c_The_coderef_Element.dita" navtitle="The coderef element" rev="1.2" scope="local" type="concept"/>
+			<topicref format="dita" href="Syntax_and_Markup/c_The_text_Element.dita" navtitle="The text element" rev="1.2" scope="local" type="concept"/>
+			<topicref format="dita" href="Syntax_and_Markup/c_Keywords.dita" navtitle="Product, company names, and other keywords" scope="local" type="concept"/>
+			<topicref format="dita" href="Syntax_and_Markup/c_Complex_Command_References.dita" navtitle="Complex command reference content" scope="local" type="concept"/>
+			<topicref format="dita" href="Syntax_and_Markup/c_Marking_up_Mark-up_Languages.dita" navtitle="Marking up mark-up languages" scope="local" type="concept"/>
+			<topicref format="dita" href="Syntax_and_Markup/c_Phrases_in_Different_Languages.dita" navtitle="Phrases in different languages" scope="local" type="concept"/>
+		</topicref>
+		<topicref format="dita" href="Syntax_and_Markup/c_Special_Characters_and_Dates.dita" navtitle="Special characters and dates" scope="local" type="concept">
+			<topicref format="dita" href="Syntax_and_Markup/c_Non_Breaking_Spaces.dita" navtitle="Non-breaking spaces and special characters" scope="local" type="concept"/>
+			<topicref format="dita" href="Syntax_and_Markup/c_Dates.dita" navtitle="Dates" scope="local" type="concept"/>
+		</topicref>
+		<topicref format="dita" href="Sample_Topics/t_Exemplar_-_Task_Topic_Configuring_Source_Addresses.dita" navtitle="Configuring source addresses" print="no" scope="local" toc="no" type="task"/></topicref>
+	<reltable id="reltable_C08230F05024447ABE2264327402CDC7" title="Relationship between Syntax and Markup Topics" toc="no">
+		<relheader><relcolspec type="task"/><relcolspec type="concept"/><relcolspec type="reference"/><relcolspec scope="external"/>
+		</relheader>
+		<relrow><relcell/><relcell collection-type="family">
+				<topicref format="dita" href="Syntax_and_Markup/c_Abstracts.dita" navtitle="Abstracts" scope="local" type="concept">
+				</topicref>
+				<topicref format="dita" href="Syntax_and_Markup/c_Short_Descriptions.dita" navtitle="Short descriptions" scope="local" type="concept">
+				</topicref></relcell><relcell/><relcell/>
+		</relrow>
+		<relrow><relcell/><relcell collection-type="family">
+				<topicref format="dita" href="Syntax_and_Markup/c_Paragraphs_Inside_Tables.dita" navtitle="Paragraphs (and other block elements) within tables" scope="local" type="concept">
+				</topicref>
+				<topicref format="dita" href="Syntax_and_Markup/c_Paragraphs_within_Notes.dita" navtitle="Paragraphs (and other block elements) within notes" scope="local" type="concept">
+				</topicref>
+				<topicref format="dita" href="Syntax_and_Markup/c_Paragraphs_within_List_Items.dita" navtitle="Paragraphs (and other block elements) within list items" scope="local" type="concept">
+				</topicref>
+				<topicref format="dita" href="Syntax_and_Markup/c_Keeping_Connected_Blocks_Together.dita" navtitle="Keeping connected blocks together" scope="local" type="concept">
+				</topicref></relcell><relcell/><relcell/>
+		</relrow>
+		<relrow><relcell/><relcell collection-type="family">
+				<topicref format="dita" href="Syntax_and_Markup/c_Use_of_Class_Attribute.dita" navtitle="Use of class attribute" scope="local" type="concept"/>
+				<topicref format="dita" href="Syntax_and_Markup/c_Controlling_Look-and-Feel_of_the_Output.dita" navtitle="Controlling the look-and-feel of the output" scope="local" type="concept"/></relcell><relcell/><relcell/>
+		</relrow>
+		<relrow><relcell/><relcell collection-type="family">
+				<topicref format="dita" href="Syntax_and_Markup/c_Choice_Tables.dita" navtitle="Choice tables" scope="local" type="concept">
+				</topicref>
+				<topicref format="dita" href="Syntax_and_Markup/c_refcols_keycol.dita" navtitle="The keycol and refcols attributes" scope="local" type="concept">
+				</topicref>
+			</relcell><relcell/><relcell/>
+		</relrow>
+		<relrow><relcell collection-type="family"/><relcell collection-type="family">
+				<topicref format="dita" href="Syntax_and_Markup/c_The_coderef_Element.dita" navtitle="The coderef element" scope="local" type="concept">
+				</topicref>
+				<topicref format="dita" href="Syntax_and_Markup/c_Code_Blocks.dita" navtitle="Identifying programming code" scope="local" type="concept">
+				</topicref></relcell><relcell/><relcell/>
+		</relrow>
+		<relrow><relcell/><relcell collection-type="family">
+				<topicref format="dita" href="Syntax_and_Markup/c_Two_Tasks_on_One_Task_Topic.dita" navtitle="Restricting tasks to one procedures only" scope="local" type="concept"/>
+				<topicref format="dita" href="Syntax_and_Markup/c_Choice_Tables.dita" navtitle="Choice tables" scope="local" type="concept"/>
+				<topicref format="dita" href="Syntax_and_Markup/c_Choice_Tables.dita" navtitle="Choice tables" scope="local" type="concept"/></relcell><relcell/><relcell/>
+		</relrow>
+	</reltable>
+	<reltable id="reltable_2929202D86AA49E4B1B37C0847D9C75D" title="One Way Links in Syntax Section" toc="no">
+		<relheader><relcolspec linking="sourceonly"/><relcolspec linking="targetonly"/>
+		</relheader>
+		<relrow><relcell>
+				<topicref format="dita" href="Syntax_and_Markup/c_Typographical_Domain.dita" navtitle="Typographic (highlighting) domain" scope="local" type="concept">
+				</topicref></relcell><relcell>
+				<topicref format="dita" href="Syntax_and_Markup/r_Typography_Domain_Elements.dita" navtitle="Typographic domain elements" scope="local" type="reference">
+				</topicref></relcell>
+		</relrow>
+		<relrow><relcell>
+				<topicref format="dita" href="Syntax_and_Markup/c_Apparently_Duplicate_Semantic_Elements.dita" navtitle="Similar element names" scope="local" type="concept">
+				</topicref></relcell><relcell>
+				<topicref format="dita" href="Syntax_and_Markup/c_List_of_Domains.dita" navtitle="Element domains" scope="local" type="concept">
+				</topicref></relcell>
+		</relrow>
+		<relrow><relcell>
+				<topicref format="dita" href="Syntax_and_Markup/c_Complex_Command_References.dita" navtitle="Complex command reference content" scope="local" type="concept">
+				</topicref></relcell><relcell>
+				<topicref format="dita" href="Syntax_and_Markup/c_Parameter_or_Variable.dita" navtitle="Parameter and variable names" scope="local" type="concept">
+				</topicref></relcell>
+		</relrow>
+		<relrow><relcell/><relcell/>
+		</relrow>
+	</reltable>
+</map>

@@ -1,0 +1,173 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D9139" status="new"> 
+  <title>Include and exclude filtering actions</title> 
+  <shortdesc>In typical publishing tools, filtering and flagging actions to be
+	 taken during processing are defined in a 
+	 <term>ditaval</term> file. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>ditaval</indexterm><indexterm>conditional
+			 processing</indexterm><indexterm>attributes<indexterm>action</indexterm></indexterm><indexterm>action
+			 attribute</indexterm><indexterm>filtering</indexterm><indexterm>flagging</indexterm><indexterm>excluding<indexterm>content</indexterm></indexterm><indexterm>flagging<indexterm>during
+				publishing</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>The 
+		<term>DITA values</term> (<term>ditaval</term>) file is used to specify
+		publishing conditions used for processing DITA source into a reading format.
+		The condition actions are specified in the 
+		<synph>action</synph> attribute of the 
+		<synph>prop</synph> element in the ditaval file. Valid action are: 
+	 <dl> 
+		<dlentry> 
+		  <dt>exclude 
+		  </dt> 
+		  <dd>exclude from the output any elements with the specified metadata
+			 attributes 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt>flag 
+		  </dt> 
+		  <dd>highlight, with a text colour, background colour, or image, any
+			 elements with the specified metadata attributes 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt>passthough 
+		  </dt> 
+		  <dd>ignore the attribute, but leave the attribute in place in the
+			 output 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt>include 
+		  </dt> 
+		  <dd>include from the output any elements with the specified metadata
+			 attributes 
+		  </dd> 
+		</dlentry> 
+	 </dl> 
+	 </p> 
+	 <p> An example of a snippet of ditaval code to flag elements with a 
+		<synph>product</synph> attribute of 
+		<userinput>impress</userinput> with a small image at the start of the
+		element is: 
+		<codeblock>&lt;prop att="product" val="impress" action="flag"&gt;
+  &lt;startflag imageref="delta_olive.gif"&gt;
+    &lt;alt-text&gt;Start of product - Impress&lt;/alt-text&gt;
+  &lt;/startflag&gt;
+&lt;/prop&gt;</codeblock> 
+	 </p> 
+	 <p>Despite there being an 
+	 <option>include</option> action in the ditaval logic, there is no purpose
+	 for this action. By default, 
+	 <b>all</b> content is included. Even within a nested set of elements, a
+	 higher level element marked as 
+	 <option>include</option> will have no affect even if lower level elements
+	 are marked with 
+	 <option>exclude</option>. By default, no content is flagged. 
+	 </p> 
+	 <p> Attributes are used to mark elements that are specific or individual to
+		a particular product, platform, audience or other requirement. You only mark up
+		those elements that you want the ability to exclude or flag. 
+	 </p> 
+	 <p status="changed">If you are using multiple conditions (that is, more
+		than one value in the same attribute, such as 
+		<codeph>audience="admin manager"</codeph>), only if all exclude
+		conditions are satisfied will the element will be excluded from the output. In
+		other words, all exclude conditions have to be satisfied for the element to be
+		excluded from the output. So if a paragraph was marked with values of 
+		<userinput>admin</userinput> and 
+		<userinput>manager</userinput>, and the ditaval specified that 
+		<userinput>admin</userinput> should be excluded, but 
+		<userinput>manager</userinput> included, the paragraph would be included.
+		
+	 </p>
+	 <note status="new">You can change this default inclusive behaviour of the
+		ditaval to exclusive by setting the following property as the first node under
+		the 
+		<synph>val</synph> element in the ditaval file:
+		<codeblock>&lt;prop action="exclude" /&gt;</codeblock>
+	 </note> 
+	 <section id="section_4E19F954787344F39F00501238873499"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<lq reftitle="Michael Priestley, Yahoo! DITA Users Group"
+		 href="http://tech.groups.yahoo.com/group/dita-users/message/1923">The current
+		  spec does explicitly say that the default should be to include information, not
+		  exclude it. I believe the thought behind the current practice is that it can be
+		  dangerous to delete content by default, especially in situations where you are
+		  creating multi-purpose documents, for example targetting multiple audiences.
+		  One possible solution is to make it easier to set default behavior by
+		  attribute, so that for example you can say product-specific information should
+		  be excluded by default, whereas audience-specific information should be
+		  included by default. But I would be reluctant to change the overall default for
+		  the processing since the change would not be backwards-compatible with the
+		  existing spec, and would break any users following the existing documented
+		  practice of explicitly excluding values. Giving more control over the default
+		  would be backwards compatible, changing the default would not be. 
+		</lq> 
+		<lq href="http://lists.oasis-open.org/archives/dita/200507/msg00076.html"
+		 reftitle="Michael Priestley, OASIS DITA Technical Committee mailing list"> 
+		  <p>For what it's worth, we made a deliberate decision early in DITA's
+			 design to exclude inverse conditionals, which reversed direction for us at IBM
+			 from over two decades of full boolean conditional support. So this is one we
+			 can probably chalk up to a difference of opinion rather than immaturity. Our
+			 reasoning was roughly: - in the case you cite, it is equally likely that the
+			 new product falls into exception category. "Not x" is actually very odd
+			 metadata - it's based not on knowledge of the thing itself, but knowledge of
+			 the entire set of values, and patterns within that set. While positive
+			 conditions can be more unwieldy, they are much more robust - ie they are
+			 specific to one thing at a time, and hence insulated from changes elsewhere in
+			 the same set. For example, if a warning applies to "productA", then it applies
+			 until productA itself changes. But if the warning applies to every product
+			 "exceptProductA", then it can be rendered invalid by any product changes, or by
+			 any new product added to the mix. - while full boolean conditions enabled
+			 individual writers to be more efficient, they caused major problems on shared
+			 content, and when content changed ownership; or even when the original author
+			 had a bad day. The positive value syntax is more verbose but also much easier
+			 to parse and easier for humans to understand. - finally, DITA's major support
+			 for singlesourcing is not via conditional processing at all, but via maps. So
+			 in the worst case scenario, if the conditions simply become too painful to
+			 manage (perhaps as below) the author can cut losses by creating two versions of
+			 the topic, one for common use, and one for use only by the exception product.
+			 The two topics can even share common content, via conref, without interfering
+			 with each other or using complex conditions. The logic is punted to the map
+			 level, and the actual content is insulated from changes to the conditions. The
+			 basic point here is that there is a cost for having complex conditions. Because
+			 of DITA's topic-based architecture, reuse above the topic level can be
+			 accomplished via maps, and so the benefit of conditions in general is
+			 considerably reduced, while their cost remains the same. This led us to the
+			 current model: simple support for positive conditions only. 
+		  </p> 
+		</lq> 
+	 </section> 
+	 <section id="section_52537A0D153E47C9890ADD372B009989"
+	 audience="contributor"> 
+		<title>Confusion</title> 
+		<p> Of course, filtering is ultimately dependent upon the processing
+		  (because you could write your own XSL-T transformers to do whatever you wanted
+		  with attributes, couldn't you?). However, the DITA OT is seen as the model for
+		  processing, and DITA OT 1.4 introduced "negative values" in the ditaval, to
+		  indicate processing should filter out unknown values. "For example, in prior
+		  releases, if you had audiences A, B, and C, they were all included by default.
+		  You can now exclude one or more by default. If audience C is defined and
+		  included, the unspecified values A and B can be excluded." 
+		</p> 
+		<p> The "exclude" action in the ditaval specifies that content should be
+		  excluded from the output if all values in the particular attribute are
+		  excluded. That seems to mean that if the attribute was rev="beta1 beta2", then
+		  if the beta1 was set to exclude, it would still be included, but if beta1 and
+		  beta2 were both excluded, then the element would be excluded. 
+		</p> 
+		<p> More information at: 
+		  <xref
+			href="http://docs.oasis-open.org/dita/v1.1/OS/archspec/condproc.html"
+			scope="external" format="html"><?xm-replace_text http://docs.oasis-open.org/dita/v1.1/OS/archspec/condproc.html?></xref>
+		  
+		</p> 
+	 </section> 
+  </conbody> 
+</concept> 

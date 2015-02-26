@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D9202" status="changed"> 
+  <title>Non-breaking spaces and special characters</title> 
+  <shortdesc>Special characters may be inserted into DITA content using Unicode
+	 character escapes. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>non-breaking
+			 space</indexterm><indexterm>hyphenation</indexterm><indexterm>special
+			 characters</indexterm><indexterm>Unicode</indexterm><indexterm>character
+			 escapes</indexterm><indexterm>numeric character
+			 references</indexterm><indexterm>ASCII</indexterm><indexterm>escape
+			 characters</indexterm><indexterm>hexadecimal character
+			 references</indexterm><indexterm>entities</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>Your authoring tool may allow the insertion of non-breaking spaces
+		between words. Non-breaking spaces are intended for use when the separation of
+		two adjacent words through line wrapping will result in a loss of meaning or
+		legibility. For example, some authors prefer values and their units, such as 
+		<q>12 kg</q>, to be treated as a single word. 
+	 </p> 
+	 <p>Likewise, soft hyphens are intended for use when there is a preferred
+		point for the breaking of a word during line wrapping. 
+	 </p> 
+	 <p>Some mark-up languages support 
+		<term>entities</term>, which allow special characters (not included in
+		the standard character set or not associated with keyboard keys) to be defined
+		using a memorable shortcut. For example, HTML has a 
+		<codeph>&amp;nbsp;</codeph> entity for non-breaking spaces. Regardless,
+		provided a character is included in the relevant Unicode character set, it can
+		be included in XML-based content using hexadecimal 
+		<term>numeric character references</term>, or 
+		<term>character escapes</term>. 
+	 </p> 
+	 <p>Although XML supports entities, the DITA standard itself does not define
+		any text entities. Nonetheless, character escapes can be used. The character
+		escapes for commonly used special characters is: 
+	 <dl> 
+		<dlentry> 
+		  <dt>non-breaking space 
+		  </dt> 
+		  <dd><codeph>&amp;#xA0;</codeph> 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt>soft hyphen 
+		  </dt> 
+		  <dd><codeph>&amp;#xAD;</codeph> 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt>micro symbol 
+		  </dt> 
+		  <dd><codeph>&amp;#xB5;</codeph> 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt>division symbol 
+		  </dt> 
+		  <dd><codeph>&amp;#x247;</codeph> 
+		  </dd> 
+		</dlentry>
+				<dlentry>
+					<dt>non-breaking hyphen</dt>
+					<dd><codeph>&amp;#x2011</codeph></dd>
+				</dlentry> 
+		<dlentry> 
+		  <dt>en dash 
+		  </dt> 
+		  <dd><codeph>&amp;#x2013;</codeph> 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt>em dash 
+		  </dt> 
+		  <dd><codeph>&amp;#x2014;</codeph> 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt>ellipsis 
+		  </dt> 
+		  <dd><codeph>&amp;#x2026;</codeph> 
+		  </dd> 
+		</dlentry> 
+	 </dl> 
+	 </p> 
+	 <section id="section_9C64586E07D64D4785536EE4EB0E3D5D"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<lq
+		 reftitle="Eliot Kimber responding to Wayne Brisette, Yahoo! DITA Users Group">To
+		  align some of the code and make sure it stays in place, writers are using the
+		  non-breaking space. Our content management system is storing these characters
+		  as &amp;nbsp; characters. When exported back to FrameMaker, they reconvert to
+		  non-breaking spaces. However, when I opened these in a different DITA editor to
+		  look at them, the non-breaking spaces didn't exist, they were converted to
+		  plain spaces. I can't find anything in the DITA spec that talks about
+		  non-breaking spaces, is there any real standard in DITA? It's not a DITA
+		  feature, it's a Unicode feature (remembering that all XML documents are, by
+		  definition, Unicode documents). Unicode defines a character \u00A0, which is a
+		  non-breaking space. This character can be entered in any XML document using the
+		  numeric character reference &amp;#xA0;. However, many XML processors or editors
+		  may normalize &amp;#xA0; into a regular space. The syntax you show,
+		  "&amp;nbsp;" is an XML text entity. The DITA standard does not define any text
+		  entities (because DITA does not require the use of DTDs, in which such entities
+		  are declared). However, within a given XML document (of any type), you can
+		  declare the entity yourself, e.g.: &lt;!DOCTYPE topic PUBLIC
+		  "http://example.com/doctypes/mytopicshell" "topic.dtd" [ &lt;!ENTITY nbsp
+		  "&amp;#xa0;" &gt; ]&gt;
+		  &lt;topic&gt;&lt;title&gt;Don't&amp;nbsp;Break&amp;nbsp;Me&lt;/title&gt;&lt;/topic&gt;
+		  
+		</lq> 
+		<lq reftitle="Rhonda Bracey, Cybertext Blog"
+				href="https://cybertext.wordpress.com/2008/12/30/ellipses-for-missing-text/"
+				format="html" scope="external">
+				<p>An autobiography I am editing contains correspondence from which several
+					paragraphs have (intentionally) been omitted. Any advice on the best way to
+					indicate that these paragraphs have been omitted? I would have thought ellipses
+					were appropriate, but they look rather odd and lonely in-between paragraphs. If
+					ellipses are appropriate, where should they be placed? </p>
+				<p>My response: </p>
+				<p>Details on using ellipses are on p110 of the 6th edition of the Australian Style
+					Manual for authors editors and printers. In essence, yes you can use them to
+					show omissions. The format is [text] [space] ... [space] [text]. </p>
+			</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

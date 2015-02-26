@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D2099" status="new"> 
+  <title><ph
+	 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_Generalisation_InitCap"><?xm-replace_text Phrase?></ph></title>
+  
+  <shortdesc>When information in a 
+	 <ph
+	  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialised"><?xm-replace_text Phrase?></ph>
+	 information type needs to be converted into the information type from which it
+	 was 
+	 <ph
+	  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialised"><?xm-replace_text Phrase?></ph>,
+	 the process is known as 
+	 <term
+	  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/term_generalisation"><?xm-replace_text Term?></term>.
+	 
+  </shortdesc> 
+  <prolog><author
+	 conref="../../conref/conref_source_metadata.dita#topic_hw_conref_meta/author_tony_self"></author><metadata><keywords><indexterm
+		  conref="../../conref/conref_source_metadata.dita#topic_hw_conref_meta/index_generalisation"><?xm-replace_text Index Term?></indexterm><indexterm
+		  conref="../../conref/conref_source_metadata.dita#topic_hw_conref_meta/index_specialisation"><?xm-replace_text Index Term?></indexterm><indexterm>ancestor</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>The opposite of 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialisation"><?xm-replace_text Phrase?></ph>
+		is 
+		<term
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/term_generalisation"><?xm-replace_text Term?></term>.
+		
+	 </p> 
+	 <p>When topics are interchanged between authors or 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_organisations"><?xm-replace_text Phrase?></ph>,
+		there may be a need to move content in 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialised"><?xm-replace_text Phrase?></ph>
+		information types back to standard, base DITA information types. Likewise, when
+		a document containing 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialised"><?xm-replace_text Phrase?></ph>
+		information types is being processed to a delivery format through a publishing
+		tool that is unaware of the 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialisation"><?xm-replace_text Phrase?></ph>,
+		the content must be transformed to a 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_non_specialised"><?xm-replace_text Phrase?></ph>,
+		general DITA structure. 
+	 </p> 
+	 <p>When processing a 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialised"><?xm-replace_text Phrase?></ph>
+		element that it is not aware of, a processor (that is 
+		<term
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/term_specialisation_aware"><?xm-replace_text Term?></term>)
+		will treat the element as though it is the 
+		<term>ancestor</term> element from which it 
+		<q>evolved</q>. 
+	 </p> 
+	 <p>For example, let's assume we have a 
+		<ph
+		conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialised"><?xm-replace_text Phrase?></ph>
+		element called 
+		<synph>part_desc</synph> (based on the 
+		<synph>propdesc</synph> element) in a 
+		<synph>parts_list</synph> topic (based on the 
+		<synph>reference</synph> topic). When we transform that topic to HTML
+		using a publishing tool, the processor, unaware of both 
+		<synph>parts_list</synph> and 
+		<synph>part_desc</synph> will just handle those elements as though they
+		are 
+		<synph>reference</synph> and 
+		<synph>propdesc</synph> respectively. 
+	 </p> 
+  </conbody> 
+</concept> 

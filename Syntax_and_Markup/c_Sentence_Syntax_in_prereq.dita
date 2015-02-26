@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D4704" status="new"> 
+  <title>The 
+	 <synph>prereq</synph> element</title> 
+  <shortdesc>The pre-requisites (<synph>prereq</synph>) element describes the
+	 status or situation that must be established before a procedural task can be
+	 started. It can contain cross-references to pre-requisite task topics. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>elements<indexterm>prereq<indexterm>related-links</indexterm><indexterm>link</indexterm></indexterm></indexterm><indexterm>prereq
+			 element</indexterm><indexterm>pre-requisites</indexterm><indexterm>importance
+			 attribute<indexterm>pre-requisite
+				tasks</indexterm></indexterm><indexterm>attributes<indexterm>importance</indexterm></indexterm><indexterm>related-links
+			 element</indexterm><indexterm>link element</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>The optional pre-requisites (<synph>prereq</synph>) element in task
+		topics is used to describe the things that a user needs to know or do before
+		starting the task. 
+	 </p> 
+	 <p>During output to a reading format, the pre-requisite
+		(<synph>prereq</synph>) element should be labelled so that the reader can
+		identify the information as being a pre-requisite state. 
+	 </p> 
+	 <p importance="high">The 
+		<synph>prereq</synph> element must read as one or more complete
+		sentences. 
+	 </p> 
+	 <p importance="high">Normally you should only need to have one block of
+		pre-requisite information, and you should not nest a single, redundant
+		paragraph (<synph>p</synph>) element within the 
+		<synph>prereq</synph> element. However, if you need to include more than
+		one block, you will need to nest paragraphs inside the 
+		<synph>prereq</synph> element. 
+	 </p> 
+	 <p>For example, a typical single-block pre-requisite should be structured
+		as: 
+		<codeblock>&lt;prereq&gt;Ensure...&lt;/prereq&gt;</codeblock>while a lengthy pre-requisite with more than one block should be
+		structured as: 
+		<codeblock>&lt;prereq&gt;
+  &lt;p&gt;Ensure...&lt;/p&gt;
+  &lt;p&gt;Prepare...&lt;/p&gt;
+&lt;/prereq&gt;</codeblock> 
+	 </p> 
+	 <p>If there are any topics that document pre-requisite tasks, these should
+		be added as links in the 
+		<synph>related-links</synph> section at the bottom of the topic, with the
+		
+		<synph>link</synph> element's 
+		<synph>importance</synph> attribute set to 
+	 <option>required</option>. This will result in those links being placed
+	 under the pre-requisites block during processing to a reading format. 
+	 </p> 
+	 <p>The following example shows a typical presentation of a required link
+		from the 
+		<synph>related-links</synph> section in a task topic processed to XHTML. 
+	 </p> 
+	 <fig id="fig_BD7EB732946944B5A646983DFF24337B"> 
+		<title>Typical XHTML output of 
+		  <synph>related-links</synph> with 
+		  <synph>importance</synph> setting of 
+		<option>required</option></title><image placement="break"
+		align="left" id="image_A25F760A8DA34F8F88EF065E94E9986C"
+		href="../images/prereq_required_links.png" width="425px" height="267px"> 
+		  <alt>Screen capture showing XHTML output of required related-links in
+			 Pre-requisites section 
+		  </alt></image> 
+	 </fig> 
+	 <section id="section_596F3BD14E3E49988F41CA3CE4CC887F"
+	 audience="contributor"> 
+		<title>Rationale</title> 
+		<p>According to the DITA Language Specification: 
+		</p> 
+		<lq>The pre-requisite (<synph>prereq</synph>) section of a task should
+		  document things the user needs to know or do before starting the current task.
+		  Prerequisite links will be placed in a list after the related-links section; on
+		  output the 
+		  <synph>prereq</synph> links from the 
+		  <synph>related-links</synph> section are added to the 
+		  <synph>prereq</synph> section. 
+		</lq> 
+		<p>But how should such pre-requisites be phrased? 
+		</p> 
+		<p>Here is an example of four options of phrasing the same pre-requisite
+		  information. 
+		</p> 
+		<ul outputclass="listbullet" id="ul_710B40A36F574941935043F659158919"> 
+		  <li id="li_CC9D11CF481E42928A87546EA3862A63">You must have
+			 Administrator rights to install this program. 
+		  </li> 
+		  <li id="li_0D7867731E3D44688647C968E06B5F01">You have Administrator
+			 rights to install this program. 
+		  </li> 
+		  <li id="li_04CBBAC0B214495C98DC120965D74955">Obtain Administrator
+			 rights to the program. 
+		  </li> 
+		  <li id="li_D01BF46BD52F4293BE4CB688C097E8C9">Administrator rights 
+		  </li> 
+		</ul> 
+		<p>The second and fourth options don't seem to make sense on first
+		  reading, but in context, it may be under a heading of 
+		  <q>Pre-requisites</q>. 
+		</p> 
+		<p>The third option uses the imperative; imperative sentences tend to
+		  translate to other languages better than other constructions. 
+		</p> 
+		<p>Interestingly, the presentation of the content will have some impact
+		  on the preferred syntax. For example, if there is not going to be a
+		  "Pre-requisites" heading, the second option cannot be used, and the third
+		  option may be better moved to the first step of the procedure. However, with
+		  the heading, all four are valid choices. 
+		</p> 
+	 </section> 
+  </conbody> 
+</concept> 

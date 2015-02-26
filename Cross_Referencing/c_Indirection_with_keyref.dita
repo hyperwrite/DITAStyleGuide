@@ -1,0 +1,118 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D9338" rev="1.2" status="new"> 
+  <title>Indirect linking with keys</title> 
+  <shortdesc>Indirect linking and referencing is a way of specifying the target
+	 of a link or reference in the ditamap, rather than in the topic. The feature
+	 was introduced in 
+	 <ph
+	  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_DITA12"><?xm-replace_text Phrase?></ph>.
+	 This allows links to have different destinations, depending upon the ditamap in
+	 which the topic is used. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>indirection</indexterm><indexterm>linking<indexterm>indirect</indexterm></indexterm><indexterm>cross-references<indexterm>indirect</indexterm></indexterm><indexterm>keyref
+			 attribute</indexterm><indexterm>keys<indexterm>linking
+				with</indexterm></indexterm><indexterm>attributes<indexterm>keyref</indexterm><indexterm>keys</indexterm></indexterm><indexterm>keys
+			 attribute</indexterm><indexterm>keydef
+			 element</indexterm><indexterm>elements<indexterm>keydef</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>Indirection is an indirect method of linking, introduced in 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_DITA12"><?xm-replace_text Phrase?></ph>.
+		Instead of referring to the address of the resource, you refer to a key, which
+		in turn refers to the address of the resource. As the key can be stored away
+		from the topic in the ditamap, the same link or reference in a topic can point
+		to different targets, depending upon the ditamap in which the topic is used. 
+	 </p> 
+	 <p>Indirection opens up the opportunity to: 
+	 </p> 
+	 <ul id="ul_36891913C6A341B0B7A3596339FA203A"> 
+		<li id="li_DB6DA80034054F63A68873093BE51221">redirect a link to a new
+		  target if an override is defined in the ditamap 
+		</li> 
+		<li id="li_5C9C7260228045E79CD318CE807AB1F3">redirect a 
+		  <synph>conref</synph> to a new target 
+		</li> 
+		<li id="li_0FDA4002D6FF41B8862DE9360351343D">add text to a term or
+		  keyword 
+		</li> 
+		<li id="li_FE4574FBE4664E269DD5025EA40369BC">turn terms into links 
+		</li> 
+	 </ul> 
+	 <p>Key values are defined in a ditamap using the syntax <codeph>keys="<varname>target
+					URI</varname>"</codeph>. To refer to a key in a topic, usually inside a
+			cross-reference (<synph>xref</synph>), <synph>term</synph> or <synph>image</synph>
+			element, a <synph>keyref</synph> attribute is used instead of the direct
+				<synph>href</synph> attribute. Indirection can also be used for content reference
+				<term>transclusion</term> by using the <synph>conkeyref</synph> attribute in place
+			of the direct <synph>conref</synph> attribute. </p> 
+	 <p>If the key referred to in a 
+		<synph>keyref</synph> attribute is not defined in the ditamap, the target
+		reverts to the value of the 
+		<synph>href</synph> attribute, if defined. 
+	 </p> 
+	 <p>For example, if the 
+		<userinput>alpha</userinput> 
+		<synph>key</synph> in the following cross-reference is not defined in the
+		ditamap, the link will be created to 
+		<userinput>abc.dita</userinput>. 
+		<codeblock>&lt;xref keyref="alpha" href="abc.dita"&gt;Alpha&lt;/xref&gt;</codeblock>If the 
+		<userinput>alpha</userinput> 
+		<synph>key</synph> does exist, the 
+		<synph>href</synph> attribute will be ignored. (The 
+		<synph>keyref</synph> overrides the 
+		<synph>href</synph>.) 
+	 </p> 
+	 <fig id="fig_360222591CCC4FCAAC0C9CFEABE10B65"> 
+		<title>Indirection schematic</title><image
+		id="image_E732BB121E6949F8B4EA34CD28C3FC3D"
+		href="../images/indirection_schematic.png" width="425px" height="274px"
+		align="left" placement="break"> 
+		  <alt>Schematic diagram showing how key and keyref attributes are used
+			 to redirect a link through indirection 
+		  </alt></image> 
+	 </fig> 
+	 <p>Indirection has the effect of moving context from the topic to the map,
+		which allows the topic to be re-used in more places. 
+	 </p> 
+	 <section id="section_E47066A671854850A1D9D431AEF5CCED"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<lq
+		 reftitle="Overview of DITA 1.2 presentation by Kristen James Ebelein, RealWorld DITA Conference, 14 September 2009">
+		  
+		  <p>Keys and keyref provide a simple redirection scheme by leveraging
+			 the existing map architecture. Basic concept: Associate a target with a key;
+			 create links to the target by using the key. Benefits: Increases reusability:
+			 Links can be defined in advance of the target. Others can reuse your
+			 information set and override the target associated with the key (without
+			 touching the DITA files). Turn common terms into links (for example, to a
+			 definition of the term). Simpler and easier for authors; they can type 
+			 <codeph>keyref="myProduct"</codeph> instead of 
+			 <codeph>href="http://www.example.com/category?a=something&amp;theProduct+optionA+optionL</codeph>".
+			 Keys can be defined anywhere in the DITA map or in a single map dedicated to
+			 keys. Map authors use 
+			 <synph>&lt;topicref&gt;</synph> (or 
+			 <synph>&lt;topicref&gt;</synph> specializations) to define keys. 
+			 <synph>&lt;keydef&gt;</synph> is a convenience (or shortcut) element.
+			 Define the target together with the key inside a map: 
+			 <codeph>&lt;keydef keys="linux"
+				href="http://en.wikipedia.org/wiki/Linux" format="html"
+				scope="external"/&gt;</codeph>. Use the key to turn a term into a link or as a
+			 substitute for an 
+			 <synph>href</synph>: 
+			 <codeblock>&lt;p&gt;Support for &lt;term keyref="linux"&gt;Linux&lt;/term&gt;&lt;/p&gt;
+&lt;p&gt;See &lt;xref keyref="linux"&gt;Wikipedia&lt;/xref&gt;&lt;/p&gt;
+&lt;topicref keyref="linux" navtitle="Linux overview"/&gt;</codeblock>Keyref: Usage scenario Scenario: Team A includes common keys in a
+			 single reusable map. All authors in Team A reference the map and pick up common
+			 definitions. Team B reuses a component from the Team A information. By creating
+			 a new key map, Team B can redirect linkages within the component without
+			 touching the DITA content files. Example: Common installation instructions that
+			 link to product-specific reference materials. 
+		  </p> 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept id="D2002" status="new" xml:lang="en"> 
+  <title>History of DITA</title> 
+  <shortdesc>DITA was originally developed within the technical publications
+	 department at IBM, but was donated to OASIS in 2004. It is now maintained by
+	 the OASIS DITA Technical Committee. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>DITA<indexterm>history</indexterm></indexterm><indexterm>OASIS</indexterm><indexterm>history
+			 of DITA</indexterm><indexterm>STC</indexterm><indexterm>Schell,
+			 Dave</indexterm><indexterm>Priestley, Michael</indexterm><indexterm>Day,
+			 Don</indexterm><indexterm>Hennum, Erik</indexterm><indexterm>Hunt,
+			 John</indexterm><indexterm>ID
+			 Doc</indexterm><indexterm>BookMaster</indexterm><indexterm>SGML</indexterm><indexterm>XML</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>DITA was developed by technical communicators, for technical
+		communicators. 
+	 </p> 
+	 <p>DITA started within the technical publications department at IBM. IBM
+		had been using 
+		<term
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/term_SGML"><?xm-replace_text Term?></term>
+		for its documentation for many years, and had pioneered a number of document
+		formats including IBM BookMaster and IBM ID Doc. The knowledge accumulated from
+		working with those document formats was applied to the development of an
+		XML-based document approach. The principal architects of IBM DITA were Don Day,
+		Michael Priestley, and Dave Schell. 
+	 </p> 
+	 <p>DITA became known outside IBM after the publication of 
+		<cite>An XML Architecture for Technical Documentation: The Darwin
+		  Information Typing Architecture</cite> by Don Day, Erik Hennum, John Hunt,
+		Michael Priestley, and David Schell at the 
+		<cite>2003 
+		  <term>STC</term> Conference</cite>. 
+	 </p> 
+	 <p>In March 2004, IBM donated DITA to the 
+		<term>OASIS</term> standards 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_organisation"><?xm-replace_text Phrase?></ph>,
+		where it is now managed by the 
+		<term>OASIS DITA Technical Committee</term>, or 
+		<term>DITA TC</term>. In April 2005, OASIS approved Version 1.0 of the
+		DITA specification. In August 2007, OASIS approved version 1.1 of the DITA
+		specification. In the second half of 2010, version 1.2 of the DITA
+		specification was approved. 
+	 </p> 
+	 <p>The charter of the 
+		<term>DITA TC</term> is to promote the use of the DITA architecture for
+		creating standard information types and domain-specific mark-up vocabularies.
+		The members of the TC are representatives from different industries, 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_organisations"><?xm-replace_text Phrase?></ph>
+		and countries. 
+	 </p> 
+  </conbody> 
+</concept> 

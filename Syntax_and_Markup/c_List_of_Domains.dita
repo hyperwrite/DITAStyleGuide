@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept id="D2995"> 
+  <title>Element domains</title> 
+  <shortdesc>Elements in DITA are arranged into domains for 
+	 <ph
+	  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_organisational"><?xm-replace_text Phrase?></ph>
+	 purposes and technical reasons. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>domains</indexterm><indexterm>mark-up
+			 domains</indexterm><indexterm>element
+			 domains</indexterm><indexterm>DTD</indexterm><indexterm>schema</indexterm><indexterm>XSD</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>The base DITA elements are grouped into 
+		<term>domains</term>. You can see this clearly in the 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_DITA_Lang_Reference"><?xm-replace_text Phrase?></ph>.
+		
+	 </p> 
+	 <p>The DITA element mark-up domains are: 
+	 <ul id="ul_697DFE997E594FAAA7C14ED41E6FB54D"> 
+		<li id="li_A0C8ABA49F1F4921B7DE16F6495746B9">programming 
+		</li> 
+		<li id="li_F33D9F4D52BE477CB465D075B900349F">user interface 
+		</li> 
+		<li id="li_730C13D67C1C41FB81B7A4CF47C0B6D3">software 
+		</li> 
+		<li id="li_B4F2311CBDF54CD581791BA3E63C7BFD">utilities 
+		</li> 
+		<li id="li_07938FCD45024DB0A511CDDDC37EF8A6">metadata 
+		</li> 
+		<li id="li_E19AB3899ABB4BB6BC36B054E27B5BEB">typographic 
+		</li> 
+	 </ul> 
+	 </p> 
+	 <p>Different sets of elements are intended for use when documenting
+		different types of things. The software domain, for example, contains the
+		elements designed to semantically describe software characteristics. 
+	 </p> 
+	 <p>The element domains are technically 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_organised"><?xm-replace_text Phrase?></ph>
+		into different DTD or XSD schema modules. 
+	 </p> 
+  </conbody> 
+</concept> 

@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="Dc_Modularity" status="new"> 
+  <title>Modularity</title> 
+  <shortdesc>DITA enables modular document development. Not only can topics be
+	 re-used, but any group of topics or elements can be treated as a modular
+	 document component. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>modular<indexterm>documents</indexterm></indexterm><indexterm>architecture<indexterm>modular</indexterm></indexterm><indexterm>assembly</indexterm><indexterm>content
+			 assembly</indexterm><indexterm>topic-based
+			 authoring</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>Modularity is the technique of building large complex things in smaller,
+		self-contained pieces. Modular furniture is a good example of modularity in
+		practice. Instead of being one large piece, a modular couch may be four pieces
+		that can be arranged in different ways to form different couch configurations. 
+	 </p> 
+	 <p>Creation of a manual can also be 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_modularised"><?xm-replace_text Phrase?></ph>.
+		Instead of being constructed as one piece, a large manual may be designed as a
+		collection of different modules, and those modules can be arranged into
+		different configurations to create different manuals. Modular manuals are
+		easier to maintain, and can be produced more efficiently. A ditamap referencing
+		a group of topics can be embedded within another ditamap, just as a set of
+		elements within a single topic can be re-used in many different topics. 
+	 </p> 
+	 <p>XML technologies (such as 
+		<term>XPath</term>) make modularity technically easy to implement. DITA
+		can take advantage of such complementary XML technologies. 
+	 </p> 
+  </conbody> 
+</concept> 

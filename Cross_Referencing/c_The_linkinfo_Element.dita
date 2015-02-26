@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_83860BC2643F40CFB5FD22F7B222A1C7"> 
+  <title>The 
+	 <synph>linkinfo</synph> element</title> 
+  <shortdesc>The 
+	 <synph>linkinfo</synph> element can be used to add a block of descriptive
+	 text to a link list. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>linkinfo
+			 element</indexterm><indexterm>elements<indexterm>linkinfo</indexterm><indexterm>linklist</indexterm></indexterm><indexterm>related-links
+			 elements<indexterm>linkinfo</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>The 
+		<synph>linkinfo</synph> element can be used within the ordered link list
+		(<synph>linklist</synph>) element to provide an explanation of the purpose of
+		the list of links. The 
+		<synph>linkinfo</synph> block typically appears after the list of links
+		in the output reading format. 
+	 </p> 
+	 <p>When used in conjunction with a 
+		<synph>title</synph> element also within the 
+		<synph>linklist</synph>, you can create a brief description of a process
+		in the 
+		<synph>related-links</synph> section. However, you should always prefer
+		creating small task topics, or stub topics with generated links to 
+		<term>child</term> tasks. 
+	 </p> 
+	 <p> 
+		<draft-comment>Maybe add example? 
+		</draft-comment> 
+	 </p> 
+  </conbody> 
+</concept> 

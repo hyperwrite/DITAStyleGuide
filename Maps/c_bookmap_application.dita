@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D2067" status="new"> 
+  <title>The bookmap feature</title> 
+  <shortdesc>Bookmaps are a 
+	 <ph
+	  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialisation"><?xm-replace_text Phrase?></ph>
+	 of the base DITA map information type. Like 
+	 <term>ditamaps</term>, 
+	 <term>bookmaps</term> are containers for structure and context metadata,
+	 and do not contain any content. Bookmaps are used to describe page layout
+	 publishing outputs such as books, articles, manuals and research papers. They
+	 contain information structures that are specific to linear publications, such
+	 as tables of figures, title pages, chapters, sections and parts. 
+  </shortdesc> 
+  <prolog><metadata><keywords><indexterm>bookmap
+			 element</indexterm><indexterm>elements<indexterm>bookmap</indexterm><indexterm>booktitle</indexterm><indexterm>bookmeta</indexterm></indexterm><indexterm>bookmeta
+			 element</indexterm><indexterm>booktitle
+			 element</indexterm><indexterm>ditamap<indexterm>bookmap</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>The core DITA schema includes the ditamap format (or 
+		<term>application</term>), which is suitable for describing many
+		collections of topics. However, for some book-style collections (such as a
+		large, paper-based Reference Manual), the standard ditamap is inadequate. Like
+		other DITA applications, ditamaps can be 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialised"><?xm-replace_text Phrase?></ph>
+		to meet special needs. 
+	 </p> 
+	 <p>A 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialised"><?xm-replace_text Phrase?></ph>
+		ditamap, called 
+		<term>bookmap</term>, is now part of the base DITA specification. The
+		bookmap is a 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialisation"><?xm-replace_text Phrase?></ph>
+		of ditamap in the same way that concept is a 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialisation"><?xm-replace_text Phrase?></ph>
+		of topic. 
+	 </p> 
+	 <fig id="fig_25A4B5218DDA4B07B5150780B8E74A57"> 
+		<title>Bookmap is a 
+		  <ph
+			conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialisation"><?xm-replace_text Phrase?></ph>
+		  of ditamap</title><image placement="break" align="left"
+		id="image_BEB93E69747C4A4A939487340BD614BB"
+		href="../images/bookmap_specialisation.svg" width="152px" height="176px"> 
+		  <alt>Simple diagram showing that bookmap is a specialisation of ditamap
+			 
+		  </alt></image> 
+	 </fig> 
+	 <p>The official definition of bookmap is: 
+	 </p> 
+	 <lq xml:lang="en-US"
+	  href="http://docs.oasis-open.org/dita/v1.1/OS/archspec/HowToUse.html"
+	  reftitle="OASIS DITA Version 1.1 Architectural Specification">The bookmap
+		specialization of DITA's standard DITA map allows you to organize your DITA
+		topics into a collection that can be printed as a book or other paged layout. 
+	 </lq> 
+	 <p>Bookmap allows you to produce DITA topics as the content of a 
+		<q>formally defined</q> book. A formally defined book means one with
+		covers, formal notices, front matter (notices, acknowledgements, dedications,
+		preface, etc), chapters, sections, parts, and back matter (notices, lists,
+		etc). Bookmap is needed because the standard ditamap doesn't have structures
+		for these book components. 
+	 </p> 
+	 <p>A bookmap has the following major structures: 
+	 </p> 
+	 <ul outputclass="listbullet" id="ul_1B5848DD43C24384B4BB29EB9088A624"> 
+		<li id="li_EA7B4A4FBD9947DCA130BE9791A68020">title or 
+		  <synph>booktitle</synph> 
+		</li> 
+		<li id="li_5FE5D2104FC840D4BFEA092249CCCAEE"><synph>bookmeta</synph>
+		  (owners, authors, publishing data, etc) 
+		</li> 
+		<li id="li_B5FD98A2466B471F934E2E26EAB2460E">front matter 
+		</li> 
+		<li id="li_30D81208EB50468C911F2C20000B4101">any number of chapters or
+		  parts (which can contain chapters) 
+		</li> 
+		<li id="li_AFA1007CB41C4364A72AA4AA32A19E98">any number of appendix
+		  topics 
+		</li> 
+		<li id="li_B7F872CCB35A49CD94E2ADA40C63935C">back matter 
+		</li> 
+		<li id="li_4E07AEADE973443F947C76712E1A3B40">relationship tables. 
+		</li> 
+	 </ul> 
+	 <section id="section_14A8FF96C9C24BBDBCA5A72B637F3A77"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<lq reftitle="Julio Vazquez, Yahoo! DITA Users Group"
+		 href="http://tech.groups.yahoo.com/group/dita-users/message/15934"> Assuming
+		  that you are using the BookMap specialization to generate the PDF, you must
+		  have a structure to tell the processing where to put the index. You will need a
+		  &lt;backmatter&gt; element containing a &lt;booklists&gt; element containing
+		  the &lt;indexlist&gt; element. The last element is what places the index. 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

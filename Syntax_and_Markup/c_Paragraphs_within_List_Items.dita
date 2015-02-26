@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D3980" status="new"> 
+  <title> Paragraphs (and other block elements) within list items</title> 
+  <shortdesc>Avoid using block elements within list items. Only when a list
+	 item is comprised of more than one idea or point should child block elements be
+	 used. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>mixed
+			 content</indexterm><indexterm>elements<indexterm>p</indexterm><indexterm>ul</indexterm><indexterm>ol</indexterm><indexterm>sl</indexterm><indexterm>dl</indexterm><indexterm>li</indexterm></indexterm><indexterm>list
+			 elements</indexterm><indexterm>list
+			 items</indexterm><indexterm>paragraphs<indexterm>within
+				lists</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p importance="high">If there is just one block of text in the list item,
+		then that item should be left as plain text (<term>string data</term>). This
+		stores the minimum of mark-up, and simplifies the processed output. If there
+		are multiple blocks in the list item, then paragraphs (or other block items)
+		should be used. 
+		<term>String data</term> text should not be used in the same list item
+		alongside block elements. 
+	 </p> 
+	 <section id="section_DC40AB0369704578A03080FCBBC425E3"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<lq reftitle="Gershon Joseph, OASIS DITA TC Mailing List"> 
+		  <p>As a best practice, I feel we should discourage mixed content. I
+			 know some folks at IBM pride themselves on the way they mix content, but from
+			 my experience most people adopting DITA don't have the broad SGML and XML
+			 background that some of the power DITA mixed-content users have. I think we
+			 should discourage mixed content, such as: 
+		  </p> 
+		  <codeblock>&lt;li&gt;This is a sentence in the first paragraph
+&lt;p&gt;This is now a second paragraph in the list item&lt;/p&gt;
+&lt;p&gt;And this is a third paragraph&lt;/p&gt;
+And here is paragraph number four!&lt;/li&gt;</codeblock> 
+		  <p>While this is perfectly valid DITA XML, it's extremely badly marked
+			 up. 
+		  </p> 
+		  <p>I feel that we should encourage users to be consistent within a
+			 list. So if one of the list items in a list contains a paragraph, they should
+			 mark all &lt;li&gt; elements up with &lt;p&gt;, as follows: 
+		  </p> 
+		  <codeblock>&lt;ul&gt;
+  &lt;li&gt;&lt;p&gt;A simple list item.&lt;/p&gt;
+  &lt;li&gt;&lt;p&gt;A list item with multiple paragraphs.&lt;/p&gt;
+      &lt;p&gt;This is the second paragraph.&lt;/p&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;p&gt;Another simple list item.&lt;/p&gt; 
+&lt;/ul&gt;</codeblock> 
+		  <p>If a list contains only simple list items (i.e., phrases, not
+			 paragraphs) then the &lt;p&gt; wrapper can be omitted (note that I personally
+			 don't like this rule, but I'm OK with the spec saying this to avoid users from
+			 being forced to add &lt;p&gt; where arguably they are not paragraphs). Here's
+			 an example: 
+		  </p> 
+		  <codeblock>&lt;ul&gt;
+  &lt;li&gt;apples&lt;/li&gt;
+  &lt;li&gt;oranges&lt;/li&gt;
+  &lt;li&gt;pears&lt;/li&gt;
+  &lt;li&gt;tomatoes and cucumbers&lt;/li&gt; 
+&lt;/ul&gt;</codeblock> 
+		  <p>As I mentioned, I prefer the DocBook approach that would include a
+			 &lt;p&gt; element inside each of these &lt;li&gt; elements. The end result is
+			 much more consistent and stylesheet maintenance is a bit easier. 
+		  </p> 
+		</lq> 
+		<p><cite>Jeremy Griffith</cite> (in 
+		  <cite>http://tech.groups.yahoo.com/group/dita-users/message/17243</cite>)
+		  also mentioned the DocBook approach when arguing that list items should contain
+		  paragraph blocks, so as to avoid confusion when whitespaces were
+		  misinterpreted. For example, a simple list item with returns in the XML code
+		  after the start of the 
+		  <synph>sli</synph> list item element could be interpreted as having
+		  started with a space. This might result in code such as: 
+		  <codeblock>&lt;sl&gt;
+&lt;sli&gt;RX&lt;/sli&gt;
+&lt;sli&gt;
+WRX
+&lt;/sli&gt;
+&lt;/sl&gt;</codeblock>being rendered with a space in front of the second list item if the
+		  processor interpreted the line return as a space, resulting in a misaligned
+		  list: 
+		  <lines>RX
+ WRX</lines>Using 
+		  <synph>p</synph> elements within the 
+		  <synph>sli</synph> would not overcome a similar code issue when a line
+		  return was entered after the 
+		  <synph>p</synph> element, as in: 
+		  <codeblock>&lt;sl&gt;
+&lt;sli&gt;&lt;p&gt;RX&lt;/p&gt;&lt;/sli&gt;
+&lt;sli&gt;&lt;p&gt;
+WRX
+&lt;/p&gt;&lt;/sli&gt;
+&lt;/sl&gt;</codeblock>Jeremy suggested that having the authoring tool collapse whitespace
+		  around the 
+		  <synph>sli</synph> would avoid processing problems. Consistency of
+		  whitespace handling will also reduce processing problems. 
+		</p> 
+	 </section> 
+  </conbody> 
+</concept> 

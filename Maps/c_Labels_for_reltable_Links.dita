@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D9191" status="new"> 
+  <title>Labels for 
+	 <synph>reltable</synph> related topic links</title> 
+  <shortdesc>The headings used to label generated related topic links in the
+	 output are based on the 
+	 <synph>type</synph> attribute in the referencing 
+	 <synph>topicref</synph> element. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>reltable<indexterm>headings for
+				generated links</indexterm></indexterm><indexterm>related topic
+			 links<indexterm>headings</indexterm></indexterm><indexterm>topicref
+			 element</indexterm><indexterm>elements<indexterm>topicref</indexterm></indexterm><indexterm>type
+			 attribute</indexterm><indexterm>scope
+			 attribute</indexterm><indexterm>attributes<indexterm>type</indexterm><indexterm>scope</indexterm></indexterm><indexterm>labels<indexterm>for
+				related topic links</indexterm></indexterm><indexterm>headings<indexterm>for
+				related topic links</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>Generated relationship links are typically grouped, in the output, by
+		information type. For example, links may be grouped under 
+		<systemoutput>Related Concepts</systemoutput>, 
+		<systemoutput>Related Tasks</systemoutput>, and 
+		<systemoutput>Related References</systemoutput> headings. 
+	 </p> 
+	 <p>In a typical transformation to an output format, the wording of these
+		headings is drawn from the (information) 
+		<synph>type</synph> attribute of the 
+		<synph>topicref</synph> element. If the 
+		<synph>type</synph> is not specified in the 
+		<synph>topicref</synph> element, the information type is determined from
+		the topic file itself. If the 
+		<synph>type</synph> is not a base information type (that is, not concept,
+		task or reference), the link is generated under a heading of 
+		<q>Related Information</q> instead. 
+	 </p> 
+	 <p>If a referenced topic is external to the current ditamap collection
+		(that is, it has a 
+		<synph>scope</synph> attribute of 
+	 <option>external</option>), or not available at build time (that is, it has
+	 a 
+	 <synph>scope</synph> attribute of 
+	 <option>peer</option>), and a 
+	 <synph>type</synph> attribute is not specified in the 
+	 <synph>topicref</synph> element, the link will be generated under a heading
+	 of 
+	 <q>Related Topics</q>. 
+	 </p> 
+	 <section id="section_27AFF53C40A14F959452B46CDDE8A87F"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<lq reftitle="Deborah Pickett, Yahoo! DITA Users Group"
+		 href="http://tech.dir.groups.yahoo.com/group/dita-users/message/13993"> 
+		  <p>Harvey Greenberg wrote: &gt;&gt; What is it that causes the OT to
+			 know what to call related concepts as opposed to related topics or related
+			 whatever-else? Although the spec allows for a type attribute in the relcolspec,
+			 it is not required, and I am wondering what the source of truth is.&lt;&lt; 
+		  </p> 
+		  <p> If you leave the type attribute off, DITA-OT fetches it from the
+			 referenced topic during one of the preprocessing stages (I think mappull). It
+			 uses the name of the root element of the document, or of the first child of a
+			 &lt;dita&gt; root element, or the name of the element with the matching ID if
+			 you use a fragment reference in the topicref. 
+		  </p> 
+		  <p>DITA-OT does this only if the topicref has a scope of local. For
+			 peer and external references, you really have to specify the type yourself, or
+			 be satisfied with it defaulting to "topic". 
+		  </p> 
+		  <p>A later preprocess stage (move-links, I think) copies this
+			 information into the topics, as &lt;related-links&gt; and &lt;link&gt;
+			 elements, replete with the type attribute. 
+		  </p> 
+		  <p>During topic-to-HTML processing, code in xsl/xslhtml/rel-links.xsl
+			 uses the type attribute to decide whether to fetch the "Related concepts",
+			 "Related Tasks", "Related Reference", or "Related Information" strings (or a
+			 custom string of your own) from the string repository. 
+		  </p> 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D9046" status="new"> 
+  <title>Stem sentences, glue text, and other transitional information</title> 
+  <shortdesc>Transitional information, such as stem sentences, is largely
+	 redundant in DITA's minimalist, topic-based, semantic mark-up architecture. The
+	 role of transitional information in 
+	 <ph
+	 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_contextualising"><?xm-replace_text Phrase?></ph>
+	 the content has been eliminated through the use of smaller chunk sizes,
+	 meaningful titles, information typing, structure, and demarcation labels
+	 automatically-generated in the output. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>stub
+			 content</indexterm><indexterm>stem sentences</indexterm><indexterm>glue
+			 text</indexterm><indexterm>transitional
+			 information</indexterm><indexterm>cohesion</indexterm><indexterm>minimalism</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>Transitional information, or 
+		<term>glue text</term>, is text used to inform readers of what has come
+		before and what will follow later. In other words, it leads the reader from one
+		idea to the next idea. When working in a modular documentation system, the
+		author cannot assume what will come before or after, because information chunks
+		can be assembled in different sequences and combinations to form different
+		publications. 
+	 </p> 
+	 <p>Some common forms of transitional information are found in: 
+	 <ul id="ul_11ED98AD541F4E8C90520CB03A5C8978"> 
+		<li id="li_9E66A363F8D64C26B383123A23C820A9"><term>stub content</term>,
+		  such as 
+		  <q>In this chapter...</q> 
+		</li> 
+		<li id="li_FE1B25DA92F34E2AAF35E7CE3923A1AF"><term>stem sentences</term>,
+		  such as 
+		  <q>To change the wheel:</q> 
+		</li> 
+		<li id="li_F20D237426D24E8FAF0E2FC038DC1D80"><term>transitional
+			 phrases</term> , such as 
+		  <q>Before starting, make sure you have...</q> 
+		</li> 
+		<li id="li_A227ADE7CFFD46ECA7A08E6152DC088D">cross-references, such as 
+		  <q>For more information, see...</q> 
+		</li> 
+		<li id="li_518B7DAA808D4F958A60A821C605B7CD">locational markers, such as 
+		  <q>Next, we will describe...</q> and 
+		  <q>Having completed the previous...</q> 
+		</li> 
+	 </ul> 
+	 </p> 
+	 <p>In DITA, devices other than transitional text are used to maintain
+		cohesion and to manage transition. 
+	 <ul id="ul_7E2B15EA002540F0AC906D47C60B7359"> 
+		<li id="li_1072ECFB25B04F7D86621BDE6C05B24B">Smaller information chunks,
+		  labelled with meaningful titles, reduce the need for stem sentences,
+		  particularly in task topics. 
+		</li> 
+		<li id="li_12382A6B54EA4DE688D9582BCB4FBFB0">Information typing separates
+		  content that may otherwise have been bundled together into distinct topics,
+		  thus breaking up generalist topics into, for example, concept, task and
+		  reference topics. This separation reduces the need for transitional text within
+		  topics. 
+		</li> 
+		<li id="li_3F2F7576E64E4ED0B1AC6F9E6FAFE274">Using a structure where much
+		  of the context of a document is defined in the ditamap, rather than the topic,
+		  and the careful use of well-crafted short descriptions, allows stub content and
+		  cross-reference information to be automatically generated during the publishing
+		  process. For example, a 
+		  <synph>prereq</synph> semantic element in a topic can be differentiated
+		  from other content by the application of labels or icons during the publishing
+		  process, and relationship tables can be used to form the links to related
+		  topics in the output. 
+		</li> 
+		<li id="li_0A557EE652344C8E916B52A49E2C5760">Adopting a minimalist
+		  approach to writing can also serve to eliminate superfluous transitional
+		  information. 
+		</li> 
+	 </ul> 
+	 </p> 
+	 <p importance="high">In summary, avoid using transitional text, and rely on
+		structure, meaningful titles and short descriptions, the separation of document
+		context into the ditamap, and the publishing process, to achieve coherence,
+		cohesion and transition. 
+	 </p> 
+	 <section id="section_444AFE9E2D0C412FA36AAD511CD30B2C"
+	 audience="contributor"> 
+		<title>Rationale</title> 
+		<lq href="http://dita.xml.org/wiki/myths-about-technical-writing">Glue
+		  text is defined as transitional information intended to inform readers of what
+		  has come before or comes after a particular procedure, description, or
+		  explanation. In topic-oriented authoring, which forms the basis for the DITA
+		  Model, transitional text has become problematic. See Do we really need all that
+		  glue? 
+		</lq> 
+		<lq reftitle="Robert Horn, Structured Writing as a Paradigm">There is no
+		  "transitional" information in the information block, but principles for writing
+		  prose encourage or require it. The need for coherence, cohesion, and transition
+		  is handled in a completely different manner in structured writing. 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

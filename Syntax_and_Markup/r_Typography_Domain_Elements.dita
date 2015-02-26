@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="reference_6FB31F18C6F749D78832DB80AA363731"
+ xml:lang="en" status="new"> 
+  <title>Typographic domain elements</title> 
+  <shortdesc>The typographic domain elements each have a specific styling
+	 purpose. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>elements<indexterm>typographic</indexterm></indexterm><indexterm>typographic
+			 domain</indexterm></keywords></metadata>
+  </prolog> 
+  <refbody> 
+	 <simpletable id="simpletable_4211B5AF0F2E499E96062BE134E7530A"> 
+		<sthead><stentry>Element Name</stentry><stentry>Semantic
+			 Purpose</stentry> 
+		</sthead> 
+		<strow><stentry>b</stentry><stentry>bold (strong)</stentry> 
+		</strow> 
+		<strow><stentry>i</stentry><stentry>italic (emphasis)</stentry> 
+		</strow> 
+		<strow><stentry>u</stentry><stentry>underlined</stentry> 
+		</strow> 
+		<strow><stentry>tt</stentry><stentry>teletype (typewriter)</stentry> 
+		</strow> 
+		<strow><stentry>sup</stentry><stentry>superscript</stentry> 
+		</strow> 
+		<strow><stentry>sub</stentry><stentry>subscript</stentry> 
+		</strow> 
+	 </simpletable> 
+  </refbody> 
+</reference> 

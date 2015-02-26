@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D2621" status="new"> 
+  <title>Sample ditamap file</title> 
+  <shortdesc>A sample ditamap illustrates how 
+	 <synph>topicref</synph> elements are nested to form a hierarchy of topics,
+	 and how a 
+	 <synph>reltable</synph> section can define the linking relationship between
+	 topics. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>samples<indexterm>ditamap</indexterm></indexterm><indexterm>ditamap<indexterm>sample
+				code</indexterm></indexterm><indexterm>map file<indexterm>sample
+				code</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <codeblock>&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "../dtd/map.dtd"&gt;
+&lt;map title="WorldTime Pro User Guide"&gt;
+	&lt;topicref format="dita" href="Concepts/WorldTimePro.dita" type="concept"&gt;
+		&lt;topicref format="dita" href="Tasks/CalculatingTime.dita" type="task"&gt;
+			&lt;topicref format="dita" href="Tasks/CalculatingHoursInMinutesSeconds.dita" type="task"/&gt;
+			&lt;topicref format="dita" href="Tasks/CalculatingElapsedTime.dita" type="task"/&gt;
+			&lt;topicref format="dita" href="Reference/WorldTimeProGUI.dita" type="reference"/&gt;
+		&lt;/topicref&gt;
+		&lt;topicref format="dita" href="Tasks/UsingFractionConverter.dita" type="task"/&gt;
+		&lt;topicref format="dita" href="Tasks/UsingFractionCreator.dita" type="task"/&gt;
+		&lt;topicref format="dita" href="Tasks/UsingDateAnalysis.dita" type="task"&gt;
+			&lt;topicref format="dita" href="Concepts/GregorianCalendar.dita" type="concept"/&gt;
+			&lt;topicref format="dita" href="Reference/DateAnalysisGUI.dita" type="reference"/&gt;
+		&lt;/topicref&gt;
+		&lt;topicref format="dita" href="Tasks/Troubleshooting.dita" type="task"/&gt;
+		&lt;topicref format="dita" href="Concepts/WhereToBuy.dita" type="concept"&gt;
+			&lt;topicref format="dita" href="Reference/FeatureComparisonTable.dita" type="reference"/&gt;
+			&lt;topicref format="html" href="http://www.helpml.com/wtp/" navtitle="About WTP Software" print="no" scope="external"/&gt;
+		&lt;/topicref&gt;
+	&lt;/topicref&gt;
+	&lt;reltable&gt;
+		&lt;relheader&gt;
+			&lt;relcolspec type="concept"/&gt;
+			&lt;relcolspec type="task"/&gt;
+			&lt;relcolspec type="reference"/&gt;
+		&lt;/relheader&gt;
+		&lt;relrow&gt;
+			&lt;relcell&gt;
+				&lt;topicref href="Concepts/WorldTimePro.dita" linking="sourceonly" type="concept"/&gt;
+			&lt;/relcell&gt;
+			&lt;relcell&gt;
+				&lt;topicref href="Tasks/CalculatingTime.dita" type="task"/&gt;
+				&lt;topicref href="Tasks/UsingFractionConverter.dita" type="task"/&gt;
+				&lt;topicref href="Tasks/UsingFractionCreator.dita" type="task"/&gt;
+				&lt;topicref href="Tasks/UsingDateAnalysis.dita" type="task"/&gt;
+				&lt;topicref href="Tasks/ConvertingMilitaryTime.dita" type="task"/&gt;
+				&lt;topicref href="Tasks/Troubleshooting.dita" type="task"/&gt;
+			&lt;/relcell&gt;
+			&lt;relcell/&gt;
+		&lt;/relrow&gt;
+	&lt;/reltable&gt;
+&lt;/map&gt;
+</codeblock> 
+  </conbody> 
+</concept> 

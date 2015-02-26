@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<concept id="concept_37EAB58CB6EB432C96AF052E71075330"> 
+  <title>The 
+	 <synph>navref</synph> element</title> 
+  <shortdesc>The 
+	 <synph>navref</synph> element is a specialist element used when
+	 constructing dynamically-merged modular Help systems.
+  </shortdesc> 
+  <prolog><metadata><keywords><indexterm>modular
+			 Help</indexterm><indexterm>master-slave Help
+			 systems</indexterm><indexterm>dynamically-merged
+			 Help</indexterm><indexterm>merge Help</indexterm><indexterm>navref
+			 element</indexterm><indexterm>elements<indexterm>navref</indexterm></indexterm></keywords></metadata>
+  </prolog>
+  <conbody> 
+	 <p>Some Help system output formats, including Eclipse Help and Microsoft
+		HTML Help, support 
+		<term>runtime merging</term> of modular Help files, where a 
+		<term>master</term> Help system incorporates 
+		<term>slave</term> Help system modules dynamically when the user opens
+		the Help. 
+	 </p> 
+	 <p>The 
+		<synph>navref</synph> element provides for run-time modular navigation
+		structures. In other words, the target defined by 
+		<synph>navref</synph> is resolved not when the parent ditamap is being
+		built, but when the resultant deliverable is being rendered. It is a fairly
+		obscure element, and is not commonly used. 
+	 </p> 
+	 <p>You may choose to use 
+		<synph>navref</synph> as a placeholder when you are building a document
+		suite, where a constituent ditamap is not yet available. Even though the 
+		<synph>navref</synph> 
+		<synph>href</synph> is not available, the ditamap will still build. When
+		the map referenced by the 
+		<synph>navref</synph> is available, the 
+		<synph>navref</synph> should be replaced by a normal 
+		<synph>topicref.</synph> 
+	 </p> 
+	 <section id="section_8E68375E4A5F4A1B896F9791A50EC6CA"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<lq
+		 reftitle="Robert Anderson, OASIS DITA Technical Committee mailing list, 7 Dec 2009 ">In
+		  particular, authors building for Eclipse use this to reference another
+		  component that may or may not be available. When the other component is
+		  installed, the navref results in a TOC that pulls in the other component's TOC
+		  entries. When it is not available, nothing is pulled in. 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

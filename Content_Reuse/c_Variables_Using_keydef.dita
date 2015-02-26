@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_7016766027BF414AAC785D0B409FE71E" rev="1.2" xml:lang="en"
+ status="new"> 
+  <title>Variables using indirection</title> 
+  <shortdesc>The 
+	 <synph>keyword</synph> element can be used as a container for variable
+	 words and phrases, when used in conjunction with the 
+	 <synph>keydef</synph> element in the ditamap. Rather than enter the value
+	 of the keyword directly into the element, you can indirectly reference it
+	 through a 
+	 <term>key</term>. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>variables</indexterm><indexterm>indirection</indexterm><indexterm>keyword
+			 element</indexterm><indexterm>keydef
+			 element</indexterm><indexterm>elements<indexterm>keyword</indexterm><indexterm>keydef</indexterm></indexterm><indexterm>attributes<indexterm>keyref</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>The 
+		<synph>keyref</synph> feature introduced in 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_DITA12"><?xm-replace_text Phrase?></ph>
+		allows re-used terms or phrases that often vary according to output publication
+		to be managed more easily. You can collect such 
+		<term>variable</term> terms into a 
+		<synph>keydef</synph> section in the ditamap, and then use the 
+		<synph>keyword</synph> and its 
+		<synph>keyref</synph> attribute to re-use them. You must also nominate a 
+		<term>fallback</term> value, in case the relevant key is not defined in
+		any ditamap in which the topic is referenced. 
+	 </p> 
+	 <p>Because the content model of the 
+		<synph>keyword</synph> element in a ditamap is different to that in a
+		topic, you have to contain the ditamap keyword element within 
+		<synph>topicmeta</synph> and 
+		<synph>keywords</synph> elements. 
+	 </p> 
+	 <p>As a simple example, a generic car component topic can include the name
+		of the specific car in whose manual the topic appears. A sentence in the
+		generic topic may be: 
+		<codeblock>Your &lt;keyword keyref="car_name"&gt;car&lt;keyword&gt; has high intensity discharge headlamps.</codeblock>If that topic is included in a ditamap with a key defined as: 
+		<codeblock>&lt;keydef keys="car_name"&gt;
+  &lt;topicmeta&gt;&lt;keywords&gt;&lt;keyword&gt;Liberty&lt;/keyword&gt;&lt;/keywords&gt;&lt;/topicmeta&gt;
+&lt;/keydef&gt;</codeblock> the topic will be rendered as: 
+		<codeblock>Your Liberty has high intensity discharge headlamps.</codeblock> 
+	 </p> 
+	 <p>In this example, if the ditamap didn't have a definition for the 
+		<userinput>car_name</userinput> key, the word 
+		<q>car</q>, which is the value of the 
+		<synph>keyword</synph> element in the topic, would be used in the output.
+		
+	 </p> 
+	 <note>You may find it easier to manage keys in the ditamap if you use a
+		separate, nested ditamap to contain the keys only. 
+	 </note> 
+	 <example id="example_A9AC090DA0C24201B63D6553AB6F5C93" audience="contributor"
+			product="academic_only">
+			<title>Example of keydef variable code for testing</title>
+			<p>The <keyword keyref="product_name">Liberty</keyword> is a family vehicle available as
+				a sedan or station wagon. </p>
+			<p>To see the result of this construct in output, you must set, in the ditamap, a
+					<synph>keydef</synph> with a <synph>keys</synph> attribute of
+					<userinput>product_name</userinput> with a <synph>keyword</synph> value of
+					<userinput>Legacy</userinput>. If there is no keyword in the ditamap, the
+				rendered result will revert to <systemoutput>Liberty</systemoutput>. </p>
+		</example> 
+  </conbody> 
+</concept> 

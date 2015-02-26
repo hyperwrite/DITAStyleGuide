@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="Dc_Semantics_in_Steps" status="new"> 
+  <title>Semantics in steps</title> 
+  <shortdesc>The steps of a procedure are defined in a task topic. Task topics
+	 typically have a simple structure of a single set of steps, but some procedures
+	 may require a more sophisticated structure that includes substeps and decision
+	 points. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>semantics</indexterm><indexterm>task
+			 information type<indexterm>syntax</indexterm></indexterm><indexterm>task
+			 topic<indexterm>syntax</indexterm></indexterm><indexterm>steps
+			 element</indexterm><indexterm>procedures</indexterm><indexterm>elements<indexterm>steps</indexterm><indexterm>postreq</indexterm><indexterm>prereq</indexterm><indexterm>context</indexterm><indexterm>substeps</indexterm><indexterm>choices</indexterm><indexterm>choicetable</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>Of the three original base information types in DITA, the 
+	 <option>task</option> type is the most 
+	 <term>strongly typed</term>. In other words, the 
+	 <option>task</option> information type has the strictest rules. A task must
+	 be made up of one set of steps only. If you feel you need more than one set of 
+	 <synph>steps</synph>, you almost certainly need to create more than one
+	 task topic. 
+	 </p> 
+	 <p>In most cases, a set of steps is made up of one or more 
+		<synph>step</synph> elements, with each 
+		<synph>step</synph> element comprising a mandatory command
+		(<synph>cmd</synph>) element, and an optional 
+		<synph>stepresult</synph> element. 
+	 </p> 
+	 <p>The syntax of a typical set of steps is as in the following example: 
+		<codeblock>&lt;steps&gt;
+  &lt;step&gt;
+    &lt;cmd&gt;Turn the key to the right.&lt;cmd&gt;
+    &lt;stepresult&gt;The engine light will illuminate.&lt;/stepresult&gt;
+  &lt;/step&gt;
+  &lt;step&gt;
+    &lt;cmd&gt;Press the &lt;uicontrol&gt;Start&lt;/uicontrol&gt; button.&lt;/cmd&gt;
+  &lt;/step&gt;
+&lt;/steps&gt;</codeblock> 
+	 </p> 
+	 <p>In some cases, the complexity of a set of steps requires a more complex
+		structure. Three more sophisticated elements can be used in such cases: 
+	 <ul id="ul_F37ACECF738D42E5BA9FEA57DC8A9492"> 
+		<li id="li_6F3D3BFB20F74A4EA16381D91ABF7D15"><synph>substeps</synph> 
+		</li> 
+		<li id="li_15D97F8AC24A481A897BC69E50E248A0"><synph>choices</synph> 
+		</li> 
+		<li id="li_91A38B9D86E247209F52FC97D807C9CC"><synph>choicetable</synph> 
+		</li> 
+	 </ul> 
+	 </p> 
+	 <p>Examples are often a good way of explaining a task, and the 
+	 <option>task</option> information type allows one (optional) example of a
+	 step to be included (<synph>stepxmp</synph>) after any 
+	 <synph>cmd</synph> element, and for one (optional) overall example to be
+	 included after the 
+	 <synph>steps</synph> block. 
+	 </p> 
+	 <p>Explanatory information to support a command can optionally be added
+		after the 
+		<synph>cmd</synph> within a 
+		<synph>step</synph> through the 
+		<synph>info</synph> element. 
+	 </p> 
+	 <p>Before the 
+		<synph>steps</synph> block, the context in which a task is performed can
+		be described through a 
+		<synph>context</synph> element. If there are any pre-requisites or
+		pre-conditions for a task to be performed, these can be described in the 
+		<synph>prereq</synph> element above the 
+		<synph>steps</synph> block. 
+	 </p> 
+	 <p>After the 
+		<synph>steps</synph> block, any post-requisites can be described (using
+		the 
+		<synph>postreq</synph> element), and the overall result of the task steps
+		can be described in a 
+		<synph>result</synph> element. 
+	 </p> 
+	 <p>The overall structure of a task topic is: 
+		<codeblock>&lt;task&gt;
+ &lt;shortdesc&gt;...&lt;/shortdesc&gt;
+ &lt;taskbody&gt;
+  &lt;prereq&gt;...&lt;/prereq&gt;
+  &lt;context&gt;...&lt;/context&gt;
+  &lt;steps&gt;
+  ...
+  &lt;/steps&gt;
+  &lt;result&gt;...&lt;/result&gt;
+  &lt;example&gt;...&lt;/example&gt;
+  &lt;postreq&gt;...&lt;/postreq&gt;
+ &lt;/taskbody&gt;
+&lt;/task&gt;</codeblock> 
+	 </p> 
+  </conbody> 
+</concept> 

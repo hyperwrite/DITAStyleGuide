@@ -1,0 +1,115 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D9384" status="new"> 
+  <title>Critical dates</title> 
+  <shortdesc>Metadata relating to important dates in the life cycle of the
+	 document are stored in a 
+	 <synph>created</synph> and 
+	 <synph>revised</synph> elements in the topic 
+	 <synph>prolog</synph> or ditamap 
+	 <synph>topicmeta</synph> elements. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>elements<indexterm>critdates</indexterm><indexterm>created</indexterm><indexterm>revised</indexterm></indexterm><indexterm>created
+			 element</indexterm><indexterm>revised element</indexterm><indexterm>critdates
+			 element</indexterm><indexterm>attributes<indexterm>date</indexterm><indexterm>modified</indexterm><indexterm>golive</indexterm><indexterm>expiry</indexterm></indexterm><indexterm>date
+			 attribute</indexterm><indexterm>modified attribute</indexterm><indexterm>golive
+			 attribute</indexterm><indexterm>expiry attribute</indexterm><indexterm>critical
+			 dates</indexterm><indexterm>Document Development Life
+			 Cycle</indexterm><indexterm>date format</indexterm><indexterm>prolog
+			 elements</indexterm><indexterm>topicmeta</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>The topic's 
+		<synph>prolog</synph> element (and the 
+		<synph>topicmeta</synph> equivalent in the ditamap) contains a 
+		<synph>critdates</synph> element, which is used to store date information
+		relating to the document life cycle. Two types of date information can be
+		stored in specific date elements: 
+	 <dl> 
+		<dlentry> 
+		  <dt><synph>created</synph> element 
+		  </dt> 
+		  <dd>dates associated with the topic as originally created 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt><synph>revised</synph> element 
+		  </dt> 
+		  <dd>dates associated with the most recently revised content in the
+			 topic 
+		  </dd> 
+		</dlentry> 
+	 </dl> 
+	 </p> 
+	 <p>Only one 
+		<synph>created</synph> element is allowed, but as many 
+		<synph>revised</synph> elements as required are allowed. 
+	 </p> 
+	 <p> The 
+		<synph>created</synph> element can store specific dates in the following
+		attributes: 
+	 <dl> 
+		<dlentry> 
+		  <dt>date 
+		  </dt> 
+		  <dd>the topic creation date 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt>golive 
+		  </dt> 
+		  <dd>the date the topic was released (made generally available) 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt>expiry 
+		  </dt> 
+		  <dd>the date when the topic content is expected to become obsolete (or
+			 need to be reviewed) 
+		  </dd> 
+		</dlentry> 
+	 </dl> 
+	 </p> 
+	 <p> The 
+		<synph>revised</synph> element can store specific dates in the following
+		attributes: 
+	 <dl> 
+		<dlentry> 
+		  <dt>modified 
+		  </dt> 
+		  <dd>the date the content of the topic was last modified 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt>golive 
+		  </dt> 
+		  <dd>the date the modified topic was released (made generally available)
+			 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt>expiry 
+		  </dt> 
+		  <dd>the date when the topic content is expected to become obsolete (or
+			 need to be reviewed) 
+		  </dd> 
+		</dlentry> 
+	 </dl> 
+	 </p> 
+	 <p>All dates should be entered in 
+		<varname>YYYY-MM-DD</varname> format, where 
+		<varname>YYYY</varname> is the year, 
+		<varname>MM</varname> is the number of the month, and 
+		<varname>DD</varname> is the number of the day. 
+	 </p> 
+	 <p>An example of a 
+		<synph>critdates</synph> section is: 
+		<codeblock>&lt;critdates&gt;
+  &lt;created date="2009-10-22" golive="2009-11-30" /&gt;
+  &lt;revised modified="2009-12-01" golive="2010-01-01" expiry="2010-02-27" /&gt;
+  &lt;revised modified="2010-02-09" golive="2010-02-27" expiry="2010-12-30" /&gt;
+&lt;/critdates&gt;</codeblock> 
+	 </p> 
+  </conbody> 
+</concept> 

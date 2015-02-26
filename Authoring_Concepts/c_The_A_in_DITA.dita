@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept id="D9184" status="new" xml:lang="en"> 
+  <title>The A in DITA</title> 
+  <shortdesc>DITA provides a standardised architectural framework for creating
+	 and maintaining content. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>architecture</indexterm><indexterm>open
+			 standard</indexterm><indexterm>information
+			 architecture</indexterm><indexterm>Rockley, Manning, et
+			 al</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>DITA can be described as an approach to information architecture. That's
+		why there's an A for Architecture in DITA! 
+	 </p> 
+	 <p>A great definition of architecture in the DITA context can be found in
+		the book 
+		<cite>DITA 101</cite>: 
+		<lq reftitle="Ann Rockley, Steve Manning, and Charles Cooper">An open
+		  content standard that defines a common structure for content that promotes the
+		  consistent creation, sharing, and re-use of content. 
+		</lq> 
+	 </p> 
+	 <p>This definition is great because it highlights the facts that: 
+	 <ul outputclass="listbullet" id="ul_1678500A98EE4FA8885AE989876F4624"> 
+		<li id="li_7057653668C34F56A9276C26A8C203F8">DITA is an open standard 
+		</li> 
+		<li id="li_1CDA313C3D424ACBAE39CE118E8B9DAA">standards encourage
+		  consistency 
+		</li> 
+		<li id="li_3C025C2E7A5944DE87E7799C0F65648C">consistency allows content
+		  re-use and content sharing 
+		</li> 
+	 </ul> 
+	 </p> 
+  </conbody> 
+</concept> 

@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D9119" status="new"> 
+  <title>Element IDs </title> 
+  <shortdesc>Most DITA elements have an 
+	 <synph>id</synph> attribute, which is used to uniquely identify the element
+	 when the element is re-used. In most cases, 
+	 <synph>id</synph> attributes are optional, but an exception is the topic's
+	 root element, where it is mandatory. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>id
+			 attribute</indexterm><indexterm>attributes<indexterm>id</indexterm></indexterm><indexterm>GUID</indexterm><indexterm>unique
+			 identifiers</indexterm><indexterm>cross-references</indexterm><indexterm>conref<index-see-also>conref
+				attribute</index-see-also></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>The 
+		<synph>id</synph> attribute of elements must be unique in the context of
+		a file, but ideally, should also be unique in the context of a publication.
+		Many authoring tools automatically generate unique identifiers for elements
+		using a 
+		<term>GUID</term>. The 
+		<synph>id</synph> attribute is used in referencing, such as
+		cross-references (<synph>xref</synph>) and content references
+		(<synph>conref</synph>). 
+	 </p> 
+	 <p>ID attributes in DITA must start with an alphabetical character, and
+		cannot start with a numerical character. The XML rules for ID attributes
+		require them to start with a letter or an underscore (or a colon). 
+	 </p> 
+	 <p>ID attributes are mandatory for the topic root elements
+		(<synph>topic</synph>, 
+		<synph>concept</synph>, 
+		<synph>task</synph> and 
+		<synph>reference</synph>), but are optional for most other elements. 
+	 </p> 
+	 <p importance="high">If you are going to exchange DITA documents with
+		others, you must ensure that the interchanged document set has unique
+		identifiers; this may require the establishment of naming conventions to avoid
+		identifier conflicts. 
+	 </p> 
+	 <p>Example of a generated (GUID) 
+		<synph>id</synph> attribute: 
+		<codeblock>&lt;concept id="concept_F544B5D5759746C2A199A99518FA1EAE"&gt;</codeblock> 
+	 </p> 
+	 <p>Examples of manually created 
+		<synph>id</synph> attributes: 
+		<codeblock>&lt;concept id="c9119"&gt;</codeblock> 
+		<codeblock>&lt;cite id="cite_chicago_manual_of_style_ed4"&gt;</codeblock> 
+	 </p> 
+  </conbody> 
+</concept> 

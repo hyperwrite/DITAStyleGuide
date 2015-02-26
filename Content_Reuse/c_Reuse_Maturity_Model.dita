@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D2839" status="new"> 
+  <title>Re-use and the DITA Maturity Model</title> 
+  <shortdesc>Content re-use is one of the features that you should adopt early
+	 in your move from style-based authoring to structured authoring with DITA. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>exemplar<indexterm>footnote</indexterm></indexterm><indexterm>DITA
+			 Maturity Model</indexterm><indexterm>Priestley,
+			 Michael</indexterm><indexterm>Swope, Amber</indexterm><indexterm>levels of DITA
+			 adoption</indexterm><indexterm>adoption<indexterm>levels of
+				DITA</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>The 
+		<cite>DITA Maturity Model</cite><fn>Just Systems Whitepaper,
+		  http://na.justsystems.com/files/Whitepaper-DITA_MM.pdf</fn> proposed by Michael
+		Priestley and Amber Swope suggests that there are six levels of DITA adoption
+		that an 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_organisation"><?xm-replace_text Phrase?></ph>
+		can embrace. 
+	 </p> 
+	 <p>The six levels are: 
+	 <ul id="ul_A57D16B613FB4C449FACC350E42392CD"> 
+		<li id="li_3206655888194746AD75E08752EAE320">topics 
+		</li> 
+		<li id="li_38F70A5459CF4A979028154A21AA2188"><ph
+		  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_scaleable"><?xm-replace_text Phrase?></ph>
+		  re-use 
+		</li> 
+		<li id="li_F3300A823D2A441D8020A385276CD783"><ph
+		  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialisation"><?xm-replace_text Phrase?></ph>
+		  and 
+		  <ph
+			conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_customisation"><?xm-replace_text Phrase?></ph>
+		  
+		</li> 
+		<li id="li_F120EEE380954446A805967C81071C91">automation and integration 
+		</li> 
+		<li id="li_9E5A8090348A4AD3B3C8AC4DF7F3B7B8">semantics on demand 
+		</li> 
+		<li id="li_DEDFEB8B7DBE475C8A0D1330A5D6ECA6">unified semantic ecosystem 
+		</li> 
+	 </ul> 
+	 </p> 
+	 <p>The second level, beyond simply using DITA as a topic format, is 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_characterised"><?xm-replace_text Phrase?></ph>
+		by the introduction of re-use. In other words, re-use should be one of the
+		first DITA features that you adopt. A good understanding of re-use, and in
+		particular how the 
+		<term>conref</term> (or content reference) idea works, is required for
+		DITA best practice. 
+	 </p> 
+  </conbody> 
+</concept> 

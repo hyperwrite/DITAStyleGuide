@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<concept id="concept_EC1604B0CA6F4D2CABAA511462253265"> 
+  <title>DITA authoring concepts</title> 
+  <shortdesc>Moving from style-based authoring to a structured authoring
+	 methodology such as DITA requires a radically different approach to writing. 
+  </shortdesc> 
+  <conbody> 
+	 <lq reftitle="Ann Rockley">DITA is an open content standard that defines a
+		common structure for content that promotes the consistent creation, sharing,
+		and re-use of content. 
+	 </lq> 
+	 <p> 
+		<draft-comment>This section needs reorganisation, and more DITA overview
+		  content from papers, WinANT, or HATC424. (Perhaps refer to TACTICS workbook?)
+		  Some of the topics should be moved to the Literature review section of the
+		  Exegesis. 
+		</draft-comment> 
+		<draft-comment>Need to add an introduction topic to say that this Manual
+		  of Style isn't a replacement for the DITA Langref, but is intended to be read
+		  alongside it. Also, it is not intended to be a comprehsive guide to all DITA
+		  elements and attributes, and nor is it intended to be a DITA training manual.
+		  It is intended to be a reference when contentious issues are encountered. It
+		  documents a series of suggestions for how DITA shoudl be implemented, and its
+		  main goal is to provide a tool for creating consistent and logical DITA
+		  semantic mark-up. 
+		</draft-comment> 
+		<draft-comment>Do we need a topic explaining the open source movement 
+		</draft-comment> 
+	 </p> 
+  </conbody> 
+</concept> 

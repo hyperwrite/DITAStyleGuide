@@ -1,0 +1,163 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<concept id="concept_076C1CBEE61345B6BCAC9C5828C7F21A" xml:lang="en"
+ status="new"> 
+  <title><ph
+	 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_Specialisation_InitCap"><?xm-replace_text Phrase?></ph></title>
+  
+  <shortdesc><ph
+	 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_Specialisation_InitCap"><?xm-replace_text Phrase?></ph>
+	 allows you to construct your own types of documents without losing the benefits
+	 of working within a DITA framework; in particular, you can maintain 
+	 <ph
+	  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_interchangeability"><?xm-replace_text Phrase?></ph>.
+	 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm
+		  conref="../../conref/conref_source_metadata.dita#topic_hw_conref_meta/index_specialisation"><?xm-replace_text Index Term?></indexterm><indexterm
+		  conref="../../conref/conref_source_metadata.dita#topic_hw_conref_meta/index_generalisation"><?xm-replace_text Index Term?></indexterm><indexterm>DTD</indexterm><indexterm>XSD</indexterm><indexterm>content
+			 model</indexterm><indexterm>base content
+			 model</indexterm><indexterm>information types<indexterm
+			 conref="../../conref/conref_source_metadata.dita#topic_hw_conref_meta/index_specialised"><?xm-replace_text Index Term?></indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>Although 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialisation"><?xm-replace_text Phrase?></ph>
+		is a key part of DITA, it is not yet a widely used feature. It is often viewed
+		as being complicated and technical. But while 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialisation"><?xm-replace_text Phrase?></ph>
+		is often not used when it should be, the reverse is also true: 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialisation"><?xm-replace_text Phrase?></ph>
+		is sometimes used needlessly by 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_organisations"><?xm-replace_text Phrase?></ph>.
+		
+	 </p> 
+	 <p><ph
+		conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_Specialisation_InitCap"><?xm-replace_text Phrase?></ph>
+		means defining your own information types and semantic elements and attributes
+		to suit the needs of your particular content model (the nature of the type of
+		information). A 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialised"><?xm-replace_text Phrase?></ph>
+		element is always based on another DITA element, so that you only need to
+		define how your element is different from what it is based on. 
+	 </p> 
+	 <p>This 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialisation"><?xm-replace_text Phrase?></ph>
+		can only occur within DITA's 
+		<ph
+		conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialisation"><?xm-replace_text Phrase?></ph>
+		rules. In other words, it is a formal, defined process with specific rules. A 
+		<ph
+		conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialisation"><?xm-replace_text Phrase?></ph>
+		is defined by DTD or XSD modules that extend the base DITA DTDs and XSDs. 
+	 </p> 
+	 <p><ph
+		conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_Organisations_InitCap"><?xm-replace_text Phrase?></ph>
+		choose to 
+		<ph
+		conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialise"><?xm-replace_text Phrase?></ph>
+		DITA because they want their documents to follow an 
+		<ph
+		conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_organisation_specific"><?xm-replace_text Phrase?></ph>
+		structure, or they want their documents to contain their own 
+		<ph
+		conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_organisation_specific"><?xm-replace_text Phrase?></ph>
+		metadata. 
+	 </p> 
+	 <p>An example of a 
+		<ph
+		conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialisation"><?xm-replace_text Phrase?></ph>
+		to reflect a particular structure (or 
+		<term>content model</term>) is where you need a variation of a reference
+		topic that contains part numbers, weight, wholesale price, and retail price.
+		The base reference topic has a different structure, so you could 
+		<ph
+		conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialise"><?xm-replace_text Phrase?></ph>
+		it with element names of 
+		<synph>part_no</synph>, 
+		<synph>unit_weight</synph>, 
+		<synph>wsale_price</synph>, and 
+		<synph>retail_price</synph>. 
+	 </p> 
+	 <p>An example of a 
+		<ph
+		conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialisation"><?xm-replace_text Phrase?></ph>
+		to contain metadata is where you want to store the staff number of the
+		programmer responsible for the software module being documented within the
+		topic, in an attribute named 
+		<synph>staff_number</synph>. 
+	 </p> 
+	 <p>Any 
+		<ph
+		conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialised"><?xm-replace_text Phrase?></ph>
+		element or attribute has to be 
+		<ph
+		conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialised"><?xm-replace_text Phrase?></ph>
+		from another DITA element. This element becomes the 
+		<ph
+		conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialised"><?xm-replace_text Phrase?></ph>
+		element's 
+		<term>ancestor</term>. 
+	 </p> 
+	 <p>When you publish a 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialised"><?xm-replace_text Phrase?></ph>
+		topic, and the processor is not aware of your 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialised"><?xm-replace_text Phrase?></ph>
+		information type, it will treat the topic as it would its ancestor. 
+	 </p> 
+	 <p>If you need to exchange topics with someone who doesn't use your 
+		<ph
+		conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialisation"><?xm-replace_text Phrase?></ph>,
+		you might have to 
+		<ph
+		conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_generalise"><?xm-replace_text Phrase?></ph>
+		the topics to return them to the structure of their ancestors. 
+		<ph
+		conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_Generalisation_InitCap"><?xm-replace_text Phrase?></ph>
+		can be wholly automated. 
+	 </p> 
+	 <p><ph
+		conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_Specialisation_InitCap"><?xm-replace_text Phrase?></ph>
+		rules in DITA include the following: 
+	 <ul id="ul_85FC8794EF044B09A297443BE1210A0E"> 
+		<li id="li_BDE7740D9E764937A71E294913C3B62B">You cannot make your 
+		  <ph
+		  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialised"><?xm-replace_text Phrase?></ph>
+		  DITA less restrictive (have looser rules) than the DITA 
+		  <term>base content model</term>. 
+		  <ul id="ul_978E79EB131F40EA90A338DD0D5D1C1C"> 
+			 <li id="li_0755A2DFDDD640B8BB3E8A09C13347B5">You cannot make a
+				mandatory ancestor element optional, and you cannot make a mandatory attribute
+				optional. 
+			 </li> 
+			 <li id="li_67DEED01CE5B4584A8B60771D45F86F7">You cannot allow
+				elements in positions that are not allowed by the 
+				<term>base content model</term>. 
+			 </li> 
+		  </ul> 
+		</li> 
+		<li id="li_AAB07DE19C6E443C8EC2119B99CC7E1B">You cannot add new
+		  element-specific attributes. You can only create new global attributes (or
+		  attributes of elements in the 
+		  <term>base content model</term>. 
+		</li> 
+	 </ul> 
+	 </p> 
+	 <p importance="high"><ph
+		conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_DITA_Style_Manual"><?xm-replace_text Phrase?></ph>
+		
+		<ph
+		conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_focusses"><?xm-replace_text Phrase?></ph>
+		on base DITA. 
+	 </p> 
+  </conbody> 
+</concept> 

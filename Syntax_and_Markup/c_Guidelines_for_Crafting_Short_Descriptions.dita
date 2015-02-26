@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<concept id="concept_6AB4B08F43AD41CE83D096184677E05F" xml:lang="en"
+ status="new"> 
+  <title>Guidelines for crafting short descriptions</title> 
+  <shortdesc>Short descriptions are difficult and time consuming to write.
+	 Following guidelines for 
+	 <synph>shortdesc</synph> creation will make the task easier, and result in
+	 more consistent descriptions. 
+  </shortdesc> 
+  <prolog><author>Kris Eberlein</author><author>Tony
+		Self</author><metadata><keywords><indexterm>short
+			 description</indexterm><indexterm>shortdesc
+			 element</indexterm><indexterm>elements<indexterm>shortdesc</indexterm></indexterm><indexterm>Eberlein,
+			 Kris</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>This table is a summary of the recommendations made by Kris Eberlein in
+		her 
+		<cite>Art of the Short Description</cite> presentation at the 2007 DITA
+		Europe Conference<cite product="academic_only"> (Eberlein, 2007)</cite>. 
+		<simpletable id="simpletable_C6ABA39E4E0E4F33AB555225F6F0BD30"> 
+		  <sthead><stentry>Do:</stentry><stentry>Don't</stentry> 
+		  </sthead> 
+		  <strow><stentry> 
+				<ul id="ul_736CDC4E75C34FB08DB4204EA7D9C1A7"> 
+				  <li id="li_700EF0E89B5F4B43ADD8BE42A33432DD">Make the 
+					 <synph>shortdesc</synph> 
+					 <term>standalone</term>, so that the topic is not dependent
+					 upon the 
+					 <synph>shortdesc</synph>. 
+				  </li> 
+				  <li id="li_8D95507C1E9246D98C9AA4605C1619C5">Make the 
+					 <synph>shortdesc</synph> concise and complete. 
+				  </li> 
+				  <li id="li_CF3411657D324400B487EDDDC24D14E5">Include less than 50
+					 words in only one or two sentences. 
+				  </li> 
+				  <li id="li_A6E0B93AAA5B46E78AA11C3610DD5B2F">Use complete
+					 sentences, except for short topics such as in API documentation. 
+				  </li> 
+				</ul></stentry><stentry> 
+				<ul id="ul_876B53BC80234D1C8D63286985C48B1B"> 
+				  <li id="li_1662FB43B1E049ECB1E470D8B13C7083">Restate the title. 
+				  </li> 
+				  <li id="li_7054C72A436E4EFA852A858585124F27">State the obvious. 
+				  </li> 
+				  <li id="li_AD545E2BB5CD411DA00A343904CA6BB9">Start the 
+					 <synph>shortdesc</synph> with 
+					 <q>this topic...</q>. 
+				  </li> 
+				  <li id="li_C340B8458D4545E389EEBA43AF7EC042">Use the 
+					 <synph>shortdesc</synph> as a lead-in sentence. 
+				  </li> 
+				</ul></stentry> 
+		  </strow> 
+		</simpletable> 
+	 </p> 
+	 <p>Different approaches to writing short descriptions are required for
+		different information types. 
+	 </p> 
+	 <simpletable id="simpletable_F46198C293234ECAA3E30E982FEDA430"> 
+		<sthead><stentry>Information Type</stentry><stentry>Guidelines</stentry> 
+		</sthead> 
+		<strow><stentry>Task</stentry><stentry> 
+			 <p>The 
+				<synph>shortdesc</synph> should answer the questions of what are
+				the benefits of the task, and what is the purpose of the task. Include
+				information about when the user should perform the task (or why the task is
+				necessary). If applicable, include information about who performs the task. 
+			 </p></stentry> 
+		</strow> 
+		<strow><stentry>Concept</stentry><stentry> 
+			 <p>The 
+				<synph>shortdesc</synph> should answer the questions of what is
+				this, and why do I care about this. Start with a brief definition, if the
+				concept is unfamiliar. Make sure the 
+				<synph>shortdesc</synph> contains the main point of the topic. 
+			 </p></stentry> 
+		</strow> 
+		<strow><stentry>Reference</stentry><stentry> 
+			 <p>The 
+				<synph>shortdesc</synph> should answer the questions of what are
+				the items, what do they do, and what are they used for. Use consistent phrasing
+				across document sets so that your information can be easily integrated into a
+				range of publications. 
+			 </p></stentry> 
+		</strow> 
+	 </simpletable> 
+	 <section id="section_6DEFDADA84F0467BAAC687C86A0B944C"
+	 audience="contributor"> 
+		<title>Rationale</title> 
+		<p><cite>Eberlein (2007)</cite> also suggests that if a topic only
+		  contains one paragraph, that paragraph should be contained in the 
+		  <synph>shortdesc</synph> (resultantly, with no text in the topic body).
+		  I disagree, because following this path the topic will be empty if the 
+		  <synph>shortdesc</synph> is excluded from the output. 
+		</p> 
+	 </section> 
+  </conbody> 
+</concept> 

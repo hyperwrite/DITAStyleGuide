@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_95C6B525BA54416CB9A73C0E2A8CC0DB"> 
+  <title>Product, company names, and other keywords</title> 
+  <shortdesc>Product names, company names, and other special names are
+	 identified using the 
+	 <synph>keyword</synph> element. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>elements<indexterm>keyword</indexterm></indexterm><indexterm>keyword
+			 element</indexterm><indexterm>product names</indexterm><indexterm>company
+			 names</indexterm><indexterm>department names</indexterm><indexterm>category
+			 names</indexterm><indexterm>project names</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>When used inline within the body content, a 
+		<synph>keyword</synph> element identifies names that have a special
+		meaning, such as company names, product names, project names, department names,
+		and categories. 
+	 </p> 
+	 <p>These sort of names are almost always repeated in a suite of documents,
+		so you should 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_endeavour"><?xm-replace_text Phrase?></ph>
+		to re-use 
+		<synph>keyword</synph> elements using the conref feature. 
+	 </p> 
+	 <p>The 
+		<synph>keyword</synph> element is not related to the 
+		<synph>kwd</synph> element, which is used in syntax diagrams to identify
+		programming keywords. 
+	 </p> 
+	 <p> 
+		<draft-comment>The use of this element is complicated by the fact that it
+		  will automatically be included in the topic's metadata. 
+		</draft-comment> 
+	 </p> 
+	 <section id="section_AD3B16E1767344A684958CB77140EDE1"
+	 audience="contributor"> 
+		<title>Rationale</title> 
+		<lq reftitle="DITA 1.2 Specification"> 
+		  <p> "Keyword" 
+		  </p> 
+		  <p>means any text that has a unique or key-like value. For example, a
+			 product name. Where there is a element that has a better meaning for what you
+			 are describing, use that element. The keyword element is a generic element; use
+			 it when no other element applies. The keyword element can also be used to
+			 contain reusable text. 
+		  </p> 
+		  <p>Specific mark-up recommendations: 
+		  <ul id="ul_4E630C2210DA46C0BD68CC1B90905395"> 
+			 <li id="li_809ECC56A99A42F781F1C70933106B07">Use &lt;apiname&gt; for
+				API names and &lt;cmdname&gt; for command names. 
+			 </li> 
+			 <li id="li_4860EA347D72417A81ABE83B1ABA9098">&lt;term&gt;should be
+				used for inline paragraph definitions; to indicate what you're defining. 
+			 </li> 
+			 <li id="li_9156537DEA8445D2A7F268BC957E999D">&lt;ph&gt; should be
+				used for general phrases; when you think that keyword is not appropriate. 
+			 </li> 
+			 <li id="li_A7D4EC2E5DBA4661B83E001BD3060ACA">Inside syntax diagrams
+				and syntax phrases, use &lt;kwd&gt; to indicate a programming keyword. 
+			 </li> 
+		  </ul> 
+		  </p> 
+		  <p>When DITA topics are rendered as XHTML, any &lt;keyword&gt; or
+			 &lt;indexterm&gt; elements in the &lt;keywords&gt; metadata element are placed
+			 in the Web page metadata. In addition, any index terms in this context are also
+			 used for supported index processing (for example, for print versions). 
+		  </p> 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

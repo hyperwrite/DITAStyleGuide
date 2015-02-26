@@ -1,0 +1,128 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D9148" status="new"> 
+  <title>Cross-referencing a step</title> 
+  <shortdesc>Cross-references to steps are accomplished with the 
+	 <synph>xref</synph> element with a 
+	 <synph>type</synph> attribute of 
+	 <userinput>li</userinput>. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>cross-references<indexterm>to
+				steps</indexterm></indexterm><indexterm>step
+			 references</indexterm><indexterm>references<indexterm>to
+				steps</indexterm></indexterm><indexterm>xref element</indexterm><indexterm>step
+			 element<indexterm>cross-referencing</indexterm></indexterm><indexterm>elements<indexterm>xref</indexterm><indexterm>step</indexterm></indexterm></keywords></metadata>
+  </prolog>
+  <conbody> 
+	 <p>When referring a reader to a step in a task, you should not hard-code
+		the step number. In different contexts (such as when the content is filtered or
+		transcluded) the step number may be different, or if a step is added, there is
+		a high risk that the hard-coded reference won't be updated. 
+	 </p> 
+	 <p importance="high">You must always use the 
+		<synph>xref</synph> element to cross-reference steps, with the 
+		<synph>type</synph> attribute set to 
+		<userinput>li</userinput>. (The 
+		<synph>li</synph> element is the ancestor of the 
+		<synph>step</synph> element.) 
+	 </p> 
+	 <p>You can only reference a step by its 
+		<synph>id</synph> attribute; therefore, before you can cross-reference to
+		a step, you must ensure that the 
+		<synph>step</synph> element's 
+		<synph>id</synph> attribute has a value. 
+	 </p> 
+	 <p>The following example illustrates how to cross-reference a step number.
+		Don't include any text in the 
+		<synph>xref</synph> element, otherwise this text will be rendered (in
+		most publishing tools), not the step number. 
+	 </p> 
+	 <codeblock>&lt;task id="keypad1"&gt;
+...
+&lt;step id="a"&gt; 
+      &lt;cmd&gt;..&lt;/cmd&gt; 
+      &lt;/step&gt; 
+      &lt;step&gt; 
+      &lt;cmd&gt;Repeat step &lt;xref href="#keypad1/a" type="li" /&gt; until the red light displays.&lt;/cmd&gt; 
+      &lt;/step&gt;
+...
+&lt;/task&gt;</codeblock> 
+	 <p>Referring to a step in another topic is almost identical; the difference
+		is that the 
+		<synph>href</synph> attribute will include the file name of the other
+		topic. Again, you must set the 
+		<synph>type</synph> attribute to 
+		<userinput>li</userinput>. 
+	 </p> 
+	 <codeblock>&lt;cmd&gt;Complete step &lt;xref href="c_panel.dita#keypad2/b" type="li" /&gt; of 
+the PIN recovery procedure.&lt;/cmd&gt; 
+</codeblock> 
+	 <section id="section_510B44102C9147E5A259E60EF78E4082"
+	 audience="contributor"> 
+		<title>Rationale</title> 
+		<lq reftitle="Deborah Pickett, Yahoo! DITA Users Group"
+		href="http://tech.groups.yahoo.com/group/dita-users/message/13292">Use &lt;xref
+		  href="#thistopicid/step1id" type="li"/&gt;. Editors might not put the @type
+		  attribute on. It is supposed to default to the right type in processing, but
+		  DITA-OT didn't always do so. I recommend setting it explicitly. 
+		</lq> 
+		<lq href="http://tech.groups.yahoo.com/group/dita-users/message/12440"
+		 reftitle="Beth Thoenen, quoting Judy Kessler, Yahoo! DITA Users Group"> 
+		  <p>Linking within a Topic 
+		  </p> 
+		  <p>Insert a cross-reference to a step or other element within the same
+			 topic. Prerequisites In the DITA map or search results, right-click the topic
+			 that will contain the link and choose Edit (or Open and Lock). Use this
+			 procedure to insert an automatically updated reference to any element in the
+			 current topic that has an ID. 
+		  </p> 
+		  <ol id="ol_71E684226D6343D9BC6568DADA917B26"> 
+			 <li id="li_E75F9C4CD0554932B63D060EBAC5E27E">Put the cursor
+				immediately inside the step element you want to reference, before the
+				&lt;cmd&gt; element. 
+			 </li> 
+			 <li id="li_C2F03E8507EA44E585D456C0DD00F48B">In Attribute Inspector,
+				enter a value in the id attribute for this step, if it does not have one
+				already. Imported topics originally developed in XMetaL usually have IDs on
+				steps, listitems, tables, figures, and some other elements. Elements in topics
+				created in the CMS do not have an ID unless you add one. Enter any text that
+				identifies the step, for example, copy_ref_step. 
+			 </li> 
+			 <li id="li_6D6F8F0EE702450DAB3B8C9134E1BCAB">Save. 
+			 </li> 
+			 <li id="li_6E35060F61734B0F88405D38E59AB234">With the cursor
+				immediately inside in the step element , right-click and choose Copy Reference.
+				
+			 </li> 
+			 <li id="li_BA6F0A85501542F9846BD397BEFEF065">Insert an &lt;xref&gt;
+				element where you want the link to appear. 
+			 </li> 
+			 <li id="li_49A98AA2BF9440D38B8FD11D37826FFE">In Attribute Inspector,
+				paste the copied reference into the href attribute of the &lt;xref&gt;. The
+				href looks something like this:
+				LDO:asc1213046590572.xml#asc1213046590572/copy_ref_step 
+			 </li> 
+			 <li id="li_8A6FA12EF5FE465085ECD75C3F5A5381">Delete everything before
+				the pound sign (#) from the href. Now the href looks something like this:
+				#asc1213046590572/copy_ref_step 
+			 </li> 
+			 <li id="li_35F1A0425E244D728A27661BE324DC59">Release the topic. 
+			 </li> 
+		  </ol> 
+		  <p>In Web and Eclipse output, the step number appears. In PDF output
+			 the step number appears followed by the page number. Example: Cross-reference
+			 to a step A cross-reference to the step in this topic that instructs you to
+			 Copy Reference contains an &lt;xref&gt; element with no link text in the
+			 source. In built output it looks like this: 4, with just the step number in Web
+			 and Eclipse, and the step number and page in PDF. 
+		  </p> 
+		</lq> 
+		<note>In the DITA Open Toolkit at least, a 
+		  <synph>type</synph> attribute of st<userinput><?xm-replace_text User Input?></userinput>ep
+		  will yield the same results as a typ<synph></synph>e attribute of 
+		  <userinput>li</userinput>. 
+		</note> 
+	 </section> 
+  </conbody> 
+</concept> 

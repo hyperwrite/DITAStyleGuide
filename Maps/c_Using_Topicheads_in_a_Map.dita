@@ -1,0 +1,157 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D2296" status="new"> 
+  <title>The 
+	 <synph>topichead</synph> element</title> 
+  <shortdesc>The 
+	 <synph>topichead</synph> element in the ditamap provides a title-only node
+	 in the hierarchy, into which normal topic references are nested. Although
+	 technically valid, this element should not be used because it results in
+	 inconsistent output. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>topichead
+			 element</indexterm><indexterm>elements<indexterm>topichead</indexterm></indexterm><indexterm>map
+			 headings</indexterm><indexterm>ditamap elements</indexterm><indexterm>topic
+			 headings</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>The 
+		<synph>topichead</synph> element in the ditamap provides a way of
+		creating a parent node in the hierarchy section without needing to have a
+		corresponding topic. 
+	 </p> 
+	 <p importance="high">You should avoid using 
+		<synph>topichead</synph> elements for your final ditamap. However, you
+		might find them useful when drafting or planning your collection structure. 
+	 </p> 
+	 <p>There are two main reasons why topichead elements should be avoided. 
+	 </p> 
+	 <p>The first is that it conflicts with the notion of the separation of
+		content and form, and the separation of data and metadata. All 
+		<term>content</term> (<term>data</term>) in a document should reside in
+		the topics, not in the map. The ditamap should only contain 
+		<synph>metadata</synph>. If you use 
+		<synph>topichead</synph> as an alternative to a title-only topic, you are
+		effectively placing non-reusable content, or data, in the ditamap. 
+	 </p> 
+	 <p>The second reason is more practical. If you are transforming a ditamap
+		to a hypertext output format with a TOC, such as to Eclipse Help, the 
+		<synph>topichead</synph> elements will be transformed to unlinked parent
+		nodes in the TOC. When the user clicks on such a node, the content pane will
+		not display an associated topic, as it will for other nodes in the TOC. This
+		inconsistency appears to the user to be an error. The unlinked node in the TOC
+		will also cause inconsistencies or malfunctions in the way breadcrumbs
+		function, and the way sequences (previous and next topic links) function. 
+	 </p> 
+	 <section id="section_B6E5B7963E494D6695CE53D4ED4CEE77"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<p>Exactly the same issue as "unlinked books" in a Help TOC. 
+		</p> 
+		<p>Problem with Eclipse Help reported as: 
+		</p> 
+		<lq>Not sure if this is a DITA-OT problem or Eclipse InfoCenter issue. In
+		  my ditamap, I have a procedure with several &lt;topicrefs&gt; and one
+		  &lt;topichead&gt; with nested topicrefs. I have the collection-type set to
+		  sequence. In my output (Eclipse Infocenter), the topicref preceding the
+		  topichead "skips" the topichead and lists the 'Next Topic' as the topicref that
+		  follows the topichead. Example: 1 - topicref 2 - topichead 2.1 topicref 2.2
+		  topicref 3 topicref In the output: For 1 - topicref: "Next Topic = 3 topicref"
+		  For 3 - topicref: "Previous Topic = 1 topicref" Seems step 2 "topichead" is
+		  ignored. Do you think this is an Eclipse problem or Toolkit problem? 
+		</lq> 
+		<p>Not good practice to have unlinked books, as they break the simplistic
+		  model of hypertext being made up of topics and links. A TOC is a specialised
+		  link list. An unlinked book (parent) does not link to a topic, and is therefore
+		  counter-intuitive. 
+		</p> 
+		<lq reftitle="Eliot Kimber, Yahoo! DITA Users Group"
+		 href="http://tech.groups.yahoo.com/group/dita-users/message/16879"> 
+		  <p>For DITA 1.2 we have added the statement what when a topichead (a
+			 topicref with no href or keyref attribute) specifies chunk="to-content" ,
+			 processors must generate (or act as though they had generated) a chunk for the
+			 topichead and, in that case, an xref to the topichead is a cross reference to
+			 the resulting chunk topic, as though the topichead had been a topicref to a
+			 title-only topic. 
+		  </p> 
+		  <p>Likewise, if a topichead specifies chunk="to-navigation", it means
+			 that a cross reference to the topichead is to the navigation structure (e.g.,
+			 TOC) generated from the topichead. In the PDF case this would mean that xref
+			 takes you to the TOC and not the body of the document. 
+		  </p> 
+		</lq> 
+		<lq href="http://tech.groups.yahoo.com/group/dita-users/message/16879"
+		 reftitle="Eliot Kimber, Yahoo! DITA Users Group">In DITA 1.1 it was a bit
+		  ambiguous what the rendering implications for topicheads were and therefore
+		  what the implication of a crossref to a topichead would be. The issue is that,
+		  without more information, a topichead exists only in the navigation structure,
+		  so what does it mean to have an xref to one? Where should the rendered xref
+		  take the reader? To the TOC? For PDF, or another monolithic output, it would be
+		  sensible for a crossref to a topichead to resolve to the title generated for
+		  that topichead in the main body of the result document, as though the topichead
+		  had been a topicref to a title-only topic. For HTML it's not so clear, since
+		  normally a topichead would not have a corresponding HTML page, but would only
+		  be an entry in a generated TOC. In that case, what should the xref do? For DITA
+		  1.2 we have added the statement what when a topichead (a topicref with no href
+		  or keyref attribute) specifies chunk="to-content", processors must generate (or
+		  act as though they had generated) a chunk for the topichead and, in that case,
+		  an xref to the topichead is a cross reference to the resulting chunk topic, as
+		  though the topichead had been a topicref to a title-only topic. Likewise, if a
+		  topichead specifies chunk="to-navigation", it means that a cross reference to
+		  the topichead is to the navigation structure (e.g., TOC) generated from the
+		  topichead. In the PDF case this would mean that xref takes you to the TOC and
+		  not the body of the document. I haven't tested the latest Toolkit release to
+		  see if these behaviors are implemented for both HTML and PDF output. 
+		</lq> 
+		<lq reftitle="Julio Vazquez, LinkedIn DITA Awareness Group Discussion">
+		  Topichead is basically a navigational construct to put a heading at the
+		  beginning of a group of topics. I'm not sure what you're trying to achieve, but
+		  I find little use for it myself and clicking on the topichead in a navigation
+		  doesn't bring you to any content. 
+		</lq> 
+		<lq
+		reftitle="Ole Rom Anderson, LinkedIn DITA Awareness Group Discussion"> We find
+		  it very useful for e.g. Chapter Headlines in PDF's and also for adding an extra
+		  layer in HTML output. For the same reason it is a standard 'feature' in the
+		  Publication Editor we provide to our customers (the web-based ditamap-editor in
+		  DITA Exchange). You do not have to do it this way, but it is an option for
+		  providing a good navigation structure I have not seen any drawbacks from using
+		  it. You can 'instruct' the publishing engine to ignore it if you have no use
+		  for it in a specific publication. 
+		</lq> 
+		<lq reftitle="Yves Barbion, LinkedIn DITA Awareness Group Discussion">You
+		  can use &lt;topichead&gt; but also a "title-only topic" to group a number of
+		  topics. A "title-only topic" just contains a title and a prolog, nothing else.
+		  Some people prefer to use &lt;topichead&gt;, others prefer title-only topics,
+		  and they all have good reasons to use one or the other. Both approaches work,
+		  but they give different results in different types of output, depending on the
+		  (version of) tools you use to generate the (PDF) output. In *theory*, you
+		  shouldn't look at the output to decide which elements or constructs to use at
+		  the input, i.e. in your DITA topics and maps. In *practice*, however, some
+		  people do, simply because they don't have the expertise, skills, budget or
+		  resources to tweak the transformations or publishing routines. 
+		</lq> 
+		<lq
+		 reftitle="Brett Johnson, LinkedIn DITA Awareness Group Discussion">The
+		  topichead is quite useful for us because it lets us eliminate unnecessary
+		  container topics that can sometimes get into the search results but don't
+		  provide real content. 
+		</lq> 
+		<lq reftitle="Ymte Westra, LinkedIn DITA Awareness Group Discussion">The
+		  use of &lt;topichead&gt; looks more intuitive but has some downsides: - The
+		  text is put in an attribute, thus no support for in-line elements. The
+		  alternative to use &lt;topicmeta&gt;/&lt;navtitle&gt; supports in-line elements
+		  but by default not all domains that are available inside a topic. - Most
+		  translation tools will by default not translate the navtitle attribute. - The
+		  navigation titles cannot be easily re-used among several maps. Using 'title
+		  only' topics eliminates all these downsides and has the advantage that apart
+		  from the map title all content is managed in topics and the map only defines
+		  the organization of topics. Another advantage is that to add an
+		  'introductionary' text to for example a chapter, it is only required to edit
+		  the topic without changing the map. Unless translation is not required and
+		  navigation titles do not require in-line elements I would choose for using
+		  'title only' topics. 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

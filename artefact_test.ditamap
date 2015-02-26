@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<map id="map_68C4FBA800BD42C18919598674ED2B8E"><title>DITA Authoring Concepts</title> 
+<topicref format="dita" href="c_DITA_Authoring_Concepts.dita" navtitle="DITA authoring concepts" scope="local" type="concept"> 
+  <topicref format="dita" href="Authoring_Concepts/c_Introduction_to_DITA.dita" navtitle="Introduction to DITA" scope="local" type="concept"> 
+	 <topicref format="dita" href="Authoring_Concepts/c_DITA_Features.dita" navtitle="DITA features" scope="local" type="concept"/>
+	 <topicref format="dita" href="Authoring_Concepts/c_Information_Types.dita" navtitle="Information typing" scope="local" type="concept"/>
+	 <topicref format="dita" href="Authoring_Concepts/c_Topic_Based_Authoring.dita" navtitle="Topic-based authoring" scope="local" type="concept"/> 
+	 <topicref format="dita" href="Authoring_Concepts/c_Modularity.dita" navtitle="Modularity" print="no" scope="local" type="concept"/>
+	 <topicref format="dita" href="Authoring_Concepts/c_Minimalism.dita" navtitle="Minimalism" print="no" scope="local" type="concept"/>
+	 <topicref format="dita" href="Authoring_Concepts/c_What_is_Structured_Authoring.dita" navtitle="Structured authoring" scope="local" type="concept"> 
+	 </topicref> 
+	 <topicref format="dita" href="Authoring_Concepts/c_Introduction_to_the_Separation_of_Content.dita" navtitle="The separation of content and form" print="no" scope="local" type="concept"/> 
+	 <topicref format="dita" href="Authoring_Concepts/c_Where_DITA_Fits_In.dita" navtitle="Where DITA fits..." scope="local" type="concept"/> 
+	 <topicref format="dita" href="Authoring_Concepts/c_Inheritance.dita" navtitle="Inheritance" scope="local" type="concept"/> 
+  </topicref> 
+</topicref> 
+</map> 

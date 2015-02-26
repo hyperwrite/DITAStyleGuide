@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D2041" status="new"> 
+  <title>Embedded topics and ditamaps</title> 
+  <shortdesc>The 
+	 <term>ditamap</term> is a powerful tool for re-using topics in different
+	 output publications. Topics can also be re-used using 
+	 <term>ditabase</term> topics, but you should avoid this technique. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>ditabase</indexterm><indexterm>ditamap</indexterm><indexterm>embedded
+			 topics</indexterm><indexterm>composite topics</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>It is possible to create a 
+		<term>document</term> made up of one topic. For example, you may be
+		writing a product information sheet as a reference topic type, and that's it.
+		The sheet doesn't belong in a manual or in a collection of topics. It's a
+		standalone topic. However, this scenario is the exception, rather than the
+		rule. 
+	 </p> 
+	 <p>The purpose of a ditamap is to 
+		<term>bind</term> a set of topics together into a 
+		<term>collection</term>, using topic reference (<synph>topicref</synph>)
+		elements. The same topic can be re-used in different ditamaps defining
+		different output publications. 
+	 </p> 
+	 <p>There is another way in which you can collect topics together: through a
+		
+		<term>ditabase</term> topic. It's not necessarily the right way to
+		collect topics, but it may be appropriate in some circumstances (although some
+		DITA purists would say that it is never appropriate). The 
+		<term>ditabase</term> information type was designed as a means of
+		collecting multiple topics together into one composite file. 
+	 </p> 
+	 <p>The root node of a 
+		<term>ditabase</term> topic is 
+		<synph>dita</synph>. The 
+		<synph>dita</synph> element (or 
+		<term>wrapper</term>) allows you to nest several 
+		<term>child</term> topics (as siblings of each other). You can mix and
+		match topic types in this way, such that a 
+		<synph>dita</synph> element could contain three 
+		<synph>task</synph> elements, a 
+		<synph>concept</synph> element, two 
+		<synph>topic</synph> elements, and a 
+		<synph>reference</synph> element. 
+	 </p> 
+	 <p>If constituent topics are transcluded into the composite 
+		<term>ditabase</term> topic, those topics can be re-used in other
+		composite topics. In other words, the 
+		<term>ditabase</term> topic can serve as an alternative to a ditamap. 
+	 </p> 
+	 <p>You should avoid or at least 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_minimise"><?xm-replace_text Phrase?></ph>
+		the technique, though. Topics embedded in other topics become difficult to
+		re-use, and difficult to handle in other ways. 
+	 </p> 
+	 <p importance="high">The preferred method of re-using topics is with the
+		ditamap. 
+	 </p> 
+  </conbody> 
+</concept> 

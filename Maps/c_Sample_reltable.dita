@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D2647" status="new"> 
+  <title>Sample relationship table</title> 
+  <shortdesc>A sample relationship table illustrates how 
+	 <synph>topicref</synph> elements are used within 
+	 <synph>reltable</synph>, 
+	 <synph>relrow</synph>, and 
+	 <synph>relcell</synph> elements to create a matrix of linking relationships
+	 between the referenced topics. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>samples<indexterm>ditamap</indexterm><indexterm>reltable</indexterm></indexterm><indexterm>ditamap<indexterm>sample
+				code</indexterm></indexterm><indexterm>reltable<indexterm>sample
+				code</indexterm></indexterm><indexterm>map file<indexterm>sample
+				code</indexterm></indexterm><indexterm>relationship table<indexterm>sample
+				code</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <codeblock>&lt;reltable&gt;
+	&lt;relheader&gt;
+		&lt;relcolspec type="concept"/&gt;
+		&lt;relcolspec type="task"/&gt;
+		&lt;relcolspec type="reference"/&gt;
+	&lt;/relheader&gt;
+	&lt;relrow&gt;
+		&lt;relcell&gt;
+			&lt;topicref href="concepts/about_produce.dita"/&gt;
+		&lt;/relcell&gt;
+		&lt;relcell&gt;
+			&lt;topicref href="tasks/choosing_produce.dita"/&gt;
+		&lt;/relcell&gt;
+		&lt;relcell&gt;
+			&lt;topicref href="reference/produce.dita"/&gt;
+		&lt;/relcell&gt;
+	&lt;/relrow&gt;
+	&lt;relrow&gt;
+		&lt;relcell&gt;
+			&lt;topicgroup collection-type="family"&gt;
+			  &lt;topicref href="concepts/about_cannedgoods.dita"/&gt;
+			  &lt;topicref href="concepts/about_foodstorage.dita"/&gt;
+			&lt;/topicgroup&gt;
+		&lt;/relcell&gt;
+		&lt;relcell&gt;
+			&lt;topicref href="tasks/buying_cannedgoods.dita"/&gt;
+		&lt;/relcell&gt;
+		&lt;relcell&gt;
+			&lt;topicref href="reference/cannedgoods.dita"/&gt;
+		&lt;/relcell&gt;
+	&lt;/relrow&gt;</codeblock> 
+	 <p> 
+		<draft-comment>Replace this with heather example 
+		</draft-comment> 
+	 </p> 
+  </conbody> 
+</concept> 

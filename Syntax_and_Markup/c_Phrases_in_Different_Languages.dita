@@ -1,0 +1,100 @@
+﻿<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<concept id="concept_C9721798407C4857A577EAEC318D2EB3"> 
+  <title>Phrases in different languages</title> 
+  <shortdesc>Words without a specific semantic meaning that are in a different
+	 language to the remainder of the topic can be identified by setting the
+	 containing element's 
+	 <synph>xml:lang</synph> attribute to the international standard code for
+	 that language. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>language
+			 tags</indexterm><indexterm>ph
+			 element</indexterm><indexterm>elements<indexterm>ph</indexterm></indexterm><indexterm>attributes<indexterm>xml:lang</indexterm></indexterm><indexterm>xml:lang
+			 attribute</indexterm><indexterm>foreign words and
+			 phrases</indexterm><indexterm>ISO 639</indexterm><indexterm>IETF BCP
+			 47</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>Words or phrases in different human languages, dialects or spelling
+		conventions can be identified through a phrase (<synph>ph</synph>) element with
+		the 
+		<synph>xml:lang</synph> attribute storing the name of the language in the
+		IETF BCP 47 and ISO 639 standard conventions. 
+	 </p> 
+	 <p>If these words or phrases have a particular semantic meaning, such as a
+		term expressed in a foreign language, then the mark-up element used should have
+		its 
+		<synph>xml:lang</synph> attribute set to the foreign language. 
+	 </p> 
+	 <p>For example, if the term 
+		<term>schadenfreude</term> is used within an English language topic, the
+		mark-up would be: 
+		<codeblock>&lt;p&gt;
+  He experienced a sense of &lt;term xml:lang="de"&gt;schadenfreude&lt;/term&gt;
+&lt;/p&gt;</codeblock> 
+	 </p> 
+	 <section id="section_4F96F539447A419782CF2F64CDC3A6C2"
+	 audience="contributor"> 
+		<title>Rationale</title> 
+		<lq href="http://www.w3.org/TR/REC-xml/"
+		reftitle="W3C Recommendation for Extensible Markup Language (XML) 1.0 (Fifth Edition)">E
+		  
+		  <p><b>2.12 Language Identification</b> 
+		  </p> 
+		  <p>In document processing, it is often useful to identify the natural
+			 or formal language in which the content is written. A special 
+			 <synph>xref</synph> attribute named 
+			 <synph>xml:lang</synph> may be inserted in documents to specify the
+			 language used in the contents and attribute values of any element in an XML
+			 document. In valid documents, this attribute, like any other, MUST be declared
+			 if it is used. The values of the attribute are language identifiers as defined
+			 by 
+			 <cite>[IETF BCP 47], Tags for the Identification of Languages</cite>;
+			 in addition, the empty string may be specified. 
+		  </p> 
+		  <p>For example: 
+			 <codeblock>&lt;p xml:lang="en"&gt;The quick brown fox jumps over the lazy dog.&lt;/p&gt;
+ &lt;p xml:lang="en-GB"&gt;What colour is it?&lt;/p&gt;
+ &lt;p xml:lang="en-US"&gt;What color is it?&lt;/p&gt;
+ &lt;sp who="Faust" desc='leise' xml:lang="de"&gt;
+  &lt;l&gt;Habe nun, ach! Philosophie,&lt;/l&gt;
+  &lt;l&gt;Juristerei, und Medizin&lt;/l&gt;
+  &lt;l&gt;und leider auch Theologie&lt;/l&gt;
+  &lt;l&gt;durchaus studiert mit heißem Bemüh'n.&lt;/l&gt;
+ &lt;/sp&gt;</codeblock> 
+		  </p> 
+		  <p>The language specified by 
+			 <synph>xml:lang</synph> applies to the element where it is specified
+			 (including the values of its attributes), and to all elements in its content
+			 unless overridden with another instance of 
+			 <synph>xml:lang</synph>. In particular, the empty value of 
+			 <synph>xml:lang</synph> is used on an element B to override a
+			 specification of 
+			 <synph>xml:lang</synph> on an enclosing element A, without specifying
+			 another language. Within B, it is considered that there is no language
+			 information available, just as if 
+			 <synph>xml:lang</synph> had not been specified on B or any of its
+			 ancestors. Applications determine which of an element's attribute values and
+			 which parts of its character content, if any, are treated as language-dependent
+			 values described by 
+			 <synph>xml:lang</synph>. 
+		  </p> 
+		</lq> 
+	 </section> 
+  </conbody> 
+  <related-links> 
+	 <link
+	 href="http://www.iana.org/assignments/language-subtag-registry"
+	 scope="external" format="html"> 
+		<linktext>IANA language sub-tag registry 
+		</linktext> 
+	 </link> 
+	 <link href="http://www.w3.org/International/articles/language-tags/"
+	 format="html" scope="external"> 
+		<linktext>Language tags in HTML and XML 
+		</linktext> 
+	 </link> 
+  </related-links> 
+</concept> 

@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Composite//EN" "concept.dtd">
+<concept id="topic_BB23DF0D37764E809CE1B5BD1FE9BEC2"> 
+  <title>Design Patterns</title> 
+  <prolog><metadata><keywords><indexterm>examples<indexterm>composite
+				topic</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p><?xm-replace_text Paragraph?>
+	 </p> 
+	 <section id="concept_F10C45C219714643A7C7DB53B6D3CD21"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<p>From 
+		  <cite>http://www.ibm.com/developerworks/xml/library/x-dita7/index.html</cite>
+		  
+		</p> 
+		<p><b>The design pattern for the how-to collection</b>
+		</p> 
+		<p>An example of a design pattern for information architecture might be a
+		  how-to collection of topics. A basic design pattern for a how-to collection
+		  might be described as follows. 
+		</p> 
+		<p><b>Pattern name 
+		  </b>
+		</p> 
+		<p>How to 
+		</p> 
+		<p><b>Context</b>
+		</p> 
+		<p>The user needs to accomplish a goal but may not know some of the
+		  background or steps. Some users will need to learn the entire activity while
+		  others will only need to refresh their knowledge. The goal can be described as
+		  a distinct activity. 
+		</p> 
+		<p><b>Solution</b>
+		</p> 
+		<p>Provide a collection of topics that explains the concepts the user
+		  must understand, lists the tasks the user must perform, and provides examples
+		  of how the goal is accomplished. The tasks are the required core of the how-to
+		  collection. The collection sequence is: 
+		</p> 
+		<ul id="ul_9F9B68A16DF44908878264991158079A"> 
+		  <li id="li_A74DEECBEDFF4C38B65E1983A92BDE06">An introductory topic 
+		  </li> 
+		  <li id="li_A0DE978821B145BD92FC591E72EEE6B1">Conceptual topics as
+			 needed for orientation 
+		  </li> 
+		  <li id="li_C168E577F5024DD291493BB3F73DB0DF">The tasks 
+		  </li> 
+		  <li id="li_2EC8A7636DF34BA3A198D25E18F105A4">Examples as needed for
+			 detail 
+		  </li> 
+		  <li id="li_353F8A69FCBC4A0193E9A7A6EA676132">A summary topic 
+		  </li> 
+		</ul> 
+		<p>A user might have several goals that would benefit from a how-to: for
+		  instance, setting up Web authentication, reading a database from a Web
+		  application, and so on. By applying the design pattern for the how-to
+		  collection, writers provide well-structured and consistent information. 
+		</p> 
+		<p>Figures 1-3 illustrate the gain in clarity and consistency for the
+		  information architecture by using the design pattern for the how-to collection:
+		  
+		</p> 
+		<p>Figure 1. Casual architecture<image
+		  href="../images/design_patterns_1.gif" placement="break"
+		  id="image_92FEC3775ED84F10B8227454E8A7C1DF" align="left" width="127px"
+		  height="261px"> 
+			 <alt>Casual Architecture
+			 </alt></image> Figure 2. Design pattern<image
+		  href="../images/design_patterns_2.gif" placement="break"
+		  id="image_F3D63606A83B475C831468F5FC857C1E" align="left" width="112px"
+		  height="108px"> 
+			 <alt>Design Pattern 
+			 </alt></image> Figure 3. Formal architecture 
+		  <image href="../images/design_patterns_3.gif" placement="break"
+			id="image_9E88824DDD2E4649A2D42857356C0819" width="139px" height="259px"
+			align="left"> 
+			 <alt>Formal Architecture 
+			 </alt></image> 
+		</p> 
+		<p>In short, the design pattern acts as a kind of blueprint that's
+		  fulfilled by the writer. An information architecture might provide a repertoire
+		  of such design patterns, each solving different problems. 
+		</p> 
+		<p>Even with a design pattern as straightforward as the how-to
+		  collection, authors can forget about or misunderstand the pattern. As the
+		  number and complexity of design patterns increases, the patterns become
+		  increasingly difficult to apply. Such authoring challenges can pose an enormous
+		  obstacle to large-scale adoption of design patterns. 
+		</p> 
+		<p/> 
+	 </section> 
+  </conbody> 
+</concept> 

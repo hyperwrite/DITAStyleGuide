@@ -1,0 +1,118 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D9212" status="new"> 
+  <title>Working with tables</title> 
+  <shortdesc>Tables should be used for storing tabular information, and not to
+	 achieve formatting outcomes. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>table
+			 element</indexterm><indexterm>tabular
+			 information</indexterm><indexterm>separation of content and
+			 form</indexterm><indexterm>elements<indexterm>colspec</indexterm><indexterm>table</indexterm><indexterm>entry</indexterm><indexterm>row</indexterm></indexterm><indexterm>row
+			 element</indexterm><indexterm>entry
+			 element</indexterm><indexterm>attributes<indexterm>colwidth</indexterm><indexterm>rowsep
+				attribute</indexterm><indexterm>scale</indexterm><indexterm>valign</indexterm><indexterm>frame</indexterm><indexterm>colsep</indexterm><indexterm>colwidth</indexterm><indexterm>pgwide</indexterm><indexterm>align</indexterm><indexterm>char</indexterm><indexterm>charoff</indexterm></indexterm><indexterm>colspec
+			 element</indexterm><indexterm>align attribute</indexterm><indexterm>char
+			 attribute</indexterm><indexterm>charoff attribute</indexterm><indexterm>colsep
+			 attribute</indexterm><indexterm>colwidth attribute</indexterm><indexterm>frame
+			 attribute</indexterm><indexterm>pgwide attribute</indexterm><indexterm>rowsep
+			 attribute</indexterm><indexterm>scale attribute</indexterm><indexterm>valign
+			 attribute</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>The principle of the separation of content and form reaches a stumbling
+		block when it comes to tabular information and tables. Tables are both a
+		content structure and a presentational form construct. The content of a table
+		is a set of data 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_organised"><?xm-replace_text Phrase?></ph>
+		into rows with a common structure. The form of a table is its column and row
+		widths, its borders, its padding, etc. 
+	 </p> 
+	 <p>As a matter of principle, a DITA topic shouldn't be storing any
+		information about how any content is presented. However, there is a need to
+		specify some formatting information that is specific to an individual table,
+		and that cannot be applied automatically during the publishing process. DITA
+		does therefore include the capacity to store some formatting information
+		alongside content in table elements. When content and form are bound together
+		in this way, re-use of the content becomes more difficult. For example, if I
+		specify that a table should be 25 cm wide, the topic containing the table can't
+		be easily output to a page or column narrower than 25 cm. 
+	 </p> 
+	 <p importance="high">For this reason, tables should be treated carefully.
+		They should be avoided where there is no loss of meaning, they should never be
+		used as a formatting device alone, and any unavoidable formatting information
+		should be kept to a minimum. 
+	 </p> 
+	 <p>DITA's table content model is based on the OASIS interchange form of 
+		<term>CALS</term> tables. It is not possible to create a table 
+		<ph
+		conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialisation"><?xm-replace_text Phrase?></ph>
+		with a footer based on the 
+		<synph>thead</synph> element, because the underlying content model
+		specifies that a table can only have a 
+		<synph>thead</synph> then a 
+		<synph>tbody</synph>, and not two 
+		<synph>thead</synph> elements or two 
+		<synph>tbody</synph> elements. 
+	 </p> 
+	 <p>The formatting elements and attributes within DITA table structures are:
+		
+	 <ul id="ul_17CEF9879EE94E9FA8D4761C30B166C0"> 
+		<li id="li_8DFE5C791D094B6E994011EC9F4D8B81"><synph>colspec</synph>
+		  (column specification) element (<synph>tgroup</synph>) 
+		</li> 
+		<li id="li_AE36C46EA2A14BD58528E0AB644A819D"><synph>align</synph>
+		  attribute (<synph>colspec</synph>, 
+		  <synph>tgroup</synph>, 
+		  <synph>entry</synph>) 
+		</li> 
+		<li id="li_3D8EDFF4C57F4F4BAFFE1ED26C456E57"><synph>char</synph>
+		  (character alignment) attribute (<synph>colspec</synph>) 
+		</li> 
+		<li id="li_FB3B7F7C8BAE45548E456D6102467D12"><synph>charoff</synph>
+		  (character offset) attribute (<synph>colspec</synph>) 
+		</li> 
+		<li id="li_47F29DDD3B294D238439CECC2318F2E2"><synph>colsep</synph>
+		  (column separator) attribute (<synph>table</synph>, 
+		  <synph>colspec</synph>, 
+		  <synph>tgroup</synph>, 
+		  <synph>entry</synph>) 
+		</li> 
+		<li id="li_4E5B0A7660D5416C8F7CE74C1C490F1A"><synph>colwidth</synph>
+		  (column width) attribute (<synph>colspec</synph>) 
+		</li> 
+		<li id="li_1B447C1A3EC94F4D84635B06F4E527DE"><synph>frame</synph>
+		  attribute (<synph>table</synph>) 
+		</li> 
+		<li id="li_197D27A92D974C5E80AC6AF79D866E94"><synph>pgwide</synph> (page
+		  wide placement) attribute (<synph>table</synph>) 
+		</li> 
+		<li id="li_F8CDD43C369C446BA5F574BBC56E1F30"><synph>rowsep</synph> (row
+		  specification) attribute (<synph>table</synph>, 
+		  <synph>colspec</synph>, 
+		  <synph>tgroup</synph>, 
+		  <synph>row</synph>, 
+		  <synph>entry</synph>) 
+		</li> 
+		<li id="li_719B02A841E4400C8E40EDDF9AC0BF4B"><synph>scale</synph>
+		  attribute (<synph>table</synph>) 
+		</li> 
+		<li id="li_A1EE1BCE2DB54B55A69DF891B41665B7"><synph>valign</synph>
+		  (vertical alignment) attribute (<synph>tbody</synph>, 
+		  <synph>row</synph>, 
+		  <synph>entry</synph>) 
+		</li> 
+	 </ul> 
+	 </p> 
+	 <p>In addition, there is a 
+		<synph>rowheader</synph> attribute (of the 
+		<synph>table</synph> element) that nominates whether the first rows
+		contains heading information; this is arguably 
+		<term>content metadata</term> rather than 
+		<term>form</term>. 
+	 </p> 
+	 <p>DITA does not support table footers. 
+	 </p> 
+  </conbody> 
+</concept> 

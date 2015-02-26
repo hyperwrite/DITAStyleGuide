@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D9242" status="new"> 
+  <title>Substeps within steps</title> 
+  <shortdesc>Task topics allow two levels of steps within a single procedure:
+	 steps and substeps. Where possible, substeps should be avoided. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>substeps
+			 element</indexterm><indexterm>substep
+			 element</indexterm><indexterm>elements<indexterm>substeps</indexterm><indexterm>substep</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>In DITA, procedural steps can be structured in two levels: 
+		<synph>steps</synph> and 
+		<synph>substeps</synph>. Any step within a 
+		<synph>steps</synph> block can be broken down into 
+		<synph>substeps</synph>, but a 
+		<synph>substep</synph> cannot be further broken down. 
+	 </p> 
+	 <p>If a procedural step is broken down into substeps, the 
+		<synph>substeps</synph> section can be used within an individual step (as
+		a child of the 
+		<synph>cmd</synph> element). In other cases, a 
+		<synph>choicetable</synph> structure, designed for decision points in a
+		step, may be appropriate. 
+	 </p> 
+	 <p>The 
+		<synph>substeps</synph> element contains one or more 
+		<synph>substep</synph> elements, which are almost identical to the 
+		<synph>step</synph> element. 
+	 </p> 
+	 <p importance="high">Avoid 
+		<synph>substeps</synph> whenever possible. If a step is a task in itself,
+		it is best approach is to document that secondary task in a separate topic, and
+		cross-reference the task topic to the second task topic. Your task should
+		ideally be made up of a single level of steps. Re-writing a procedure is
+		sometimes necessary to find a way of simplifying it to one level. 
+	 </p> 
+	 <p>If you are documenting a procedure with two or more distinct variants,
+		such as a procedure describing how to enable JavaScript in different browsers,
+		you should create different task topics for each variant. For example, you
+		would create one topic for 
+		<q>Enabling JavaScript in Internet Explorer</q>, another for 
+		<q>Enabling JavaScript in Safari</q>, and so on. 
+	 </p> 
+	 <p>If the variation between procedures is only very slight, you may be able
+		to write a single procedure but use 
+		<synph>choices</synph> or 
+		<synph>choicetable</synph> elements to distinguish the differences. 
+	 </p> 
+	 <section id="section_13E97D5637EF4E21826464693FC18F4F"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<lq reftitle="Martin Polley, Yahoo! DITA Users Group"> 
+		  <p><b>Question</b> 
+		  </p> 
+		  <p>Hi, I want to make a task like "Enable JavaScript in your browser".
+			 But there are some different browser in different operating systems - is it
+			 okay to make more than one &lt;steps&gt; parts in one task? Is this possible?
+			 greetings Dirk Einecke 
+		  </p> 
+		  <p><b>Reply</b> 
+		  </p> 
+		  <p>Hi Dirk, I'm afraid not. Only one &lt;steps&gt; per task. If it was
+			 me, I would make a separate task topic for each browser, then group them under
+			 a title-only topic in my map. Hope this helps, 
+		  </p> 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

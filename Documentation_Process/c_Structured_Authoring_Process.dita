@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D1734" status="new"> 
+  <title>Structured authoring documentation stages</title> 
+  <shortdesc>The documentation process within a DITA workflow can be separated
+	 into stages of building, associating, and publishing. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>documentation
+			 process</indexterm><indexterm>stages of the documentation
+			 process</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>The process of creating, producing and delivering a document in DITA's
+		modular, structured authoring environment can be divided into three different
+		stages: 
+	 <dl> 
+		<dlentry> 
+		  <dt>Building 
+		  </dt> 
+		  <dd>Building is the authoring process, normally undertaken by a writer.
+			 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt>Associating 
+		  </dt> 
+		  <dd>Associating is the drawing together of the topics into collections
+			 (such as books and Web sites), normally undertaken by the 
+			 <term>information architects</term>. A bundle of independent topics
+			 only becomes a book when the topics are associated, or linked, to each other
+			 through the ditamap. 
+		  </dd> 
+		</dlentry> 
+		<dlentry> 
+		  <dt>Publishing 
+		  </dt> 
+		  <dd>Publishing is the generation of the output collections of topics.
+			 The output might be a Word document, a PDF document, a CHM file, a collection
+			 of HTML files, or even a collection of XML files. 
+		  </dd> 
+		</dlentry> 
+	 </dl> 
+	 </p> 
+	 <note type="note">Building and associating are independent, and are not
+		sequential stages.
+	 </note>
+  </conbody> 
+</concept> 

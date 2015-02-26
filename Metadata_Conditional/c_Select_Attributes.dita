@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_9010758F2A0444A3A8A0F4BE476DE51B" xml:lang="en"
+ status="new"> 
+  <title>Condition (or 
+	 <term>select</term>) attributes</title> 
+  <shortdesc>The 
+	 <synph>audience</synph>, 
+	 <synph>platform</synph>, 
+	 <synph>product</synph>, 
+	 <synph>otherprops</synph> and 
+	 <synph>rev</synph> attributes can be applied to most DITA elements. They
+	 are used for conditional processing, and are known as the 
+	 <term>condition</term> (or 
+	 <term>select</term>) attributes. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>attributes<indexterm>audience</indexterm><indexterm>platform</indexterm><indexterm>product</indexterm><indexterm>rev</indexterm><indexterm>otherprops</indexterm></indexterm><indexterm>condition
+			 attributes</indexterm><indexterm>select
+			 attributes</indexterm><indexterm>audience
+			 attribute</indexterm><indexterm>platform
+			 attribute</indexterm><indexterm>product
+			 attribute</indexterm><indexterm>otherprops attribute</indexterm><indexterm>rev
+			 attribute</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>The metadata attributes used for conditional publishing through
+		filtering and flagging are 
+		<synph>audience</synph>, 
+		<synph>platform</synph>, 
+		<synph>product</synph>, and 
+		<synph>otherprops</synph>. The 
+		<synph>rev</synph> attribute can be used for flagging only, but not for
+		filtering (excluding). These attributes are sometimes collectively referred to
+		as 
+		<term>condition attributes</term>, or 
+		<term>select attributes</term>. 
+	 </p> 
+	 <p rev="1.2">The attribute values are free-form text, although in 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_DITA12"><?xm-replace_text Phrase?></ph>,
+		the 
+		<synph>subjectScheme</synph> feature can be used to define a list of
+		controlled values for different attributes. 
+	 </p> 
+	 <p rev="1.2" importance="high">Attributes can contain multiple values;
+		these are delimited with a space. Values are case-sensitive. 
+	 </p> 
+	 <p>The 
+		<synph>audience</synph> attribute is designed to identify the intended
+		audience of the content. Examples of possible values include 
+		<userinput>administrator</userinput>, 
+		<userinput>novice</userinput>, 
+		<userinput>power</userinput>, 
+		<userinput>Canada</userinput>, 
+		<userinput>driver</userinput>, and 
+		<userinput>engineer.</userinput> 
+	 </p> 
+	 <p>The 
+		<synph>platform</synph> attribute is designed to identify the operating
+		system or other technology platform that the content is specific to. Examples
+		of possible values include 
+		<userinput>macos</userinput>, 
+		<userinput>linux</userinput>, 
+		<userinput>firefox</userinput>, 
+		<userinput>mobile</userinput>, 
+		<userinput>4WD</userinput>, 
+		<userinput>android</userinput> and 
+		<userinput>ipad.</userinput> 
+	 </p> 
+	 <p>The 
+		<synph>product</synph> attribute is designed to identify the product that
+		the content is specific to. Examples of possible values include 
+		<userinput>ej25</userinput>, 
+		<userinput>lite</userinput>, 
+		<userinput>pro</userinput>, 
+		<userinput>SR71</userinput>, 
+		<userinput>acme</userinput>, 
+		<userinput>STi</userinput>, and 
+		<userinput>openoffice</userinput>. 
+	 </p> 
+	 <p>The 
+		<synph>otherprops</synph> attribute is designed to identify any other
+		metadata category to be used as a basis for filtering or flagging. Examples of 
+		<synph>otherprops</synph> use include to identify markets (eg, 
+		<userinput>healthcare</userinput>), publications (eg, 
+		<userinput>NewsToday</userinput>), 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_organisational"><?xm-replace_text Phrase?></ph>
+		departments (eg, 
+		<userinput>accountspayable</userinput>), and outlet (eg, 
+		<userinput>melbourne_retail</userinput>). 
+	 </p> 
+  </conbody> 
+</concept> 

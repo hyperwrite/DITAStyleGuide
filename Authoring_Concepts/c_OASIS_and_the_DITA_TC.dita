@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D2054" status="new"> 
+  <title>OASIS and the DITA Technical Committee</title> 
+  <shortdesc>OASIS is a not-for-profit standards body, and membership is open
+	 to all. To participate in the ongoing development of the DITA standard, you
+	 must join OASIS. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>OASIS</indexterm><indexterm>DITA
+			 Technical Committee</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>DITA is controlled (or perhaps a better word is 
+		<q>guided</q>) by the 
+		<term>DITA Technical Committee (TC)</term>. The DITA intellectual
+		property is commonly-owned, with the trustee being OASIS. OASIS is a
+		not-for-profit 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_organisation"><?xm-replace_text Phrase?></ph>
+		- a standards body. In order to participate in an OASIS TC, including of course
+		the OASIS DITA TC, you must be a member of OASIS. And although OASIS is
+		not-for-profit, it recovers the cost of running the 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_organisation"><?xm-replace_text Phrase?></ph>
+		through membership fees. 
+	 </p> 
+	 <p>There are a number of membership categories. In brief, it is possible to
+		join as a company or as an individual. 
+		<term>Contributor</term> company membership has lower annual dues, but 
+		<term>Sponsor</term> company membership offers more marketing
+		opportunities. A benefits matrix on the OASIS Web site explains the difference
+		between member categories. 
+	 </p> 
+	 <p product="academic_only">An alternative is to join as an individual. This
+		builds DITA credibility for the person concerned, and allows the person to
+		contribute to committees. Dues are as low as USD300 per annum for this
+		membership type. The individual's employer still gets a mention, but can't use
+		OASIS logos, etc. 
+	 </p> 
+	 <p>Once the company or an individual is an OASIS member, the nominated
+		person is able to participate in any or many OASIS TCs. The DITA TC is getting
+		bigger over time, and doing more and more work. The TC is now spawning
+		sub-committees (SC) to concentrate on more 
+		<ph
+		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialised"><?xm-replace_text Phrase?></ph>
+		tasks and problems. 
+	 </p> 
+	 <p>Beyond the OASIS membership dues, there are no costs in being involved
+		in TCs and SCs, other than the brainpower and time contributions. 
+	 </p> 
+  </conbody> 
+</concept> 

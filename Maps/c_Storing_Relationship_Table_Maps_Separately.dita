@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D9381" status="new"> 
+  <title>Storing relationship tables in separate, embedded ditamaps</title> 
+  <shortdesc>Even for medium-sized documents, it is easy for ditamap files to
+	 become unwieldy due to the number and complexity of topic references. You
+	 should take advantage of the modular nature of DITA to store relationship
+	 tables in separate ditamaps, embedded within the main ditamap, as soon as the
+	 ditamap becomes too large. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>nested
+			 ditamaps</indexterm><indexterm>ditamap<indexterm>separate reltable
+				ditamap</indexterm><indexterm>nested</indexterm><indexterm>embedded</indexterm></indexterm><indexterm>embedded
+			 ditamaps</indexterm><indexterm>submaps</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>For collections larger than around 50 topics, it is preferable to store
+		relationship table information in a separate ditamap file, embedded (nested)
+		within the 
+		<term>master ditamap</term> for the collection. The relationship table
+		map should only contain reltable sections. 
+	 </p> 
+	 <p>For very large documents, you may choose to have multiple embedded
+		reltable ditamaps. 
+	 </p> 
+	 <section id="section_BD80257338DF4540917AA2644FC63691"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<lq href="http://tech.groups.yahoo.com/group/dita-users/message/17077"
+		 reftitle="Paul Masalsky, Yahoo! DITA Users Group"> 
+		  <p>We have some DITA help systems that are 1000+ topics. The only way
+			 to effectively manage related links is through reltables. In larger help
+			 systems, we use one top level DITA map with sub-maps that correspond to
+			 top-level folders in the help system TOC. Since related links are typically to
+			 topics within the same folder, we partition the reltables into each submap to
+			 make them easier to manage (it's possible to include related links to topics in
+			 other folders, too). 
+		  </p> 
+		  <p>Each time authors make significant topic updates, they know to check
+			 the associated map for reltable entries pertaining to those topics, to see if
+			 they are still valid. If they had to check other topics for possible related
+			 links, it would be very difficult... we'd have to maintain a separate
+			 spreadsheet with a mapping of all topic relations, and why do that when you
+			 have reltables? 
+		  </p> 
+		</lq> 
+		<lq href="http://tech.groups.yahoo.com/group/dita-users/message/17078"
+		 reftitle="Julio Vazquez, Yahoo! DITA Users Group"> You might want to consider
+		  multiple reltables. Take a better look at your relationships and look for
+		  patterns that might make this simpler. Also, you could have reltables in
+		  submaps thus making the management a little more "manageable" by component. 
+		</lq> 
+	 </section> 
+	 <section id="section_251C7AA9DF0340B1941298714F1DD762"
+	  audience="contributor"> 
+		<title>References</title> 
+		<p><xref
+		  href="http://dita.xml.org/improving-relationships-relationship-tables"
+		  scope="external" format="html">Improving Relationship Tables</xref> (dita.xml) 
+		</p> 
+	 </section> 
+  </conbody> 
+</concept> 

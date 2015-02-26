@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<concept id="concept_A5117CA499A14CA2952F0C984EE019DD"> 
+  <title>The 
+	 <synph>topicref</synph> element</title> 
+  <shortdesc>The basic building block of ditamap files is the topic reference
+	 (<synph>topicref</synph>) element. 
+  </shortdesc> 
+  <prolog><metadata><keywords><indexterm>topicref
+			 element</indexterm><indexterm>elements<indexterm>topicref</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p> Topic references nominate the topic or other resource to be included in
+		the collection. They are similar in function to a cross-reference
+		(<synph>xref</synph>) element in topic content. 
+	 </p> 
+	 <p>The 
+		<synph>topicref</synph> element is used for the hierarchical section of
+		the ditamap and the relationship table section. 
+	 </p> 
+	 <p>Resources that a 
+		<synph>topicref</synph> element can reference include DITA topics within
+		the collection, (embedded) ditamaps, DITA topics external to the collection,
+		external files, and Internet resources. 
+	 </p> 
+	 <p>The main attributes of the 
+		<synph>topicref</synph> element are the 
+		<synph>href</synph>, 
+		<synph>scope</synph>, 
+		<synph>format</synph>, and 
+		<synph>type</synph> attributes. 
+	 </p> 
+	 <section id="section_71D2A6678B654DE795E83B812F1880D5"
+	  audience="contributor">
+		<title>Future Enhancements</title>
+		<lq
+		 reftitle="Robert Anderson, OASIS DITA TC mailing list, 17 August 2010"> 
+		  <p>A topicref element may not reference elements nested inside a topic,
+			 but it may be used to reference elements inside of a map. For example, this is
+			 a valid reference on a topicref: 
+		  </p> 
+		  <p>&lt;topicref href="othermap.ditamap#branch" format="ditamap"/&gt; 
+		  </p> 
+		</lq>
+		<p>Add information about 
+		  <synph>topicsetref</synph> topic (DITA 1.2).
+		</p>
+		<p> 
+		  <draft-comment> 
+		  </draft-comment> 
+		</p>
+	 </section>
+  </conbody> 
+</concept> 

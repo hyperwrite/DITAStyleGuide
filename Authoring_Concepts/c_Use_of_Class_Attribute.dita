@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en-au" id="D3779"> 
+  <title>Use of Class Attribute</title> 
+  <shortdesc>The class attribute in DITA is not analogous to the class element
+	 in HTML. DITA's class element is used for specialisation, and should not be set
+	 by authors. 
+  </shortdesc> 
+  <prolog><author>Tony
+		Self</author><metadata><keywords><indexterm>class</indexterm><indexterm>attributes<indexterm>class</indexterm></indexterm><indexterm>outputclass</indexterm><indexterm>specialisation</indexterm><indexterm>inheritance</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>All DITA elements have a 
+		<synph>class</synph> attribute, but as a DITA author, you should never
+		change this attribute. In fact, most DITA editors will hide it from you. The
+		DITA 
+		<synph>class</synph> attribute is not the same as the HTML 
+		<synph>class</synph> attribute. (DITA's 
+		<synph>outputclass</synph> attribute is the closest match to HTML 
+		<synph>class</synph>.) 
+	 </p> 
+	 <p>All DITA based processors use the 
+		<synph>class</synph> attribute to determine how an element should be
+		processed, rather than by using the element name itself. This is because
+		specialisation may make the element name unfamiliar to the processor, but the
+		class will indicate the element's inheritance, and therefore how it should be
+		handled. 
+	 </p> 
+  </conbody> 
+</concept> 

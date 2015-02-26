@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D9076" status="new"> 
+  <title>Print versus non-print metadata</title> 
+  <shortdesc>You can use condition attributes in topic elements, the 
+	 <synph>print</synph> attribute in the 
+	 <synph>topicref</synph> element, separate ditamaps, or a combination of
+	 these approaches when you need to produce different print and non-print
+	 versions of the same document. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>print
+			 attribute</indexterm><indexterm>otherprops
+			 attribute</indexterm><indexterm>audience
+			 attribute</indexterm><indexterm>product attribute</indexterm><indexterm>select
+			 attributes</indexterm><indexterm>condition
+			 attributes</indexterm><indexterm>ditamap</indexterm><indexterm>print vs
+			 non-print</indexterm><indexterm>Web vs
+			 print</indexterm><indexterm>attributes<indexterm>print</indexterm><indexterm>otherprops</indexterm><indexterm>audience</indexterm><indexterm>product</indexterm></indexterm><indexterm>elements<indexterm>topicref</indexterm></indexterm><indexterm>topicref
+			 element</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>There are a number of ways of differentiating 
+		<q>Web-only</q> and 
+		<q>print-only</q> content, or other medium-dependent conditions. The best
+		method will depend on the semantics involved, and the particular scenario. 
+	 </p> 
+	 <p>In many cases, marking up content using 
+		<synph>otherprops</synph> attribute values of, for example, 
+		<userinput>manual_only</userinput> and 
+		<userinput>web_only</userinput> may be appropriate. If the reason for the
+		differentiation relates to the different audiences for print and Web
+		deliverables, then the audience attribute would be a better choice. In the same
+		way, if the reason for differentiation was that you are producing two separate
+		document products, such as a book to be sold on the Web and a book to be sold
+		in bookshops, the 
+		<synph>product</synph> attribute is more suitable. 
+	 </p> 
+	 <p>The 
+		<synph>topicref</synph> element in the ditamap has a 
+		<synph>print</synph> attribute with valid values of 
+	 <option>yes</option> and 
+	 <option>no</option>. If you are simply wanting to exclude complete topics
+	 from the print version of a document, this attribute should be used. 
+	 </p> 
+	 <p>If you have some common and some different topics for print and Web
+		versions, you may find that creating two ditamaps, one for print and one for
+		Web, is a better approach than applying conditions to the 
+		<synph>topicref</synph> elements in a single ditamap. 
+	 </p> 
+	 <section id="section_D2320AEA46FD42C6B43EB27499A3D663"
+	  audience="contributor"> 
+		<title>Rationale</title> 
+		<lq reftitle="Andy Hall, Yahoo! DITA Users Group"
+		 href="http://tech.groups.yahoo.com/group/dita-users/message/6452">Is it good
+		  practice to use @otherprops to markup content for web and PDF outputs (e.g.,
+		  using otherprops values of "manual_only" for PDF deliverables, and "web_only"
+		  for HTML deliverables)? Or are there better, smarter ways to generate outputs
+		  for HTML and PDF outputs? 
+		</lq> 
+		<p>Deborah Pickett observed that although it's not wrong, and although
+		  there may be occasions when it's the best way, the nature of the content will
+		  dictate whether it's right or not. 
+		</p> 
+		<lq reftitle="Deborah Pickett, Yahoo! DITA Users Group"
+		href="http://tech.groups.yahoo.com/group/dita-users/message/6463"> 
+		  <p>If web_only and manual_only are independent of each other (i.e., you
+			 could have one or both or neither set) then conditional processing is a good
+			 fit. But given their names, they look like they are either/or exactly-one
+			 choices (what I call "disjoint-union" from set theory). Conditional processing
+			 is a poor solution for disjoint unions, for several reasons, one in this case
+			 being that you have to police correct use of only one inclusion in the ditaval
+			 file. 
+		  </p> 
+		  <p>For comparison, what I'd do in that situation is have two separate
+			 maps. They would share almost all of their content via mapref, except &gt; for
+			 the bits where they differ. I'd consider using the @print &gt; attribute on
+			 topicrefs that I don't want to turn up in the print output. 
+		  </p> 
+		</lq> 
+		<lq reftitle="Su-Laine Yeo, Yahoo! DITA Users Group"
+		 href="http://tech.groups.yahoo.com/group/dita-users/message/19405">No, you
+		  can't use the @print attribute on most elements. In general, marking content as
+		  PDF-only or as help-only is considered kind of philosophically wrong by XML
+		  purists. The ideal way to go about it is to ask yourself why you'd want
+		  something to be PDF-only or help-only and then use markup which more directly
+		  reflects the reason. 
+		</lq> 
+		<lq reftitle="Sowmya Kannan, Yahoo! DITA Users Group">Hi, Are there any
+		  best practices / guidelines for content that may be delivered as HTML and PDF?
+		  For e.g. it would be better to not include object tags to run applets, flash
+		  objects etc. directly in the topic. Topics with object tags may not be suitable
+		  for pdf outputs. How do we handle such cases? Should we include conditional
+		  text based on type of output? What are some other cases to watch out for? 
+		</lq> 
+	 </section> 
+  </conbody> 
+</concept> 

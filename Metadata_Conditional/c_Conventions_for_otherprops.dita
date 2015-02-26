@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "dtd/concept.dtd">
+<concept xml:lang="en" id="D9205" status="new"> 
+  <title>Conventions for the 
+	 <synph>otherprops</synph> attribute</title> 
+  <shortdesc>By using a convention for recording values in the 
+	 <synph>otherprops</synph> attribute, you can extend the amount of metadata
+	 stored. 
+  </shortdesc> 
+  <prolog><author>Tony Self</author><metadata><keywords><indexterm>otherprops
+			 attribute</indexterm><indexterm>metadata
+			 attributes<indexterm>conventions</indexterm></indexterm><indexterm>attributes<indexterm>otherprops</indexterm></indexterm><indexterm>conventions<indexterm>attributes</indexterm></indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p>The 
+		<synph>otherprops</synph> attribute can be used for storing any other
+		metadata information that does not otherwise fit into the standard condition
+		attributes (<synph>audience</synph>, 
+		<synph>platform</synph>, and 
+		<synph>product</synph>). 
+	 </p> 
+	 <p>To extend the functionality of the 
+		<synph>otherprops</synph> attribute, a naming convention can be used that
+		a processor can interpret and action. For example, settings of 
+		<codeph>otherprops="Market(Australia)"</codeph> and 
+		<codeph>otherprops="Publication(Symmetry)"</codeph> would allow the same
+		attribute to be used for a number of functions. In this example, a processor
+		could differentiate between 
+		<q>Market</q> and 
+		<q>Publication</q>. 
+	 </p> 
+  </conbody> 
+</concept> 
