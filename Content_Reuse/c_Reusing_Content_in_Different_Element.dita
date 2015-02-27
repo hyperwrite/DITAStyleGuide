@@ -55,7 +55,7 @@
 	  audience="contributor"> 
 		<title>Rationale</title> 
 		<lq reftitle="Michael Priestley, Yahoo! DITA Users Group"
-		 href="http://tech.groups.yahoo.com/group/dita-users/message/11889"> 
+			href="http://tech.groups.yahoo.com/group/dita-users/message/11889"  scope="external" format="html"> 
 		  <p>&gt;&gt;is there a way to reuse the text content of one element as
 			 the text content of a different element?&lt;&lt; 
 		  </p> 

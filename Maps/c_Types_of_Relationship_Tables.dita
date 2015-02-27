@@ -118,7 +118,7 @@
 	 audience="contributor"> 
 		<title>Rationale</title> 
 		<lq
-		href="http://dita.xml.org/improving-relationships-relationship-tables"
+		href="http://dita.xml.org/improving-relationships-relationship-tables" scope="external" format="html"
 		reftitle="Zachary Binder blog"> 
 		  <p>After doing a lot of research into relationship tables, my team
 			 nearly abandoned the effort because mapping a large number of topics in the

@@ -54,7 +54,7 @@
 	 <section id="section_9982B2AF11E24B38A165ADA3D87B63F8"
 	 audience="contributor"> 
 		<title>Rationale</title> 
-		<lq href="http://tech.groups.yahoo.com/group/dita-users/message/18413"
+		<lq href="http://tech.groups.yahoo.com/group/dita-users/message/18413" scope="external" format="html"
 		reftitle="Kris Eberlein, Yahoo! DITA Users Group"> You can use the content of a
 		  &lt;shortdesc&gt; set at the DITA map level to override ONLY the short
 		  description used for link previews. There is one exception: You set the

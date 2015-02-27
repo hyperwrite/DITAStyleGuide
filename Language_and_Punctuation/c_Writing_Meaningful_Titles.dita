@@ -136,7 +136,7 @@
 		  text design. As DITA topic titles are used for automatically-generated links,
 		  many of Nielsen's recommendations could be applied to devising titles. 
 		  <lq reftitle="Jakob Nielsen's AlertBox"
-			href="http://www.useit.com/alertbox/nanocontent.html"> 
+			href="http://www.useit.com/alertbox/nanocontent.html" scope="external" format="html"> 
 			 <p>The two winning links also showcase principles for effective Web
 				content. Both links: 
 			 </p> 
@@ -288,7 +288,7 @@
 		  <cite>Marcia Riefer Poulsen</cite> (in a presentation named 
 		  <cite>The Three Core Topic Types</cite>), suggested the following
 		  naming syntax for the three core DITA information types: 
-		  <lq href="http://www.slideshare.net/MarciaJohnston/three-topic-types"
+		  <lq href="http://www.slideshare.net/MarciaJohnston/three-topic-types" scope="external" format="html"
 			reftitle="Marcia Riefer Poulsen (2006), Three Topic Types"> 
 			 <simpletable id="simpletable_55F6D5F97C4F422FAAE9FE5F7FB0CEF9"> 
 				<sthead><stentry>Information

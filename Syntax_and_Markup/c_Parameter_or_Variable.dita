@@ -152,7 +152,7 @@ grossFee = CalcCharge(hr,co)</codeblock>
 	 audience="contributor"> 
 		<title>Rationale</title> 
 		<lq reftitle="David Linton, Yahoo! DITA Users Group"
-				href="http://tech.groups.yahoo.com/group/dita-users/message/16318" format="html">
+				href="http://tech.groups.yahoo.com/group/dita-users/message/16318" scope="external" format="html">
 				<p>I wonder, what are other people doing when they have part of a keyword that they
 					need to denote should be replaced by the user with some value they know? </p>
 				<p>In the spec for &lt;varname&gt;, the example there says </p>
@@ -178,13 +178,13 @@ grossFee = CalcCharge(hr,co)</codeblock>
 				</p>
 			</lq> 
 		<lq reftitle="Jason Owen, Yahoo! DITA Users Group"
-		href="http://tech.groups.yahoo.com/group/dita-users/message/16326"> When
+		href="http://tech.groups.yahoo.com/group/dita-users/message/16326" scope="external" format="html"> When
 		  documenting the API, use the &lt;synph&gt; or &lt;syntaxdiagram&gt; elements.
 		  Those elements have a child element &lt;var&gt; that you could use to tag
 		  variables in an API. 
 		</lq> 
 		<lq reftitle="David Linton, Yahoo! DITA Users Group"
-		href="http://tech.groups.yahoo.com/group/dita-users/message/16327"> Currently I
+		href="http://tech.groups.yahoo.com/group/dita-users/message/16327" scope="external" format="html"> Currently I
 		  get around it using &lt;codeph&gt; which does allow &lt;varname&gt;. The
 		  trouble is that enforces &lt;codeph&gt; having the same styling as
 		  &lt;apiname&gt;. If I switched to &lt;synph&gt; I would have to enforce
@@ -193,7 +193,7 @@ grossFee = CalcCharge(hr,co)</codeblock>
 		  what &lt;varname&gt; is for. 
 		</lq> 
 		<lq reftitle="Phil Grisier, Yahoo! DITA Users Group"
-		 href="http://tech.groups.yahoo.com/group/dita-users/message/16333"> You used
+		 href="http://tech.groups.yahoo.com/group/dita-users/message/16333" scope="external" format="html"> You used
 		  the &lt;varname&gt; element as intended by the spec. At least, that's how I use
 		  it. Don't confuse &lt;varname&gt; with &lt;parmname&gt;. 
 		</lq> 

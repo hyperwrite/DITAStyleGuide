@@ -75,7 +75,7 @@
 		<title>Rationale</title> 
 		<p> 
 		  <lq reftitle="Craig Sandvik, Yahoo! DITA Users Group"
-			href="http://tech.groups.yahoo.com/group/dita-users/message/15921">Up until
+			href="http://tech.groups.yahoo.com/group/dita-users/message/15921" scope="external" format="html">Up until
 			 DITA-OT 1.5, the fo plugin scales graphics from the dimensions supplied in the
 			 DITA source to 72 dots per inch. This enlarges most graphics since typical
 			 modern screenshots are at 96 dpi. Some workarounds for earlier versions: - If

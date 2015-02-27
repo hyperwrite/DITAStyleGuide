@@ -87,7 +87,7 @@
 	  audience="contributor"> 
 		<title>Rationale</title> 
 		<lq reftitle="Deborah Pickett, Yahoo! DITA Users Group"
-		 href="http://tech.groups.yahoo.com/group/dita-users/message/7870">I might do
+		 href="http://tech.groups.yahoo.com/group/dita-users/message/7870" scope="external" format="html">I might do
 		  that, if I thought that they were actually choices. I don't think of
 		  &lt;choices&gt; or &lt;choicetable&gt; as necessarily implying mutual
 		  exclusivity, so a command of "Enter one or more of the following things" could

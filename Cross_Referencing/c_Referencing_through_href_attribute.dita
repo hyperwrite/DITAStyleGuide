@@ -39,7 +39,7 @@
 	  audience="contributor"> 
 		<title>Rationale</title> 
 		<lq reftitle="Deborah Pickett, Yahoo! DITA Users Group"
-		 href="http://tech.groups.yahoo.com/group/dita-users/message/15374">DITA does
+			href="http://tech.groups.yahoo.com/group/dita-users/message/15374" scope="external" format="html">DITA does
 		  not speak in terms of file paths. It knows only URLs. When you use a DITA
 		  document it is mandatory that you use URLs. Hence, as David said, don't say
 		  "c:\My Documents", say "file:/c:/My%20Documents". Don't say "\\server\share",

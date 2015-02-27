@@ -57,7 +57,7 @@
 	  audience="contributor"> 
 		<title>Rationale</title> 
 		<lq reftitle="Deborah Pickett, Yahoo! DITA Users Group"
-		 href="http://tech.groups.yahoo.com/group/dita-users/message/12911"> 
+			href="http://tech.groups.yahoo.com/group/dita-users/message/12911" scope="external" format="html"> 
 		  <p>It's a series of pipeline steps, just like when you publish to HTML.
 			 For PDF2 in particular, the steps are: 
 		  </p> 

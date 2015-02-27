@@ -117,7 +117,7 @@
 	  audience="contributor"> 
 		<title>Rationale</title> 
 		<lq reftitle="Deborah Pickett, Yahoo! DITA Users Group"
-		 href="http://tech.groups.yahoo.com/group/dita-users/message/16348">georgerioux
+			href="http://tech.groups.yahoo.com/group/dita-users/message/16348" scope="external" format="html">georgerioux
 		  wrote: 
 		  <q>From what I can gather from reading the spec (which explicitly
 			 mentions linking to .txt files), you should be able to do this by setting the
@@ -128,7 +128,7 @@
 		  the build has finished. (scope="peer" is almost never what you want. It is for
 		  a very specific use that doesn't include what you are trying to do.) 
 		</lq> 
-		<lq href="http://groups.yahoo.com/group/dita-users/message/17635"
+		<lq href="http://groups.yahoo.com/group/dita-users/message/17635" scope="external" format="html"
 		 reftitle="Deborah Pickett, Yahoo! DITA Users Group"> 
 		  <p>On 2010-03-18 05.38, mt_si_dad wrote: &gt; &lt;xref
 			 href="mailto:name@domain. com"&gt;Click to send e-mail&lt;/xref&gt; 
@@ -137,7 +137,7 @@
 			 that the build knows not to try to follow the link. 
 		  </p> 
 		</lq> 
-		<lq reftitle="Eliot Kimber, Yahoo! DITA Users Group"
+		<lq reftitle="Eliot Kimber, Yahoo! DITA Users Group" scope="external" format="html"
 		href="http://groups.yahoo.com/group/dita-users/message/17644"> You need to add
 		  scope="external" ( as you would for any reference to things that are outside of
 		  your DITA content set). You may need to also say format="email" or something

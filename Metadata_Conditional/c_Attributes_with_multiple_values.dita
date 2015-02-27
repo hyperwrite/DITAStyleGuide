@@ -32,7 +32,7 @@
 	 <section id="section_2EF15A956EF14781B01F79983AA156A8"
 	  audience="contributor"> 
 		<title>Rationale</title> 
-		<lq reftitle="Phil Grisier, Yahoo! FrameMaker DITA Users Group"
+		<lq reftitle="Phil Grisier, Yahoo! FrameMaker DITA Users Group" scope="external" format="html"
 		 href="http://tech.groups.yahoo.com/group/framemaker-dita/message/3059"> In DITA
 		  by design, the filtering attributes @product, @audience, etc, use space as the
 		  separator between different filtering values. This lets you apply multiple

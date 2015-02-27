@@ -38,8 +38,8 @@
 	 <section id="section_444AFE9E2D0C412FA36AAD511CD30B2C"
 	  audience="contributor"> 
 		<title>Rationale</title> 
-		<lq reftitle="Deborah Pickett, Yahoo! DITA Users Group"
-		 href="http://tech.dir.groups.yahoo.com/group/dita-users/message/6700"> 
+		<lq reftitle="Deborah Pickett, Yahoo! DITA Users Group" scope="external" format="html"
+		 href="http://tech.dir.groups.yahoo.com/group/dita-users/message/6700" > 
 		  <p>I could be facile and say that a topic needs as much detail as a
 			 piece of string needs length, but there's often a bit of flexibility in a
 			 system, and it's probably up to you (as your company's information architect)
@@ -58,7 +58,7 @@
 		  </p> 
 		</lq> 
 		<lq reftitle="Ben David, Yahoo! DITA Users Group"
-		 href="http://tech.dir.groups.yahoo.com/group/dita-users/message/6715">"A topic
+		 href="http://tech.dir.groups.yahoo.com/group/dita-users/message/6715" scope="external" format="html">"A topic
 		  should be like a woman's skirt - long enough to cover the essentials, and short
 		  enough to maintain interest." 
 		</lq> 

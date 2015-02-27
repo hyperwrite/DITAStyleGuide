@@ -85,7 +85,7 @@
 	 <section id="section_444AFE9E2D0C412FA36AAD511CD30B2C"
 	 audience="contributor"> 
 		<title>Rationale</title> 
-		<lq href="http://dita.xml.org/wiki/myths-about-technical-writing">Glue
+		<lq href="http://dita.xml.org/wiki/myths-about-technical-writing" scope="external" format="html">Glue
 		  text is defined as transitional information intended to inform readers of what
 		  has come before or comes after a particular procedure, description, or
 		  explanation. In topic-oriented authoring, which forms the basis for the DITA

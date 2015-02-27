@@ -43,7 +43,7 @@
 	  audience="contributor"> 
 		<title>Rationale</title> 
 		<lq reftitle="Deborah Pickett, Yahoo! DITA Users Group"
-		 href="http://tech.groups.yahoo.com/group/dita-users/message/16740"> 
+		 href="http://tech.groups.yahoo.com/group/dita-users/message/16740" scope="external" format="html"> 
 		  <p>&gt;&gt; I have some tables to convert where the heading is for a
 			 row rather than a column - just like a lot of "Contains" and "Contained by"
 			 tables in the DITA Specification, in fact - and couldn't see where to

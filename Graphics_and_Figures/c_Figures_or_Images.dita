@@ -82,7 +82,7 @@
 		<p>Answering a question about whether images should be placed directly
 		  (in a stepresult element) or in a figure structure: 
 		  <lq reftitle="Leigh White, Yahoo! DITA Users Group"
-		  href="http://tech.groups.yahoo.com/group/dita-users/message/17506">I'd say that
+		  href="http://tech.groups.yahoo.com/group/dita-users/message/17506" scope="external" format="html">I'd say that
 			 if everything is working for you now, there is no need to change
 			 anything...doesn't seem like there is any tag abuse going on. &lt;fig&gt;, to
 			 my thinking, is to be used when you need to add a caption, description or other

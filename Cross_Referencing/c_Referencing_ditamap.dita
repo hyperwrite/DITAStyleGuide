@@ -42,7 +42,7 @@
 	 <section id="section_97DBF4B736CC4CF9A0FD4CB4CCF5BBF4"
 	  audience="contributor"> 
 		<title>Rationale</title> 
-		<lq href="http://tech.groups.yahoo.com/group/dita-users/message/14204"
+		<lq href="http://tech.groups.yahoo.com/group/dita-users/message/14204" scope="external" format="html"
 		 reftitle="Deborah Pickett, Yahoo! DITA Users Group">As far as I know, the
 		  meaning of an xref to a ditamap is not defined by the standard. That may change
 		  in future versions of the standard. Until that happens, you can define it to

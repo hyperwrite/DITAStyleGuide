@@ -37,7 +37,7 @@
 	 <section id="section_462FE45722034DB28A1C1C1625E03C82"
 	  audience="contributor"> 
 		<title>Rationale</title> 
-		<lq href="http://tech.groups.yahoo.com/group/dita-users/message/17379"
+		<lq href="http://tech.groups.yahoo.com/group/dita-users/message/17379" scope="external" format="html"
 		 reftitle="Eliot Kimber, Yahoo! DITA Users Group">Use &lt;ph&gt; within title to
 		  have conditional title content. All topics *must* have a title, therefore
 		  &lt;title&gt; is not conditional. 

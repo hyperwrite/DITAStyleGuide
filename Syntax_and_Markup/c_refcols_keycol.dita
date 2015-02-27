@@ -58,7 +58,7 @@
 	 <section id="section_5E3505C000FA4E5E9241E9594C1E5D2F"
 	  audience="contributor"> 
 		<title>Rationale</title> 
-		<lq href="http://tech.groups.yahoo.com/group/dita-users/message/15537"
+		<lq href="http://tech.groups.yahoo.com/group/dita-users/message/15537" scope="external" format="html"
 		 reftitle="Kristen James Eberlein, Yahoo! DITA Users Group"> I believe that the
 		  @refcol (sic) attribute -- while listed in the DITA specification -- is not
 		  currently supported by the DITA OT. 

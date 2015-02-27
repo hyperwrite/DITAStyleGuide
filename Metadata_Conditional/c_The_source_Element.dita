@@ -10,7 +10,7 @@
 	 <synph>prolog</synph> section. 
   </shortdesc> 
   <prolog><author>Tony Self</author><source
-	 href="http://dublincore.org/documents/dces/">Dublin Core Metadata Element
+	 href="http://dublincore.org/documents/dces/" scope="external" format="html">Dublin Core Metadata Element
 		Set</source><metadata><keywords><indexterm>source
 			 element</indexterm><indexterm>Dublin Core
 			 Metadata</indexterm><indexterm>elements<indexterm>source</indexterm></indexterm><indexterm>attributes<indexterm>href</indexterm></indexterm><indexterm>href

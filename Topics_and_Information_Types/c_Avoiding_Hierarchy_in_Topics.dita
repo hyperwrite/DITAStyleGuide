@@ -67,7 +67,7 @@
 	 <section id="section_444AFE9E2D0C412FA36AAD511CD30B2C"
 	 audience="contributor"> 
 		<title>Rationale</title> 
-		<lq href="http://tech.groups.yahoo.com/group/dita-users/message/10325"
+		<lq href="http://tech.groups.yahoo.com/group/dita-users/message/10325" scope="external" format="html"
 		reftitle="Bob Thomas, Yahoo! DITA Users Group"> 
 		  <p>The separation of content and form is central to DITA. This 
 			 <i>separation</i> can be further refined into the separation of
@@ -81,7 +81,7 @@
 		  </p> 
 		</lq> 
 		<lq reftitle="Phil Grisier, Yahoo! DITA Users Group"
-		href="http://tech.groups.yahoo.com/group/dita-users/message/16277"> Generally I
+			href="http://tech.groups.yahoo.com/group/dita-users/message/16277" scope="external" format="html"> Generally I
 		  agree that sections should be avoided within a topic in favor of making them
 		  separate topics and stitched together with a map. I have found sections
 		  occasionally useful in high-level concepts when the concept has several facets.
@@ -94,7 +94,7 @@
 		  con-ref the section. Furthermore, I only use sections if the facet description
 		  really doesn't stand on it's own. 
 		</lq> 
-		<lq href="http://tech.groups.yahoo.com/group/dita-users/message/16255"
+		<lq href="http://tech.groups.yahoo.com/group/dita-users/message/16255" scope="external" format="html"
 		 reftitle="David Linton, Yahoo! DITA Users Group"> 
 		  <p> --- "mdd01pa" wrote: &gt; &gt; 
 			 <q>Is it possible to specialize the section element to allow other
@@ -111,7 +111,7 @@
 			 &lt;example&gt;, &lt;context&gt; etc. 
 		  </p> 
 		</lq> 
-		<lq href="http://groups.yahoo.com/group/dita-users/message/16259"
+		<lq href="http://groups.yahoo.com/group/dita-users/message/16259" scope="external" format="html"
 		reftitle="Eliot Kimber, Yahoo! DITA Users Group"> I have seen in myself and
 		  others a natural progression from "why can't I nest sections?" to "Everything
 		  is a topic". In particular, you start to arrive at the conclusion that if the

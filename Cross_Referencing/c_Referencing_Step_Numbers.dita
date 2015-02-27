@@ -62,12 +62,12 @@ the PIN recovery procedure.&lt;/cmd&gt;
 	 audience="contributor"> 
 		<title>Rationale</title> 
 		<lq reftitle="Deborah Pickett, Yahoo! DITA Users Group"
-		href="http://tech.groups.yahoo.com/group/dita-users/message/13292">Use &lt;xref
+			href="http://tech.groups.yahoo.com/group/dita-users/message/13292" scope="external" format="html">Use &lt;xref
 		  href="#thistopicid/step1id" type="li"/&gt;. Editors might not put the @type
 		  attribute on. It is supposed to default to the right type in processing, but
 		  DITA-OT didn't always do so. I recommend setting it explicitly. 
 		</lq> 
-		<lq href="http://tech.groups.yahoo.com/group/dita-users/message/12440"
+		<lq href="http://tech.groups.yahoo.com/group/dita-users/message/12440" scope="external" format="html"
 		 reftitle="Beth Thoenen, quoting Judy Kessler, Yahoo! DITA Users Group"> 
 		  <p>Linking within a Topic 
 		  </p> 

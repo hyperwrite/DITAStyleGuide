@@ -59,7 +59,7 @@
 	  audience="contributor"> 
 		<title>Rationale</title> 
 		<lq reftitle="Michael Gross, DCLNews"
-		 href="http://www.dclab.com/dita_conversion_tips.asp">In addition to the ability
+			href="http://www.dclab.com/dita_conversion_tips.asp" scope="external" format="html">In addition to the ability
 		  to break down documents into topics. DITA provides a mechanism called 
 		  <term>conref</term>, which allows you to reuse chunks of text by
 		  referring to them from other documents. Reducing the amount of duplicated text

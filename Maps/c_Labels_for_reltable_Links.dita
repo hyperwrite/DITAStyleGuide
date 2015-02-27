@@ -52,7 +52,7 @@
 	  audience="contributor"> 
 		<title>Rationale</title> 
 		<lq reftitle="Deborah Pickett, Yahoo! DITA Users Group"
-		 href="http://tech.dir.groups.yahoo.com/group/dita-users/message/13993"> 
+		 href="http://tech.dir.groups.yahoo.com/group/dita-users/message/13993" scope="external" format="html"> 
 		  <p>Harvey Greenberg wrote: &gt;&gt; What is it that causes the OT to
 			 know what to call related concepts as opposed to related topics or related
 			 whatever-else? Although the spec allows for a type attribute in the relcolspec,

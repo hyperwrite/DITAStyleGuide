@@ -55,7 +55,7 @@
 	 <p>The official definition of bookmap is: 
 	 </p> 
 	 <lq xml:lang="en-US"
-	  href="http://docs.oasis-open.org/dita/v1.1/OS/archspec/HowToUse.html"
+	  href="http://docs.oasis-open.org/dita/v1.1/OS/archspec/HowToUse.html" scope="external" format="html"
 	  reftitle="OASIS DITA Version 1.1 Architectural Specification">The bookmap
 		specialization of DITA's standard DITA map allows you to organize your DITA
 		topics into a collection that can be printed as a book or other paged layout. 
@@ -93,7 +93,7 @@
 	  audience="contributor"> 
 		<title>Rationale</title> 
 		<lq reftitle="Julio Vazquez, Yahoo! DITA Users Group"
-		 href="http://tech.groups.yahoo.com/group/dita-users/message/15934"> Assuming
+		 href="http://tech.groups.yahoo.com/group/dita-users/message/15934" scope="external" format="html"> Assuming
 		  that you are using the BookMap specialization to generate the PDF, you must
 		  have a structure to tell the processing where to put the index. You will need a
 		  &lt;backmatter&gt; element containing a &lt;booklists&gt; element containing

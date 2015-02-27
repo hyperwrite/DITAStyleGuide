@@ -49,7 +49,7 @@
 	 <section id="section_7E76DD9FAD0244D1910E91112DCB1D72"
 	  audience="contributor"> 
 		<title>Rationale</title> 
-		<lq href="http://www.sdicorp.com/Resources/White_Papers.aspx"
+		<lq href="http://www.sdicorp.com/Resources/White_Papers.aspx" scope="external" format="html"
 		 reftitle="ndexing Effectively in DITA (SDI Global Solutions Whitepaper)"> 
 		  <p> If you have a number of information sets that have the same basic
 			 structure and use the same terms, you might notice that the index structure is

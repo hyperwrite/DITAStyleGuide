@@ -66,7 +66,7 @@
 		  counter-intuitive. 
 		</p> 
 		<lq reftitle="Eliot Kimber, Yahoo! DITA Users Group"
-		 href="http://tech.groups.yahoo.com/group/dita-users/message/16879"> 
+		 href="http://tech.groups.yahoo.com/group/dita-users/message/16879" scope="external" format="html"> 
 		  <p>For DITA 1.2 we have added the statement what when a topichead (a
 			 topicref with no href or keyref attribute) specifies chunk="to-content" ,
 			 processors must generate (or act as though they had generated) a chunk for the
@@ -80,7 +80,7 @@
 			 takes you to the TOC and not the body of the document. 
 		  </p> 
 		</lq> 
-		<lq href="http://tech.groups.yahoo.com/group/dita-users/message/16879"
+		<lq href="http://tech.groups.yahoo.com/group/dita-users/message/16879" scope="external" format="html"
 		 reftitle="Eliot Kimber, Yahoo! DITA Users Group">In DITA 1.1 it was a bit
 		  ambiguous what the rendering implications for topicheads were and therefore
 		  what the implication of a crossref to a topichead would be. The issue is that,

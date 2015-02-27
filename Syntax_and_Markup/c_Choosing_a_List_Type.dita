@@ -98,7 +98,7 @@
 		  have no bullets, on the assumption that each item is short enough to fit on one
 		  line, and needs no additional differentiation from its neighbors. 
 		</lq> 
-		<lq href="http://tech.groups.yahoo.com/group/dita-users/message/16678"
+		<lq href="http://tech.groups.yahoo.com/group/dita-users/message/16678" scope="external" format="html"
 		 reftitle="Julio J. Vazquez, Yahoo! DITA Users Group"> For the case where you
 		  wanted a &lt;ul&gt; without bullets, you should be using &lt;sl&gt;. As for the
 		  other cases, I agree with both Eliot and Gunner. You really should try to
@@ -110,7 +110,7 @@
 		  ideas. 
 		</lq> 
 		<lq reftitle="aero13972486, Yahoo! DITA Users Group"
-		href="http://tech.groups.yahoo.com/group/dita-users/message/16644"> Hope this
+		href="http://tech.groups.yahoo.com/group/dita-users/message/16644" scope="external" format="html"> Hope this
 		  is the right group for this type of question. What element should I use to
 		  describe a piece of text that is place next to a textfield and is used to
 		  describe it. I'm using UICONTROL for the textfield &lt;uicontrol&gt;Name&lt;
@@ -118,7 +118,7 @@
 		  reports and listings. e.g. *John Smith*" 
 		</lq> 
 		<lq reftitle="Julio Vazquez, Yahoo! DITA Users Group"
-		 href="http://tech.groups.yahoo.com/group/dita-users/message/16644"> Hi Aero,
+		 href="http://tech.groups.yahoo.com/group/dita-users/message/16644" scope="external" format="html"> Hi Aero,
 		  This falls into the area of the difference between a description of something
 		  and the actual something. Here's a stab of what I would do if I were
 		  documenting this in a help system. &lt;dl&gt;&lt;dlhead&gt;

@@ -32,7 +32,7 @@
 	 <section id="section_444AFE9E2D0C412FA36AAD511CD30B2C"
 	 audience="contributor"> 
 		<title>Rationale</title> 
-		<lq href="http://dita.xml.org/wiki/myths-about-technical-writing"
+		<lq href="http://dita.xml.org/wiki/myths-about-technical-writing" scope="external" format="html"
 		reftitle="DITA.xml Wiki: Myths about Technical Writing">Stem sentences in
 		  technical communication have long been considered a standard practice to
 		  introduce new content, especially steps in a task. The task stem sentence,
@@ -44,7 +44,7 @@
 		<p>Ted Kuster, of CollabNet Inc, found that to be the case. He dispensed
 		  with stem sentences altogether, going straight from the shortdesc into the
 		  steps. 
-		  <lq reftitle="Ted Kuster, Yahoo! DITA Users Group"
+		  <lq reftitle="Ted Kuster, Yahoo! DITA Users Group" scope="external" format="html"
 		  href="http://tech.dir.groups.yahoo.com/group/dita-users/message/8219">I find
 			 that if you are very careful to draft the shortdesc right, this makes for a
 			 brisker, more efficient flow. But it does take some getting used to, from the

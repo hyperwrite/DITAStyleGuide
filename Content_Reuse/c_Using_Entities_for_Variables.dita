@@ -32,7 +32,7 @@
 	  audience="contributor"> 
 		<title>Rationale</title> 
 		<lq reftitle="Eliot Kimber, Yahoo! DITA Users Group"
-		 href="http://tech.groups.yahoo.com/group/dita-users/message/13092"> 
+			href="http://tech.groups.yahoo.com/group/dita-users/message/13092" scope="external" format="html"> 
 		  <p>&gt;&gt; For support of variables in content we use entities. This
 			 is quite effective because you can reference entities in all places of XML
 			 (even attribute values). &lt;&lt; 

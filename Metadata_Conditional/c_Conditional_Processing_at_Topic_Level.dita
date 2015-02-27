@@ -102,7 +102,7 @@
 			 for that particular output. 
 		  </p> 
 		</lq> 
-		<lq href="http://tech.groups.yahoo.com/group/dita-users/message/15875"
+		<lq href="http://tech.groups.yahoo.com/group/dita-users/message/15875" scope="external" format="html"
 		reftitle="Deborah Pickett, Yahoo! DITA Users Group"> 
 		  <p>&gt;&gt;Assuming the ditaval file contains the following line: 
 			 <codeph> &lt;prop att='audience' val='core' action='exclude'

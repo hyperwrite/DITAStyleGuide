@@ -95,7 +95,7 @@
 	  audience="contributor"> 
 		<title>Rationale</title> 
 		<lq reftitle="Michael Priestley, Yahoo! DITA Users Group"
-		 href="http://tech.groups.yahoo.com/group/dita-users/message/1923">The current
+		 href="http://tech.groups.yahoo.com/group/dita-users/message/1923" scope="external" format="html">The current
 		  spec does explicitly say that the default should be to include information, not
 		  exclude it. I believe the thought behind the current practice is that it can be
 		  dangerous to delete content by default, especially in situations where you are
@@ -109,7 +109,7 @@
 		  practice of explicitly excluding values. Giving more control over the default
 		  would be backwards compatible, changing the default would not be. 
 		</lq> 
-		<lq href="http://lists.oasis-open.org/archives/dita/200507/msg00076.html"
+		<lq href="http://lists.oasis-open.org/archives/dita/200507/msg00076.html" scope="external" format="html"
 		 reftitle="Michael Priestley, OASIS DITA Technical Committee mailing list"> 
 		  <p>For what it's worth, we made a deliberate decision early in DITA's
 			 design to exclude inverse conditionals, which reversed direction for us at IBM

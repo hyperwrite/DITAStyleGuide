@@ -86,7 +86,7 @@
 	  audience="contributor"> 
 		<title>Rationale</title> 
 		<lq reftitle="Alexander Pranko, Yahoo! DITA Users Group"
-		 href="http://tech.groups.yahoo.com/group/dita-users/message/15635">Does someone
+		 href="http://tech.groups.yahoo.com/group/dita-users/message/15635" scope="external" format="html">Does someone
 		  have a recommendation or can share experiences about image management
 		  strategies within DITA? In the simplest case, it is recommended to place all
 		  images into one topic and refer these images using conref attribute from
@@ -94,7 +94,7 @@
 		  control over images in the content. But what about more complex cases? 
 		</lq> 
 		<lq reftitle="Eliot Kimber, Yahoo! DITA Users Group"
-		 href="http://tech.groups.yahoo.com/group/dita-users/message/15649">You could
+		 href="http://tech.groups.yahoo.com/group/dita-users/message/15649" scope="external" format="html">You could
 		  also rely on your CMS or some other intermediary to map from "logical" graphic
 		  references to process-instance-specific graphics, such as language-specific
 		  graphics based on the language specified as input to the production process,

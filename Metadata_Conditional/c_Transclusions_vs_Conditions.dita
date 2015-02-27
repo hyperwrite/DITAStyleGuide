@@ -74,7 +74,7 @@
 	 audience="contributor" status="new"> 
 		<title>Rationale</title> 
 		<lq reftitle="Eric Armstrong, Yahoo! DITA Users Group"
-		href="http://tech.groups.yahoo.com/group/dita-users/message/11320"> 
+		href="http://tech.groups.yahoo.com/group/dita-users/message/11320" scope="external" format="html"> 
 		  <simpletable id="simpletable_BDF7F555ABD44D01A3364EFC5F3B21AD"> 
 			 <sthead> 
 				<stentry>Characteristic 

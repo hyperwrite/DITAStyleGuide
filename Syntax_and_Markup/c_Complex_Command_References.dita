@@ -123,7 +123,7 @@
 	  audience="contributor"> 
 		<title>Rationale</title> 
 		<lq reftitle="Martha Morgan, Yahoo! DITA Users Group"
-		 href="http://tech.dir.groups.yahoo.com/group/dita-users/message/11798">My
+		 href="http://tech.dir.groups.yahoo.com/group/dita-users/message/11798" scope="external" format="html">My
 		  colleagues and I can't come to agreement about how to tag command syntax
 		  content (not a diagram) in a reference topic. This is for a product that has a
 		  command-line interface. For example, how should we tag a command such as:
@@ -139,7 +139,7 @@
 		  should be tagged? 
 		</lq> 
 		<lq reftitle="OASIS DITA Wiki"
-		href="http://wiki.oasis-open.org/dita/SyntaxDiagram">Two other elements in
+		href="http://wiki.oasis-open.org/dita/SyntaxDiagram" scope="external" format="html">Two other elements in
 		  DITA's software domain cover the simple case of dialog or interaction between a
 		  computer and a user: &lt;systemoutput&gt; and &lt;userinput&gt;. By contrast,
 		  the &lt;syntaxdiagram&gt; and &lt;synph&gt; family covers actual programming

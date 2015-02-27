@@ -63,7 +63,7 @@ the firewall&lt;ph audience="help_user"&gt;, as shown in
 	  audience="contributor"> 
 		<title>Rationale</title> 
 		<lq reftitle="Paul Masalsky, Yahoo! DITA Users Group"
-		 href="http://tech.groups.yahoo.com/group/dita-users/message/17086"> 
+			href="http://tech.groups.yahoo.com/group/dita-users/message/17086" scope="external" format="html"> 
 		  <p>We have this situation for cross references, too. Some topics are
 			 included in PDFs but not in help systems. Other topics, included in both PDF
 			 and help, might cross reference topics that are excluded from the help systems.
@@ -78,7 +78,7 @@ the firewall&lt;ph audience="help_user"&gt;, as shown in
 		  </p> 
 		</lq> 
 		<lq reftitle="Patrick Quinlan, Yahoo! DITA Users Group"
-		 href="http://tech.groups.yahoo.com/group/dita-users/message/13157">We've run
+			href="http://tech.groups.yahoo.com/group/dita-users/message/13157" scope="external" format="html">We've run
 		  into a similar, though reversed, issue where we have xrefs that are fine in the
 		  PDF, but we don't want them in the HTML. Our solution is to train authors to
 		  place that kind of xref at the beginning or end of a sentence. For example: The

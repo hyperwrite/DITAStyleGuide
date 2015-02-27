@@ -38,7 +38,7 @@
 	  audience="contributor"> 
 		<title>Rationale</title> 
 		<lq
-		 href="http://tech.dir.groups.yahoo.com/group/dita-users/message/11896"
+		 href="http://tech.dir.groups.yahoo.com/group/dita-users/message/11896" scope="external" format="html"
 		 reftitle="Alexandr Artemov"> 
 		  <p>I have problems with making list in the task. The problem is that I
 			 cannot restart numbering. 
@@ -62,7 +62,7 @@
 		  <p>All the DITA tags don't give me means to restart numbering. 
 		  </p> 
 		</lq> 
-		<lq reftitle="Deborah Pickett, Yahoo! DITA Users Group"
+		<lq reftitle="Deborah Pickett, Yahoo! DITA Users Group" scope="external" format="html"
 		href="http://tech.dir.groups.yahoo.com/group/dita-users/message/11899">DITA
 		  tasks are deliberately very constrained, partly to disallow what it considers
 		  to be lazy topic-writing. (Not that your example is lazy, but it has the same
@@ -82,7 +82,7 @@
 		  your leg"). Or I would use &lt;choices&gt; or &lt;choicetable&gt; in step 1 to
 		  list the body parts that are suitable for window-opening. 
 		</lq> 
-		<lq reftitle="Julio Vazquez, Yahoo! DITA Users Group"
+		<lq reftitle="Julio Vazquez, Yahoo! DITA Users Group" scope="external" format="html"
 		href="http://tech.dir.groups.yahoo.com/group/dita-users/message/11922">Personally,
 		  I would lean towards using a choicetable with headings like, Limb and Method.
 		  In the left column would be Arm and Leg and in the right column would be

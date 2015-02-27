@@ -68,12 +68,12 @@
 	 <section id="section_444AFE9E2D0C412FA36AAD511CD30B2C"
 	 audience="contributor"> 
 		<title>Rationale</title> 
-		<lq href="http://tech.groups.yahoo.com/group/dita-users/message/12411"
+		<lq href="http://tech.groups.yahoo.com/group/dita-users/message/12411" scope="external" format="html"
 		reftitle="Mike Blake, Yahoo! DITA Users Group">Are there best practices about
 		  links to glossary definitions from inside a topic or are such links considered
 		  bad practice to start with? 
 		</lq> 
-		<lq href="http://tech.groups.yahoo.com/group/dita-users/message/16577"
+		<lq href="http://tech.groups.yahoo.com/group/dita-users/message/16577" scope="external" format="html"
 		reftitle="Paul Anderson, Yahoo! DITA Users Group"> 
 		  <p>It is best to create a glossary map where there is a single
 			 top-level topicref to a title-only or summary topic called "Glossary". All the

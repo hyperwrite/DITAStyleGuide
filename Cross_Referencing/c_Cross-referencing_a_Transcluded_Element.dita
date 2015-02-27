@@ -44,7 +44,7 @@
 	 <section id="section_52E3FB8FFC884DA59AAB3EC7B98C1DD0"
 	  audience="contributor"> 
 		<title>Rationale</title> 
-		<lq href="http://tech.groups.yahoo.com/group/dita-users/message/18959"
+		<lq href="http://tech.groups.yahoo.com/group/dita-users/message/18959" scope="external" format="html"
 		 reftitle="Robert D Anderson, Yahoo! DITA Users Group"> 
 		  <p>Typically - the way the toolkit expects you to reference the table
 			 is at the point where it is reused. So, you would have something like this - an

@@ -169,7 +169,7 @@
 		</ol> 
 		</p> 
 		<lq reftitle="Deborah Pickett, DITA Yahoo! Users Group"
-		 href="http://tech.groups.yahoo.com/group/dita-users/message/14723"> 
+		 href="http://tech.groups.yahoo.com/group/dita-users/message/14723" scope="external" format="html"> 
 		  <p>The 
 			 <synph>&lt;imagemap&gt;</synph> element's inheritance is from the
 			 proto-topic's &lt;fig&gt; element. This inheritance precludes the use of 

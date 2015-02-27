@@ -64,14 +64,14 @@
 	 <section id="section_60FC19D36C874DA69A9542578C5A2A26"
 	  audience="contributor"> 
 		<title>Rationale</title> 
-		<lq href="http://markmail.org/message/eqec7m24yt2a67nx"
+		<lq href="http://markmail.org/message/eqec7m24yt2a67nx" scope="external" format="html"
 		 reftitle="Eric Sirois, OASIS DITA Technical Committee mailing list">I wonder if
 		  it make sense to add a prefix to the element names in your specialization, for
 		  instance something like &lt;sidName&gt;, so that a) the element name is a bit
 		  more descriptive in its use b) reduces the likelihood of colliding with another
 		  element 
 		</lq> 
-		<lq reftitle="DITAworks support documentation"
+		<lq reftitle="DITAworks support documentation" scope="external" format="html"
 		 href="http://support.ditaworks.com/problems_and_solutions/errors-in-dita-specializations-modeling/">
 		  
 		  <p>Next problem that we find in specialized models is a problem related

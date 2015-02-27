@@ -90,7 +90,7 @@
 	 <section id="section_7284DE2B62DE4A38B9E880FC89BB246E"
 	  audience="contributor"> 
 		<title>Rationale</title> 
-		<lq href="http://lists.oasis-open.org/archives/dita/200512/msg00000.html"
+		<lq href="http://lists.oasis-open.org/archives/dita/200512/msg00000.html" scope="external" format="html"
 		 reftitle="Don Day, OASIS DITA Technical Committee Minutes, 29 November 2005">I
 		  think there is a true semantic distinction between trademark text (the
 		  discoverable thing that takes the (TM) or (R) superscript qualifier) and a
@@ -106,7 +106,7 @@
 		  trying to find the best practice for separating source from output concerns.) 
 		</lq> 
 		<lq reftitle="Don Day, Yahoo! DITA Users Group"
-		href="http://tech.groups.yahoo.com/group/dita-users/message/12204">The best
+		href="http://tech.groups.yahoo.com/group/dita-users/message/12204" scope="external" format="html">The best
 		  practice that came out of that discussion was this: Don suggests also for Chris
 		  to consider this form: &lt;image href=""&gt;&lt;tm
 		  attrs...&gt;IBM&lt;/tm&gt;&lt;alt&gt;IBM Logo&lt;/alt&gt;&lt;/image&gt; This
@@ -118,7 +118,7 @@
 		  searching for text of interest for policy-enforcing tools, and works fine for
 		  direct authoring. 
 		</lq> 
-		<lq href="http://tech.groups.yahoo.com/group/dita-users/message/12211"
+		<lq href="http://tech.groups.yahoo.com/group/dita-users/message/12211" scope="external" format="html"
 		reftitle="Jeremy Griffith, Yahoo! DITA Users Group">I like this solution. The
 		  only problem is that it is invalid, at least in DITA 1.1. &lt;g&gt; This
 		  appears to be the closest we can get without losing validity: 

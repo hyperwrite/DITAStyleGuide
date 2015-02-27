@@ -51,7 +51,7 @@
 	  audience="contributor"> 
 		<title>Rationale</title> 
 		<lq reftitle="Andy Hall, Yahoo! DITA Users Group"
-		 href="http://tech.groups.yahoo.com/group/dita-users/message/6452">Is it good
+		 href="http://tech.groups.yahoo.com/group/dita-users/message/6452" scope="external" format="html">Is it good
 		  practice to use @otherprops to markup content for web and PDF outputs (e.g.,
 		  using otherprops values of "manual_only" for PDF deliverables, and "web_only"
 		  for HTML deliverables)? Or are there better, smarter ways to generate outputs
@@ -62,7 +62,7 @@
 		  dictate whether it's right or not. 
 		</p> 
 		<lq reftitle="Deborah Pickett, Yahoo! DITA Users Group"
-		href="http://tech.groups.yahoo.com/group/dita-users/message/6463"> 
+		href="http://tech.groups.yahoo.com/group/dita-users/message/6463" scope="external" format="html"> 
 		  <p>If web_only and manual_only are independent of each other (i.e., you
 			 could have one or both or neither set) then conditional processing is a good
 			 fit. But given their names, they look like they are either/or exactly-one
@@ -78,7 +78,7 @@
 		  </p> 
 		</lq> 
 		<lq reftitle="Su-Laine Yeo, Yahoo! DITA Users Group"
-		 href="http://tech.groups.yahoo.com/group/dita-users/message/19405">No, you
+		 href="http://tech.groups.yahoo.com/group/dita-users/message/19405" scope="external" format="html">No, you
 		  can't use the @print attribute on most elements. In general, marking content as
 		  PDF-only or as help-only is considered kind of philosophically wrong by XML
 		  purists. The ideal way to go about it is to ask yourself why you'd want

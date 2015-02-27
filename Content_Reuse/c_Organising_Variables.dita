@@ -84,6 +84,7 @@
 	 audience="contributor"> 
 		<title>Rationale</title> 
 		<lq href="http://tech.groups.yahoo.com/group/dita-users/message/7064"
+		scope="external" format="html"
 		reftitle="JoAnn Hackos, Yahoo DITA Users Group"> 
 		  <p>We're quite scrupulous in promoting the best practice of linking by
 			 conref to content that has been moved out of its original context and into a

@@ -38,7 +38,7 @@
 	 <section id="section_4F96F539447A419782CF2F64CDC3A6C2"
 	 audience="contributor"> 
 		<title>Rationale</title> 
-		<lq href="http://www.w3.org/TR/REC-xml/"
+		<lq href="http://www.w3.org/TR/REC-xml/" scope="external" format="html"
 		reftitle="W3C Recommendation for Extensible Markup Language (XML) 1.0 (Fifth Edition)">E
 		  
 		  <p><b>2.12 Language Identification</b> 

@@ -74,7 +74,7 @@
 	 audience="contributor"> 
 		<title>Rationale</title> 
 		<lq reftitle="Jim Tivy, Yahoo! DITA Users Group"
-		href="http://tech.groups.yahoo.com/group/dita-users/message/8910"> 
+			href="http://tech.groups.yahoo.com/group/dita-users/message/8910" scope="external" format="html"> 
 		  <p>My use of conref for a variable is when the variable is content that
 			 is valid DITA content - is an instance of some DITA class. Having "generic"
 			 data for the variable helps the author visualize what the content model will be

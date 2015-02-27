@@ -71,7 +71,7 @@
 	 <section id="section_914C145F9F2B4F4AAA7A55E7796BD0BE"
 	  audience="contributor"> 
 		<title>Rationale</title> 
-		<lq href="http://tech.groups.yahoo.com/group/dita-users/message/12930"
+		<lq href="http://tech.groups.yahoo.com/group/dita-users/message/12930" scope="external" format="html"
 		 reftitle="eborah Pickett, Yahoo! DITA Users Group"> 
 		  <p>&gt; But I'd like to have the navtitles of these nested maps appear
 			 in the TOC.&lt; 

@@ -26,7 +26,7 @@
 	 <section id="section_BD80257338DF4540917AA2644FC63691"
 	  audience="contributor"> 
 		<title>Rationale</title> 
-		<lq href="http://tech.groups.yahoo.com/group/dita-users/message/17077"
+		<lq href="http://tech.groups.yahoo.com/group/dita-users/message/17077" scope="external" format="html"
 		 reftitle="Paul Masalsky, Yahoo! DITA Users Group"> 
 		  <p>We have some DITA help systems that are 1000+ topics. The only way
 			 to effectively manage related links is through reltables. In larger help
@@ -44,7 +44,7 @@
 			 have reltables? 
 		  </p> 
 		</lq> 
-		<lq href="http://tech.groups.yahoo.com/group/dita-users/message/17078"
+		<lq href="http://tech.groups.yahoo.com/group/dita-users/message/17078" scope="external" format="html"
 		 reftitle="Julio Vazquez, Yahoo! DITA Users Group"> You might want to consider
 		  multiple reltables. Take a better look at your relationships and look for
 		  patterns that might make this simpler. Also, you could have reltables in

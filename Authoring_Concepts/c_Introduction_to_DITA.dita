@@ -47,7 +47,7 @@
 	 </p> 
 	 <p>One good, short definition of DITA is: 
 		<lq reftitle="OASIS, DITA XML Cover Pages"
-		 href="http://xml.coverpages.org/dita.html">DITA defines an XML architecture for
+		 href="http://xml.coverpages.org/dita.html" scope="external" format="html">DITA defines an XML architecture for
 		  designing, writing, managing, and publishing many kinds of information in print
 		  and on the Web. 
 		</lq> 

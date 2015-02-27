@@ -40,7 +40,7 @@
 	 <p>There is some evidence that linking outside the paragraph text in this
 		way may be more effective. 
 	 </p> 
-	 <lq reftitle="Gerry McGovern"
+	 <lq reftitle="Gerry McGovern" scope="external" format="html"
 	 href="http://www.gerrymcgovern.com/nt/2009/nt-2009-11-02-Web-links-action.htm">I've
 		found that the most effective links are written like headings, not part of
 		sentences at all. I've found that putting links in sentences reduces

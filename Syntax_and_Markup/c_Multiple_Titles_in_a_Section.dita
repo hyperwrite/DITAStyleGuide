@@ -27,7 +27,7 @@
 	  audience="contributor"> 
 		<title>Rationale</title> 
 		<lq reftitle="Eliot Kimber, Yahoo! DITA Users Group"
-		 href="http://tech.groups.yahoo.com/group/dita-users/message/16280">Multiple
+		 href="http://tech.groups.yahoo.com/group/dita-users/message/16280" scope="external" format="html">Multiple
 		  titles are allowed by the *DTD* but not by the language of the specification. 
 		</lq> 
 	 </section> 

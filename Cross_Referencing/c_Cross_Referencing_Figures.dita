@@ -45,7 +45,7 @@
 	  audience="contributor"> 
 		<title>Rationale</title> 
 		<lq reftitle="Deborah Pickett, Yahoo! DITA Users Group"
-		 href="http://tech.groups.yahoo.com/group/dita-users/message/12476"> 
+			href="http://tech.groups.yahoo.com/group/dita-users/message/12476" scope="external" format="html"> 
 		  <p>&gt;&gt;Is there a way to reference a specific Figure number in a
 			 &lt;p&gt; (e.g., &gt; "As Figure 1 shows..."). If the Figure number changes due
 			 to adding/deleting figures, I want the cross-reference to update itself. Has

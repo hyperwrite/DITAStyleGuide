@@ -71,7 +71,7 @@
 	 audience="contributor"> 
 		<title>Rationale</title> 
 		<lq reftitle="Ted Kuster, on Yahoo! DITA Users Group"
-		href="http://tech.groups.yahoo.com/group/dita-users/message/9746">I wouldn't
+		href="http://tech.groups.yahoo.com/group/dita-users/message/9746" scope="external" format="html">I wouldn't
 		  say we've solved the problem, exactly, but we have gotten into the habit of
 		  using a lot of super-tasks (I think I heard Amber Swope propose that term),
 		  which to us means nothing more than a task with a shortdesc and an empty body

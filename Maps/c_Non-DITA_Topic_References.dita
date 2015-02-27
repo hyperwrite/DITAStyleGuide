@@ -125,7 +125,7 @@
 	 audience="contributor"> 
 		<title>Rationale</title> 
 		<lq reftitle="Ray, Yahoo! DITA Users Group"
-		href="http://tech.groups.yahoo.com/group/dita-users/message/14822"> I have
+		href="http://tech.groups.yahoo.com/group/dita-users/message/14822" scope="external" format="html"> I have
 		  several DITA maps across several products. I want to leverage (that is, re-use)
 		  topics from one project in another. I know I can specify a topic as "external"
 		  in the DITA map, but the transform just gives me a link to it. I want it to run
@@ -134,7 +134,7 @@
 		  I missing something? Can DITA really not do this? 
 		</lq> 
 		<lq reftitle="Eliot Kimber, Yahoo! DITA Users Group"
-		 href="http://tech.groups.yahoo.com/group/dita-users/message/14823">Scope="external"
+		 href="http://tech.groups.yahoo.com/group/dita-users/message/14823" scope="external" format="html">Scope="external"
 		  means "not part of this publication", not "not part of the directory structure
 		  beneath this map." So just say scope="local" and you should be fine (maybe, see
 		  below). Note that when you process maps that point to topics stored in

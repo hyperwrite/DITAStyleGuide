@@ -44,7 +44,7 @@
 		  element allows verbatim inclusion of text (such as source code). 
 		</lq> 
 		<lq reftitle="Don Day, Yahoo! DITA Users Group"
-		 href="http://tech.groups.yahoo.com/group/dita-users/message/17080"> The coderef
+		 href="http://tech.groups.yahoo.com/group/dita-users/message/17080" scope="external" format="html"> The coderef
 		  element is new with 
 		  <ph
 			conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_DITA12"><?xm-replace_text Phrase?></ph>.
@@ -55,14 +55,14 @@
 		  becomes fully approved. 
 		</lq> 
 		<lq reftitle="Stan Doherty, Yahoo! DITA Users Group"
-		 href="http://tech.groups.yahoo.com/group/dita-users/message/17083"> The new
+		 href="http://tech.groups.yahoo.com/group/dita-users/message/17083" scope="external" format="html"> The new
 		  DITA1.2 &lt;coderef&gt; element indeed works in all recent versions of
 		  DITA-OT1.5. I use it extensively in my production topics. Here's an example: 
 		  <codeblock>&lt;codeblock&gt;
  &lt;coderef href="sources/ formatted_ text.txt" /&gt;
 &lt;/codeblock&gt;</codeblock> 
 		</lq> 
-		<lq href="http://lists.oasis-open.org/archives/dita/200712/msg00024.html"
+		<lq href="http://lists.oasis-open.org/archives/dita/200712/msg00024.html" scope="external" format="html"
 		reftitle="Eliot Kimber, OASIS DITA TC mailing list">The current wording: 
 		  <q>Create new coderef element modelled after xref, with equivalent
 			 attributes but no subelements, since the purpose of the element is to pull in

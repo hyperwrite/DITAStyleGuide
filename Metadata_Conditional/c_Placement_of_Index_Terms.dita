@@ -104,7 +104,7 @@
 	 <section id="section_F86D31A5B6E0471EB9452145DC8BF564"
 	  audience="contributor"> 
 		<title>Rationale</title> 
-		<lq href="http://tech.groups.yahoo.com/group/dita-users/message/16905"
+		<lq href="http://tech.groups.yahoo.com/group/dita-users/message/16905" scope="external" format="html"
 		 reftitle="cathywildhaber, Yahoo! DITA Users Group"> 
 		  <p>When we began using indexterms, we used them within the body of
 			 topics, not realizing that words tagged as &lt;indexterm&gt; are stripped from
@@ -118,7 +118,7 @@
 		  </p> 
 		</lq> 
 		<lq reftitle="Scott Prentice, Yahoo! DITA Users Group"
-		 href="http://tech.groups.yahoo.com/group/dita-users/message/17357">The only
+		 href="http://tech.groups.yahoo.com/group/dita-users/message/17357" scope="external" format="html">The only
 		  drawback of using indexterms in the prolog is that for non-general index
 		  entries in long topics you're likely to have misaligned page numbers in printed
 		  output. The page numbers associated with an index entry will be the page with
@@ -135,7 +135,7 @@
 		  cases, inline index terms would be appropriate. 
 		</p> 
 		<lq reftitle="Anna van Raaphorst, Yahoo! DITA Users Group"
-		href="http://tech.groups.yahoo.com/group/dita-users/message/17353"> I agree
+		href="http://tech.groups.yahoo.com/group/dita-users/message/17353" scope="external" format="html"> I agree
 		  with Steve. I think the cleanest and most reuse-friendly way to index is in a
 		  topic prolog. 
 		</lq> 

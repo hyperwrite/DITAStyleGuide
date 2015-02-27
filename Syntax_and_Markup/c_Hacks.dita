@@ -25,7 +25,7 @@
 	  audience="contributor"> 
 		<title>Rationale</title> 
 		<lq reftitle="Glenn Emerson, Yahoo! DITA Users Group"
-		 href="http://tech.groups.yahoo.com/group/dita-users/message/17484">I second
+		 href="http://tech.groups.yahoo.com/group/dita-users/message/17484" scope="external" format="html">I second
 		  Eliot's comment. Never deviate from a standard usage of mark-up just to get a
 		  certain appearance in the output. You'll create more future headaches than you
 		  solve. One of the beauties of a standard is that anyone who knows it can work

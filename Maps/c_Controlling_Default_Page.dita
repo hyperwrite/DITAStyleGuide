@@ -105,7 +105,7 @@
 		  (OASIS DITA for Help Subcommittee Wiki) 
 		</p> 
 		<lq reftitle="Ian Larner, Yahoo! DITA Users Group"
-		href="http://tech.groups.yahoo.com/group/dita-users/message/8830"> 
+		href="http://tech.groups.yahoo.com/group/dita-users/message/8830" scope="external" format="html"> 
 		  <p>&gt;&gt;Q. Does anybody know how you control which topic is attached
 			 to the top node of an Eclipse help plugin? By default, it is attached to the
 			 same topic as the first node immediately beneath it, which makes for a funny

@@ -22,13 +22,13 @@
 	 <section id="section_F4CEE1FF54084C7498AE6905ED46525C"
 	  audience="contributor"> 
 		<title>Rationale</title> 
-		<lq href="http://www.cl.cam.ac.uk/~mgk25/iso-time.html"
+		<lq href="http://www.cl.cam.ac.uk/~mgk25/iso-time.html" scope="external" format="html"
 		 reftitle="Markus Kuhn">International Standard ISO 8601 specifies numeric
 		  representations of date and time. This standard notation helps to avoid
 		  confusion in international communication caused by the many different national
 		  notations and increases the portability of computer user interfaces. 
 		</lq> 
-		<lq href="http://www.cl.cam.ac.uk/~mgk25/iso-time.html"
+		<lq href="http://www.cl.cam.ac.uk/~mgk25/iso-time.html" scope="external" format="html"
 		 reftitle="Markus Kuhn">Other commonly used notations are e.g. 2/4/95, 4/2/95,
 		  95/2/4, 4.2.1995, 04-FEB-1995, 4-February-1995, and many more. Especially the
 		  first two examples are dangerous, because as both are used quite often in the

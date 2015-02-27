@@ -23,7 +23,7 @@
 	 <section id="section_0B42E91E8575447CA431050C678D2C7C"
 	  audience="contributor"> 
 		<title>Rationale</title> 
-		<lq reftitle="Bruce Nevin, OASIS DITA Technical Committee mailing list"
+		<lq reftitle="Bruce Nevin, OASIS DITA Technical Committee mailing list" scope="external" format="html"
 		 href="http://lists.oasis-open.org/archives/dita/200906/msg00021.html">Now that
 		  &lt;bookmap has been provided, my sense is that it should be thought of as
 		  hierarchically above &lt;map&gt;, and this usage of referencing &lt;bookmap&gt;
