@@ -31,7 +31,7 @@
 		<synph>steps-informal</synph> and the 
 		<synph>steps-unordered</synph> alternatives to 
 		<synph>steps</synph>. The 
-		<synph>steps-informal</synph> structure in only available in the 
+		<synph>steps-informal</synph> structure is only available in the 
 		<term>general task</term> information type, while 
 		<synph>steps-unordered</synph> can be used in the 
 		<term>(strict) task</term> and the 
