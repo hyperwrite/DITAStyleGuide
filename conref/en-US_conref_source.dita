@@ -1,0 +1,865 @@
+<?xml version="1.0"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_E1642C5A86C44BCE86FECD98EBAA3C89"> 
+  <title>Conref Source (US Spelling)</title> 
+  <shortdesc>This topic is not meant for publishing. It provides a transclusion
+	 repository for re-use elements. 
+  </shortdesc> 
+  <body> 
+	 <p> 
+	 <table id="table_414637BD662A4BCD8C041EA81935C92E"> 
+		<tgroup cols="2"><colspec colnum="1" colname="col1"
+		  colwidth="*"/><colspec colnum="2" colname="col2" colwidth="*"/><thead> 
+			 <row> 
+				<entry colname="col1">Variable Name and Description 
+				</entry> 
+				<entry colname="col2">Variable Element 
+				</entry> 
+			 </row></thead> 
+		  <tbody> 
+			 <row> 
+				<entry colname="col1">Phrase used for "The author" 
+				</entry> 
+				<entry colname="col2"><ph id="term_The_author">I</ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">Phrase used for "the author" 
+				</entry> 
+				<entry colname="col2"><ph id="term_the_author_lc">I</ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">Phrase used for "The author's" 
+				</entry> 
+				<entry colname="col2"><ph id="term_the_author_poss">My</ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">Phrase used for "the author's" 
+				</entry> 
+				<entry colname="col2"><ph id="term_the_author_poss_lc">my</ph> 
+				</entry> 
+			 </row>
+			 <row>
+				<entry colname="col1">Phrase used for "his"
+				</entry>
+				<entry colname="col2"><ph id="term_his_lc">my</ph>
+				</entry>
+			 </row> 
+			 <row> 
+				<entry colname="col1">Short Name of the DITA Style Manual which is
+				  the 
+				  <ph
+					conref="conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/artifact_word"><?xm-replace_text Phrase?></ph>
+				  of the PhD Research 
+				</entry> 
+				<entry colname="col2"><ph id="var_DITA_Style_Manual"><cite>The DITA
+						Style Guide</cite></ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">Full name of Scriptorium publication 
+				</entry> 
+				<entry colname="col2"><ph id="var_DITA_Style_Guide_Full"><cite>The
+						DITA Style Guide: Best Practices for Authors</cite></ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">Microsoft Corporation 
+				</entry> 
+				<entry colname="col2"><ph id="var_Microsoft_Word"><ph
+					 conref="conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_Microsoft"><?xm-replace_text Phrase?></ph>
+					 Word</ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">Microsoft Word 
+				</entry> 
+				<entry colname="col2"><ph id="var_Microsoft"><tm tmtype="reg"
+					 tmowner="Microsoft Corp">Microsoft</tm></ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">Chicago Manual of Style 13th Edition 
+				</entry> 
+				<entry colname="col2"><ph id="Chicago_short"><cite>The Chicago
+						Manual of Style</cite></ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">AGPS Style Manual 
+				</entry> 
+				<entry colname="col2"><ph id="var_AGPS"><cite>AGPS Manual of
+						Style</cite></ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">Microsoft Manual of Style 
+				</entry> 
+				<entry colname="col2"><ph id="Microsoft_MOS_short"><cite>Microsoft
+						Manual of Style for Technical Publications</cite></ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">DITA Language Reference 
+				</entry> 
+				<entry colname="col2"><ph id="var_DITA_Lang_Reference"><cite>DITA
+						Language Reference</cite></ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">DITA Architectural Specification 
+				</entry> 
+				<entry colname="col2"><ph id="var_DITA_Spec"><cite>DITA
+						Architectural Specification</cite></ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">Proper case version of the term Artifact 
+				</entry> 
+				<entry colname="col2"><ph id="artifact_word">Artefact</ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">Proper case version of the term Exegesis 
+				</entry> 
+				<entry colname="col2"><ph id="exegesis_word">Exegesis</ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">Swinburne University (full name) 
+				</entry> 
+				<entry colname="col2"><ph id="swinburne_full">Swinburne University
+					 of Technology</ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">Firefox (long form) 
+				</entry> 
+				<entry colname="col2"><ph id="firefox_long"><tm tmtype="reg"
+					 tmowner="Mozilla Foundation">Mozilla Firefox</tm></ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">Firefox (short form) 
+				</entry> 
+				<entry colname="col2"><ph id="firefox_short"><tm tmtype="reg"
+					 tmowner="Mozilla Foundation">Firefox</tm></ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">Zotero 
+				</entry> 
+				<entry colname="col2"><ph id="zotero">Zotero</ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">EndNote 
+				</entry> 
+				<entry colname="col2"><tm tmtype="reg"
+				  tmowner="Thomson Reuters" id="tm_EndNote">EndNote</tm> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">JustSystems XMetaL (short) 
+				</entry> 
+				<entry colname="col2"><ph id="xmetal_short"><tm tmtype="reg"
+					 tmowner="JustSystems Canada Inc">XMetaL</tm></ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">Author-it (company and/or software tool) 
+				</entry> 
+				<entry colname="col2"><ph id="var_AuthorIt">Author-it</ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">Information Mapping 
+				</entry> 
+				<entry colname="col2"><ph id="var_InfoMapping">Information
+					 Mapping</ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">Yahoo! DITA Users Group 
+				</entry> 
+				<entry colname="col2"><ph id="var_Yahoo_DITA_Users">Yahoo! DITA
+					 Users Group</ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">WinANT Echidna (main name) 
+				</entry> 
+				<entry colname="col2"><ph id="var_WinANT">WinANT Echidna</ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">World Trade organisation term 
+				</entry> 
+				<entry colname="col2"><term id="term_WTO">World Trade
+					 organization</term> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">DITA Open Toolkit 
+				</entry> 
+				<entry colname="col2"><ph id="var_DITA_OT">DITA Open Toolkit</ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">DITA 1.0 (non-breaking space) 
+				</entry> 
+				<entry colname="col2"><ph id="var_DITA10">DITA 1.0</ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">DITA 1.1 (non-breaking space) 
+				</entry> 
+				<entry colname="col2"><ph id="var_DITA11">DITA 1.1</ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">DITA 1.2 (non-breaking space) 
+				</entry> 
+				<entry colname="col2"><ph id="var_DITA12">DITA 1.2</ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">specialisation (in the DITA sense) 
+				</entry> 
+				<entry colname="col2"><ph id="var_specialisation"
+				  xml:lang="en-AU">specialization</ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">Specialisation (in the DITA sense) - initial
+				  cap 
+				</entry> 
+				<entry colname="col2"><ph
+				  id="var_Specialisation_InitCap">Specialization</ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">specialisations (in the DITA sense) 
+				</entry> 
+				<entry colname="col2"><ph id="var_specialisations"
+				  xml:lang="en-AU">specializations</ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">specialised (in the DITA sense) 
+				</entry> 
+				<entry colname="col2"><ph id="var_specialised"
+				  xml:lang="en-AU">specialized</ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">Specialised (in the DITA sense) - initial cap
+				  
+				</entry> 
+				<entry colname="col2"><ph
+				  id="var_Specialised_InitCap">Specialized</ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">specialise (in the DITA sense, verb) 
+				</entry> 
+				<entry colname="col2"><ph id="var_specialise"
+				  xml:lang="en-AU">specialize</ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">specialising (in the DITA sense, gerund) 
+				</entry> 
+				<entry colname="col2"><ph id="var_specialising">specializing</ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">specialiser (spelling issue) 
+				</entry> 
+				<entry colname="col2"><term
+				  id="term_specialiser">specializer</term> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">specialisation-aware (spelling issue) used as
+				  term 
+				</entry> 
+				<entry colname="col2"><term
+				  id="term_specialisation_aware">specialization-aware</term> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">organisation (spelling issue) 
+				</entry> 
+				<entry colname="col2"><ph id="var_organisation"
+				  xml:lang="en-AU">organization</ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">Organisation (spelling issue) - initial cap 
+				</entry> 
+				<entry colname="col2"><ph
+				  id="var_Organisation_InitCap">Organization</ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">organisations (spelling issue) 
+				</entry> 
+				<entry colname="col2"><ph id="var_organisations">organizations</ph>
+				  
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">Organisations (spelling issue) - initial cap 
+				</entry> 
+				<entry colname="col2"><ph
+				  id="var_Organisations_InitCap">Organizations</ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">organisation's (spelling issue) 
+				</entry> 
+				<entry colname="col2"><ph
+				  id="var_organisation_poss">organization's</ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">organise (spelling issue) 
+				</entry> 
+				<entry colname="col2"><ph id="var_organise"
+				  xml:lang="en-AU">organize</ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">organised (spelling issue) 
+				</entry> 
+				<entry colname="col2"><ph id="var_organised"
+				  xml:lang="en-AU">organized</ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">organising (spelling issue) 
+				</entry> 
+				<entry colname="col2"><ph id="var_organising"
+				  xml:lang="en-AU">organizing</ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">Organising (spelling issue) with initial cap 
+				</entry> 
+				<entry colname="col2"><ph
+				  id="var_Organising_InitCap">Organizing</ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">organisational (spelling issue) 
+				</entry> 
+				<entry colname="col2"><ph
+				  id="var_organisational">organizational</ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">organisation-wide (spelling issue) 
+				</entry> 
+				<entry colname="col2"><ph
+				  id="var_organisation_wide">organization-wide</ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">organisation-specific (spelling issue) 
+				</entry> 
+				<entry colname="col2"><ph
+				  id="var_organisation_specific">organization-specific</ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">customisation (spelling issue) 
+				</entry> 
+				<entry colname="col2"><ph xml:lang="en-AU"
+				  id="var_customisation">customization</ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">customised (spelling issue) 
+				</entry> 
+				<entry colname="col2"><ph xml:lang="en-AU"
+				  id="var_customised">customized</ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">HyperWrite trademark 
+				</entry> 
+				<entry colname="col2"><tm tmtype="reg"
+				  id="tm_hyperwrite">HyperWrite</tm> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">SVG (spelling issue) 
+				</entry> 
+				<entry colname="col2"><term xml:lang="en-AU" id="term_SVG">Scalable
+					 Vector Graphics</term> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">Subaru (used in examples) 
+				</entry> 
+				<entry colname="col2"><ph id="ph_Subaru_company_name">Supara</ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">Impreza (used in examples) 
+				</entry> 
+				<entry colname="col2"><ph id="ph_Impreza_product_name">Impress</ph>
+				  
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">localised (spelling issue) 
+				</entry> 
+				<entry colname="col2"><ph id="var_localised">localized</ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">localisation (spelling issue) 
+				</entry> 
+				<entry colname="col2"><ph id="var_localisation">localization</ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">Localisation (spelling issue) with initial
+				  cap 
+				</entry> 
+				<entry colname="col2"><ph
+				  id="var_Localisation_InitCap">Localization</ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">Localising (spelling issue) with initial cap 
+				</entry> 
+				<entry colname="col2"><ph
+				  id="var_Localising_InitCap">Localizing</ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">DITA Style Web Site (link) 
+				</entry> 
+				<entry colname="col2"><xref href="http://www.ditastyle.com/"
+				  scope="external" format="html" id="xref_ditastyle_com"><?xm-replace_text http://www.ditastyle.com/?></xref>
+				  
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">analysing (spelling issue) 
+				</entry> 
+				<entry colname="col2"><ph id="var_analysing">analyzing</ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">categorises (spelling issue) 
+				</entry> 
+				<entry colname="col2"><ph id="var_categorises">categorizes</ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">categorised (spelling issue) 
+				</entry> 
+				<entry colname="col2"><ph id="var_categorised">categorized</ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">categorisation (spelling issue) 
+				</entry> 
+				<entry colname="col2"><ph
+				  id="var_categorisation">categorization</ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">specialised (when used as a variable name for
+				  any specialised information type) 
+				</entry> 
+				<entry colname="col2"><varname
+				  id="varname_specialised">specialized</varname> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"> visualise (spelling issue) 
+				</entry> 
+				<entry colname="col2"><ph id="var_visualise">visualize</ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">honoured (spelling issue) 
+				</entry> 
+				<entry colname="col2"><ph id="var_honoured">honored</ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">focussing (spelling issue) 
+				</entry> 
+				<entry colname="col2"><ph id="var_focussing">focusing</ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">focusses (spelling issue) 
+				</entry> 
+				<entry colname="col2"><ph id="var_focusses">focuses</ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">synchronise (spellling issue) 
+				</entry> 
+				<entry colname="col2"><ph id="var_synchronise">synchronize</ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">synchronise TOC (spelling issue) 
+				</entry> 
+				<entry colname="col2"><term id="term_synchronise_toc">synchronize
+					 TOC</term> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">synchronisation (spelling issue) 
+				</entry> 
+				<entry colname="col2"><ph
+				  id="var_synchronisation">synchronization</ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">specialisation elements (spelling issue) 
+				</entry> 
+				<entry colname="col2"><term
+				  id="term_specialisation_elements">specialization elements</term> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">dialogue (spelling issue) 
+				</entry> 
+				<entry colname="col2"><ph id="var_dialogue">dialog</ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">specialisation (spelling issue) when used as
+				  a term 
+				</entry> 
+				<entry colname="col2"><term
+				  id="term_specialisation">specialization</term> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">contextualising (spelling issue) 
+				</entry> 
+				<entry colname="col2"><ph
+				  id="var_contextualising">contextualizing</ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">labelling (spelling issue) 
+				</entry> 
+				<entry colname="col2"><ph id="var_labelling">labeling</ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">Labelling (spelling issue) - initial caps 
+				</entry> 
+				<entry colname="col2"><ph id="var_Labelling_InitCap">Labeling</ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">maximise (spelling issue) 
+				</entry> 
+				<entry colname="col2"><ph id="var_maximise">maximize</ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">maximises (spelling issue) 
+				</entry> 
+				<entry colname="col2"><ph id="var_maximises">maximizes</ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">minimise (spelling issue) 
+				</entry> 
+				<entry colname="col2"><ph id="var_minimise">minimize</ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">optimised (spelling issue) 
+				</entry> 
+				<entry colname="col2"><ph id="var_optimised">optimized</ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">cataloguing (spelling issue) 
+				</entry> 
+				<entry colname="col2"><ph id="var_cataloguing">cataloging</ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">capitalised (spelling issue) 
+				</entry> 
+				<entry colname="col2"><ph id="var_capitalised">capitalized</ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">modelled (spelling issue) 
+				</entry> 
+				<entry colname="col2"><ph id="var_modelled">modeled</ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">scaleable (spelling issue) 
+				</entry> 
+				<entry colname="col2"><ph id="var_scaleable">scalable</ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">characterised (spelling issue) 
+				</entry> 
+				<entry colname="col2"><ph id="var_characterised">characterized</ph>
+				  
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">conreffing (spelling issue) 
+				</entry> 
+				<entry colname="col2"><term id="term_conreffing">conreffing</term> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">centralised (spelling issue) 
+				</entry> 
+				<entry colname="col2"><ph id="var_centralised">centralized</ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">recognisable (spelling issue) 
+				</entry> 
+				<entry colname="col2"><ph id="var_recognisable">recognizable</ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">SGML (spelling issue) 
+				</entry> 
+				<entry colname="col2"><term id="term_SGML">SGML (Standard
+					 Generalized Mark-up Language)</term> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">modularised (spelling issue) 
+				</entry> 
+				<entry colname="col2"><ph id="var_modularised">modularized</ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">generalise (spelling issue) 
+				</entry> 
+				<entry colname="col2"><ph id="var_generalise">generalize</ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">generalised (spelling issue) 
+				</entry> 
+				<entry colname="col2"><ph id="var_generalised">generalized</ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">Generalisation (spelling issue) - initial cap
+				  
+				</entry> 
+				<entry colname="col2"><ph
+				  id="var_Generalisation_InitCap">Generalization</ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">generalisation (spelling issue) used as term 
+				</entry> 
+				<entry colname="col2"><term
+				  id="term_generalisation">generalization</term> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">interchangeability (spelling issue) 
+				</entry> 
+				<entry colname="col2"><ph
+				  id="var_interchangeability">interchangability</ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">non-specialised (spelling issue) 
+				</entry> 
+				<entry colname="col2"><ph
+				  id="var_non_specialised">non-specialized</ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">endeavour (spelling issue) 
+				</entry> 
+				<entry colname="col2"><ph id="var_endeavour">endeavor</ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">behaviour (spelling issue) 
+				</entry> 
+				<entry colname="col2"><ph id="var_behaviour">behavior</ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">conditionalising (spelling issue) 
+				</entry> 
+				<entry colname="col2"><ph
+				  id="var_conditionalising">conditionalizing</ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">conditionalisation (spelling issue) 
+				</entry> 
+				<entry colname="col2"><ph
+				  id="var_conditionalisation">conditionalization</ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">externalised (spelling issue) 
+				</entry> 
+				<entry colname="col2"><ph id="var_externalised">externalized</ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">centralised approach term (spelling issue) 
+				</entry> 
+				<entry colname="col2"><term
+				  id="term_centralised_approach">centralized approach</term> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">popularised (spelling issue) 
+				</entry> 
+				<entry colname="col2"><ph id="var_popularised">popularized</ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">standardised (spelling issue) 
+				</entry> 
+				<entry colname="col2"><ph id="var_standardised">standardized</ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">library-focussed (spelling issue) 
+				</entry> 
+				<entry colname="col2"><ph
+				  id="var_library_focussed">library-focused</ph> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">document-focussed (spelling issue) 
+				</entry> 
+				<entry colname="col2"><ph
+				  id="var_doc_focussed">document-focused</ph> 
+				</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+	 </p> 
+	 <section id="section_AC0AE069335F437684566DBDFDDDEC2A"> 
+		<title>Common Paragraphs and Notes</title> 
+		<note id="note_stricttask_equals_task">In 
+		  <ph
+			conref="#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_DITA_Style_Manual"><?xm-replace_text Phrase?></ph>,
+		  the term 
+		  <term>task information type</term> means the 
+		  <term>task</term> information type in 
+		  <ph conref="#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_DITA10"><?xm-replace_text Phrase?></ph>
+		  and 1.1, and the 
+		  <term>strict task</term> information type in 
+		  <ph conref="#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_DITA12"><?xm-replace_text Phrase?></ph>.
+		  
+		</note> 
+	 </section> 
+	 <section id="section_F9AD705288094B03BEDB8292CA35711D"> 
+		<title>Style Guide Definition</title> 
+		<p id="p_styleguide_defined">A 
+		  <term>style manual or style guide</term> is a set of standards
+		  governing the design and writing of documents, and usually takes the form of a
+		  printed manual. Publishing 
+		  <ph
+			conref="conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_organisations"><?xm-replace_text Phrase?></ph>,
+		  standards bodies, government agencies and publication departments within an 
+		  <ph
+			conref="conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_organisation"><?xm-replace_text Phrase?></ph>
+		  are the typical originators of style manuals. Technical publication style
+		  manuals used by technical communicators, such as the 
+		  <ph
+			conref="conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_AGPS"><?xm-replace_text Phrase?></ph>
+		  and 
+		  <ph
+			conref="conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/Chicago_short"><?xm-replace_text Phrase?></ph>,
+		  devote a number of chapters to the publishing process, which, in the DITA
+		  model, is removed from the technical communicator's domain. Conversely, very
+		  little space is devoted to the semantic identification of content elements,
+		  something that is core in DITA. The major purpose of a style manual is to
+		  promote consistency, and one of the difficulties of DITA adoption is working
+		  without a style guide appropriate to the DITA paradigm. 
+		</p> 
+	 </section> 
+	 <section id="section_129B3737CBA94EAC9DB4C23FA1FEDF3E"> 
+		<title>Glossary Handling Paragraphs</title> 
+		<p id="glossary_linking_explanation1">The linking of a term occurring
+		  in-line in a normal content topic to its relevant 
+		  <synph>glossentry</synph> definition is a matter of associating the
+		  term (semantically identified in a 
+		  <synph>term</synph> element) with the hypertext reference
+		  (<synph>href</synph>) or the key reference (<synph>keyref</synph>) of the
+		  glossary topic. 
+		</p> 
+		<p id="glossary_linking_example_2">For example, the mark-up 
+		  <codeph>&lt;term keyref="eoy"&gt;EOY&lt;/term&gt;</codeph> establishes
+		  the association between the term 
+		  <q>EOY</q> and the glossary topic with a 
+		  <synph>keys</synph> attribute of 
+		  <synph>eoy</synph>. The related map entry may be 
+		  <codeph>&lt;glossref keys="eoy" href="eoy_nz.dita"/&gt;</codeph>. 
+		</p> 
+	 </section> 
+	 <section id="section_1ABBD252CA36490CA290F7D6A2A96585"> 
+		<title>Format of the href attribute</title> 
+		<p id="p_URI_definition_1">A 
+		  <term>URI</term>, or 
+		  <term>Uniform Resource Indicator</term>, is a standard for referencing
+		  resources on the Internet. The similar term 
+		  <term>URL</term>, or 
+		  <term>Uniform Resource Locator</term>, means a specific type of 
+		  <term>URI</term> where the location and the means of retrieving the
+		  resource are both incorporated in the address. For example, the 
+		  <term>URL</term> 
+		  <filepath>http://store.scriptorium.com/items/Books/list.htm</filepath>
+		  nominates the address of the resource and the protocol to use to retrieve it
+		  (in this case, 
+		  <term>http</term>). In general, however, most people use the terms
+		  interchangeably! 
+		</p> 
+		<p id="p_file_resource_2">Files on a file server or network drive on a
+		  local network can be referenced using the URI convention. Most DITA authoring
+		  tools will let you browse for the resource you want to reference, and then
+		  format the address in the correct UNC format. For example, the address of a
+		  file on a network server must be prefixed with the protocol 
+		  <filepath>smb://</filepath>. 
+		</p> 
+		<p id="p_slash_3">You must use (forward) slash characters for path
+		  separators. Do not use backslashes. Such file references are URIs in DITA, not
+		  file paths. The backslash is an illegal character in URIs. When referencing
+		  resources on a network server, prefix the UNC path with 
+		  <userinput>smb://</userinput>. 
+		</p> 
+		<p id="p_ampersand_4">You cannot use an ampersand (&amp;) character in an
+		  
+		  <synph>href</synph> attribute. If the URL being referenced contains an
+		  ampersand character, the 
+		  <codeph>&amp;amp;</codeph> character escape should be used to indicate
+		  that character. 
+		</p> 
+	 </section> 
+  </body> 
+</topic> 

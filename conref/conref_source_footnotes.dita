@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<topic id="topic_5EFF7CAFEAE74A25991CA03F38484520"> 
+  <title>Conref Source for Footnotes</title> 
+  <shortdesc>This topic is not meant for inclusion in a ditamap, but as a
+	 source of transcluded footnote content.
+  </shortdesc> 
+  <body>
+	 <p>A footnote must exist in a paragraph, as it is an inline element, not a
+		block element.
+	 </p>
+	 <p><fn id="Ament">Ament, K., 2003. Single Sourcing: Building Modular
+		  Documentation 1st ed., New York: William Andrew Publishing.</fn>
+	 </p>
+  </body> 
+</topic> 

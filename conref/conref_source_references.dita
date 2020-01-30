@@ -1,0 +1,615 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_60C4D0117D5941E4A5F815B50A7F8454"> 
+  <title>Bibliography</title> 
+  <prolog><author>Tony Self</author><copyright><copyryear
+		year="2008"/><copyrholder>HyperWrite Pty
+		  Ltd</copyrholder></copyright><metadata><keywords><indexterm>bibliography</indexterm><indexterm>citations</indexterm><indexterm>references</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <ul id="ul_CB059578E5FC4F5C8646B4EF6F44BC69"> 
+		<li id="cite_Abel_10Lessons_2006">Abel, S. (2006, July 30). 10 DITA
+		  Lessons Learned From Tech Writers in the Trenches. The Content Wrangler.
+		  Retrieved January 25, 2011, from
+		  http://thecontentwrangler.com/2006/07/30/10_dita_lessons_learned/. 
+		</li> 
+		<li id="cite_OER_Commons">About OER Commons. (n.d.). Open Educational
+		  Resources. Organisational, . Retrieved December 2, 2009, from
+		  http://www.oercommons.org/about#about-open-educational-resources 
+		</li> 
+		<li id="cite_SourceForge_stats">About SourceForge. (n.d.). SourceForge.
+		  Commercial, . Retrieved November 30, 2009, from http://sourceforge.net/about 
+		</li> 
+		<li id="cite_W3C_Web_Site">About W3C. (n.d.). World Wide Web Consortium
+		  (W3C). Organisational. Retrieved November 30, 2009, from
+		  http://www.w3.org/Consortium/ 
+		</li> 
+		<li id="cite_Agnosticism_Wikipedia">Agnosticism. (n.d.). In Wikipedia.
+		  Retrieved May 15, 2010, from http://en.wikipedia.org/wiki/Agnosticism 
+		</li> 
+		<li id="cite_Ament">Ament, K. (2003). Single sourcing: Building modular
+		  documentation (1st ed.). New York: William Andrew. 
+		</li> 
+		<li id="cite_andre_histoire_typographique">André, J. (1998). Petite
+		  histoire des signes de correction typographique. Cahiers GUTenberg, (31),
+		  45-59. 
+		</li> 
+		<li id="cite_andre_richy_paperless_editing">André, J., &amp; Richy, H.
+		  (1999). Paper-Less Editing and Proofreading of Electronic Documents. EuroTeX'99
+		  Proceedings. Retrieved July 8, 2010, from
+		  http://www.irisa.fr/imadoc/articles/1999/heidelberg.pdf. 
+		</li> 
+		<li id="cite_Apache_Derby">Apache Derby: Writing guidelines. (n.d.).
+		  Apache Derby. Retrieved October 10, 2009, from
+		  http://db.apache.org/derby/manuals/guidelines.html. 
+		</li> 
+		<li id="cite_Arnold_2005">Arnold, J. (2005). The PhD In Writing
+		  Accompanied By An Exegesis. Journal of University Teaching and Learning
+		  Practice, 2(1), 36-50. 
+		</li> 
+		<li id="li_8FDA1D1FE0A54C26A51147FFE966937E">Barker, T. T. (2003).
+		  Writing Software Documentation: A Task-Oriented Approach. Allyn and Bacon
+		  Series in Technical Communication (2nd ed.). New York: Longman. 
+		</li> 
+		<li id="cite_W3Cstyle_BernersLee_2002">Berners-Lee, T. (2002, April 17).
+		  Using Style Sheets - Style Guide. World Wide Web Consortium (W3C). Retrieved
+		  October 9, 2009, from http://www.w3.org/Provider/Style/StyleSheets.html. 
+		</li> 
+		<li id="cite_Bleiel_tcworld">Bleiel, N. (2008). tcworld 2009 Conference
+		  Proceedings - Using Journalistic Principles to Improve User Assistance. tekom. 
+		</li> 
+		<li id="cite_Capitalization"><xref
+		  href="http://en.wikipedia.org/?title=Title_case#Headings_and_publication_titles"
+		  scope="external" format="html">Capitalization - Heading and publication
+			 titles</xref>. (n.d.). Wikipedia. Retrieved January 9, 2009, from
+		  http://en.wikipedia.org/?title=Title_case#Headings_and_publication_titles 
+		</li> 
+		<li id="cite_Carey_Rouiller">Carey, M., &amp; Rouiller, S. (2008,
+		  November 12). DITA Short Description Guidelines. Presented at the Silicon
+		  Valley DITA Interest Group, Presentation, San Francisco. Retrieved April 30,
+		  2008, from http://svdig.ditamap.com/Shortdesc.ppt 
+		</li> 
+		<li id="cite_CNN_Negroponte">CNN. (1999, February 25). Internet Time:
+		  Will the 'beat' go on? CNN News. Retrieved November 30, 2009, from
+		  http://www.cnn.com/TECH/computing/9902/26/t_t/internet.time/ 
+		</li> 
+		<li id="cite_DADirect">DADirect. (n.d.). YouTube - A&amp;R 
+		  <xref
+		  href="http://www.youtube.com/watch?v=MXP0E7i0bfU&amp;eurl=http://www.dadirect.com.au/Welcome/ebm.asp&amp;feature=player_embedded"
+		  scope="external" format="html">Espresso Book Machine</xref>. Retrieved January
+		  9, 2009, from http://au.youtube.com/watch?v=MXP0E7i0bfU 
+		</li> 
+		<li id="li_503B6DC28B39476383BF845C30B91136">Damrau, J. (2005).
+		  Developing a Corporate Style Guide. STC Proceedings. Retrieved August 17, 2009,
+		  from http://www.stc.org/ConfProceed/2005/PDFs/0073.pdf 
+		</li> 
+		<li id="cite_Day_Priestley_Schell_2005">Day, D., Priestley, M., &amp;
+		  Schell, D. (2005). Introduction to the Darwin Information Typing Architecture.
+		  IBM developerWorks. Retrieved February 9, 2009, from
+		  http://www.ibm.com/developerworks/xml/library/x-dita1/ 
+		</li> 
+		<li id="cite_DeLoach_1998">DeLoach, S. (1998). Microsoft Manual of Style
+		  (Review). Technical Communication: Journal of the Society for Technical
+		  Communication, 55(3), 285-306. 
+		</li> 
+		<li id="cite_Doyle_2007">Doyle, B. (2007, April 3). HATs Off to XML Help.
+		  EContent - Digital Content Strategies and Resources . Commercial, . Retrieved
+		  December 26, 2009, from
+		  http://www.econtentmag.com/Articles/ArticleReader.aspx?ArticleID=35804 
+		</li> 
+		<li id="cite_Dubinko_Xanadu_2009">Dubinko, M. (2009, November 22). How
+		  Xanadu Works: technical overview. Micahpedia. Retrieved November 26, 2009, from
+		  http://dubinko.info/blog/2009/11/22/how-xanadu-works/ 
+		</li> 
+		<li id="cite_Eberlein_2007">Eberlein, K. J. (2007 12). Art of the short
+		  description | DITA XML.org. DITA XML.org. Retrieved March 7, 2008, from
+		  http://dita.xml.org/art-short-description 
+		</li> 
+		<li id="email_Eberlein_2009">Eberlein, K. J. (2009, August 21). Order for
+		  lang ref files (OASIS DITA TC correspondence). Retrieved from
+		  http://markmail.org/message/r67bf2jystkp34ir. 
+		</li> 
+		<li id="cite_EInk_Corporation"><xref href="http://www.eink.com/"
+		  scope="external" format="html">E Ink Corporation</xref> Web Site. (n.d.). .
+		  Retrieved January 9, 2009, from http://www.eink.com/ 
+		</li> 
+		<li id="cite_Elgan">Elgan, M. (n.d.). 
+		  <xref
+		  href="http://www.computerworld.com.au/index.php/id;748883531;pp;1;fp;4194304;fpid;1"
+		  scope="external" format="html">Why Amazon's Kindle is revolutionary</xref>.
+		  Computerworld. Retrieved January 9, 2009, from
+		  http://www.computerworld.com.au/index.php/id;748883531;pp;1;fp;4194304;fpid;1 
+		</li> 
+		<li id="cite_Ellison_Magic_Number_PPT">Ellison, M. (2004, February).
+		  Seven Plus or Minus Two - Put to the Test.pdf (application/pdf Object).
+		  Institute for Scientific and Technical Communicators. Retrieved November 13,
+		  2009, from http://www.istc.org.uk/Events/Conference/Papers/
+		  Seven%20Plus%20or%20Minus%20Two%20-%20Put%20to%20the%20Testpdf. 
+		</li> 
+		<li id="cite_Ellison_2007_SoundOff">Ellison, M. (2007, April). The
+		  Magical Number: Seven, Plus or Minus Two. SoundOff, 7(2). Retrieved January 25,
+		  2011, from
+		  http://stage.stc-psc.org/newsletter/fall2006.html#The_Magical_Number. 
+		</li> 
+		<li id="cite_Farkas_1999">Farkas, D. (1999). The Logical and Rhetorical
+		  Construction of Procedural Discourse. Technical Communication: Journal of the
+		  Society for Technical Communication, 46(1), 42-54. 
+		</li> 
+		<li id="cite_Flann_Hill_2004"> Flann, E., &amp; Hill, B. (2004). The
+		  Australian editing handbook (2nd ed.). Milton, Queensland: John Wiley and Sons.
+		  
+		</li> 
+		<li id="cite_Freelance_Editorial_Association">Freelance Editorial
+		  Association. (n.d.). 
+		  <xref href="http://www.edsguild.org/types.htm" scope="external"
+			format="html">Types of Editing</xref>. Retrieved January 9, 2009, from
+		  http://www.edsguild.org/types.htm 
+		</li> 
+		<li id="cite_Gardiner_XML_Editing">Gardiner, D. (2010, May). Discovering
+		  XML for editing. The Canberra Editor, 19(4), 6-10. 
+		</li> 
+		<li id="cite_Hackos_Managing_1994">Hackos, J. (1994). Managing your
+		  documentation projects. Wiley Technical Communication Library (1st ed.). New
+		  York: John Wiley and Sons. 
+		</li> 
+		<li id="li_A4F91ABBB8E84C54A5B3E003D054FC63">Hackos, J. (2006). Do We
+		  Really Need All that Glue? DITA XML.org. Retrieved March 8, 2008, from
+		  http://dita.xml.org/do-we-really-need-all-glue 
+		</li> 
+		<li id="cite_Hackos_Hedlund">Hackos, J., &amp; Hedlund, T. (2001). Making
+		  a business case for single sourcing. Denver, Colorado: Center for
+		  Information-Development Management. Retrieved May 15, 2010, from
+		  http://www.comtech-serv.com/pdfs/Business_Case_for_Single_Sourcing.pdf 
+		</li> 
+		<li id="cite_Hackos_Stevens_Standards">Hackos, J., &amp; Stevens, D.
+		  (1997). Standards for Online Communication. New York: John Wiley and Sons. 
+		</li> 
+		<li id="cite_Hale_1997">Hale, C. (1996). Wired Style - Principles of
+		  English Usage in the Digital Age (1st ed.). San Francisco: Publishers Group
+		  West. 
+		</li> 
+		<li id="li_99F97E5FC0E94F5BAFF8E1BFCC99ADEF">Hart, G. (2000, March). The
+		  style guide is "dead": long live the dynamic style guide! Geoff-Hart.com.
+		  Retrieved August 25, 2009, from
+		  http://www.geoff-hart.com/articles/2000/dynamicstyle.htm 
+		</li> 
+		<li id="li_478DA5E511874C1B8994E43CDCFCC7F3">Hollis Weber, J. (2007,
+		  October). Developing a Departmental Style Guide. Technical Editors' Eyrie.
+		  Retrieved August 18, 2009, from http://www.jeanweber.com/newsite/?page_id=30 
+		</li> 
+		<li id="cite_Horn_Structured_Paradigm_1998">Horn, R. E. (1998).
+		  Structured Authoring as a Paradigm. In Instructional Development: State of the
+		  Art. Educational Technology Publications. Retrieved March 10, 2010, from
+		  http://www.stanford.edu/~rhorn/a/topic/stwrtng_infomap/artclStWrAsParadigm.html
+		  
+		</li> 
+		<li id="cite_Horn_1999">Horn, R. E. (1999). Two Approaches to Modularity:
+		  Comparing the STOP Approach with Structured Writing. Journal of Computer
+		  Documentation. 
+		</li> 
+		<li id="cite_Houlihan_Aberdeen_OnTime">Houlihan, D. (2008). The technical
+		  communicator's transformation: Publishing on time and on quality. Boston:
+		  Aberdeen Group. 
+		</li> 
+		<li id="cite_Houlihan_Aberdeen_Benchmarking">Houlihan, D. (2010).
+		  Benchmarking content reuse in technical communication. Boston: Aberdeen Group. 
+		</li> 
+		<li id="cite_Hippies_Howard">Howard, J. R. (1969). The Flowering of the
+		  Hippie Movement. The Annals of the American Academy of Political and Social
+		  Science, 382(1), 43-55. 
+		</li> 
+		<li id="li_75A553B42AC044668C5ABD75AE2F6861">Hudson, N. (1993). Modern
+		  Australian Usage (p. 294). Melbourne: Oxford University Press. 
+		</li> 
+		<li id="cite_Hughes_2009">Hughes, M. (2009, September 18). Architecting
+		  UA Topics for Reuse. Presented at the UA Europe Conference, Conference,
+		  Cardiff, Wales. Retrieved September 30, 2009, from
+		  http://www.uaconference.eu/sessions.html#reuse 
+		</li> 
+		<li id="cite_Hyttinen_2008">Hyttinen, L. (2008, May). Creating a Style
+		  Guide - A Case Study of Sandvik Mining and Construction Hard Rock Mining
+		  Project. Pro Gradu Thesis, University of Tampere. Retrieved from
+		  http://tutkielmat.uta.fi/pdf/gradu02978.pdf 
+		</li> 
+		<li id="li_CF73942E010745ABA3E5053680A98D02">Illich, I. (1974).
+		  Deschooling Society. London: Calder and Boyars. 
+		</li> 
+		<li id="cite_IBM_Style_2009"> IBM Style. (2009). IBM UT Style and Word
+		  Usage Council. 
+		</li> 
+		<li id="cite_ISO26514-2008">International Standard ISO/IEC 26514: Systems
+		  and software engineering - Requirements for designers and developers of user
+		  documentation. (2008, June 15). International Standards Organisation. 
+		</li> 
+		<li id="cite_ISO5776_1983"> International Standard ISO/IEC 5776: 1983:
+		  Graphic technology - Symbols for text correction. (1983). International
+		  Organization for Standardization. 
+		</li> 
+		<li id="cite_Johnson_2009">Johnson, T. (2009, December 27). If No One
+		  Reads the Manual, That's Okay. I'd Rather Be Writing. Retrieved January 14,
+		  2010, from
+		  http://www.idratherbewriting.com/2009/12/27/if-no-one-reads-the-manual-thats-okay/
+		  
+		</li> 
+		<li id="li_28AFD7B32763483DA0F3A0B9C6B43023">Jones, D. (1997). Technical
+		  Writing Style. Allyn and Bacon Series in Technical Communication. New York:
+		  Longman. 
+		</li> 
+		<li id="cite_Keen_Bell">Keen, A., &amp; Bell, E. (2007, August 10).
+		  Andrew Keen v Emily Bell | Comment is free | guardian.co.uk. The Guardian.
+		  Retrieved August 10, 2009, from
+		  http://www.guardian.co.uk/commentisfree/2007/aug/10/andrewkeenvemilybell 
+		</li> 
+		<li id="cite_Krechmer1999">Krechmer, K. (1999). Technical Communications
+		  Standards: New Directions in Innovation. Presented at the First IEEE Conference
+		  on Standardization and Innovation in Information Technology, Aachen, Germany.
+		  Retrieved February 1, 2010, from http://www.csrstds.com/siit.html 
+		</li> 
+		<li id="cite_Kulik_Nigloschy_2003">Kulik, B., &amp; Nigloschy, D. (2003).
+		  
+		  <xref
+			href="http://www.idealliance.org/papers/dx_xml03/papers/03-06-03/03-06-03.pdf"
+			scope="external" format="html">XML Centric Workflows: New Opportunities for
+			 Publishers</xref>. Retrieved January 9, 2009, from
+		  http://www.idealliance.org/papers/dx_xml03/papers/03-06-03/03-06-03.pdf 
+		</li> 
+		<li id="cite_WeThink_Leadbeater">Leadbeater, C. (2008). We-Think (1st
+		  ed.). London: Profile Books. 
+		</li> 
+		<li id="cite_Lockwood_2005">Lockwood, K. (2005). Style: The essential
+		  guide for journalists and professional writers (3rd ed.). Melbourne: News
+		  Custom Publishing. 
+		</li> 
+		<li id="cite_Lynch_Horton_Rhetoric">Lynch, P. L., &amp; Horton, S.
+		  (n.d.). Rhetoric and Web Design. Web Style Guide Online 3rd Edition. Retrieved
+		  January 25, 2011, from
+		  http://webstyleguide.com/wsg3/9-editorial-style/4-rhetoric-and-web-design.html.
+		  
+		</li> 
+		<li id="cite_Lynch_Horton">Lynch, P. L., &amp; Horton, S. (2009). Web
+		  Style Guide: Basic Design Principles for Creating Web Sites, Web Style Guide
+		  (3rd ed.). New Haven, USA: Yale University Press. Retrieved from
+		  http://webstyleguide.com/index.html 
+		</li> 
+		<li id="cite_Manning">Manning, S. (n.d.). 
+		  <xref
+			href="http://www.rockley.com/TheRockleyReport/V1I4/People%20Processes%20and%20Change.htm"
+			scope="external" format="html">XML: To Train, or not to train</xref>. The
+		  Rockley Report. Retrieved December 17, 2008, from
+		  http://www.rockley.com/TheRockleyReport/V1I4/People%20Processes%20and%20Change.htm
+		  
+		</li> 
+		<li id="cite_McDaniel_2005">McDaniel, E. (2005). Consider the source:
+		  Structured authoring for XML-based documentation. Presented at the UNC College
+		  and University System Exchange (CAUSE) Conference, Raleigh, North Carolina:
+		  University of North Carolina. Retrieved February 23, 2010, from
+		  http://www.unc.edu/cause05/presentations/mcdaniel/mcdaniel.pdf 
+		</li> 
+		<li id="cite_McGovern_links">McGovern, G. (2009, November 2). Why web
+		  links are calls to action. New Thinking. Retrieved February 23, 2010, from
+		  http://www.gerrymcgovern.com/nt/2009/nt-2009-11-02-Web-links-action.htm 
+		</li> 
+		<li id="cite_Microsoft_MSTP_2004"><tm tmtype="reg"
+		  tmowner="Microsoft Corporation">Microsoft</tm> Manual of Style for Technical
+		  Publications, Third Edition, 2004, ISBN 0-7356-1746-5 
+		</li> 
+		<li id="cite_Miller_Seven"><ph id="ph_Miller_Seven">Miller, G. A. (1956).
+			 The magical number seven, plus or minus two: Some limits on our capacity for
+			 processing information. Psychological Review, 63(2), 81-97. 
+		  </ph> 
+		</li> 
+		<li id="cite_Muegge">Muegge, U. (n.d.). 
+		  <xref
+			href="http://www.translationdirectory.com/articles/article1359.php"
+			scope="external" format="html">Controlled language: the next big thing in
+			 translation?</xref> Translation Directory. Retrieved March 10, 2008, from
+		  http://www.translationdirectory.com/articles/article1359.php 
+		</li> 
+		<li id="cite_MythTV_MOS">MythTV: Manual of Style. (n.d.). MythTV.
+		  Retrieved January 27, 2011, from
+		  http://www.mythtv.org/wiki/MythTV:Manual_of_Style. 
+		</li> 
+		<li id="cite_Web_Server_Survey">Netcraft Web Server Survey. (2009,
+		  February). Netcraft. Retrieved November 30, 2009, from
+		  http://news.netcraft.com/archives/2009/02/18/february_2009_web_server_survey.html
+		  
+		</li> 
+		<li id="cite_Negroponte">Nicholas Negroponte Interview on Lateline
+		  [videorecording]. (1996, March 19). Lateline (Australian Broadcasting
+		  Corporation). Sydney. 
+		</li> 
+		<li id="li_538B901EA0874F23A62F4AD22F437D53">OASIS. (2007, August 1).
+		  Transitional text. DITA Version 1.1 Architectural Specification.
+		  Organisational, . Retrieved December 27, 2009, from
+		  http://docs.oasis-open.org/dita/v1.1/OS/archspec/transitionaltext.html 
+		</li> 
+		<li id="cite_Adoption_TC">OASIS DITA Adoption TC Web site. (n.d.). OASIS
+		  Open. Non-commercial, . Retrieved December 1, 2010, from
+		  http://www.oasis-open.org/committees/tc_home.php?wg_abbrev=dita-adoption. 
+		</li> 
+		<li id="cite_Ogden_1930">Ogden, C. (1930). Basic English: A General
+		  Introduction with Rules and Grammar. London: Paul Treber and Company. 
+		</li> 
+		<li id="cite_ohara_history">O'Hara, F. M. (2001). A Brief History of
+		  Technical Communication. In STC Proceedings 2001. Presented at the 48th
+		  International STC Conference, Chicago: Society for Technical Communication.
+		  Retrieved February 23, 2010, from
+		  http://www.stc.org/confproceed/2001/PDFs/STC48-000052.pdf 
+		</li> 
+		<li id="cite_OHara_Sellen">O'Hara, K., &amp; Sellen, A. (1997). A
+		  Comparison of Reading Paper and On-Line Documents (pp. 335-342). Presented at
+		  the Proceedings of CHI '97, Human Factors in Computing Systems, Atlanta.
+		  Retrieved July 13, 2010, from
+		  http://scholar.google.com.ezproxy.lib.swin.edu.au/scholar?q=kenton+o%27hara&amp;hl=en&amp;lr=&amp;btnG=Search.
+		  
+		</li> 
+		<li id="cite_OKeefe_WYSIOO_2006">O'Keefe, S. (2006, April 12). Wednesday
+		  at WritersUA: Structured authoring: taking the plunge. Scriptorium. Retrieved
+		  May 15, 2010, from
+		  http://www.scriptorium.com/blog/2006/04/wednesday-at-writersua-structured-authoring-taking-the-plunge.html
+		  
+		</li> 
+		<li id="cite_ONeill_2002">O'Neill, J. (2002). A global style guide:
+		  Working together around the world. STC 2002 Conference Proceedings. Retrieved
+		  August 26, 2009, from http://www.stc.org/confproceed/2002/PDFs/STC49-00024.pdf 
+		</li> 
+		<li id="cite_Peters_EnglishUsage_2004">Peters, P. (2004). The Cambridge
+		  Guide to English Usage (1st ed.). Cambridge: Cambridge University Press. 
+		</li> 
+		<li id="li_2E5471E82B764469A348384E265CC863">Parkes, M. (1993). Pause and
+		  Effect: An Introduction to the History of Punctuation in the West (1st ed., p.
+		  327). Los Angeles: University of California Press. 
+		</li> 
+		<li id="cite_Petelin_Durham">Petelin, R., &amp; Durham, M. (1992). The
+		  professional writing guide (1st ed.). Warriewood, NSW: Business and
+		  Professional Publishing. 
+		</li> 
+		<li id="cite_Perlin_Industrial">Perlin, N. (2007, January). Writing
+		  becomes industrial. Intercom, 54, 17-19. 
+		</li> 
+		<li id="li_8FC2015AC4694C5E98BB29286428160E">Price, J., &amp; Korman, H.
+		  (1993). How to Communicate Technical Information: A Handbook of Software and
+		  Hardware Documentation. Boston: Addison-Wesley. 
+		</li> 
+		<li id="cite_OASIS_DITAv1_1_LangRef">Priestley, M., Anderson, R. E.,
+		  &amp; Hackos, J. (Eds.). (2007). DITA Language Specification v1.1. OASIS. 
+		</li> 
+		<li id="cite_APA_Style_Guide_2001">Publication Manual of the American
+		  Psychological Association, 5th Edition, Washington DC, 2001, APA 
+		</li> 
+		<li id="cite_Purchase_Little_Book">Purchase, S. (1998). The Little Book
+		  of Style. Canberra: AusInfo (Department of Finance and Administration). 
+		</li> 
+		<li id="cite_Radio_National_Style_Guide">Radio National style guide.
+		  (2004, March 1). Australian Broadcasting Corporation. Commercial, . Retrieved
+		  January 27, 2011, from http://style.radionational.net.au/glossary. 
+		</li> 
+		<li id="cite_Raya_2004">Raya, R. (2004). 
+		  <xref href="http://www.ibm.com/developerworks/xml/library/x-localis2/"
+		  scope="external" format="html">XML in Localisation: Use XLIFF to translate
+			 documents</xref>. IBM developerWorks. Retrieved January 9, 2009, from
+		  http://www.ibm.com/developerworks/xml/library/x-localis2/ 
+		</li> 
+		<li id="cite_Reason_Bradbury_2001">Reason, P., &amp; Bradbury, H. (Eds.)
+		  (2001). Handbook of Action Research: Participative Inquiry and Practice.
+		  London: Sage Publications. 
+		</li> 
+		<li id="cite_Reshef">Reshef, S. (2009). UoPeople Student Handbook -
+		  Introduction. University of the People. Retrieved December 2, 2009, from
+		  http://www.uopeople.org/LinkClick.aspx?fileticket=svtG9FhsImk%3d&amp;tabid=266 
+		</li> 
+		<li id="cite_Hippies_Rijken">Rijken, D. (2007). Hippies 2.0 in Museum
+		  2.0. In The User is the Content - 10 Scenarios for the Future (pp. 18-20).
+		  Antwerp: C.H.I.P.S. vzw. Retrieved November 30, 2009, from
+		  http://www.lulu.com/items/volume_64/1148000/1148772/8/print/MeetingBook3.pdf 
+		</li> 
+		<li id="cite_Robidoux_2008">Robidoux, C. (2008). Rhetorically structured
+		  content: Developing a collaborative single-sourcing curriculum. Technical
+		  Communication Quarterly, 17(1), 110-135. 
+		</li> 
+		<li id="cite_Rockley_Impact_of_Single_Sourcing">Rockley, A. (2001). The
+		  impact of single sourcing and technology. Technical Communication: Journal of
+		  the Society for Technical Communication, 48(2), 189-199. 
+		</li> 
+		<li id="cite_Rockley_DITA101">Rockley, A., Manning, S., &amp; Cooper, C.
+		  (2009). DITA 101 - Fundamentals of DITA for Authors and Managers. Lulu.com. 
+		</li> 
+		<li id="cite_Sapienza_2004">Sapienza, F. (2004). Usability, structured
+		  content, and single sourcing with XML. Technical Communication: Journal of the
+		  Society for Technical Communication, 51(3), 399-408. 
+		</li> 
+		<li id="cite_Serial_Comma"><xref
+		  href="http://en.wikipedia.org/wiki/Serial_comma" scope="external"
+		  format="html">Serial comma</xref>. (n.d.). Wikipedia. Retrieved January 9,
+		  2009, from http://en.wikipedia.org/wiki/Serial_comma 
+		</li> 
+		<li id="cite_Self_Acronym">Self, T. (n.d.). The Mysterious Acronym Tag.
+		  HyperWrite. Commercial, . Retrieved July 6, 2010, from
+		  http://www.hyperwrite.com/Articles/acronym_tag.aspx. 
+		</li> 
+		<li id="cite_Self_TACTICS">Self, T. (2008). Structured Writing in XML
+		  Participant Guide (1st ed.). Sydney: TACTICS Consulting. (Commercial training
+		  workbook) 
+		</li> 
+		<li id="cite_Self_2008">Self, T. (2008). 
+		  <xref href="http://www.hyperwrite.com/Articles/showarticle.aspx?id=84."
+		  scope="external" format="html">What if Readers Can't Read?</xref> HyperWrite.
+		  Retrieved January 9, 2009, from
+		  http://www.hyperwrite.com/Articles/showarticle.aspx?id=84 
+		</li> 
+		<li id="cite_TSelf_DITA_Article_Publishing_ANZCA09">Self, T. (2009). DITA
+		  and the challenges of single-source article publishing. In 
+		  <i>Communication, Creativity and Global Citizenship: Refereed
+			 Proceedings of the Australian and New Zealand Communications Association Annual
+			 Conference</i>. Presented at the ANZCA Annual Conference, Brisbane. Retrieved
+		  July 2, 2010, from
+		  http://www.cpe.qut.edu.au/conferences/2009/anzca/proceedings/Self_ANZCA09.pdf. 
+		</li> 
+		<li id="cite_Self_Glossary_2009">Self, T. (2009, March). Improved
+		  Glossary and Terminology Handling Features in DITA 1.2. HyperWrite. Commercial.
+		  Retrieved November 25, 2009, from
+		  http://www.hyperwrite.com/Articles/showarticle.aspx?id=86 
+		</li> 
+		<li id="cite_Self_STOP_2009">Self, T. (2010, October). Writing to STOP.
+		  CIDM Information Management News, 10(10). Retrieved February 10, 2011, from
+		  http://www.infomanagementcenter.com/enewsletter/2010/201010/second.htm. 
+		</li> 
+		<li id="cite_Self_Reducing_Context">Self, T. (2010, December). Reducing
+		  Context in Modular Documents. Best Practices Newsletter (CIDM), 12(6), 133-140.
+		  
+		</li> 
+		<li id="cite_Self_ANZCA10">Self, T. (2010). Context-agnostic writing in
+		  modular documents. In 
+		  <i>Media, Democracy and Change: Refereed Proceedings of the Australian
+			 and New Zealand Communication Association Conference 2010</i>. Presented at the
+		  ANZCA Conference 2010, Canberra. Retrieved February 10, 2011, from
+		  http://www.anzca.net/conferences/conference-papers/94-anzca10proceedings.html. 
+		</li> 
+		<li id="ciite_Self_tcworld_2011">Self, T. (2011, March). Can you explain
+		  that again? DITA for beginners. tcworld, 19-21. 
+		</li> 
+		<li id="cite_Hippies_Sieghart">Sieghart, M. A. (2007, May 25). Hey man,
+		  we're all kind of hippies now. Far out. Times Online. Newspaper, . Retrieved
+		  November 30, 2009, from
+		  http://www.timesonline.co.uk/tol/comment/columnists/article1837763.ece 
+		</li> 
+		<li id="cite_Simpson_1935">Simpson, P. (1935). Proof-Reading in the
+		  Sixteenth, Seventeenth and Eighteenth Centuries (1st ed.). London: Oxford
+		  University Press. 
+		</li> 
+		<li id="cite_Snooks_2002">Snooks and Co. (2002). Style manual: for
+		  authors, editors and printers (6th ed.). Brisbane: Wiley Australia. 
+		</li> 
+		<li id="cite_Swin_HATC424">Structured Authoring at Swinburne University
+		  of Technology. (n.d.). Swinburne University of Technology, Melbourne,
+		  Australia. Education, . Retrieved February 22, 2011, from
+		  http://courses.swinburne.edu.au/subjects/Structured-Authoring-HATC424/local. 
+		</li> 
+		<li id="cite_People_Place_Stylesheet">Style Sheet for People and Place.
+		  (n.d.). Monash University. Retrieved September 19, 2009, from
+		  http://elecpress.monash.edu.au/pnp/author/stylesheet.pdf. 
+		</li> 
+		<li id="cite_Sun_ReadMeFirst">Sun Technical Publications. (2003). Read Me
+		  First! A Style Guide for the Computer Industry (2nd ed.). Mountain View,
+		  California: Prentice Hall PTR. 
+		</li> 
+		<li id="cite_SwainH">Swain, H. (2009, November 30). Online university of
+		  hope. The Age, 14. 
+		</li> 
+		<li id="cite_AP_Stylebook">The Associated Press. (2009). The Associated
+		  Press Stylebook 2009 Fully Revised and Updated (43rd ed.). New York: Basic
+		  Books. Retrieved from http://www.apstylebook.com/ 
+		</li> 
+		<li id="cite_Chicago_1982"> The Chicago Manual of Style. (1982). (13th
+		  ed.). Chicago: University of Chicago Press. 
+		</li> 
+		<li id="cite_Chicago_Citation_Quick_Guide">The Chicago Manual of Style
+		  Citation Quick Guide. (n.d.). The Chicago Manual of Style Online. Retrieved
+		  November 11, 2009, from
+		  http://www.chicagomanualofstyle.org/tools_citationguide.html 
+		</li> 
+		<li id="cite_Mozilla_Manifesto">The Mozilla Manifesto. (n.d.). Mozilla
+		  Organisation. Organisational, . Retrieved November 30, 2009, from
+		  http://www.mozilla.org/about/manifesto.en.html 
+		</li> 
+		<li id="cite_Lingua_Franca_1999">The Newspaper Style Manual... (1999,
+		  December 4). Lingua Franca. Australian Broadcasting Corporation. Retrieved
+		  January 26, 2011, from http://www.abc.net.au/rn/arts/ling/stories/s70685.htm. 
+		</li> 
+		<li id="cite_Thesis_Statements_TWCUNC">Thesis Statements. (n.d.). The
+		  Writing Center, University of North Carolina. Student handouts, . Retrieved
+		  November 8, 2009, from http://www.unc.edu/depts/wcweb/handouts/thesis.html 
+		</li> 
+		<li id="cite_Thesis_Statements_Jackson">Tips on Writing Your Thesis
+		  Statement. (n.d.). Jackson School of International Studies Writing Center.
+		  Academic, . Retrieved November 8, 2009, from
+		  http://depts.washington.edu/pswrite/thesisstmt.html 
+		</li> 
+		<li id="cite_Trace_Stop_1965">Tracey, J. R., Rugh, D. E., &amp; Starkey,
+		  W. S. (1965, January). Sequential Thematic Organization of Publications (STOP):
+		  How to Achieve Coherence in Proposals and Reports. University of Washington.
+		  Retrieved May 9, 2009, from
+		  http://faculty.washington.edu/farkas/TC510/TraceySTOPReport.pdf 
+		</li> 
+		<li id="cite_VanBuren_Buehler_1980">Van Buren, R., &amp; Buehler, M. F.
+		  (1980). 
+		  <xref
+		  href="http://www.faculty.english.ttu.edu/Eaton/5374/levels_of_edit.pdf"
+		  scope="external" format="html">The Levels of Edit</xref>. Pasadena, California:
+		  Jet Propulsion Laboratory, 1980 Retrieved December 13, 2008. 
+		</li> 
+		<li id="cite_Vazquez_Practical_DITA_2009">Vazquez, J. (2009). Practical
+		  DITA (1st ed.). Durham, NC: Write Spirit. 
+		</li> 
+		<li id="cite_W3C_QA">W3C Quality Assurance Web Site. (n.d.). World Wide
+		  Web Consortium (W3C). Retrieved October 9, 2009, from http://www.w3.org/QA/. 
+		</li> 
+		<li id="li_AF8CA201B5494CEBAE676F23921C9C39">Walker, J., &amp; Taylor, T.
+		  (n.d.). The Columbia Guide to Online Style (2nd ed.). Columbia University
+		  Press. 
+		</li> 
+		<li id="cite_Wallace_Hughes_1995">Wallace, D., &amp; Hughes, J. (1995).
+		  Style Book - A Guide for New Zealand Writers and Editors (5th ed.). Wellington:
+		  GP Publications. 
+		</li> 
+		<li id="cite_Weber_2005">Weber, Steven (2005). The Success of Open
+		  Source. Harvard: Harvard University Press. 
+		</li> 
+		<li id="cite_Monash_Web_Style">Web Style Guide (Version 4). (n.d.).
+		  Monash University. Academic, . Retrieved May 1, 2009, from
+		  http://www.monash.edu.au/staff/web/. 
+		</li> 
+		<li id="cite_Weiss_ImprovingInterational">Weiss, E. H. (n.d.). Improving
+		  International Technical Communication by Containing Prose Paragraphs.pdf
+		  (application/pdf Object). Retrieved November 11, 2009, from
+		  http://www.edmondweiss.com/PDF/Improving%20International%20%20Technical%20Communication
+		  %20by%20Contaning%20Prose%20Paragraphs.pdf 
+		</li> 
+		<li id="cite_Weiss_1999">Weiss, E. H. (1999). Bits, Atoms, and the
+		  Technical Writer: The Rhetoric of STOP. Journal of Computer Documentation. 
+		</li> 
+		<li id="cite_Weiss_2005">Weiss, E. H. (2005). The Elements of
+		  International English Style : A Guide to Writing Letters, Reports, Technical
+		  Documents, and Internet Pages for a Global Audience. New York: M.E. Sharpe. 
+		</li> 
+		<li id="cite_Wikipedia_MOS">Wikipedia: Manual of Style. (n.d.).
+		  Wikipedia. Retrieved January 27, 2011, from
+		  http://en.wikipedia.org/wiki/Wikipedia:Manual_of_Style. 
+		</li> 
+		<li id="cite_Wilkinson_vdu">Wilkinson, R. T. (1987). Proof-reading: VDU
+		  and paper text compared for speed, accuracy and fatigue. Behaviour and
+		  Information Technology, 6(2), 125-133. doi: 10.1080/01449298708901822. 
+		</li> 
+		<li id="cite_Williams_2003">Williams, J. D. (2003). The implications of
+		  single sourcing for technical communicators. Technical Communication: Journal
+		  of the Society for Technical Communication, 50(3), 321-327. 
+		</li> 
+		<li id="cite_writepoint_dita_survey_2009">WritePoint. (2010). DITA
+		  challenges survey results (November 2009). Commercial. Retrieved January 18,
+		  2010, from
+		  http://www.writepoint.com/site/downloads/WritePoint_DITASurveyChallenges_Results.pdf
+		  
+		</li> 
+		<li id="cite_XML_Cover_Pages_DITA">XML Cover Pages: 
+		  <xref href="http://xml.coverpages.org/ditaV11-Standard.html"
+		  scope="external" format="html">DITA 1.1 Appproved as an OASIS Standard</xref>.
+		  (2007, August 13). The Cover Pages. Retrieved June 8, 2009, from
+		  http://xml.coverpages.org/ditaV11-Standard.html 
+		</li> 
+		<li id="email_Yeo_2009">Yeo, S. (2009, September 2). Order for lang ref
+		  files (OASIS DITA TC correspondence). Retrieved from
+		  http://lists.oasis-open.org/archives/dita/200909/msg00041.html. 
+		</li> 
+		<li id="cite_Zydron_2008">Zydron, A. (2008, March 4). Best Practice for
+		  Using the DITA CONREF Attribute for Translation. OASIS. Retrieved September 29,
+		  2009, from
+		  http://www.oasis-open.org/committees/download.php/27580/ConrefBestPracticesWhitePaper%5B1%5D.pdf
+		  
+		</li> 
+	 </ul> 
+	 <section id="section_D04B685C131441A08B337D2269160694"
+	 platform="academic_only" audience="author_only"> 
+		<title>Web Style Guides</title> 
+	 </section> 
+  </conbody> 
+</concept> 

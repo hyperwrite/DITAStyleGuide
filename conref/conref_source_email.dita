@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<concept id="concept_60C4D0117D5941E4A5F815B50A7F8454"> 
+  <title>Mailing List References</title> 
+  <prolog><author>Tony Self</author><copyright><copyryear
+		year="2008"/><copyrholder>HyperWrite Pty
+		  Ltd</copyrholder></copyright><metadata><keywords><indexterm>bibliography</indexterm><indexterm>citations</indexterm><indexterm>mailing
+			 lists</indexterm><indexterm>references</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <ul id="ul_CB059578E5FC4F5C8646B4EF6F44BC69"> 
+		<li id="li_E335485E6DE64F41890EE2DD9C969F67">Yeo, S., &amp; Eberlein, K.
+		  J. (2009, September 30). Order for elements in the base language reference.
+		  OASIS DITA Technical Committee.
+		</li> 
+	 </ul> 
+  </conbody> 
+</concept> 

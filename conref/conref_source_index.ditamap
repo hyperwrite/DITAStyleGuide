@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<map id="conref_index_reuse_phd">
+<title>Index Term Re-use</title>
+<topicmeta>
+<keywords>
+<indexterm id="index_conref">conref</indexterm>
+</keywords>
+</topicmeta>
+</map> 

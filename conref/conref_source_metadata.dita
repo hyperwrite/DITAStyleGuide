@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_hw_conref_meta"> 
+  <title>Metadata Conref Source</title> 
+  <shortdesc>This topic contains only metadata for re-use in other topics. 
+  </shortdesc> 
+  <prolog><author id="author_tony_self">Tony Self</author><copyright><copyryear
+		year="2009"/><copyrholder id="copyright_hyperwrite">HyperWrite Pty
+		  Ltd</copyrholder></copyright><metadata><keywords><indexterm
+		  id="index_specialisation">specialisation</indexterm><indexterm
+		  id="index_specialisation_elements">specialisation
+			 elements</indexterm><indexterm
+		  id="index_generalisation">generalisation</indexterm><indexterm
+		  id="index_organising">organising</indexterm><indexterm
+		  id="index_organising_reuse">organising re-use</indexterm><indexterm
+		  id="index_specialised">specialised</indexterm><indexterm xml:lang="en-AU"
+		  id="index_organisation_of_elements">organisation of
+			 elements</indexterm><indexterm xml:lang="en-AU"
+		  id="index_domain_specialisation">domain
+			 specialisation</indexterm><indexterm
+		  id="index_structural_specialisation">structural
+			 specialisation</indexterm><indexterm xml:lang="en-AU"
+		  id="index_specialisation_pros_cons">specialisation<indexterm>pros and
+				cons</indexterm></indexterm><indexterm xml:lang="en-AU"
+		  id="index_specialisation_rules_of">specialisation<indexterm>rules
+				of</indexterm></indexterm><indexterm xml:lang="en-AU"
+		  id="index_specialisation_types_of">specialisation<indexterm>types
+				of</indexterm><indexterm>domain</indexterm><indexterm>structural</indexterm></indexterm><indexterm
+		  id="index_dialogue">dialogue</indexterm><indexterm
+		  id="index_localising_graphics">localising graphics</indexterm><indexterm
+		  id="index_localisation">localisation</indexterm><indexterm
+		  id="index_labelling">labelling</indexterm><indexterm xml:lang="en-AU"
+		  id="index_localisation_graphics">localisation<indexterm>graphics</indexterm></indexterm></keywords></metadata>
+	 <metadata></metadata>
+  </prolog> 
+</topic> 
