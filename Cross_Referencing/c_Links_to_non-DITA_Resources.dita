@@ -141,7 +141,7 @@
 		href="http://groups.yahoo.com/group/dita-users/message/17644"> You need to add
 		  scope="external" ( as you would for any reference to things that are outside of
 		  your DITA content set). You may need to also say format="email" or something
-		  but that probably shouldn't be necessary--most processors should just pass an
+		  but that probably shouldn't be necessary -- most processors should just pass an
 		  external URI straight through to the output. 
 		</lq> 
 	 </section> 

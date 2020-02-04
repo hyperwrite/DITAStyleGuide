@@ -39,7 +39,7 @@
 	 <p>Structural 
 		<ph
 		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialisation"><?xm-replace_text Phrase?></ph>
-		is used to design complely new information types, such as an architecture to
+		is used to design completely new information types, such as an architecture to
 		suit Java API documentation. 
 	 </p> 
 	 <fig id="fig_452D07238CC94E9593408DDDCE8776E7"> 

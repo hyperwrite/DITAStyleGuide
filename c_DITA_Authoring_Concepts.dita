@@ -19,10 +19,10 @@
 		</draft-comment> 
 		<draft-comment>Need to add an introduction topic to say that this Manual
 		  of Style isn't a replacement for the DITA Langref, but is intended to be read
-		  alongside it. Also, it is not intended to be a comprehsive guide to all DITA
+		  alongside it. Also, it is not intended to be a comprehensive guide to all DITA
 		  elements and attributes, and nor is it intended to be a DITA training manual.
 		  It is intended to be a reference when contentious issues are encountered. It
-		  documents a series of suggestions for how DITA shoudl be implemented, and its
+		  documents a series of suggestions for how DITA should be implemented, and its
 		  main goal is to provide a tool for creating consistent and logical DITA
 		  semantic mark-up. 
 		</draft-comment> 

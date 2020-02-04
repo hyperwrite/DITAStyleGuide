@@ -124,7 +124,7 @@
 			 general task model. A constrained task cannot conref from an unconstrained
 			 task. Conref requires that the conref target be at least as constrained (and
 			 compatibly constrained) as the conref source (that is, the document making the
-			 conref link). Otherwise, you cannot be assured that the conrefed data is valid
+			 conref link). Otherwise, you cannot be assured that the conreffed data is valid
 			 in the using context. 
 		  </p> 
 		  <p>We advise organizations to use only one task model unless the

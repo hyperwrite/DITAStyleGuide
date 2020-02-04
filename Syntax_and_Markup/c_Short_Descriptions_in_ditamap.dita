@@ -2,7 +2,7 @@
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 <concept id="concept_FF2B816120DF42BCB0A27F30561661ED"> 
   <title>Short descriptions in the ditamap</title> 
-  <shortdesc>Short descriptions specified in a DITA topic can be overriden by
+  <shortdesc>Short descriptions specified in a DITA topic can be overridden by
 	 alternative short description elements in the ditamap. 
   </shortdesc> 
   <prolog><author>Tony

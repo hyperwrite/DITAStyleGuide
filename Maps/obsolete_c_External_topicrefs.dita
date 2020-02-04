@@ -22,7 +22,7 @@
   <conbody> 
 	 <p> A relationship table doesn't have to only refer to DITA topics within
 		the current project. Like 
-		<synph>topicref</synph> elements used in the hiearchy section of the
+		<synph>topicref</synph> elements used in the hierarchy section of the
 		ditamap, 
 		<synph>topicref</synph> elements in the 
 		<synph>reltable</synph> can reference external files and URLs. 
