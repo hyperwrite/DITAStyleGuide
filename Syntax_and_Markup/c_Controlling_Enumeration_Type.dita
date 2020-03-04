@@ -47,12 +47,12 @@
 			 help control the text which is substituted for elements. In this case, the
 			 element is &lt;li&gt; and the text in question is the sequence value attached
 			 to an &lt;ol&gt;. Note that the semantics of &lt;li&gt; (the operational
-			 expectation) is that the contents are expected to be preceeded by _something_,
+			 expectation) is that the contents are expected to be preceded by _something_,
 			 be it a "bullet" or other graphic if it is contained within a &lt;ul&gt;; or a
 			 sequence value if it is contained within a &lt;ol&gt;. Further, the expectation
 			 is that one is capable of _referring_ to a specific &lt;li&gt; within an
 			 &lt;ol&gt; using only text substitution (e.g. an &lt;xref&gt; to an &lt;li&gt;
-			 within an &lt;ol&gt; should render the same text as is used to preceed the
+			 within an &lt;ol&gt; should render the same text as is used to precede the
 			 &lt;li&gt; contents. however, an &lt;xref&gt; to an &lt;li&gt; within a
 			 &lt;ul&gt; should result in an error.) This means that regardless of the
 			 medium, you can always say: "See step 2" or "See #2" even if the medium doesn't

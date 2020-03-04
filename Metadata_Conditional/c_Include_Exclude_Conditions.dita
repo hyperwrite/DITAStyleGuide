@@ -99,7 +99,7 @@
 		  spec does explicitly say that the default should be to include information, not
 		  exclude it. I believe the thought behind the current practice is that it can be
 		  dangerous to delete content by default, especially in situations where you are
-		  creating multi-purpose documents, for example targetting multiple audiences.
+		  creating multi-purpose documents, for example targeting multiple audiences.
 		  One possible solution is to make it easier to set default behavior by
 		  attribute, so that for example you can say product-specific information should
 		  be excluded by default, whereas audience-specific information should be

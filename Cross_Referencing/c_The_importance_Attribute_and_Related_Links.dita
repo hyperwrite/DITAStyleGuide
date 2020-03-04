@@ -17,7 +17,7 @@
 			 element</indexterm></keywords></metadata>
   </prolog> 
   <conbody> 
-	 <p>When writing a task topic, you will often include a pre-requisities
+	 <p>When writing a task topic, you will often include a pre-requisites
 		(<synph>prereq</synph>) element. In some cases, pre-requisites for the task
 		will include other procedures, described in separate topics. Logically, these
 		pre-requisite task topics should be linked to in the 

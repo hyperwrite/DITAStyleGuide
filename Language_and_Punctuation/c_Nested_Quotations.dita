@@ -63,7 +63,7 @@
 		  establishing element (e.g., lists, figures, long quotes, or tables) is not
 		  allowed". The fact that you can't express this constraint declaratively in DTD
 		  or XSD syntax (but you almost could in SGML DTD syntax and might be able to in
-		  RNG and definitely can using Schematron) is really irrelevant--the DTDs are at
+		  RNG and definitely can using Schematron) is really irrelevant -- the DTDs are at
 		  most a convenience, but we cannot depend on them as the primary definition of
 		  what is or isn't allowed (even though that is how DITA has been largely defined
 		  to date). 
