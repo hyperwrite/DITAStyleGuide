@@ -35,37 +35,37 @@
             <figurelist/>
             <tablelist/>
         </booklists>
-        <topicref format="ditamap" href="Artefact/artefact_introduction.ditamap"
+        <topicref format="ditamap" href="artefact_introduction.ditamap"
             navtitle="DITA Style Guide Introduction" scope="local"> </topicref>
     </frontmatter>
-    <chapter format="ditamap" href="Artefact/artefact_infotypes.ditamap"
+    <chapter format="ditamap" href="artefact_infotypes.ditamap"
         navtitle="Information Types and Topics" scope="local"> </chapter>
-    <chapter format="ditamap" href="Artefact/artefact_collections.ditamap" navtitle="DITA Map Files"
+    <chapter format="ditamap" href="artefact_collections.ditamap" navtitle="DITA Map Files"
         scope="local"> </chapter>
-    <chapter format="ditamap" href="Artefact/artefact_syntax.ditamap" navtitle="Syntax and Mark-up"
+    <chapter format="ditamap" href="artefact_syntax.ditamap" navtitle="Syntax and Mark-up"
         scope="local"> </chapter>
-    <chapter format="ditamap" href="Artefact/artefact_language.ditamap"
+    <chapter format="ditamap" href="artefact_language.ditamap"
         navtitle="Language and Punctuation"> </chapter>
-    <chapter format="ditamap" href="Artefact/artefact_graphics.ditamap"
+    <chapter format="ditamap" href="artefact_graphics.ditamap"
         navtitle="Graphics and Figures"> </chapter>
-    <chapter format="ditamap" href="Artefact/artefact_crossreferencing.ditamap"
+    <chapter format="ditamap" href="artefact_crossreferencing.ditamap"
         navtitle="Cross-referencing"> </chapter>
-    <chapter format="ditamap" href="Artefact/artefact_reuse.ditamap" navtitle="Content Re-use"> </chapter>
-    <chapter format="ditamap" href="Artefact/artefact_metadata.ditamap"
+    <chapter format="ditamap" href="artefact_reuse.ditamap" navtitle="Content Re-use"> </chapter>
+    <chapter format="ditamap" href="artefact_metadata.ditamap"
         navtitle="Metadata, Conditional Processing, and Indexing" scope="local"> </chapter>
-    <chapter format="ditamap" href="Artefact/artefact_process.ditamap"
+    <chapter format="ditamap" href="artefact_process.ditamap"
         navtitle="The DITA Documentation Process"> </chapter>
-    <appendix format="ditamap" href="Artefact/artefact_concepts.ditamap"
+    <appendix format="ditamap" href="artefact_concepts.ditamap"
         navtitle="DITA Authoring Concepts"> </appendix>
     <backmatter>
         <booklists>
             <indexlist/>
         </booklists>
         <topicref audience="inhouse" format="dita"
-            href="Artefact/c_Conventions_(Not_Included_in_Output).dita" linking="none"
+            href="c_Conventions_(Not_Included_in_Output).dita" linking="none"
             navtitle="Conventions (Not Included in Output)" print="no" scope="local" toc="no"
             type="concept"> </topicref>
-        <topicref format="ditamap" href="Artefact/artefact_langref_reltable.ditamap"
+        <topicref format="ditamap" href="artefact_langref_reltable.ditamap"
             navtitle="OASIS Documentation Cross-References" print="no" product="academic_only"
             scope="local"> </topicref>
     </backmatter>
@@ -80,10 +80,10 @@
             <relcell/>
             <relcell collection-type="family">
                 <topicref format="dita"
-                    href="Artefact/Topics_and_Information_Types/c_Stub_Topics.dita"
+                    href="Topics_and_Information_Types/c_Stub_Topics.dita"
                     navtitle="Stem topics" scope="local" type="concept"> </topicref>
                 <topicref format="dita"
-                    href="Artefact/Syntax_and_Markup/c_Purpose_of_Short_Descriptions.dita"
+                    href="Syntax_and_Markup/c_Purpose_of_Short_Descriptions.dita"
                     navtitle="Purpose of short descriptions" scope="local" type="concept"
                 > </topicref>
             </relcell>
@@ -93,10 +93,10 @@
             <relcell/>
             <relcell collection-type="family">
                 <topicref format="dita"
-                    href="Artefact/Authoring_Concepts/c_Introduction_to_the_Separation_of_Content.dita"
+                    href="Authoring_Concepts/c_Introduction_to_the_Separation_of_Content.dita"
                     navtitle="The separation of content and form" scope="local" type="concept"> </topicref>
                 <topicref format="dita"
-                    href="Artefact/Topics_and_Information_Types/c_Avoiding_Links_in_Topics.dita"
+                    href="Topics_and_Information_Types/c_Avoiding_Links_in_Topics.dita"
                     navtitle="Avoiding linking in topics" scope="local" type="concept"> </topicref>
             </relcell>
             <relcell/>
@@ -105,9 +105,9 @@
             <relcell/>
             <relcell collection-type="family">
                 <topicref format="dita"
-                    href="Artefact/Syntax_and_Markup/c_Use_of_Class_Attribute.dita"
+                    href="Syntax_and_Markup/c_Use_of_Class_Attribute.dita"
                     navtitle="Use of class attribute" scope="local" type="concept"> </topicref>
-                <topicref format="dita" href="Artefact/Authoring_Concepts/c_Inheritance.dita"
+                <topicref format="dita" href="Authoring_Concepts/c_Inheritance.dita"
                     navtitle="Inheritance" scope="local" type="concept"> </topicref>
             </relcell>
             <relcell/>
@@ -116,11 +116,11 @@
             <relcell/>
             <relcell collection-type="family">
                 <topicref format="dita"
-                    href="Artefact/Syntax_and_Markup/c_Making_shortdesc_Mandatory.dita"
+                    href="Syntax_and_Markup/c_Making_shortdesc_Mandatory.dita"
                     navtitle="Making shortdesc elements compulsory" scope="local" type="concept"> </topicref>
-                <topicref format="dita" href="Artefact/Authoring_Concepts/c_Specialisation.dita"
+                <topicref format="dita" href="Authoring_Concepts/c_Specialisation.dita"
                     navtitle="Untitled Topic" scope="local" type="concept"/>
-                <topicref format="dita" href="Artefact/Authoring_Concepts/c_Constraints.dita"
+                <topicref format="dita" href="Authoring_Concepts/c_Constraints.dita"
                     navtitle="Constraints" scope="local" type="concept"/>
             </relcell>
             <relcell/>
@@ -129,10 +129,10 @@
             <relcell/>
             <relcell collection-type="family">
                 <topicref format="dita"
-                    href="Artefact/Language_and_Punctuation/c_Titles_and_Headings.dita"
+                    href="Language_and_Punctuation/c_Titles_and_Headings.dita"
                     navtitle="Titles and headings" scope="local" type="concept"> </topicref>
                 <topicref format="dita"
-                    href="Artefact/Cross_Referencing/c_Cross_References_in_Titles.dita"
+                    href="Cross_Referencing/c_Cross_References_in_Titles.dita"
                     navtitle="Cross-references in titles" scope="local" type="concept"> </topicref>
             </relcell>
             <relcell/>
@@ -141,9 +141,9 @@
             <relcell/>
             <relcell collection-type="family">
                 <topicref format="dita"
-                    href="Artefact/Cross_Referencing/c_Links_to_non-DITA_Resources.dita"
+                    href="Cross_Referencing/c_Links_to_non-DITA_Resources.dita"
                     navtitle="Links to non-DITA resources" scope="local" type="concept"> </topicref>
-                <topicref format="dita" href="Artefact/Maps/c_Non-DITA_Topic_References.dita"
+                <topicref format="dita" href="Maps/c_Non-DITA_Topic_References.dita"
                     navtitle="Non-DITA topic references" scope="local" type="concept"> </topicref>
             </relcell>
             <relcell/>
@@ -152,10 +152,10 @@
             <relcell/>
             <relcell collection-type="family">
                 <topicref format="dita"
-                    href="Artefact/Metadata_Conditional/c_Conditional_Processing_at_Topic_Level.dita"
+                    href="Metadata_Conditional/c_Conditional_Processing_at_Topic_Level.dita"
                     navtitle="Excluding topics: conditional processing at topic level" scope="local"
                     type="concept"> </topicref>
-                <topicref format="dita" href="Artefact/Maps/c_Dangling_Topicrefs.dita"
+                <topicref format="dita" href="Maps/c_Dangling_Topicrefs.dita"
                     navtitle="Dangling topicrefs" scope="local" type="concept"> </topicref>
             </relcell>
             <relcell/>
@@ -164,10 +164,10 @@
             <relcell/>
             <relcell collection-type="family">
                 <topicref format="dita"
-                    href="Artefact/Topics_and_Information_Types/c_Glossaries.dita"
+                    href="Topics_and_Information_Types/c_Glossaries.dita"
                     navtitle="Glossary entry" scope="local" type="concept"> </topicref>
                 <topicref format="dita"
-                    href="Artefact/Cross_Referencing/c_Links_to_Glossary_Terms.dita"
+                    href="Cross_Referencing/c_Links_to_Glossary_Terms.dita"
                     navtitle="Links to glossary terms" scope="local" type="concept"> </topicref>
             </relcell>
             <relcell/>
@@ -175,13 +175,13 @@
         <relrow>
             <relcell/>
             <relcell collection-type="family">
-                <topicref format="dita" href="Artefact/Authoring_Concepts/c_Specialisation.dita"
+                <topicref format="dita" href="Authoring_Concepts/c_Specialisation.dita"
                     navtitle="Untitled Topic" scope="local" type="concept"> </topicref>
                 <topicref format="dita"
-                    href="Artefact/Topics_and_Information_Types/c_Specialising_Information_Types.dita"
+                    href="Topics_and_Information_Types/c_Specialising_Information_Types.dita"
                     navtitle="information types" scope="local" type="concept"> </topicref>
                 <topicref format="dita"
-                    href="Artefact/Documentation_Process/c_Specialisation_Naming_Conventions.dita"
+                    href="Documentation_Process/c_Specialisation_Naming_Conventions.dita"
                     navtitle="element and attribute naming convention" scope="local" type="concept"
                 > </topicref>
             </relcell>
@@ -191,13 +191,13 @@
             <relcell/>
             <relcell collection-type="family">
                 <topicref format="dita"
-                    href="Artefact/Language_and_Punctuation/c_Titles_and_Headings.dita"
+                    href="Language_and_Punctuation/c_Titles_and_Headings.dita"
                     navtitle="Titles and headings" scope="local" type="concept"> </topicref>
                 <topicref format="dita"
-                    href="Artefact/Cross_Referencing/c_Cross_References_in_Titles.dita"
+                    href="Cross_Referencing/c_Cross_References_in_Titles.dita"
                     navtitle="Cross-references in titles" scope="local" type="concept"> </topicref>
                 <topicref format="dita"
-                    href="Artefact/Syntax_and_Markup/c_Multiple_Titles_in_a_Section.dita"
+                    href="Syntax_and_Markup/c_Multiple_Titles_in_a_Section.dita"
                     navtitle="Titles" scope="local" type="concept"> </topicref>
             </relcell>
             <relcell/>
@@ -206,10 +206,10 @@
             <relcell/>
             <relcell collection-type="family">
                 <topicref format="dita"
-                    href="Artefact/Language_and_Punctuation/c_Varieties_of_English.dita"
+                    href="Language_and_Punctuation/c_Varieties_of_English.dita"
                     navtitle="Different languages" scope="local" type="concept"> </topicref>
                 <topicref format="dita"
-                    href="Artefact/Syntax_and_Markup/c_Phrases_in_Different_Languages.dita"
+                    href="Syntax_and_Markup/c_Phrases_in_Different_Languages.dita"
                     navtitle="Phrases in different languages" scope="local" type="concept"
                 > </topicref>
             </relcell>
@@ -218,11 +218,11 @@
         <relrow>
             <relcell/>
             <relcell collection-type="family">
-                <topicref format="dita" href="Artefact/Syntax_and_Markup/c_Non_Breaking_Spaces.dita"
+                <topicref format="dita" href="Syntax_and_Markup/c_Non_Breaking_Spaces.dita"
                     navtitle="Non-breaking spaces and special characters" scope="local"
                     type="concept"> </topicref>
                 <topicref format="dita"
-                    href="Artefact/Cross_Referencing/c_Referencing_through_href_attribute.dita"
+                    href="Cross_Referencing/c_Referencing_through_href_attribute.dita"
                     navtitle="Format of href attribute in cross-references" scope="local"
                     type="concept"> </topicref>
             </relcell>
@@ -232,10 +232,10 @@
             <relcell/>
             <relcell collection-type="family">
                 <topicref format="dita"
-                    href="Artefact/Metadata_Conditional/c_Filtering_and_Flagging.dita"
+                    href="Metadata_Conditional/c_Filtering_and_Flagging.dita"
                     navtitle="Filtering and flagging" scope="local" type="concept"> </topicref>
                 <topicref format="dita"
-                    href="Artefact/Cross_Referencing/c_Conditions_in_Cross_References.dita"
+                    href="Cross_Referencing/c_Conditions_in_Cross_References.dita"
                     navtitle="Conditions in cross-references" scope="local" type="concept"
                 > </topicref>
             </relcell>
@@ -245,11 +245,11 @@
             <relcell/>
             <relcell collection-type="family">
                 <topicref format="dita"
-                    href="Artefact/Cross_Referencing/c_The_importance_Attribute_and_Related_Links.dita"
+                    href="Cross_Referencing/c_The_importance_Attribute_and_Related_Links.dita"
                     navtitle="The importance attribute and related links" scope="local"
                     type="concept"> </topicref>
                 <topicref format="dita"
-                    href="Artefact/Syntax_and_Markup/c_Sentence_Syntax_in_prereq.dita"
+                    href="Syntax_and_Markup/c_Sentence_Syntax_in_prereq.dita"
                     navtitle="The prereq element" scope="local" type="concept"> </topicref>
             </relcell>
             <relcell/>
@@ -257,11 +257,11 @@
         <relrow>
             <relcell/>
             <relcell collection-type="family">
-                <topicref format="dita" href="Artefact/Syntax_and_Markup/c_Required_Cleanup.dita"
+                <topicref format="dita" href="Syntax_and_Markup/c_Required_Cleanup.dita"
                     navtitle="Comments, draft-comment, and required-cleanup elements" scope="local"
                     type="concept"> </topicref>
                 <topicref format="dita"
-                    href="Artefact/Documentation_Process/c_Pre_Publish_Review.dita"
+                    href="Documentation_Process/c_Pre_Publish_Review.dita"
                     navtitle="Elements for pre-publish review" scope="local" type="concept"
                 > </topicref>
             </relcell>
@@ -270,10 +270,10 @@
         <relrow>
             <relcell/>
             <relcell collection-type="family">
-                <topicref format="dita" href="Artefact/Maps/c_Inheritance_in_ditamaps.dita"
+                <topicref format="dita" href="Maps/c_Inheritance_in_ditamaps.dita"
                     navtitle="Inheritance and cascades in ditamaps" scope="local" type="concept"> </topicref>
                 <topicref format="dita"
-                    href="Artefact/Syntax_and_Markup/c_Short_Descriptions_in_ditamap.dita"
+                    href="Syntax_and_Markup/c_Short_Descriptions_in_ditamap.dita"
                     navtitle="Short descriptions in the ditamap" scope="local" type="concept"
                 > </topicref>
             </relcell>
@@ -283,10 +283,10 @@
             <relcell/>
             <relcell collection-type="family">
                 <topicref format="dita"
-                    href="Artefact/Topics_and_Information_Types/c_General_Tasks.dita"
+                    href="Topics_and_Information_Types/c_General_Tasks.dita"
                     navtitle="General Task" scope="local" type="concept"> </topicref>
                 <topicref format="dita"
-                    href="Artefact/Syntax_and_Markup/c_Steps_and_Steps_Informal.dita"
+                    href="Syntax_and_Markup/c_Steps_and_Steps_Informal.dita"
                     navtitle="Non-sequential procedural steps" scope="local" type="concept"
                 > </topicref>
             </relcell>
@@ -296,13 +296,13 @@
             <relcell/>
             <relcell>
                 <topicref format="dita"
-                    href="Artefact/Syntax_and_Markup/c_Sentence_Syntax_in_prereq.dita"
+                    href="Syntax_and_Markup/c_Sentence_Syntax_in_prereq.dita"
                     navtitle="The prereq element" scope="local" type="concept"> </topicref>
                 <topicref format="dita"
-                    href="Artefact/Language_and_Punctuation/c_Stem_Sentences_in_Task_Topics.dita"
+                    href="Language_and_Punctuation/c_Stem_Sentences_in_Task_Topics.dita"
                     navtitle="Stem sentences in task topics" scope="local" type="concept"> </topicref>
                 <topicref format="dita"
-                    href="Artefact/Language_and_Punctuation/c_Transitional_Information_in_Prerequisites.dita"
+                    href="Language_and_Punctuation/c_Transitional_Information_in_Prerequisites.dita"
                     navtitle="Transitional information in semantic blocks" scope="local"
                     type="concept"> </topicref>
             </relcell>
@@ -311,10 +311,10 @@
         <relrow>
             <relcell/>
             <relcell collection-type="family">
-                <topicref format="dita" href="Artefact/Syntax_and_Markup/c_Footnotes.dita"
+                <topicref format="dita" href="Syntax_and_Markup/c_Footnotes.dita"
                     navtitle="Footnotes" scope="local" type="concept"> </topicref>
                 <topicref format="dita"
-                    href="Artefact/Language_and_Punctuation/c_Titles_and_Headings.dita"
+                    href="Language_and_Punctuation/c_Titles_and_Headings.dita"
                     navtitle="Titles and headings" scope="local" type="concept"> </topicref>
             </relcell>
             <relcell/>
@@ -323,9 +323,9 @@
             <relcell/>
             <relcell>
                 <topicref format="dita"
-                    href="Artefact/Content_Reuse/c_Reusing_Content_in_Different_Element.dita"
+                    href="Content_Reuse/c_Reusing_Content_in_Different_Element.dita"
                     navtitle="Re-using content from different elements" scope="local" type="concept"> </topicref>
-                <topicref format="dita" href="Artefact/Syntax_and_Markup/c_The_text_Element.dita"
+                <topicref format="dita" href="Syntax_and_Markup/c_The_text_Element.dita"
                     navtitle="The text element" scope="local" type="concept"> </topicref>
             </relcell>
             <relcell/>
@@ -334,12 +334,12 @@
             <relcell/>
             <relcell>
                 <topicref format="dita"
-                    href="Artefact/Cross_Referencing/c_Indirection_with_keyref.dita"
+                    href="Cross_Referencing/c_Indirection_with_keyref.dita"
                     navtitle="Indirect linking with keys" scope="local" type="concept"> </topicref>
-                <topicref format="dita" href="Artefact/Content_Reuse/c_Variables_Using_keydef.dita"
+                <topicref format="dita" href="Content_Reuse/c_Variables_Using_keydef.dita"
                     navtitle="Variables using indirection" scope="local" type="concept"> </topicref>
                 <topicref format="dita"
-                    href="Artefact/Content_Reuse/c_Indirect_Content_Referencing.dita"
+                    href="Content_Reuse/c_Indirect_Content_Referencing.dita"
                     navtitle="Indirect content referencing" scope="local" type="concept"
                 > </topicref>
             </relcell>
@@ -349,9 +349,9 @@
             <relcell/>
             <relcell>
                 <topicref format="dita"
-                    href="Artefact/Metadata_Conditional/c_Transclusions_vs_Conditions.dita"
+                    href="Metadata_Conditional/c_Transclusions_vs_Conditions.dita"
                     navtitle="Conditions versus transclusion" scope="local" type="concept"> </topicref>
-                <topicref format="dita" href="Artefact/Content_Reuse/c_Variables_in_DITA.dita"
+                <topicref format="dita" href="Content_Reuse/c_Variables_in_DITA.dita"
                     navtitle="Variables using conref and filtering" scope="local" type="concept"
                 > </topicref>
             </relcell>
@@ -361,9 +361,9 @@
             <relcell/>
             <relcell>
                 <topicref format="dita"
-                    href="Artefact/Metadata_Conditional/c_Filtering_ditamaps.dita"
+                    href="Metadata_Conditional/c_Filtering_ditamaps.dita"
                     navtitle="Filtering ditamaps" scope="local" type="concept"> </topicref>
-                <topicref format="dita" href="Artefact/Maps/c_Nesting_bookmaps_Within_ditmaps.dita"
+                <topicref format="dita" href="Maps/c_Nesting_bookmaps_Within_ditmaps.dita"
                     navtitle="Nesting bookmaps within ditamaps" scope="local" type="concept"
                 > </topicref>
             </relcell>
@@ -373,10 +373,10 @@
             <relcell/>
             <relcell>
                 <topicref format="dita"
-                    href="Artefact/Metadata_Conditional/c_Filtering_Composite_Topics.dita"
+                    href="Metadata_Conditional/c_Filtering_Composite_Topics.dita"
                     navtitle="Filtering composite (ditabase) topics" scope="local" type="concept"> </topicref>
                 <topicref format="dita"
-                    href="Artefact/Topics_and_Information_Types/c_Using_Ditabase.dita"
+                    href="Topics_and_Information_Types/c_Using_Ditabase.dita"
                     navtitle="Composite (ditabase)" scope="local" type="concept"> </topicref>
             </relcell>
             <relcell/>
@@ -385,11 +385,11 @@
             <relcell/>
             <relcell>
                 <topicref format="dita"
-                    href="Artefact/Metadata_Conditional/c_Author_and_Publisher_Metadata.dita"
+                    href="Metadata_Conditional/c_Author_and_Publisher_Metadata.dita"
                     navtitle="Author, publisher and publication metadata" scope="local"
                     type="concept"> </topicref>
                 <topicref format="dita"
-                    href="Artefact/Syntax_and_Markup/c_Legal_Aspects_of_Trademarks.dita"
+                    href="Syntax_and_Markup/c_Legal_Aspects_of_Trademarks.dita"
                     navtitle="Trademarks and service marks" scope="local" type="concept"
                 > </topicref>
             </relcell>
@@ -399,10 +399,10 @@
             <relcell/>
             <relcell>
                 <topicref format="dita"
-                    href="Artefact/Metadata_Conditional/c_The_outputclass_Attribute.dita"
+                    href="Metadata_Conditional/c_The_outputclass_Attribute.dita"
                     navtitle="The outputclass attribute" scope="local" type="concept"> </topicref>
                 <topicref format="dita"
-                    href="Artefact/Syntax_and_Markup/c_Controlling_Look-and-Feel_of_the_Output.dita"
+                    href="Syntax_and_Markup/c_Controlling_Look-and-Feel_of_the_Output.dita"
                     navtitle="Controlling the look-and-feel of the output" scope="local"
                     type="concept"> </topicref>
             </relcell>
@@ -412,10 +412,10 @@
             <relcell/>
             <relcell>
                 <topicref format="dita"
-                    href="Artefact/Metadata_Conditional/c_The_importance_Attribute.dita"
+                    href="Metadata_Conditional/c_The_importance_Attribute.dita"
                     navtitle="The importance attribute" scope="local" type="concept"> </topicref>
                 <topicref format="dita"
-                    href="Artefact/Cross_Referencing/c_The_importance_Attribute_and_Related_Links.dita"
+                    href="Cross_Referencing/c_The_importance_Attribute_and_Related_Links.dita"
                     navtitle="The importance attribute and related links" scope="local"
                     type="concept"> </topicref>
             </relcell>
@@ -424,13 +424,13 @@
         <relrow>
             <relcell/>
             <relcell collection-type="family">
-                <topicref format="dita" href="Artefact/Maps/c_glossref.dita"
+                <topicref format="dita" href="Maps/c_glossref.dita"
                     navtitle="Creating a Glossary of Terms" scope="local" type="concept"> </topicref>
                 <topicref format="dita"
-                    href="Artefact/Topics_and_Information_Types/c_Glossaries.dita"
+                    href="Topics_and_Information_Types/c_Glossaries.dita"
                     navtitle="Glossary entry" scope="local" type="concept"> </topicref>
                 <topicref format="dita"
-                    href="Artefact/Cross_Referencing/c_Links_to_Glossary_Terms.dita"
+                    href="Cross_Referencing/c_Links_to_Glossary_Terms.dita"
                     navtitle="Links to glossary terms" scope="local" type="concept"> </topicref>
             </relcell>
             <relcell/>
@@ -454,189 +454,189 @@
         <relrow>
             <relcell>
                 <topicref format="dita"
-                    href="Artefact/Syntax_and_Markup/c_Paragraphs_in_Reference_Topics.dita"
+                    href="Syntax_and_Markup/c_Paragraphs_in_Reference_Topics.dita"
                     navtitle="Paragraphs in reference topics" scope="local" type="concept"
                 > </topicref>
             </relcell>
             <relcell>
                 <topicref format="dita"
-                    href="Artefact/Topics_and_Information_Types/c_Avoiding_Hierarchy_in_Topics.dita"
+                    href="Topics_and_Information_Types/c_Avoiding_Hierarchy_in_Topics.dita"
                     navtitle="Avoiding chunk structure in topics" scope="local" type="concept"
                 > </topicref>
             </relcell>
         </relrow>
         <relrow>
             <relcell>
-                <topicref format="dita" href="Artefact/Syntax_and_Markup/c_Choice_Tables.dita"
+                <topicref format="dita" href="Syntax_and_Markup/c_Choice_Tables.dita"
                     navtitle="Choice tables" scope="local" type="concept"> </topicref>
             </relcell>
             <relcell>
                 <topicref format="dita"
-                    href="Artefact/Sample_Topics/t_Exemplar_-_Task_Topic_Configuring_Source_Addresses.dita"
+                    href="Sample_Topics/t_Exemplar_-_Task_Topic_Configuring_Source_Addresses.dita"
                     navtitle="Configuring source addresses" scope="local" type="task"> </topicref>
             </relcell>
         </relrow>
         <relrow>
             <relcell>
-                <topicref format="dita" href="Artefact/Syntax_and_Markup/c_Notes_in_Steps.dita"
+                <topicref format="dita" href="Syntax_and_Markup/c_Notes_in_Steps.dita"
                     navtitle="Notes and extra information in a step" scope="local" type="concept"> </topicref>
-                <topicref format="dita" href="Artefact/Syntax_and_Markup/c_Images_within_Steps.dita"
+                <topicref format="dita" href="Syntax_and_Markup/c_Images_within_Steps.dita"
                     navtitle="Images within steps" scope="local" type="concept"> </topicref>
             </relcell>
             <relcell>
-                <topicref format="dita" href="Artefact/Sample_Topics/t_Exemplar_-_Task_Topic.dita"
+                <topicref format="dita" href="Sample_Topics/t_Exemplar_-_Task_Topic.dita"
                     navtitle="Setting the local directory" scope="local" type="task"> </topicref>
             </relcell>
         </relrow>
         <relrow>
             <relcell>
-                <topicref format="dita" href="Artefact/Maps/c_Non-DITA_Topic_References.dita"
+                <topicref format="dita" href="Maps/c_Non-DITA_Topic_References.dita"
                     navtitle="Non-DITA topic references" scope="local" type="concept"> </topicref>
             </relcell>
             <relcell>
-                <topicref format="dita" href="Artefact/Cross_Referencing/c_Scope_Attribute.dita"
+                <topicref format="dita" href="Cross_Referencing/c_Scope_Attribute.dita"
                     navtitle="Linking in a new window" scope="local" type="concept"> </topicref>
             </relcell>
         </relrow>
         <relrow>
             <relcell>
                 <topicref format="dita"
-                    href="Artefact/Topics_and_Information_Types/c_Identifying_the_Information_Type.dita"
+                    href="Topics_and_Information_Types/c_Identifying_the_Information_Type.dita"
                     navtitle="Identifying the information type" scope="local" type="concept"
                 > </topicref>
             </relcell>
             <relcell>
                 <topicref format="dita"
-                    href="Artefact/Maps/c_Understanding_Relationship_Tables.dita"
+                    href="Maps/c_Understanding_Relationship_Tables.dita"
                     navtitle="Relationship tables" scope="local" type="concept"> </topicref>
             </relcell>
         </relrow>
         <relrow>
             <relcell>
                 <topicref format="dita"
-                    href="Artefact/Syntax_and_Markup/c_Two_Tasks_on_One_Task_Topic.dita"
+                    href="Syntax_and_Markup/c_Two_Tasks_on_One_Task_Topic.dita"
                     navtitle="Restricting tasks to one procedures only" scope="local" type="concept"
                 > </topicref>
             </relcell>
             <relcell>
-                <topicref format="dita" href="Artefact/Maps/c_Chunk_Attribute.dita"
+                <topicref format="dita" href="Maps/c_Chunk_Attribute.dita"
                     navtitle="The chunk attribute" scope="local" type="concept"> </topicref>
             </relcell>
         </relrow>
         <relrow>
             <relcell>
                 <topicref format="dita"
-                    href="Artefact/Topics_and_Information_Types/c_Topic_Proto.dita"
+                    href="Topics_and_Information_Types/c_Topic_Proto.dita"
                     navtitle="Topic (proto information type)" scope="local" type="concept"
                 > </topicref>
             </relcell>
             <relcell>
-                <topicref format="dita" href="Artefact/Authoring_Concepts/c_Inheritance.dita"
+                <topicref format="dita" href="Authoring_Concepts/c_Inheritance.dita"
                     navtitle="Inheritance" scope="local" type="concept"> </topicref>
             </relcell>
         </relrow>
         <relrow>
             <relcell>
-                <topicref format="dita" href="Artefact/Syntax_and_Markup/c_Lists.dita"
+                <topicref format="dita" href="Syntax_and_Markup/c_Lists.dita"
                     navtitle="Lists" scope="local" type="concept"> </topicref>
             </relcell>
             <relcell>
                 <topicref format="dita"
-                    href="Artefact/Language_and_Punctuation/c_Punctuation_in_Lists.dita"
+                    href="Language_and_Punctuation/c_Punctuation_in_Lists.dita"
                     navtitle="Punctuation in lists" scope="local" type="concept"> </topicref>
             </relcell>
         </relrow>
         <relrow>
             <relcell>
                 <topicref format="dita"
-                    href="Artefact/Cross_Referencing/c_Links_to_Glossary_Terms.dita"
+                    href="Cross_Referencing/c_Links_to_Glossary_Terms.dita"
                     navtitle="Links to glossary terms" scope="local" type="concept"> </topicref>
             </relcell>
             <relcell>
                 <topicref format="dita"
-                    href="Artefact/Topics_and_Information_Types/c_Glossaries.dita"
+                    href="Topics_and_Information_Types/c_Glossaries.dita"
                     navtitle="Glossary entry" scope="local" type="concept"> </topicref>
             </relcell>
         </relrow>
         <relrow>
             <relcell>
                 <topicref format="dita"
-                    href="Artefact/Cross_Referencing/c_The_linkinfo_Element.dita"
+                    href="Cross_Referencing/c_The_linkinfo_Element.dita"
                     navtitle="The linkinfo element" scope="local" type="concept"> </topicref>
             </relcell>
             <relcell>
                 <topicref format="dita"
-                    href="Artefact/Topics_and_Information_Types/c_Stub_Topics.dita"
+                    href="Topics_and_Information_Types/c_Stub_Topics.dita"
                     navtitle="Stem topics" scope="local" type="concept"> </topicref>
             </relcell>
         </relrow>
         <relrow>
             <relcell>
                 <topicref format="dita"
-                    href="Artefact/Topics_and_Information_Types/c_Difference_between_Processes_Procedures_and_Tasks.dita"
+                    href="Topics_and_Information_Types/c_Difference_between_Processes_Procedures_and_Tasks.dita"
                     navtitle="The difference between processes, procedures and tasks" scope="local"
                     type="concept"> </topicref>
             </relcell>
             <relcell>
                 <topicref format="dita"
-                    href="Artefact/Syntax_and_Markup/c_Complex_Nested_Tasks.dita"
+                    href="Syntax_and_Markup/c_Complex_Nested_Tasks.dita"
                     navtitle="Complex nested tasks" scope="local" type="concept"> </topicref>
             </relcell>
         </relrow>
         <relrow>
             <relcell>
-                <topicref format="dita" href="Artefact/Syntax_and_Markup/c_Images_within_Steps.dita"
+                <topicref format="dita" href="Syntax_and_Markup/c_Images_within_Steps.dita"
                     navtitle="Images within steps" scope="local" type="concept"> </topicref>
-                <topicref format="dita" href="Artefact/Syntax_and_Markup/c_Notes_in_Steps.dita"
+                <topicref format="dita" href="Syntax_and_Markup/c_Notes_in_Steps.dita"
                     navtitle="Notes and extra information in a step" scope="local" type="concept"
                 > </topicref>
             </relcell>
             <relcell>
-                <topicref format="dita" href="Artefact/Sample_Topics/t_Exemplar_-_Task_Topic.dita"
+                <topicref format="dita" href="Sample_Topics/t_Exemplar_-_Task_Topic.dita"
                     navtitle="Setting the local directory" scope="local" type="task"> </topicref>
             </relcell>
         </relrow>
         <relrow>
             <relcell>
                 <topicref format="dita"
-                    href="Artefact/Syntax_and_Markup/c_Sentence_Syntax_in_prereq.dita"
+                    href="Syntax_and_Markup/c_Sentence_Syntax_in_prereq.dita"
                     navtitle="The prereq element" scope="local" type="concept"> </topicref>
             </relcell>
             <relcell>
                 <topicref format="dita"
-                    href="Artefact/Cross_Referencing/c_The_importance_Attribute_and_Related_Links.dita"
+                    href="Cross_Referencing/c_The_importance_Attribute_and_Related_Links.dita"
                     navtitle="The importance attribute and related links" scope="local"
                     type="concept"> </topicref>
                 <topicref format="dita"
-                    href="Artefact/Sample_Topics/t_Exemplar_-_Task_Topic_Configuring_Source_Addresses.dita"
+                    href="Sample_Topics/t_Exemplar_-_Task_Topic_Configuring_Source_Addresses.dita"
                     navtitle="Configuring source addresses" scope="local" type="task"> </topicref>
             </relcell>
         </relrow>
         <relrow>
             <relcell>
                 <topicref format="dita"
-                    href="Artefact/Graphics_and_Figures/c_Image_File_Management.dita"
+                    href="Graphics_and_Figures/c_Image_File_Management.dita"
                     navtitle="Image file management" scope="local" type="concept"> </topicref>
             </relcell>
             <relcell>
                 <topicref format="dita"
-                    href="Artefact/Content_Reuse/c_dita_use_conref_target_Value.dita"
+                    href="Content_Reuse/c_dita_use_conref_target_Value.dita"
                     navtitle="The -dita-use-conref-target attribute value" scope="local"
                     type="concept"> </topicref>
                 <topicref format="dita"
-                    href="Artefact/Cross_Referencing/c_Indirection_with_keyref.dita"
+                    href="Cross_Referencing/c_Indirection_with_keyref.dita"
                     navtitle="Indirect linking with keys" scope="local" type="concept"> </topicref>
             </relcell>
         </relrow>
         <relrow>
             <relcell>
                 <topicref format="dita"
-                    href="Artefact/Content_Reuse/c_Conref_Element_Must_Be_Valid.dita"
+                    href="Content_Reuse/c_Conref_Element_Must_Be_Valid.dita"
                     navtitle="Valid referencing elements" scope="local" type="concept"> </topicref>
             </relcell>
             <relcell>
                 <topicref format="dita"
-                    href="Artefact/Content_Reuse/c_dita_use_conref_target_Value.dita"
+                    href="Content_Reuse/c_dita_use_conref_target_Value.dita"
                     navtitle="The -dita-use-conref-target attribute value" scope="local"
                     type="concept"> </topicref>
             </relcell>
@@ -644,11 +644,11 @@
         <relrow>
             <relcell>
                 <topicref format="dita"
-                    href="Artefact/Cross_Referencing/c_Indirection_with_keyref.dita"
+                    href="Cross_Referencing/c_Indirection_with_keyref.dita"
                     navtitle="Indirect linking with keys" scope="local" type="concept"> </topicref>
             </relcell>
             <relcell>
-                <topicref format="dita" href="Artefact/Maps/c_glossref.dita"
+                <topicref format="dita" href="Maps/c_glossref.dita"
                     navtitle="Creating a Glossary of Terms" scope="local" type="concept"> </topicref>
                 <topicref format="html" href="http://dita.xml.org/resource/keyref-overview-dita-12"
                     locktitle="yes" navtitle="Overview of the keyref feature (whitepaper)"
@@ -658,61 +658,61 @@
         <relrow>
             <relcell>
                 <topicref format="dita"
-                    href="Artefact/Documentation_Process/c_Restricting_Authors.dita"
+                    href="Documentation_Process/c_Restricting_Authors.dita"
                     navtitle="Restricting authors and limiting element choices" scope="local"
                     type="concept"> </topicref>
             </relcell>
             <relcell>
-                <topicref format="dita" href="Artefact/Syntax_and_Markup/c_List_of_Domains.dita"
+                <topicref format="dita" href="Syntax_and_Markup/c_List_of_Domains.dita"
                     navtitle="Element domains" scope="local" type="concept"> </topicref>
-                <topicref format="dita" href="Artefact/Authoring_Concepts/c_Constraints.dita"
+                <topicref format="dita" href="Authoring_Concepts/c_Constraints.dita"
                     navtitle="Constraints" scope="local" type="concept"> </topicref>
             </relcell>
         </relrow>
         <relrow>
             <relcell>
                 <topicref format="dita"
-                    href="Artefact/Metadata_Conditional/c_Managing_Metadata.dita"
+                    href="Metadata_Conditional/c_Managing_Metadata.dita"
                     navtitle="Managing metadata elements and attributes" scope="local"
                     type="concept"> </topicref>
             </relcell>
             <relcell>
                 <topicref format="dita"
-                    href="Artefact/Documentation_Process/c_Content_Management_Systems.dita"
+                    href="Documentation_Process/c_Content_Management_Systems.dita"
                     navtitle="Content Management Systems" scope="local" type="concept"> </topicref>
             </relcell>
         </relrow>
         <relrow>
             <relcell>
-                <topicref format="dita" href="Artefact/Maps/c_Chunk_Attribute.dita"
+                <topicref format="dita" href="Maps/c_Chunk_Attribute.dita"
                     navtitle="The chunk attribute" scope="local" type="concept"> </topicref>
             </relcell>
             <relcell>
                 <topicref format="dita"
-                    href="Artefact/Topics_and_Information_Types/c_Using_Ditabase.dita"
+                    href="Topics_and_Information_Types/c_Using_Ditabase.dita"
                     navtitle="Composite (ditabase)" scope="local" type="concept"> </topicref>
             </relcell>
         </relrow>
         <relrow>
             <relcell>
                 <topicref format="dita"
-                    href="Artefact/Topics_and_Information_Types/c_How_Chunking_Works.dita"
+                    href="Topics_and_Information_Types/c_How_Chunking_Works.dita"
                     navtitle="Chunking information into topics" scope="local" type="concept"
                 > </topicref>
             </relcell>
             <relcell>
-                <topicref format="dita" href="Artefact/Maps/c_Chunk_Attribute.dita"
+                <topicref format="dita" href="Maps/c_Chunk_Attribute.dita"
                     navtitle="The chunk attribute" scope="local" type="concept"> </topicref>
             </relcell>
         </relrow>
         <relrow>
             <relcell>
-                <topicref format="dita" href="Artefact/Authoring_Concepts/c_Information_Types.dita"
+                <topicref format="dita" href="Authoring_Concepts/c_Information_Types.dita"
                     navtitle="Information typing" scope="local" type="concept"> </topicref>
             </relcell>
             <relcell>
                 <topicref format="dita"
-                    href="Artefact/Topics_and_Information_Types/c_Information_Types_Explained.dita"
+                    href="Topics_and_Information_Types/c_Information_Types_Explained.dita"
                     navtitle="Information types" scope="local" type="concept"> </topicref>
             </relcell>
         </relrow>
