@@ -33,7 +33,7 @@
 	 </p> 
 	 <p>An example of the syntax of a cross-reference to a figure with an 
 		<synph>id</synph> attribute of 
-		<q>fig_ej25_engine</q> in the same topic is: 
+		<q>fig_sample_darwin</q> in the same topic is: 
 		<codeblock>&lt;xref href="#concept_ej25/fig_sample_darwin" type="fig"/&gt;</codeblock> 
 	 </p> 
 	 <p>You cannot cross-reference images, so if cross-references are important
