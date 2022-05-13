@@ -97,7 +97,7 @@
 		<synph>indexterm</synph> is not allowed. Although you may be able to
 		technically work around the problem by inserting a phrase (<synph>ph</synph>)
 		element and then inserting the 
-		<synph>indexterm</synph> element is the 
+		<synph>indexterm</synph> element in the 
 		<synph>ph</synph> element, do not do this. Only insert an index term
 		where the element is valid. 
 	 </p> 
