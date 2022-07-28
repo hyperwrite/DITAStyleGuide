@@ -1,48 +1,48 @@
 <?xml version="1.0"?>
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 <concept id="concept_9C32156E764F425E880C3ADF22C79D1C" rev="1.2" xml:lang="en"
- status="new"> 
-  <title>Constraints</title> 
-  <shortdesc>The 
-	 <term>constraints</term> mechanism in DITA allows the use of elements and
-	 attributes in an information type to be restricted without needing to create a
-	 full 
-	 <ph
-	  conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialisation"><?xm-replace_text Phrase?></ph>.
-	 Constraints aim to simplify the authoring process by reducing the complexity of
-	 an information type. 
-  </shortdesc> 
-  <prolog><author
-	 conref="../../conref/conref_source_metadata.dita#topic_hw_conref_meta/author_tony_self"></author><metadata><keywords><indexterm>constraints</indexterm><indexterm
-		  conref="../../conref/conref_source_metadata.dita#topic_hw_conref_meta/index_specialisation"><?xm-replace_text Index Term?></indexterm><indexterm>replacement
-			 domains</indexterm><indexterm>exemplar<indexterm>conref</indexterm></indexterm><indexterm>strict
-			 task information type</indexterm><indexterm>general task information
-			 type</indexterm></keywords></metadata>
-  </prolog> 
-  <conbody> 
-	 <p><ph
-		conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_DITA12"><?xm-replace_text Phrase?></ph>
-		introduced the 
-		<term>constraints</term> feature. 
-	 </p> 
-	 <p
-	  conref="../../Exegesis/c_Constraints_in_DITA_1_2.dita#concept_1EA9255236684E96958EEBE849113D9C/constraints_definition1"><?xm-replace_text Paragraph?>
-	 </p> 
-	 <p
-	  conref="../../Exegesis/c_Constraints_in_DITA_1_2.dita#concept_1EA9255236684E96958EEBE849113D9C/constraints_mandatory2"><?xm-replace_text Paragraph?>
-	 </p> 
-	 <p
-	  conref="../../Exegesis/c_Constraints_in_DITA_1_2.dita#concept_1EA9255236684E96958EEBE849113D9C/constraints_specialisation3"><?xm-replace_text Paragraph?>
-	 </p> 
-	 <p
-	  conref="../../Exegesis/c_Constraints_in_DITA_1_2.dita#concept_1EA9255236684E96958EEBE849113D9C/constraints_valid4"><?xm-replace_text Paragraph?>
-	 </p> 
-	 <p>The 
-		<term>strict task</term> information type in 
-		<ph
-		 conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_DITA12"><?xm-replace_text Phrase?></ph>
-		is actually a constrained 
-		<term>general task</term> information type. 
-	 </p> 
-  </conbody> 
+    status="new"> 
+    <title>Constraints</title> 
+    <shortdesc>The 
+        <term>constraints</term> mechanism in DITA allows the use of elements and
+        attributes in an information type to be restricted without needing to create a
+        full 
+        <ph
+            conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialisation"><?xm-replace_text Phrase?></ph>.
+        Constraints aim to simplify the authoring process by reducing the complexity of
+        an information type. 
+    </shortdesc> 
+    <prolog><author
+        conref="../../conref/conref_source_metadata.dita#topic_hw_conref_meta/author_tony_self"></author><metadata><keywords><indexterm>constraints</indexterm><indexterm
+            conref="../../conref/conref_source_metadata.dita#topic_hw_conref_meta/index_specialisation"><?xm-replace_text Index Term?></indexterm><indexterm>replacement
+                domains</indexterm><indexterm>exemplar<indexterm>conref</indexterm></indexterm><indexterm>strict
+                    task information type</indexterm><indexterm>general task information
+                        type</indexterm></keywords></metadata>
+    </prolog> 
+    <conbody> 
+        <p><ph
+            conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_DITA12"><?xm-replace_text Phrase?></ph>
+            introduced the 
+            <term>constraints</term> feature. 
+        </p> 
+        <p
+            conref="../../conref/c_Constraints_in_DITA_1_2.dita#concept_1EA9255236684E96958EEBE849113D9C/constraints_definition1"><?xm-replace_text Paragraph?>
+        </p> 
+        <p
+            conref="../../conref/c_Constraints_in_DITA_1_2.dita#concept_1EA9255236684E96958EEBE849113D9C/constraints_mandatory2"><?xm-replace_text Paragraph?>
+        </p> 
+        <p
+            conref="../../conref/c_Constraints_in_DITA_1_2.dita#concept_1EA9255236684E96958EEBE849113D9C/constraints_specialisation3"><?xm-replace_text Paragraph?>
+        </p> 
+        <p
+            conref="../../conref/c_Constraints_in_DITA_1_2.dita#concept_1EA9255236684E96958EEBE849113D9C/constraints_valid4"><?xm-replace_text Paragraph?>
+        </p> 
+        <p>The 
+            <term>strict task</term> information type in 
+            <ph
+                conref="../../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_DITA12"><?xm-replace_text Phrase?></ph>
+            is actually a constrained 
+            <term>general task</term> information type. 
+        </p> 
+    </conbody> 
 </concept> 
