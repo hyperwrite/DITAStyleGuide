@@ -25,6 +25,7 @@
 		<synph>ph</synph> inline element can be inserted, and that 
 		<synph>ph</synph> element can contain cross-references. 
 	 </p> 
+	  <note>The DITA 1.3 standard made it possible to use an <synph>xref</synph> in a <synph>shortdesc</synph> directly, without it needing to be wrapped in a <synph>ph</synph> element.</note>
 	 <p importance="high">Although the DITA language technically permits this
 		sort of mark-up construct, hacks such as this should not be used. 
 	 </p> 
