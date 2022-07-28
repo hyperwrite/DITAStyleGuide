@@ -1,0 +1,115 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<concept id="concept_1EA9255236684E96958EEBE849113D9C"> 
+  <title>Constraints in DITA 1.2</title> 
+  <shortdesc>Constraints are an architectural enhancement to DITA, introduced
+	 in DITA 1.2. 
+  </shortdesc> 
+  <prolog><author
+	 conref="../conref/conref_source_metadata.dita#topic_hw_conref_meta/author_tony_self"></author><metadata><keywords><indexterm>constraints</indexterm><indexterm>replacement
+			 domains</indexterm><indexterm>specialisation</indexterm></keywords></metadata>
+  </prolog> 
+  <conbody> 
+	 <p id="constraints_definition1">A constraint defines a set of restrictions
+		that conform to the rules of 
+		<ph
+		 conref="../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialisation"><?xm-replace_text Phrase?></ph>.
+		(The constraints mechanism was originally proposed as 
+		<term>replacement domains</term>.) Constraints aim to provide a more
+		simplified authoring environment by restricting the mark-up options available
+		to DITA authors to conform to business rules. 
+	 </p> 
+	 <p id="constraints_mandatory2" status="changed">A constraint can remove an
+		optional element from a content model, make an otherwise optional element
+		required, and modify the attributes of an element by adding attributes or
+		making them required. However, a constraint cannot make a mandatory element
+		optional, and nor can it remove a mandatory element. 
+	 </p> 
+	 <p id="constraints_specialisation3">Constraints are similar in purpose to 
+		<ph
+		 conref="../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialisations"><?xm-replace_text Phrase?></ph>,
+		but attempt to avoid the perceived technical complexity of 
+		<ph
+		 conref="../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialisation"><?xm-replace_text Phrase?></ph>.
+		They also allow non-semantic structural changes to be made without the 
+		<ph
+		 conref="../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialisation"><?xm-replace_text Phrase?></ph>
+		mechanism, which was designed more for semantic changes. 
+	 </p> 
+	 <p>A typical constraint might apply the following business rules to an
+		authoring environment: 
+	 <ul id="ul_667D5FFF58C14615BE26787D6C32E79C"> 
+		<li id="li_06653670656A48A4BD11ADE745341486">Remove the 
+		  <synph>ph</synph> element, and prefer its 
+		  <synph>filepath</synph>, 
+		  <synph>userinput</synph>, and 
+		  <synph>systemoutput</synph> 
+		  <ph
+			conref="../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialisations"><?xm-replace_text Phrase?></ph>
+		  instead. 
+		</li> 
+		<li id="li_B0E08A519FCE45D18EFB57F4324A356F">Remove the 
+		  <synph>keyword</synph> element, and prefer its 
+		  <synph>cmdname</synph> and 
+		  <synph>varname</synph> 
+		  <ph
+			conref="../conref/conref_source.dita#topic_E1642C5A86C44BCE86FECD98EBAA3C89/var_specialisations"><?xm-replace_text Phrase?></ph>.
+		  
+		</li> 
+		<li id="li_74AE93C5AB6B4EF4AAF9BC53F1D9C458">Remove the ability to nest
+		  block elements such as 
+		  <synph>ol</synph> and 
+		  <synph>table</synph> within 
+		  <synph>lq</synph> and 
+		  <synph>p</synph> block elements. 
+		</li> 
+		<li id="li_A2EB369327B1401886764F3D7966860E">Make 
+		  <synph>shortdesc</synph> a required element. 
+		</li> 
+	 </ul> 
+	 </p> 
+	 <p id="constraints_valid4">A constrained topic will always be valid as an
+		unconstrained topic, as constraints only restrict what it permitted, not extend
+		what is permitted. For example, if a constrained concept content model
+		prevented 
+		<synph>section</synph> elements in a 
+		<synph>concept</synph> topic, a constrained concept topic would still be
+		a valid concept topic, because the base content model allows a concept topic
+		without a 
+		<synph>section</synph>. 
+	 </p> 
+	 <p>Elements of a constrained topic can be transcluded
+		(<term>conreffed</term>) into a base (unconstrained) topic, but elements of a
+		base (unconstrained) topic may not be able to be transcluded
+		(<term>conreffed</term>) into a constrained topic if the source topic would not
+		conform to the constraint rules. In other words, elements from a less
+		restrictive document cannot be incorporated into a more restrictive document,
+		regardless of whether the conreffed element itself would be valid in the target
+		(constrained) topic. 
+	 </p> 
+	 <p>Constraints are specified, or declared, in attributes in the topic
+		element, and reference the constraint rules specified in DTD or XSD modules.
+		There are two constraint attributes: 
+		<synph>constraints</synph> and 
+		<synph>constraint-scope</synph>. A constraint stored in 
+		<filepath>shortdescReqConstraints.mod</filepath> is declared in the topic
+		as 
+		<codeph>shortdescReq-c</codeph>. 
+	 </p> 
+	 <example id="example_3EBE142A28414C659061EAACD21DE399"> 
+		<title>Example of a constraint declaration</title> 
+		<p>A constraint to make the audience attribute required, to specify a
+		  list of valid values for the audience attribute, and to make the title element
+		  within a 
+		  <synph>shortdesc</synph> element required, would look like: 
+		  <codeblock>&lt;reference ...
+        audience="administrator"
+        constraints=" db-audience-enum-c topic-audience-req-c shortdescReq-c"
+        constraint-scope="db-audience-enum-c( topic/topic ... )
+            topic-audience-req-c( topic/topic )
+            shortdescReq-c( reference/shortdesc )"&gt;</codeblock> 
+		</p> 
+	 </example> 
+  </conbody> 
+</concept> 
